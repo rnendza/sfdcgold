@@ -1,0 +1,409 @@
+<!-- Cl Admin Only Daily Upload Miss -->
+<template>
+
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card">
+        <lightning-card>
+            <!--- ===== Progress Bar ===== -->
+            <template if:true={showProgressBar}>
+                <div class="progress-center slds-p-bottom_small slds-p-horizontal_small slds-p-top_small">
+                    <c-ui-indeterminate-progress-bar>
+                    </c-ui-indeterminate-progress-bar>
+                </div>
+            </template>
+            <div slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title
+                            card-title={cardTitle}
+                            card-title-style={cardTitleStyle}
+                            icon-name="standard:data_integration_hub"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </div>
+            <div class="slds-m-horizontal_small" style="min-height: 400px">
+
+                <div class="slds-p-bottom_xx-small">
+                    <div>
+                        <!--- ===== Assistant / Help ===== -->
+                        <template if:true={showAssistance}>
+                            <div class="slds-p-bottom_small">
+                                <c-cl-admin-only-daily-upload-miss-assistant
+                                        title="Upload Miss Assistance"
+                                        bullet-points={helpBulletPoints}>
+                                </c-cl-admin-only-daily-upload-miss-assistant>
+                            </div>
+                        </template>
+
+                        <!--                                <template if:true={_rsJobMethodRunning}>-->
+                        <!--                                    <div>-->
+                        <!--                                       <b>Running logic to delete RS / RPS / and Meter Readings and firing Route Schedule Creation Job...</b>-->
+                        <!--                                    </div>-->
+                        <!--                                </template>-->
+                        <!--                                <template if:true={_rpsCreationJobRunning}>-->
+                        <!--                                    <div>-->
+                        <!--                                        <b>Running Route Processing Sheet Creation Batch Job to create route processing sheets and meter readings...</b>-->
+                        <!--                                    </div>-->
+                        <!--                                </template>-->
+                        <!--                                </ul>-->
+                        <!--                            </div>-->
+                        <!--                        </template>-->
+                    </div>
+
+                    <template if:true={showForm}>
+
+
+                        <div class="slds-box slds-box_small" style="background-color:rgb(250,250,249)">
+                            <div class="slds-p-bottom_small">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-1">
+                                        <lightning-icon
+                                                icon-name="standard:search"
+                                                class="slds-m-right_x-small"
+                                                size="small">
+                                        </lightning-icon>
+                                        <b>Search for Meters</b>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-p-around_x-small lgc-bg">
+                                <lightning-combobox
+                                        if:true={processLocationPlValues}
+                                        name="processingLocation"
+                                        data-id="processinglocation"
+                                        label="Region"
+                                        required="true"
+                                        placeholder="Select a Region to process..."
+                                        validity=""
+                                        value={selectedProcessingLocation}
+                                        options={processLocationPlValues}
+                                        onchange={handleChange}
+                                        onfocus={handleInputFocus}
+                                        onblur={handleInputBlur}>
+                                </lightning-combobox>
+                            </div>
+                            <div>
+                                <div class="slds-grid">
+                                    <div class="slds-col">
+                                        <div class="slds-p-around_x-small lgc-bg">
+                                            <lightning-input type="datetime" name="meterCreatedDate"
+                                                             label="Meter Created Time"
+                                                             value={_meterDate}
+                                                             data-id="startDate"
+                                                             onfocus={handleInputFocus}
+                                                             onblur={handleInputBlur}
+                                                             required="true"
+                                                             onchange={handleChange}
+                                                             min={_meterDateMin}
+                                                             max={_meterDateMax}>
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="slds-p-left_small">
+                                    <div if:true={_showAdvancedFormOptions}  class="c3llc-li-container">
+                                        <a href="javascript:void(0);"
+                                           onclick={handleHideAdvancedOptions}
+                                           title="Hide Advanced Options">
+                                            <lightning-icon
+                                                    icon-name="utility:hide"
+                                                    class="slds-m-right_xx-small accel-blue-icon"
+                                                    size="x-small">
+                                            </lightning-icon>
+                                            Hide advanced form options.
+                                        </a>
+                                    </div>
+                                    <div if:false={_showAdvancedFormOptions} class="c3llc-li-container">
+                                        <a href="javascript:void(0);"
+                                           onclick={handleShowAdvancedOptions}
+                                           title="Show Advanced Options">
+                                            <lightning-icon
+                                                    icon-name="utility:preview"
+                                                    class="slds-m-right_xx-small accel-blue-icon"
+                                                    size="x-small">
+                                            </lightning-icon>
+                                            Show advanced form options.
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <template if:true={_showAdvancedFormOptions}>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                                        <div class="slds-p-around_x-small lgc-bg">
+                                            <lightning-input type="number" name="nbrOfMinutesToAddToMeterCreatedDate"
+                                                             label="Minutes to Add"
+                                                             field-level-help="# of minutes to add to the meter created date when searching."
+                                                             value={_nbrOfMinutesToAddToMeterCreatedDate}
+                                                             data-id="nbrOfMinutesToAddToMeterCreatedDate"
+                                                             onfocus={handleInputFocus}
+                                                             onblur={handleInputBlur}
+                                                             onchange={handleChange}>
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2">
+                                        <div class="slds-p-around_x-small lgc-bg">
+                                            <lightning-input type="number" name="nbrOfMinutesToSubtractFromMeterCreatedDate"
+                                                             label="Minutes to Subtract"
+                                                             field-level-help="# of minutes to subtract from the meter created date when searching."
+                                                             value={_nbrOfMinutesToSubtractFromMeterCreatedDate}
+                                                             data-id="nbrOfMinutesToSubtractFromMeterCreatedDate"
+                                                             onfocus={handleInputFocus}
+                                                             onblur={handleInputBlur}
+                                                             onchange={handleChange}>
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                            <div class="slds-p-top_x-small slds-p-horizontals_xxx-small">
+
+                                <lightning-button
+                                        icon-name="utility:search"
+                                        class="accel-button_stretch"
+                                        onclick={handleSearchClick}
+                                        disabled={disableSearchButton}
+                                        variant="brand"
+                                        label="Search">
+                                </lightning-button>
+
+                            </div>
+                        </div>
+
+                        <div if:true={showSearchingStencil} style="max-height: 75px" class="slds-m-bottom_small">
+                            <c-ui-custom-stencil
+                                    iterations="3"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="3">
+                            </c-ui-custom-stencil>
+                        </div>
+
+                    </template>
+
+                    <template if:true={showMeterSearchResults}>
+                        <div class="slds-p-horizontal_small slds-p-bottom_x-small slds-p-top_small">
+                            <c-ui-scoped-notification
+                                    icon-name="utility:warning"
+                                    icon-variant="inverse"
+                                    custom-class="accel-notification-warning_theme slds-theme_alert-texture"
+                                    custom-icon-size="x-small"
+                                    theme="warning"
+                                    message={meterSearchResultsMsgText}>
+                            </c-ui-scoped-notification>
+                        </div>
+                    </template>
+                    <template if:true={showNoSearchResults}>
+                        <c-ui-empty-state
+                                container-class="slds-illustration slds-illustration_small"
+                                header-text="No Meters Found"
+                                body-text="Please modify your search criteria and try again.">
+                        </c-ui-empty-state>
+                    </template>
+
+
+                    <div if:true={showStencil} style="max-height: 75px">
+                        <c-ui-custom-stencil
+                                iterations="3"
+                                child-class="slds-var-m-around_xxx-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </div>
+
+                    <template if:true={showSyncDatatable}>
+                        <div class="slds-box slds-box_border slds-m-horizontal_xxx-small slds-m-bottom_xxx-small lgc-highlight">
+                            <div class="slds-p-vertical_x-small slds-p-horizontal_x-small">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+                                        <lightning-icon
+                                                class="slds-m-right_xx-small"
+                                                icon-name="standard:recycle_bin"
+                                                size="x-small">
+                                        </lightning-icon>
+                                        <b>Script Results</b>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-text-align_right slds-text-color_weak slds-text-body_small
+                                                    accel-date-text">
+                                            Refreshed:&nbsp;
+                                            <lightning-formatted-date-time
+                                                    value={_syncRefreshDateTime}
+                                                    hour="2-digit"
+                                                    minute="2-digit" hour12="true"
+                                                    second="2-digit">
+                                            </lightning-formatted-date-time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-p-horizontal_x-small">
+                            <lightning-datatable
+                                    key-field={syncDtKeyField}
+                                    data={syncDtRecords}
+                                    default-sort-direction="desc"
+                                    hide-checkbox-column="true"
+                                    columns={syncColumns}
+                                    class={dtClasses}>
+                            </lightning-datatable>
+                        </div>
+                    </template>
+                    <template if:true={showAsyncDatatable}>
+                        <div class="slds-box slds-box_border slds-m-horizontal_xxx-small slds-m-bottom_xxx-small slds-m-top_medium lgc-highlight">
+                            <div class="slds-p-vertical_x-small slds-p-horizontal_x-small">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+
+                                        <lightning-icon
+                                                class="slds-m-right_xx-small"
+                                                icon-name="standard:business_hours"
+                                                size="x-small">
+                                        </lightning-icon>
+                                        <b>Schedule Creation Job Results</b>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-text-align_right slds-text-color_weak slds-text-body_small
+                                                    accel-date-text">
+                                            <lightning-dynamic-icon
+                                                    if:true={_asyncRefreshTimerId}
+                                                    type="eq"
+                                                    class="slds-float_right slds-m-left_small"
+                                                    option="play"
+                                                    alternative-text="Recording in progress">
+                                            </lightning-dynamic-icon>
+                                            Refreshed:&nbsp;
+                                            <b>
+                                                <lightning-formatted-date-time
+                                                        value={_asyncRefreshDateTime}
+                                                        hour="2-digit"
+                                                        minute="2-digit" hour12="true"
+                                                        second="2-digit">
+                                                </lightning-formatted-date-time>
+                                            </b>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-p-horizontal_x-small">
+                            <lightning-datatable
+                                    key-field={asyncDtKeyField}
+                                    data={asyncDtRecords}
+                                    default-sort-direction="desc"
+                                    hide-checkbox-column="true"
+                                    columns={asyncColumns}
+                                    class={dtClasses}>
+                            </lightning-datatable>
+                        </div>
+                    </template>
+                    <template if:true={showDataTotals}>
+                        <div class="slds-box slds-box_border slds-m-horizontal_xxx-small slds-m-top_medium slds-m-bottom_xxx-small lgc-highlight slds-p-horizontal_small">
+                            <div class="slds-p-vertical_x-small slds-p-horizontal_x-small">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+                                        <lightning-icon
+                                                class="slds-m-right_xx-small"
+                                                icon-name="standard:insights"
+                                                size="x-small">
+                                        </lightning-icon>
+<!--                                        <b>Data Creation Totals</b>-->
+                                        <b>Data Creation Status</b>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-text-align_right slds-text-color_weak slds-text-body_small slds-text-color_success
+
+                                                    accel-date-text">
+                                            <b>
+                                                Completed:&nbsp;
+                                            </b>
+                                            <lightning-formatted-date-time
+                                                    value={_totalsRefreshDateTime}
+                                                    hour="2-digit"
+                                                    class="slds-text-color_success slds-text-title_bold"
+                                                    minute="2-digit" hour12="true"
+                                                    second="2-digit">
+                                            </lightning-formatted-date-time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+<!--                        <div class="slds-p-horizontal_x-small slds-m-top_small">-->
+<!--                            <ul class="slds-has-dividers_around-space">-->
+
+<!--                                <li class="slds-item" style="background-color: #9bed9c;"><span-->
+<!--                                        class="accel-success_text"><b>{dataTotals.numRS}</b></span> Route Schedules-->
+<!--                                    Created.-->
+<!--                                </li>-->
+<!--                                <li class="slds-item" style="background-color: #9bed9c;"><span-->
+<!--                                        class="accel-success_text"><b>{dataTotals.numRPS}</b></span> Route Processing-->
+<!--                                    Sheets Created.-->
+<!--                                </li>-->
+<!--                                <li class="slds-item" style="background-color: #9bed9c;"><span-->
+<!--                                        class="accel-success_text"><b>{dataTotals.numMeters}</b></span> Meter Readings-->
+<!--                                    Created.-->
+<!--                                </li>-->
+<!--                            </ul>-->
+<!--                        </div>-->
+                    </template>
+                </div>
+            </div>
+            <div slot="footer" if:true={showAnyButton}>
+                <template if:true={showRsJobSubmitButton}>
+                    <div class="slds-p-horizontal_x-small">
+                        <c-ui-button
+                                onbuttonclick={handleSubmit}
+                                button-disabled={disableSubmitButton}
+                                button-name="submitRsButton"
+                                button-label="Fire Route Schedule Creation Job"
+                                button-label-style="font-size:1.15em"
+                                button-title="Click to Fire The Route Schedule Creation Job!"
+                                button-style="padding:.15em"
+                                button-classes="slds-button slds-button_destructive accel-admin-button slds-button_stretch"
+                                button-icon-name="utility:play"
+                                button-icon-variant="inverse"
+                                button-icon-size="x-small">
+                        </c-ui-button>
+                    </div>
+                </template>
+                <template if:true={showRpsJobSubmitButton}>
+                    <div class="slds-p-horizontal_xxx-small">
+                        <c-ui-button
+                                onbuttonclick={handleSubmit}
+                                button-disabled={disableSubmitButton}
+                                button-name="submitRpsButton"
+                                button-label="Fire Route Processing Sheet and Meters Creation Jobs"
+                                button-label-style="font-size:1.15em"
+                                button-title="Click to Fire The Route Processing Sheet Batch Job which chains the meters creation job.!"
+                                button-style="padding:.15em"
+                                button-classes="slds-button slds-button_destructive accel-admin-button slds-button_stretch"
+                                button-icon-name="utility:play"
+                                button-icon-variant="inverse"
+                                button-icon-size="x-small">
+                        </c-ui-button>
+                    </div>
+                </template>
+                <template if:true={showSelectRegionButton}>
+                    <div class="slds-p-horizontal_xxx-small">
+                        <c-ui-button
+                                onbuttonclick={handleSubmit}
+                                button-disabled={disableSubmitButton}
+                                button-name="submitSelectRegion"
+                                button-label="Search for Region & Meters Again"
+                                button-label-style="font-size:1.15em"
+                                button-title="Click to Start over and select a region!"
+                                button-style="padding:.15em"
+                                button-classes="slds-button slds-button_brand accel-admin-button slds-button_stretch"
+                                button-icon-name="utility:refresh"
+                                button-icon-variant="inverse"
+                                button-icon-size="x-small">
+                        </c-ui-button>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

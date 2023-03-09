@@ -1,0 +1,12 @@
+Hello. 
+
+The total paid reimbursements for this request potentially exceeds the approved amount. 
+
+Approved Amount: {!Marketing_Request__c.Total_Approved_Amount__c}
+Total Reimbursed By Accounting: {!Marketing_Request__c.Total_Reimbursed_By_Accounting__c}
+
+Please address this immediately. If the total amount paid by Accounting is correct, please make appropriate changes to the record to reflect the corrected amount, and ensure that your cost approval information is correct. 
+
+Thank you. 
+
+{!Marketing_Request__c.Link}

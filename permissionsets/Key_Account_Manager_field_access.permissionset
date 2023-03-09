@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>for Gabe Garcia, Pam Landis,  Donna Gillund, Crystal Hearn (per Pam 11/11/2021)</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Key_Account_Manager__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Key Account Manager field access</label>
+</PermissionSet>

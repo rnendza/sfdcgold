@@ -1,0 +1,368 @@
+<!-- Cl Cassette Inbound Form -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div if:true={showForm} class="">
+        <div class="accel-form_container slds-p-bottom_large slds-p-top_xx-small">
+            <lightning-record-edit-form record-id={rpsId}
+                                        object-api-name={objectApiName}
+                                        onload={handleLoad}
+                                        onsubmit={handleSubmit}
+                                        onerror={handleError}
+                                        onsuccess={handleSuccess}
+                                        density={formDensity}
+                                        form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+                <div if:true={showStencil}>
+                    <div class="slds-p-around_none">
+                        <c-ui-custom-stencil
+                                iterations="4"
+                                type="list" columns="1">
+                        </c-ui-custom-stencil>
+                    </div>
+                </div>
+                <div class="slds-p-around_x-small accel-form-theme_shade accel-test-borders">
+                    <div class="slds-p-top_small accel-test-borders">
+                        <div class={inputsClass}>
+                            <div if:true={formHelpMsg}
+                                 class="slds-p-bottom_small">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_11-of-12">
+                                        {formHelpMsg}
+                                    </div>
+                                    <div class="slds-col slds-text-align_right slds-size_1-of-12">
+                                        <lightning-button-icon icon-name="utility:close"
+                                                               onclick={handleCloseClicked}
+                                                               alternative-text="Close"
+                                                               title="Close">
+                                        </lightning-button-icon>
+                                    </div>
+                                </div>
+                            </div>
+                            <div style="color:red;font-size: .65rem">
+                            </div>
+                            <div if:true={redemptionType}>
+                            <!----- ===============   NRT ============== ----------->
+                            <template if:true={showNrtFields}>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_1_Denomination__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_1_Note_Count__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_1_Reject_Note_Count__c">
+                                </lightning-input-field>
+                                <div class="accel-cassette_spacer"></div>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_2_Denomination__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_2_Note_Count__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_2_Reject_Note_Count__c">
+                                </lightning-input-field>
+                                <div class="accel-cassette_spacer"></div>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_3_Denomination__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_3_Note_Count__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_3_Reject_Note_Count__c">
+                                </lightning-input-field>
+                                <div class="accel-cassette_spacer"></div>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_4_Denomination__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_4_Note_Count__c">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_4_Reject_Note_Count__c">
+                                </lightning-input-field>
+                                <div class="accel-cassette_spacer"></div>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="BV_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+                                <template if:true={showOverflowFields}>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            field-name="Cash_Return_Unused__c"
+                                            class="xslds-form-element_1-col">
+                                    </lightning-input-field>
+                                </template>
+                                <lightning-input-field
+                                        title="Crash Bag on Site"
+                                        required={allFieldsRequired}
+                                        field-name="Crash_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        title="Coin Bag on Site"
+                                        required={allFieldsRequired}
+                                        field-name="Coin_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        title="Extra Cassette On Site"
+                                        required={allFieldsRequired}
+                                        field-name="Extra_Cassette_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        title="M3T Crash Bag On Site"
+                                        required={allFieldsRequired}
+                                        field-name="M3T_Crash_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+                            </template>
+                                <!----- ===============   Safe Cash ============== ----------->
+                                <template if:true={showSafeCashFields}>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_1_Denomination__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_1_Note_Count__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_1_Reject_Note_Count__c">
+                                    </lightning-input-field>
+                                    <div class="accel-cassette_spacer"></div>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_2_Denomination__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_2_Note_Count__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_2_Reject_Note_Count__c">
+                                    </lightning-input-field>
+                                    <div class="accel-cassette_spacer"></div>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_3_Denomination__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_3_Note_Count__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_3_Reject_Note_Count__c">
+                                    </lightning-input-field>
+                                    <div class="accel-cassette_spacer"></div>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_4_Denomination__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_4_Note_Count__c">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            tabindex=0
+                                            field-name="Cassette_4_Reject_Note_Count__c">
+                                    </lightning-input-field>
+                                    <div class="accel-cassette_spacer"></div>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            field-name="BV_Value__c"
+                                            class="xslds-form-element_1-col">
+                                    </lightning-input-field>
+                                    <template if:true={showOverflowFields}>
+                                        <lightning-input-field
+                                                required={allFieldsRequired}
+                                                field-name="Cash_Return_Unused__c"
+                                                class="xslds-form-element_1-col">
+                                        </lightning-input-field>
+                                    </template>
+                                    <lightning-input-field
+                                            title="Crash Bag on Site"
+                                            required={allFieldsRequired}
+                                            field-name="Crash_Bag_On_Site__c"
+                                            class="accel-input_override">
+                                    </lightning-input-field>
+
+                                    <lightning-input-field
+                                            title="Coin Bag on Site"
+                                            required={allFieldsRequired}
+                                            field-name="Coin_Bag_On_Site__c"
+                                            class="accel-input_override">
+                                    </lightning-input-field>
+
+                                    <lightning-input-field
+                                            title="Extra Cassette On Site"
+                                            required={allFieldsRequired}
+                                            field-name="Extra_Cassette_On_Site__c"
+                                            class="accel-input_override">
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            title="M3T Crash Bag On Site"
+                                            required={allFieldsRequired}
+                                            field-name="M3T_Crash_Bag_On_Site__c"
+                                            class="accel-input_override">
+                                    </lightning-input-field>
+                                </template>
+                            <!----- ===============   M3T ============== ----------->
+                            <template if:true={showM3TFields}>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        tabindex=0
+                                        field-name="Cassette_1_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="Cassette_2_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="Cassette_3_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="Cassette_4_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="Cassette_5_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="Reject_Total__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        required={allFieldsRequired}
+                                        field-name="BV_Value__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+                                <template if:true={showOverflowFields}>
+                                    <lightning-input-field
+                                            required={allFieldsRequired}
+                                            field-name="Cash_Return_Unused__c"
+                                            class="xslds-form-element_1-col">
+                                    </lightning-input-field>
+                                </template>
+                                <lightning-input-field
+                                        title="Crash Bag on Site"
+                                        required={allFieldsRequired}
+                                        field-name="Crash_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        title="Coin Bag on Site"
+                                        required={allFieldsRequired}
+                                        field-name="Coin_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+
+                                <lightning-input-field
+                                        title="Extra Cassette On Site"
+                                        required={allFieldsRequired}
+                                        field-name="Extra_Cassette_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+                                <lightning-input-field
+                                        title="M3T Crash Bag On Site"
+                                        required={allFieldsRequired}
+                                        field-name="M3T_Crash_Bag_On_Site__c"
+                                        class="accel-input_override">
+                                </lightning-input-field>
+                            </template>
+                            </div>
+                            <div if:false={redemptionType} style="min-height: 200px">
+                                No redemption type is associated with the account.
+                            </div>
+
+
+
+
+                            <div class="slds-m-top_medium slds-m-bottom_medium">
+                                <button
+                                        if:true={showFormSave}
+                                        name="submitForm"
+                                        type="submit"
+                                        onclick={handleSubmit}
+                                        data-id="submitButton"
+                                        title={saveButtonLabel}
+                                        style="padding:.30em"
+                                        class="slds-button slds-button_brand slds-button_stretch ">
+                                                <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                                    <span style="font-size: 1.25em">{saveButtonLabel}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </div>
+</template>

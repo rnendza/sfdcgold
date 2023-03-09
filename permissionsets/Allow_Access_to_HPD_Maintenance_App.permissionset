@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>HPD_Maintenance</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Allow_HPD_Maintenance</name>
+    </customPermissions>
+    <description>Currently this app is a UI on top of batch jobs that copy HPD Data (initial req was copy monthly data from Account A to B )</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Allow Access to HPD Maintenance App</label>
+    <tabSettings>
+        <tab>HPD_Maintenance</tab>
+        <visibility>Visible</visibility>
+    </tabSettings>
+</PermissionSet>

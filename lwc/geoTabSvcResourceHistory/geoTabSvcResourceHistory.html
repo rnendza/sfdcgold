@@ -1,0 +1,164 @@
+<!-- Geo Tab Svc Resource History -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <template if:true={showProgressBar}>
+                    <div class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                        <c-ui-indeterminate-progress-bar>
+                        </c-ui-indeterminate-progress-bar>
+                    </div>
+                </template>
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title={cardTitle}
+                                    card-subtitle="History"
+                                    icon-name="standard:incident"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+                <div slot="actions">
+<!--                    <lightning-button-icon-->
+<!--                            icon-name="utility:location"-->
+<!--                            data-iconbuttonid="btnDisplayMap"-->
+<!--                            class={mapIconClass}-->
+<!--                            onclick={handleIconButtonClick}-->
+<!--                            alternative-text="View Tile List"-->
+<!--                            size="small">-->
+<!--                    </lightning-button-icon>-->
+<!--                    <lightning-button-icon-->
+<!--                            icon-name="utility:table"-->
+<!--                            data-iconbuttonid="btnDisplayTable"-->
+<!--                            onclick={handleIconButtonClick}-->
+<!--                            alternative-text="View Table List"-->
+<!--                            class={tableIconClass}-->
+<!--                            size="small">-->
+<!--                    </lightning-button-icon>-->
+<!--                    <lightning-button-icon-->
+<!--                            icon-name="utility:refresh"-->
+<!--                            onclick={handleRefresh}-->
+<!--                            tooltip="Force a refresh of all status data."-->
+<!--                            class="slds-m-left_small"-->
+<!--                            size="small"-->
+<!--                    ></lightning-button-icon>-->
+                </div>
+                <!--- ===== Card Body ===== -->
+                <div class="slds-p-horizontal_medium">
+                    <!--- ===== Assistant / Help ===== -->
+                    <!---  ===== User picklist ===== -->
+                    <template if:true={showServiceResourceNamesPl}>
+                        <div class="slds-form-element__control slds-m-bottom_xx-small">
+                            <label class="slds-form-element__label" for="srSelect">
+                                <b>{serviceResourceNameSelectLabel}</b>
+                            </label>
+                            <div class="slds-m-top_xx-small">
+                                <template if:true={showServiceResourceNamesPl}>
+                                    <select class="slds-select" id="srSelect" name="srSelect" data-id="srSelect"
+                                            onchange={handlePlChange}>
+                                        <template for:each={serviceResourceOptions} for:item="option">
+                                            <option key={option.label}
+                                                    class="uiInputSelectOption"
+                                                    selected={option.selected}
+                                                    value={option.value}>
+                                                {option.label}
+                                            </option>
+                                        </template>
+                                    </select>
+                                </template>
+                            </div>
+                        </div>
+                    </template>
+                    <!---  ===== Field picklist ===== -->
+                    <template if:true={showTrackedFieldsPl}>
+                        <div class="slds-form-element__control slds-m-bottom_xx-small slds-m-top_small">
+                            <label class="slds-form-element__label" for="trackedFieldSelect">
+                                <b>{fieldNameSelectLabel}</b>
+                            </label>
+                            <div class="slds-m-top_xx-small">
+                                <template if:true={showServiceResourceNamesPl}>
+                                    <select class="slds-select" id="trackedFieldSelect" name="trackedFieldSelect"
+                                            data-id="trackedFieldSelect"
+                                            onchange={handlePlChange}>
+                                        <template for:each={trackedFieldsOptions} for:item="option">
+                                            <option key={option.label}
+                                                    class="uiInputSelectOption"
+                                                    selected={option.selected}
+                                                    value={option.value}>
+                                                {option.label}
+                                            </option>
+                                        </template>
+                                    </select>
+                                </template>
+                            </div>
+                        </div>
+                    </template> 
+                    <!--- ===== Stencil ===== -->
+                    <template if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="6"
+                                child-class="slds-var-m-around-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </template>
+
+                    <!---  ===== Datatable Container ===== -->
+                    <template if:true={showDataTable}>
+                        <div class="slds-m-vertical_x-large">
+                            <div class="slds-box slds-box_border slds-theme_shade">
+                                <div class="slds-p-around_x-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+                                            <div class="slds-text-body_small slds-text-color_weak">
+                                                <b>{numberOfResults}</b> items.
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+
+                                            <div onclick={handleRefresh}
+                                                 title="Click here to refresh your data"
+                                                 class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text">
+                                                <lightning-icon
+                                                        icon-name="utility:refresh"
+                                                        size="xx-small"
+                                                        class="slds-m-right_xx-small accel-green-icon">
+                                                </lightning-icon>
+                                                Refreshed:&nbsp;
+                                                <lightning-formatted-date-time
+                                                        value={_dataRefreshTime}
+                                                        hour="2-digit"
+                                                        minute="2-digit" hour12="true"
+                                                        second="2-digit">
+                                                </lightning-formatted-date-time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--- ===== Datatable ===== -->
+                            <lightning-datatable
+                                    key-field={dtKeyField}
+                                    data={dtRecords}
+                                    sorted-by={sortBy}
+                                    sorted-direction={sortDirection}
+                                    default-sort-direction="asc"
+                                    hide-checkbox-column="true"
+                                    onsort={handleSort}
+                                    columns={columns}
+                                    class={dtClasses}>
+                            </lightning-datatable>
+                        </div>
+                    </template>
+
+
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+
+</template>

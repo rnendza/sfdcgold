@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps ライブイベントの関連付け</value>
+    </caseValues>
+    <fields>
+        <label><!-- Associated Account --></label>
+        <name>maps__AssociatedAccount__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Contact --></label>
+        <name>maps__AssociatedContact__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Lead --></label>
+        <name>maps__AssociatedLead__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Opportunity --></label>
+        <name>maps__AssociatedOpportunity__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Distance To Stop (ft) --></label>
+        <name>maps__DistanceToStopFeet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance To Stop (km) --></label>
+        <name>maps__DistanceToStopKilos__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance To Stop (m) --></label>
+        <name>maps__DistanceToStopMeters__c</name>
+    </fields>
+    <fields>
+        <help>マイル単位の停止地点までの距離</help>
+        <label><!-- Distance To Stop (mi) --></label>
+        <name>maps__DistanceToStopMiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance Units --></label>
+        <name>maps__DistanceUnits__c</name>
+        <picklistValues>
+            <masterLabel>feet</masterLabel>
+            <translation>フィート</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kilometers</masterLabel>
+            <translation>キロメートル</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>メートル</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>miles</masterLabel>
+            <translation>マイル</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Date --></label>
+        <name>maps__EventDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Start Time --></label>
+        <name>maps__EventStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Stop Time --></label>
+        <name>maps__EventStopTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset Daily Summary Event --></label>
+        <name>maps__LiveAssetDailySummaryEvent__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live Summary Stop Relationship Config --></label>
+        <name>maps__LiveSummaryStopRelationshipConfig__c</name>
+        <relationshipLabel><!-- Live Event Associations --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Maps ライブイベント関連付け名</nameFieldLabel>
+</CustomObjectTranslation>

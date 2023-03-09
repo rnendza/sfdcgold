@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Слой</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Слои</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Слой</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Слои</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Слоя</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Слоев</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Слою</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Слоям</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Слоем</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Слоями</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Слое</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Слоях</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArcGIS WebMap Click2Create --></label>
+        <name>maps__ArcGISWebMapC2C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email On Aggregation Success --></label>
+        <name>maps__EmailOnAggregationSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Используется для хранения параметров слоя в формате JSON.</help>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <help>Используется для определения, как тип слоя представляет запись.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS онлайн</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>Слой данных</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation>Территория</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile Set</masterLabel>
+            <translation>Набор плиток</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Заполняется непосредственно по личной папкой пользователя, иначе остается пустым. Если поле пустое и поиск папки пустой, отобразится в корпоративной папке. Если папка заполнена, это может быть личная или корпоративная папка.</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>maps__Version__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Имя слоя</nameFieldLabel>
+</CustomObjectTranslation>

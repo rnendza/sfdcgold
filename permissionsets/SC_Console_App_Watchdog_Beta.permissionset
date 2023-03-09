@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>SC_Cloud_Watchdog_Beta</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>Gives access to the svc alert watchdog utility bar beta</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>SC Console App Watchdog Beta</label>
+</PermissionSet>

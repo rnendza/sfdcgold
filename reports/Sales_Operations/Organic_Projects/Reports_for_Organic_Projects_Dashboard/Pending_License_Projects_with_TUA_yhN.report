@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c.Agreements__r$Status</field>
+    </columns>
+    <columns>
+        <field>Project__c.Agreements__r$TUA_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Agreements__r$Agreement_Revisions__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Agreements__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Project__c.Agreements__r$TUA_Type__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Project__c.Agreements__r$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Draft,Pending Changes,In Approval,Active</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Agreements__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contract.TUA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending Licensing</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project__c$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Pending License Projects with TUA</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Projects_with_Agreement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c$Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

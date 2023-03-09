@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.IGB_License_Number__c</field>
+    </columns>
+    <columns>
+        <field>FK_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_RECORDTYPE</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Request_Date__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request_Products__c.Product__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Marketing_Project_Status__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Marketing_Request__c.Legal_Name2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Pinewoods Restaurant Group</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Marketing_Request__c.Co_Op,Marketing_Request__c.Promotions</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Pinewoods Restaurant Group Co-Op/Promos</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntityCustomEntity$Marketing_Request__c$Marketing_Request_Products__c@Marketing_Request_Products__c.Account_Marketing__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c.Request_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2021-01-01</startDate>
+    </timeFrameFilter>
+</Report>

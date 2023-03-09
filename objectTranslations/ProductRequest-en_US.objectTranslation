@@ -1,0 +1,373 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipment Priority</value>
+        </caseValues>
+        <name>productrequest_shipmenttype</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account Information --></label>
+        <name>Account_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Status --></label>
+        <name>Asset_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cancellation Notes --></label>
+        <name>Cancellation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By --></label>
+        <name>Created_By_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created by --></label>
+        <name>Created_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delivery Method --></label>
+        <name>Delivery_Method__c</name>
+        <picklistValues>
+            <masterLabel>FedEx</masterLabel>
+            <translation><!-- FedEx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pickup</masterLabel>
+            <translation><!-- Pickup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shuttle</masterLabel>
+            <translation><!-- Shuttle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Difference Between Requested &amp; Consumed --></label>
+        <name>Difference_Between_Requested_Consumed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclude from Burr Ridge List View --></label>
+        <name>Exclude_from_List_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclude from Local Warehouse List View --></label>
+        <name>Exclude_from_Local_Warehouse_List_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Machine Out of Order --></label>
+        <name>Is_Machine_Out_Of_Order__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Jobs --></label>
+        <name>Jobs__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Locally Available --></label>
+        <name>Locally_Available__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location DBA Name --></label>
+        <name>Location_DBA_Name__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Record Type --></label>
+        <name>Marketing_Record_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request --></label>
+        <name>Marketing_Request__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please Provide an Accel Item # or Vendor Item # --></help>
+        <label><!-- Part # Requested --></label>
+        <name>Part_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Consumed Defined --></label>
+        <name>Product_Consumed_Defined__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Consumed Number --></label>
+        <name>Product_Consumed_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Product Consumed record that this Product Request fulfilled. This could either be a case where a product was consumed and a backfill Product Request was auto-generated, or when a Parts On Order Product Request is generated and the parts are later consumed. This field is auto-populated via the mobile app. --></help>
+        <label><!-- Product Consumed --></label>
+        <name>Product_Consumed__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Name --></label>
+        <name>Product_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Request Number --></label>
+        <name>Product_Request_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product_Warehouse_App__c</name>
+        <relationshipLabel><!-- Product Requests (Product(Warehouse App)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity Consumed --></label>
+        <name>Quantity_Consumed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity Requested --></label>
+        <name>Quantity_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA Details --></label>
+        <name>RMA_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA Number --></label>
+        <name>RMA_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA Status Picklist --></label>
+        <name>RMA_Status_Picklist__c</name>
+        <picklistValues>
+            <masterLabel>RMA Not Expected</masterLabel>
+            <translation><!-- RMA Not Expected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMA Pulled</masterLabel>
+            <translation><!-- RMA Pulled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMA Received</masterLabel>
+            <translation><!-- RMA Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RMA Shipped</masterLabel>
+            <translation><!-- RMA Shipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RMA Status --></label>
+        <name>RMA_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA # --></label>
+        <name>RMA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Request Count --></label>
+        <name>Request_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requests Filled --></label>
+        <name>Requests_Filled__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAS &amp; Machine Type --></label>
+        <name>SAS_Machine_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment --></label>
+        <name>Service_Appointment__c</name>
+        <relationshipLabel><!-- Product Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Ship to Accel Regional Office: --></label>
+        <name>Ship_to_Accel_Regional_Office__c</name>
+        <picklistValues>
+            <masterLabel>Burr Ridge</masterLabel>
+            <translation><!-- Burr Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign</masterLabel>
+            <translation><!-- Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LaSalle</masterLabel>
+            <translation><!-- LaSalle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rich &amp; Junnie&apos;s</masterLabel>
+            <translation><!-- Rich &amp; Junnie&apos;s --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park (FSG)</masterLabel>
+            <translation><!-- Tinley Park (FSG) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka</masterLabel>
+            <translation><!-- Watseka --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sub-Status --></label>
+        <name>Sub_Status__c</name>
+        <picklistValues>
+            <masterLabel>Part Picked</masterLabel>
+            <translation><!-- Part Picked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part Shipped</masterLabel>
+            <translation><!-- Part Shipped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Picked Up by Tech</masterLabel>
+            <translation><!-- Picked Up by Tech --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Received at Warehouse</masterLabel>
+            <translation><!-- Received at Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- TO Number --></label>
+        <name>TO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Backordered Count --></label>
+        <name>Total_Backordered_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Order Completed --></label>
+        <name>Total_Order_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Cage Request</masterLabel>
+            <translation><!-- Cage Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts Consumed Backfill</masterLabel>
+            <translation><!-- Parts Consumed Backfill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts on Order</masterLabel>
+            <translation><!-- Parts on Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse Restock</masterLabel>
+            <translation><!-- Warehouse Restock --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT SAS # or General Items --></label>
+        <name>VGT_SAS_or_General_Items__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Supplies/Consumables</masterLabel>
+            <translation><!-- General Supplies/Consumables --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Marketing Request --></label>
+        <name>Marketing_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Part Request --></label>
+        <name>Service_Part_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Warehouse Request --></label>
+        <name>Warehouse_Request</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You must input notes in the Cancellation Notes field in order to change the Status to Cancelled. --></errorMessage>
+        <name>Require_Cancellation_Notes_if_Cancelled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Sub-Status must be cleared when Status does not equal In Transit or Received --></errorMessage>
+        <name>Require_SubStatus_Cleared</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Set Sub-Status to Received at Warehouse --></errorMessage>
+        <name>Require_SubStatus_for_Backfill_Received</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Set Sub-Status to Part Picked or Part Shipped --></errorMessage>
+        <name>Require_SubStatus_for_InTransit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Set Sub-Status to Received at Warehouse or Picked Up by Tech --></errorMessage>
+        <name>Require_SubStatus_for_Parts_on_Order_Rec</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must input a TO Number before setting the Sub-Status to Part Shipped. --></errorMessage>
+        <name>Require_TO_Number_when_Part_is_Shipped</name>
+    </validationRules>
+</CustomObjectTranslation>

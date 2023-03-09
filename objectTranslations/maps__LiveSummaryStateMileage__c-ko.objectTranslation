@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 요약 상태 마일리지</value>
+    </caseValues>
+    <fields>
+        <help>3자리 국가 코드</help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation>캐나다</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Specified</masterLabel>
+            <translation>지정되지 않음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation>미국</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이 주행 거리가 연결된 실시간 자산 일일 요약 레코드</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary State Mileages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <help>이 레코드에 연결된 시 또는 도</help>
+        <label><!-- State or Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Distance Traveled (km) --></label>
+        <name>maps__TotalDistanceTraveledKm__c</name>
+    </fields>
+    <fields>
+        <help>이 시 내에서 이동한 총 거리(마일 단위)</help>
+        <label><!-- Total Distance Traveled (mi) --></label>
+        <name>maps__TotalDistanceTraveledMiles__c</name>
+    </fields>
+    <nameFieldLabel>Maps 실시간 요약 시 주행 거리 이름</nameFieldLabel>
+</CustomObjectTranslation>

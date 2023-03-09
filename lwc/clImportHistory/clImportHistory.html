@@ -1,0 +1,42 @@
+<!-- Cl Import History -->
+<template>
+    <div if:true={showAssistance} class="slds-p-bottom_small">
+        <c-cl-related-files-assistant
+                title="Route Import History Assistant"
+                assistance-type="history"
+                bullet-points={historyAssistanceBulletPoints}>
+        </c-cl-related-files-assistant>
+    </div>
+    <div>
+    <lightning-datatable
+            if:true={showDatatable}
+            key-field="contentVersionId"
+            data={filteredFilesData}
+            hide-checkbox-column
+            columns={filesColumns}
+            onrowaction={handleRowAction}>
+    </lightning-datatable>
+    </div>
+    <c-ui-confirmation-dialog title={confirmTitle}
+                              message={confirmDisplayMessage}
+                              cancel-label='Cancel'
+                              confirm-label={confirmLabel}
+                              visible={isActionDialogVisible}
+                              original-message={dialogPayload}
+                              name="confirmModal"
+                              header-icon={confirmIcon}
+                              header-icon-size={confirmIconSize}
+                              onmodalaction={handleModalConfirmClick}>
+    </c-ui-confirmation-dialog>
+
+    <c-cl-route-import-event-subscriber
+            if:true={routeImportRecordId}
+            record-id={routeImportRecordId}
+            onimportersvrmsg={handleImporterSvrMsg}>
+    </c-cl-route-import-event-subscriber>
+
+    <c-cl-content-version-event-subscriber
+            record-id={relatedRecordId}
+            oncontentversionsvrmsg={handleContentVersionSvrMsg}>
+    </c-cl-content-version-event-subscriber>
+</template>

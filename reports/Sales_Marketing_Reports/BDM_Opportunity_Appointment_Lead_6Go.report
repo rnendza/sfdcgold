@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Activities$Activity_Count__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$What</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5)</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity.Activities$ActivityDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>TODAY</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Owner</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>David Miltenberger,Joseph Marenda,Nikhil Raval,Andrew Clark,Paul McCaffrey,John Deppe,Daniel Carbaugh,Scott Admire,David Lipkin,Michael Rotramel,Tony Mestan,Annette Wodzinski,Matt Scales,Jeff Ellis,Tony Curtale,Jared March,Tara Stone,Jake Menendez,Dale Vandenberg,Michael Lazzara,James Hanna,Michael Stuart,Mike Lee,Charity Schultz,Jack Felkamp,Bob Lipkin,Nick Lennox</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Activities$Event_Type_Reports__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Appointment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Activities$Event_Type_Reports__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Visit</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity.Activities$Event_Type_Reports__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Follow Up</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>BDM Opportunity Appointment Lead</name>
+    <params>
+        <name>co</name>
+        <value>0</value>
+    </params>
+    <reportType>Opps_and_activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>false</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Addendum_Request_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

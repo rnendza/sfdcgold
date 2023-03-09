@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Borderline</fullName>
+        <default>false</default>
+        <label>Borderline</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor</fullName>
+        <default>false</default>
+        <label>Competitor</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic</fullName>
+        <default>false</default>
+        <label>Organic</label>
+    </customValue>
+    <customValue>
+        <fullName>Turnover</fullName>
+        <default>false</default>
+        <label>Turnover</label>
+    </customValue>
+    <customValue>
+        <fullName>Competitor Borderline</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Competitor Borderline</label>
+    </customValue>
+    <customValue>
+        <fullName>Referral</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Referral</label>
+    </customValue>
+    <customValue>
+        <fullName>Company Generated</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Company Generated</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic Borderline</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Organic Borderline</label>
+    </customValue>
+    <masterLabel>Accepted As</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

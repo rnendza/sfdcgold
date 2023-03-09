@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows users to indicate that a given location is not currently open &amp; the time it is next open. This will update the Earliest Start Permitted field to the specified time, thus ensuring that the Service Appointment does not get scheduled before that time.</description>
+    <flowDefinition>Indicate_Location_Open_Time</flowDefinition>
+    <label>Indicate Location Open Time</label>
+    <optionsCreateFeedItem>false</optionsCreateFeedItem>
+    <type>Flow</type>
+</QuickAction>

@@ -1,0 +1,30 @@
+.c3llc-wizard-form-labels {font-weight: bold; font-size:.85em;color:black;padding-bottom: 3px}
+.accel-test-borders {border:1px dotted red}
+.accel-admin-help-outer-container {padding-top:2px;}
+.accel-square-box{border-width: 1px;border-style: solid;border-color: rgb(219, 219, 219);border-image: initial;}
+.accel-square-box__info {
+    border-left:3px solid rgb(0, 112, 210);-webkit-appearance: none;background-color: #F3F2F2;
+}
+.accel-square-box__info .lightning-icon > .lightning-primitive-icon > svg { fill:rgb(27,82,151);}
+
+.accel-square-box__success {border-left:3px solid green;-webkit-appearance: none;background-color: #F3F2F2;}
+.accel-square-box__success .lightning-icon > .lightning-primitive-icon > svg { fill:green;}
+.accel-scoped-notification__warning { font-size:.875rem;}
+.accel-detailed-body-text {font-size:.785rem;margin-top: 3px;}
+.accel-hard-wrap-text {   overflow-wrap:break-word }
+.accel-error-icon svg {fill: rgb(194, 57, 52)!important;} /* override parent*/
+.accel-create-assets-text {font-style: italic;color:green}
+.c3llc-li-container {margin-bottom:7px;}
+.accel-link-utility-icon {--lwc-colorTextIconDefault: rgb(59,149,221);}
+
+.accel-assistance-info-icon {
+    /*--sds-c-icon-color-foreground: red;*/
+    --sds-c-icon-color-foreground-default: rgb(0,112,210);
+    /*--sds-c-icon-color-background: gray;*/
+}
+
+@media only screen and (max-width: 775px) {
+    .accel-detailed-body-text {font-size:.715rem;margin-top: 2px;}
+    .accel-scoped-notification__warning { font-size:.750rem;}
+    .c3llc-li-container {margin-bottom:0px;}
+}

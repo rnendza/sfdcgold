@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Opportunity Key Metrics</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Help</actionButtonLabel>
+        <actionButtonLink>https://accelentertainment.my.salesforce.com/sfc/p/1I000001dLpo/a/1I000000Q9tP/m3fw9clNdEOE7fFyWh8.9uR3RubVkrbsHsg91qTF17Q</actionButtonLink>
+        <body>This is how we are able to forecast Sales. Click the Help button for a closer look at the details of the Key Metrics.</body>
+        <customApplication>standard__LightningSales</customApplication>
+        <delayDays>1</delayDays>
+        <description>Calls attention to updating key metrics and the details of what this means.</description>
+        <dismissButtonLabel>Dissmiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-01-31</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Opportunity Key Metrics</masterLabel>
+        <publishedDate>2020-12-31</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2020-12-29</startDate>
+        <targetPageKey1>Opportunity</targetPageKey1>
+        <targetPageKey2>view</targetPageKey2>
+        <targetPageType>standard__recordPage</targetPageType>
+        <timesToDisplay>5</timesToDisplay>
+        <title>Continue to update your Key Metrics!</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

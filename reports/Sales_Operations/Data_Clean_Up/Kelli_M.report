@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Type__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Date_Agreement_Signed__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Referrer__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Split_1__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Split_2__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.ShippingState</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR 2) AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Split_1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>kelli mcelligott</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Split_2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>kelli mcelligott</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Opportunity.AE_Video_Gaming</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Kelli M</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Op_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity$Owner</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CloseDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

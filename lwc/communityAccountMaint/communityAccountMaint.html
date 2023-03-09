@@ -1,0 +1,20 @@
+<template>
+    <template if:true={isProcessing}>
+        <lightning-spinner
+                size="large"
+                variant="brand"
+                alternative-text="processing"></lightning-spinner>
+    </template>
+    <div>
+        <lightning-datatable
+                key-field="accountId"
+                data={portalAccounts}
+                row-number-offset={rowOffset}
+                hide-checkbox-column="true"
+                onrowaction={handleRowAction}
+                show-row-number-column="false"
+                columns={accountColumns}
+                class="accel-chrome-hardware-acceleration accel-datatable-styled accel-datatable-compact slds-no-row-hover">
+        </lightning-datatable>
+    </div>
+</template>

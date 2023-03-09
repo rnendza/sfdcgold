@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 即時摘要州英里</value>
+    </caseValues>
+    <fields>
+        <help>3 字元國碼</help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation>CAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Specified</masterLabel>
+            <translation>未指定</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation>USA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>與此英里相關的即時資產每日摘要記錄</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary State Mileages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <help>此記錄關聯的州或省</help>
+        <label><!-- State or Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Distance Traveled (km) --></label>
+        <name>maps__TotalDistanceTraveledKm__c</name>
+    </fields>
+    <fields>
+        <help>此州內的總行程距離 (英里)</help>
+        <label><!-- Total Distance Traveled (mi) --></label>
+        <name>maps__TotalDistanceTraveledMiles__c</name>
+    </fields>
+    <nameFieldLabel>Maps 即時摘要州英里名稱</nameFieldLabel>
+</CustomObjectTranslation>

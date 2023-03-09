@@ -1,0 +1,19 @@
+/* mobile only */
+@media only screen and (max-width: 480px) {
+    .slds-form-element_horizontal:not(.slds-is-editing), .slds-form_horizontal .slds-form-element:not(.slds-is-editing),
+    .slds-form_stacked .slds-form-element_horizontal:not(.slds-is-editing) {
+        border-bottom: 1px solid rgb(243, 242, 242);
+        padding:0;
+    }
+    .slds-form-element_horizontal:not(.slds-form-element_readonly), .slds-form_horizontal .slds-form-element:not(.slds-form-element_readonly),
+    .slds-form_stacked .slds-form-element_horizontal:not(.slds-form-element_readonly) {
+        margin-bottom: .40rem;padding-bottom:.25rem
+    }
+    .slds-card__header {padding: 0.25rem 1rem 0;margin: 0 0 0.25rem;
+    }
+}
+@media only screen and (min-width: 481px) {
+    .slds-form-element_horizontal .slds-form-element__label, .slds-form_horizontal .slds-form-element .slds-form-element__label, .slds-form_stacked .slds-form-element_horizontal .slds-form-element__label {
+        margin-bottom: 4em!important;
+    }
+}

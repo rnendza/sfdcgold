@@ -1,0 +1,19 @@
+<!-- Ui Form Title -->
+<template>
+    <div class="slds-grid"   onclick={handleBackClick}>
+        <div class="slds-col slds-grow-none">
+            <lightning-icon if:false={showBackButton}
+                            icon-name={iconName}
+                            size={iconSize} class={iconClass}>
+            </lightning-icon>
+        </div>
+        <div class="slds-col">
+            <!-- card title required -->
+            <div class="slds-p-left_x-small"><h1>{formTitle}</h1></div>
+            <!-- all the below dynamic based on what the parent cmp desires -->
+            <div class="slds-p-left_small">
+                <span if:true={cardSubtitle} class={subTitleTextClass} style={subTitleTextStyle}>{cardSubtitle}</span>
+            </div>
+        </div>
+    </div>
+</template>

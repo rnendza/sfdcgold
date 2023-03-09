@@ -1,0 +1,298 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- PersonalInfo_EPIM --></label>
+        <name>PersonalInfo_EPIM</name>
+    </fieldSets>
+    <fields>
+        <label><!-- CRM Username --></label>
+        <name>CRM_Username__c</name>
+    </fields>
+    <fields>
+        <help><!-- The default location / region for the collector. --></help>
+        <label><!-- Default Collector Location --></label>
+        <name>Default_Collector_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Service Manager --></label>
+        <name>Field_Service_Manager__c</name>
+        <relationshipLabel><!-- Users (Field Service Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for Cash Logistics - When an Route schedule is created, it is assigned to a processing location. This is used to determine, when a user of profile CL - Route Processor logs in, what route schedules they see. --></help>
+        <label><!-- Processing Location --></label>
+        <name>Processing_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reports To --></label>
+        <name>Reports_To__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used for aiding in identifying a user&apos;s team on dashboards within Salesforce, and may be different from the manager reflected in ADP. --></help>
+        <label><!-- Salesforce Manager --></label>
+        <name>Salesforce_Manager__c</name>
+        <relationshipLabel><!-- Users (Salesforce Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Used for Cash Logistics --></help>
+        <label><!-- Selected Machine Record Type --></label>
+        <name>Selected_Machine_Record_Type__c</name>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT</masterLabel>
+            <translation><!-- VGT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Keys --></label>
+        <name>Service_Keys__c</name>
+        <picklistValues>
+            <masterLabel>Champaign</masterLabel>
+            <translation><!-- Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland</masterLabel>
+            <translation><!-- Chicagoland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Advanced</masterLabel>
+            <translation><!-- Chicagoland - Advanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Fair Share</masterLabel>
+            <translation><!-- Chicagoland - Fair Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Shamrock</masterLabel>
+            <translation><!-- Chicagoland - Shamrock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Vinnie</masterLabel>
+            <translation><!-- Chicagoland - Vinnie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland 1</masterLabel>
+            <translation><!-- Chicagoland 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland 2</masterLabel>
+            <translation><!-- Chicagoland 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland 3</masterLabel>
+            <translation><!-- Chicagoland 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland 4</masterLabel>
+            <translation><!-- Chicagoland 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland 5</masterLabel>
+            <translation><!-- Chicagoland 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East - Champaign</masterLabel>
+            <translation><!-- East - Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>East - Watseka</masterLabel>
+            <translation><!-- East - Watseka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>La Salle</masterLabel>
+            <translation><!-- La Salle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lemont Thursday: Berwyn</masterLabel>
+            <translation><!-- Lemont Thursday: Berwyn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest - LaSalle</masterLabel>
+            <translation><!-- Northwest - LaSalle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest - Rich &amp; Junnies</masterLabel>
+            <translation><!-- Northwest - Rich &amp; Junnies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest - Rockford</masterLabel>
+            <translation><!-- Northwest - Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #1 (North)</masterLabel>
+            <translation><!-- South - Group #1 (North) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #2 (EQS Amusement)</masterLabel>
+            <translation><!-- South - Group #2 (EQS Amusement) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #3 (Randy&apos;s Vending)</masterLabel>
+            <translation><!-- South - Group #3 (Randy&apos;s Vending) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #4 (D &amp; S Vending)</masterLabel>
+            <translation><!-- South - Group #4 (D &amp; S Vending) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #5 (East)</masterLabel>
+            <translation><!-- South - Group #5 (East) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #6 (Olney/Oblong)</masterLabel>
+            <translation><!-- South - Group #6 (Olney/Oblong) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Group #7 (GMS)</masterLabel>
+            <translation><!-- South - Group #7 (GMS) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka</masterLabel>
+            <translation><!-- Watseka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West</masterLabel>
+            <translation><!-- West --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Manager Id --></label>
+        <name>User_Manager_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- DSProSFUsername --></label>
+        <name>dsfs__DSProSFUsername__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Maps Exports --></label>
+        <name>maps__AllowMapsExports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Beta Tester --></label>
+        <name>maps__BetaTester__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Latitude --></label>
+        <name>maps__DefaultLatitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Longitude --></label>
+        <name>maps__DefaultLongitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Proximity Radius --></label>
+        <name>maps__DefaultProximityRadius__c</name>
+    </fields>
+    <fields>
+        <label><!-- DefaultType --></label>
+        <name>maps__DefaultType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Default Zoom Level --></label>
+        <name>maps__DefaultZoomLevel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Vendor --></label>
+        <name>maps__DeviceVendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Edit Maps Org Wide Queries --></label>
+        <name>maps__EditMapsOrgWideQueries__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finished Maps Advanced Route Setup --></label>
+        <name>maps__FinishedAdvRouteSetup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Settings --></label>
+        <name>maps__MapsSetting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Export Size --></label>
+        <name>maps__MaxExportSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Max Query Size --></label>
+        <name>maps__MaxQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Type of Measurement --></label>
+        <name>maps__PreferredTypeOfMeasurement__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Fot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Km</masterLabel>
+            <translation>km</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meters</masterLabel>
+            <translation>Meter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miles</masterLabel>
+            <translation>Miles</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yards</masterLabel>
+            <translation>Yard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Receive Batch Exception Emails --></label>
+        <name>maps__ReceiveBatchExceptionEmails__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Approver --></label>
+        <name>maps__TPApprover__c</name>
+    </fields>
+    <fields>
+        <label><!-- Territory Planning Publisher --></label>
+        <name>maps__TPPublisher__c</name>
+    </fields>
+    <fields>
+        <label><!-- TestUserLookup --></label>
+        <name>maps__TestUserLookup__c</name>
+        <relationshipLabel><!-- Users (TestUserLookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Version --></label>
+        <name>maps__Version__c</name>
+        <picklistValues>
+            <masterLabel>Beta</masterLabel>
+            <translation>Beta</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current</masterLabel>
+            <translation>Gjeldende</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Previous</masterLabel>
+            <translation>Forrige</translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

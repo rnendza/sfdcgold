@@ -1,0 +1,29 @@
+<!-- Cl Time Stamp -->
+<template>
+    <span if:true={dateValue}>
+        <lightning-icon if:true={iconName}
+                        icon-name={iconName}
+                        class={iconClass}
+                        title={iconTitle}
+                        size={iconSize}>
+        </lightning-icon>
+        <span class={dateTextClass}>
+            <lightning-formatted-date-time
+                    class="slds-p-left_xx-small"
+                    value={dateValue} year="numeric"
+                    month="numeric" day="numeric"
+                    hour="2-digit"
+                    minute="2-digit" hour12="true"
+                    second="2-digit">
+            </lightning-formatted-date-time>
+        </span>
+        <span   if:true={helpText}
+                style="position:relative; top: -3px"
+                class="slds-m-left_xx-small">
+            <lightning-helptext
+                    class={helpTextIconClass}
+                    content={helpText}>
+            </lightning-helptext>
+        </span>
+    </span>
+</template>

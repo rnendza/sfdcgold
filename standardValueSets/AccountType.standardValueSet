@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<StandardValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sorted>false</sorted>
+    <standardValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Prospect Account</fullName>
+        <default>false</default>
+        <label>Prospect Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Accel Account</fullName>
+        <default>false</default>
+        <label>Accel Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Discontinued Account</fullName>
+        <default>false</default>
+        <label>Discontinued Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Competitor Account</fullName>
+        <default>false</default>
+        <label>Competitor Account</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Temp Closure</fullName>
+        <default>false</default>
+        <label>Temp Closure</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Analyst</fullName>
+        <default>false</default>
+        <label>Analyst</label>
+    </standardValue>
+    <standardValue>
+        <fullName>Investor</fullName>
+        <default>false</default>
+        <label>Investor</label>
+    </standardValue>
+</StandardValueSet>

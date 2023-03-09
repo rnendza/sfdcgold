@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Active_Region__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Active Region</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Group_Email_Addresses__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>External Group Email Addresses</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Name__c</fullName>
+        <description>To be deprecated soon.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>To be deprecated soon.</inlineHelpText>
+        <label>(Deprecated) Job Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>RPS Job Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RPS_Schedule_Time__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>RPS Schedule Time</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RS_Job_Name__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>RS Job Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RS_Schedule_Time__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>RS Schedule Time</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Schedule_Time__c</fullName>
+        <description>A cron string ie.
+0 30 00 * * ?
+To be deprecated soon.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A cron string ie.
+0 30 00 * * ?
+To be deprecated soon.</inlineHelpText>
+        <label>(Deprecated) Schedule Time</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Cash Logistics Schedule Setting</label>
+    <listViews>
+        <fullName>All_Schedules</fullName>
+        <columns>DeveloperName</columns>
+        <columns>MasterLabel</columns>
+        <columns>RS_Job_Name__c</columns>
+        <columns>RS_Schedule_Time__c</columns>
+        <columns>RPS_Job_Name__c</columns>
+        <columns>RPS_Schedule_Time__c</columns>
+        <columns>Active_Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Schedules</label>
+    </listViews>
+    <pluralLabel>Cash Logistics Schedule Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

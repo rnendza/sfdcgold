@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 即時事件</value>
+    </caseValues>
+    <fields>
+        <help>內部使用</help>
+        <label><!-- Correlation Id --></label>
+        <name>maps__CorrelationId__c</name>
+    </fields>
+    <fields>
+        <help>涉及事件與規則的裝置</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>輸入的日期與時間</help>
+        <label><!-- Entry Date Time --></label>
+        <name>maps__EntryDateTime__c</name>
+    </fields>
+    <fields>
+        <help>輸入定位的位置</help>
+        <label><!-- Entry Position --></label>
+        <name>maps__EntryPosition__c</name>
+    </fields>
+    <fields>
+        <help>退出的日期與時間</help>
+        <label><!-- Exit Date Time --></label>
+        <name>maps__ExitDateTime__c</name>
+    </fields>
+    <fields>
+        <help>退出定位的位置</help>
+        <label><!-- Exit Position --></label>
+        <name>maps__ExitPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>所建立事件的記錄類型</help>
+        <label><!-- Live Event Type --></label>
+        <name>maps__LiveEventType__c</name>
+        <picklistValues>
+            <masterLabel>Enters</masterLabel>
+            <translation>輸入</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exits</masterLabel>
+            <translation>退出</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>對應建立事件的物聯網裝置</help>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>外部規則識別碼</help>
+        <label><!-- Rule Id --></label>
+        <name>maps__RuleId__c</name>
+    </fields>
+    <fields>
+        <help>此規則名稱或標籤</help>
+        <label><!-- Rule Name --></label>
+        <name>maps__RuleName__c</name>
+    </fields>
+    <fields>
+        <help>地理柵欄內花費的時間數 (小時)</help>
+        <label><!-- Time Spent in Geofence (Hours) --></label>
+        <name>maps__TimeSpentinGeofenceHours__c</name>
+    </fields>
+    <fields>
+        <help>地理柵欄內花費的時間數 (分鐘)</help>
+        <label><!-- Time Spent in Geofence (Minutes) --></label>
+        <name>maps__TimeSpentinGeofenceMinutes__c</name>
+    </fields>
+    <nameFieldLabel>Maps 即時事件名稱</nameFieldLabel>
+</CustomObjectTranslation>

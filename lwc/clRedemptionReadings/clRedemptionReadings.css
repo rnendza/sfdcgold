@@ -1,0 +1,74 @@
+.accel-test-borders {border:1px dotted red;}
+.accel-test-borders-wip {border:0px dotted purple;}
+.accel-pic-icon-container-class {
+    border-radius:  0.25rem;
+    border: 1px solid silver;
+    vertical-align: middle;
+    box-shadow: 0 0 3pt 0.3pt rgb(37,116,180);
+    width:110px;
+}
+.accel-glassmorphism_tile {
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    background:rgb(247,247,247);
+    -webkit-backdrop-filter: blur( 7.5px );
+}
+.accel-form-theme_shade {
+    /*background-color: rgb(244,246,249)*/
+    /*background-color:orange;*/
+    /*background: rgba( 244, 246, 249, 0.75 );*/
+    background:rgb(242,242,242);
+    box-shadow: 0 2px 6px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+}
+.accel-outbound-form-theme_shade {
+    background: rgba(244,246,249,.75);
+    box-shadow: 0 2px 6px 0 rgb(178 178 185 / 37%);
+    backdrop-filter: blur(7.5px);
+    -webkit-backdrop-filter: blur(7.5px);
+    border-radius: 0;
+}
+
+.accel-silver-coin-icon {
+    color: silver;
+}
+.accel-bronze-coin-icon {
+    color: #514100
+}
+.accel-redemption-section_title {
+    font-size:1.15em;
+}
+.accel-redemption-section-current_icon {
+    --sds-c-icon-color-foreground-default:#FE9339;
+}
+.accel-redemption-section-new_icon {
+    --sds-c-icon-color-foreground-default: #37ca17;
+}
+
+.accel-redemption_notcompleted {
+    color:rgb(254, 147, 57);font-size: .90em;
+}
+.accel-redemption_completed {
+    color:green;font-size: .90em;
+}
+.accel-redemption_last_mod_icon_completed {
+    --sds-c-icon-color-foreground-default: green;
+    font-weight: bold;
+    padding-right: 3px;
+}
+.accel-redemption_last_mod_icon_notcompleted {
+    --sds-c-icon-color-foreground-default: rgb(254, 147, 57);
+    font-weight: bold;
+    padding-right: 3px;
+}
+.accel-icon-red {
+    --sds-c-icon-color-foreground-default: rgb(238,48,72);
+}
+.accel-icon-blue {
+    --sds-c-icon-color-foreground-default: rgb(37,116,169);
+}
+.accel-icon-green {
+    --sds-c-icon-color-foreground-default: rgb(73,201,167);
+}

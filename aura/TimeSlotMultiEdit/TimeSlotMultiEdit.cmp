@@ -1,0 +1,138 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+                description="Allows a manager to edit time for the User Territories that they manage."
+                controller="TimeSlotMultiEditController">
+
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="rawData" type="Object" access="PRIVATE" />
+    <aura:attribute name="daysOfWeek" type="List"/>
+    <aura:attribute name="columns" type="List"/>
+
+    <aura:attribute name="userTerritories" type="List"/>
+    <aura:attribute name="serviceMembers" type="List"/>
+    <aura:attribute name="singleTerritory" type="boolean" default="false"/>
+    <aura:attribute name="showServiceMbrPl" type="boolean" default="false" />
+    <aura:attribute name="showDaysOfWeekPl" type="boolean" default="false" />
+
+    <aura:attribute name="currentTerritory" type="FSL__User_Territory__c"/>
+    <aura:attribute name="timeEditSettings" type="Accel_Time_Edit__c" />
+    <aura:attribute name="selectedTerritoryId" type="String"/>
+    <aura:attribute name="selectedServiceMemberId" type="String"/>
+    <aura:attribute name="selectedDayOfWeek" type="String"/>
+
+    <aura:attribute name="pickListSelectOneText" type="String" default="--- Choose One ---"/>
+
+    <aura:attribute name="debugConsole" type="Boolean" default="{!v.timeEditSettings.Debug_Console__c}"/>
+    <aura:attribute name="showSpinner" type="boolean" />
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="accelRoles" type="String[]" default="['Regional Manager','Supervisor']"/>
+
+    <aura:attribute name="sortedBy" type="String"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:handler name="serviceMemberChange" value="{!v.selectedServiceMemberId}"
+                  action="{!c.handleServiceMemberChange}"/>
+    <aura:handler event="c:Accel_Evt_Generic" action="{!c.handleCopyTimeSlotSuccess}"/>
+
+    <aura:attribute name="useClone" type="Boolean" default="false"/>
+    <!-- toast capture the RecordEdit Success/Warning notifications events  -->
+    <!--- RJN commented out for now
+        <aura:handler event="force:showToast" action="{!c.refreshAll}"/>
+    -->
+
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+
+
+
+    <div class="bg">
+        <aura:if isTrue="{!and(v.userTerritories!=null, v.userTerritories.length > 0 )}">
+            <lightning:card title="{!v.currentTerritory.FSL__Territory_Name__c + ' Time Slots'}"
+                            iconName="standard:timeslot" class="bg">
+
+                    <aura:set attribute="actions">
+                        <lightning:button variant="brand" label="New Timeslot" onclick="{!c.handleNewClick}" />
+                    </aura:set>
+
+
+                <div  >
+                    <div style="width:75%">
+                        <aura:if isTrue="{!v.showSpinner}">
+                            <lightning:spinner variant="brand" size="large" aura:id="timeSpinner" alternativeText="{!v.spinnerAltText}" />
+                        </aura:if>
+                        <lightning:layout>
+                            <aura:if isTrue="{!!v.singleTerritory}">
+                                <lightning:layoutItem padding="around-medium" size="4">
+                                    <lightning:select name="territorySelect" label="Select a territory:"
+                                                      onchange="{!c.onChangeTerritory}"
+                                                      aura:id="territorySelect" value="{!v.selectedTerritoryId}">
+                                        <option value=""
+                                                text="{!v.pickListSelectOneText}"></option>
+                                        <aura:iteration items="{!v.userTerritories}" var="territory">
+                                            <option text="{!territory.FSL__Territory_Name__c}"
+                                                    value="{!territory.FSL__ServiceTerritory__c}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </aura:if>
+                            <aura:if isTrue="{!v.showServiceMbrPl}">
+                                <lightning:layoutItem padding="around-medium" size="4">
+                                    <lightning:select name="serviceMemberSelect" label="Filter Service Members:"
+                                                      onchange="{!c.onChangeServiceMember}"
+                                                      aura:id="serviceMemberSelect"
+                                                      value="{!v.selectedServiceMemberId}">
+                                        <option value="">--- Select a Service Member ---
+                                        </option>
+                                        <aura:iteration items="{!v.serviceMembers}" var="serviceMember">
+                                            <option text="{!serviceMember.ServiceResource.Accel_User__r.Name}"
+                                                    selected="{!serviceMember.Id==v.selectedServiceMemberId}"
+                                                    value="{!serviceMember.Id}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </aura:if>
+                            <aura:if isTrue="{!v.showDaysOfWeekPl}">
+                                <lightning:layoutItem padding="around-medium" size="4">
+                                    <lightning:select name="dayOfWeekSelect" label="Filter Day of Week:"
+                                                      onchange="{!c.onChangeDaysOfWeek}"
+                                                      aura:id="dayOfWeekSelect"
+                                                      value="{!v.selectedDayOfWeek}">
+                                        <option value="">--- All Days ---
+                                        </option>
+                                        <aura:iteration items="{!v.daysOfWeek}" var="dow">
+                                            <option text="{!dow}"
+                                                    selected="{!dow ==v.selectedDayOfWeek}"
+                                                    value="{!dow}"></option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                </lightning:layoutItem>
+                            </aura:if>
+                        </lightning:layout>
+                    </div>
+
+                </div>
+                <aura:if isTrue="{!and(v.currentTerritory != null,v.selectedServiceMemberId !=null,v.selectedServiceMemberId != '')}">
+                    <div class="slds-p-around_medium">
+                        <div style="border-top:1px solid #DDDBDA"></div>
+                    </div>
+                    <div class="slds-scrollable_y slds-scrollable_x slds-p-around_medium">
+                        <lightning:datatable data="{! v.data }"
+                                             columns="{! v.columns }"
+                                             class=""
+                                             keyField="Id"
+                                             showRowNumberColumn="true"
+                                             sortedBy="{!v.sortedBy}"
+                                             sortedDirection="{!v.sortedDirection}"
+                                             onsort="{!c.updateColumnSorting}"
+                                             onrowaction="{! c.handleRowAction }"
+                                             hideCheckboxColumn="true"/>
+                    </div>
+                </aura:if>
+            </lightning:card>
+        </aura:if>
+    </div>
+</aura:component>

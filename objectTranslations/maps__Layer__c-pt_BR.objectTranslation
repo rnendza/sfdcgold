@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Camada</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Camadas</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArcGIS WebMap Click2Create --></label>
+        <name>maps__ArcGISWebMapC2C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email On Aggregation Success --></label>
+        <name>maps__EmailOnAggregationSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Usado para armazenar as opções da camada em formato JSON.</help>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <help>Usado para determinar que tipo de camada o registro representa.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>Camada de dados</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation>Território</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile Set</masterLabel>
+            <translation>Conjunto de blocos</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Preenchido se estiver diretamente na pasta pessoal de um usuário ou em branco. Se estiver em branco e a pesquisa de pasta estiver em branco, isso aparecerá na pasta corporativa. Se a pasta estiver preenchida, pode ser uma pasta pessoal ou corporativa.</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>maps__Version__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da camada</nameFieldLabel>
+</CustomObjectTranslation>

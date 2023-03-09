@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Advanced Route-outputtypen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Advanced Route-outputtype</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Advanced Route-outputtype</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Advanced Route-outputtyperne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Advanced Route-outputtyper</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Advanced Route-outputtyper</value>
+    </caseValues>
+    <fields>
+        <label><!-- Associated Object Field Mapping --></label>
+        <name>maps__AssociatedObjectFieldMapping__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Output Type For --></label>
+        <name>maps__AvailableOutputTypeFor__c</name>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation>Begivenhed</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Values --></label>
+        <name>maps__DefaultValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- End DateTime Field --></label>
+        <name>maps__EndDateTimeField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>maps__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start DateTime Field --></label>
+        <name>maps__StartDateTimeField__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Field --></label>
+        <name>maps__UserField__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Maps Advanced Route-outputtypenavn</nameFieldLabel>
+</CustomObjectTranslation>

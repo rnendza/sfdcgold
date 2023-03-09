@@ -1,0 +1,153 @@
+<!-- App Log Schedule Maint -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <template if:true={showProgressBar}>
+                    <div class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                        <c-ui-indeterminate-progress-bar>
+                        </c-ui-indeterminate-progress-bar>
+                    </div>
+                </template>
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title={cardTitle}
+                                    card-subtitle={cardSubtitle}
+                                    sub-title-text-style="font-size:.80rem"
+                                    icon-name="custom:custom67"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+                <div slot="actions">
+                    <lightning-button-icon
+                            icon-name="utility:refresh"
+                            onclick={handleRefresh}
+                            tooltip="Force a refresh of schedule data"
+                            size="small"
+                    ></lightning-button-icon>
+                </div>
+                <!--- ===== Card Body ===== -->
+                <div class="slds-p-horizontal_small" style={jobCardBodyStyle}>
+                    <!--- ===== Stencil ===== -->
+                    <template if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="2"
+                                child-class="slds-var-m-around-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </template>
+                    <!--- ===== Datatable Container ===== -->
+                    <template if:true={showDataTable}>
+                        <!--- ===== Count of Results And Export Btn ===== -->
+                        <div class="slds-box slds-box_border" style="background-color: white">
+                            <div class="slds-p-around_x-small">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+                                        <div class="slds-text-body_small slds-text-color_weak">
+                                            <div class="slds-text-color_success">
+                                                <lightning-icon
+                                                        class="slds-m-right_xx-small"
+                                                        icon-name="standard:business_hours"
+                                                        size="x-small">
+                                                </lightning-icon>
+                                                <b>App Log Pruning Job is Running!</b>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-text-align_right slds-text-color_weak slds-text-body_small
+                                                    accel-date-text">
+                                            Refreshed:&nbsp;
+                                            <lightning-formatted-date-time
+                                                    value={_dataRefreshTime}
+                                                    hour="2-digit"
+                                                    minute="2-digit" hour12="true"
+                                                    second="2-digit">
+                                            </lightning-formatted-date-time>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- ===== Datatable ===== -->
+                        <lightning-datatable
+                                key-field={dtKeyField}
+                                data={dtRecords}
+                                onrowaction={handleRowAction}
+                                hide-checkbox-column="true"
+                                columns={columns}
+                                class={dtClasses}>
+                        </lightning-datatable>
+                        <br/>
+                        <c-ui-confirmation-dialog title={confirmTitle}
+                                                  message={confirmDisplayMessage}
+                                                  cancel-label='Cancel'
+                                                  confirm-label={confirmLabel}
+                                                  visible={isActionDialogVisible}
+                                                  original-message={dialogPayload}
+                                                  name="confirmModal"
+                                                  header-icon={confirmIcon}
+                                                  header-icon-size={confirmIconSize}
+                                                  onmodalaction={handleModalConfirmClick}>
+                        </c-ui-confirmation-dialog>
+                    </template>
+                    <template if:true={showNoJobs}>
+                        <div>
+                            <lightning-icon
+                                    class="slds-m-right_small"
+                                    icon-name="utility:warning"
+                                    size="x-small">
+                            </lightning-icon>
+                            <span if:true={_dataRefreshTime} class="slds-text-color_error">
+                                App Log Pruning scheduled job is not running as of
+                                &nbsp;
+                                <lightning-formatted-date-time
+                                        value={_dataRefreshTime}
+                                        year="numeric"
+                                        month="2-digit" day="numeric"
+                                        hour="2-digit"
+                                        minute="2-digit" hour12="true"
+                                        second="2-digit">
+                                </lightning-formatted-date-time>
+                            </span>
+                            <div class="slds-p-top_small">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <button
+                                                if:true={showNoJobs}
+                                                name="submitFireJobs"
+                                                onclick={handleFireJobClick}
+                                                disabled={_disableFireJobButton}
+                                                data-id="submitButton"
+                                                title="Click to Fire Scheduled Job"
+                                                style="padding:.15em;font-weight: bold"
+                                                class="slds-button slds-button_brand accel-admin-button slds-button_stretch">
+                                            <span style="font-size: 1.05em">Fire App Log Pruning Job</span>
+                                            <span class="slds-p-left_xx-small">
+                                            <lightning-icon
+                                                    icon-name="utility:play"
+                                                    alternative-text=""
+                                                    variant="inverse"
+                                                    size="x-small"
+                                                    title="">
+                                            </lightning-icon>
+                                        </span>
+                                        </button>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

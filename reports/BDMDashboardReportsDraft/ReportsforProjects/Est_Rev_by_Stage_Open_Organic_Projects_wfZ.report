@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Opportunity.Estimated_Annual_Revenue__c:SUM*Opportunity.Project_ID_Lookup__c.Go_Live_Probability__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>weighted by Go-Live Prob</description>
+        <developerName>FORMULA1</developerName>
+        <downGroupingContext>Opportunity$Id</downGroupingContext>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Weighted Est Rev</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Estimated_Annual_Revenue__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Credit_for_TUA__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.Agreement_Original_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Project_ID_Lookup__c.Stage_Indicator__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Project_ID_Lookup__c.Go_Live_Probability__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Project_ID_Lookup__c.Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Prerequisites,Application Process,Pending Licensing,Licensed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Project_ID_Lookup__c.RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project__c.Organic</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Project_ID_Lookup__c.Project_Status__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Est Rev by Stage - Open Organic Projects</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Op_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Addendum_Request_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

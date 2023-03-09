@@ -1,0 +1,21 @@
+<aura:component
+        implements="flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName"
+        description="UI Picklist">
+
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="picklistFieldApiName" type="String" required="true"/>
+    <aura:attribute name="picklistLabelOverride" type="String" />
+    <aura:attribute name="picklistDefaultOverride" type="String" />
+    <aura:attribute name="fireOptionSelectedEvent" type="Boolean" default="true"/>
+    <aura:attribute name="picklistCssClass" type="String"/>
+    <aura:attribute name="picklistRequired" type="Boolean" default="false"/>
+    <aura:registerEvent name="appEventForPicklist" type="c:appEvent"/>
+    <aura:handler event="c:FieldSetName" action="{!c.handleFieldSetName}"/>
+
+
+    <c:uiPicklist recordId="{!v.recordId}" objectApiName="{!v.sObjectName}" picklistFieldApiName="{!v.picklistFieldApiName}"
+                      picklistLabelOverride="{!v.picklistLabelOverride}" picklistCssClass="{!v.picklistCssClass}"
+                      picklistDefaultOverride="{!v.picklistDefaultOverride}" picklistRequired="{!v.picklistRequired}"
+                      fireOptionSelectedEvent="{!v.fireOptionSelectedEvent}" onoptionselected="{!c.handleOptionSelectedEvent}"/>
+
+</aura:component>

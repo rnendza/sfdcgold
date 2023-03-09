@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Acquisition</fullName>
+        <default>false</default>
+        <label>Acquisition</label>
+    </customValue>
+    <customValue>
+        <fullName>BDM</fullName>
+        <default>false</default>
+        <label>BDM</label>
+    </customValue>
+    <customValue>
+        <fullName>Executive</fullName>
+        <default>false</default>
+        <label>Executive</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Partner Operator</fullName>
+        <default>false</default>
+        <label>Partner Operator</label>
+    </customValue>
+    <customValue>
+        <fullName>RM</fullName>
+        <default>false</default>
+        <label>RM</label>
+    </customValue>
+    <customValue>
+        <fullName>Sales Agent</fullName>
+        <default>false</default>
+        <label>Sales Agent</label>
+    </customValue>
+    <description>Picklist options for Sales Channel field on Account object</description>
+    <masterLabel>Sales Channel</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

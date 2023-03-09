@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Trigger Settings</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Trigger Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- If checked on.. upon Insert of a portal user, will send the RM an email information the user was created (via User Trigger / User Trigger Handler / UserSvc) --></help>
+        <label><!-- Portal Send User Created RM Email --></label>
+        <name>Portal_Send_User_Created_RM_Email__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allows the user trigger. upon create of a customer portal user. to call System.Setpassword() if toggled on, otherwise skips the code. --></help>
+        <label><!-- Portal User SetPassword Active --></label>
+        <name>Portal_User_SetPassword_Active__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

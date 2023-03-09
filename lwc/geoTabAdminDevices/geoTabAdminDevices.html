@@ -1,0 +1,120 @@
+<!-- Geo Tab Admin Devices -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <template if:true={showProgressBar}>
+                    <div class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                        <c-ui-indeterminate-progress-bar>
+                        </c-ui-indeterminate-progress-bar>
+                    </div>
+                </template>
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title={cardTitle}
+                                    card-subtitle="All registered devices"
+                                    sub-title-text-style="font-size:.80rem"
+                                    icon-name="standard:device"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+                <div slot="actions">
+                    <lightning-button-icon
+                            icon-name="utility:refresh"
+                            onclick={handleRefresh}
+                            tooltip="Force a refresh of all device data."
+                            size="small"
+                    ></lightning-button-icon>
+                </div>
+                <!--- ===== Card Body ===== -->
+                <div class="slds-p-horizontal_small">
+                    <!--- ===== Assistant / Help ===== -->
+                    <template if:true={showAssistance}>
+                        <div class="slds-p-bottom_x-small">
+                            <c-geo-tab-admin-devices-assistant
+                                    title={assistanceTitle}
+                                    bullet-point-category={srBulletPointCategory}
+                                    bullet-points={srBulletPoints}>
+                            </c-geo-tab-admin-devices-assistant>
+                        </div>
+                    </template>
+                    <!--- ===== Stencil ===== -->
+                    <template if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="12"
+                                child-class="slds-var-m-around-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </template>
+                    <!--- ===== Datatable Container ===== -->
+                    <template if:true={showDataTable}>
+                        <!--- ===== Count of Results And Export Btn ===== -->
+                        <div class="slds-box slds-box_border">
+                            <div class="slds-p-around_x-small">
+                                <div class="slds-p-bottom_xxx-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-size_1-of-2 slds-align-top">
+                                            <lightning-input
+                                                    label={linkedToResourcesLabel}
+                                                    class=""
+                                                    onchange={handleSrChkBoxClick}
+                                                    type="checkbox">
+                                            </lightning-input>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <div class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text">
+                                                Last Refreshed:&nbsp;
+                                                <lightning-formatted-date-time
+                                                        value={_dataRefreshTime}
+                                                        hour="2-digit"
+                                                        minute="2-digit" hour12="true"
+                                                        second="2-digit">
+                                                </lightning-formatted-date-time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2 slds-align-bottom">
+                                        <div class="slds-text-body_small slds-text-color_weak">
+                                            <b>{filteredNumberOfResults}</b> of {numberOfResults} items.
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <template if:true={showExportBtn}>
+                                            <div class="slds-text-align_right slds-p-right_xx-small">
+                                                <c-geo-tab-admin-devices-export
+                                                        export-data={dtRecords}
+                                                        debug-console={debugConsole}
+                                                        onexport={handleExport}>
+                                                </c-geo-tab-admin-devices-export>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- ===== Datatable ===== -->
+                        <lightning-datatable
+                                key-field={dtKeyField}
+                                data={dtRecordsFiltered}
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                default-sort-direction="asc"
+                                hide-checkbox-column="true"
+                                onsort={handleSort}
+                                columns={columns}
+                                class={dtClasses}>
+                        </lightning-datatable>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

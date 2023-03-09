@@ -1,0 +1,47 @@
+/* ========  Used to assist in freezing the first column ========= */
+.THIS .accel-table-scroll-container {
+    /* general table outer container */
+    position: relative;width:100%;
+    z-index: 1;margin: auto;overflow: auto;
+}
+.THIS .accel-table-scroll-container::-webkit-scrollbar {
+    /* remove the scroll bar.. note may not work on all browsers.. double check */
+    display: none;
+}
+.THIS .accel-table-scroll-container table {
+    width: 100%;min-width: 480px;margin: auto;
+    border-collapse: separate;border-spacing: 0;
+}
+.THIS tr th:first-child {
+    /* sticky sticky sticky... first col including header.. increase right border size as well */
+    position: -webkit-sticky;position: sticky;left: 0;
+    z-index: 2;background:rgb(240, 240, 245);
+    border-right-width: 3px;border-right-style: solid;border-right-color: rgb(210, 210, 210);
+    box-shadow: 1px 0 3px -2px #888; /* accentuate the left border just a bit */
+}
+
+/* ========= General Table formatting ============================ */
+.THIS .accel-table-header th {
+    background-color: rgb(243, 242, 242)!important; /*@todo remove nasty important! using better selectors */
+    text-align: right; /*  align table headers (except first to right) */
+}
+.THIS .accel-table-header th:first-child {
+    text-align: left; /* align first col header to left */
+}
+.THIS .accel-datatable-collapsed  th {
+    font-weight: bold; /*  Override left col key data values with bold */
+    font-size:.875em;
+}
+.THIS .accel-table-header thead th {
+    /* default header to lwc defaults, use backup if --lwc not found. */
+    background-color: var(--lwc-tableColorBackgroundHeader,rgb(250, 250, 249));
+    color: var(--lwc-tableColorTextHeader,rgb(81, 79, 77));
+    padding: var(--lwc-tableCellSpacing,0.25rem 0.5rem);
+    font-weight: var(--lwc-fontWeightBold,700);
+    line-height: normal;
+}
+.THIS .accel-datatable-collapsed tbody td {
+    /* drop the detailed row data font size a bit.  */
+    font-size: .90em;
+    text-align:right;
+}

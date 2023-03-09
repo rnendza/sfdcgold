@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Μνήμη cache SLR</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Μνήμες cache SLR</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Μνήμη cache SLR</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Μνήμες cache SLR</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Μνήμης cache SLR</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Μνημών cache SLR</value>
+    </caseValues>
+    <fields>
+        <label><!-- Distance --></label>
+        <name>FSL__Distance__c</name>
+    </fields>
+    <fields>
+        <label><!-- From --></label>
+        <name>FSL__From__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier --></label>
+        <name>FSL__Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time --></label>
+        <name>FSL__Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- To --></label>
+        <name>FSL__To__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Αριθμός cache SLR</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

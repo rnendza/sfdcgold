@@ -1,0 +1,35 @@
+<!--c Growth Chart Loc Revenue -->
+<template>
+    <div data-id="widthMeasurement"></div>
+    <div class="slds-p-bottom--xx-small accel-box-header">
+        <h3>
+            <lightning-icon icon-name="standard:metrics"
+                            size={headerIconSize}
+                            class="slds-m-right_xx-small">
+            </lightning-icon>
+            {sectionTitle}
+        </h3>
+    </div>
+    <div>
+        <lightning-spinner if:false={chartLoaded} alternative-text="... processing"></lightning-spinner>
+    </div>
+    <template if:true={displayNoDataMsg}> <!-- @TODO make this a component -->
+        <div class="slds-box">
+            <div class="slds-inline_icon_text slds-grid slds-inline_icon_text--warning">
+                <lightning-icon icon-name="utility:warning" variant="warning" size="small">
+                </lightning-icon>
+                <div class="slds-col slds-align-middle slds-p-left--medium">
+                    <p>No location data found for filters applied. </p>
+                </div>
+            </div>
+        </div>
+    </template>
+
+
+        <div lwc:dom="manual" data-id="charts-container-data-id" style={chartStyle}></div>
+
+</template>
+<!--    &lt;!&ndash; @TODO normally I'd template this but removing it from the dom is causing weird behavior &ndash;&gt;-->
+<!--    <template if:true={false}>-->
+<!--        <div style="border:1px dotted red;text-align: center"><span style="font-size: .83em;color:red;font-weight: bold">MOBILE DEBUG</span></div>-->
+<!--    </template>-->

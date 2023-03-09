@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Поиск события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Поиски события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Поиск события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Поиски события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Поиска события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Поисков события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Поиску события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Поискам события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Поиском события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Поисками события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Поиске события календаря Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Поисках события календаря Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Base Object Id --></label>
+        <name>maps__BaseObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Calendar Event Base Object --></label>
+        <name>maps__CalEventBaseObj__c</name>
+        <relationshipLabel><!-- Maps Calendar Event Lookups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>maps__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Source --></label>
+        <name>maps__LocationSource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lookup Field API --></label>
+        <name>maps__LookupFieldAPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object API --></label>
+        <name>maps__ObjectAPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- TypeAPI --></label>
+        <name>maps__TypeAPI__c</name>
+    </fields>
+    <fields>
+        <label><!-- TypeDefaultValue --></label>
+        <name>maps__TypeDefaultValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Настраиваемый</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Стандартный</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Имя</nameFieldLabel>
+</CustomObjectTranslation>

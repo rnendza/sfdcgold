@@ -1,0 +1,1182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Security Incidents</relationshipLabel>
+        <relationshipName>Security_Incidents</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Alarm_Keypad_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Alarm_Keypad_Location__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alarm Keypad Location</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Alarm_Yes_No__c</fullName>
+        <externalId>false</externalId>
+        <formula>text( Account__r.Alarm_Yes_No__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alarm Yes/No</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Camera_Count__c</fullName>
+        <description>Number of cameras used in the install</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Fill in the amount of cameras used in the install</inlineHelpText>
+        <label>Camera Count</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Damaged_Machines__c</fullName>
+        <externalId>false</externalId>
+        <label>Damaged Machines</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SAS 1</fullName>
+                    <default>false</default>
+                    <label>SAS 1</label>
+                </value>
+                <value>
+                    <fullName>SAS 2</fullName>
+                    <default>false</default>
+                    <label>SAS 2</label>
+                </value>
+                <value>
+                    <fullName>SAS 3</fullName>
+                    <default>false</default>
+                    <label>SAS 3</label>
+                </value>
+                <value>
+                    <fullName>SAS 4</fullName>
+                    <default>false</default>
+                    <label>SAS 4</label>
+                </value>
+                <value>
+                    <fullName>SAS 5</fullName>
+                    <default>false</default>
+                    <label>SAS 5</label>
+                </value>
+                <value>
+                    <fullName>SAS 6</fullName>
+                    <default>false</default>
+                    <label>SAS 6</label>
+                </value>
+                <value>
+                    <fullName>SAS 7</fullName>
+                    <default>false</default>
+                    <label>SAS 7</label>
+                </value>
+                <value>
+                    <fullName>SAS 8</fullName>
+                    <default>false</default>
+                    <label>SAS 8</label>
+                </value>
+                <value>
+                    <fullName>SAS 9</fullName>
+                    <default>false</default>
+                    <label>SAS 9</label>
+                </value>
+                <value>
+                    <fullName>SAS 10</fullName>
+                    <default>false</default>
+                    <label>SAS 10</label>
+                </value>
+                <value>
+                    <fullName>Redemption</fullName>
+                    <default>false</default>
+                    <label>Redemption</label>
+                </value>
+                <value>
+                    <fullName>Amusement</fullName>
+                    <default>false</default>
+                    <label>Amusement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Date_of_Incident__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Incident</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Funds_Stolen__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Funds Stolen</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Incident_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident Notes</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Incident_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Incident Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Assist to Police Agency</fullName>
+                    <default>false</default>
+                    <label>Assist to Police Agency</label>
+                </value>
+                <value>
+                    <fullName>Attempted Burglary</fullName>
+                    <default>false</default>
+                    <label>Attempted Burglary</label>
+                </value>
+                <value>
+                    <fullName>Attempted Theft</fullName>
+                    <default>false</default>
+                    <label>Attempted Theft</label>
+                </value>
+                <value>
+                    <fullName>Burglary</fullName>
+                    <default>false</default>
+                    <label>Burglary</label>
+                </value>
+                <value>
+                    <fullName>Criminal Damage</fullName>
+                    <default>false</default>
+                    <label>Criminal Damage</label>
+                </value>
+                <value>
+                    <fullName>Damage</fullName>
+                    <default>false</default>
+                    <label>Damage</label>
+                </value>
+                <value>
+                    <fullName>Location Fire</fullName>
+                    <default>false</default>
+                    <label>Location Fire</label>
+                </value>
+                <value>
+                    <fullName>Video Recording Request</fullName>
+                    <default>false</default>
+                    <label>Video Recording Request</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Location_of_NVR__c</fullName>
+        <description>Where the NVR can be found at the location</description>
+        <externalId>false</externalId>
+        <label>Location of NVR</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SAS 1</fullName>
+                    <default>false</default>
+                    <label>SAS 1</label>
+                </value>
+                <value>
+                    <fullName>SAS 2</fullName>
+                    <default>false</default>
+                    <label>SAS 2</label>
+                </value>
+                <value>
+                    <fullName>SAS 3</fullName>
+                    <default>false</default>
+                    <label>SAS 3</label>
+                </value>
+                <value>
+                    <fullName>SAS 4</fullName>
+                    <default>false</default>
+                    <label>SAS 4</label>
+                </value>
+                <value>
+                    <fullName>SAS 5</fullName>
+                    <default>false</default>
+                    <label>SAS 5</label>
+                </value>
+                <value>
+                    <fullName>SAS 6</fullName>
+                    <default>false</default>
+                    <label>SAS 6</label>
+                </value>
+                <value>
+                    <fullName>SAS 7</fullName>
+                    <default>false</default>
+                    <label>SAS 7</label>
+                </value>
+                <value>
+                    <fullName>SAS 8</fullName>
+                    <default>false</default>
+                    <label>SAS 8</label>
+                </value>
+                <value>
+                    <fullName>SAS 9</fullName>
+                    <default>false</default>
+                    <label>SAS 9</label>
+                </value>
+                <value>
+                    <fullName>SAS 10</fullName>
+                    <default>false</default>
+                    <label>SAS 10</label>
+                </value>
+                <value>
+                    <fullName>Redemption Terminal</fullName>
+                    <default>false</default>
+                    <label>Redemption Terminal</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Models_of_Cameras__c</fullName>
+        <description>Camera models installed at the location</description>
+        <externalId>false</externalId>
+        <label>Model of Camera</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Lorex</fullName>
+                    <default>false</default>
+                    <label>Lorex</label>
+                </value>
+                <value>
+                    <fullName>ADI</fullName>
+                    <default>false</default>
+                    <label>ADI</label>
+                </value>
+                <value>
+                    <fullName>Dahua</fullName>
+                    <default>false</default>
+                    <label>Dahua</label>
+                </value>
+                <value>
+                    <fullName>Hanwha</fullName>
+                    <default>false</default>
+                    <label>Hanwha</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Owner_Notified_by_RM__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Was the owner of the location notified by the RM</description>
+        <externalId>false</externalId>
+        <label>Owner Notified by RM</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Police_Notified__c</fullName>
+        <externalId>false</externalId>
+        <label>Police Notified?</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Post_Alarm_Installation__c</fullName>
+        <externalId>false</externalId>
+        <label>Post Alarm Installation</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Unknown</fullName>
+                    <default>false</default>
+                    <label>Unknown</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Restitution_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Restitution Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Restitution_for_Equipment_Damages__c</fullName>
+        <externalId>false</externalId>
+        <label>Restitution for Equipment Damages</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <label>Pending</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Security_Cameras__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Account__r.Security_Cameras__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Security Cameras</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Region__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Service_Territory__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Service Region</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Time_of_Incident__c</fullName>
+        <externalId>false</externalId>
+        <label>Time of Incident</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Total_Damages__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total Damages</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Loss__c</fullName>
+        <externalId>false</externalId>
+        <formula>Funds_Stolen__c +  Total_Damages__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Loss</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Type_of_Alert__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Alert</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Back Office</fullName>
+                    <default>false</default>
+                    <label>Back Office</label>
+                </value>
+                <value>
+                    <fullName>Call In</fullName>
+                    <default>false</default>
+                    <label>Call In</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Security Incident</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Security_Camera_Installs</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Security_Incident__c.IGB_Camera_Survey</value>
+        </filters>
+        <label>Security Camera Installs</label>
+    </listViews>
+    <nameField>
+        <displayFormat>S-{00000}</displayFormat>
+        <label>Security Incident Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Security Incidents</pluralLabel>
+    <recordTypes>
+        <fullName>IGB_Camera_Survey</fullName>
+        <active>true</active>
+        <description>Location Survey for IGB Camera Project</description>
+        <label>IGB Camera Survey</label>
+        <picklistValues>
+            <picklist>Camera_Count__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Damaged_Machines__c</picklist>
+            <values>
+                <fullName>Amusement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Incident_Type__c</picklist>
+            <values>
+                <fullName>Attempted Burglary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burglary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Damage</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_of_NVR__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Models_of_Cameras__c</picklist>
+            <values>
+                <fullName>ADI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dahua</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hanwha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lorex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Police_Notified__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Post_Alarm_Installation__c</picklist>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Restitution_for_Equipment_Damages__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Alert__c</picklist>
+            <values>
+                <fullName>Back Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call In</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Security_Incident</fullName>
+        <active>true</active>
+        <description>A security incident that occurred at a location</description>
+        <label>Security Incident</label>
+        <picklistValues>
+            <picklist>Camera_Count__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Damaged_Machines__c</picklist>
+            <values>
+                <fullName>Amusement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Incident_Type__c</picklist>
+            <values>
+                <fullName>Assist to Police Agency</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attempted Burglary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Attempted Theft</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burglary</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Criminal Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Damage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location Fire</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Recording Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Location_of_NVR__c</picklist>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption Terminal</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Models_of_Cameras__c</picklist>
+            <values>
+                <fullName>ADI</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dahua</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hanwha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lorex</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Police_Notified__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Post_Alarm_Installation__c</picklist>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Unknown</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Restitution_for_Equipment_Damages__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Alert__c</picklist>
+            <values>
+                <fullName>Back Office</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Call In</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

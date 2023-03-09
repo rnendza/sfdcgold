@@ -1,0 +1,68 @@
+<apex:component id="cAccelAccountsWithMuniChangeHistory" controller="AccountsWithMuniChangeHistoryController"
+                allowDML="true" access="global">
+
+    <apex:attribute name="pMuni" type="Municipality__c" description="The Municipality object"
+                    assignTo="{!muni}"/>
+    <apex:attribute name="pUserId" type="Id" description="The Salesforce Id of a valid User object"
+                    assignTo="{!userId}"/>
+    <apex:attribute name="pHistorySecondsToGoBack" type="Integer"
+                    description="The number of seconds to search for muni history changes. Put a negative value. defaulted to 1 second"
+                    assignTo="{!iHistorySecondsToGoBack}" default="1"/>
+
+    <apex:outputPanel layout="block" style="margin-bottom:15px;margin-top:10px;"
+                      rendered="{!accounts.size >0}">
+        <div>
+            Your account{!IF(accounts.size >1,'s','')} in {!muni.name}:
+            <apex:repeat value="{!accounts}" var="account">
+                <div>
+                    <a href="{!account.Org_URL__c}/{!account.id}">{!account.Name}</a>
+                </div>
+            </apex:repeat>
+        </div>
+    </apex:outputPanel>
+    <apex:outputPanel layout="none" rendered="{!muniHistories.size > 0}">
+        <div style="margin-bottom:10px;margin-top:10px;">
+            Recent change{!IF(muniHistories.size >1,'s','')} made to {!muni.name}:
+        </div>
+        <div style="border:1px solid silver">
+            <table style="width:100%">
+                <thead>
+                <tr>
+                    <th style="text-align: left;background-color: #F3F2F2">Field</th>
+                    <th style="text-align: left;background-color: #F3F2F2">Previous</th>
+                    <th style="text-align: left;background-color: #F3F2F2">New</th>
+                    <th style="text-align: left;background-color: #F3F2F2">Date/Time</th>
+                    <th style="text-align: left;;background-color: #F3F2F2">Changed By</th>
+                </tr>
+                </thead>
+                <tbody>
+                <apex:repeat value="{!muniHistories}" var="muniHistWrap" id="historyRepeater">
+                    <tr>
+                        <td>
+                            <apex:outputText value="{!muniHistWrap.fieldLabel}"/>
+                        </td>
+                        <td>
+                           <apex:outputField value="{!muniHistWrap.muniHist.oldValue}"/>
+                        </td>
+                        <td>
+                           <apex:outputField value="{!muniHistWrap.muniHist.newValue}"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{!muniHistWrap.muniHist.createdDate}"/>
+                        </td>
+                        <td>
+                            <apex:outputField value="{!muniHistWrap.muniHist.createdby.name}"/>
+                        </td>
+                    </tr>
+                </apex:repeat>
+                </tbody>
+            </table>
+        </div>
+        <br/>
+        <div>
+            <span style="font-size:.7em;font-color:silver">
+                * Note: a previous and new value of null indicates a field that cannot be tracked.
+            </span>
+        </div>
+    </apex:outputPanel>
+</apex:component>

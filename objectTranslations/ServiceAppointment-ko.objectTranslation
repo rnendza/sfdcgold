@@ -1,0 +1,784 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Bundle Members --></label>
+        <name>FSL__Bundle_Members</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Bundle Members Siblings --></label>
+        <name>FSL__Bundle_Members_Siblings</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Bundler Lightbox --></label>
+        <name>FSL__Bundler_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Capacity Service Columns --></label>
+        <name>FSL__Capacity_Service_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Crew Management --></label>
+        <name>FSL__CrewManagement</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Crew Management Tooltip --></label>
+        <name>FSL__CrewManagementTooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Designated Work Fields --></label>
+        <name>FSL__Designated_Work_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_Service_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Filter --></label>
+        <name>FSL__Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Appointment Expanded --></label>
+        <name>FSL__Service_Appointment_Expanded</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Appointment List Columns --></label>
+        <name>FSL__Service_Appointment_List_Columns</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Appointment List Preview --></label>
+        <name>FSL__Service_Appointment_List_Preview</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Appt Resource Calendar Display --></label>
+        <name>FSL__Service_Appt_Resource_Calendar_Display</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Appt Resource Calendar Tooltip --></label>
+        <name>FSL__Service_Appt_Resource_Calendar_Tooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Info Window Map --></label>
+        <name>FSL__Service_Info_Window_Map</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Lightbox --></label>
+        <name>FSL__Service_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Lightbox Address --></label>
+        <name>FSL__Service_Lightbox_Address</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Lightbox Time --></label>
+        <name>FSL__Service_Lightbox_Time</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Service Tooltip Gantt --></label>
+        <name>FSL__Service_Tooltip_Gantt</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Accel_Solution__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dispatched Time --></label>
+        <name>Acceptance_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- Picklist used to display if there are appointments in Queue for a Technician in the List View on the SFS Movile App. --></help>
+        <label><!-- Appointments in Queue --></label>
+        <name>Appointments_in_Queue__c</name>
+        <picklistValues>
+            <masterLabel>Appointments in Queue: No</masterLabel>
+            <translation><!-- Appointments in Queue: No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Appointments in Queue: Yes</masterLabel>
+            <translation><!-- Appointments in Queue: Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned Rank --></label>
+        <name>Assigned_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancelled/Cannot Complete Reason --></label>
+        <name>Cancelled_Cannot_Complete_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Created Date/Time --></label>
+        <name>Case_Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed With Flow --></label>
+        <name>Closed_With_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Time --></label>
+        <name>CreatedTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date/Time --></label>
+        <name>Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Critical Priority --></label>
+        <name>Critical_Priority_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Defer to Location Open Time --></label>
+        <name>Defer_to_Location_Open_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- En Route --></label>
+        <name>En_Route__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSL__GanttColor__c --></label>
+        <name>FSL_GanttColor_c__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Grade --></label>
+        <name>FSL__Appointment_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Schedule --></label>
+        <name>FSL__Auto_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration In Minutes --></label>
+        <name>FSL__Duration_In_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emergency --></label>
+        <name>FSL__Emergency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Color --></label>
+        <name>FSL__GanttColor__c</name>
+    </fields>
+    <fields>
+        <help>아이콘의 URL을 입력하십시오. URL은 .png와 같은 이미지 접미사로 끝나야 합니다.</help>
+        <label><!-- Gantt Icon --></label>
+        <name>FSL__GanttIcon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Label --></label>
+        <name>FSL__GanttLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Display Date --></label>
+        <name>FSL__Gantt_Display_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Jeopardy Reason --></label>
+        <name>FSL__InJeopardyReason__c</name>
+        <picklistValues>
+            <masterLabel>Delayed Finish</masterLabel>
+            <translation>완료 지연</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delayed Start</masterLabel>
+            <translation>시작 지연</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Due Date Approaching</masterLabel>
+            <translation>기한 임박</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Response</masterLabel>
+            <translation>응답 없음</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In Jeopardy --></label>
+        <name>FSL__InJeopardy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal SLR Geolocation --></label>
+        <name>FSL__InternalSLRGeolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fill In Candidate --></label>
+        <name>FSL__IsFillInCandidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is MultiDay --></label>
+        <name>FSL__IsMultiDay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Epoch --></label>
+        <name>FSL__Last_Updated_Epoch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multiday Work Calculated length --></label>
+        <name>FSL__MDS_Calculated_length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Multiday Work Operational Time --></label>
+        <name>FSL__MDT_Operational_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pinned --></label>
+        <name>FSL__Pinned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Geocoding For Chatter Actions --></label>
+        <name>FSL__Prevent_Geocoding_For_Chatter_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Service --></label>
+        <name>FSL__Related_Service__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Same Day --></label>
+        <name>FSL__Same_Day__c</name>
+    </fields>
+    <fields>
+        <label><!-- Same Resource --></label>
+        <name>FSL__Same_Resource__c</name>
+    </fields>
+    <fields>
+        <label><!-- Schedule Mode --></label>
+        <name>FSL__Schedule_Mode__c</name>
+        <picklistValues>
+            <masterLabel>Automatic</masterLabel>
+            <translation>자동</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation>수동</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>없음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Optimization</masterLabel>
+            <translation>최적화</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Schedule Over Lower Priority Appointment --></label>
+        <name>FSL__Schedule_over_lower_priority_appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy Used --></label>
+        <name>FSL__Scheduling_Policy_Used__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Time Dependency --></label>
+        <name>FSL__Time_Dependency__c</name>
+        <picklistValues>
+            <masterLabel>Finish Before Start</masterLabel>
+            <translation>시작 전 완료</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Start</masterLabel>
+            <translation>같은 시작</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Start After Finish</masterLabel>
+            <translation>완료 후 시작</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- UpdatedByOptimization --></label>
+        <name>FSL__UpdatedByOptimization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use Async Logic --></label>
+        <name>FSL__Use_Async_Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Virtual Service For Chatter Action (SLR) --></label>
+        <name>FSL__Virtual_Service_For_Chatter_Action__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used in FSM flow to update the Service Appointment to check if there are Appoointments in Queue. --></help>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- High Priority --></label>
+        <name>High_Priority_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Work Type --></label>
+        <name>Inactive_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Tech Arrival Time --></label>
+        <name>Initial_Tech_Arrival_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified By User Name --></label>
+        <name>Last_Modified_By_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Time --></label>
+        <name>Last_Modified_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days of Open Service Appointment --></label>
+        <name>Length_of_Open_Work_Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live with WM Scheduling Enhancements --></label>
+        <name>Live_with_WM_Scheduling_Enhancements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Priority --></label>
+        <name>Location_Priority__c</name>
+        <picklistValues>
+            <masterLabel>HIGH PRIORITY</masterLabel>
+            <translation><!-- HIGH PRIORITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOW PRIORITY</masterLabel>
+            <translation><!-- LOW PRIORITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDIUM PRIORITY</masterLabel>
+            <translation><!-- MEDIUM PRIORITY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Low Priority --></label>
+        <name>Low_Priority_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine Down Upon Arrival --></label>
+        <name>Machine_Down_Upon_Arrival__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Machine Up Upon Departure --></label>
+        <name>Machine_Up_Upon_Departure__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Medium Priority --></label>
+        <name>Medium_Priority_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Since Dispatched --></label>
+        <name>Minutes_Since_Dispatched__c</name>
+    </fields>
+    <fields>
+        <label><!-- Minutes Since En Route --></label>
+        <name>Minutes_Since_En_Route__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculated on the case, Service Appointment Priority is used in Field Service to determine which Service Appointment to schedule first on the Gantt. --></help>
+        <label><!-- Old Service Appointment Priority --></label>
+        <name>Old_Service_Appointment_Priority__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- On-Site Duration --></label>
+        <name>On_Site_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- On-site --></label>
+        <name>On_site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime Approver --></label>
+        <name>Overtime_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overtime Reason --></label>
+        <name>Overtime_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Acceptance Time --></label>
+        <name>Pending_Acceptance_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Productivity Indicator --></label>
+        <name>Productivity_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject --></label>
+        <name>Reject__c</name>
+    </fields>
+    <fields>
+        <help><!-- Last technician to reject this service appointment. To find the full list of technicians who rejected, go to field history tracking. --></help>
+        <label><!-- Rejected By --></label>
+        <name>Rejected_By__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Rejected Time --></label>
+        <name>Rejected_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response Time --></label>
+        <name>Response_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment Priority --></label>
+        <name>Service_Appointment_Priority_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculated on the case, Service Appointment Priority is used in Field Service to determine which Service Appointment to schedule first on the Gantt. --></help>
+        <label><!-- Service Appointment Priority --></label>
+        <name>Service_Appointment_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Category --></label>
+        <name>Service_Category__c</name>
+        <picklistValues>
+            <masterLabel>Amusement</masterLabel>
+            <translation><!-- Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maintenance</masterLabel>
+            <translation><!-- Maintenance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RT</masterLabel>
+            <translation><!-- RT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI</masterLabel>
+            <translation><!-- SGI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone ATM</masterLabel>
+            <translation><!-- Standalone ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweepstakes</masterLabel>
+            <translation><!-- Sweepstakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Upgrade Appointment</masterLabel>
+            <translation><!-- Upgrade Appointment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT</masterLabel>
+            <translation><!-- VGT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Resource Shift --></label>
+        <name>Service_Resource_Shift__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Lookup to Service Resource. --></help>
+        <label><!-- Service Resource --></label>
+        <name>Service_Resource__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Resource on SR Shift --></label>
+        <name>Service_Resource_on_SR_Shift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Zone --></label>
+        <name>Service_Zone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech Notes --></label>
+        <name>Solution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status_Field_Set_Display__c</name>
+    </fields>
+    <fields>
+        <help><!-- Substatus for Service Appointment is used to clarify a status that does not need to appear on the Gantt. Primarily used for Cannot Complete. --></help>
+        <label><!-- Substatus --></label>
+        <name>Substatus__c</name>
+        <picklistValues>
+            <masterLabel>Additional Help Required</masterLabel>
+            <translation><!-- Additional Help Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LnW Tech Needed</masterLabel>
+            <translation><!-- LnW Tech Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Closed</masterLabel>
+            <translation><!-- Location Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logic Box Access</masterLabel>
+            <translation><!-- Logic Box Access --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts On Order</masterLabel>
+            <translation><!-- Parts On Order --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Temporary Field Used in the mobile app. --></help>
+        <label><!-- Tech Notes Mobile --></label>
+        <name>Tech_Notes_Mobile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Dispatched --></label>
+        <name>Time_Accepted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Complete --></label>
+        <name>Time_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time On-site --></label>
+        <name>Time_In_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Related Case Created --></label>
+        <name>Time_Related_Case_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Start En Route --></label>
+        <name>Time_Start_En_Route__c</name>
+    </fields>
+    <fields>
+        <help><!-- Today&apos;s Date. Used in DLRS field Service Appointments in Queue logic. --></help>
+        <label><!-- Today --></label>
+        <name>Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Duration --></label>
+        <name>Total_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Time --></label>
+        <name>Travel_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was Overtime Used? --></label>
+        <name>Was_Overtime_Used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Was Software/Gameset Changed? --></label>
+        <name>Was_Software_Gameset_Changed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Service Appointments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Type Name --></label>
+        <name>Work_Type_Name__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Collections --></label>
+        <name>Collections</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Maintenance --></label>
+        <name>Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service --></label>
+        <name>Service</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You cannot close a Service Appointment without a Solution. --></errorMessage>
+        <name>Cannot_Complete_without_Solution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Was Software/Gameset Changed? is required: Status = Complete. --></errorMessage>
+        <name>Complete_Status_Software_Gameset_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- New service appointment cannot be created in scheduled or  dispatched statuses. --></errorMessage>
+        <name>FSL__Dont_allow_scheduled_or_dispatched</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Select a valid dependency type. If the appointments must be assigned to the same resource, the dependency type can’t be Same Start. --></errorMessage>
+        <name>FSL__Related_Service_with_time_dependency</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource dependency is invalid. Time Dependency can&apos;t be Same Start when same resource is required. --></errorMessage>
+        <name>FSL__Same_Resource_Same_Start</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both scheduled start and end are required --></errorMessage>
+        <name>FSL__Schedule_End_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Both scheduled start and end are required --></errorMessage>
+        <name>FSL__Schedule_Start_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Gantt color must be in hexadecimal format: (for example: #ffffff) --></errorMessage>
+        <name>FSL__Service_Color_HEX_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select Related Service. --></errorMessage>
+        <name>FSL__Time_dependency_with_related_service</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- DueDate field is required --></errorMessage>
+        <name>FSL__isDueDateExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Duration field is required --></errorMessage>
+        <name>FSL__isDurationExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EarliestStartTime field is required --></errorMessage>
+        <name>FSL__isEarliestStartTimeExist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Scheduled Start must be earlier than the Scheduled End. --></errorMessage>
+        <name>FSL__startTimeShouldPrecedeEndTime</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Appointments with Status &apos;Dispatched&apos; or &apos;Completed&apos; cannot be moved. --></errorMessage>
+        <name>Lock_Service_Appointment_Times</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot close a Service Appointment without Machine Down Upon Arrival being selected --></errorMessage>
+        <name>Machine_Down_Upon_Arrival_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Machine Down Upon Arrival &amp; Machine Up Upon Departure Are Required --></errorMessage>
+        <name>Machine_Fields_SGI_Tech_Needed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Machine Upon Departure Must Be Completed. --></errorMessage>
+        <name>Machine_Up_Upon_Arrival</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Machine Down Upon Arrival Cannot Be Null --></errorMessage>
+        <name>Machine_Up_Upon_Arrival_Cannot_Be_Null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Machine Up Upon Departure Must Be Completed. --></errorMessage>
+        <name>Machine_Up_Upon_Departure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Solution must be selected. --></errorMessage>
+        <name>Must_Enter_a_Solution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Machine Up Upon Departure is required! --></errorMessage>
+        <name>SGI_TECH_NEEDEDMachine_Up_Upon_Departure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Must Enter Tech Notes for &quot;SGI Tech Needed&quot; Status --></errorMessage>
+        <name>SGI_Tech_Needed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter Tech Notes if your Solution is See Notes. --></errorMessage>
+        <name>See_Notes_Solution</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Service Appointment Priority must be a whole number between 0 - 10. --></errorMessage>
+        <name>Service_Appointment_Priority_Formatting</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If the Status of the SA is not Completed, Do not select a Solution! --></errorMessage>
+        <name>Solution_Must_be_Null_if_not_Complete</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Solution Notes are required if See Notes is selected as the solution. --></errorMessage>
+        <name>Solution_Notes_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are required to enter Tech Notes before you can choose this Status. --></errorMessage>
+        <name>Tech_Notes_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

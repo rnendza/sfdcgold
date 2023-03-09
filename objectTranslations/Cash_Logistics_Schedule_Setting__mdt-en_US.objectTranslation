@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Logistics Schedule Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Logistics Schedule Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active Region --></label>
+        <name>Active_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Group Email Addresses --></label>
+        <name>External_Group_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <help><!-- To be deprecated soon. --></help>
+        <label><!-- (Deprecated) Job Name --></label>
+        <name>Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPS Job Name --></label>
+        <name>RPS_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RPS Schedule Time --></label>
+        <name>RPS_Schedule_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- RS Job Name --></label>
+        <name>RS_Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- RS Schedule Time --></label>
+        <name>RS_Schedule_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- A cron string ie.
+0 30 00 * * ?
+To be deprecated soon. --></help>
+        <label><!-- (Deprecated) Schedule Time --></label>
+        <name>Schedule_Time__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

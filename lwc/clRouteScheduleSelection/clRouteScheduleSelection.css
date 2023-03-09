@@ -1,0 +1,80 @@
+.accel-test-borders {border:0px dotted red}
+.accel-glassmorphism_tile {
+
+    background: rgba( 225, 225, 225, 0.25 );
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.accel-card-subheader-row {
+    background-color: rgb(244,246,249);
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    border-radius: 5px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.accel-meter-card-header {
+    border-bottom: 1px solid #DCE2EB;
+    font-size:1.2em;
+}
+.accel-cardtitle_address {
+    font-size:.95em;
+    font-weight: bold;
+}
+.accel-machine_icon-not-completed {
+    --sds-c-icon-color-foreground-default: rgb(254,147,57);
+    font-weight: bold;
+    padding-right: 3px;
+}
+.accel-machine_icon-completed {
+    --sds-c-icon-color-foreground-default: green;
+    font-weight: bold;
+    padding-right: 3px;
+}
+.accel-machine_icon-cannot-collect {
+    /*--sds-c-icon-color-foreground-default: green;*/
+    font-weight: bold;
+    padding-right: 3px;
+}
+.accel-meter-reading_notcompleted {
+    color:rgb(254, 147, 57);font-size: .90em;
+}
+.accel-meter-reading_completed {
+    color:green;font-size: .90em;
+}
+.accel-meter-reading_cannot-collect {
+    font-size: .90em;
+}
+
+
+.accel-last-modify-icon {
+    --sds-c-icon-color-foreground-default:rgb(111, 78, 55);
+}
+
+/* intentionally use the same color of the bg for now */
+.accel-mtr_badge-not-completed {
+    --sds-c-badge-color-background:rgb(247,247,247);
+}
+.accel-mtr_badge-completed {
+    --sds-c-badge-color-background:rgb(247,247,247);
+}
+.accel-mtr_badge-cannot-collect {
+    /*--sds-c-badge-color-background:rgb(247,247,247);*/
+}
+.accel-icon-red {
+    --sds-c-icon-color-foreground-default: rgb(238,48,72);
+}
+.accel-icon-blue {
+    --sds-c-icon-color-foreground-default: rgb(37,116,169);
+}
+.accel-icon-green {
+    --sds-c-icon-color-foreground-default: rgb(73,201,167);
+}
+.accel-route-schedule-icon {
+    margin-right: 5px;
+}
+.accel-region-selector {
+    background-color: rgb(244,246,249);
+}

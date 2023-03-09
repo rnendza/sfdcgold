@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Code segment --></label>
+        <name>footprint__Code_segment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Message --></label>
+        <name>footprint__Error_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Footprint --></label>
+        <name>footprint__Footprint__c</name>
+        <relationshipLabel><!-- Analysis logs --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

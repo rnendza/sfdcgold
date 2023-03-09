@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Jobs__c</entityName>
+    <fieldName>Job_Status__c</fieldName>
+    <masterLabel>Jobs: Pending Approval</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Populate the fields below applicable to the Requisition you are submitting, then select the Submit for Approval button in the upper right-hand corner of your screen. &lt;/p&gt;</info>
+        <picklistValueName>New</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Position_Requisition</recordTypeName>
+</PathAssistant>

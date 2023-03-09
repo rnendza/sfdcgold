@@ -1,0 +1,14 @@
+Greetings,
+
+The purpose of this email is to notify you that the job status has been updated to Posted. Please, click the link below to access the job record.
+
+Requisition Number: {!Jobs__c.Name}
+Title: {!Jobs__c.Job_Title__c}
+Candidate's Name: {!Jobs__c.Last_Candidate_s_Name__c}
+
+{!Jobs__c.Link}
+
+
+Regards,
+
+Salesforce Team

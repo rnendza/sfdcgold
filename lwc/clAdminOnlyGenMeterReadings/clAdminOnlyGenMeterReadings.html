@@ -1,0 +1,80 @@
+<!-- Cl Admin Only Gen Meter Readings -->
+<template>
+    <div class="slds-box_small slds-box_border" style="min-height: 250px">
+        <div if:true={showProgressBar}
+             class="progress-center slds-p-bottom_small">
+            <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+        </div>
+        <div class="slds-p-around_small">
+            <lightning-card>
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <c-ui-card-title
+                                card-title='Generate Meter Readings'
+                                card-subtitle={cardSubTitle}
+                                icon-name="standard:event"
+                                icon-size="small">
+                        </c-ui-card-title>
+                    </div>
+                </h1>
+                <div class="accel-test-borders slds-m-horizontal_small">
+                    <div
+                            class="slds-p-bottom_small">
+                        <template if:true={showMeterCreationHelp}>
+                            <div class="slds-m-bottom_medium">
+                                <c-ui-scoped-notification
+                                        icon-name="utility:info"
+                                        custom-class="accel-notification-info_theme"
+                                        theme="info"
+                                        message=" Use this to manually generate meter readings for this route processing sheet.
+                        Generally should be used if they were not created with the schedule for some reason.">
+                                </c-ui-scoped-notification>
+                            </div>
+                        </template>
+                        <template if:true={showMetersAlreadyCreatedMessage}>
+                            <div class="slds-m-bottom_medium">
+                                <c-ui-scoped-notification
+                                        icon-name="utility:warning"
+                                        icon-variant="inverse"
+                                        theme="warning"
+                                        message="Meters were already created for this Route Processing Sheet. Delete those meters if you want to create new ones.">
+                                </c-ui-scoped-notification>
+                            </div>
+                        </template>
+                        <div if:true={showStencil}>
+                            <c-ui-custom-stencil
+                                    iterations="3"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </div>
+                    </div>
+                </div>
+                <div slot="footer">
+                    <div>
+                        <button
+                                if:true={showGenerateButton}
+                                name="submitCycleUpdate"
+                                onclick={handleMeterCreationClick}
+                                disabled={disableButton}
+                                data-id="submitButton"
+                                title="Click to Create Meter Readings"
+                                style="padding:.15em;font-weight: bold"
+                                class="slds-button slds-button_brand accel-admin-button slds-button_stretch">
+                            <span style="font-size: 1.05em">Generate Meters</span>
+                            <span class="slds-p-left_xx-small">
+                                            <lightning-icon
+                                                    icon-name="utility:record_update"
+                                                    alternative-text=""
+                                                    variant="inverse"
+                                                    size="x-small"
+                                                    title="">
+                                            </lightning-icon>
+                                        </span>
+                        </button>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

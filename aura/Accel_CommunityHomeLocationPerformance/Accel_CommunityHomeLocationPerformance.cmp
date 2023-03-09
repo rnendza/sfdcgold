@@ -1,0 +1,190 @@
+<aura:component description="Accel Community Home Location Summary"
+                controller="Accel_CommunityLocationSummaryController"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+    <!--
+    echarts..https://ecomfe.github.io/echarts-doc/public/en/index.html
+    -->
+    <ltng:require
+            scripts="{!$Resource.echart4}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="displayDateDrillDownPl" type="Boolean" default="false"/>
+    <aura:attribute name="maxAccounts" type="Integer"/>
+    <aura:attribute name="showMaxAccountsWarning" type="Boolean" default="false"/>
+    <aura:attribute name="showLocationComparisonTab" type="Boolean" default="false"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="usePagination" type="Boolean"/>
+    <aura:attribute name="locDataTabLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="currentPageNumber" type="Integer" default="1"/>
+    <aura:attribute name="pageSize" type="Integer" default="12"/>
+    <aura:attribute name="totalPages" type="Integer" default="false"/>
+    <aura:attribute name="pageList" type="List" default="false"/>
+    <aura:attribute name="chartFrequencyActive" type="Integer" default="-1"/>
+    <aura:attribute name="chartAllLocsSubTitle" type="String" default="All locations by month"/>
+    <aura:attribute name="pieChartSubTitle" type="String" default=" All locations (over the past year)"/>
+    <aura:attribute name="visibleAccountIds" type="List" default="false"/>
+    <aura:attribute name="defaultFreq" type="String" default="1YR"/>
+    <aura:attribute name="currentFreq" type="String" default="{!v.defaultFreq}"/>
+    <aura:attribute name="locationColumns" type="List"/>
+    <aura:attribute name="locShareSingleMonthData" type="Object"/>
+    <aura:attribute name="locHpdExprData" type="Object"/>
+    <aura:attribute name="sortedBy" type="String"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <aura:attribute name="locationMonthlyData" type="Object" access="public"/>
+    <aura:attribute name="locationMonthlyDataByFreq" type="Object" access="private"/>
+    <aura:attribute name="locationMonthlyEarliestDate" type="Date"/>
+    <aura:attribute name="locationMonthlyLatestDate" type="Date"/>
+    <aura:attribute name="selectedDate" type="Date"/>
+    <aura:attribute name="hpdWrapsByAccount" type="Object"/>
+    <aura:attribute name="hpdWrapsByAccountByFreq" type="Object"/>
+    <aura:attribute name="accountDataMap" type="Map"/>
+    <aura:attribute name="rawAccountData" type="Object"/>
+    <aura:attribute name="activeSections" type="List"/>
+    <aura:attribute name="dateSelectOptions" type="List"/>
+    <aura:attribute name="gridColumns" type="List" access="PRIVATE"/>
+    <aura:attribute name="gridData" type="Object" access="PRIVATE"/>
+    <aura:attribute name="gridExpandedRows" type="List" access="PRIVATE"/>
+    <aura:attribute name="numAccounts" type="Integer" default="0"/>
+    <aura:attribute name="maxChartWidth" type="Integer" default="300"/>
+    <aura:attribute name="pieChartLocShareTotal" type="Integer" default="0"/>
+    <aura:attribute name="areaChartLocShareTotal" type="Integer" default="0"/>
+    <aura:attribute name="accountIdAccountMap" type="Map"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    <!--<aura:handler name="change" value="{!v.locDataTabLoaded}" action="{!c.handleLocDataTabChange}"/>-->
+
+    <aura:registerEvent name="appEventChartLocShareTotalMonthSelected" type="c:Accel_ChartLocShareTotalMonthSelected"/>
+    <aura:registerEvent name="appEventChartLocShareTotalsLoaded" type="c:Accel_ChartLocShareTotalsLoaded"/>
+    <!--
+    Handle refresh of monthly data and update chart.
+     -->
+    <aura:handler event="c:Accel_ChartLocShareMthDataRefreshed" action="{!c.handleLocShareMthChartDataRefreshed}"/>
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div> <!-- aura:id="accelTop" -->
+        <lightning:spinner variant="brand" size="large" aura:id="homeLocationPerfSpinner"
+                           class="{!((v.showSpinner)? '': 'slds-hide')}"
+                           alternativeText="{!v.spinnerAltText}"/>
+        <div >
+
+            <div style="padding-bottom: 20px">
+                <c:Accel_YesterdayShare/>
+            </div>
+
+            <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters_large ">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 accel_e_mobile">
+                    <div class="accel-chart-shadow-drag  accel-chart-container">
+                        <div class="accel-echart-location-area" aura:id="echarts-location-area">
+                            <!-- echart injected here! -->
+                        </div>
+                        <div class="accel-chart-toolbar">
+                            <lightning:layout horizontalAlign="spread" multipleRows="true"
+                                              class="accel_mobile_center_align">
+                                <lightning:layoutItem class="accel_blank_mobile">
+
+                                </lightning:layoutItem>
+                                <lightning:layoutItem alignmentBump="left" class="accel_mobile_center_align">
+                                    <lightning:helptext iconVariant="inverse"
+                                                        content="Select a frequency to change the amount of months to go backward. Select the zoom handles to scan the timeline of the chart. Select the circular refresh icon to restore the zoom."/>
+                                    &nbsp;<!--@TODO use css for spacing-->
+                                </lightning:layoutItem>
+                                <lightning:layoutItem>
+                                    <div style="margin-right:5px">
+                                        <lightning:buttonGroup class="accel-chart-button-group">
+                                            <lightning:button class="slds-button slds-button_outline-brand btn-small"
+                                                              label="1 Yr" name="1YR"
+                                                              aura:id="1YR"
+                                                              onclick="{!c.handleAreaChartToolbarButtonClick}"/>
+                                            <lightning:button class="slds-button slds-button_outline-brand btn-small"
+                                                              label="YoY" name="YOY"
+                                                              aura:id="YOY"
+                                                              onclick="{!c.handleAreaChartToolbarButtonClick}"/>
+                                            <lightning:button class="slds-button slds-button_outline-brand btn-small"
+                                                              label="All" name="ALL"
+                                                              aura:id="ALL"
+                                                              onclick="{!c.handleAreaChartToolbarButtonClick}"/>
+                                        </lightning:buttonGroup>
+                                    </div>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- pie area box -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12  accel_e_mobile">
+                    <div class="accel-shadow-drag">
+                        <div style="min-height: 337px; background-color: white;"
+                             aura:id="echarts-pie-chart-sample"></div>
+
+                        <div class="accel-chart-toolbar">
+                            <lightning:layout horizontalAlign="spread" multipleRows="true">
+                                <lightning:layoutItem>
+                                    <!--<aura:if isTrue="{!v.displayDateDrillDownPl}">-->
+                                    <lightning:select aura:id="monthSelect" name="monthSelect" label="blah"
+                                                      variant="label-hidden"
+                                                      class="slds-form_inline accel-select-small"
+                                                      onchange="{!c.onChangeMonthSelect}"
+                                                      value="{!v.selectedDate}">
+                                        <option value="1YR" label="">1 Year</option>
+                                        <option value="null" label="">Lifetime</option>
+                                        <aura:iteration items="{!v.dateSelectOptions}" var="item">
+                                            <option label="{!item.label}" value="{!item.value}"
+                                                    selected="{!item.selected}">{!item.label}
+                                        </option>
+                                        </aura:iteration>
+                                    </lightning:select>
+                                    <!--</aura:if>-->
+                                </lightning:layoutItem>
+                                <lightning:layoutItem alignmentBump="right">
+                                    &nbsp;
+                                    <lightning:helptext iconVariant="inverse"
+                                                        content="Click a location slice for more machine related detail or use the drop down to change the timeline of data displayed."/>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+
+                        </div>
+                    </div>
+                </div>
+                <!-- table area box -->
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_6-of-12 accel_e_mobile">
+                    <div class="accel-shadow-drag">
+                        <c:Accel_CommunityAccountMonthTotals/>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div style="margin-top:15px;">
+            <!--  @TODO non-accordian single account view. -->
+            <aura:if isTrue="{!and(not(empty(v.locHpdExprData)),v.numAccounts > 0)}">
+                <lightning:tabset class="accel-tabset-default"
+                                  variant="scoped"
+                                  onselect="{!c.handleOnSelectPrimaryTabs}">
+                    <lightning:tab label="Location Detail" id="locDetailTab" class="accel-location-detail-tab"
+                                   iconName="utility:groups">
+                        <div>
+                            <c:Accel_CommunityLocHpdAndExprData
+                                    activeSections="{!v.activeSections}"
+                                    locHpdExprData="{!v.locHpdExprData}"
+                                    locDataTabLoaded="{!v.locDataTabLoaded}"/>
+                        </div>
+                    </lightning:tab>
+                    <aura:if isTrue="{!v.showLocationComparisonTab}">
+                        <lightning:tab label="Location Comparison" id="locComparisonTab"
+                                       class="accel-location-detail-tab"><!-- iconName="utility:groups"-->
+                            <c:Accel_CommunityLocationComparison visibleAccountIds="{!v.visibleAccountIds}"/>
+                        </lightning:tab>
+                    </aura:if>
+                </lightning:tabset>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

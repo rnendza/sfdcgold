@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community Async Job Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Async Job Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Setting Dev Name --></label>
+        <name>API_Setting_Dev_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The jobs batch size (if applicable) --></help>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The scheduled job name. --></help>
+        <label><!-- Job Name --></label>
+        <name>Job_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma delim --></help>
+        <label><!-- Job Results Email Addresses --></label>
+        <name>Job_Results_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of months to go back. (This is open ended based on the client needs ) --></help>
+        <label><!-- Months Back --></label>
+        <name>Months_Back__c</name>
+    </fields>
+    <fields>
+        <help><!-- The developer name of the record type to use for the scope (start method or main queueable query) --></help>
+        <label><!-- Scope Record Type Dev Names --></label>
+        <name>Scope_Record_Type_Dev_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

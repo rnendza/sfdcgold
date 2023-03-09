@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c$Id</field>
+    </columns>
+    <columns>
+        <field>Project__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c$Project_Status__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Project__c$LastModifiedBy</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Project__c$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>12/20/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$LastModifiedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Era Poshi-Horton</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project__c$Account__c.Type</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Duplicate Projects Created - 320</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Project_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c$LastActivityDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

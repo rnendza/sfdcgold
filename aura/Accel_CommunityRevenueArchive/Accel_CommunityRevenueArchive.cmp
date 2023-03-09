@@ -1,0 +1,76 @@
+<aura:component description="Revenue Archive"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityFilesController"
+                access="public">
+
+    <aura:attribute name="revenueFiles" type="List"/>
+    <aura:attribute name="otherFileList" type="List"/>
+    <aura:attribute name="selectedAccount" type="Object" />
+    <aura:attribute name="selectedAccountRevenueFiles" type="List"/>
+    <aura:attribute name="selectedAccountOtherFiles" type="List"/>
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <aura:attribute name="oldestDate" type="String" default="2019-01-01"/>
+    <aura:attribute name="maxDate" type="String" default="2020-12-31"/>
+    <aura:attribute name="startDate" type="String" />
+    <aura:attribute name="endDate" type="String" />
+    <aura:attribute name="selectedDate" type="String" />
+    <!-- https://accel-entertainment.monday.com/boards/286658657/ -->
+    <aura:attribute name="debugConsole" type="Boolean" default="false"
+                    description="Allows turning on and off of logging logic either here or via design attribute"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/ -->
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div>
+        <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters_large accselect">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                <lightning:combobox name="accountSelect" label="Location"
+                                    placeholder="Select a Location"
+                                    options="{! v.userAccountOptions }"
+                                    value="{!v.selectedAccountId}"
+                                    onchange="{! c.onChangeAccount }"/>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+            </div>
+        </div>
+        <div>
+            <lightning:tabset
+                              variant="scoped">
+                <lightning:tab label="Revenue Statements" id="revStatements" class="accel-revstatements-tab"
+                               iconName="utility:groups">
+                    <div class="slds-grid" style="margin-bottom: 20px">
+                        <div class="slds-col slds-size_1-of-5 accel-size slds-p-horizontal_x-small noLabel" style="height:50px;">
+                            <lightning:input aura:id="aStartDate" label="Date Range Start" type="date" autocomplete="off" name="startDate" placeholder="Start Date" value="{!v.startDate}" onchange="{!c.onDateUpdated}" min="{!v.oldestDate}" max="{!v.maxDate}" aria-autocomplete="none"/>
+                        </div>
+                        <div class="slds-col slds-size_1-of-5 accel-size slds-p-horizontal_x-small noLabel" style="height:50px;">
+                            <lightning:input aura:id="bStartDate" label ="Date Range End" type="date" autocomplete="off" name="endDate" placeholder="End Date" value="{!v.endDate}" onchange="{!c.onDateUpdated}"  min="{!v.oldestDate}" max="{!v.maxDate}" aria-autocomplete="none"/>
+                        </div>
+                    </div>
+                    <div class="revBody">
+                        <aura:iteration items="{!v.revenueFiles}" var="fileId">
+                            <lightning:fileCard fileId="{!fileId.Id}"/>
+                        </aura:iteration>
+                    </div>
+                </lightning:tab>
+                <lightning:tab label="Misc. Files" id="miscFiles" class="accel-miscfiles-tab"
+                               iconName="utility:groups">
+                    <div class="miscBody">
+                        <aura:iteration items="{!v.selectedAccountOtherFiles}" var="fileId">
+                            <lightning:fileCard fileId="{!fileId.ContentDocumentId}"/>
+                        </aura:iteration>
+                    </div>
+                </lightning:tab>
+            </lightning:tabset>
+        </div>
+</div>
+
+</aura:component>

@@ -1,0 +1,5 @@
+An opportunity that you submitted recently for executive approval has been denied.
+
+Opportunity: {!Opportunity.Link}
+DBA Name: {!Opportunity.Account}
+Denied Comments: {!ApprovalRequest.Comments}

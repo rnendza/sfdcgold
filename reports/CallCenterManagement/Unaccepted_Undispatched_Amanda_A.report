@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cases$CreatedDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Pending_Acceptance_Time__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Assigned_Resource__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$ServiceTerritory</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Status</field>
+    </columns>
+    <description>Service Appointments created yesterday or today that have not been dispatched to / accepted by the technician</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>None,Scheduled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$Pending_Acceptance_Time__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>5</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$ShippingState</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IL</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Amanda Aguero</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Unaccepted / Undispatched-Amanda A</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments_with_Work_Orders_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Cases.WorkOrders.ServiceAppointments$Pending_Acceptance_Time__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

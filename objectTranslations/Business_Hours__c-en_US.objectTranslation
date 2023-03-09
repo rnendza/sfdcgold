@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Business Hours</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Business Hours</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountID --></label>
+        <name>AccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Business Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Close Fx --></label>
+        <name>Close_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close --></label>
+        <name>Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day of Week --></label>
+        <name>Day_of_Week__c</name>
+        <picklistValues>
+            <masterLabel>Friday</masterLabel>
+            <translation><!-- Friday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monday</masterLabel>
+            <translation><!-- Monday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Saturday</masterLabel>
+            <translation><!-- Saturday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sunday</masterLabel>
+            <translation><!-- Sunday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thursday</masterLabel>
+            <translation><!-- Thursday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tuesday</masterLabel>
+            <translation><!-- Tuesday --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wednesday</masterLabel>
+            <translation><!-- Wednesday --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Day of Week Fx --></label>
+        <name>Day_of_Week_fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open/Closed --></label>
+        <name>Open_Closed__c</name>
+        <picklistValues>
+            <masterLabel>Closed on this day</masterLabel>
+            <translation><!-- Closed on this day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open on this day</masterLabel>
+            <translation><!-- Open on this day --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Open Fx --></label>
+        <name>Open_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open --></label>
+        <name>Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Business Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Business Hours --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Business Hours Not Rounded --></label>
+        <name>Total_Business_Hours_Not_Rounded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Weekly Business Hours Open --></label>
+        <name>Total_Business_Hours_Open_Acct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Business Hours --></label>
+        <name>Total_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Hours of Operation</masterLabel>
+            <translation><!-- Hours of Operation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pouring Hours</masterLabel>
+            <translation><!-- Pouring Hours --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for the Close Field. --></errorMessage>
+        <name>BH_Close_Conditionally_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for the Open Field. --></errorMessage>
+        <name>BH_Open_Conditionally_Required</name>
+    </validationRules>
+</CustomObjectTranslation>

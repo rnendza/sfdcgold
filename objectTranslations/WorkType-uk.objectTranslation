@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help>Розраховує кінцеву дату для дії призначення зустрічі шляхом додання хвилин до часу створення обслуговування відповідно до корпоративного договору про обслуговування.</help>
+        <label><!-- Due Date Offset --></label>
+        <name>FSL__Due_Date_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exact Appointments --></label>
+        <name>FSL__Exact_Appointments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live with WM --></label>
+        <name>Live_with_WM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repair Difficulty --></label>
+        <name>Repair_Difficulty__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot change the name of this Work Type because it is utilized in automation within the org. --></errorMessage>
+        <name>Cannot_Change_Service_App_Job_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit this field. Please contact your system administrator. --></errorMessage>
+        <name>Name_Modification_Sys_Admins_Only</name>
+    </validationRules>
+</CustomObjectTranslation>

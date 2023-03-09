@@ -1,0 +1,12 @@
+<design:component label="Home Location Summary">
+    <design:attribute name="maxAccounts" label="Max Accounts To Retrieve" description="The max amt of accounts to retrieve"
+                      default="5" min="1" max="50000" required="true"/>
+    <design:attribute name="debugConsole" label="Debug console messages" description="turn on browser console debugging"
+                      default="false" required="false"/>
+    <design:attribute name="usePagination" label="Use datatable pagination" description="Displays prev / next buttons for data tables if necessary"
+                      default="false" required="false"/>
+    <design:attribute name="displayDateDrillDownPl" label="Display Location Month Drill Down" description="Display the date drill down picklist above the cart. (future functionality)"
+                      default="false" required="false"/>
+    <design:attribute name="showLocationComparisonTab" label="Display The location comparison tab (beta)" description=""
+                      default="false" required="false"/>
+</design:component>

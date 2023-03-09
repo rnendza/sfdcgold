@@ -1,0 +1,1103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Hold_Per_Day</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>Header</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Header</fullName>
+        <fields>Asset__c</fields>
+        <fields>HPD__c</fields>
+        <fields>OwnerId</fields>
+        <label>Header</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Holds Per Day</relationshipLabel>
+        <relationshipName>Holds_Per_Day</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Played__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Played</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Won__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Won</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Holds Per Day</relationshipLabel>
+        <relationshipName>Holds_Per_Day</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Credits__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Credits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cycle__c</fullName>
+        <externalId>false</externalId>
+        <formula>Amount_Played__c  /  Funds_In__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cycle</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date_Bt_Most_Recent_HPD_and_12_Mths__c</fullName>
+        <description>Allows us to figure out TTM Averages in SOQL using the data available as opposed to calendar time.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ *  @TODO note how to account for days the location is not open?
+ *
+ *  Note 365 would not pull enough data (it would only pull 350) not sure why? some business rule I&apos;m missing?
+ *
+ *  IF RT is monthly (ie account)
+ *    Return True if the date on the hpd record is within 11 months of the most recent hpd record on the account. (not adding 12 seemed to return 13?
+ *  IF RT is daily (ie asset)
+ *    Return true if the date on the hpd record is within 380 days of the most recent hpd record on the account.
+ *
+ *  @see HpdSvc.class (Used in nightly aggregation of hpd data)
+ */
+IF(  LOWER(RecordType.Name) = &apos;monthly hpd&apos;,
+        Date__c &gt;= ADDMONTHS(  Account__r.Most_Recent_Hold_Per_Day__r.Date__c,-11),
+          Date__c &gt;= $CustomMetadata.HPD_Total_Setting__mdt.HPD_Asset_Aggregation.Last_Daily_HPD_Upload_Date__c  - 30)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Bt Most Recent HPD and 12 Mths</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Bt_Most_Recent_HPD_and_1_Mth__c</fullName>
+        <description>Allows us to figure out 4 week Averages in SOQL using the data available as opposed to calendar time.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ *  @TODO note how to account for days the location is not open?
+ *
+ *  IF RT is monthly (ie account)
+ *    Return True if the month and the year on the hpd record is the same as the most recent hpd date on the account
+ *  IF RT is daily (ie asset)
+ *    Return true if the date on the hpd record is within 30 days of the the custom meta data setting indicating the last time daily hpd data was uploaded
+ *
+ *  note: Used MONTH and YEAR comparison for Monthlies as it seemed to be grabbing 2 months otherwise. 
+ *  @see HpdSvc.class (Used in nightly aggregation of hpd data)
+ */
+IF(  LOWER(RecordType.Name) = &apos;monthly hpd&apos;,
+          AND( MONTH(Date__c) = MONTH(Account__r.Most_Recent_Hold_Per_Day__r.Date__c),
+               YEAR(Date__c) = YEAR(Account__r.Most_Recent_Hold_Per_Day__r.Date__c)),
+      Date__c &gt;= $CustomMetadata.HPD_Total_Setting__mdt.HPD_Asset_Aggregation.Last_Daily_HPD_Upload_Date__c  - 30)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Bt Most Recent HPD and 1 Mth</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Bt_Most_Recent_HPD_and_2_Mths__c</fullName>
+        <description>Allows us to figure out 8 week Averages in SOQL using the data available as opposed to calendar time.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ *  @TODO note how to account for days the location is not open?
+ *
+ *  IF RT is monthly (ie account)
+ *    Return True if the date on the hpd record is within 2 months of the most recent hpd record on the account.
+ *  IF RT is daily (ie asset)
+ *    Return true if the date on the hpd record is within 60 days of the most recent hpd record on the account.
+ *
+ *  @see HpdSvc.class (Used in nightly aggregation of hpd data)
+ */
+IF(  LOWER(RecordType.Name) = &apos;monthly hpd&apos;,
+        Date__c &gt;= ADDMONTHS(  Account__r.Most_Recent_Hold_Per_Day__r.Date__c,-1),
+           Date__c &gt;= $CustomMetadata.HPD_Total_Setting__mdt.HPD_Asset_Aggregation.Last_Daily_HPD_Upload_Date__c  - 60)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Bt Most Recent HPD and 2 Mths</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Bt_Most_Recent_HPD_and_3_Mths__c</fullName>
+        <description>Allows us to figure out 12 week Averages in SOQL using the data available as opposed to calendar time.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ *  @TODO note how to account for days the location is not open?
+ *
+ *  IF RT is monthly (ie account)
+ *    Return True if the date on the hpd record is within 3 months of the most recent hpd record on the account.
+ *  IF RT is daily (ie asset)
+ *    Return true if the date on the hpd record is within 90 days of the most recent hpd record on the account.
+ *
+ *  @see HpdSvc.class (Used in nightly aggregation of hpd data)
+ */
+IF(  LOWER(RecordType.Name) = &apos;monthly hpd&apos;,
+        Date__c &gt;= ADDMONTHS(  Account__r.Most_Recent_Hold_Per_Day__r.Date__c,-2),
+           Date__c &gt;= $CustomMetadata.HPD_Total_Setting__mdt.HPD_Asset_Aggregation.Last_Daily_HPD_Upload_Date__c  - 90)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Bt Most Recent HPD and 3 Mths</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_Bt_Most_Recent_HPD_and_6_Mths__c</fullName>
+        <externalId>false</externalId>
+        <formula>/**
+* @TODO note how to account for days the location is not open?
+*
+* IF RT is monthly (ie account)
+* Return True if the date on the hpd record is within 6 months of the most recent hpd record on the account.
+* IF RT is daily (ie asset)
+* Return true if the date on the hpd record is within 180 days of the most recent hpd record on the account.
+*
+* @see HpdSvc.class (Used in nightly aggregation of hpd data)
+*/
+IF( LOWER(RecordType.Name) = &apos;monthly hpd&apos;,
+Date__c &gt;= ADDMONTHS( Account__r.Most_Recent_Hold_Per_Day__r.Date__c,-5),
+Date__c &gt;= $CustomMetadata.HPD_Total_Setting__mdt.HPD_Asset_Aggregation.Last_Daily_HPD_Upload_Date__c - 180)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Date Bt Most Recent HPD and 6 Mths</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date_LTE_Acct_Most_Recent_HPD__c</fullName>
+        <description>Used to get around SFDCs lame inability to compare 2 fields in SOQL</description>
+        <externalId>false</externalId>
+        <formula>Date__c &lt;= Account__r.Most_Recent_Hold_Per_Day__r.Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Date on this HPD record is less then or equal to the date on the accounts most recent HPD.</inlineHelpText>
+        <label>Date LTE Acct Most Recent HPD</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Day_of_Week__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE( MOD( Date__c - DATE(1900, 1, 7), 7), 0, &quot;Sunday&quot;, 1, &quot;Monday&quot;, 2, &quot;Tuesday&quot;, 3,
+&quot;Wednesday&quot;, 4, &quot;Thursday&quot;, 5, &quot;Friday&quot;, 6, &quot;Saturday&quot;,&quot;Error&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day of Week</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Days_in_Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>/**
+ * Used in HPD Total aggregation for monthly hpds / location aggregation
+ *
+ */
+28 + MOD(( Month_n__c  + FLOOR(Month_n__c /8)), 2) + MOD(2, Month_n__c ) + 2 * FLOOR(1/Month_n__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Month</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Funds_In__c</fullName>
+        <externalId>false</externalId>
+        <label>Funds In</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Funds_Out__c</fullName>
+        <externalId>false</externalId>
+        <label>Funds Out</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Games_Played__c</fullName>
+        <externalId>false</externalId>
+        <label>Games Played</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD__c</fullName>
+        <externalId>false</externalId>
+        <label>HPD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Include_in_YOY__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( Month_n__c &lt; 10, TRUE, FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Include in YOY</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location_Share__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(Date__c &gt;= DATE(2020,7,1), ( Funds_In__c -  Funds_Out__c ) *0.3257, (IF(Date__c &gt;= DATE(2019,7,1), ( Funds_In__c -  Funds_Out__c ) *0.3314, ( Funds_In__c -  Funds_Out__c ) *0.3464)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Machine_Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Machine Location Type</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Machine_Model__c</fullName>
+        <externalId>false</externalId>
+        <label>Machine Model</label>
+        <length>50</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Metric_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Metric Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Statewide90DAverage</fullName>
+                    <default>false</default>
+                    <label>Statewide90DAverage</label>
+                </value>
+                <value>
+                    <fullName>Statewide90DAveragePrevYear</fullName>
+                    <default>false</default>
+                    <label>Statewide90DAveragePrevYear</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Month__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(Date__c), 1, &quot;January&quot;, 2, &quot;February&quot;, 3, &quot;March&quot;,  4, &quot;April&quot;,  5, &quot;May&quot;,  6, &quot;June&quot;, 7, &quot;July&quot;, 8, &quot;August&quot;, 9, &quot;September&quot;, 10, &quot;October&quot;, 11, &quot;November&quot;, 12, &quot;December&quot;, &quot;None&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Month_n__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASE(MONTH(Date__c), 1, 1, 2, 2, 3, 3,  4, 4,  5, 5,  6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11, 11, 12, 12, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Month(n)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Municipality_Share__c</fullName>
+        <externalId>false</externalId>
+        <label>Municipality Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NTI_Tax_Rate_30__c</fullName>
+        <externalId>false</externalId>
+        <label>NTI Tax Rate (30%)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>NTI__c</fullName>
+        <externalId>false</externalId>
+        <label>NTI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Net_Funds__c</fullName>
+        <externalId>false</externalId>
+        <formula>Funds_In__c - Funds_Out__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Funds</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Net_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Funds_In__c -  Funds_Out__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Net Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Net_Wager__c</fullName>
+        <externalId>false</externalId>
+        <label>Net Wager</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Portal_Dummy_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A demo account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A demo account.</inlineHelpText>
+        <label>Portal Dummy Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>State_Share__c</fullName>
+        <externalId>false</externalId>
+        <label>State Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VGT_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Hold Per Day</label>
+    <listViews>
+        <fullName>Ach_n_Lou_s</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Amount_Played__c</columns>
+        <columns>Amount_Won__c</columns>
+        <columns>Funds_In__c</columns>
+        <columns>Funds_Out__c</columns>
+        <columns>NTI__c</columns>
+        <columns>Location_Share__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>ACH-N-LOU&apos;S</value>
+        </filters>
+        <filters>
+            <field>Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <label>Ach-n-Lou’s</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>Asset__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_Aggregate</value>
+        </filters>
+        <filters>
+            <field>Date__c</field>
+            <operation>greaterThan</operation>
+            <value>3/1/2019</value>
+        </filters>
+        <label>All Daily HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Demo_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>Asset__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Portal_Dummy_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>All Demo HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Monthly_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <label>All Monthly HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Monthly_HPD_JAKES</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>JAKES</value>
+        </filters>
+        <label>All Monthly HPD JAKES</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_All_Monthly_2ND_STREET_SLOTS</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>ALL-INN</value>
+        </filters>
+        <label>Copy of All Monthly 2ND STREET SLOTS</label>
+    </listViews>
+    <listViews>
+        <fullName>Fox_Today</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Amount_Played__c</columns>
+        <columns>Amount_Won__c</columns>
+        <columns>NTI__c</columns>
+        <columns>Funds_In__c</columns>
+        <columns>Funds_Out__c</columns>
+        <columns>Net_Revenue__c</columns>
+        <columns>Location_Share__c</columns>
+        <columns>Date__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>State_Share__c</columns>
+        <columns>Asset__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>Gold Star</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>SLOTS OF FUN</value>
+        </filters>
+        <label>Gold Star</label>
+    </listViews>
+    <listViews>
+        <fullName>Nov_Daily_HPDs</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>Asset__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_HPD</value>
+        </filters>
+        <filters>
+            <field>Date__c</field>
+            <operation>greaterThan</operation>
+            <value>9/30/2018</value>
+        </filters>
+        <filters>
+            <field>Date__c</field>
+            <operation>lessThan</operation>
+            <value>12/1/2018</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>103 East</value>
+        </filters>
+        <label>OCT and NOV Daily HPDs</label>
+    </listViews>
+    <listViews>
+        <fullName>SPEEDWAY_7422_Monthly_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>SPEEDWAY #7422</value>
+        </filters>
+        <label>SPEEDWAY #7422 Monthly HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>Todays</fullName>
+        <columns>NAME</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Account__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Net_Funds__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_Aggregate</value>
+        </filters>
+        <label>Todays</label>
+    </listViews>
+    <listViews>
+        <fullName>Todays_Daily_Aggregate</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_Aggregate</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Todays Daily Aggregate</label>
+    </listViews>
+    <listViews>
+        <fullName>Todays_RAW</fullName>
+        <columns>NAME</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Account__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Net_Funds__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_HPD</value>
+        </filters>
+        <label>Todays - RAW</label>
+    </listViews>
+    <listViews>
+        <fullName>X160701700_Daily_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_HPD</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>Doghouse on Beach</value>
+        </filters>
+        <label>#160701700 Daily HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>X160701700_Monthly_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>VGT_Count__c</columns>
+        <columns>Month_n__c</columns>
+        <columns>Date__c</columns>
+        <columns>HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Monthly_HPD</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>Doghouse on Beach</value>
+        </filters>
+        <label>#160701700 Monthly HPD</label>
+    </listViews>
+    <listViews>
+        <fullName>X2ND_STREET_SLOTS_HPD</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Date__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Funds_In__c</columns>
+        <columns>Funds_Out__c</columns>
+        <columns>Account__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Account__c</field>
+            <operation>equals</operation>
+            <value>THE NOOK</value>
+        </filters>
+        <filters>
+            <field>Funds_In__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_HPD</value>
+        </filters>
+        <label>THE NOOK Zero Days</label>
+    </listViews>
+    <listViews>
+        <fullName>Yesterdays_Daily_Aggregate</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day__c.Daily_Aggregate</value>
+        </filters>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>Yesterdays Daily Aggregate</label>
+    </listViews>
+    <nameField>
+        <displayFormat>HPD-{000000000}</displayFormat>
+        <label>Hold Per Day Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Holds Per Day</pluralLabel>
+    <recordTypes>
+        <fullName>Daily_Aggregate</fullName>
+        <active>true</active>
+        <description>Rollup of machine raw values into single record per account</description>
+        <label>Daily Aggregate</label>
+        <picklistValues>
+            <picklist>Metric_Type__c</picklist>
+            <values>
+                <fullName>Statewide90DAverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statewide90DAveragePrevYear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Daily_HPD</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Header</compactLayoutAssignment>
+        <label>Daily HPD</label>
+        <picklistValues>
+            <picklist>Metric_Type__c</picklist>
+            <values>
+                <fullName>Statewide90DAverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statewide90DAveragePrevYear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Model_Metric</fullName>
+        <active>true</active>
+        <description>Rollup Information about a specific cabinet</description>
+        <label>Model Metric</label>
+        <picklistValues>
+            <picklist>Metric_Type__c</picklist>
+            <values>
+                <fullName>Statewide90DAverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statewide90DAveragePrevYear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Monthly_HPD</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Header</compactLayoutAssignment>
+        <label>Monthly HPD</label>
+        <picklistValues>
+            <picklist>Metric_Type__c</picklist>
+            <values>
+                <fullName>Statewide90DAverage</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Statewide90DAveragePrevYear</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>Date__c</customTabListAdditionalFields>
+        <customTabListAdditionalFields>RECORDTYPE</customTabListAdditionalFields>
+        <customTabListAdditionalFields>HPD__c</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>RECORDTYPE</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Date__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>VGT_Count__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>HPD__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Net_Funds__c</lookupDialogsAdditionalFields>
+        <searchFilterFields>RECORDTYPE</searchFilterFields>
+        <searchFilterFields>Date__c</searchFilterFields>
+        <searchFilterFields>Month__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

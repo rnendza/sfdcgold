@@ -1,0 +1,74 @@
+<!--
+  Account Assets LIST Display
+
+  This component will display VGT and RTS for the Account in  associated with the record page
+  in a Datatable as defined in the parent component properties.
+
+  @see accountAssets
+-->
+<template>
+    <div class="slds-box slds-box_border">
+        <div class="slds-p-around_small">
+            <lightning-card>
+                <h1 slot="title" class="no-wrap">
+                    <div class="slds-grid slds-wrap">
+                        <c-ui-card-title
+                                card-title={cardTitle}
+                                icon-name={cardIcon}
+                                icon-size="small">
+                        </c-ui-card-title>
+                    </div>
+                </h1>
+
+                <div>
+                    <div if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="3"
+                                type="list" columns="2">
+                        </c-ui-custom-stencil>
+                    </div>
+                    <div if:true={showAccountData}>
+                        <div class="" if:true={showDatatable}>
+                            <c-accel-datatable
+                                    key-field={assetDtKeyField}
+                                    total-records={totalRecords}
+                                    hide-checkbox-column="true"
+                                    max-row-selection={totalRecords}
+                                    show-pagination="false"
+                                    show-search-box="true"
+                                    show-total-summary-header="true"
+                                    default-height="100"
+                                    dt-classes={dtClasses}
+                                    records={records}
+                                    columns={columns}>
+                            </c-accel-datatable>
+                        </div>
+                        <div if:true={showNoMachineDataMsg}
+                             class="slds-p-bottom_medium slds-m-horizontal_x-small slds-p-top_small">
+                            <c-ui-scoped-notification
+                                    message={noMachineDataMsg}
+                                    icon-variant="inverse"
+                                    custom-icon-size="x-small"
+                                    icon-name="utility:warning"
+                                    custom-class="accel-notification_small accel-notification-warning_theme slds-theme_alert-texture"
+                                    theme="warning">
+                            </c-ui-scoped-notification>
+                        </div>
+                        <template if:true={showAccountData}>
+                            <div if:true={showAccountFields} class="slds-m-around_x-small">
+                                <lightning-record-form
+                                        if:true={showAccountFields}
+                                        record-id={accountId}
+                                        object-api-name="Account"
+                                        columns={numberOfRecordFormColumns}
+                                        fields={accountFieldsToDisplay}
+                                        mode="readonly">
+                                </lightning-record-form>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

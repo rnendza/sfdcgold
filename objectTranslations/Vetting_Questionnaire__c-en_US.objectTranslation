@@ -1,0 +1,1399 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Location Assessment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Location Assessments</value>
+    </caseValues>
+    <fields>
+        <label><!-- AE Patched Chair Quantity --></label>
+        <name>AE_Patched_Chair_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- AE Premium Chair Quantity --></label>
+        <name>AE_Premium_Chair__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Establishment Type --></label>
+        <name>Accel_Establishment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Location Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Age of Business --></label>
+        <name>Age_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>3-6 years</masterLabel>
+            <translation><!-- 3-6 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6+ years</masterLabel>
+            <translation><!-- 6+ years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;3 years</masterLabel>
+            <translation><!-- &lt;3 years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allows 6th VGT --></label>
+        <name>Allows_6th_VGT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are VGTs running the latest software? --></label>
+        <name>Are_VGTs_running_the_latest_software__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are VGTs set to avoid air vents? --></label>
+        <name>Are_VGTs_set_to_avoid_air_vents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are VGTs set to minimize glare? --></label>
+        <name>Are_VGTs_set_to_minimize_glare__c</name>
+    </fields>
+    <fields>
+        <label><!-- Are VGTs set to minimize glare &amp; vents? --></label>
+        <name>Are_VGTs_set_to_minimize_glare_vents__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Are the VGT fans clean? --></label>
+        <name>Are_the_VGT_fans_clean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Completed Date --></label>
+        <name>Assessment_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Notes --></label>
+        <name>Assessment_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment Status --></label>
+        <name>Assessment_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Complete</masterLabel>
+            <translation><!-- Partially Complete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assessment Type --></label>
+        <name>Assessment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Location</masterLabel>
+            <translation><!-- Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signage Audit</masterLabel>
+            <translation><!-- Location Signage Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity</masterLabel>
+            <translation><!-- Opportunity --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Average TTM HPD of 5 nearest locations --></label>
+        <name>Average_TTM_HPD_of_5_nearest_locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average age of customers? --></label>
+        <name>Average_age_of_customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours Validated --></label>
+        <name>Business_Hours_Validated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Only --></label>
+        <name>Cash_Only__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Characteristics --></label>
+        <name>Characteristics__c</name>
+        <picklistValues>
+            <masterLabel>Bar</masterLabel>
+            <translation><!-- Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Beer Garden</masterLabel>
+            <translation><!-- Beer Garden --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Food</masterLabel>
+            <translation><!-- Food --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Service Bar</masterLabel>
+            <translation><!-- Full Service Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minors</masterLabel>
+            <translation><!-- Minors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minors allowed occasionally</masterLabel>
+            <translation><!-- Minors allowed occasionally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Minors</masterLabel>
+            <translation><!-- No Minors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Party Room</masterLabel>
+            <translation><!-- Party Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Gaming Room</masterLabel>
+            <translation><!-- Separate Gaming Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Smoking Room</masterLabel>
+            <translation><!-- Smoking Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strip Mall</masterLabel>
+            <translation><!-- Strip Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Web Page</masterLabel>
+            <translation><!-- Web Page --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compare to nearest successful business --></label>
+        <name>Compare_to_nearest_successful_business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO pulled out --></label>
+        <name>Competitor_TO_pulled_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 1 --></label>
+        <name>Competitor_VGT_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 2 --></label>
+        <name>Competitor_VGT_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 3 --></label>
+        <name>Competitor_VGT_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 4 --></label>
+        <name>Competitor_VGT_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 5 --></label>
+        <name>Competitor_VGT_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Fields Count --></label>
+        <name>Completed_Fields_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost per Entree --></label>
+        <name>Cost_Entree__c</name>
+        <picklistValues>
+            <masterLabel>$10-$20</masterLabel>
+            <translation><!-- $10-$20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;$10</masterLabel>
+            <translation><!-- &lt;$10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;$20</masterLabel>
+            <translation><!-- &gt;$20 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Processor --></label>
+        <name>Credit_Card_Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currently has VGTs on site --></label>
+        <name>Currently_has_VGTs_on_site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Chair Quantity --></label>
+        <name>Custom_Chair_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Gaming Spacers Quantity --></label>
+        <name>Custom_Gaming_Spacers_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe current gaming area layout --></label>
+        <name>Describe_current_gaming_area_layout__c</name>
+    </fields>
+    <fields>
+        <help><!-- apartments, single family homes --></help>
+        <label><!-- Describe general housing in that area --></label>
+        <name>Describe_general_housing_in_that_area__c</name>
+    </fields>
+    <fields>
+        <help><!-- rural, small town, suburban, urban --></help>
+        <label><!-- Describe the general surroundings? --></label>
+        <name>Describe_the_general_surroundings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do they have a full service bar? --></label>
+        <name>Do_they_have_a_full_service_bar__c</name>
+    </fields>
+    <fields>
+        <help><!-- live music, events, bar bingo, trivia --></help>
+        <label><!-- Do they have other entertainment? --></label>
+        <name>Do_they_have_other_entertainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does bartender have easy access to area? --></label>
+        <name>Does_bartender_have_easy_access_to_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does competitor have a loyalty program? --></label>
+        <name>Does_competitor_have_a_loyalty_program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does the owner have other locations? --></label>
+        <name>Does_the_owner_have_other_locations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street, Front Lot, Back Lot, Meter --></help>
+        <label><!-- Establishment parking conditions --></label>
+        <name>Establishment_parking_conditions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Time to Go Live? --></label>
+        <name>Estimated_Time_to_Go_Live__c</name>
+        <picklistValues>
+            <masterLabel>0-6 months</masterLabel>
+            <translation><!-- 0-6 months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18+ months</masterLabel>
+            <translation><!-- 18+ months --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6-12 months</masterLabel>
+            <translation><!-- 6-12 months --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Existing Marketing/Advert Strategies --></label>
+        <name>Existing_Marketing_Advert_Strategies__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instagram</masterLabel>
+            <translation><!-- Instagram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yelp</masterLabel>
+            <translation><!-- Yelp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing/Proposed Gaming Area Segregaton --></label>
+        <name>Existing_Proposed_Gaming_Area_Segregaton__c</name>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None (open area)</masterLabel>
+            <translation><!-- None (open area) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Room</masterLabel>
+            <translation><!-- Separate Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stanchions</masterLabel>
+            <translation><!-- Stanchions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Partition Wall</masterLabel>
+            <translation><!-- Temporary Partition Wall --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expectations of change from Accel --></label>
+        <name>Expectations_of_change_from_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain the business model? --></label>
+        <name>Explain_the_business_model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Explain why location doesn&apos;t have gaming --></label>
+        <name>Explain_why_location_doesn_t_have_gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook Rating --></label>
+        <name>Facebook_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming locations in walking distance? --></label>
+        <name>Gaming_locations_in_walking_distance__c</name>
+        <picklistValues>
+            <masterLabel>1 Block</masterLabel>
+            <translation><!-- 1 Block --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Blocks</masterLabel>
+            <translation><!-- 2 Blocks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Blocks</masterLabel>
+            <translation><!-- 3 Blocks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 3 Blocks</masterLabel>
+            <translation><!-- &gt; 3 Blocks --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General Surroundings --></label>
+        <name>General_Surroundings__c</name>
+        <picklistValues>
+            <masterLabel>Rural</masterLabel>
+            <translation><!-- Rural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Town</masterLabel>
+            <translation><!-- Small Town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suburban</masterLabel>
+            <translation><!-- Suburban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urban</masterLabel>
+            <translation><!-- Urban --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Google Rating --></label>
+        <name>Google_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- How many VGTs does location have? --></label>
+        <name>How_many_VGTs_does_location_have__c</name>
+    </fields>
+    <fields>
+        <label><!-- How many patrons were there? --></label>
+        <name>How_many_patrons__c</name>
+    </fields>
+    <fields>
+        <label><!-- How might location improve revenue? --></label>
+        <name>How_might_location_improve_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- If other chair, please specify --></label>
+        <name>If_other_chair__c</name>
+    </fields>
+    <fields>
+        <label><!-- If yes, which location(s)? --></label>
+        <name>If_yes_which_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is gaming are clean and clutter free? --></label>
+        <name>Is_gaming_are_clean_and_clutter_free__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is the gaming area clutter free? --></label>
+        <name>Is_the_gaming_area_clutter_free__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is the owner interested in 6th machine? --></label>
+        <name>Is_the_owner_interested_in_6th_machine__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is the redemption device in gaming area? --></label>
+        <name>Is_the_redemption_device_in_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is there direct line of sight? --></label>
+        <name>Is_there_direct_line_of_sight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is there gaming marketing outside? --></label>
+        <name>Is_there_gaming_marketing_outside__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Status Change Date Time --></label>
+        <name>Last_Status_Change_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- List nearest 3 gaming locations --></label>
+        <name>List_nearest_3_gaming_locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Size (Sq. Ft.) --></label>
+        <name>Location_Size__c</name>
+        <picklistValues>
+            <masterLabel>2k - 4k</masterLabel>
+            <translation><!-- 2k - 4k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 2k</masterLabel>
+            <translation><!-- &lt; 2k --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 4k</masterLabel>
+            <translation><!-- &gt; 4k --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Majestic AE Gaming Stool Quantity --></label>
+        <name>Majestic_AE_Gaming_Stool_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Managements plan to improve weaknesses? --></label>
+        <name>Managements_plan_to_improve_weaknesses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes the user indicated this assessment is complete. --></help>
+        <label><!-- Mark As Completed --></label>
+        <name>Marked_Complete__c</name>
+    </fields>
+    <fields>
+        <help><!-- Look at Facebook, Yelp, Twitter, etc. --></help>
+        <label><!-- What are competitor marketing strategies --></label>
+        <name>Marketing_advertising_offered_by_comp_TO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please include photos (attach them to the opportunity) --></help>
+        <label><!-- Marketing &amp; advertising recommendations --></label>
+        <name>Marketing_advertising_recommendations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Media Presence --></label>
+        <name>Media_Presence__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google</masterLabel>
+            <translation><!-- Google --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Newspaper</masterLabel>
+            <translation><!-- Newspaper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Radio</masterLabel>
+            <translation><!-- Radio --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yelp</masterLabel>
+            <translation><!-- Yelp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Minimum 72 Hours of Operation? --></label>
+        <name>Minimum_72_Hours_of_Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Person Submitting --></label>
+        <name>Name_of_Person_Submitting__c</name>
+        <relationshipLabel><!-- Location Assessments (Name of Person Submitting) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name of nearest bar with gaming? --></label>
+        <name>Name_of_nearest_bar_with_gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Corporation --></label>
+        <name>New_Corporation__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Owners --></label>
+        <name>New_Owners__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Terminals --></label>
+        <name>Number_of_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Chair Quantity --></label>
+        <name>Other_Chair_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- POS System --></label>
+        <name>POS_System__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Parking Conditions --></label>
+        <name>Parking_Conditions__c</name>
+        <picklistValues>
+            <masterLabel>Back Lot</masterLabel>
+            <translation><!-- Back Lot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Front Lot</masterLabel>
+            <translation><!-- Front Lot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Street</masterLabel>
+            <translation><!-- Street --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parking --></label>
+        <name>Parking__c</name>
+        <picklistValues>
+            <masterLabel>On-site parking lot (7 spaces or below)</masterLabel>
+            <translation><!-- On-site parking lot (7 spaces or below) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-site parking lot (above 7 spaces)</masterLabel>
+            <translation><!-- On-site parking lot (above 7 spaces) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Street</masterLabel>
+            <translation><!-- Street --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Patron&apos;s under 21 allowed to enter? --></label>
+        <name>Patron_s_under_21_allowed_to_enter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Percentage Completed --></label>
+        <name>Percentage_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement of gaming area --></label>
+        <name>Placement_of_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Placement of proposed gaming area? --></label>
+        <name>Placement_of_proposed_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Predicted TTM based on surroundings --></label>
+        <name>Predicted_TTM_based_on_surroundings__c</name>
+    </fields>
+    <fields>
+        <help><!-- For existing locations, were the locations with another TO? --></help>
+        <label><!-- Previous Gaming Experience --></label>
+        <name>Previous_Gaming_Experience__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Future Changes to Location --></label>
+        <name>Proposed_Future_Changes_Location__c</name>
+        <picklistValues>
+            <masterLabel>Change of entertainment</masterLabel>
+            <translation><!-- Change of entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of food/drink</masterLabel>
+            <translation><!-- Change of food/drink --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Construction</masterLabel>
+            <translation><!-- New Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Number of VGTs --></label>
+        <name>Proposed_Number_of_VGTs__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed gaming area in relation to bar --></label>
+        <name>Proposed_gaming_area_in_relation_to_bar__c</name>
+        <picklistValues>
+            <masterLabel>1-3 Feet</masterLabel>
+            <translation><!-- 1-3 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-6 Feet</masterLabel>
+            <translation><!-- 4-6 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7-9 Feet</masterLabel>
+            <translation><!-- 7-9 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 9 Feet</masterLabel>
+            <translation><!-- &gt; 9 Feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed gaming area segragation --></label>
+        <name>Proposed_gaming_area_segragation__c</name>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Room</masterLabel>
+            <translation><!-- Separate Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stanchions</masterLabel>
+            <translation><!-- Stanchions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Bathroom --></label>
+        <name>ProximityToBathroom__c</name>
+        <picklistValues>
+            <masterLabel>5 to 10 feet</masterLabel>
+            <translation><!-- 5 to 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Main Entrance --></label>
+        <name>ProximityToMainEntrance__c</name>
+        <picklistValues>
+            <masterLabel>5 to 10 feet</masterLabel>
+            <translation><!-- 5 to 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Proximity to Main Entrance</masterLabel>
+            <translation><!-- Proximity to Main Entrance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Bathroom (ft) --></label>
+        <name>Proximity_to_Bathroom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Main Entrance (ft) --></label>
+        <name>Proximity_to_Main_Entrance_ft__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the location is a c-store or truck stop. please enter a mileage value here. --></help>
+        <label><!-- Proximity to closest highway exit --></label>
+        <name>Proximity_to_closest_highway_exit_cstore__c</name>
+    </fields>
+    <fields>
+        <help><!-- If not a c-store or truck stop! --></help>
+        <label><!-- Proximity to closest main street --></label>
+        <name>Proximity_to_closest_main_street__c</name>
+        <picklistValues>
+            <masterLabel>1-3 mi</masterLabel>
+            <translation><!-- 1-3 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5 mi</masterLabel>
+            <translation><!-- 3-5 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 1 mi</masterLabel>
+            <translation><!-- &lt; 1 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 5 mi</masterLabel>
+            <translation><!-- &gt; 5 mi --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Recommendations for increasing revenue? --></label>
+        <name>Recommendations_for_increasing_revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption device needs relocation? --></label>
+        <name>Redemption_device_needs_relocation__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Retail Area --></label>
+        <name>Retail_Area__c</name>
+        <picklistValues>
+            <masterLabel>Downtown</masterLabel>
+            <translation><!-- Downtown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strip Mall</masterLabel>
+            <translation><!-- Strip Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thoroughfare</masterLabel>
+            <translation><!-- Thoroughfare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Server has easy access to players? --></label>
+        <name>Server_has_easy_access_to_players__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size of the Gaming Area --></label>
+        <name>Size_of_the_Gaming_Area__c</name>
+        <picklistValues>
+            <masterLabel>Average (800-1200 sq ft)</masterLabel>
+            <translation><!-- Average (800-1200 sq ft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large (1200+ sq ft)</masterLabel>
+            <translation><!-- Large (1200+ sq ft) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small (Less than 800 sq ft)</masterLabel>
+            <translation><!-- Small (Less than 800 sq ft) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sources of Foot Traffic --></label>
+        <name>Sources_Foot_Traffic__c</name>
+        <picklistValues>
+            <masterLabel>Commercial (office)</masterLabel>
+            <translation><!-- Commercial (office) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation (main route – highway, busy thoroughfare)</masterLabel>
+            <translation><!-- Transportation (main route – highway, busy thoroughfare) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special relationships to be aware of --></label>
+        <name>Special_relationships_to_be_aware_of__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Style of Food --></label>
+        <name>Specific_Style_Food__c</name>
+        <picklistValues>
+            <masterLabel>Bar &amp; Grill</masterLabel>
+            <translation><!-- Bar &amp; Grill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Café</masterLabel>
+            <translation><!-- Café --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese</masterLabel>
+            <translation><!-- Chinese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diner</masterLabel>
+            <translation><!-- Diner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Family Style</masterLabel>
+            <translation><!-- Family Style --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fast Casual (Panera)</masterLabel>
+            <translation><!-- Fast Casual (Panera) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fast Food (McDonalds)</masterLabel>
+            <translation><!-- Fast Food (McDonalds) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mexican</masterLabel>
+            <translation><!-- Mexican --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Premium casual (TGIF)</masterLabel>
+            <translation><!-- Premium casual (TGIF) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pub</masterLabel>
+            <translation><!-- Pub --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard AE Gaming Stool Quantity --></label>
+        <name>Standard_AE_Gaming_Stool_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Steel Drink Cart Spacer Quantity --></label>
+        <name>Steel_Drink_Cart_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Style of Food --></label>
+        <name>Style_Food__c</name>
+        <picklistValues>
+            <masterLabel>American</masterLabel>
+            <translation><!-- American --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ethnic</masterLabel>
+            <translation><!-- Ethnic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Support the placement of gaming area? --></label>
+        <name>Support_the_placement_of_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Surrounding food &amp; beverage competitors --></label>
+        <name>Surrounding_food_beverage_competitors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Indoor Signs --></label>
+        <name>Total_Indoor_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Non-Compliant Indoor Signs --></label>
+        <name>Total_Non_Compliant_Indoor_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Non-Compliant Outdoor Signs --></label>
+        <name>Total_Non_Compliant_Outdoor_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Outdoor Signs --></label>
+        <name>Total_Outdoor_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Entertainment --></label>
+        <name>Type_Entertainment__c</name>
+        <picklistValues>
+            <masterLabel>Bingo</masterLabel>
+            <translation><!-- Bingo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Karaoke</masterLabel>
+            <translation><!-- Karaoke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live Music</masterLabel>
+            <translation><!-- Live Music --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trivia</masterLabel>
+            <translation><!-- Trivia --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of POS System --></label>
+        <name>Type_of_POS_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Segregation for Gaming Area --></label>
+        <name>Type_of_Segregation_for_Gaming_Area__c</name>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Room</masterLabel>
+            <translation><!-- Separate Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stanchions</masterLabel>
+            <translation><!-- Stanchions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Type of Services in Gaming Area --></label>
+        <name>Type_of_Services_in_Gaming_Area__c</name>
+        <picklistValues>
+            <masterLabel>Beverage Station</masterLabel>
+            <translation><!-- Beverage Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snack Station</masterLabel>
+            <translation><!-- Snack Station --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of flooring in gaming area? --></label>
+        <name>Type_of_flooring_in_gaming_area__c</name>
+        <picklistValues>
+            <masterLabel>Carpet</masterLabel>
+            <translation><!-- Carpet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hardwood</masterLabel>
+            <translation><!-- Hardwood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Laminate</masterLabel>
+            <translation><!-- Laminate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile</masterLabel>
+            <translation><!-- Tile --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User That Changed Status --></label>
+        <name>User_That_Changed_Status__c</name>
+        <relationshipLabel><!-- Location Assessments (User That Changed Status) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT Notes --></label>
+        <name>VGT_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Vetting_Questionnaire_RelatedList__c</name>
+        <relationshipLabel><!-- Location Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses of current location? --></label>
+        <name>Weaknesses_of_current_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weekly Hours of Operation --></label>
+        <name>Weekly_Hours_of_Operation__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are competitor marketing strategies --></label>
+        <name>What_are_competitor_marketing_strategies__c</name>
+        <picklistValues>
+            <masterLabel>Facebook</masterLabel>
+            <translation><!-- Facebook --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Instagram</masterLabel>
+            <translation><!-- Instagram --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twitter</masterLabel>
+            <translation><!-- Twitter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yelp</masterLabel>
+            <translation><!-- Yelp --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- What day and time did you visit? --></label>
+        <name>What_day_and_time_did_you_visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- What does their food menu consist of? --></label>
+        <name>What_does_their_food_menu_consist_of__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the estimated HPD? --></label>
+        <name>What_is_the_estimated_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the probability of going live? --></label>
+        <name>What_is_the_probability_of_going_live__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is their performance? --></label>
+        <name>What_is_their_performance__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is your recommended alternative? --></label>
+        <name>What_is_your_recommended_alternative__c</name>
+    </fields>
+    <fields>
+        <help><!-- radio, newspaper, magazine clip, etc. --></help>
+        <label><!-- What type of advertising is being used? --></label>
+        <name>What_type_of_advertising_is_being_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- What type of businesses are around? --></label>
+        <name>What_type_of_businesses_are_around__c</name>
+    </fields>
+    <fields>
+        <help><!-- signs, posters, window decals, placemats, etc. --></help>
+        <label><!-- What type of marketing is used there? --></label>
+        <name>What_type_of_marketing_is_being_used__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where is gaming area in relation to bar? --></label>
+        <name>Where_is_gaming_area_in_relation_to_bar__c</name>
+        <picklistValues>
+            <masterLabel>1-3 Feet</masterLabel>
+            <translation><!-- 1-3 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4-6 Feet</masterLabel>
+            <translation><!-- 4-6 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7-9 Feet</masterLabel>
+            <translation><!-- 7-9 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 9 Feet</masterLabel>
+            <translation><!-- &gt; 9 Feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Close to VGTs, Furthest from the door, etc. --></help>
+        <label><!-- Where is redemption machine located? --></label>
+        <name>Where_is_redemption_machine_located__c</name>
+    </fields>
+    <fields>
+        <help><!-- Strip Mall, Off Beaten Path, Downtown --></help>
+        <label><!-- Where is the establishment located? --></label>
+        <name>Where_is_the_establishment_located__c</name>
+    </fields>
+    <fields>
+        <label><!-- Who manages day-to-day activity? --></label>
+        <name>Who_manages_day_to_day_activity__c</name>
+        <picklistValues>
+            <masterLabel>Employee (non-partner, including both manager and clerk- if there is only one clerk)</masterLabel>
+            <translation><!-- Employee (non-partner, including both manager and clerk- if there is only one clerk) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner</masterLabel>
+            <translation><!-- Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner (investor, owner&apos;s family member, etc.)</masterLabel>
+            <translation><!-- Partner (investor, owner&apos;s family member, etc.) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who services the gaming area? --></label>
+        <name>Who_services_the_gaming_area__c</name>
+        <picklistValues>
+            <masterLabel>Bartender</masterLabel>
+            <translation><!-- Bartender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wait Staff</masterLabel>
+            <translation><!-- Wait Staff --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who will service the gaming area? --></label>
+        <name>Who_will_service_the_gaming_area__c</name>
+        <picklistValues>
+            <masterLabel>Bartender</masterLabel>
+            <translation><!-- Bartender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wait Staff</masterLabel>
+            <translation><!-- Wait Staff --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why do they want to leave current TO --></label>
+        <name>Why_do_they_want_to_leave_current_TO__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select all that apply --></help>
+        <label><!-- Why doesn&apos;t location have gaming? --></label>
+        <name>Why_doesnt_location_have_gaming__c</name>
+        <picklistValues>
+            <masterLabel>Competitor TO Pulled Out</masterLabel>
+            <translation><!-- Competitor TO Pulled Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Gaming License</masterLabel>
+            <translation><!-- Denied Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Corporation</masterLabel>
+            <translation><!-- New Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Owners</masterLabel>
+            <translation><!-- New Owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out</masterLabel>
+            <translation><!-- Opt Out --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why has establishment never had gaming? --></label>
+        <name>Why_has_establishment_never_had_gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why might target locations improve? --></label>
+        <name>Why_might_target_locations_improve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Will gaming area need addt&apos;l electric? --></label>
+        <name>Will_gaming_area_need_addt_l_electric__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Will gaming area need to be relocated? --></label>
+        <name>Will_gaming_area_need_to_be_located__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Will redemption be in gaming area? --></label>
+        <name>Will_redemption_be_in_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Will the 6th Machine Fit? --></label>
+        <name>Will_the_6th_Machine_Fit__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- 10&quot; Spacer Quantity --></label>
+        <name>X10_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- 12&quot; Spacer Quantity --></label>
+        <name>X12_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- 16&quot; Spacer Quantity --></label>
+        <name>X16_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- 3&quot; Spacer Quantity --></label>
+        <name>X3_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- 6&quot; Spacer Quantity --></label>
+        <name>X6_Spacer_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yelp Rating --></label>
+        <name>Yelp_Rating__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yelp --></label>
+        <name>Yelp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last years total food/beverage sales? --></label>
+        <name>hat_was_their_total_food_beverage_sales__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Competitor Opportunity Assessment --></label>
+        <name>Competitor_Location_Assessment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Legacy Vetting Questionnaire --></label>
+        <name>Legacy_Vetting_Questionnaire</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Live Competitor Location --></label>
+        <name>Live_Competitor_Location</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organic Account Assessment --></label>
+        <name>Location_Specific_Organic_Assessment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Marketing Assessment --></label>
+        <name>Marketing_Assessment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organic Opportunity Assessment --></label>
+        <name>Organic_Location_Assessment</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please supply information about the owner&apos;s other locations. --></errorMessage>
+        <name>Other_Locations_Must_Be_Populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please provide details about the other chairs under the field &quot;If other chair, please specify&quot;. --></errorMessage>
+        <name>Type_of_Chairs_Must_Be_Specified</name>
+    </validationRules>
+</CustomObjectTranslation>

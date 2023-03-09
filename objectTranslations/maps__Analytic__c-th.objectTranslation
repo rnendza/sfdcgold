@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps Analytic</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date/Time --></label>
+        <name>maps__DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Location --></label>
+        <name>maps__FavoriteLocation__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Layer Name --></label>
+        <name>maps__LayerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Layer --></label>
+        <name>maps__MapsLayer__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saved Query --></label>
+        <name>maps__SavedQuery__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Shape Layer --></label>
+        <name>maps__ShapeLayer__c</name>
+        <relationshipLabel><!-- Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub Type --></label>
+        <name>maps__SubType__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>เลเยอร์ข้อมูล</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Favorite Location</masterLabel>
+            <translation>สถานที่โปรด</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marker Layer</masterLabel>
+            <translation>เลเยอร์ตัวทำเครื่องหมาย</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shape Layer</masterLabel>
+            <translation>สร้างเลเยอร์</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Plot Layer</masterLabel>
+            <translation>พล็อตเลเยอร์</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>การวิเคราะห์ Maps</nameFieldLabel>
+</CustomObjectTranslation>

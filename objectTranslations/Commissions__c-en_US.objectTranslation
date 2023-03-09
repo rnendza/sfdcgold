@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Commissions</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Commissions</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel VGT Go Live Date --></label>
+        <name>Accel_VGT_Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Commissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Record Live Date --></label>
+        <name>Original_Record_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Timeframe --></label>
+        <name>Payment_Timeframe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person --></label>
+        <name>Person__c</name>
+        <relationshipLabel><!-- Commissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- 12 Month Commission Split --></label>
+        <name>X12_Month_Commission__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Go Live RM Commissions --></label>
+        <name>Go_Live_RM_Commissions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- 12 Month RM Commissions --></label>
+        <name>X12_Month_RM_Commissions</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,21 @@
+.THIS .accel_login_container {
+    max-width: 1920px!important;
+    margin-left: auto;
+    margin-right: auto;
+}
+.THIS .html {
+    height: 100%;
+}
+
+.THIS .body {
+    height: 100%;
+    display: flex;
+}
+
+.THIS .Content {
+    flex-grow: 1;
+}
+
+.THIS .Sidebar {
+    flex-shrink: 0;
+}

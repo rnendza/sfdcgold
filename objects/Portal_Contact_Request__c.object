@@ -1,0 +1,961 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Portal_Contact_Request_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Portal_Contact_Request_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>PCR_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>PCR_Compact_Layout</fullName>
+        <fields>Full_Name__c</fields>
+        <fields>DBA_Name_Direct_Relationship__c</fields>
+        <fields>Account_Type__c</fields>
+        <fields>Accel_VGT_Live_Date__c</fields>
+        <fields>Relationship_Manager__c</fields>
+        <fields>Regional_Manager__c</fields>
+        <fields>OwnerId</fields>
+        <label>PCR Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Users submit requests for the creation of a Portal Contact and a Portal User record.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Accel_VGT_Live_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>DBA_Name_Direct_Relationship__r.Accel_VGT_Live_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Accel VGT Live Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Account_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Text(DBA_Name_Direct_Relationship__r.Type)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_10_RM__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Account 10 RM</label>
+        <length>55</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_10__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 10</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Additional Account 10)</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_6_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Additional_Account_6__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Additional_Account_6__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 6 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_6__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 6</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Additional Account 6)</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_7_RM__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Account 7 RM</label>
+        <length>55</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_7__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 7</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Additional Account 7)</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_8_RM__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Account 8 RM</label>
+        <length>55</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_8__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 8</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Additional Account 8)</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_9_RM__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Account 9 RM</label>
+        <length>55</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Account_9__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 9</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Additional Account 9)</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Information</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Alias__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT( First_Name__c , 1) + LEFT( Last_Name__c , 4)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Alias</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approval_Action__c</fullName>
+        <description>The only users who should have Editing rights to this field are users who own the process for PCR. Changes to field initiates automation that results in the creation of a Contact record and a Community User record.</description>
+        <externalId>false</externalId>
+        <label>Approval Action</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Rejected</fullName>
+                    <default>false</default>
+                    <label>Rejected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approved_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved By</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>DBA_Name_Direct_Relationship__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>lookup to Account</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Which one is the primary related account?</inlineHelpText>
+        <label>DBA Name (Direct Relationship)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests</relationshipLabel>
+        <relationshipName>Portal_Contact_Requests</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Does_Key_Gaming_Decision_Maker_Approve__c</fullName>
+        <description>validated/required if Is Contact Key Gaming Decision Maker? field is No</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Does gaming decision maker approve this contact having access to their location(s) portal data?</inlineHelpText>
+        <label>Does Key Gaming Decision Maker Approve?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Email__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>false</externalId>
+        <label>Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>First_Name__c</fullName>
+        <description>used to populate the first name of the contact that will be created from the PCR record</description>
+        <externalId>false</externalId>
+        <label>First Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Full_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>First_Name__c &amp;&quot; &quot;&amp; Last_Name__c &amp;&quot; Portal&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Full Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Contact_Key_Gaming_Decision_Maker__c</fullName>
+        <description>required at page layout</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Is this contact on the gaming application and/or liquor license, or are they a Mail Merge Recipient?</inlineHelpText>
+        <label>Is Contact Key Gaming Decision Maker?</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Last_Name__c</fullName>
+        <description>will be used to populate the last name of the contact that will be created from the PCR record upon approval</description>
+        <externalId>false</externalId>
+        <label>Last Name</label>
+        <length>20</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Support_Ticketing_System__c</fullName>
+        <defaultValue>&quot;PortalSupport@accelentertainment.com&quot;</defaultValue>
+        <description>This fields holds the email address that is used to notify Portal Support/Salesforce team (currently monday.com) via the email alert when the record is created. Not on any page layouts or reports</description>
+        <externalId>false</externalId>
+        <label>Portal Support Ticketing System</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Proposed_Meeting_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposed Meeting Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Reason_for_Rejection__c</fullName>
+        <description>Population of this field is enforced via a validation rule based on Approval Action = Rejected</description>
+        <externalId>false</externalId>
+        <label>Reason for Rejection</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Regional_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>DBA_Name_Direct_Relationship__r.Regional_Manager__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Regional Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rejected_By__c</fullName>
+        <externalId>false</externalId>
+        <label>Rejected By</label>
+        <length>30</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_1_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Account_1__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Related_Account_1__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 1 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 1</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Related Account 1)</relationshipLabel>
+        <relationshipName>PCR_Related_Account_1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Account_2_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Account_2__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Related_Account_2__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 2 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_2__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 2</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Related Account 2)</relationshipLabel>
+        <relationshipName>PCR_Related_Account_2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Account_3_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Account_3__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Related_Account_3__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 3 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 3</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Related Account 3)</relationshipLabel>
+        <relationshipName>PCR_Related_Account_3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Account_4_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Account_4__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Related_Account_4__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 4 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_4__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 4</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Account Type must be Accel, Temp Closure, or Other.</errorMessage>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Related Account 4)</relationshipLabel>
+        <relationshipName>PCR_Related_Account_4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Related_Account_5_RM__c</fullName>
+        <externalId>false</externalId>
+        <formula>Related_Account_5__r.Relationship_Manager__r.FirstName +&quot; &quot;+ Related_Account_5__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Additional Account 5 RM</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Related_Account_5__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Additional Account 5</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Account.Type</field>
+                <operation>equals</operation>
+                <value>Other, Accel Account, Temp Closure</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Portal Contact Requests (Related Account 5)</relationshipLabel>
+        <relationshipName>PCR_Related_Account_5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Relationship_Manager__c</fullName>
+        <externalId>false</externalId>
+        <formula>DBA_Name_Direct_Relationship__r.Relationship_Manager__r.FirstName +&quot; &quot;+ DBA_Name_Direct_Relationship__r.Relationship_Manager__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Relationship Manager</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Portal Contact Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Full_Name__c</columns>
+        <columns>Approval_Action__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Approved_PCRs</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>Full_Name__c</columns>
+        <columns>DBA_Name_Direct_Relationship__c</columns>
+        <columns>Relationship_Manager__c</columns>
+        <columns>Regional_Manager__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Action__c</field>
+            <operation>equals</operation>
+            <value>Approved</value>
+        </filters>
+        <label>Approved PCRs</label>
+    </listViews>
+    <listViews>
+        <fullName>My_PCRs</fullName>
+        <columns>NAME</columns>
+        <columns>Full_Name__c</columns>
+        <columns>Approval_Action__c</columns>
+        <columns>Proposed_Meeting_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <filterScope>Mine</filterScope>
+        <label>My PCRs</label>
+    </listViews>
+    <listViews>
+        <fullName>Need_Action</fullName>
+        <columns>NAME</columns>
+        <columns>CREATEDBY_USER</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Full_Name__c</columns>
+        <columns>DBA_Name_Direct_Relationship__c</columns>
+        <columns>Relationship_Manager__c</columns>
+        <columns>Regional_Manager__c</columns>
+        <columns>Approval_Action__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Action__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Need Action</label>
+    </listViews>
+    <listViews>
+        <fullName>Rejected_PCRs</fullName>
+        <columns>NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Approval_Action__c</field>
+            <operation>equals</operation>
+            <value>Rejected</value>
+        </filters>
+        <label>Rejected PCRs</label>
+    </listViews>
+    <nameField>
+        <displayFormat>PCR-{0}</displayFormat>
+        <label>Portal Contact Request</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Portal Contact Requests</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Standard_Portal_Contact_Request_Record_Type</fullName>
+        <active>true</active>
+        <description>Created in case record types are needed in the future.</description>
+        <label>Standard Portal Contact Request Record Type</label>
+        <picklistValues>
+            <picklist>Approval_Action__c</picklist>
+            <values>
+                <fullName>Approved</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rejected</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Does_Key_Gaming_Decision_Maker_Approve__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_Contact_Key_Gaming_Decision_Maker__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Edit_After_Approval_Action</fullName>
+        <active>true</active>
+        <description>Editing of the record is not allowed after a a value has been chosen for Approval Action.</description>
+        <errorConditionFormula>AND(
+NOT(ISNEW()),
+NOT(ISBLANK( TEXT(Approval_Action__c) )),
+NOT(ISBLANK(PRIORVALUE(Approval_Action__c)))
+)</errorConditionFormula>
+        <errorMessage>This request can no longer be edited because a decision was made.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Does_Key_Gaming_Decision_Maker_Approve</fullName>
+        <active>true</active>
+        <description>If the contact is not a key gaming decision maker, user needs to answer &quot;Does Key Gaming Decision Maker Approve?&quot;</description>
+        <errorConditionFormula>AND(
+ ISPICKVAL( Is_Contact_Key_Gaming_Decision_Maker__c , &quot;No&quot;) ,
+
+ ISBLANK(TEXT( Does_Key_Gaming_Decision_Maker_Approve__c) ) 
+
+)</errorConditionFormula>
+        <errorDisplayField>Does_Key_Gaming_Decision_Maker_Approve__c</errorDisplayField>
+        <errorMessage>Please, enter a value for &quot;Does Key Gaming Decision Maker Approve?&quot; field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Reason_for_Rejection_is_required</fullName>
+        <active>true</active>
+        <description>Reason for Rejection is required when the Approval Action = Rejected</description>
+        <errorConditionFormula>AND(ISPICKVAL( Approval_Action__c , &quot;Rejected&quot;),ISBLANK( Reason_for_Rejection__c ) )</errorConditionFormula>
+        <errorDisplayField>Reason_for_Rejection__c</errorDisplayField>
+        <errorMessage>Please enter a reason for the rejection of this PCR.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

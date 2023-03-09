@@ -1,0 +1,8 @@
+New machine request received:
+
+Opportunity Name: {!Opportunity.Name}
+DBA Name: {!Account.DBA_Account_Name__c}
+City: {!Account.ShippingCity}
+Strategic Notes: {!Account.Application_Notes__c}
+Suggested VGTs: {!Opportunity.Suggested_VGTs__c}
+Link: {!Opportunity.Link}

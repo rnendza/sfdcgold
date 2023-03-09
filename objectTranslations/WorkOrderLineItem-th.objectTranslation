@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WOLineItem</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- County City Sticker --></label>
+        <name>County_City_Sticker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Lifetime Meter --></label>
+        <name>Current_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fill In Candidate --></label>
+        <name>FSL__IsFillInCandidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visiting Hours --></label>
+        <name>FSL__VisitingHours__c</name>
+        <relationshipLabel><!-- Work Order Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- No Period Meter Needed --></label>
+        <name>No_Period_Meter_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Status --></label>
+        <name>PM_Status__c</name>
+        <picklistValues>
+            <masterLabel>PM  Not Completed</masterLabel>
+            <translation><!-- PM  Not Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM Completed</masterLabel>
+            <translation><!-- PM Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM Partially Completed</masterLabel>
+            <translation><!-- PM Partially Completed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Period Meter --></label>
+        <name>Period_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Count --></label>
+        <name>Physical_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Lifetime Meter --></label>
+        <name>Previous_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Grade --></label>
+        <name>Site_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Notes --></label>
+        <name>Site_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation><!-- Remove --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Add/Swap/Reconfigure --></label>
+        <name>Add_Swap_Reconfigure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Collection --></label>
+        <name>Collection</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Preventative Maintenance Work Order Line Item --></label>
+        <name>Preventative_Maintenance_Work_Order_Line_Item</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Replenishment --></label>
+        <name>Replenishment</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please fill out the Period Meter or select No Period Meter Needed --></errorMessage>
+        <name>Period_Meter_And_Checkbox</name>
+    </validationRules>
+</CustomObjectTranslation>

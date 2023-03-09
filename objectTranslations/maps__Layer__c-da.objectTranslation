@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Laget</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Lag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Lag</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Lagene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Lag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Lag</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArcGIS WebMap Click2Create --></label>
+        <name>maps__ArcGISWebMapC2C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email On Aggregation Success --></label>
+        <name>maps__EmailOnAggregationSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Bruges til at lagre lagets indstillinger i et JSON-format.</help>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <help>Bruges til at bestemme, hvilken lagtype registreringen repræsenterer.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>Datalag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation>Område</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile Set</masterLabel>
+            <translation>Feltsæt</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Udfyldes hvis den ligger direkte under en brugers personlige mappe, ellers tom. Hvis den er tom, og mappeopslaget er tomt, vises dette på firmamappen. Hvis mappen er fyldt, kan det være en personlig mappe eller en virksomhedsmappe.</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>maps__Version__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Lagnavn</nameFieldLabel>
+</CustomObjectTranslation>

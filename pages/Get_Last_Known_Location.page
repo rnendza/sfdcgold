@@ -1,0 +1,45 @@
+<apex:page lightningStyleSheets="true" standardController="ServiceResource">
+    <apex:includeLightning />
+    <div class="slds-scope">
+        <div id="flowContainer" />
+         <script>
+             var statusChange = function (event) {
+               if(event.getParam("status") === "FINISHED") {
+                  // Control what happens when the interview finishes
+ 
+                  // close the flow modal after it's done
+                  parent.postMessage('closeLightbox','*');
+ 
+                  var outputVariables = event.getParam("outputVariables");
+                  var key;
+                  for(key in outputVariables) {
+                     if(outputVariables[key].name === "myOutput") {
+                        // Do something with an output variable
+                     }
+                  }
+              }
+            };
+ 
+            $Lightning.use("c:lightningOutApp", function() {
+               // Create the flow component and set the onstatuschange attribute
+               $Lightning.createComponent("lightning:flow", {"onstatuschange":statusChange},
+                  "flowContainer",
+                  function (component) {
+                     // Set the input variables
+                     var inputVariables = [
+                        {
+                           name : 'recordId',
+                           type : 'String',
+                           value : "{!serviceresource.Id}"
+                        }
+                     ];
+ 
+                     // Start an interview in the flowContainer div, and
+                     // initializes the input variables.
+                     component.startFlow("Service_Resource_Check_Get_RA_Checkbox_VF_Page_Screen_Flow", inputVariables);
+                  }
+               );
+            });
+         </script>
+    </div>
+</apex:page>

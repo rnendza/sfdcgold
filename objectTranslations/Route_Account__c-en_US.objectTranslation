@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Route Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collection Type --></label>
+        <name>Collection_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replenishment Type --></label>
+        <name>Replenishment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash Fill</masterLabel>
+            <translation><!-- Cash Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Audit</masterLabel>
+            <translation><!-- Full Audit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Route --></label>
+        <name>Route__c</name>
+        <relationshipLabel><!-- Route Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stop Number --></label>
+        <name>Stop_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- $100 Fill Level --></label>
+        <name>X100_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Fill Level --></label>
+        <name>X1_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Fill Level --></label>
+        <name>X20_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Fill Level --></label>
+        <name>X50_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Fill Level --></label>
+        <name>X5_Fill_Level__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Software Assets Config</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Software Assets Config</value>
+    </caseValues>
+    <fields>
+        <label><!-- Asset Name Prefix --></label>
+        <name>Asset_Name_Prefix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Serial Number --></label>
+        <name>Latest_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maximum number of assets to create in a single transaction (to avoid flow limit errors) --></help>
+        <label><!-- Max Single Trans Assets --></label>
+        <name>Max_Single_Trans_Assets__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

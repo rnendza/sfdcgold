@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chilometraggio stato/provincia riepilogo live di Maps</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Chilometraggi stato/provincia riepilogo live di Maps</value>
+    </caseValues>
+    <fields>
+        <help>Codice paese di tre caratteri</help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation>CAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Specified</masterLabel>
+            <translation>Non specificato</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation>USA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Record Riepilogo giornaliero asset live a cui è correlato questo chilometraggio</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary State Mileages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <help>Lo stato o la provincia associati per questo record</help>
+        <label><!-- State or Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Distance Traveled (km) --></label>
+        <name>maps__TotalDistanceTraveledKm__c</name>
+    </fields>
+    <fields>
+        <help>Distanza totale percorsa in miglia all&apos;interno di questo stato/provincia.</help>
+        <label><!-- Total Distance Traveled (mi) --></label>
+        <name>maps__TotalDistanceTraveledMiles__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome chilometraggio stato/provincia riep</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,247 @@
+<aura:component
+        implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome"
+        controller="POC_FieldSetController" description="POC_FieldSet">
+
+    <aura:attribute name="displayMode" type="String"  /> <!-- view / edit mode rjn 11/6 -->
+    <aura:attribute name="updatedSObject" type="SObject" />
+    <aura:attribute name="selectedSObjectApiName" type="String"/>
+    <aura:attribute name="selectedSObjectRecordId" type="String" />
+    <aura:attribute name="selectedFieldSets" type="List" />
+    <aura:attribute name="fieldSetWrappers" type="FieldSetWrapper[]"/>
+    <aura:attribute name="fieldSetWrappersExist" type="Boolean" default="false"/>
+
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="showFsSpinner" type="Boolean" default="false"/>
+    <aura:attribute name="pageCategorySelected" type="String" default=""/>
+    <aura:attribute name="pageCategoryFieldApiName" type="String" />
+    <aura:attribute name="bShowConfirm" type="boolean" default="false" />
+    <aura:attribute name="isRickCool" type="boolean" default="true" description="@TODO remove this when the SFDC Gods allow it" />
+
+    <aura:attribute name="LookupApi" type="string" default=""/>
+    <aura:attribute name="FieldLabel" type="string" default=""/>
+    <aura:attribute name="selectedLookUpRecord" type="Id"/>
+    <aura:attribute name="DtoField" type="String"/>
+    <aura:attribute name="ErrorValue" type="String"/>
+
+
+    <aura:registerEvent name="sObjectEvt" type="c:sObjectEvt"/>
+  <!--  <aura:registerEvent name="Empty" type="c:Empty"/>-->
+    
+    <aura:attribute name="fieldNames" type="String[]" default='["Id","Name"]'/>
+    <aura:attribute name="viewContainerHeight" type="String" default="300px" />
+    <aura:registerEvent name="FieldSetName" type="c:FieldSetName"/>
+
+
+    <aura:handler event="c:SelectRecordEvt" action="{!c.setFields}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="render" value="{!this}" action="{!c.onRender}"/>
+    <aura:handler event="c:appEvent" action="{!c.handlePageCategorySelectedEvent}"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="accel-fieldset-outer-container">
+        <div>
+            <!-- ============================================  RJN VIEW mode 11/6   =========================== -->
+
+            <aura:if isTrue="{!v.displayMode == 'view'}">
+                <div class="slds-grid slds-wrap slds-gutters_medium">
+                    <aura:iteration items="{!v.fieldSetWrappers}" var="fs">
+                            <div id="fsContainer" aura:id="fsContainer" class="accel-fieldset-container">
+                                <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1
+                                        slds-large-size--1-of-1 slds-m-bottom--medium">
+                                    <div>
+                                        <lightning:card iconName="{!fs.fieldSetIconName}">
+                                            <aura:set attribute="title">
+                                                <div class="slds-grid" style="padding-left:0">
+                                                    <div class="slds-col slds-size--1-of-2" style="padding-left:0">
+                                                <span class="accel-fieldset-title">
+                                                    {!fs.fieldSetLabel}
+                                                </span>
+                                                    </div>
+                                                    <div class="slds-col slds-size--1-of-2 accel-header-edit"
+                                                         style="text-align: right;padding-right:0">
+                                                        <div class="accel-hide-on-desktop">
+                                                            <lightning:button label="Edit" iconName="utility:edit"
+                                                                              type="button"
+                                                                              class="accel-header-edit accel-mobile-buttons"
+                                                                              onclick="{!c.handleEditClick}"
+                                                                              title="Edit this form" iconPosition="left"
+                                                                              variant="brand"/>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </aura:set>
+                                            <div class="slds-p-horizontal_small accel-hide-on-mobile"></div>
+                                            <lightning:spinner variant="brand" size="large" aura:id="fsSpinner"
+                                                               class="{!((v.showFsSpinner)? '': 'slds-hide')}"
+                                                               alternativeText="{!v.spinnerAltText}"/>
+                                            <!--<ui:scrollerWrapper class="scrollerSize">
+                                            style="{!'height:'+v.viewContainerHeight}"
+                                            -->
+                                            <div id="fieldSetViewContainer" class="xxxxxmobileScroll"
+                                                 aura:id="fieldSetViewContainer"
+                                                 ontouchmove="{!c.handleTouchMove}" ontouchstart="{!c.handleTouchStart}"
+                                                 ontouchcancel="{!c.handleTouchCancel}"
+                                                 ontouchend="{!c.handleTouchEnd}">
+                                                <c:uiFieldSetRecord recordId="{!v.selectedSObjectRecordId}"
+                                                                    debugConsole="false"
+                                                                    objectApiName="{!v.selectedSObjectApiName}"
+                                                                    fieldSetWrappers="{!v.fieldSetWrappers}"/>
+                                            </div>
+                                            <!--</ui:scrollerWrapper>-->
+                                            <div class="slds-grid">
+                                                <div class="slds-col slds-size--1-of-2">
+                                                </div>
+                                                <div class="slds-col slds-size--1-of-2">
+                                                    <div class="accel_align-right accel-action-buttons">
+                                                        <lightning:button label="Edit" iconName="utility:edit"
+                                                                          type="button"
+                                                                          class="accel-bottom-edit accel-mobile-buttons"
+                                                                          onclick="{!c.handleEditClick}"
+                                                                          title="Edit this form" iconPosition="left"
+                                                                          variant="brand"/>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </lightning:card>
+                                    </div>
+                                </div>
+                            </div>
+                        </aura:iteration>
+                </div>
+            </aura:if>
+
+            <!-- ====================  SPIT OUT FIELD SETS (EDIT MODE)) ============================================================== -->
+           <!--  <ui:scrollerWrapper class="scrollerSize">  <div class="scroll1" > -->
+
+            <aura:if
+                    isTrue="{!and(v.displayMode =='edit',v.fieldSetWrappersExist,v.selectedSObjectRecordId != null,
+                    v.selectedSObjectApiName != null)}">
+                <div class="slds-grid slds-wrap ">
+
+                    <aura:iteration items="{!v.fieldSetWrappers}" var="fsWrap">
+                        <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1
+                                slds-large-size--1-of-1 slds-m-bottom--medium">
+                            <div>
+                                <lightning:card iconName="{!fsWrap.fieldSetIconName}">
+                                    <aura:set attribute="title">
+                                        {!fsWrap.fieldSetLabel}
+                                    </aura:set>
+                                    <div class="slds-p-horizontal_small">
+                                        <lightning:spinner variant="brand" size="large" aura:id="fsSpinner"
+                                                           class="{!((v.showFsSpinner)? '': 'slds-hide')}"
+                                                           alternativeText="{!v.spinnerAltText}"/>
+
+                                        <lightning:recordEditForm
+                                                density="compact"
+                                                onsubmit="{!c.updateForm}"
+                                                recordId="{!v.selectedSObjectRecordId}"
+                                                objectApiName="{!v.selectedSObjectApiName}">
+
+                                            <aura:iteration items="{!fsWrap.fieldSetMemberWrappers}" var="fsMemberWrap">
+                                                <!-- fieldtype={!fsMemberWrap.fieldType}-->
+                                                <div class="accel-record-form-view-row ">
+
+                                                <aura:if isTrue="{!fsMemberWrap.isFormulaField}">
+                                                    <lightning:outputField aura:id="field"
+                                                                           fieldName="{!fsMemberWrap.fieldApiName}"/>
+                                                    <aura:set attribute="else">
+                                                        <aura:if isTrue="{!fsMemberWrap.fieldType == 'REFERENCE' }">
+
+                                                            <aura:if isTrue="{! $Browser.formFactor == 'DESKTOP' }">
+                                                                <lightning:inputField aura:id="lookupField"
+                                                                                      fieldName="{!fsMemberWrap.fieldApiName}"
+                                                                                      value="{!fsMemberWrap.fieldValue}"/>
+
+
+                                                            </aura:if>
+
+                                                            <aura:if isTrue="{! $Browser.formFactor !='DESKTOP'}">
+                                                                <lightning:inputField aura:id="lookupField"
+                                                                                      class="slds-hide"
+                                                                                      fieldName="{!fsMemberWrap.fieldApiName}"
+                                                                                      value="{!fsMemberWrap.fieldValue}"/>
+                                                                <div  style="padding-left:5px"> <div aura:id="highlight" >
+                                                                        <aura:if isTrue="{! v.DtoField != fsMemberWrap.fieldApiName}">
+
+                                                                    <c:LookupComponent
+
+
+                                                                            objectName="{!fsMemberWrap.sObjectReferenceToApi}"
+                                                                            required="{!fsMemberWrap.fieldRequired}"
+                                                                            Label="{!fsMemberWrap.fieldLabel}"
+                                                                            selectRecordId="{!fsMemberWrap.fieldValue}"
+                                                                            PlaceHolder="{! 'Search '+fsMemberWrap.sObjectReferenceToLabel+'s...' }"
+                                                                            iconName="{!fsMemberWrap.sObjectApiIconName}"
+                                                                            selectRecordName="{!fsMemberWrap.sObjectReferenceToNameFieldValue}"/>
+
+
+                                                               <!--     <aura:if isTrue="{! v.DtoField == fsMemberWrap.fieldApiName}">-->
+                                                                    </aura:if>
+                                                                        <aura:if isTrue="{! v.DtoField == fsMemberWrap.fieldApiName}">
+                                                                            <div id="ErrorBorder" aura:id="ErrorBorder" >
+                                                                            <c:LookupComponent
+
+
+                                                                                    objectName="{!fsMemberWrap.sObjectReferenceToApi}"
+                                                                                    required="{!fsMemberWrap.fieldRequired}"
+                                                                                    Label="{!fsMemberWrap.fieldLabel}"
+                                                                                    selectRecordId="{!fsMemberWrap.fieldValue}"
+                                                                                    PlaceHolder="{! 'Search '+fsMemberWrap.sObjectReferenceToLabel+'s...' }"
+                                                                                    iconName="{!fsMemberWrap.sObjectApiIconName}"
+                                                                                    selectRecordName="{!fsMemberWrap.sObjectReferenceToNameFieldValue}"/>
+                                                                            </div>
+                                                                                <div aura:id="Error" class="ErrorText" > <ui:outputText value="{!v.ErrorValue}"/> </div>
+
+                                                                        </aura:if>
+                                                                    </div>
+                                                                </div>
+                                                            </aura:if>
+                                                            <!--  </aura:iteration>-->
+                                                            <aura:set attribute="else">
+                                                                <lightning:inputField aura:id="field"
+                                                                                      fieldName="{!fsMemberWrap.fieldApiName}"/>
+                                                            </aura:set>
+                                                        </aura:if>
+                                                    </aura:set>
+
+                                                </aura:if>
+                                                </div>
+                                            </aura:iteration>
+                                            <aura:if isTrue="{!fsWrap.fieldSetMembersExist}">
+                                                <div class="slds-m-top_medium">
+                                                    <div class="slds-m-top_small accel_align-right">
+                                                        <lightning:button label="Cancel"
+                                                                          type="button"
+                                                                          class="accel-mobile-update-buttons"
+                                                                          onclick="{!c.handleCancelClick}"
+                                                                          title="Cancel the edits to this form"
+                                                                          variant="neutral"/>
+                                                        &nbsp;
+                                                        <lightning:button label="Save" iconName="utility:save"
+                                                                          class="accel-mobile-update-buttons"
+                                                                          type="submit"
+                                                                          title="Save the edits to this form"
+                                                                          iconPosition="left" variant="brand"/>
+                                                    </div>
+                                                </div>
+                                            </aura:if>
+                                        </lightning:recordEditForm>
+                                    </div>
+                                </lightning:card>
+                            </div>
+                        </div>
+                    </aura:iteration>
+                </div>
+            </aura:if>
+               <!--</div>
+          <ui:scrollerWrapper>
+           -->
+        </div>
+    </div>
+
+</aura:component>

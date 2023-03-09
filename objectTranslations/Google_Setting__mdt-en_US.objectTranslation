@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Google Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Google Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Key --></label>
+        <name>API_Key__c</name>
+    </fields>
+    <fields>
+        <help><!-- If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test) --></help>
+        <label><!-- Commit Updates --></label>
+        <name>Commit_Updates__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on. --></help>
+        <label><!-- Email Template Dev Name --></label>
+        <name>Email_Template_Dev_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Endpoint --></label>
+        <name>Endpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- If semi-real time, use this as a toggle to indicate to fire the queueable class upon insert of a record (ie trigger or flow) --></help>
+        <label><!-- Fire Callout on Insert --></label>
+        <name>Fire_Callout_on_Insert__c</name>
+    </fields>
+    <fields>
+        <help><!-- If semi-real time, use this as a toggle to indicate to fire the queueable class upon update of a record (ie trigger or flow) --></help>
+        <label><!-- Fire Callout on Update --></label>
+        <name>Fire_Callout_on_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- ie. POST,PUT,GET etc --></help>
+        <label><!-- Http Method --></label>
+        <name>Http_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create a record in Accel Application Logs (Accel_Application_Error__c) for every failed call. (Including inability to find data) --></help>
+        <label><!-- Log Failure --></label>
+        <name>Log_Failure__c</name>
+    </fields>
+    <fields>
+        <help><!-- Create a record in Accel Application Logs (Accel_Application_Error__c) for every successful call. --></help>
+        <label><!-- Log Success --></label>
+        <name>Log_Success__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the usersnames to email and the email template fields must be populated as well. --></help>
+        <label><!-- Send Email On Failure --></label>
+        <name>Send_Email_On_Failure__c</name>
+    </fields>
+    <fields>
+        <help><!-- The timeout value on the http callout. (in milliseconds). The minimum is 1 millisecond and the maximum is 120 seconds. The SFDC Default (if not specified) is 10 seconds or 10000 milliseconds. --></help>
+        <label><!-- Timeout --></label>
+        <name>Timeout__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SFDC Username(s), comma delimited, to send an email to. --></help>
+        <label><!-- Usersnames to email --></label>
+        <name>Users__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

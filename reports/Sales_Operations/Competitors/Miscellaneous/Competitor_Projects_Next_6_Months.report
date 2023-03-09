@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project__c$Days_until_Expiration__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c$Owner</field>
+    </columns>
+    <columns>
+        <field>Project__c$Assigned_RM__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Account__c.Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Competitor_Contract_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project__c$Account__c.Most_Recent_Hold_Per_Day__c.HPD__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Physical_Address__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Project_Status__c</field>
+    </columns>
+    <description>Competitor Contract Expiration Date= NEXT 6 MONTHS
+Starts at 12:00:00 AM on the first day of the month after the current month and continues until the end of the nth month.</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3</booleanFilter>
+        <criteriaItems>
+            <column>Project__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project__c.Competitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Competitor_Contract_Expiration_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEXT_N_DAYS:180</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Competitor Projects - Next 6 Months</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Project_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Project__c$Days_until_Expiration__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Project__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

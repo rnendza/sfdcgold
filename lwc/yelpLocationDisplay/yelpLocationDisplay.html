@@ -1,0 +1,106 @@
+<template>
+    <lightning-card class="accel-search-results-card">
+        <span slot="title">
+            <span><i class="fab fa-yelp accel-yelp-icon fa-1x"></i></span>
+            <span class="slds-p-left--medium">
+                <lightning-formatted-rich-text value={cardTitle}></lightning-formatted-rich-text>
+            </span>
+        </span>
+        <div slot="actions">
+
+        </div>
+        <div class={searchResultsContainerClass}>
+            <div data-id="search-results-top-of-container"></div>
+            <div class="slds-p-horizontal--x-small slds-p-bottom--medium">
+                <c-yelp-business-search></c-yelp-business-search>
+            </div>
+            <ul class="slds-has-dividers_bottom-space slds-has-divider_top-space">
+                <div if:true={isSearching} class="slds-is-relative">
+                    <lightning-spinner size="large" variant="brand"
+                                       alternative-text="Searching"></lightning-spinner>
+                </div>
+
+                <template for:each={businesses} for:item='business' for:index="index">
+                    <li key={business.id} class="slds-item" value={business.name}>
+                        <div class="slds-grid slds-wrap ">
+                            <div class="slds-col slds-size--1-of-6">
+                                <div class="accel-image-container">
+                                    <img src={business.image_url}
+                                         alt="No image provided by business" class="accel-bar-image"/>
+                                </div>
+                            </div>
+                            <div    onmouseover={handleBusinessMouseover}
+                                    class="slds-col slds-size--5-of-6 slds slds-p-horizontal--medium">
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size--3-of-5">
+                                        <div class="slds-text-heading_small">
+                                            <b>
+                                                <a href="javascript:void(0)"
+                                                   data-id={business.id}
+                                                   onclick={handleViewBusinessDetail}>
+                                                    ({ business.idx})&nbsp;{business.name}
+                                                </a>
+                                            </b>
+                                        </div>
+                                        <div   data-divbusinessid={business.id}
+                                               onclick={handleViewBusinessDetail}>
+                                            <div class="star-rating" title="3">
+                                                <div>
+                                                    <i>
+                                                        <c-star-ratings total-stars="5" rating-count={business.rating}></c-star-ratings>
+                                                    </i>
+                                                    <i style="font-size: .875rem" class="slds-p-left--medium">
+                                                        {business.review_count} reviews <!--{business.reviewsLabel}-->
+                                                    </i>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div   data-divbusinessid={business.id}
+                                               onclick={handleViewBusinessDetail}>
+                                            <ul class="slds-list_horizontal slds-has-dividers_right">
+                                                <li class="slds-item">
+                                                   <span class="slds-text-color_success">
+                                                       {business.price}
+                                                   </span>
+                                                </li>
+                                                <template for:each={business.categories} for:item='category'
+                                                          for:index="index">
+                                                    <li   key={category.title} class="slds-item c3llc-categories">
+                                                        {category.title}
+                                                    </li>
+                                                </template>
+                                            </ul>
+                                        </div>
+                                        <div>
+                                            <a href="javascript:void(0)" data-id={business.id}
+                                               onclick={handleViewBusinessDetail}>
+
+                                                <i class="fas fa-expand-alt"></i>
+
+                                                More..</a>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size--2-of-5 slds-text-align--right">
+                                        <lightning-formatted-phone
+                                                value={business.phone}>
+
+                                        </lightning-formatted-phone>
+                                        <div class="accel-address-container">
+                                            {business.location.address1}
+                                            <br>
+                                            {business.location.city}, {business.location.state}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </template>
+
+                <template if:true={displayNoResultsFound}>
+                    No results found blah blah...
+                </template>
+            </ul>
+        </div>
+    </lightning-card>
+</template>

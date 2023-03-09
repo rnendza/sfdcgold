@@ -1,0 +1,599 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Community_User_Setting_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Community_User_Setting_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Custom settings object for community (In lieu of adding fields on contact/user). This contains lookups to both user and contact as well as field sets to allow for dynamically adding new fields on the Community Settings lwc page.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fieldSets>
+        <fullName>Growth_Metrics</fullName>
+        <description>SORT [5] ICON (standard:metrics)</description>
+        <displayedFields>
+            <field>Display_Location_Growth_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Location_Growth_Datatable__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Growth Metrics</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Location_Comparison</fullName>
+        <description>SORT [4] ICON (standard:data_integration_hub)</description>
+        <displayedFields>
+            <field>Display_Map__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Ranking_Table__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Area_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Area_Metrics__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Location Comparison</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Location_Performance</fullName>
+        <description>SORT [3] ICON (standard:goals)</description>
+        <displayedFields>
+            <field>Display_Revenue_YTD_Machine_Perf__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Revenue_MTD_Machine_Perf__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Estimated_Revenue__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Machine_Tabs__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Machine_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Location Performance</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>My_Home_Page_Settings</fullName>
+        <description>SORT [1] ICON (standard:home)</description>
+        <displayedFields>
+            <field>Display_Yesterday_Location_Share__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Yesterday_Share_Funds_In_Metrics__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Yesterday_Bar_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Week_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <displayedFields>
+            <field>Display_Trend_Chart__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Home Page</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>My_Location_Settings</fullName>
+        <description>SORT [6] ICON (standard:system_and_global_variable)</description>
+        <displayedFields>
+            <field>Display_Location_Address__c</field>
+            <isFieldManaged>false</isFieldManaged>
+            <isRequired>false</isRequired>
+        </displayedFields>
+        <label>Global</label>
+    </fieldSets>
+    <fieldSets>
+        <fullName>Portolio_Performance</fullName>
+        <description>SORT [2] ICON (standard:metrics)</description>
+        <label>Portolio Performance</label>
+    </fieldSets>
+    <fields>
+        <fullName>Contact__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Contact</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Community Users Settings</relationshipLabel>
+        <relationshipName>Community_Users_Settings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>DBA_Name__c</fullName>
+        <description>FF to the primary (direct) account for the contact. The original is Account.Name</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>FF to the primary (direct) account for the contact. The original is Account.Name</inlineHelpText>
+        <label>DBA Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Display_Area_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Area Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Area_Metrics__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Area Metrics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Average_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Average Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Data_Metrics__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Data Metrics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Data_Table__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TOOD</inlineHelpText>
+        <label>Display Data Table</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Estimated_Revenue__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@TODO Desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO Help</inlineHelpText>
+        <label>Display Estimated Revenue</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Location_Address__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Checked indicates that an address will show as opposed to the location name. Unchecked indicates that only the address will show (on the community home page / yesterday share component)
+https://accel-entertainment.monday.com/boards/286658657/pulses/294459025  message-toggle-inactive = [Location Name] message-toggle-active [Location Address]</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates that an address will show as opposed to the location name. Unchecked indicates that the location name will show.</inlineHelpText>
+        <label>Display Location Address</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Location_Growth_Chart__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Location Growth Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Location_Growth_Datatable__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Location Growth Datatable</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Machine_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates the Revenue by Machine chart will be visible on the performance page. Unchecked indicates this chart will be hidden.</inlineHelpText>
+        <label>Display Machine Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Machine_Table__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@todo desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@Todo help</inlineHelpText>
+        <label>Display Machine Table</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Machine_Tabs__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates the tab of Machines with their pictures will be displayed on the performance page. Unchecked indicates these tabs will be hidden.</inlineHelpText>
+        <label>Display Machine Tabs</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Map__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Map</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Ranking_Table__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Ranking Table</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Revenue_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>Display Revenue Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Revenue_MTD_Machine_Perf__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@todo desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@todo help</inlineHelpText>
+        <label>Display Revenue MTD</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Revenue_Month_to_Date__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@TODO Desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO Help</inlineHelpText>
+        <label>Display Revenue Month-to-Date</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Revenue_YTD_Machine_Perf__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@TODO Add Desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO Add Help</inlineHelpText>
+        <label>Display Revenue YTD</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Revenue_Year_to_Date__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Active indicates that the Revenue Year-To-Date information will display on the Machine Performance Page. Inactive indicates that it will be hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Active indicates that the Revenue Year-To-Date information will display on the Machine Performance Page. Inactive indicates that it will be hidden.</inlineHelpText>
+        <label>Display Revenue Year-to-Date</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Top_Machine_Info__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@help</inlineHelpText>
+        <label>Display Top Machine Info</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Trend_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@TODO Desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO Help</inlineHelpText>
+        <label>Display Trend Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Week_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Displays aggregated daily performance data for your accounts for the current and previous fiscal week</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates weekly account peformance will display on the home page. Unchecked indicates that it will be hidden.</inlineHelpText>
+        <label>Display Week Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Yesterday_Bar_Chart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>@TODO Desc</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO Help</inlineHelpText>
+        <label>Display Yesterday Bar Chart</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Yesterday_Location_Share__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden.</inlineHelpText>
+        <label>Display Yesterday Share &amp; Rank</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Yesterday_Share_Funds_In_Metrics__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Active indicates that yesterday share funds-in information will display on the home page. Inactive indicates that it will be hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Active indicates that yesterday share funds-in information will display on the home page. Inactive indicates that it will be hidden.</inlineHelpText>
+        <label>Display Yesterday Funds In Metrics</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location_Type__c</fullName>
+        <description>FF To the contacts primary (direct) account filtered location type. The original of this is Accel location type on Account.</description>
+        <externalId>false</externalId>
+        <formula>Contact__r.Account.Filtered_Location_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>FF To the contacts primary (direct) account filtered location type. The original of this is Accel location type on Account.</inlineHelpText>
+        <label>Location Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profile_Name__c</fullName>
+        <description>Simply a FF that points to User.Profile.Name</description>
+        <externalId>false</externalId>
+        <formula>User__r.Profile.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Profile Name</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Community_Users_Settings</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Community User Setting</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>DBA_Name__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>User__c</columns>
+        <columns>Contact__c</columns>
+        <columns>Profile_Name__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <label>Community Setting Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Community Users Settings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Editing rights to the &quot;Account Has Switch&quot; field. This field should be locked down and only be given editing rights approved by the Call Center supervisors/managers.</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.Account_Has_Switch__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account: Account Has Switch field access</label>
+</PermissionSet>

@@ -1,0 +1,51 @@
+<!--
+ - Specifically for Inventory_Request__c.Account__c (A lookup field) but to surface it as
+ - native html select with default selected options and mobile support for use in a flow.
+ -->
+<aura:component
+        implements="lightning:availableForFlowScreens" access="global"
+        controller="InventoryRequestController"
+        description="auraIrParentAssetSelection - populate Inventory_Request__c.Parent_Asset__c values filtered by Software_Type__ = Parent Asset">
+
+    <aura:attribute name="options" type="List" access="PRIVATE"/>
+
+    <aura:attribute name="fieldHelpText" type="String" access="global" default="Select a Parent Asset"/>
+    <aura:attribute name="showFieldHelp" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="selectedValue" type="String" access="global"/>
+    <aura:attribute name="defaultSelectedValue" type="String" access="global" default="02i7A000004vmbzQAA"/>
+    <aura:attribute name="defaultSelectedAssetName" type="String" access="Global" default="Inventory - Accel Entertainment HQ" />
+    <aura:attribute name="assetWhereCriteria" type="String" access="global" default=""/>
+    <aura:attribute name="required" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="disabled" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="debugConsole" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="fieldLabel" type="String" access="global" default="Asset"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="accel-test-borders">
+        <div style="position:relative;">
+            <aura:if isTrue="{!v.showFieldHelp}" >
+                <lightning:helptext class="accel-helptext-popover" content="{!v.fieldHelpText}" />
+            </aura:if>
+            <lightning:select name="assetId" aura:id="assetId"
+                          onchange="{!c.handleOnChange}"
+                          required="{!v.required}"
+                          label="{!v.fieldLabel}"
+                          class="xselect-css"
+                          disabled="{!v.disabled}"
+                          value="{!v.selectedValue}">
+
+            <aura:iteration items="{!v.options}" var="option">
+                <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"></option>
+            </aura:iteration>
+
+        </lightning:select>
+        </div>
+    </div>
+
+</aura:component>

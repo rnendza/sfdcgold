@@ -1,0 +1,623 @@
+<!-- Cl Route Processing Sheets -->
+<template>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+    <div>
+        <div class="slds-p-around_xxx-small " style="min-height: 275px">
+            <lightning-card>
+                <lightning-button-menu
+                        icon-name="utility:down"
+                        icon-size="medium" if:true={showCardActions} menu-alignment="right"
+                        onselect={handleCardMenuSelect}
+                        slot="actions" variant="border-filled">
+                    <template for:each={cardActions} for:item="option">
+                        <lightning-menu-item
+                                            prefix-icon-name={option.prefixIconName}
+                                            key={option.id}
+                                            label={option.label}
+                                            value={option.id}>
+                        </lightning-menu-item>
+                    </template>
+                </lightning-button-menu>
+
+                <h1 slot="title" class="no-wrap">
+                    <c-ui-card-title
+                            card-title={rpsCardTitle}
+                            card-subtitle={rpsCardSubtitle}
+                            icon-name="standard:partner_fund_allocation"
+                            icon-size="medium">
+                    </c-ui-card-title>
+                </h1>
+                <div if:false={showNoData} >
+                    <!-- ==========   VEHICLE INFO TOGGLE BUTTONS ============ -->
+                    <div if:false={missingVehicleStartInfo}>
+                        <div class="slds-grid slds-wrap slds-p-horizontal_medium slds-p-bottom_xx-small">
+                            <div class="slds-col slds-size_1-of-2 slds-align-middle">
+                                <span if:true={showTotalAccounts} class="slds-text-color_weak">
+                                     <!--- {routeScheduleData.Total_Accounts__c} locations -->
+                                     {routeScheduleData.Total_Processing_Sheets__c} locations
+                                </span>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 slds-align-top ">
+                                <div class="slds-text-align_right">
+                                    <lightning-button
+                                            if:false={openVehicleForm}
+                                            class="slds-text-heading_small"
+                                            variant="base"
+                                            label={vehicleLinkText}
+                                            icon-name="utility:travel_and_places"
+                                            data-showit="true"
+                                            title="Click here to view vehicle information"
+                                            onclick={handleToggleVehicleLink}>
+                                    </lightning-button>
+                                    <lightning-button
+                                            if:true={openVehicleForm}
+                                            variant="base"
+                                            label="Hide vehicle info"
+                                            icon-name="utility:travel_and_places"
+                                            data-showit="false"
+                                            title="Click here to hide vehicle information"
+                                            onclick={handleToggleVehicleLink}>
+                                    </lightning-button>
+                                </div>
+                            </div>
+                            <!-- ==========   ROUTE START BUTTON ============ -->
+                            <div if:true={showRouteStartButton}
+                                 class="slds-col slds-size_1-of-1 slds-p-left_none slds-p-bottom_medium">
+                                <div class="slds-text-align_center slds-p-left_none">
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <button  if:true={showRouteStartButton}
+                                                    name="submitRouteStart"
+                                                    onclick={handleStartRoute}
+                                                    title="Click here to start the route"
+                                                    style="padding:.30em"
+                                                    class="slds-button slds-button_brand slds-button_stretch ">
+                                            <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:play"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                            </span>
+                                                <span style="font-size: 1.25em">Start Route</span>
+                                            </button>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-1">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ==========   END ROUTE BUTTON ============ -->
+                            <div if:true={showRouteEndButton}
+                                 class="slds-col slds-size_1-of-1 slds-p-left_none">
+                                <div class="slds-text-align_left slds-p-left_none">
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <button  if:true={showRouteEndButton}
+                                                     name="submitRouteEnd"
+                                                     onclick={handleEndRoute}
+                                                     title="Click here to end the route"
+                                                     style="padding:.30em"
+                                                     class="slds-button slds-button_brand slds-button_stretch ">
+                                            <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:stop"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                            </span>
+                                                <span style="font-size: 1.25em">End Route</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==========   MISSING VEHICLE INFO SCOPED ALERT ============ -->
+                    <div if:true={missingVehicleStartInfo}
+                         class="accel-test-borders slds-p-horizontal_small">
+                        <div class="slds-grid slds-wrap slds-p-bottom_medium">
+                            <div class="slds-col slds-size_1-of-1 slds-text-align_right">
+                                <c-ui-scoped-notification
+                                        message={missingVehicleStartInfoText}
+                                        icon-variant="inverse"
+                                        onalertcontainerclicked={handleVehicleAlertContainerClick}
+                                        show-as-link="true"
+                                        custom-icon-size="small"
+                                        icon-name="utility:error"
+                                        custom-class="accel-notification-error_theme slds-theme_alert-texture"
+                                        theme="error">
+                                </c-ui-scoped-notification>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==========   MISSING VEHICLE ENDING MILEAGE SCOPE ALERT ============ -->
+                    <div if:true={missingVehicleEndingMileage}
+                         class="accel-test-borders slds-p-horizontal_small">
+                        <div class="slds-grid slds-wrap slds-p-bottom_medium">
+                            <div class="slds-col slds-size_1-of-1 slds-text-align_right">
+                                <c-ui-scoped-notification
+                                        message={missingVehicleEndingMileageText}
+                                        icon-variant="inverse"
+                                        onalertcontainerclicked={handleVehicleEndingMileageAlertContainerClick}
+                                        show-as-link="true"
+                                        custom-icon-size="small"
+                                        icon-name="utility:error"
+                                        custom-class="accel-notification-error_theme slds-theme_alert-texture"
+                                        theme="error">
+                                </c-ui-scoped-notification>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==========   VEHICLE INFO FORM ============ -->
+                <template if:true={openVehicleForm}
+                          data-id="vehicleformcontainer"
+                          class="">
+                    <div class="slds-grid slds-grid_align-center">
+                        <div class="slds-col slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_1-of-12">
+
+                        </div>
+                        <div class="slds-col slds-large-size_8-of-12 slds-medium-size_8-of-12 slds-small-size_10-of-12
+                                        accel-form-theme_shade slds-m-top_large">
+<!--                            <c-cl-route-schedule-vehicle-info-->
+<!--                                    route-schedule-id={routeScheduleData.Id}-->
+<!--                                    show-ending-mileage={showEndingMileage}-->
+<!--                                    onvehicleformsubmitted={handleVehicleFormSubmitted}-->
+<!--                                    onformcloseclicked={handleFormCloseClicked}-->
+<!--                                    form-help-msg={formHelpMsg}-->
+<!--                                    form-class={formClass}>-->
+<!--                            </c-cl-route-schedule-vehicle-info>-->
+                            <c-cl-route-vehicle-info
+                                    route-schedule-id={routeScheduleData.Id}
+                                    show-ending-mileage={showEndingMileage}
+                                    onvehicleformsubmitted={handleVehicleFormSubmitted}
+
+
+                                    onformcloseclicked={handleFormCloseClicked}
+                                    form-help-msg={formHelpMsg}
+                                    form-class={formClass}>
+                            </c-cl-route-vehicle-info>
+                        </div>
+                        <div class="slds-col slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_1-of-12">
+                        </div>
+                    </div>
+                </template>
+
+
+                <div  if:true={showRpsData} style="min-height: 400px"
+                        class="slds-p-bottom_large">
+                    <!-- ==========   ROUTE START DATE ============ -->
+                    <div if:true={showRouteStartedDate} class="slds-m-horizontal_small">
+                        <div class="slds-grid accel-test-borders">
+                                <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2   accel-test-borders">
+
+                                </div>
+                                <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2   accel-test-borders">
+                                    <div class="slds-text-align_right accel-test-borders slds-text-color_weak">
+                                    Route Started:&nbsp;&nbsp;
+                                        <lightning-formatted-date-time value={routeScheduleData.Route_Start_Timestamp__c} hour="2-digit" minute="2-digit" second="2-digit" hour12="false"
+                                                                       time-zone="CST"></lightning-formatted-date-time>
+                                    </div>
+                                </div>
+                        </div>
+                    </div>
+                    <!-- ==========   ROUTE END DATE ============ -->
+                    <div if:true={showRouteEndedDate} class="slds-m-horizontal_small slds-m-bottom_x-small">
+                        <div class="slds-grid accel-test-borders">
+                            <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2   accel-test-borders">
+                            </div>
+                            <div class="slds-col slds-small-size_1-of-1 slds-medium-size_1-of-2 slds-large-size_1-of-2   accel-test-borders">
+                                <div class="slds-text-align_right accel-test-borders slds-text-color_success">
+                                    Route Ended:&nbsp;&nbsp;
+                                    <lightning-formatted-date-time value={routeScheduleData.Route_End_Timestamp__c} hour="2-digit" minute="2-digit" second="2-digit" hour12="false"
+                                                                   time-zone="CST"></lightning-formatted-date-time>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==========   DRAG AND DROP BUTTONS ============ -->
+                    <div if:true={showReOrderStopsButtons}>
+                        <div class="slds-p-horizontal_small">
+                            <c-ui-scoped-notification
+                                    message="(BETA) Move your stops into the desired order via long pressing any card and moving up or down to the desired location. Hit save when all stops are done."
+                                    custom-icon-size="xx-small"
+                                    icon-name="utility:info"
+                                    custom-class="accel-notification-info_theme"
+                                    theme="info">
+                            </c-ui-scoped-notification>
+                        </div>
+
+                        <div class="slds-grid slds-wrap slds-gutters_direct-small slds-p-bottom_medium slds-p-top_medium slds-p-horizontal_small">
+                            <div class="slds-col slds-size_1-of-2">
+                                <button  if:true={showReOrderStopsCancelButton}
+                                         name="submitRouteEnd"
+                                         onclick={handleReOrderStopsCancelClick}
+                                         title="Click here to cancel reordering the tops"
+                                         style="padding:.20em"
+                                         class="slds-button slds-button_neutral slds-button_stretch ">
+                                            <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:close"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                            </span>
+                                    <span style="font-size: 1.15em">Cancel</span>
+                                </button>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <button  if:true={showReOrderStopsSaveButton}
+                                         title="Click here to save the stop order"
+                                         onclick={handleReOrderStopsSaveClick}
+                                         style="padding:.20em"
+                                         class="slds-button slds-button_brand slds-button_stretch ">
+                                            <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                            </span>
+                                    <span style="font-size: 1.15em">Save</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ==========   DRAG AND DROP VERSION OF TEMPLATE ============ -->
+                    <template if:true={isDndActive}>
+                        <div if:true={_dndOnEndMsg} class="slds-p-bottom_x-small slds-p-horizontal_medium">
+                            <c-ui-scoped-notification
+                                    message={_dndOnEndMsg}
+                                    custom-icon-size="xx-small"
+                                    icon-name="utility:success"
+                                    theme="success">
+                            </c-ui-scoped-notification>
+                        </div>
+                    </template>
+                    <ul
+                        name="listOuterTag"
+                        data-id="tilesouterid"
+                        class=" slds-has-dividers_bottom-space lgc-bg slds-m-around_small
+                                slds-m-top_none accel-tile-container ">
+                        <!-- ==========   NORMAL FULL SERVICE TEMPLATE ============ -->
+                        <template for:each={rpsData} for:item="rps" for:index="idx">
+                            <li name="listItemContainer"
+                                class="slds-item lgc-bg accel-glassmorphism_tile slds-m-bottom_small "
+                                style={rps.rpsRowStyle}
+                                key={rps.rpsId}
+                                data-viewidx={idx}
+                                data-role="drop-target"
+                                data-stopnumber={rps.rpsStopNumber}
+                                data-rpsid={rps.rpsId}
+                                data-accountid={rps.rps.Account__c}
+                                data-rpsstatus={rps.rpsStatus}
+                                onclick={handleItemSelected}
+                                onmouseover={handleListMouseover}>
+                                <template if:true={isDndActive}>
+                                    <div class="slds-float_right slds-align-top" style="vertical-align: top;">
+                                        <lightning-icon
+                                                size="medium"
+                                                class="accel-drag-icon"
+                                                icon-name="utility:drag">
+                                        </lightning-icon>
+                                    </div>
+                                </template>
+
+                                <lightning-tile
+                                        if:false={isDndActive}
+                                        class="accel-tile_title-override"
+                                        type="media"
+                                        actions={rpsActions}
+                                        onactiontriggered={handleAction}>
+                                    <template if:true={allowStopRecorder}>
+                                    <div>
+                                        <div class="slds-grid">
+                                            <div class="slds-col slds-size_10-of-12">
+                                            <a href="javascript:void(0);"><b>{rps.locName}</b></a>
+                                            </div>
+                                            <div class="slds-col slds-size_2-of-12"
+                                                 onclick={handleReOrderContainerClick}>
+                                                <div class="slds-text-align_right">
+                                                    <lightning-button-icon
+                                                            disabled={rps.disableDownArrow}
+                                                            data-rpsid={rps.rpsId}
+                                                            data-currentstopnumber={rps.rpsStopNumber}
+                                                            data-reordertype="down"
+                                                            onclick={handleReOrderArrowClick}
+                                                            icon-name="utility:arrowdown"
+                                                            variant="brand"
+                                                            size="medium" class="accel-recorder-button"
+                                                            tooltip="Move Stop Number Down"
+                                                            alternative-text="Move Stop down">
+                                                    </lightning-button-icon>
+                                                    <span class="slds-p-left_large">
+                                                        <!-- spacer -->
+                                                    </span>
+                                                    <lightning-button-icon
+                                                            disabled={rps.disableUpArrow}
+                                                            data-rpsid={rps.rpsId}
+                                                            class="accel-recorder-button"
+                                                            data-currentstopnumber={rps.rpsStopNumber}
+                                                            data-reordertype="up"
+                                                            onclick={handleReOrderArrowClick}
+                                                            icon-name="utility:arrowup"
+                                                            tooltip="Move Stop Number Up"
+                                                            variant="brand"
+                                                            size="medium"
+                                                            alternative-text="Move Stop up">
+                                                    </lightning-button-icon>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    </template>
+                                    <template if:false={allowStopRecorder}>
+                                        <a href="javascript:void(0);"><b>{rps.locName}</b></a>
+                                    </template>
+
+                                    <lightning-icon
+                                            size="small"
+                                            slot="media" icon-name="standard:account">
+                                    </lightning-icon>
+
+                                    <div class="slds-truncate" >
+                                        <dl class="slds-dl_horizontal ">
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                <p class="slds-truncate" title={rps.rpsCollectionType}>
+                                                    {rps.rpsCollectionType}&nbsp;-&nbsp;{rps.rpsReplenishmentType}
+                                                </p>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                                <p class="slds-truncate" title={rps.rpsStatus}>
+                                                    <span style="font-size:1.15em">
+                                                        <b>{rps.rpsStatus}</b>
+                                                    </span>
+                                                </p>
+                                            </dd>
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                {rps.totalMeterReadings} Vgts
+                                                <template if:true={showBvTypes}>
+                                                    <template if:true={rps.hasBvTypes}>
+                                                        :<span class="slds-p-left_small">
+                                                            <c-cl-rps-bv-type-totals rps-wrapper={rps}>
+                                                            </c-cl-rps-bv-type-totals>
+                                                         </span>
+                                                    </template>
+                                                </template>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                                <p class="slds-truncate">
+                                                    <span>
+                                                        RM: {rps.locRmName}
+                                                        <span if:true={rps.locRmMobilePhone}
+                                                              class="slds-p-left_xxx-small">
+                                                            <lightning-helptext
+                                                                    if:true={showPhoneAsHelptext}
+                                                                    class="accel-help-text-override"
+                                                                    onclick={handleHaltClick}
+                                                                    content={rps.locRmMobilePhone}>
+                                                            </lightning-helptext>
+                                                            <span if:false={showPhoneAsHelptext} class="slds-p-left_small">
+                                                                {rps.locRmMobilePhone}
+                                                            </span>
+                                                        </span>
+                                                    </span>
+                                                </p>
+                                            </dd>
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                Location Key #: {rps.locSecurityKey}
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                                <span  onclick={handleContactClick}>
+                                                Contact:&nbsp;
+                                                    <template if:true={rps.locCollectionContactName}>
+                                                    {rps.locCollectionContactName}
+                                                        <span if:true={rps.locContactPhone}
+                                                              class="slds-p-left_xxx-small">
+                                                            <lightning-helptext
+                                                                    if:true={showPhoneAsHelptext}
+                                                                    class="accel-help-text-override"
+                                                                    onclick={handleHaltClick}
+                                                                    content={rps.locContactPhone}>
+                                                            </lightning-helptext>
+                                                            <span if:false={showPhoneAsHelptext} class="slds-p-left_small">
+                                                                {rps.locContactPhone}
+                                                            </span>
+                                                        </span>
+                                                    </template>
+                                                </span>
+                                            </dd>
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                <p class="slds-truncate" title="Location Address">
+                                                    Access: {rps.locAccessTime}
+                                                </p>
+                                            </dt>
+
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail slds-align-bottom">
+                                                <p class="slds-truncate slds-align-bottom" title="Location Address - Click to view in Google Maps">
+                                                    <a href=""
+                                                       data-url={rps.formattedAddressUrl}
+                                                       onclick={handleAddyClick}
+                                                       target='_blank' rel="noopener">
+                                                        <b>
+                                                            {rps.formattedAddressText}<lightning-icon
+                                                                size="xx-small"
+                                                                class="slds-p-left_xx-small accel-new-window-icon"
+                                                                icon-name="utility:new_window">
+                                                        </lightning-icon>
+                                                        </b>
+                                                    </a>
+                                                </p>
+                                            </dd>
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                <!--
+                                                      ==================================================
+                                                      @see clRouteProcessingSheetController.truncateLocNotes( string )
+
+                                                      If the length of Account__r.Collection_Notes__c  > 10
+                                                      truncate them to 2 words with ellipses and show a touchable / hoverable help icon
+                                                      with full display of notes.. otherwise show full display.
+
+                                                      Also calls handleHaltClick (ie if user is on touch device) normally when then
+                                                      click a card it drills in.. in this case we need to halt that since they
+                                                      are clicking on the help icon.
+                                                      ==================================================
+                                                   -->
+                                                <div if:true={showCollectionNotes} onclick={handleHaltClick}>
+                                                    Notes:&nbsp;
+                                                    <template if:true={rps.locCollectionNotesTruncated}>
+                                                        {rps.locCollectionNotesTruncated}
+                                                        ...
+                                                        <span style="position:relative; top: -0px">
+                                                        <lightning-helptext
+                                                                class="accel-help-text-override"
+                                                                content={rps.locCollectionNotes}>
+                                                        </lightning-helptext>
+                                                    </span>
+                                                    </template>
+                                                    <template if:false={rps.locCollectionNotesTruncated}>
+                                                        {rps.locCollectionNotes}
+                                                    </template>
+                                                </div>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                                <template if:true={rps.rpsRtModel}>
+                                                    <p class="slds-truncate" title={labels.lblRtModel}>
+                                                    <span>
+                                                      {labels.lblRtModel}&nbsp;{rps.rpsRtModel}
+                                                    </span>
+                                                    </p>
+                                                </template>
+                                            </dd>
+                                            <template if:true={showDistance}>
+                                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                </dt>
+                                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+
+                                                    <p if:true={rps.distanceMiles}
+                                                       class="slds-truncate">
+                                                        {rps.distanceMiles} mi
+                                                        <span style="position:relative; top: -2px">
+                                                    <lightning-helptext
+                                                            icon-variant="inverse"
+                                                            class="slds-m-left_xx-small"
+                                                            content="Distance is currently calculated from the Route base location. (TBD)">
+                                                    </lightning-helptext>
+                                                    </span>
+                                                    </p>
+                                                </dd>
+                                            </template>
+                                        </dl>
+
+                                    </div>
+                                    <div   if:true={isDndActive}
+                                           class="slds-truncate" >
+                                        <dl class="slds-dl_horizontal ">
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                <p class="slds-truncate" title="Location Address">
+                                                    Access: {rps.locAccessTime}
+                                                </p>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail slds-align-bottom">
+                                                <p class="slds-truncate slds-align-bottom" title="Location Address">
+                                                    <b>
+                                                        {rps.formattedAddressText}
+                                                    </b>
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </lightning-tile>
+                                <lightning-tile
+                                                if:true={isDndActive}
+                                                type="media"
+                                                actions={rpsActions}
+                                                onactiontriggered={handleAction}>
+                                    <div >
+                                        <div>
+                                            <b>{rps.locName}</b>
+                                        </div>
+                                    </div>
+                                    <lightning-icon
+                                            size="small"
+                                            slot="media" icon-name="standard:account"></lightning-icon>
+                                    <div
+                                            class="slds-truncate" >
+                                        <dl class="slds-dl_horizontal ">
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                                <p class="slds-truncate" title="Location Address">
+                                                    Access: {rps.locAccessTime}
+                                                </p>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail slds-align-bottom">
+                                                <p class="slds-truncate slds-align-bottom" title="Location Address">
+                                                        {rps.formattedAddressText}
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </lightning-tile>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <!-- ==========   NO DATA FOUND  ============ -->
+                <div if:true={showNoData} >
+                    <div class="slds-p-around_small slds-p-top_none">
+                        <c-ui-scoped-notification
+                                if:true={isSysAdmin}
+
+                                icon-name="utility:error"
+                                name="go_routeschedule_listview"
+                                show-as-link="true"
+                                message="System Admin - Click here for the route schedule list."
+                                custom-icon-size="x-small"
+                                onalertlinkclicked={handleAlertLinkClick}
+                                dismissible="true"
+                                icon-variant="error"
+                                custom-class="accel-notification-info_theme accel-notification_condense"
+                                theme="light">
+                        </c-ui-scoped-notification>
+                    </div>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_large"
+                            header-text="No Route Processing Sheets Found"
+                            body-text={emptyBodyText}>
+                    </c-ui-empty-state>
+                </div>
+                <!--
+                Long poll for Server Side Messages (Platform Events). (cometD)
+                -->
+                <c-cl-exp-cloud-event-subscriber
+                        if:true={allowLongPolling}
+                        channel={platformEventChannel}
+                        onmessagereceived={handleAdditionalFillPlatformEvent} >
+                </c-cl-exp-cloud-event-subscriber>
+
+            </lightning-card>
+        </div>
+    </div>
+
+    <!---  Send route end email dialog -->
+    <c-ui-confirmation-dialog title={labels.lblSendRouteEndEmailDialogTitle}
+                              message={labels.lblSendRouteEndEmailDialogMsg}
+                              confirm-label={labels.lblSendRouteEndEmailDialogButtonConfirm}
+                              cancel-label={labels.lblSendRouteEndEmailDialogButtonCancel}
+                              visible={sendRouteEndEmailDialogVisible}
+                              name="confirmModalSendEmail"
+                              header-icon={labels.lblSendRouteEndEmailDialogIcon}
+                              onmodalaction={handleSendRouteEndEmail}>
+    </c-ui-confirmation-dialog>
+
+</template>

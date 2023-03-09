@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community User Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Users Settings</value>
+    </caseValues>
+    <fieldSets>
+        <label><!-- Growth Metrics --></label>
+        <name>Growth_Metrics</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Location Comparison --></label>
+        <name>Location_Comparison</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Location Performance --></label>
+        <name>Location_Performance</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Home Page --></label>
+        <name>My_Home_Page_Settings</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Global --></label>
+        <name>My_Location_Settings</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Portolio Performance --></label>
+        <name>Portolio_Performance</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Community Users Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- FF to the primary (direct) account for the contact. The original is Account.Name --></help>
+        <label><!-- DBA Name --></label>
+        <name>DBA_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Area Chart --></label>
+        <name>Display_Area_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Area Metrics --></label>
+        <name>Display_Area_Metrics__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Average Chart --></label>
+        <name>Display_Average_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Data Metrics --></label>
+        <name>Display_Data_Metrics__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TOOD --></help>
+        <label><!-- Display Data Table --></label>
+        <name>Display_Data_Table__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO Help --></help>
+        <label><!-- Display Estimated Revenue --></label>
+        <name>Display_Estimated_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates that an address will show as opposed to the location name. Unchecked indicates that the location name will show. --></help>
+        <label><!-- Display Location Address --></label>
+        <name>Display_Location_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Location Growth Chart --></label>
+        <name>Display_Location_Growth_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Location Growth Datatable --></label>
+        <name>Display_Location_Growth_Datatable__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates the Revenue by Machine chart will be visible on the performance page. Unchecked indicates this chart will be hidden. --></help>
+        <label><!-- Display Machine Chart --></label>
+        <name>Display_Machine_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @Todo help --></help>
+        <label><!-- Display Machine Table --></label>
+        <name>Display_Machine_Table__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates the tab of Machines with their pictures will be displayed on the performance page. Unchecked indicates these tabs will be hidden. --></help>
+        <label><!-- Display Machine Tabs --></label>
+        <name>Display_Machine_Tabs__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Map --></label>
+        <name>Display_Map__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Ranking Table --></label>
+        <name>Display_Ranking_Table__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- Display Revenue Chart --></label>
+        <name>Display_Revenue_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @todo help --></help>
+        <label><!-- Display Revenue MTD --></label>
+        <name>Display_Revenue_MTD_Machine_Perf__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO Help --></help>
+        <label><!-- Display Revenue Month-to-Date --></label>
+        <name>Display_Revenue_Month_to_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO Add Help --></help>
+        <label><!-- Display Revenue YTD --></label>
+        <name>Display_Revenue_YTD_Machine_Perf__c</name>
+    </fields>
+    <fields>
+        <help><!-- Active indicates that the Revenue Year-To-Date information will display on the Machine Performance Page. Inactive indicates that it will be hidden. --></help>
+        <label><!-- Display Revenue Year-to-Date --></label>
+        <name>Display_Revenue_Year_to_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- @help --></help>
+        <label><!-- Display Top Machine Info --></label>
+        <name>Display_Top_Machine_Info__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO Help --></help>
+        <label><!-- Display Trend Chart --></label>
+        <name>Display_Trend_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates weekly account peformance will display on the home page. Unchecked indicates that it will be hidden. --></help>
+        <label><!-- Display Week Chart --></label>
+        <name>Display_Week_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO Help --></help>
+        <label><!-- Display Yesterday Bar Chart --></label>
+        <name>Display_Yesterday_Bar_Chart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden. --></help>
+        <label><!-- Display Yesterday Share &amp; Rank --></label>
+        <name>Display_Yesterday_Location_Share__c</name>
+    </fields>
+    <fields>
+        <help><!-- Active indicates that yesterday share funds-in information will display on the home page. Inactive indicates that it will be hidden. --></help>
+        <label><!-- Display Yesterday Funds In Metrics --></label>
+        <name>Display_Yesterday_Share_Funds_In_Metrics__c</name>
+    </fields>
+    <fields>
+        <help><!-- FF To the contacts primary (direct) account filtered location type. The original of this is Accel location type on Account. --></help>
+        <label><!-- Location Type --></label>
+        <name>Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Name --></label>
+        <name>Profile_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Community Users Settings --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

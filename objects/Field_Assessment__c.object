@@ -1,0 +1,2681 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Field_Assessment_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Field_Assessment_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Field Assessments</relationshipLabel>
+        <relationshipName>Field_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Buildout_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Buildout Needed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>None</fullName>
+                    <default>false</default>
+                    <label>None</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Additional_Electrical_Work_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Electrical Work Needed</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Day of Transition</fullName>
+                    <default>false</default>
+                    <label>Day of Transition</label>
+                </value>
+                <value>
+                    <fullName>Prior to Transition</fullName>
+                    <default>false</default>
+                    <label>Prior to Transition</label>
+                </value>
+                <value>
+                    <fullName>Post Transition</fullName>
+                    <default>false</default>
+                    <label>Post Transition</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Assigned_To__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned To</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Field Assessments</relationshipLabel>
+        <relationshipName>Field_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Buildout_Estimate_Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Buildout Estimate Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Buildout_Estimate_Received_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Buildout Estimate Received Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Buildout_Progress__c</fullName>
+        <externalId>false</externalId>
+        <label>Buildout Progress</label>
+        <precision>8</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Buildout_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Buildout Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Case__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Case</label>
+        <referenceTo>Case</referenceTo>
+        <relationshipLabel>Field Assessments</relationshipLabel>
+        <relationshipName>Field_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Contractor_of_Record__c</fullName>
+        <externalId>false</externalId>
+        <label>Contractor of Record</label>
+        <length>100</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Describe_placement_of_the_RT__c</fullName>
+        <externalId>false</externalId>
+        <label>Describe placement of the RT</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Description_of_placement__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Describe the placement of the gaming area in relation to the layout of the establishment.</inlineHelpText>
+        <label>Description of placement</label>
+        <length>700</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Electrical_Estimate_Approved_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Electrical Estimate Approved Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Electrical_Estimate_Received_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Electrical Estimate Received Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Electrical_Scheduled_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Electrical Scheduled Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Electrical_Work_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Electrical Work Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electrical Work Not Needed</fullName>
+                    <default>false</default>
+                    <label>Electrical Work Not Needed</label>
+                </value>
+                <value>
+                    <fullName>Electrical Work Needed</fullName>
+                    <default>false</default>
+                    <label>Electrical Work Needed</label>
+                </value>
+                <value>
+                    <fullName>Electrical Work Completed</fullName>
+                    <default>false</default>
+                    <label>Electrical Work Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Estimated_Buildout_Completion_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Buildout Completion Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Buildout_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Estimated Buildout Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Field_Assessment_Assigned_Date__c</fullName>
+        <description>Field value is updated by automation when &quot;Assigned to&quot; is populated. 
+https://accel-entertainment.monday.com/boards/942883797/pulses/3840353900</description>
+        <externalId>false</externalId>
+        <label>Field Assessment Assigned Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Field_Assessment_Scheduled_Date__c</fullName>
+        <description>referenced in formula field with same name in Project</description>
+        <externalId>false</externalId>
+        <label>Field Assessment Scheduled Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Field_Assessment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Field Assessments</relationshipLabel>
+        <relationshipName>Field_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Gaming_Area_Partition__c</fullName>
+        <externalId>false</externalId>
+        <label>Gaming Area Partition</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No walls</fullName>
+                    <default>false</default>
+                    <label>No walls</label>
+                </value>
+                <value>
+                    <fullName>Half Walls (something less than floor to ceiling)</fullName>
+                    <default>false</default>
+                    <label>Half Walls (something less than floor to ceiling)</label>
+                </value>
+                <value>
+                    <fullName>Separate Room - Floor to Ceiling Walls</fullName>
+                    <default>false</default>
+                    <label>Separate Room - Floor to Ceiling Walls</label>
+                </value>
+                <value>
+                    <fullName>Not fully enclosed - includes stanchions</fullName>
+                    <default>false</default>
+                    <label>Not fully enclosed - includes stanchions</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Gaming_Area_Square_Footage__c</fullName>
+        <externalId>false</externalId>
+        <label>Gaming Area Square Footage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Gaming_Experience__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Field_Assessment__r.Gaming_Experience__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Gaming Experience</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IGB_Equip_Layout_Change_Form_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>IGB Equip/Layout Change Form Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Layout_Gaming_Area_Commitments__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Are there any layout and gaming area commitments?</inlineHelpText>
+        <label>Layout &amp; Gaming Area Commitments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Layout_Submitted_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Layout Submitted Date</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>List_of_Changes_Additions__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select all that apply.</inlineHelpText>
+        <label>Changes: Select All That Apply</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cosmetic Changes (i.e. paint, flooring)</fullName>
+                    <default>false</default>
+                    <label>Cosmetic Changes (i.e. paint, flooring)</label>
+                </value>
+                <value>
+                    <fullName>Half Wall</fullName>
+                    <default>false</default>
+                    <label>Half Wall</label>
+                </value>
+                <value>
+                    <fullName>Ground Up Build</fullName>
+                    <default>false</default>
+                    <label>Ground Up Build</label>
+                </value>
+                <value>
+                    <fullName>Gaming Room Addition</fullName>
+                    <default>false</default>
+                    <label>Gaming Room Addition</label>
+                </value>
+                <value>
+                    <fullName>Full Interior Gut</fullName>
+                    <default>false</default>
+                    <label>Full Interior Gut</label>
+                </value>
+                <value>
+                    <fullName>Location is ready for electrical work</fullName>
+                    <default>false</default>
+                    <label>Location is ready for electrical work</label>
+                </value>
+                <value>
+                    <fullName>Electric work completed</fullName>
+                    <default>false</default>
+                    <label>Electric work completed</label>
+                </value>
+                <value>
+                    <fullName>No buildout</fullName>
+                    <default>false</default>
+                    <label>No buildout</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>8</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Non_gaming_TV_in_gaming_area__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Does the TV feature non-gaming content, i.e. ESPN, CNN, etc)?</inlineHelpText>
+        <label>Non-gaming TV in gaming area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Project_Manager_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Manager Notes</label>
+        <length>1000</length>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Project_Stage__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Project__r.Project_Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Project Stage</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Field Assessments</relationshipLabel>
+        <relationshipName>Field_Assessments</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_VGT_Setup__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposed VGT Setup</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In-line (one wall)</fullName>
+                    <default>false</default>
+                    <label>In-line (one wall)</label>
+                </value>
+                <value>
+                    <fullName>In-line split (multiple walls)</fullName>
+                    <default>false</default>
+                    <label>In-line split (multiple walls)</label>
+                </value>
+                <value>
+                    <fullName>In-line with standalone</fullName>
+                    <default>false</default>
+                    <label>In-line with standalone</label>
+                </value>
+                <value>
+                    <fullName>In-line with back to back</fullName>
+                    <default>false</default>
+                    <label>In-line with back to back</label>
+                </value>
+                <value>
+                    <fullName>Carousel</fullName>
+                    <default>false</default>
+                    <label>Carousel</label>
+                </value>
+                <value>
+                    <fullName>Back-to-back with end cap</fullName>
+                    <default>false</default>
+                    <label>Back-to-back with end cap</label>
+                </value>
+                <value>
+                    <fullName>Half_Moon</fullName>
+                    <default>false</default>
+                    <label>Half Moon</label>
+                </value>
+                <value>
+                    <fullName>Stand alone (greater than 16&quot; apart)</fullName>
+                    <default>false</default>
+                    <label>Stand alone (greater than 16&quot; apart)</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proximity_of_RT_to_nearest_windows_doors__c</fullName>
+        <externalId>false</externalId>
+        <label>Proximity of RT to nearest windows/doors</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 5 feet</fullName>
+                    <default>false</default>
+                    <label>Less than 5 feet</label>
+                </value>
+                <value>
+                    <fullName>5-10 feet</fullName>
+                    <default>false</default>
+                    <label>5-10 feet</label>
+                </value>
+                <value>
+                    <fullName>Greater than 10 feet</fullName>
+                    <default>false</default>
+                    <label>Greater than 10 feet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proximity_of_gaming_area_to_bar__c</fullName>
+        <externalId>false</externalId>
+        <label>Proximity of gaming area to bar</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 5 feet</fullName>
+                    <default>false</default>
+                    <label>Less than 5 feet</label>
+                </value>
+                <value>
+                    <fullName>5-10 feet</fullName>
+                    <default>false</default>
+                    <label>5-10 feet</label>
+                </value>
+                <value>
+                    <fullName>Greater than 10 feet</fullName>
+                    <default>false</default>
+                    <label>Greater than 10 feet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proximity_of_gaming_area_to_bathroom__c</fullName>
+        <externalId>false</externalId>
+        <label>Proximity of gaming area to bathroom</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 5 feet</fullName>
+                    <default>false</default>
+                    <label>Less than 5 feet</label>
+                </value>
+                <value>
+                    <fullName>5-10 feet</fullName>
+                    <default>false</default>
+                    <label>5-10 feet</label>
+                </value>
+                <value>
+                    <fullName>Greater than 10 feet</fullName>
+                    <default>false</default>
+                    <label>Greater than 10 feet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Proximity_of_gaming_area_to_front_door__c</fullName>
+        <externalId>false</externalId>
+        <label>Proximity of gaming area to front door</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Less than 4 feet</fullName>
+                    <default>false</default>
+                    <label>Less than 4 feet</label>
+                </value>
+                <value>
+                    <fullName>5-10 feet</fullName>
+                    <default>false</default>
+                    <label>5-10 feet</label>
+                </value>
+                <value>
+                    <fullName>Greater than 10 feet</fullName>
+                    <default>false</default>
+                    <label>Greater than 10 feet</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RT_Relocate__c</fullName>
+        <externalId>false</externalId>
+        <label>RT Relocate</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Day of Install</fullName>
+                    <default>false</default>
+                    <label>Day of Install</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Relocate_IGB_Approved__c</fullName>
+        <externalId>false</externalId>
+        <label>Relocate IGB Approved</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Relocate_Request_Submitted__c</fullName>
+        <externalId>false</externalId>
+        <label>IGB Equip/Layout Change Form Submit</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Spacer_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>Spacer Request</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No spacers (machines in contact)</fullName>
+                    <default>false</default>
+                    <label>No spacers (machines in contact)</label>
+                </value>
+                <value>
+                    <fullName>No spacers (VGTs set as standalone)</fullName>
+                    <default>false</default>
+                    <label>No spacers (VGTs set as standalone)</label>
+                </value>
+                <value>
+                    <fullName>Standard Spacers</fullName>
+                    <default>false</default>
+                    <label>Standard Spacers</label>
+                </value>
+                <value>
+                    <fullName>Custom spacers</fullName>
+                    <default>false</default>
+                    <label>Custom spacers</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>true</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Discovery</fullName>
+                    <default>false</default>
+                    <label>Discovery</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Layout Submitted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Layout Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type_of_Buildout__c</fullName>
+        <externalId>false</externalId>
+        <label>Type of Buildout</label>
+        <required>false</required>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Type_of_Buildout</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>VGT_Required_Disconnect__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT Required Disconnect</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SAS 1</fullName>
+                    <default>false</default>
+                    <label>SAS 1</label>
+                </value>
+                <value>
+                    <fullName>SAS 2</fullName>
+                    <default>false</default>
+                    <label>SAS 2</label>
+                </value>
+                <value>
+                    <fullName>SAS 3</fullName>
+                    <default>false</default>
+                    <label>SAS 3</label>
+                </value>
+                <value>
+                    <fullName>SAS 4</fullName>
+                    <default>false</default>
+                    <label>SAS 4</label>
+                </value>
+                <value>
+                    <fullName>SAS 5</fullName>
+                    <default>false</default>
+                    <label>SAS 5</label>
+                </value>
+                <value>
+                    <fullName>SAS 6</fullName>
+                    <default>false</default>
+                    <label>SAS 6</label>
+                </value>
+                <value>
+                    <fullName>SAS 7</fullName>
+                    <default>false</default>
+                    <label>SAS 7</label>
+                </value>
+                <value>
+                    <fullName>SAS 8</fullName>
+                    <default>false</default>
+                    <label>SAS 8</label>
+                </value>
+                <value>
+                    <fullName>SAS 9</fullName>
+                    <default>false</default>
+                    <label>SAS 9</label>
+                </value>
+                <value>
+                    <fullName>SAS 10</fullName>
+                    <default>false</default>
+                    <label>SAS 10</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <label>Field Assessment</label>
+    <listViews>
+        <fullName>All_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Field Assessments</label>
+    </listViews>
+    <listViews>
+        <fullName>Competitor_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Field_Assessment__c.Competitor</value>
+        </filters>
+        <label>Competitor Field Assessments</label>
+    </listViews>
+    <listViews>
+        <fullName>Completed_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </filters>
+        <label>Completed Field Assessments</label>
+    </listViews>
+    <listViews>
+        <fullName>Consultation_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Field_Assessment__c.Consultation</value>
+        </filters>
+        <label>Consultation Field Assessments</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>New Field Assessments</label>
+    </listViews>
+    <listViews>
+        <fullName>Organic_Field_Assessments</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Type_of_Buildout__c</columns>
+        <columns>Status__c</columns>
+        <columns>Buildout_Start_Date__c</columns>
+        <columns>Buildout_Progress__c</columns>
+        <columns>Estimated_Buildout_Completion_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Field_Assessment__c.Organic</value>
+        </filters>
+        <label>Organic Field Assessments</label>
+    </listViews>
+    <nameField>
+        <displayFormat>FA-{0000}</displayFormat>
+        <label>Field Assessment Name</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Field Assessments</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Add_Swap_Reconfigure</fullName>
+        <active>true</active>
+        <label>Add/Swap/Reconfigure</label>
+        <picklistValues>
+            <picklist>Additional_Buildout_Needed__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Additional_Electrical_Work_Needed__c</picklist>
+            <values>
+                <fullName>Day of Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prior to Transition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Electrical_Work_Status__c</picklist>
+            <values>
+                <fullName>Electrical Work Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Not Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gaming_Area_Partition__c</picklist>
+            <values>
+                <fullName>Half Walls %28something less than floor to ceiling%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No walls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not fully enclosed - includes stanchions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Room - Floor to Ceiling Walls</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>List_of_Changes_Additions__c</picklist>
+            <values>
+                <fullName>Cosmetic Changes %28i%2Ee%2E paint%2C flooring%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric work completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location is ready for electrical work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No buildout</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_gaming_TV_in_gaming_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposed_VGT_Setup__c</picklist>
+            <values>
+                <fullName>Back-to-back with end cap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carousel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half_Moon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line %28one wall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line split %28multiple walls%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with back to back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with standalone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stand alone %28greater than 16%22 apart%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_RT_to_nearest_windows_doors__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bar__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bathroom__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_front_door__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 4 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RT_Relocate__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day of Install</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Spacer_Request__c</picklist>
+            <values>
+                <fullName>Custom spacers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28VGTs set as standalone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28machines in contact%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Spacers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Buildout__c</picklist>
+            <values>
+                <fullName>Cosmetic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ElectricalWork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Gaming Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_Required_Disconnect__c</picklist>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Competitor</fullName>
+        <active>true</active>
+        <label>Competitor</label>
+        <picklistValues>
+            <picklist>Additional_Buildout_Needed__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Additional_Electrical_Work_Needed__c</picklist>
+            <values>
+                <fullName>Day of Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prior to Transition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Electrical_Work_Status__c</picklist>
+            <values>
+                <fullName>Electrical Work Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Not Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gaming_Area_Partition__c</picklist>
+            <values>
+                <fullName>Half Walls %28something less than floor to ceiling%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No walls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not fully enclosed - includes stanchions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Room - Floor to Ceiling Walls</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>List_of_Changes_Additions__c</picklist>
+            <values>
+                <fullName>Cosmetic Changes %28i%2Ee%2E paint%2C flooring%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric work completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location is ready for electrical work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No buildout</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_gaming_TV_in_gaming_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposed_VGT_Setup__c</picklist>
+            <values>
+                <fullName>Back-to-back with end cap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carousel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half_Moon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line %28one wall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line split %28multiple walls%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with back to back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with standalone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stand alone %28greater than 16%22 apart%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_RT_to_nearest_windows_doors__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bar__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bathroom__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_front_door__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 4 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RT_Relocate__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day of Install</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Spacer_Request__c</picklist>
+            <values>
+                <fullName>Custom spacers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28VGTs set as standalone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28machines in contact%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Spacers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Buildout__c</picklist>
+            <values>
+                <fullName>Cosmetic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ElectricalWork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Gaming Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_Required_Disconnect__c</picklist>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Consultation</fullName>
+        <active>true</active>
+        <description>Consultation type Field Assessment is used for PM to meet with Location Owner to discuss build out.</description>
+        <label>Consultation</label>
+        <picklistValues>
+            <picklist>Additional_Buildout_Needed__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Additional_Electrical_Work_Needed__c</picklist>
+            <values>
+                <fullName>Day of Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prior to Transition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Electrical_Work_Status__c</picklist>
+            <values>
+                <fullName>Electrical Work Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Not Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gaming_Area_Partition__c</picklist>
+            <values>
+                <fullName>Half Walls %28something less than floor to ceiling%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No walls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not fully enclosed - includes stanchions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Room - Floor to Ceiling Walls</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>List_of_Changes_Additions__c</picklist>
+            <values>
+                <fullName>Cosmetic Changes %28i%2Ee%2E paint%2C flooring%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric work completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location is ready for electrical work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No buildout</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_gaming_TV_in_gaming_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposed_VGT_Setup__c</picklist>
+            <values>
+                <fullName>Back-to-back with end cap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carousel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half_Moon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line %28one wall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line split %28multiple walls%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with back to back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with standalone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stand alone %28greater than 16%22 apart%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_RT_to_nearest_windows_doors__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bar__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bathroom__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_front_door__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 4 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RT_Relocate__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day of Install</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Spacer_Request__c</picklist>
+            <values>
+                <fullName>Custom spacers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28VGTs set as standalone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28machines in contact%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Spacers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Discovery</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Buildout__c</picklist>
+            <values>
+                <fullName>Cosmetic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ElectricalWork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Gaming Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_Required_Disconnect__c</picklist>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Organic</fullName>
+        <active>true</active>
+        <label>Organic</label>
+        <picklistValues>
+            <picklist>Additional_Buildout_Needed__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>None</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Additional_Electrical_Work_Needed__c</picklist>
+            <values>
+                <fullName>Day of Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Post Transition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prior to Transition</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Electrical_Work_Status__c</picklist>
+            <values>
+                <fullName>Electrical Work Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Needed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work Not Needed</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Gaming_Area_Partition__c</picklist>
+            <values>
+                <fullName>Half Walls %28something less than floor to ceiling%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No walls</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Not fully enclosed - includes stanchions</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Room - Floor to Ceiling Walls</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>List_of_Changes_Additions__c</picklist>
+            <values>
+                <fullName>Cosmetic Changes %28i%2Ee%2E paint%2C flooring%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electric work completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location is ready for electrical work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No buildout</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Non_gaming_TV_in_gaming_area__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proposed_VGT_Setup__c</picklist>
+            <values>
+                <fullName>Back-to-back with end cap</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Carousel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half_Moon</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line %28one wall%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line split %28multiple walls%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with back to back</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In-line with standalone</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Stand alone %28greater than 16%22 apart%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_RT_to_nearest_windows_doors__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bar__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_bathroom__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 5 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Proximity_of_gaming_area_to_front_door__c</picklist>
+            <values>
+                <fullName>5-10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greater than 10 feet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Less than 4 feet</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RT_Relocate__c</picklist>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Day of Install</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Spacer_Request__c</picklist>
+            <values>
+                <fullName>Custom spacers</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28VGTs set as standalone%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No spacers %28machines in contact%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Standard Spacers</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Complete</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Progress</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type_of_Buildout__c</picklist>
+            <values>
+                <fullName>Cosmetic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ElectricalWork</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full Interior Gut</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming Room Addition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ground Up Build</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half Wall</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Remodel</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Separate Gaming Area</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_Required_Disconnect__c</picklist>
+            <values>
+                <fullName>SAS 1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 10</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 6</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 7</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 8</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SAS 9</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

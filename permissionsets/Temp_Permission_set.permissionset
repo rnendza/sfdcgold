@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>to allow temp access to Test Flag Formula on License for Pam Landis to live-test.</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>License__c.Test_Flag_Formula__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Temp Permission set</label>
+</PermissionSet>

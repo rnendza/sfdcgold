@@ -1,0 +1,351 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Application</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Applications</value>
+    </caseValues>
+    <fields>
+        <label><!-- Appeal Status --></label>
+        <name>Appeal_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Appeal Date --></label>
+        <name>Application_Appeal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Approved Date --></label>
+        <name>Application_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Closed Date --></label>
+        <name>Application_Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application ID - Do Not Use --></label>
+        <name>Application_ID_OLD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Notes --></label>
+        <name>Application_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Owner Check Fx --></label>
+        <name>Application_Owner_Check_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Owner Manager --></label>
+        <name>Application_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Password --></label>
+        <name>Application_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Status --></label>
+        <name>Application_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Required</masterLabel>
+            <translation><!-- Not Required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-Track</masterLabel>
+            <translation><!-- On-Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stuck</masterLabel>
+            <translation><!-- Stuck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Processor --></label>
+        <name>Application_Submitted_By__c</name>
+        <relationshipLabel><!-- Applications (Application Processor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application User Name --></label>
+        <name>Application_User_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Username --></label>
+        <name>Application_Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Withdrawn Date --></label>
+        <name>Application_Withdrawn_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- COAM ID/ Application Web ID? --></label>
+        <name>COAM_ID_Application_Web_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Safe ID --></label>
+        <name>Case_Safe_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cleared Date --></label>
+        <name>Cleared_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Denied Date --></label>
+        <name>Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EFT Form Submitted --></label>
+        <name>EFT_Form_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- FEIN Number --></label>
+        <name>FEIN_Number_Acct__c</name>
+    </fields>
+    <fields>
+        <label><!-- obsolete FEIN Number --></label>
+        <name>FEIN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Fee Paid --></label>
+        <name>Fee_Paid_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finger Printing Date --></label>
+        <name>Finger_Printing_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fingerprinting Complete --></label>
+        <name>Fingerprinting_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inspection Date --></label>
+        <name>Inspection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Issued Date --></label>
+        <name>Issued_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Appeal Date --></label>
+        <name>License_Appeal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Denied Date --></label>
+        <name>License_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Issued Date --></label>
+        <name>License_Issued_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Number --></label>
+        <name>License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- License --></label>
+        <name>License__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Licensed Date --></label>
+        <name>Licensed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Location_DBA__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Owner --></label>
+        <name>Opportunity_Owner__c</name>
+        <relationshipLabel><!-- Applications (Opportunity Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preliminary Approval --></label>
+        <name>Preliminary_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Applications --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager Account --></label>
+        <name>Relationship_Manager_Account__c</name>
+        <relationshipLabel><!-- Applications (Relationship Manager Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Owner Id --></label>
+        <name>Report_Owner_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- STI Form Submitted --></label>
+        <name>STI_Form_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Safe Application ID --></label>
+        <name>Safe_Application_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage --></label>
+        <name>Stage__c</name>
+        <picklistValues>
+            <masterLabel>Appeal</masterLabel>
+            <translation><!-- Appeal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed</masterLabel>
+            <translation><!-- Licensed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Reviewed</masterLabel>
+            <translation><!-- State Reviewed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted</masterLabel>
+            <translation><!-- Submitted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois</masterLabel>
+            <translation><!-- Illinois --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted Date --></label>
+        <name>Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temp ID Number --></label>
+        <name>Temp_ID_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test --></label>
+        <name>Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Applications --></label>
+        <name>Total_Applications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>GLC COAM Class B</masterLabel>
+            <translation><!-- GLC COAM Class B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Video Gaming</masterLabel>
+            <translation><!-- IGB Video Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE Cash Device</masterLabel>
+            <translation><!-- NE Cash Device --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User Processor Fx --></label>
+        <name>User_Processor_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application ID --></label>
+        <name>Web_ID__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Amusement Application --></label>
+        <name>Amusement_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DOJ --></label>
+        <name>DOJ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Generic Application --></label>
+        <name>Generic_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IL Business Authorization --></label>
+        <name>IL_Business_Authorization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Liquor Application --></label>
+        <name>Local_Liquor_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- State Liquor Application --></label>
+        <name>State_Liquor_Application</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Video Gaming Application --></label>
+        <name>Video_Gaming_Application</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Must Enter License Number --></errorMessage>
+        <name>Approved_Status</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Enter Stage before Submitted Date --></errorMessage>
+        <name>Enter_Status_before_Submitted_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Follow the Application Process - Please submit the Application first --></errorMessage>
+        <name>License_Stage</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Test Error --></errorMessage>
+        <name>PreventStageSkip</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Application is Already Approved. Cannot be Rejected or Appealed. --></errorMessage>
+        <name>Prevent_Approve_to_Rejected_or_Appeal</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EFT Form Submitted AND STI Form Submitted must be complete PRIOR to the Application Submitted Date. --></errorMessage>
+        <name>STI_Form_Submitted_must_be_completed</name>
+    </validationRules>
+</CustomObjectTranslation>

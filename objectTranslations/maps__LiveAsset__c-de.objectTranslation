@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Vermögenswert</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Vermögenswert</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Vermögenswerts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Vermögenswert</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Vermögenswerten</value>
+    </caseValues>
+    <fields>
+        <help>Ist der Vermögenswert aktuell ein aktiver Inventar-/Flottenposten?</help>
+        <label><!-- Active --></label>
+        <name>maps__Active__c</name>
+    </fields>
+    <fields>
+        <help>Proprietäre ID zum Identifizieren von Vermögenswerten im Unternehmen</help>
+        <label><!-- Asset Id --></label>
+        <name>maps__AssetId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fabrikat des Fahrzeugs oder Nicht-Fahrzeugs</help>
+        <label><!-- Make --></label>
+        <name>maps__Make__c</name>
+    </fields>
+    <fields>
+        <help>Modell des Fahrzeugs oder Nicht-Fahrzeugs</help>
+        <label><!-- Model --></label>
+        <name>maps__Model__c</name>
+    </fields>
+    <fields>
+        <help>Letzter verfügbarer Tachostand in Kilometer.</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Letzter verfügbarer Tachostand in Meilen.</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>Eine eindeutige Kennung für nicht motorisierte und Geländevermögenswerte</help>
+        <label><!-- Serial Number --></label>
+        <name>maps__SerialNumber__c</name>
+    </fields>
+    <fields>
+        <help>Typ des Vermögenswerts, Fahrzeug, Nicht-Fahrzeug usw.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other Equipment</masterLabel>
+            <translation>Sonstige Ausrüstung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation>Fahrzeug</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Die Fahrzeug-Identifizierungsnummer von Fahrzeugtyp-Vermögenswerten.</help>
+        <label><!-- VIN --></label>
+        <name>maps__VIN__c</name>
+    </fields>
+    <fields>
+        <help>Das Jahr des Fabrikats/Modells des Vermögenswerts.</help>
+        <label><!-- Year --></label>
+        <name>maps__Year__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Maps-Live-Vermögenswertname</nameFieldLabel>
+</CustomObjectTranslation>

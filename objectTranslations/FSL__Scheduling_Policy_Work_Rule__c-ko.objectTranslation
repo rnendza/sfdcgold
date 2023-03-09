@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>일정 정책 작업 규칙</value>
+    </caseValues>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Scheduling Policy Work Rule --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Scheduling Policy Work Rule --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>일정 예약 정책 작업 규칙 이름</nameFieldLabel>
+</CustomObjectTranslation>

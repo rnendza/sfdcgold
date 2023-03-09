@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Résumé quotidien d&apos;actif live Maps</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Résumés quotidiens d&apos;actif live Maps</value>
+    </caseValues>
+    <fields>
+        <help>Durée moyenne des événements d&apos;arrêt définie par l&apos;utilisateur, en heures</help>
+        <label><!-- Average Stop Time (Hours) --></label>
+        <name>maps__AverageStopTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Durée moyenne des événements d&apos;arrêt définie par l&apos;utilisateur, en minutes</help>
+        <label><!-- Average Stop Time (Minutes) --></label>
+        <name>maps__AverageStopTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;événements Batterie de l&apos;appareil activée enregistrés ce jour, tels que définis dans la configuration du résumé condylien</help>
+        <label><!-- Count of Events - Device Battery On --></label>
+        <name>maps__CountOfEventsDeviceBatteryOn__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;événements Seuil de vitesse enregistrés ce jour, tels que définis dans la configuration du résumé condylien</help>
+        <label><!-- Count of Events - Speed Threshold --></label>
+        <name>maps__CountOfEventsSpeedThreshold__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;événements Excès de vitesse enregistrés ce jour, tels que définis dans la configuration du résumé condylien</help>
+        <label><!-- Count of Events - Speeding --></label>
+        <name>maps__CountOfSummaryEventsSpeeding__c</name>
+    </fields>
+    <fields>
+        <help>Nombre d&apos;événements Arrêts enregistrés ce jour, tels que définis dans la configuration du résumé condylien</help>
+        <label><!-- Count of Events - Stops --></label>
+        <name>maps__CountOfSummaryEventsStops__c</name>
+    </fields>
+    <fields>
+        <help>Date à laquelle ce résumé s&apos;applique</help>
+        <label><!-- Summary Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>Fournisseur de l&apos;appareil concaténé avec ID de l&apos;appareil</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Temps total avec le moteur allumé, en heures</help>
+        <label><!-- Drive Time (Hours) --></label>
+        <name>maps__DriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Temps total avec le moteur allumé, en minutes</help>
+        <label><!-- Drive Time (Minutes) --></label>
+        <name>maps__DriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Indique si un trajet a été effectué pendant les congés désignés</help>
+        <label><!-- Driving During Holiday Off --></label>
+        <name>maps__DrivingDuringHolidayOff__c</name>
+    </fields>
+    <fields>
+        <help>Indique si un trajet a été effectué hors des heures de travail désignées</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ représente le contenu complet des données du premier point reçu ce jour par AWS.</help>
+        <label><!-- First Message Content --></label>
+        <name>maps__FirstMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ représente l&apos;heure et la date du premier point reçu ce jour par AWS.</help>
+        <label><!-- First Message Timestamp --></label>
+        <name>maps__FirstMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de messages de l&apos;appareil indiquant un événement d&apos;accélération rapide ce jour (si disponible)</help>
+        <label><!-- Number of Hard Acceleration Events --></label>
+        <name>maps__HardAccelerationCount__c</name>
+    </fields>
+    <fields>
+        <help>Nombre de messages de l&apos;appareil indiquant un événement de freinage brutal ce jour (si disponible)</help>
+        <label><!-- Number of Hard Braking Events --></label>
+        <name>maps__HardBrakingCount__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ représente le contenu complet des données du dernier point reçu ce jour par AWS.</help>
+        <label><!-- Last Message Content --></label>
+        <name>maps__LastMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Ce champ représente l&apos;heure et la date du dernier point reçu ce jour par AWS.</help>
+        <label><!-- Last Message Timestamp --></label>
+        <name>maps__LastMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Référence à la configuration sur laquelle le résumé est basé</help>
+        <label><!-- Live Daily Summary Configuration --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Valeur de vitesse unique maximale reçue ce jour (en km/h)</help>
+        <label><!-- Maximum Speed (KPH) --></label>
+        <name>maps__MaximumSpeedKPH__c</name>
+    </fields>
+    <fields>
+        <help>Valeur de vitesse unique maximale reçue ce jour (en m/h)</help>
+        <label><!-- Maximum Speed (MPH) --></label>
+        <name>maps__MaximumSpeedMPH__c</name>
+    </fields>
+    <fields>
+        <help>Dernière lecture disponible de l&apos;odomètre ce jour, en kilomètres</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Dernière lecture disponible de l&apos;odomètre ce jour, en miles</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>Distance totale parcourue en kilomètres</help>
+        <label><!-- Total Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>Distance totale parcourue en miles</help>
+        <label><!-- Total Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;utilisateur attribué à l&apos;appareil associé lors de la création du résumé</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom du résumé quotidien d&apos;actif live Map</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

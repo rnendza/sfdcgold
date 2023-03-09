@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GeoTab Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GeoTab Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Comma delimited list of email addys to send errors too. If this is populated. this will tell the system to send emails upon any error regardless of other logging settings. --></help>
+        <label><!-- Error Email Addresses --></label>
+        <name>Error_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log the Http Request Body of the Callout. In The Svc classes this will be in the form of a System.debug log. In the queueable classes. this will be in the form of an Accel_Application_Error__c log after the callout has been executed. --></help>
+        <label><!-- Log Callout Request --></label>
+        <name>Log_Callout_Request__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log Http Response Body. In The Svc classes this will be in the form of a System.debug log. In the queueable classes. this will be in the form of an Accel_Appliction_Error__c log after the callout has been executed.Be careful as depending on the call. this response could exceed the limit of the field size. --></help>
+        <label><!-- Log Callout Response --></label>
+        <name>Log_Callout_Response__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log Http Errors and or status codes other than 200. Generally should be kept on. --></help>
+        <label><!-- Log Http Error --></label>
+        <name>Log_Http_Error__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log any errors returned by the Vendor in the response (Might still have a 200 Http Status Code but have an error from the vendor) --></help>
+        <label><!-- Log Vendor Error --></label>
+        <name>Log_Vendor_Error__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

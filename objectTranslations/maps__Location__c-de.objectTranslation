@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Standort</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Standorte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Standort</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Standorte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Standorts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Standorte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Standort</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Standorten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>maps__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Time --></label>
+        <name>maps__DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Marker --></label>
+        <name>maps__FavoriteMarker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is End --></label>
+        <name>maps__IsEnd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Schedule --></label>
+        <name>maps__IsSchedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Start --></label>
+        <name>maps__IsStart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>maps__Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>maps__Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__MapsFolder__c</name>
+        <relationshipLabel><!-- Maps Locations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Resource Id --></label>
+        <name>maps__ResourceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Locations --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Standortname</nameFieldLabel>
+</CustomObjectTranslation>

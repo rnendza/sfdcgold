@@ -1,0 +1,4129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Processing_Sheet_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Processing_Sheet_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Route_Processing_Sheet_Advanced_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Route_Processing_Sheet_Advanced_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Route_Name__c</fields>
+        <fields>Account__c</fields>
+        <fields>City__c</fields>
+        <fields>Address__c</fields>
+        <fields>License_Number__c</fields>
+        <fields>Collection_Type__c</fields>
+        <label>Route_Processing_Sheet_Advanced_Compact_Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Example digitization of the route processing sheet</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account DBA</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Route Processing Sheets</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Actual_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>(Depreciated) Actual Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingStreet</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>All_Note_Count_Grand_Total__c</fullName>
+        <description>Best guess</description>
+        <externalId>false</externalId>
+        <formula>(X1_Note_Count_Grand_Total__c * 1) 
++ (X5_Note_Count_Grand_Total__c * 5) 
++ (X10_Note_Count_Grand_Total__c * 10)  
++ (X20_Note_Count_Grand_Total__c * 20) 
++ (X50_Note_Count_Grand_Total__c * 50) 
++ (X100_Note_Count_Grand_Total__c * 100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Best guess</inlineHelpText>
+        <label>All Note Count Grand Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>BV_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>BV Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>BV_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>BV Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cash_Return_Unused_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Return Unused Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cash_Return_Unused__c</fullName>
+        <externalId>false</externalId>
+        <label>Cash Return Unused</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_100_Note_Count_Drop__c * 100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $100 Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Note_Count_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette $100 Note Count Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Note_Count_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <label>$100 Note Count Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(Obsolete 29) Cassette $100 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(Obsol30)Cassette $100 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>/*(Cassette_100_Note_Count__c * 100) +  (Cassette_100_Reject_Note_Count__c * 100)*/
+0</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $100 Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Denomination__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 1 Denomination</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Cassette_Denominations</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_1_Note_Count_Drop__c * 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $1 Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Note_Count_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette $1 Note Count Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Note_Count_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <label>$1 Note Count Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 1 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 1 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Cassette_1_Note_Count__c * 1) +  (Cassette_1_Reject_Note_Count__c * 1)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $1 Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 1 Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_20_Note_Count_Drop__c * 20</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $20 Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Note_Count_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette $20 Note Count Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Note_Count_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <label>$20 Note Count Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(Obsolete 25) Cassette $20 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(Obsole26)Cassette $20 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Cassette_20_Note_Count__c * 20) +  (Cassette_20_Reject_Note_Count__c * 20)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $20 Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_2_Denomination__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 2 Denomination</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Cassette_Denominations</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cassette_2_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 2 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_2_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 2 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_2_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 2 Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_3_Denomination__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 3 Denomination</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Cassette_Denominations</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cassette_3_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 3 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_3_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 3 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_3_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 3 Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_4_Denomination__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 4 Denomination</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Cassette_Denominations</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cassette_4_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 4 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_4_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 4 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_4_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 4 Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_50_Note_Count_Drop__c * 50</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $50 Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Note_Count_Drop__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Cassette $50 Note Count Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Note_Count_Outbound__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$50 Note Count Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Note_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>(Obsolete 27) Cassette $50 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Reject_Note_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>(Obsole28)Cassette $50 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Cassette_50_Note_Count__c * 50) + (Cassette_50_Reject_Note_Count__c * 50)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $50 Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_5_Note_Count_Drop__c * 5</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $5 Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Note_Count_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette $5 Note Count Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Note_Count_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <label>$5 Note Count Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(OBSOLETE 18) Cassette $5 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Reject_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>(Obsolet19)Cassette $5 Reject Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Cassette_5_Note_Count__c * 5) +  (Cassette_5_Reject_Note_Count__c * 5)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Cassette $5 Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Value__c</fullName>
+        <externalId>false</externalId>
+        <label>Cassette 5 Value</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>City__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingCity</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>City</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Coin_Bag_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Coin Bag Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Coin_Bag_On_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Coin Bag On Site</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Collection Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the collection status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the collection status.</inlineHelpText>
+        <label>Collection Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets2</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Status_Last_Modified_Date__c</fullName>
+        <description>The date/time the collection status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time the collection status was last modified.</inlineHelpText>
+        <label>Collection Status Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Type__c</fullName>
+        <description>Copied down from the parent Route Schedule Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Copied down from the parent Route Schedule Account.</inlineHelpText>
+        <label>Collection Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Collection_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Collector_1__c</fullName>
+        <description>FF to Collector 1 User Name</description>
+        <externalId>false</externalId>
+        <formula>Route_Schedule__r.Collector_1__r.FirstName + &apos; &apos; + Route_Schedule__r.Collector_1__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Collector 1 User Name</inlineHelpText>
+        <label>Collector 1</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collector_2__c</fullName>
+        <description>FF To Route_Schedule__r.User__r.Name</description>
+        <externalId>false</externalId>
+        <formula>Route_Schedule__r.User__r.FirstName + &apos; &apos; +  Route_Schedule__r.User__r.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Collector 2 UserName</inlineHelpText>
+        <label>Collector 2</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collector_RT_Fields_Completed__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* These fields reflect those that are on the 
+ * Collector - RPS - View Form.
+ * This is used to assist on whether we want
+ * To Set Route_Processing_Sheet.Redemption_Status__c 
+ * To completed (this is a best guess at this point)
+ *
+ * ie. if any of these fields are not blank or not 0
+ *     we can set the status to complete  
+ */
+/*  
+---------&gt; @TODO I guess this is the wrong interpretation of the business rule. ie allow zeros? ok 
+lets try again what ARE THE BUSINESS RULES?? GRRRRR
+ OR( 
+   AND(!ISBLANK(Cassette_1_Note_Count__c),Cassette_1_Note_Count__c != 0)
+  ,AND(!ISBLANK(Cassette_5_Note_Count__c),Cassette_5_Note_Count__c != 0)
+  ,AND(!ISBLANK(Cassette_20_Note_Count__c),Cassette_20_Note_Count__c != 0)
+  ,AND(!ISBLANK(Cassette_100_Note_Count__c),Cassette_100_Note_Count__c != 0)
+  ,AND(!ISBLANK(Reject_Total__c),Reject_Total__c != 0)
+  ,AND(!ISBLANK(BV_Value__c),BV_Value__c != 0)
+)
+*/
+/*
+ OR( 
+   !ISBLANK(Cassette_1_Note_Count__c)
+  ,!ISBLANK(Cassette_5_Note_Count__c)
+  ,!ISBLANK(Cassette_20_Note_Count__c)
+  ,!ISBLANK(Cassette_100_Note_Count__c)
+  ,!ISBLANK(Reject_Total__c)
+  ,!ISBLANK(BV_Value__c)
+)
+*/
+ IF(TEXT(Status__c) != &apos;Skipped&apos;, 
+ IF( Redemption_Type_From_Asset__c = &apos;NRT&apos;, 
+    AND( 
+      !ISBLANK(Cassette_1_Note_Count__c)
+      ,!ISBLANK(Cassette_2_Note_Count__c)
+      ,!ISBLANK(Cassette_3_Note_Count__c)
+      ,!ISBLANK(Cassette_4_Note_Count__c)
+      ,!ISBLANK(BV_Value__c)
+       ), 
+     IF( Redemption_Type_From_Asset__c = &apos;M3T&apos;, 
+        AND( 
+      !ISBLANK(Cassette_1_Value__c)
+      ,!ISBLANK(Cassette_2_Value__c)
+      ,!ISBLANK(Cassette_3_Value__c)
+      ,!ISBLANK(Cassette_1_Value__c)
+      ,!ISBLANK(Cassette_5_Value__c)
+       ),
+        FALSE)
+),TRUE)</formula>
+        <label>Collector RT Fields Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Collector_RT_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the collector RT Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the collector RT Status.</inlineHelpText>
+        <label>Collector RT Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets3</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collector_RT_Status_Last_Modified_Date__c</fullName>
+        <description>The Date/Time the collector RT Status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the collector RT Status was last modified.</inlineHelpText>
+        <label>Collector RT Status Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>CountRoom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Count Room</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Route Processing Sheets (Count Room)</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Crash_Bag_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Crash Bag Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Crash_Bag_On_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Crash Bag On Site</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>End_RT_Replenishment_Date__c</fullName>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>End RT Replenishment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_RT_Replenishment_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>POC for Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>End RT Replenishment User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_SheetsFxsQ</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>End_VGT_Collection_Date__c</fullName>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>End VGT Collection Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>End_VGT_Collection_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>End VGT Collection User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets8</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Enter_Total_Drop__c</fullName>
+        <externalId>false</externalId>
+        <label>Enter Total Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Expected_Drop__c</fullName>
+        <description>Calculations of current VGT meters minus previous meters aggregated total via DLRS</description>
+        <externalId>false</externalId>
+        <label>VGT Expected Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Extra_Cassette_On_Site__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Extra Cassette On Site</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fill_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Fill Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Initial</fullName>
+                    <default>false</default>
+                    <label>Initial</label>
+                </value>
+                <value>
+                    <fullName>Emergency</fullName>
+                    <default>false</default>
+                    <label>Emergency</label>
+                </value>
+                <value>
+                    <fullName>Hand pay</fullName>
+                    <default>false</default>
+                    <label>Hand pay</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Funds_In_Field__c</fullName>
+        <externalId>false</externalId>
+        <label>Funds in the Field</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Cassette</fullName>
+                    <default>false</default>
+                    <label>Cassette</label>
+                </value>
+                <value>
+                    <fullName>Coin Bag</fullName>
+                    <default>false</default>
+                    <label>Coin Bag</label>
+                </value>
+                <value>
+                    <fullName>Crash Bag</fullName>
+                    <default>false</default>
+                    <label>Crash Bag</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Inbound__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Inbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Legal_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Legal_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Legal Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.IGB_License__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>License Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Funds_In_Field_Value__c</fullName>
+        <description>FF to Account__r.Fund_in_Field__c</description>
+        <externalId>false</externalId>
+        <formula>/*
+ * Multi-Select picklists in Salesforce are not well supported. this is the only way to reference them 
+ * in a function. If values are added / changed on Account.Funds_in_Field__c this needs to 
+ * be modified as well!
+ */
+IF ( INCLUDES ( Account__r.Funds_in_Field__c , &quot;Crash Bag&quot; ), &quot;Crash Bag; &quot;,null ) &amp;
+IF ( INCLUDES ( Account__r.Funds_in_Field__c , &quot;NRT $20 Cassette&quot; ), &quot;NRT $20 Cassette; &quot;,null ) &amp;
+IF ( INCLUDES ( Account__r.Funds_in_Field__c , &quot;M3T Crash Bag&quot; ), &quot;M3T Crash Bag; &quot;,null ) &amp;
+IF ( INCLUDES ( Account__r.Funds_in_Field__c , &quot;Coin Bag&quot; ), &quot;Coin Bag; &quot;,null )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Funds In Field Value</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>M3T_Crash_Bag_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>M3T Crash Bag Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Meter_Processing_Complete__c</fullName>
+        <externalId>false</externalId>
+        <formula>Total_Processing_Completed_Meter_Reading__c  &gt;=  Total_Meter_Readings__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Meter Processing Complete</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>NRT_20_Cassette_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>NRT $20 Cassette Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notes_Text_Area__c</fullName>
+        <description>This is field is populated from Notes__c. Rich Text / Long text fields are useless when it comes to Formula Fields. This will take the first 255 so we can properly evaluate that field. This is trigger maintained.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This is field is populated from Notes__c. Rich Text / Long text fields are useless when it comes to Formula Fields. This will take the first 255 so we can properly evaluate that field. This is trigger maintained.</inlineHelpText>
+        <label>Notes Text Area</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Original_Stop_Number__c</fullName>
+        <description>FF to Route_Schedule_Account__r.Stop_Number__c</description>
+        <externalId>false</externalId>
+        <formula>Route_Schedule_Account__r.Stop_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The stop # associated with this location via route import or schedule creation (not modified by the collector)</inlineHelpText>
+        <label>Original Stop Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Outbound_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>(Cassette_1_Note_Count_Outbound__c * 1) + ( Cassette_5_Note_Count_Outbound__c *5) + ( Cassette_20_Note_Count_Outbound__c *20) + ( Cassette_100_Note_Count_Outbound__c * 100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Outbound Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Outbound__c</fullName>
+        <externalId>false</externalId>
+        <label>Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Previous_RT_Collection__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the last time this location had its RTs collected</description>
+        <externalId>false</externalId>
+        <label>Previous RT Collection</label>
+        <referenceTo>Route_Processing_Sheet__c</referenceTo>
+        <relationshipLabel>Previous RT Collection</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_VGT_Collection__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Reference to the last time this location had its VGT cans collected</description>
+        <externalId>false</externalId>
+        <label>Previous VGT Collection</label>
+        <referenceTo>Route_Processing_Sheet__c</referenceTo>
+        <relationshipLabel>Previous VGT Collection</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Location</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Processing_Location</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processing_Process_Changed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Processing Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Process_Changed_Date__c</fullName>
+        <description>The Date/Time the processing status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the processing status was last modified.</inlineHelpText>
+        <label>Processing Status Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Process_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Processing Incomplete</fullName>
+                    <default>true</default>
+                    <label>Processing Incomplete</label>
+                </value>
+                <value>
+                    <fullName>COMPLETED PROCESSING</fullName>
+                    <default>false</default>
+                    <label>COMPLETED PROCESSING</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Changed_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Fill Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Changed_Date__c</fullName>
+        <description>The date/time the fill status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time the fill status was last modified.</inlineHelpText>
+        <label>Fill Status Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status__c</fullName>
+        <description>More processor based since reqs differed between the status for a collector and the status for a processor.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>More processor based since reqs differed between the status for a collector and the status for a processor.</inlineHelpText>
+        <label>Fill Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>COMPLETED FILL</fullName>
+                    <default>false</default>
+                    <label>COMPLETED FILL</label>
+                </value>
+                <value>
+                    <fullName>Not Yet Filled</fullName>
+                    <default>true</default>
+                    <label>Not Yet Filled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processor_RT_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The User that last modified the processor RT Status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The User that last modified the processor RT Status.</inlineHelpText>
+        <label>Processor RT Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets4</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processor_RT_Status_Last_Modified_Date__c</fullName>
+        <description>The Date/Time the processor RT Status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the processor RT Status was last modified.</inlineHelpText>
+        <label>Processor RT Status Last Modified Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processor_RT_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Processor RT Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Questions_Last_Modified__c</fullName>
+        <description>The date/time that any one of the questions were last modified in the front end UI by the user.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time that any one of the questions were last modified in the front end UI by the user.</inlineHelpText>
+        <label>Questions Last Modified</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>RT_Incoming_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>RT_Total_Drop__c + Reject_Drop_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RT Incoming Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RT_Reconciliation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>RT Reconciliation Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>RT_Reconciliation_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>RT Reconciliation Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Outstanding</fullName>
+                    <default>false</default>
+                    <label>Outstanding</label>
+                </value>
+                <value>
+                    <fullName>Reconciled</fullName>
+                    <default>false</default>
+                    <label>Reconciled</label>
+                </value>
+                <value>
+                    <fullName>Collector Error - Counts Enterered Incorrectly</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Collector Error - Counts Enterered Incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Processing Error - Cassettes Swapped</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Processing Error - Cassettes Swapped</label>
+                </value>
+                <value>
+                    <fullName>Rejects Not Brought Back</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Rejects Not Brought Back</label>
+                </value>
+                <value>
+                    <fullName>Used Back Office Totals</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Used Back Office Totals</label>
+                </value>
+                <value>
+                    <fullName>e-fill</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>e-fill</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RT_Total_Drop__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_1_Drop_Total__c +  Cassette_5_Drop_Total__c +  Cassette_20_Drop_Total__c + Cassette_50_Drop_Total__c +  Cassette_100_Drop_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RT Total Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>RT_Unit_ID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Redemption_Asset__r.Unit_ID__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RT Unit ID</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RT_Variance_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>RT Variance Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>e-fill</fullName>
+                    <default>false</default>
+                    <label>e-fill</label>
+                </value>
+                <value>
+                    <fullName>Processing Error - Cassettes Swapped</fullName>
+                    <default>false</default>
+                    <label>Processing Error - Cassettes Swapped</label>
+                </value>
+                <value>
+                    <fullName>Collector Error - Counts Enterered Incorrectly</fullName>
+                    <default>false</default>
+                    <label>Collector Error - Counts Enterered Incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Rejects Not Brought Back</fullName>
+                    <default>false</default>
+                    <label>Rejects Not Brought Back</label>
+                </value>
+                <value>
+                    <fullName>Used Back Office Totals</fullName>
+                    <default>false</default>
+                    <label>Used Back Office Totals</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Offset</fullName>
+                    <default>false</default>
+                    <label>Offset</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RT_Variance__c</fullName>
+        <description>Formula: Drop Totals - Receipt Totals, both NRT specific fields and M3T specific fields are included in the formula so they should never both be filled out for a location or this formula would subtract twice</description>
+        <externalId>false</externalId>
+        <formula>((Cassette_1_Note_Count_Drop__c)*1 + (Cassette_5_Note_Count_Drop__c)*5 + (Cassette_20_Note_Count_Drop__c)*20 + (Cassette_50_Note_Count_Drop__c)*50 +(Cassette_100_Note_Count_Drop__c)*100) + Reject_Drop_Total__c + Cash_Return_Unused_Drop__c - (( BLANKVALUE(VALUE(TEXT(Cassette_1_Denomination__c)),0) *  (Cassette_1_Note_Count__c + Cassette_1_Reject_Note_Count__c)) + ( BLANKVALUE(VALUE(TEXT(Cassette_2_Denomination__c)),0) *  (Cassette_2_Note_Count__c + Cassette_2_Reject_Note_Count__c) ) + ( BLANKVALUE(VALUE(TEXT(Cassette_3_Denomination__c)),0) *  (Cassette_3_Note_Count__c + Cassette_3_Reject_Note_Count__c)) + ( BLANKVALUE(VALUE(TEXT(Cassette_4_Denomination__c)),0)*(Cassette_4_Note_Count__c + Cassette_4_Reject_Note_Count__c) )) -  ((Cassette_1_Value__c + Cassette_2_Value__c + Cassette_3_Value__c + Cassette_4_Value__c + Cassette_5_Value__c + Reject_Total__c + Cash_Return_Unused__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RT Variance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Reconciled__c</fullName>
+        <externalId>false</externalId>
+        <label>Reconciled</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>true</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reconciliation_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT Reconciliation Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Normal</fullName>
+                    <default>false</default>
+                    <label>Normal</label>
+                </value>
+                <value>
+                    <fullName>Outstanding</fullName>
+                    <default>false</default>
+                    <label>Outstanding</label>
+                </value>
+                <value>
+                    <fullName>Reconciled</fullName>
+                    <default>false</default>
+                    <label>Reconciled</label>
+                </value>
+                <value>
+                    <fullName>Bad Meter Read</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Bad Meter Read</label>
+                </value>
+                <value>
+                    <fullName>Machine Down</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Machine Down</label>
+                </value>
+                <value>
+                    <fullName>No Meters Taken</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>No Meters Taken</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Possible Missing Can</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Possible Missing Can</label>
+                </value>
+                <value>
+                    <fullName>w/ Ram Clear</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>w/ Ram Clear</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Redemption_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Redemption Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Route Processing Sheets</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Bill_Test_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption Bill Test Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Redemption_Terminal_Status__c</fullName>
+        <description>@TODO automation sets this based on ?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>@TODO automation sets this based on ?</inlineHelpText>
+        <label>Collector RT Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Redemption_Type_From_Asset__c</fullName>
+        <description>FF to RSA.Redemption_Type_From_Asset__c. The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr )</description>
+        <externalId>false</externalId>
+        <formula>Route_Schedule_Account__r.Redemption_Type_From_Asset__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>FF to RSA.Redemption_Type_From_Asset__c. The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr )</inlineHelpText>
+        <label>Redemption Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Redemption_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Redemption__r.GP_Manufacturer__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Redemption Type(Obsolete)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Reject_Drop_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Reject Drop Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Reject_Total__c</fullName>
+        <externalId>false</externalId>
+        <label>Reject Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Replenishment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Replenishment Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full Audit</fullName>
+                    <default>true</default>
+                    <label>Full Audit</label>
+                </value>
+                <value>
+                    <fullName>Cash Fill</fullName>
+                    <default>false</default>
+                    <label>Cash Fill</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Route_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Exists in case we want to artificially roll up values to Route Account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exists in case we want to artificially roll up values to Route Account.</inlineHelpText>
+        <label>Route Account</label>
+        <referenceTo>Route_Account__c</referenceTo>
+        <relationshipLabel>Route Processing Sheets</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Route_Current_Geolocation__c</fullName>
+        <description>A FF pointing to the route current geolocation expressed as text of lat,lng if  Route_Schedule__r.Route__r</description>
+        <externalId>false</externalId>
+        <formula>TEXT(  Route_Schedule__r.Route__r.Geolocation__Latitude__s) &amp; &apos;,&apos; &amp; TEXT(  Route_Schedule__r.Route__r.Geolocation__Longitude__s )</formula>
+        <inlineHelpText>Formula pointing to the route (associated with the route schedule) current geolocation expressed as text of lat,lng</inlineHelpText>
+        <label>Route Current Geolocation</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Route_End_Email_Sent_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Internal field indicating the user that last send the route end email for this RPS.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal field indicating the user that last send the route end email for this RPS.</inlineHelpText>
+        <label>Route End Email Sent By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets5</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Route_End_Email_Sent_Date__c</fullName>
+        <description>Internal field indicating when the user hit the route send email button.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Internal field indicating when the user hit the route send email button.</inlineHelpText>
+        <label>Route End Email Sent Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Route_Fill_Date__c</fullName>
+        <description>not sure?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>not sure?</inlineHelpText>
+        <label>Route Fill Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Route_Name__c</fullName>
+        <description>A FF To Route_Schedule__r.Route__r.Name</description>
+        <externalId>false</externalId>
+        <formula>Route_Schedule__r.Route__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>A formula field to the route associated with the route schedule of this record.</inlineHelpText>
+        <label>Route Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Route_Schedule_Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Exists in case we want to roll up info to RSA</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Exists in case we want to roll up info to RSA</inlineHelpText>
+        <label>Route Schedule Account</label>
+        <referenceTo>Route_Schedule_Account__c</referenceTo>
+        <relationshipLabel>Route Processing Sheets</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Route_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Route Schedule</label>
+        <referenceTo>Route_Schedule__c</referenceTo>
+        <relationshipLabel>Route Processing Sheets</relationshipLabel>
+        <relationshipName>Route_Processing_Sheets</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Snapshot_Cassette__c</fullName>
+        <externalId>false</externalId>
+        <label>Snapshot Cassette</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Snapshot_New_Cassette__c</fullName>
+        <externalId>false</externalId>
+        <label>Snapshot New Cassette</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Start_RT_Replenishment_Date__c</fullName>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>Start RT Replenishment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_RT_Replenishment_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>Start RT Replenishment User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets9</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Start_VGT_Collection_Date__c</fullName>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>Start VGT Collection Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Start_VGT_Collection_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>Start VGT Collection User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Processing_Sheets7</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Collection Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Not Started</fullName>
+                    <default>false</default>
+                    <label>Not Started</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Complete</fullName>
+                    <default>false</default>
+                    <label>Complete</label>
+                </value>
+                <value>
+                    <fullName>Skipped</fullName>
+                    <default>false</default>
+                    <label>Skipped</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Stop_Number__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Stop Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Survey_Completed__c</fullName>
+        <description>Pending Bus Reqs.. This indicates a survey has at least been partially filled out.</description>
+        <externalId>false</externalId>
+        <formula>NOT( ISBLANK(Notes_Text_Area__c) )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Pending Bus Reqs.. This indicates a survey has at least been partially filled out.</inlineHelpText>
+        <label>Survey Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Survey_Question_PL_Test_1__c</fullName>
+        <description>afdasf</description>
+        <externalId>false</externalId>
+        <inlineHelpText>asdf</inlineHelpText>
+        <label>Survey Question PL Test 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Val A</fullName>
+                    <default>false</default>
+                    <label>Val A</label>
+                </value>
+                <value>
+                    <fullName>Val B</fullName>
+                    <default>false</default>
+                    <label>Val B</label>
+                </value>
+                <value>
+                    <fullName>Val C</fullName>
+                    <default>false</default>
+                    <label>Val C</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Survey_Questions_Date_Test_1__c</fullName>
+        <defaultValue>Today()</defaultValue>
+        <externalId>false</externalId>
+        <label>Survey Questions Date Test 1</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Total_Completed_Meter_Readings__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>dlrs maintained</description>
+        <externalId>false</externalId>
+        <inlineHelpText>dlrs maintained</inlineHelpText>
+        <label>Total Completed Meter Readings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Drop__c</fullName>
+        <description>Quick Demo formula didn&apos;t know what other field to use</description>
+        <externalId>false</externalId>
+        <formula>IF(ISBLANK(Cassette_1_Note_Count_Drop__c),0,Cassette_1_Note_Count_Drop__c) * 1 +
+IF(ISBLANK(Cassette_5_Note_Count_Drop__c),0,Cassette_5_Note_Count_Drop__c) * 5 +
+IF(ISBLANK(Cassette_20_Note_Count_Drop__c),0,Cassette_20_Note_Count_Drop__c) * 20 +
+IF(ISBLANK(Cassette_100_Note_Count_Drop__c),0,Cassette_100_Note_Count_Drop__c) * 100 +
+IF(ISBLANK(Reject_Drop_Total__c),0,Reject_Drop_Total__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Quick Demo formula didn&apos;t know what other field to use</inlineHelpText>
+        <label>Total Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_JCM_BV_Type__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>DLRS Maintained. Asset.BV_Type__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DLRS Maintained. Asset.BV_Type__c</inlineHelpText>
+        <label>Total JCM BV Type</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_MEI_BV_Type__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>DLRS Maintained</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DLRS Maintained</inlineHelpText>
+        <label>Total MEI BV Type</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_MEI_Small_BV_Type__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>DLRS Maintained.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DLRS Maintained.</inlineHelpText>
+        <label>Total MEI Small BV Type</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Meter_Readings__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total Number of Meter Readings Associated with this Route Processing Sheet. (DLRS Maintained). Currently async.. ie runs once an hour on the hour.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Number of Meter Readings Associated with this Route Processing Sheet. (DLRS Maintained) This is refreshed once an hour at the top of the hour</inlineHelpText>
+        <label>Total Meter Readings</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Processing_Completed_Meter_Reading__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>DLRS Maintained</description>
+        <externalId>false</externalId>
+        <inlineHelpText>DLRS Maintained</inlineHelpText>
+        <label>Total Processing Completed Meter Reading</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_RT_Onsite_Time__c</fullName>
+        <description>RT Total Time Onsite</description>
+        <externalId>false</externalId>
+        <formula>(  ( End_RT_Replenishment_Date__c   ) -  (  Start_RT_Replenishment_Date__c  )  )  * 1440</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total RT Onsite Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_RT_Replenishment_Time_Mins__c</fullName>
+        <description>POC For Billy</description>
+        <externalId>false</externalId>
+        <formula>IF(
+  End_RT_Replenishment_Date__c - Start_RT_Replenishment_Date__c &gt; 0 ,
+  ROUND( MOD( (End_RT_Replenishment_Date__c - Start_RT_Replenishment_Date__c ) * 24 * 60, 60 ), 0 ),
+0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>POC For Billy</inlineHelpText>
+        <label>Total RT Replenishment Time (Mins)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_VGT_Time_Mins__c</fullName>
+        <description>poc for billy</description>
+        <externalId>false</externalId>
+        <formula>IF(
+ End_VGT_Collection_Date__c - Start_VGT_Collection_Date__c &gt; 0 ,
+ROUND( MOD( (End_VGT_Collection_Date__c - Start_VGT_Collection_Date__c) * 24 * 60, 60 ), 0 ),
+0
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>poc for billy</inlineHelpText>
+        <label>Total VGT Time (Mins)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Treasury_RT_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Treasury RT Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>e-fill</fullName>
+                    <default>false</default>
+                    <label>e-fill</label>
+                </value>
+                <value>
+                    <fullName>Processing Error-Cassettes Swapped</fullName>
+                    <default>false</default>
+                    <label>Processing Error-Cassettes Swapped</label>
+                </value>
+                <value>
+                    <fullName>Collector Error-Counts Entered Incorrectly</fullName>
+                    <default>false</default>
+                    <label>Collector Error-Counts Entered Incorrectly</label>
+                </value>
+                <value>
+                    <fullName>Rejects Not Brought Back</fullName>
+                    <default>false</default>
+                    <label>Rejects Not Brought Back</label>
+                </value>
+                <value>
+                    <fullName>Used Back Office Totals</fullName>
+                    <default>false</default>
+                    <label>Used Back Office Totals</label>
+                </value>
+                <value>
+                    <fullName>Other﻿</fullName>
+                    <default>false</default>
+                    <label>Other﻿</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VGT_Actual_Drop__c</fullName>
+        <externalId>false</externalId>
+        <formula>(X1_Note_Count_Grand_Total__c * 1) +  (X5_Note_Count_Grand_Total__c * 5) +  (X10_Note_Count_Grand_Total__c * 10) +  (X20_Note_Count_Grand_Total__c * 20) + (X50_Note_Count_Grand_Total__c * 50) + (X100_Note_Count_Grand_Total__c * 100)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VGT Actual Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VGT_Incoming_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>VGT_Actual_Drop__c + BV_Drop_Total__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VGT Incoming Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VGT_Reconciliation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT Reconciliation Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>VGT_Variance_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT Variance Reason</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>w/ Ram Clear</fullName>
+                    <default>false</default>
+                    <label>w/ Ram Clear</label>
+                </value>
+                <value>
+                    <fullName>Bad Meter Read</fullName>
+                    <default>false</default>
+                    <label>Bad Meter Read</label>
+                </value>
+                <value>
+                    <fullName>Machine Down</fullName>
+                    <default>false</default>
+                    <label>Machine Down</label>
+                </value>
+                <value>
+                    <fullName>Possible Missing Can</fullName>
+                    <default>false</default>
+                    <label>Possible Missing Can</label>
+                </value>
+                <value>
+                    <fullName>No Meters Taken</fullName>
+                    <default>false</default>
+                    <label>No Meters Taken</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+                <value>
+                    <fullName>Offset</fullName>
+                    <default>false</default>
+                    <label>Offset</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Variance__c</fullName>
+        <externalId>false</externalId>
+        <formula>VGT_Actual_Drop__c  - (Expected_Drop__c + BV_Value__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VGT Variance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X100_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$100 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X100_Note_Value_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_100_Note_Count_Outbound__c * 100</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$100 Note Value Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X10_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$10 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$1 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1_Note_Value_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_1_Note_Count_Outbound__c * 1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$1 Note Value Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X20_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$20 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X20_Note_Value_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_20_Note_Count_Outbound__c * 20</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$20 Note Value Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X50_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$50 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X50_Note_Value_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_50_Note_Count_Outbound__c * 50</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$50 Note Value Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>X5_Note_Count_Grand_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>$5 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X5_Note_Value_Outbound__c</fullName>
+        <externalId>false</externalId>
+        <formula>Cassette_5_Note_Count_Outbound__c * 5</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>$5 Note Value Outbound</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Route Processing Sheet</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collector_RT_Status_Last_Modified_By__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Display_BV_Type_Info</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Total_JCM_BV_Type__c</columns>
+        <columns>Total_MEI_BV_Type__c</columns>
+        <columns>Total_MEI_Small_BV_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Name__c</field>
+            <operation>notContain</operation>
+            <value>DEV TEST</value>
+        </filters>
+        <label>All - Display BV Type Info</label>
+    </listViews>
+    <listViews>
+        <fullName>Collected_this_Week</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>Variance__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Collected this Week</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Stop_Number__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Collecting Today Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Collinsville</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Processing_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>Collecting Today Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Stop_Number__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Collecting Today Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Rockford</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>Collecting Today Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Springfield</fullName>
+        <columns>Route_Schedule__c</columns>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Stop_Number__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Collecting Today Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Tinley_Park</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>Collecting Today Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Today_Utilization</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Start_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_User__c</columns>
+        <columns>Start_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>lessThan</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Collecting Utilization</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Tomorrow</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>Collecting Tomorrow</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Tomorrow_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Collecting Tomorrow Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Tomorrow_Collinsville</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>Collecting Tomorrow Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Tomorrow_Rockford</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>Collecting Tomorrow Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Tomorrow_Springfield</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Collecting Tomorrow Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Utilization_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Start_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_User__c</columns>
+        <columns>Start_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Collecting Utilization Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Utilization_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Start_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_User__c</columns>
+        <columns>Start_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Collecting Utilization Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Utilization_Rockford</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Start_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_User__c</columns>
+        <columns>Start_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>Collecting Utilization Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>Collecting_Utilization_Tinley_Park</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Start_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_Date__c</columns>
+        <columns>End_VGT_Collection_User__c</columns>
+        <columns>Start_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_Date__c</columns>
+        <columns>End_RT_Replenishment_User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Collecting Utilization Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_Filling_Today_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Filling Today Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_Last_7_Days_RT_Variances</fullName>
+        <booleanFilter>(1 AND 2)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>Public Last 7 Days RT Variances</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Filling Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Filling Today Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today_Collinsville</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>Filling Today Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Filling Today Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today_Springfield</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Filling Today Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Filling_Today_Tinley_Park</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Cassette_1_Note_Count_Outbound__c</columns>
+        <columns>Cassette_5_Note_Count_Outbound__c</columns>
+        <columns>Cassette_20_Note_Count_Outbound__c</columns>
+        <columns>Cassette_100_Note_Count_Outbound__c</columns>
+        <columns>Outbound_Total__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Fill_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>Filling Today Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Burr_Ridge</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Last 30 Days RT Variances Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Collinsville</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>Last 30 Days RT Variances Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Peoria</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Last 30 Days RT Variances Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Rockford</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>Last 30 Days RT Variances Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Springfield</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Last 30 Days RT Variances Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_RT_Variances_Tinley_Park</fullName>
+        <booleanFilter>(1 AND 2 AND 3 )</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>Last 30 Days RT Variances Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Burr_Ridge</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Collinsville</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Peoria</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Rockford</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Springfield</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_30_Days_VGT_Variances_Tinley_Park</fullName>
+        <booleanFilter>( 1 AND 2 AND 3 )</booleanFilter>
+        <columns>Account__c</columns>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>Last 30 Days VGT Variances Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>Last_7_Days_RT_Variances</fullName>
+        <booleanFilter>(1 AND 2)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>RT_Variance__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>RT_Variance_Reason__c</columns>
+        <columns>RT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:30</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <label>Last 30 Days RT Variances</label>
+    </listViews>
+    <listViews>
+        <fullName>Public_Last_7_Days_VGT_Variances</fullName>
+        <booleanFilter>1 AND 2 and 3</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Route_Name__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Variance__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>VGT_Variance_Reason__c</columns>
+        <columns>VGT_Reconciliation_Notes__c</columns>
+        <columns>Notes__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>LAST_N_DAYS:7</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>notEqual</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>Public Last 7 Days VGT Variances</label>
+    </listViews>
+    <listViews>
+        <fullName>Todays</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Processing_Status__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge,Tinley Park</value>
+        </filters>
+        <label>Collecting Today</label>
+    </listViews>
+    <listViews>
+        <fullName>VGT_Only_Status_Fix</fullName>
+        <booleanFilter>1 OR 2 OR 3 OR 4</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collector_RT_Status_Last_Modified_By__c</columns>
+        <columns>RT_Reconciliation_Status__c</columns>
+        <columns>Previous_RT_Collection__c</columns>
+        <columns>Reconciliation_Status__c</columns>
+        <columns>Previous_VGT_Collection__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>equals</operation>
+            <value>a2R8W000001Y3g4</value>
+        </filters>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>equals</operation>
+            <value>a2R8W000001YC8E</value>
+        </filters>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>equals</operation>
+            <value>a2R8W00000269o5</value>
+        </filters>
+        <filters>
+            <field>OBJECT_ID</field>
+            <operation>equals</operation>
+            <value>a2R8W0000026AWs</value>
+        </filters>
+        <label>VGT Only Status Fix 12/14</label>
+    </listViews>
+    <listViews>
+        <fullName>Yesterday_Variances</fullName>
+        <booleanFilter>(1 AND (2 OR 3) AND 4)</booleanFilter>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>Variance__c</columns>
+        <columns>RT_Variance__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RT_Variance__c</field>
+            <operation>notEqual</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>Yesterday Variances</label>
+    </listViews>
+    <listViews>
+        <fullName>Yesterdays_Collections</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>City__c</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Replenishment_Type__c</columns>
+        <columns>Redemption_Type_From_Asset__c</columns>
+        <columns>Status__c</columns>
+        <columns>Processing_Process_Status__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>Processing_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge,Tinley Park</value>
+        </filters>
+        <label>Yesterdays Collections</label>
+    </listViews>
+    <nameField>
+        <displayFormat>Collection-Id-{000000000}</displayFormat>
+        <label>Collection ID Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Route Processing Sheets</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

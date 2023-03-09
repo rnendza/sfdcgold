@@ -1,0 +1,27 @@
+<!-- Account Assets Parent Container -->
+<template>
+    <c-account-assets-tile-display if:true={displayTile}
+            record-id={recordId}
+            parent-account-api-name={parentAccountApiName}
+            account-fields-to-display={accountFieldsToDisplay}
+            show-vgt-info-fields={showVgtInfoFields}
+            show-rt-info-fields={showRtInfoFields}
+            show-asset-link={showAssetLink}
+            show-msg-if-no-machines={showMsgIfNoMachines}
+            card-title={cardTitle}
+            card-icon={cardIcon}
+            debug-console={debugConsole}>
+    </c-account-assets-tile-display>  
+
+    <c-account-assets-list-display if:true={displayList}
+            record-id={recordId}
+            parent-account-api-name={parentAccountApiName}
+            account-fields-to-display={accountFieldsToDisplay}
+            show-vgt-info-fields={showVgtInfoFields}
+            show-rt-info-fields={showRtInfoFields}
+            show-msg-if-no-machines={showMsgIfNoMachines}
+            card-title={cardTitle}
+            card-icon={cardIcon}
+            debug-console={debugConsole}>
+    </c-account-assets-list-display>
+</template>

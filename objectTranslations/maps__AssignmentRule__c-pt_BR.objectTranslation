@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Regra de atribuição de mapas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regras de atribuição de mapas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>maps__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Shape Layer --></label>
+        <name>maps__ShapeLayer__c</name>
+        <relationshipLabel><!-- Assignment Rules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Assignment Rules --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da regra de atribuição do Maps</nameFieldLabel>
+</CustomObjectTranslation>

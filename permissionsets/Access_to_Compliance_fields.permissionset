@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This perm set allows editing rights to the two following fields:
+Work Order: Compliance Appointment Approved
+Work Order: Compliance Date Submitted</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.Compliance_Appointment_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>WorkOrder.Compliance_Date_Submitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Access to Work Order: Compliance fields</label>
+</PermissionSet>

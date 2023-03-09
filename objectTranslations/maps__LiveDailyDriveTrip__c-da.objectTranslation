@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Live - daglige køretur</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Live - daglig køretur</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Live - daglig køretur</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Live - daglige køreture</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Live - daglige køreture</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Live - daglige køreture</value>
+    </caseValues>
+    <fields>
+        <help>Før middag/efter middag er fastsat baseret på enhedens tidszone</help>
+        <label><!-- AM or PM Drive Trip --></label>
+        <name>maps__AMorPMDriveTrip__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>Før middag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>Før middag/efter middag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>Efter middag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>By, hvor starten af rejsen fandt sted</help>
+        <label><!-- Begin Trip City --></label>
+        <name>maps__BeginTripCity__c</name>
+    </fields>
+    <fields>
+        <help>Land, hvor starten af rejsen fandt sted</help>
+        <label><!-- Begin Trip Country --></label>
+        <name>maps__BeginTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>Tid, da denne rejse startede</help>
+        <label><!-- Begin Trip Date/Time --></label>
+        <name>maps__BeginTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Adresse, hvor starten af rejsen fandt sted</help>
+        <label><!-- Begin Trip Full Address --></label>
+        <name>maps__BeginTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>Postnummer, hvor starten af rejsen fandt sted</help>
+        <label><!-- Begin Trip Postal Code --></label>
+        <name>maps__BeginTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Stat, hvor starten af rejsen fandt sted</help>
+        <label><!-- Begin Trip State --></label>
+        <name>maps__BeginTripState__c</name>
+    </fields>
+    <fields>
+        <help>Opslag i begivenhedsregistreringen, hvilket er starten på denne rejse</help>
+        <label><!-- Begin Trip Stop --></label>
+        <name>maps__BeginTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (Begin Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gade, hvor starten på rejsen fandt sted</help>
+        <label><!-- Begin Trip Street --></label>
+        <name>maps__BeginTripStreet__c</name>
+    </fields>
+    <fields>
+        <help>Dato for rejsen</help>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>Indikation af, om rejsen fandt sted på den angivne helligdag</help>
+        <label><!-- Driving During Holiday --></label>
+        <name>maps__DrivingDuringHoliday__c</name>
+    </fields>
+    <fields>
+        <help>Indikation af, om rejsen fandt sted uden for de angivne arbejdstimer</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>By, hvor slut på rejsen fandt sted</help>
+        <label><!-- End Trip City --></label>
+        <name>maps__EndTripCity__c</name>
+    </fields>
+    <fields>
+        <help>Land, hvor slut på rejse fandt sted</help>
+        <label><!-- End Trip Country --></label>
+        <name>maps__EndTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>Tid, hvor rejsen sluttede</help>
+        <label><!-- End Trip Date/Time --></label>
+        <name>maps__EndTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Adresse, hvor slut på rejse fandt sted</help>
+        <label><!-- End Trip Full Address --></label>
+        <name>maps__EndTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>Postnummer , hvor slut på rejse fandt sted</help>
+        <label><!-- End Trip Postal Code --></label>
+        <name>maps__EndTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Stat, hvor slut på rejse fandt sted</help>
+        <label><!-- End Trip State --></label>
+        <name>maps__EndTripState__c</name>
+    </fields>
+    <fields>
+        <help>Opslag til begivenhedsregistrering, hvilket er afslutningen på denne rejse</help>
+        <label><!-- End Trip Stop --></label>
+        <name>maps__EndTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (End Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Gade, hvor slut på rejse fandt sted</help>
+        <label><!-- End Trip Street --></label>
+        <name>maps__EndTripStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Live-aktivs daglige sammendragsregistrering, som dette miltal relateres til</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Angivet chauffør på denne rejse</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Begivenh. i alt m. hård accel. på rejse</help>
+        <label><!-- Total # of Hard Accel Events In Trip --></label>
+        <name>maps__TotalNumOfHardAccelEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Begiv. i alt m. hård opbrems. på rejse</help>
+        <label><!-- Total # of Hard Braking Events this Trip --></label>
+        <name>maps__TotalNumOfHardBrakeEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Begivenheder i alt med maks. hastighedstærskel på denne rejse</help>
+        <label><!-- Total # of Speed Thresh Events in Trip --></label>
+        <name>maps__TotalNumOfSpeedThresholdEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Begivenheder i alt med hastighedsoverskridelse på denne rejse</help>
+        <label><!-- Total # of Speeding Events within Trip --></label>
+        <name>maps__TotalNumOfSpeedingEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>Dette er rejseafstand i alt i mil.</help>
+        <label><!-- Trip Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>Varighed af denne rejse i timer</help>
+        <label><!-- Trip Drive Time (Hours) --></label>
+        <name>maps__TripDriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Varighed af denne rejse i minutter</help>
+        <label><!-- Trip Drive Time (Minutes) --></label>
+        <name>maps__TripDriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Rejsernes rækkefølge i løbet af dagen</help>
+        <label><!-- Trip Order --></label>
+        <name>maps__TripOrder__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Maps Live - navn på daglig køretur</nameFieldLabel>
+</CustomObjectTranslation>

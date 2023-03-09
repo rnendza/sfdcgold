@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>작업 규칙 항목</value>
+    </caseValues>
+    <fields>
+        <help>분 단위로 표시한 휴식 시간의 길이입니다.</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>서비스 자원의 가용성 시작 시점을 기준으로 허용되는 가장 빠른 휴식 시작 시간까지의 시간(분)입니다. 예를 들어 120을 입력하면 하루를 시작한 후 2시간 이후에 휴식을 예약할 수 있습니다.</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>서비스 자원의 가용성 시작 시점을 기준으로 허용되는 가장 늦은 휴식 종료 시간까지의 시간(분)입니다. 예를 들어 점심 시간을 예약하기 위해 300을 입력하면 하루를 시작한 후 최대 5시간 이전에 끝내야 합니다.</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>작업 규칙 항목 이름</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+</CustomObjectTranslation>

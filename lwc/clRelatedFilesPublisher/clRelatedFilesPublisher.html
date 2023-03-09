@@ -1,0 +1,128 @@
+<template>
+    <template if:true={visible}>
+        <div class="slds-container_small">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01"
+                     aria-modal="true" aria-describedby="modal-content-id-1" class="slds-modal slds-fade-in-open slds-modal_large">
+                <div class="slds-modal__container">
+                    <header class="slds-modal__header accel-modal_header">
+                        <template if:true={headerIcon}>
+                            <lightning-icon
+                                    class="slds-float_left"
+                                    icon-name={headerIcon}
+                                    size="small">
+                            </lightning-icon>
+                        </template>
+                        <h2 data-id="title">
+                            <div class="slds-text-heading_small slds-hyphenate slds-text-title_bold">
+                                {title}
+                            </div>
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_small" id="modal-content-id-1" style="min-height: 350px;">
+                        <div    if:true={showProgressBar}
+                                class="progress-center slds-p-bottom_small">
+                            <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+                        </div>
+                        <p if:true={showAssistant} class="slds-p-bottom_small">
+                            <c-cl-related-files-assistant
+                                    title={_assistanceHeader}
+                                    assistance-type="modifyroutes"
+                                    bullet-points={assistanceBulletPoints}>
+                            </c-cl-related-files-assistant>
+                        </p>
+                        <p data-id="uploadDetails" if:true={showUploadDetails}>
+                            <lightning-button
+                                    variant="success"
+                                    label={successDownloadLabel}
+                                    name="download"
+                                    icon-name="utility:download"
+                                    icon-position="right"
+                                    onclick={handleDownloadClick}>
+                            </lightning-button>
+                        </p>
+                        <div data-id="csvData" if:true={showCsvData}>
+                            <div if:true={cvWrapper} class="slds-p-bottom_small">
+                                Preview of {cvWrapper.fileTitle}:
+                            </div>
+                            <div if:true={_anyErrorsExist} class="slds-p-bottom_medium">
+                                <lightning-button
+                                        variant="brand"
+                                        label={originalFileDownloadLabel}
+                                        name="download"
+                                        icon-name="utility:download"
+                                        icon-position="right"
+                                        onclick={handleDownloadOriginalClick}>
+                                </lightning-button>
+                                <lightning-datatable
+                                        key-field="rowNumber"
+                                        data={customCsvErrors}
+                                        columns={preUploadErrorsColumns}
+                                        hide-checkbox-column="true"
+                                        class="slds-table_header-fixed_container slds-scrollable_x
+                                                        slds-p-top_small
+                                                        slds-border_top slds-no-row-hover
+                                                        slds-max-medium-table_stacked
+                                                        slds-table_bordered slds-table_col-bordered">
+                                </lightning-datatable>
+                            </div>
+
+                            <lightning-datatable if:false={_anyErrorsExist}
+                                                 key-field="accountId"
+                                                 data={previewParsedRowData}
+                                                 columns={preUploadColumns}
+                                                 hide-checkbox-column="true"
+                                                 class="slds-table_header-fixed_container slds-scrollable_x
+                                                        slds-border_top slds-no-row-hover
+                                                        slds-max-medium-table_stacked
+                                                        slds-table_bordered slds-table_col-bordered">
+                            </lightning-datatable>
+                        </div>
+                        <p if:true={showStencil}>
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer accel-modal_footer">
+                        <div class="slds-text-align_right" if:false={_isProcessing}>
+                            <lightning-button
+                                              if:true={cancelLabel}
+                                              variant="neutral"
+                                              class="slds-m-right_medium"
+                                              name="cancel"
+                                              data-id="cancel"
+                                              label={cancelLabel}
+                                              title={cancelLabel}
+                                              onclick={handleClick}>
+                            </lightning-button>
+                            <lightning-button variant="destructive"
+                                              if:true={confirmLabel}
+                                              data-id="confirm"
+                                              name="confirm"
+                                              label={confirmLabel}
+                                              title={confirmLabel}
+                                              onclick={handleClick}>
+                            </lightning-button>
+                            <lightning-button variant="brand"
+                                              if:true={closeLabel}
+                                              data-id="close"
+                                              name="close"
+                                              label={closeLabel}
+                                              title={closeLabel}
+                                              onclick={handleClick}>
+                            </lightning-button>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+        <c-cl-route-import-event-subscriber
+                if:true={relatedRecordId}
+                record-id={relatedRecordId}
+                onimportersvrmsg={handleImporterSvrMsg}>
+        </c-cl-route-import-event-subscriber>
+    </template>
+</template>

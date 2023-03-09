@@ -1,0 +1,41 @@
+<aura:component description="Accel_CommunityWhatsNew"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityInfoController">
+
+    <aura:attribute name="currentUserId" type="String" default="{!$SObjectType.CurrentUser.Id}" />
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="releaseNotes" type="List" />
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+
+    <aura:handler name="init" value="{! this }" action="{!c.doInit}"/>
+
+    <lightning:overlayLibrary aura:id="bottomNavOverlayLib"/>
+
+    <div class="slds-is-relative" style="min-height: 20vh;">
+        <div class="c-container">
+            <div>
+                <ui:scrollerWrapper class="scrollerSize">
+                    <div class="font-color-override">
+                        <aura:iteration items="{!v.releaseNotes}" var="note">
+                            <b> <lightning:formattedDateTime value="{!note.Change_Date__c}" />&nbsp;&nbsp;v{!note.Version__c}&nbsp;&nbsp;&nbsp;{!note.Module__c}</b>
+                            <lightning:formattedRichText value="{!note.Description__c}" />
+                            <br/>
+                        </aura:iteration>
+                    </div>
+                </ui:scrollerWrapper>
+            </div>
+            <div class="slds-m-top_large">
+               <div class="accel-modal-footer-container">
+                <div  class="accel-modal-footer-buttonsxx">
+                <lightning:button label="Cancel" title="Cancel" onclick="{! c.handleCancel }"/>
+                </div>
+               </div>
+
+            </div>
+        </div>
+    </div>
+</aura:component>

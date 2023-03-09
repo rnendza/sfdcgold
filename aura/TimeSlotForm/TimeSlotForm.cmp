@@ -1,0 +1,52 @@
+<aura:component description="TimeSlotForm" controller="TimeSlotMultiEditController">
+    <aura:attribute name="disabled" type="Boolean" default="false" />
+    <aura:attribute name="recordId" type="String"  />
+    <aura:attribute name="startTime" type="String" />
+    <aura:attribute name="endTime" type="String" />
+    <aura:attribute name="sObjectName" type="String" default="TimeSlot" />
+    <aura:attribute name="sObjectTimeSlot" type="SObject" />
+    <aura:attribute name="showSpinner" type="Boolean" default="true" />
+
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+
+    <aura:registerEvent name="appEventCopyTimeSlotSuccess" type="c:Accel_Evt_Generic" />
+
+    <lightning:overlayLibrary aura:id="overlayLib"/>
+    <div class="slds-is-relative" style="min-height: 50vh;">
+    <div class="c-container">
+        <lightning:recordEditForm
+                aura:id="cloneTimeSlotForm"
+                onload="{!c.handleLoad}"
+                onsubmit="{!c.handleSubmit}"
+                onsuccess="{!c.handleSuccess}"
+                onerror="{!c.handleError}"
+                objectApiName="{!v.sObjectName}">
+            <!-- the messages component is for error messages -->
+            <!--
+            <lightning:messages />
+            -->
+            <aura:if isTrue="{!v.showSpinner}">
+                <lightning:spinner />
+            </aura:if>
+
+            <lightning:inputField fieldName="DayOfWeek" aura:id="dayOfWeek" />
+            <lightning:inputField fieldName="Type"  aura:id="type"/>
+            <lightning:input type="time" label="Start Time" required="true" name="fldStartTime" aura:id="fldStartTime" value="{!v.startTime}" />
+            <!--
+            <lightning:inputField  aura:id="fldStartTime" fieldName="StartTime" />
+            -->
+            <lightning:input type="time" label="End Time" required="true" name="fldEndTime" aura:id="fldEndTime" value="{!v.endTime}" />
+            <lightning:input type="text" aura:id="opHrsName" disabled="true" label="Operating Hours"/>
+                <div class="slds-m-top_large">
+
+                <div class="slds-float--right">
+                    <lightning:button variant="neutral" name="cancel" label="Cancel" onclick="{!c.handleCancel}" />&nbsp;
+                    <lightning:button disabled="{!v.disabled}" variant="brand" type="submit" name="save" label="&nbsp;Save&nbsp;" />
+                </div>
+                </div>
+        </lightning:recordEditForm>
+    </div>
+    </div>
+</aura:component>

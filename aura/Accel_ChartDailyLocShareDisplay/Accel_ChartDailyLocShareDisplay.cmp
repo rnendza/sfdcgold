@@ -1,0 +1,12 @@
+<aura:component description="Accel_ChartDailyLocShareDisplay" >
+
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <aura:method name="buildDailyLocShareBarOptions" action="{!c.buildDailyLocShareBarOptions}" access="global">
+        <!-- other inbound params go here-->
+        <aura:attribute name="chartData" type="Object" required="true"/>
+        <!-- outbound stuff to return to calling component -->
+        <aura:attribute name="callback" type="function" required="true"/>
+    </aura:method>
+</aura:component>

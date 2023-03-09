@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Asset_Name_Prefix__c</fullName>
+        <defaultValue>&quot;SW - &quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Asset Name Prefix</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Latest_Serial_Number__c</fullName>
+        <defaultValue>950000000</defaultValue>
+        <externalId>false</externalId>
+        <label>Latest Serial Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Single_Trans_Assets__c</fullName>
+        <defaultValue>497</defaultValue>
+        <description>The maximum number of assets to create in a single transaction (to avoid flow limit errors)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The maximum number of assets to create in a single transaction (to avoid flow limit errors)</inlineHelpText>
+        <label>Max Single Trans Assets</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Software Assets Config</label>
+    <visibility>Public</visibility>
+</CustomObject>

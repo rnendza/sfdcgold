@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Выполнение плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Выполнение планов назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Выполнение плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Выполнение планов назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Выполнения плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Выполнения планов назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Выполнению плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Выполнению планов назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Выполнением плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Выполнением планов назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Выполнении плана назначения Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Выполнении планов назначения Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Iteration Count --></label>
+        <name>maps__BatchIterationCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Job Id --></label>
+        <name>maps__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache End Time --></label>
+        <name>maps__CacheEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache Start Time --></label>
+        <name>maps__CacheStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing End Time --></label>
+        <name>maps__ProcessingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Start Time --></label>
+        <name>maps__ProcessingStartTime__c</name>
+    </fields>
+    <fields>
+        <help>Достигнуто ограничения запросов</help>
+        <label><!-- Query Limit Hit --></label>
+        <name>maps__QueryLimitHit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>maps__QueryLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Assigned Count --></label>
+        <name>maps__RecordsAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Error Count --></label>
+        <name>maps__RecordsErrorCount__c</name>
+    </fields>
+    <fields>
+        <help>Количество записей, которые не были назначены</help>
+        <label><!-- Records Not Assigned Count --></label>
+        <name>maps__RecordsNotAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Total --></label>
+        <name>maps__RecordsTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation>Прервано</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caching</masterLabel>
+            <translation>Кэширование</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Завершено</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Сбой</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Обработка</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>В очереди</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Имя выполнения плана назначения Maps</nameFieldLabel>
+</CustomObjectTranslation>

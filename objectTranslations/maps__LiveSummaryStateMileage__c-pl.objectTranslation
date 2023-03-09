@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Podsumowanie ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Podsumowania ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Podsumowanie ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Podsumowania ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Podsumowania ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Podsumowań ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Podsumowaniu ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Podsumowaniom ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Podsumowaniem ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Podsumowaniami ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Podsumowaniu ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Podsumowaniach ilości mil dla stanu Maps Live</value>
+    </caseValues>
+    <fields>
+        <help>3-znakowy kod kraju</help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+        <picklistValues>
+            <masterLabel>CAN</masterLabel>
+            <translation>CAN</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Specified</masterLabel>
+            <translation>Nieokreślony</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USA</masterLabel>
+            <translation>USA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Rekord dziennego podsumowania środka na żywo, z którym powiązana jest pokonana odległość</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary State Mileages --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <help>Stan lub województwo przypisane do tego rekordu</help>
+        <label><!-- State or Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Distance Traveled (km) --></label>
+        <name>maps__TotalDistanceTraveledKm__c</name>
+    </fields>
+    <fields>
+        <help>Całkowita przebyta odległość w milach wewnątrz tego stanu.</help>
+        <label><!-- Total Distance Traveled (mi) --></label>
+        <name>maps__TotalDistanceTraveledMiles__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa podsumowania na żywo ilości mil dl</nameFieldLabel>
+</CustomObjectTranslation>

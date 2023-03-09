@@ -1,0 +1,23 @@
+.THIS .slds-form-element__label {
+    font-weight: bold;
+}
+@media only screen and (max-width: 480px) {
+    .THIS .slds-form-element__label {
+        padding-top: 0;
+    }
+    .THIS .slds-form-element_horizontal:not(.slds-is-editing), .THIS .slds-form_horizontal .slds-form-element:not(.slds-is-editing),
+    .THIS .slds-form_stacked .slds-form-element_horizontal:not(.slds-is-editing) {
+        padding: 0 0;
+    }
+}
+.THIS .scrollerWrapper {
+    height: 500px;
+}
+
+.THIS .slds-is-mobile .slds-listbox_vertical .slds-listbox__option_plain, .THIS .slds-is-mobile .slds-listbox_vertical .slds-listbox__option--plain,
+     .THIS .slds-is-mobile .slds-listbox--vertical .slds-listbox__option_plain, .THIS .slds-is-mobile .slds-listbox--vertical .slds-listbox__option--plain {
+    line-height: calc(2.00rem - 0rem) !important;
+}
+.THIS .rickmodifyme {
+    border:1px dotted red;
+}

@@ -1,0 +1,2776 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Jobs_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Jobs_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Jobs_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Jobs_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Job_Title__c</fields>
+        <fields>Department_Lookup__c</fields>
+        <fields>OwnerId</fields>
+        <fields>Job_Status__c</fields>
+        <label>Jobs Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>ADP_File_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>ADP File Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allocation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please use this section to provide information about allocation splits if this person will be working in more than one department.</inlineHelpText>
+        <label>Department Allocation Split</label>
+        <length>500</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Applicant_Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Applicant Source</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Approval_Confirmed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Approval Confirmed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Submission_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Submission Comments (optional)</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Average_Hours_Week__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please enter how many hours per week on average you expect this role to work. (1 through 40)</inlineHelpText>
+        <label>Average Hours/Week</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Bonus_Accepted_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Bonus (Accepted Offer)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Candidate_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Candidate Email</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Candidate_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Candidate Name (Accepted Offer)</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Candidate_Phone__c</fullName>
+        <externalId>false</externalId>
+        <label>Candidate Phone</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Phone</type>
+    </fields>
+    <fields>
+        <fullName>Class__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the appropriate Class this employee should be coded to. If the employee is coded to the Amusements department, please select &quot;Amusements&quot;.  If an employee primarily works for our Gaming operations, please select &quot;Gaming&quot;.  If the employee primarily works on ATMs, please select &quot;ATM &amp; Other&quot;.  For SG&amp;A employees, please select Gaming.</inlineHelpText>
+        <label>Class</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Gaming</fullName>
+                    <default>false</default>
+                    <label>Gaming</label>
+                </value>
+                <value>
+                    <fullName>Amusement</fullName>
+                    <default>false</default>
+                    <label>Amusement</label>
+                </value>
+                <value>
+                    <fullName>Contractor</fullName>
+                    <default>false</default>
+                    <label>Contractor</label>
+                </value>
+                <value>
+                    <fullName>ATM &amp; Other Revenue</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>ATM &amp; Other Revenue</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Company_Credit_Card_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Company Credit Card Needed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Compensation_Accepted_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Compensation (Accepted Offer)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Cost_Center__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the appropriate cost center (region) this employee will primarily work out of.  
+Note: &quot;Illinois&quot; is reserved for SG&amp;A (non - operations) employees as well as Operations leadership employees that can&apos;t be coded to a specific region.  
+&quot;Allocate Across All&quot; is reserved for relationship managers.
+Relationship Management Positions must be allocated to the Illinois Cost Center.</inlineHelpText>
+        <label>Cost Center</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Contractor</fullName>
+                    <default>false</default>
+                    <label>Contractor</label>
+                </value>
+                <value>
+                    <fullName>Burr Ridge</fullName>
+                    <default>false</default>
+                    <label>Burr Ridge</label>
+                </value>
+                <value>
+                    <fullName>Champ/Wats</fullName>
+                    <default>false</default>
+                    <label>Champ/Wats</label>
+                </value>
+                <value>
+                    <fullName>Collinsville</fullName>
+                    <default>false</default>
+                    <label>Collinsville</label>
+                </value>
+                <value>
+                    <fullName>Georgia</fullName>
+                    <default>false</default>
+                    <label>Georgia</label>
+                </value>
+                <value>
+                    <fullName>Illinois</fullName>
+                    <default>false</default>
+                    <label>Illinois</label>
+                </value>
+                <value>
+                    <fullName>Iowa</fullName>
+                    <default>false</default>
+                    <label>Iowa</label>
+                </value>
+                <value>
+                    <fullName>Nebraska</fullName>
+                    <default>false</default>
+                    <label>Nebraska</label>
+                </value>
+                <value>
+                    <fullName>Pennsylvania</fullName>
+                    <default>false</default>
+                    <label>Pennsylvania</label>
+                </value>
+                <value>
+                    <fullName>Peoria</fullName>
+                    <default>false</default>
+                    <label>Peoria</label>
+                </value>
+                <value>
+                    <fullName>Rockford</fullName>
+                    <default>false</default>
+                    <label>Rockford</label>
+                </value>
+                <value>
+                    <fullName>Springfield</fullName>
+                    <default>false</default>
+                    <label>Springfield</label>
+                </value>
+                <value>
+                    <fullName>Tinley Park</fullName>
+                    <default>false</default>
+                    <label>Tinley Park</label>
+                </value>
+                <value>
+                    <fullName>All Across</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>All Across</label>
+                </value>
+                <value>
+                    <fullName>Corporate</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Corporate</label>
+                </value>
+                <value>
+                    <fullName>Glen Carbon</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Glen Carbon</label>
+                </value>
+                <value>
+                    <fullName>Lincoln</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Lincoln</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_Filled__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Filled</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_Job_Was_Posted__c</fullName>
+        <description>updated by automation to record Date Job Was Posted</description>
+        <externalId>false</externalId>
+        <label>Date Job Was Posted</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>DepartmentId__c</fullName>
+        <externalId>false</externalId>
+        <formula>Department_Lookup__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>DepartmentId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Department_Lookup__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select the Department this employee should be coded to.  If the employee will support more than one department, please select the primary department this employee should be coded to and add additional applicable departments and applicable percentage split in the description box.</inlineHelpText>
+        <label>Department</label>
+        <referenceTo>Department__c</referenceTo>
+        <relationshipLabel>Jobs</relationshipLabel>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Entity_Location__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>IL employees - please select Accel Entertainment, Inc. 
+GA employees, please select 	Bulldog Gaming LLC - Georgia
+IA employees, please select Hawkeye Gaming LLC – Iowa
+NE employees, please select Husker Gaming LLC – Nebraska</inlineHelpText>
+        <label>Entity/Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accel Entertainment, Inc.</fullName>
+                    <default>false</default>
+                    <label>Accel Entertainment, Inc.</label>
+                </value>
+                <value>
+                    <fullName>Bulldog Gaming LLC - Georgia</fullName>
+                    <default>false</default>
+                    <label>Bulldog Gaming LLC - Georgia</label>
+                </value>
+                <value>
+                    <fullName>Hawkeye Gaming LLC – Iowa</fullName>
+                    <default>false</default>
+                    <label>Hawkeye Gaming LLC – Iowa</label>
+                </value>
+                <value>
+                    <fullName>Husker Gaming LLC – Nebraska</fullName>
+                    <default>false</default>
+                    <label>Husker Gaming LLC – Nebraska</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Executive_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Executive Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Human_Resources1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Exemption_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Exemption Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hourly</fullName>
+                    <default>false</default>
+                    <label>Hourly</label>
+                </value>
+                <value>
+                    <fullName>Salary</fullName>
+                    <default>false</default>
+                    <label>Salary</label>
+                </value>
+                <value>
+                    <fullName>Exempt</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Exempt</label>
+                </value>
+                <value>
+                    <fullName>Non-Exempt</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Non-Exempt</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Existing_Job_Title__c</fullName>
+        <externalId>false</externalId>
+        <label>Existing Job Title?</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Explanation_of_Hiring_Need__c</fullName>
+        <externalId>false</externalId>
+        <label>Explanation of Hiring Need</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Explanation_of_Inactive_Requisition__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Provide a reason for why the job is no longer needed.</inlineHelpText>
+        <label>Explanation of Inactive Requisition</label>
+        <length>1000</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>FTE_Count__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Full Time Equivalent; take average number of hours/week and divide by 40</inlineHelpText>
+        <label>FTE Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fill_By_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Fill By Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Finance_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Finance Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Human_Resources3</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Hiring_Reason__c</fullName>
+        <externalId>false</externalId>
+        <label>Hiring Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>Replacement - Promotion</fullName>
+                    <default>false</default>
+                    <label>Promotion</label>
+                </value>
+                <value>
+                    <fullName>Replacement - Transfer Department</fullName>
+                    <default>false</default>
+                    <label>Transfer</label>
+                </value>
+                <value>
+                    <fullName>Replacement - Separation</fullName>
+                    <default>false</default>
+                    <label>Replacement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Human_Resources_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Human Resources Approval</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Human_Resources_Approver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Human Resources Approver</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Human_Resources2</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>In_Budget__c</fullName>
+        <externalId>false</externalId>
+        <label>In Budget</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Instructions_for_Approval__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Before you click Save, please ensure that you have reviewed all the Job Essentials products in the related-list on the right-hand side of your screen. Remove any that do not apply by select Delete from the dropdown next to the item, or add more items by New from the dropdown.&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Instructions for Approval</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_Essentials_Filled_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Essentials Filled Count</label>
+        <summaryFilterItems>
+            <field>Job_Requisition_Essentials__c.Completed_Date__c</field>
+            <operation>notEqual</operation>
+            <value></value>
+        </summaryFilterItems>
+        <summaryForeignKey>Job_Requisition_Essentials__c.Jobs__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Job_Essentials_Rollup_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Essentials Rollup Count</label>
+        <summaryForeignKey>Job_Requisition_Essentials__c.Jobs__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Job_Essentials_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>If( Job_Essentials_Rollup_Count__c -  Job_Essentials_Filled_Count__c = 0,&quot;Items Filled&quot;,&quot;Awaiting Job Essentials&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Essentials Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Job_No_Longer_Needed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Job No Longer Needed</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Job_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>true</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Approval</fullName>
+                    <default>false</default>
+                    <label>In Approval</label>
+                </value>
+                <value>
+                    <fullName>Pending Posting</fullName>
+                    <default>false</default>
+                    <label>Approved: Pending Posting</label>
+                </value>
+                <value>
+                    <fullName>Posted</fullName>
+                    <default>false</default>
+                    <label>Posted</label>
+                </value>
+                <value>
+                    <fullName>Filled</fullName>
+                    <default>false</default>
+                    <label>Filled</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Approved</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Job Title</label>
+        <referenceTo>Job_Title__c</referenceTo>
+        <relationshipLabel>Jobs</relationshipLabel>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Last_Candidate_s_Name__c</fullName>
+        <description>updated via workflow rule Last Candidate and used in the email alert that goes out to job owner when job status is updated to Posted from Filled</description>
+        <externalId>false</externalId>
+        <label>Last Candidate&apos;s Name</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Need_to_register_as_employee_sales_agent__c</fullName>
+        <externalId>false</externalId>
+        <label>Need to register as employee sales agent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>New_Headcount_Reason__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please provide supporting information as needed in the Explanation of Hiring Need field.</inlineHelpText>
+        <label>New Headcount Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Incremental growth assumptions; if so, provide a benchmark measurement tool (ex. 1 new hire every 500 new locations)</fullName>
+                    <default>false</default>
+                    <label>Incremental growth assumptions; if so, provide a benchmark measurement tool (ex. 1 new hire every 500 new locations)</label>
+                </value>
+                <value>
+                    <fullName>A new initiative that is underway that should increase bottom line</fullName>
+                    <default>false</default>
+                    <label>A new initiative that is underway that should increase bottom line</label>
+                </value>
+                <value>
+                    <fullName>A cost savings project (ex. reduce the need for service techs), and if so, what is the timing and monthly savings that each new hire should provide?</fullName>
+                    <default>false</default>
+                    <label>A cost savings project (ex. reduce the need for service techs), and if so, what is the timing and monthly savings that each new hire should provide?</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>New_Hire_Will_Report_To__c</fullName>
+        <externalId>false</externalId>
+        <label>New Hire Will Report To:</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Office</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Entity_Location__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Blue Ridge</fullName>
+                    <default>false</default>
+                    <label>Blue Ridge</label>
+                </value>
+                <value>
+                    <fullName>Burr Ridge</fullName>
+                    <default>false</default>
+                    <label>Burr Ridge</label>
+                </value>
+                <value>
+                    <fullName>Burr Ridge Amusements</fullName>
+                    <default>false</default>
+                    <label>Burr Ridge Amusements</label>
+                </value>
+                <value>
+                    <fullName>Champaign</fullName>
+                    <default>false</default>
+                    <label>Champaign</label>
+                </value>
+                <value>
+                    <fullName>Collinsville</fullName>
+                    <default>false</default>
+                    <label>Collinsville</label>
+                </value>
+                <value>
+                    <fullName>Dubuque</fullName>
+                    <default>false</default>
+                    <label>Dubuque</label>
+                </value>
+                <value>
+                    <fullName>Lincoln</fullName>
+                    <default>false</default>
+                    <label>Lincoln</label>
+                </value>
+                <value>
+                    <fullName>Marietta</fullName>
+                    <default>false</default>
+                    <label>Marietta</label>
+                </value>
+                <value>
+                    <fullName>North Platte</fullName>
+                    <default>false</default>
+                    <label>North Platte</label>
+                </value>
+                <value>
+                    <fullName>Omaha</fullName>
+                    <default>false</default>
+                    <label>Omaha</label>
+                </value>
+                <value>
+                    <fullName>Peoria</fullName>
+                    <default>false</default>
+                    <label>Peoria</label>
+                </value>
+                <value>
+                    <fullName>Rockford Amusements</fullName>
+                    <default>false</default>
+                    <label>Rockford Amusements</label>
+                </value>
+                <value>
+                    <fullName>Rockford</fullName>
+                    <default>false</default>
+                    <label>Rockford West</label>
+                </value>
+                <value>
+                    <fullName>Savannah</fullName>
+                    <default>false</default>
+                    <label>Savannah</label>
+                </value>
+                <value>
+                    <fullName>Sioux City</fullName>
+                    <default>false</default>
+                    <label>Sioux City</label>
+                </value>
+                <value>
+                    <fullName>Springfield</fullName>
+                    <default>false</default>
+                    <label>Springfield</label>
+                </value>
+                <value>
+                    <fullName>Springfield Amusements</fullName>
+                    <default>false</default>
+                    <label>Springfield Amusements</label>
+                </value>
+                <value>
+                    <fullName>Tinley Park</fullName>
+                    <default>false</default>
+                    <label>Tinley Park</label>
+                </value>
+                <value>
+                    <fullName>Watseka</fullName>
+                    <default>false</default>
+                    <label>Watseka</label>
+                </value>
+                <value>
+                    <fullName>LaSalle</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>LaSalle</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Burr Ridge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Burr Ridge Amusements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Champaign</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Collinsville</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Peoria</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Rockford Amusements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Rockford</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Springfield</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Springfield Amusements</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Tinley Park</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Accel Entertainment, Inc.</controllingFieldValue>
+                <valueName>Watseka</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulldog Gaming LLC - Georgia</controllingFieldValue>
+                <valueName>Blue Ridge</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulldog Gaming LLC - Georgia</controllingFieldValue>
+                <valueName>Marietta</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Bulldog Gaming LLC - Georgia</controllingFieldValue>
+                <valueName>Savannah</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hawkeye Gaming LLC – Iowa</controllingFieldValue>
+                <valueName>Dubuque</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Hawkeye Gaming LLC – Iowa</controllingFieldValue>
+                <valueName>Sioux City</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Husker Gaming LLC – Nebraska</controllingFieldValue>
+                <valueName>Lincoln</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Husker Gaming LLC – Nebraska</controllingFieldValue>
+                <valueName>North Platte</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Husker Gaming LLC – Nebraska</controllingFieldValue>
+                <valueName>Omaha</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <referenceTo>Job_Applications__c</referenceTo>
+        <relationshipLabel>Jobs</relationshipLabel>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Record_Link__c</fullName>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_300, FIND( &apos;/services&apos;, $Api.Partner_Server_URL_300))&amp; Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Recruiter__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Recruiter</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Recruiting_Pool__c</fullName>
+        <externalId>false</externalId>
+        <label>Recruiting Pool</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal THEN external</fullName>
+                    <default>false</default>
+                    <label>Internal THEN external</label>
+                </value>
+                <value>
+                    <fullName>Internal AND external</fullName>
+                    <default>false</default>
+                    <label>Internal AND external</label>
+                </value>
+                <value>
+                    <fullName>External only</fullName>
+                    <default>false</default>
+                    <label>External only</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region_City__c</fullName>
+        <externalId>false</externalId>
+        <label>Region &amp; City</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Jobs</relationshipLabel>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Replacement_Reason__c</fullName>
+        <description>When a job is created because an employee is being replaced, this field indicates the reason for the replacement.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Why is the previous employee being replaced?</inlineHelpText>
+        <label>Replacement Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Replacement - Promotion</fullName>
+                    <default>false</default>
+                    <label>Replacement - Promotion</label>
+                </value>
+                <value>
+                    <fullName>Replacement - Separation</fullName>
+                    <default>false</default>
+                    <label>Replacement - Separation</label>
+                </value>
+                <value>
+                    <fullName>Replacement - Transfer</fullName>
+                    <default>false</default>
+                    <label>Replacement - Transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Replacing_name_of_person__c</fullName>
+        <externalId>false</externalId>
+        <label>Replacing (name of person)</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Requesting_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Requesting Manager</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Human_Resources</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Requisition_Approved_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Requisition Approved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Incentive_Plan_Sent_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Incentive Plan Sent On</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Incentive_Plan__c</fullName>
+        <description>For any new values added, the validation rule has to be updated as well</description>
+        <externalId>false</externalId>
+        <label>Sales Incentive Plan (if applicable)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BDM Commissions Agreement IL</fullName>
+                    <default>false</default>
+                    <label>BDM Commissions Agreement IL</label>
+                </value>
+                <value>
+                    <fullName>BDM Commissions Agreement GA</fullName>
+                    <default>false</default>
+                    <label>BDM Commissions Agreement GA</label>
+                </value>
+                <value>
+                    <fullName>RM Commissions Agreements</fullName>
+                    <default>false</default>
+                    <label>RM Commissions Agreements</label>
+                </value>
+                <value>
+                    <fullName>GA AM Incentive</fullName>
+                    <default>false</default>
+                    <label>GA AM Incentive</label>
+                </value>
+                <value>
+                    <fullName>SDR Incentives</fullName>
+                    <default>false</default>
+                    <label>SDR Incentives</label>
+                </value>
+                <value>
+                    <fullName>NE BDM Incentive</fullName>
+                    <default>false</default>
+                    <label>NE BDM Incentive</label>
+                </value>
+                <value>
+                    <fullName>NE AM Incentive</fullName>
+                    <default>false</default>
+                    <label>NE AM Incentive</label>
+                </value>
+                <value>
+                    <fullName>NC BDM Incentive</fullName>
+                    <default>false</default>
+                    <label>NC BDM Incentive</label>
+                </value>
+                <value>
+                    <fullName>Other Commission Agreement</fullName>
+                    <default>false</default>
+                    <label>Other Commission Agreement</label>
+                </value>
+                <value>
+                    <fullName>N/A</fullName>
+                    <default>false</default>
+                    <label>N/A</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Shift_Hours__c</fullName>
+        <externalId>false</externalId>
+        <label>Shift Hours</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Shift__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Shift</label>
+        <referenceTo>Shift</referenceTo>
+        <relationshipLabel>Jobs</relationshipLabel>
+        <relationshipName>Jobs</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Internal</fullName>
+                    <default>false</default>
+                    <label>Internal</label>
+                </value>
+                <value>
+                    <fullName>External</fullName>
+                    <default>false</default>
+                    <label>External</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Start_Date_Accepted_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Start Date (Accepted Offer)</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Submit_for_Approval_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Submit for Approval Trigger</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Submitted_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Submitted Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Transfer_Reason__c</fullName>
+        <description>When a job is created because an employee is being transferred, this field indicates where/how the employee is being transferred.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Why/where is the employee being transferred?</inlineHelpText>
+        <label>Transfer Reason</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Department Transfer</fullName>
+                    <default>false</default>
+                    <label>Department Transfer</label>
+                </value>
+                <value>
+                    <fullName>Regional Transfer</fullName>
+                    <default>false</default>
+                    <label>Regional Transfer</label>
+                </value>
+                <value>
+                    <fullName>Same Department – New Position</fullName>
+                    <default>false</default>
+                    <label>Same Department – New Position</label>
+                </value>
+                <value>
+                    <fullName>State Transfer</fullName>
+                    <default>false</default>
+                    <label>State Transfer</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full-Time</fullName>
+                    <default>false</default>
+                    <label>Full-Time</label>
+                </value>
+                <value>
+                    <fullName>Part-Time</fullName>
+                    <default>false</default>
+                    <label>Part-Time</label>
+                </value>
+                <value>
+                    <fullName>Contractor</fullName>
+                    <default>false</default>
+                    <label>Contractor</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Work_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Work Schedule</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1st shift</fullName>
+                    <default>false</default>
+                    <label>1st shift</label>
+                </value>
+                <value>
+                    <fullName>2nd shift</fullName>
+                    <default>false</default>
+                    <label>2nd shift</label>
+                </value>
+                <value>
+                    <fullName>3rd shift</fullName>
+                    <default>false</default>
+                    <label>3rd shift</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Jobs</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Entity_Location__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <columns>Applicant_Source__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_All</fullName>
+        <columns>Recruiter__c</columns>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Entity_Location__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Copy of All</label>
+        <sharedTo>
+            <group>Human_Resources</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Filled_Jobs</fullName>
+        <columns>NAME</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Entity_Location__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Jobs__c.Job_Posting</value>
+        </filters>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>equals</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Start_Date_Accepted_Offer__c</field>
+            <operation>greaterThan</operation>
+            <value>6/30/2021</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Filled Jobs</label>
+        <sharedTo>
+            <group>Human_Resources</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Internal_Transfers</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <columns>Applicant_Source__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>equals</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Applicant_Source__c</field>
+            <operation>equals</operation>
+            <value>Internal Candidate</value>
+        </filters>
+        <label>Internal Transfers</label>
+    </listViews>
+    <listViews>
+        <fullName>Jobs_Finance_Approvals_Jobs</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Jobs: Finance Approvals</label>
+        <queue>Jobs_Finance_Approvals</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Jobs_HR_Approvals_Jobs</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Jobs: HR Approvals</label>
+        <queue>Jobs_HR_Approvals</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Jobs_Ready_to_Post</fullName>
+        <columns>NAME</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Office__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Fill_By_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>equals</operation>
+            <value>Pending Posting</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Jobs__c.Job_Posting</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <label>Jobs Ready to Post</label>
+    </listViews>
+    <listViews>
+        <fullName>List_of_Jobs_No_Longer_Needed</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>List of Jobs No Longer Needed</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Requested_Jobs</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Job_Status__c</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Requested Jobs</label>
+    </listViews>
+    <listViews>
+        <fullName>Posted_Jobs_w_o_Recruiter</fullName>
+        <columns>Recruiter__c</columns>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Entity_Location__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>Start_Date_Accepted_Offer__c</columns>
+        <columns>Candidate_Name__c</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Jobs__c.Job_Posting</value>
+        </filters>
+        <filters>
+            <field>Recruiter__c</field>
+            <operation>equals</operation>
+        </filters>
+        <label>Posted Jobs w/o Recruiter</label>
+        <sharedTo>
+            <group>Human_Resources</group>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Requisitions_assigned_to_Eduardo</fullName>
+        <columns>Recruiter__c</columns>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>New_Hire_Will_Report_To__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Recruiter__c</field>
+            <operation>equals</operation>
+            <value>Eduardo Fuentes</value>
+        </filters>
+        <label>Requisitions assigned to Eduardo</label>
+    </listViews>
+    <listViews>
+        <fullName>Requisitions_assigned_to_Henry</fullName>
+        <columns>Recruiter__c</columns>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>New_Hire_Will_Report_To__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Recruiter__c</field>
+            <operation>equals</operation>
+            <value>Henry Brown</value>
+        </filters>
+        <label>Requisitions assigned to Henry</label>
+    </listViews>
+    <listViews>
+        <fullName>Requisitions_assigned_to_Kate_Lucy</fullName>
+        <columns>Recruiter__c</columns>
+        <columns>NAME</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Department_Lookup__c</columns>
+        <columns>Office__c</columns>
+        <columns>Cost_Center__c</columns>
+        <columns>Job_Status__c</columns>
+        <columns>New_Hire_Will_Report_To__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Replacing_name_of_person__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Filled</value>
+        </filters>
+        <filters>
+            <field>Job_No_Longer_Needed__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Recruiter__c</field>
+            <operation>equals</operation>
+            <value>Kate McMahon</value>
+        </filters>
+        <label>Requisitions assigned to Kate/Lucy</label>
+    </listViews>
+    <nameField>
+        <displayFormat>HR-{00000}</displayFormat>
+        <label>Job Record Id</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Jobs</pluralLabel>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Job_Posting</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Jobs_Compact_Layout</compactLayoutAssignment>
+        <label>Approved - Ready to Post</label>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Amusement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Credit_Card_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cost_Center__c</picklist>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champ%2FWats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Entity_Location__c</picklist>
+            <values>
+                <fullName>Accel Entertainment%2C Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulldog Gaming LLC - Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawkeye Gaming LLC %E2%80%93 Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Husker Gaming LLC %E2%80%93 Nebraska</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exemption_Status__c</picklist>
+            <values>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Existing_Job_Title__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hiring_Reason__c</picklist>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Separation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Transfer Department</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>In_Budget__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Job_Status__c</picklist>
+            <values>
+                <fullName>Filled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pending Posting</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Posted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Need_to_register_as_employee_sales_agent__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Headcount_Reason__c</picklist>
+            <values>
+                <fullName>A cost savings project %28ex%2E reduce the need for service techs%29%2C and if so%2C what is the timing and monthly savings that each new hire should provide%3F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A new initiative that is underway that should increase bottom line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incremental growth assumptions%3B if so%2C provide a benchmark measurement tool %28ex%2E 1 new hire every 500 new locations%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>Blue Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burr Ridge Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubuque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lincoln</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marietta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Platte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omaha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Savannah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sioux City</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Watseka</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Recruiting_Pool__c</picklist>
+            <values>
+                <fullName>External only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal AND external</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal THEN external</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Replacement_Reason__c</picklist>
+            <values>
+                <fullName>Replacement - Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Separation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Incentive_Plan__c</picklist>
+            <values>
+                <fullName>BDM Commissions Agreement GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BDM Commissions Agreement IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA AM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC BDM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE AM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE BDM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Commission Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RM Commissions Agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDR Incentives</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>External</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transfer_Reason__c</picklist>
+            <values>
+                <fullName>Department Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Department %E2%80%93 New Position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full-Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part-Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Work_Schedule__c</picklist>
+            <values>
+                <fullName>1st shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2nd shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3rd shift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Position_Requisition</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>Jobs_Compact_Layout</compactLayoutAssignment>
+        <label>Get Position Approval</label>
+        <picklistValues>
+            <picklist>Class__c</picklist>
+            <values>
+                <fullName>Amusement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Gaming</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Company_Credit_Card_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cost_Center__c</picklist>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champ%2FWats</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Illinois</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Nebraska</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pennsylvania</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Entity_Location__c</picklist>
+            <values>
+                <fullName>Accel Entertainment%2C Inc%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bulldog Gaming LLC - Georgia</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hawkeye Gaming LLC %E2%80%93 Iowa</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Husker Gaming LLC %E2%80%93 Nebraska</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Exemption_Status__c</picklist>
+            <values>
+                <fullName>Hourly</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Salary</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Existing_Job_Title__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Hiring_Reason__c</picklist>
+            <values>
+                <fullName>New</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Separation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Transfer Department</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>In_Budget__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Job_Status__c</picklist>
+            <values>
+                <fullName>In Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Pending Posting</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Need_to_register_as_employee_sales_agent__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>New_Headcount_Reason__c</picklist>
+            <values>
+                <fullName>A cost savings project %28ex%2E reduce the need for service techs%29%2C and if so%2C what is the timing and monthly savings that each new hire should provide%3F</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>A new initiative that is underway that should increase bottom line</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Incremental growth assumptions%3B if so%2C provide a benchmark measurement tool %28ex%2E 1 new hire every 500 new locations%29</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Office__c</picklist>
+            <values>
+                <fullName>Blue Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Burr Ridge Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Dubuque</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Lincoln</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marietta</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>North Platte</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Omaha</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Savannah</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sioux City</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Springfield Amusements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Watseka</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Recruiting_Pool__c</picklist>
+            <values>
+                <fullName>External only</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal AND external</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal THEN external</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Replacement_Reason__c</picklist>
+            <values>
+                <fullName>Replacement - Promotion</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Separation</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Replacement - Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Incentive_Plan__c</picklist>
+            <values>
+                <fullName>BDM Commissions Agreement GA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>BDM Commissions Agreement IL</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>GA AM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>N%2FA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NC BDM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE AM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>NE BDM Incentive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other Commission Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RM Commissions Agreements</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SDR Incentives</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Source__c</picklist>
+            <values>
+                <fullName>External</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Internal</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Transfer_Reason__c</picklist>
+            <values>
+                <fullName>Department Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Regional Transfer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Same Department %E2%80%93 New Position</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>State Transfer</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Full-Time</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part-Time</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Work_Schedule__c</picklist>
+            <values>
+                <fullName>1st shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2nd shift</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3rd shift</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Office__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Job_Status__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Fill_out_FTE_Count</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL(Type__c ,&quot;Part-Time&quot;), isblank(FTE_Count__c))</errorConditionFormula>
+        <errorDisplayField>FTE_Count__c</errorDisplayField>
+        <errorMessage>Please fill out the FTE Count field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hiring_Reason_New</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(ispickval( Hiring_Reason__c,&quot;New&quot;), isblank( Explanation_of_Hiring_Need__c ),RecordTypeId = &quot;0121I000000WQPE&quot;)</errorConditionFormula>
+        <errorDisplayField>Explanation_of_Hiring_Need__c</errorDisplayField>
+        <errorMessage>If your hiring reason is New, please fill out the Explanation of Hiring Need</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Hiring_Reason_Replacement</fullName>
+        <active>true</active>
+        <description>for hiring reason = replacement, need name of person replacing
+HR requested to have the field highlighted, and that is why this val rule and the &quot;replacement_Reason_required&quot; were created separately</description>
+        <errorConditionFormula>and(
+ispickval(Hiring_Reason__c,&quot;Replacement - Separation&quot;),
+RecordType.DeveloperName=&apos;Position_Requisition&apos;,
+isblank(Replacing_name_of_person__c)
+)</errorConditionFormula>
+        <errorDisplayField>Replacing_name_of_person__c</errorDisplayField>
+        <errorMessage>Your Hiring Reason is &quot;Replacement&quot;.
+Please fill out the name of the &quot;Replacing (name of person)&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Job_Bad_Values_for_Sales_Incentive_Plan</fullName>
+        <active>true</active>
+        <description>prevent users from choosing N/A along with other values</description>
+        <errorConditionFormula>and(
+ INCLUDES( Sales_Incentive_Plan__c , &quot;N/A&quot;) , 
+
+or(
+
+ INCLUDES( Sales_Incentive_Plan__c , &quot;BDM Commissions Agreement IL&quot;),
+ INCLUDES( Sales_Incentive_Plan__c , &quot;BDM Commissions Agreement GA&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;RM Commissions Agreements&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;GA AM Incentive&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;SDR Incentives&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;NE BDM Incentive&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;NE AM Incentive&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;NC BDM Incentive&quot;), 
+ INCLUDES( Sales_Incentive_Plan__c , &quot;Other Commission Agreement&quot;)
+
+
+))</errorConditionFormula>
+        <errorDisplayField>Sales_Incentive_Plan__c</errorDisplayField>
+        <errorMessage>When choosing N/A for a Sales Incentive Plan, you cannot choose additional values.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Job_No_Longer_Needed_requires_a_reason</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(
+ Job_No_Longer_Needed__c = TRUE ,
+ ISBLANK( Explanation_of_Inactive_Requisition__c ) )</errorConditionFormula>
+        <errorDisplayField>Explanation_of_Inactive_Requisition__c</errorDisplayField>
+        <errorMessage>A reason for inactivating a job is required.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Replacement_Reason_required</fullName>
+        <active>true</active>
+        <description>for hiring reason = replacement, need Replacement Reason
+HR requested to have the field highlighted, and that is why this val rule and the &quot;Hiring_Reason_Replacement&quot; were created separately</description>
+        <errorConditionFormula>and(
+ispickval(Hiring_Reason__c,&quot;Replacement - Separation&quot;),
+RecordType.DeveloperName=&apos;Position_Requisition&apos;,
+ispickval( Replacement_Reason__c ,&quot;&quot;)
+)</errorConditionFormula>
+        <errorDisplayField>Replacement_Reason__c</errorDisplayField>
+        <errorMessage>Your Hiring Reason is &quot;Replacement&quot;.
+Please select a value for the &quot;Replacement Reason&quot;.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Sales_Agent_field_must_be_populated</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( Human_Resources_Approval__c = TRUE,ISBLANK( text(Need_to_register_as_employee_sales_agent__c )))</errorConditionFormula>
+        <errorMessage>Please fill out the following field: &quot;Need to register as employee sales agent.&quot;</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Transfer_Reason_is_required</fullName>
+        <active>true</active>
+        <description>Transfer Reason” is required for “Transfer” Hiring Reason</description>
+        <errorConditionFormula>and(
+ispickval( Hiring_Reason__c,&apos;Replacement - Transfer Department&apos;),
+ispickval( Transfer_Reason__c ,&apos;&apos;))</errorConditionFormula>
+        <errorDisplayField>Transfer_Reason__c</errorDisplayField>
+        <errorMessage>Please, select a Transfer Reason.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

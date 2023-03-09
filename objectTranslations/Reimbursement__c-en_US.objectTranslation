@@ -1,0 +1,665 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Reimbursement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Reimbursements</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel Spend --></label>
+        <name>Accel_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel&apos;s Portion of Fees --></label>
+        <name>Accels_Portion_of_Fees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted As --></label>
+        <name>Accepted_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account - Related List --></label>
+        <name>Account_RelatedList__c</name>
+        <relationshipLabel><!-- Reimbursement --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Status --></label>
+        <name>Account_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Reimbursements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual Run End Date (Invoice) --></label>
+        <name>Actual_Run_End_Date_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Run Start Date (Invoice) --></label>
+        <name>Actual_Run_Start_Date_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Request --></label>
+        <name>Age_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Requested For Reimbursement --></label>
+        <name>Amount_Requested_For_Reimbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Method --></label>
+        <name>Approval_Method__c</name>
+        <picklistValues>
+            <masterLabel>Pre-Approval Compliance &amp; Accounting</masterLabel>
+            <translation><!-- Pre-Approval Compliance &amp; Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SF Approval Process</masterLabel>
+            <translation><!-- SF Approval Process --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved % Alarm Equipment Costs --></label>
+        <name>Approved_Alarm_Equipment_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Monthly Monitoring --></label>
+        <name>Approved_Alarm_Monthly_Monitoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved Monitoring Fees --></label>
+        <name>Approved_Monitoring_Fees__c</name>
+        <picklistValues>
+            <masterLabel>Alarm</masterLabel>
+            <translation><!-- Alarm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both Alarm &amp; Video</masterLabel>
+            <translation><!-- Both Alarm &amp; Video --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video</masterLabel>
+            <translation><!-- Video --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved % Video Camera Installation --></label>
+        <name>Approved_Video_Camera_Installation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved % Video System Equipment Costs --></label>
+        <name>Approved_Video_System_Equi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Azure External Id --></label>
+        <name>Azure_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Number --></label>
+        <name>Check_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Request --></label>
+        <name>Check_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Comments --></label>
+        <name>Compliance_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current VGT Count --></label>
+        <name>Current_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Status Change --></label>
+        <name>Date_of_Last_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Current Status --></label>
+        <name>Days_in_Current_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction Amount --></label>
+        <name>Deduction_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction Days Elapsed --></label>
+        <name>Deduction_Countdown__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction End Date --></label>
+        <name>Deduction_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction Needed --></label>
+        <name>Deduction_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Deduction Start Date --></label>
+        <name>Deduction_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Derek Harmer Approval --></label>
+        <name>Derek_Harmer_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Divider Material --></label>
+        <name>Divider_Material__c</name>
+        <picklistValues>
+            <masterLabel>Glass</masterLabel>
+            <translation><!-- Glass --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Please add in Notes section)</masterLabel>
+            <translation><!-- Other (Please add in Notes section) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic</masterLabel>
+            <translation><!-- Plastic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plexiglass</masterLabel>
+            <translation><!-- Plexiglass --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Establishment License Fee Split --></label>
+        <name>Establishment_License_Fee_Split__c</name>
+        <picklistValues>
+            <masterLabel>0%</masterLabel>
+            <translation><!-- 0% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>100%</masterLabel>
+            <translation><!-- 100% --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50%</masterLabel>
+            <translation><!-- 50% --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Establishment License Fee --></label>
+        <name>Establishment_License_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Alarm --></label>
+        <name>Existing_Alarm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing Video System --></label>
+        <name>Existing_Video_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- A file needs to be uploaded with the reimbursement request --></help>
+        <label><!-- File Submitted? --></label>
+        <name>File_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Approval rcvd --></label>
+        <name>Final_Approval_rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frame Material --></label>
+        <name>Frame_Material__c</name>
+        <picklistValues>
+            <masterLabel>Aluminum Frame</masterLabel>
+            <translation><!-- Aluminum Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Frame</masterLabel>
+            <translation><!-- No Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (please add in Notes section)</masterLabel>
+            <translation><!-- Other (please add in Notes section) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plastic Frame</masterLabel>
+            <translation><!-- Plastic Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Steel Frame</masterLabel>
+            <translation><!-- Steel Frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wood Frame</masterLabel>
+            <translation><!-- Wood Frame --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice # --></label>
+        <name>Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Fee --></label>
+        <name>License_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address --></label>
+        <name>Location_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Requesting to Split Video/Alarm --></label>
+        <name>Location_Requesting_to_Split_Video_Alarm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Spend --></label>
+        <name>Location_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Expense Type --></label>
+        <name>Marketing_Expense_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Product --></label>
+        <name>Marketing_Product__c</name>
+        <relationshipLabel><!-- Reimbursements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketing Reimbursement Amount --></label>
+        <name>Marketing_Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request --></label>
+        <name>Marketing_Request__c</name>
+        <relationshipLabel><!-- Reimbursements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Per NRT Fee --></label>
+        <name>NRT_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- New Account --></label>
+        <name>New_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Redemption Terminals Installed --></label>
+        <name>Number_of_Redemption_Terminals_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Machines Installed --></label>
+        <name>Number_of_VGTs_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Hold Date --></label>
+        <name>On_Hold_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Reason to put the request on hold. --></help>
+        <label><!-- On Hold Notes --></label>
+        <name>On_Hold_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity_RelatedList__c</name>
+        <relationshipLabel><!-- Reimbursements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Pay to the Order Of --></label>
+        <name>Pay_to_the_Order_Of__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Contractor Name --></label>
+        <name>Payee_Contractor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payee Info --></label>
+        <name>Payee_Info__c</name>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location</masterLabel>
+            <translation><!-- Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipality</masterLabel>
+            <translation><!-- Municipality --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payment Date --></label>
+        <name>Payment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- This information will be shown in locations&apos; bank statements. --></help>
+        <label><!-- Payment Memo --></label>
+        <name>Payment_Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Type --></label>
+        <name>Payment_Type__c</name>
+        <picklistValues>
+            <masterLabel>ACH</masterLabel>
+            <translation><!-- ACH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Check</masterLabel>
+            <translation><!-- Check --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Per VGT Fee --></label>
+        <name>Per_VGT_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Comments --></label>
+        <name>Project_Manager_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Reimbursements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redemption Terminal Fee --></label>
+        <name>Redemption_Terminal_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Request For --></label>
+        <name>Reimbursement_Request_For__c</name>
+        <picklistValues>
+            <masterLabel>Alarm</masterLabel>
+            <translation><!-- Alarm --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both</masterLabel>
+            <translation><!-- Both --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monitoring Fees</masterLabel>
+            <translation><!-- Monitoring Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Surveillance</masterLabel>
+            <translation><!-- Surveillance --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Requestor Email --></label>
+        <name>Requestor_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Comments --></label>
+        <name>Security_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Reviewed Quote/Invoice --></label>
+        <name>Security_Reviewed_Quote_Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved - Payment Pending</masterLabel>
+            <translation><!-- Approved - Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved - Pending Go Live</masterLabel>
+            <translation><!-- Approved - Pending Go Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Created</masterLabel>
+            <translation><!-- Created --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Accounting Approval</masterLabel>
+            <translation><!-- In Accounting Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Amusement Approval</masterLabel>
+            <translation><!-- In Amusement Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Compliance Approval</masterLabel>
+            <translation><!-- In Compliance Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Gaming Approval</masterLabel>
+            <translation><!-- In Gaming Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Security Approval</masterLabel>
+            <translation><!-- In Security Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Submitted for Approval --></label>
+        <name>Submitted_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terminal Operator Fee --></label>
+        <name>Terminal_Operator_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Accel Will Reimburse Location --></label>
+        <name>Total_Amount_Accel_will_reimburs_locatio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Authorized Reimbursement Cost --></label>
+        <name>Total_Authorized_Reimbursement_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fees Paid By Accel --></label>
+        <name>Total_Fees_Paid_By_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Fees Paid by Location --></label>
+        <name>Total_Fees_Paid_by_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Cameras in System --></label>
+        <name>Total_Number_of_Cameras_in_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Vendor Amount --></label>
+        <name>Total_Vendor_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Cameras on VG Area/Entrances/Exits --></label>
+        <name>Total_of_Cameras_Monitoring_Gaming_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Access Control</masterLabel>
+            <translation><!-- Access Control --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Alarm System</masterLabel>
+            <translation><!-- Alarm System --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Annual IGB VGT License Fee</masterLabel>
+            <translation><!-- Annual IGB VGT License Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buildout</masterLabel>
+            <translation><!-- Buildout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Work</masterLabel>
+            <translation><!-- Electrical Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half of Sci Games Admin Share</masterLabel>
+            <translation><!-- Half of Sci Games Admin Share --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Fee</masterLabel>
+            <translation><!-- License Fee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month End Variance</masterLabel>
+            <translation><!-- Month End Variance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly Monitoring</masterLabel>
+            <translation><!-- Monthly Monitoring --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipality Fees</masterLabel>
+            <translation><!-- Municipality Fees --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Negative Carryforward</masterLabel>
+            <translation><!-- Negative Carryforward --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Live Date --></label>
+        <name>VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Witholding Periods (in weeks) --></label>
+        <name>Witholding_Periods__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Amusement Fee --></label>
+        <name>Amusement_Fee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Annual IGB VGT License Fee --></label>
+        <name>Annual_IGB_VGT_License_Fee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Buildout --></label>
+        <name>Buildout</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- COVID Location Expense --></label>
+        <name>COVID_Location_Expense</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Electrical Work --></label>
+        <name>Electrical_Work</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Marketing --></label>
+        <name>Marketing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Municipality Fee --></label>
+        <name>Municipality_Fee</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Alarm/Surveillance/Access Control --></label>
+        <name>Video_Alarm_System</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Only &quot;Contractor&quot; can be chosen under Payee Info. --></errorMessage>
+        <name>COVID_Payments_Must_Be_Paid_to_Vendor_On</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out the Deduction Needed picklist in order to advance your approval action. --></errorMessage>
+        <name>Deduction_Needed_must_be_filled_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the # of Cameras on VGT Area. --></errorMessage>
+        <name>If_Request_is_for_surveillance_or_Both_1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the Total Number of Cameras in System. --></errorMessage>
+        <name>If_Request_is_for_surveillance_or_Both_2</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out the Payee Contractor Name. --></errorMessage>
+        <name>Municipality_Contractor_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the On Hold Date. --></errorMessage>
+        <name>On_Hold_Date_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please update the On Hold Reason. --></errorMessage>
+        <name>On_Hold_Note_Blank</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please add the Check Number, the Date and Amount Paid. --></errorMessage>
+        <name>Paid_details_missing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter the Payee Contractor Name. --></errorMessage>
+        <name>Payee_Contractor_Name_Must_Be_Populated</name>
+    </validationRules>
+</CustomObjectTranslation>

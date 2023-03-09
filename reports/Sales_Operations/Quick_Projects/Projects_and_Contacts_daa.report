@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+    <block>
+        <blockInfo>
+            <blockId>B0</blockId>
+            <joinTable>Project__c.Account__c</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Project__c$Name</field>
+        </columns>
+        <columns>
+            <field>Project__c$Project_Status__c</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Project__c$Project_Status__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>notEqual</operator>
+                <value>Live,Closure</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Project Base block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Project_Base__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Project__c$Accel_Go_Live_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <block>
+        <blockInfo>
+            <blockId>B1</blockId>
+            <joinTable>Account</joinTable>
+        </blockInfo>
+        <columns>
+            <field>Account$Name</field>
+        </columns>
+        <columns>
+            <field>Account$Type</field>
+        </columns>
+        <columns>
+            <field>Account.Contacts$Name</field>
+        </columns>
+        <filter>
+            <criteriaItems>
+                <column>Account$Agreement_Current_Signed_Date__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>notEqual</operator>
+                <value></value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Account$Accel_VGT_Live_Date__c</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>equals</operator>
+                <value></value>
+            </criteriaItems>
+            <criteriaItems>
+                <column>Account$Type</column>
+                <columnToColumn>false</columnToColumn>
+                <isUnlocked>true</isUnlocked>
+                <operator>notEqual</operator>
+                <value>Discontinued Account</value>
+            </criteriaItems>
+        </filter>
+        <format>Summary</format>
+        <name>Accounts and Contacts block 1</name>
+        <params>
+            <name>co</name>
+            <value>1</value>
+        </params>
+        <reportType>Accounts_and_Contacts__c</reportType>
+        <scope>organization</scope>
+        <showGrandTotal>true</showGrandTotal>
+        <showSubTotals>true</showSubTotals>
+        <timeFrameFilter>
+            <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+            <interval>INTERVAL_CUSTOM</interval>
+        </timeFrameFilter>
+    </block>
+    <blockInfo>
+        <blockId xsi:nil="true"/>
+        <joinTable>Project__c.Account__c</joinTable>
+    </blockInfo>
+    <description>joint report: Project Base + Accounts and Contacts</description>
+    <format>MultiBlock</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Project__c$Account__c.Id</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Projects and Contacts</name>
+    <reportType>Project_Base__c</reportType>
+    <showDetails>true</showDetails>
+</Report>

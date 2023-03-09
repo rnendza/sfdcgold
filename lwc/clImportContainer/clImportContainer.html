@@ -1,0 +1,34 @@
+<!-- Cl Admin Utils Container -->
+<template>
+    <lightning-tabset variant="scoped"
+                      active-tab-value={_activeTabValue}
+                      class="accel-tab-set accel-scoped-tab-set">
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:logging"
+                value="tab_route_import"
+                label="Importer">
+            <c-cl-route-importer-server
+                    if:true={customPermissions}
+                    parent-record-id={recordId}
+                    custom-permissions={customPermissions}
+                    display-help-video-link={displayHelpVideoLink}
+                    help-file-title={helpFileTitle}>
+            </c-cl-route-importer-server>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:file"
+                value="tab_route_import_history"
+                label="History">
+            <c-cl-import-history
+                    refresh-dummy={_refreshDummy}
+                    route-import-record-id={recordId}>
+            </c-cl-import-history>
+        </lightning-tab>
+    </lightning-tabset>
+
+
+</template>

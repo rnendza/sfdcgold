@@ -1,0 +1,3450 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Emergency Account Fields --></label>
+        <name>FSL__Emergency_Account_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Test_Lookup --></label>
+        <name>Test_Lookup</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account DBA Name</value>
+        </caseValues>
+        <caseValues>
+            <plural>true</plural>
+            <value>Account DBA Names</value>
+        </caseValues>
+        <name>account_name</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Geocode Accuracy</value>
+        </caseValues>
+        <name>shipping_accuracy_geocode_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Location</value>
+        </caseValues>
+        <name>shipping_address_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical City</value>
+        </caseValues>
+        <name>shipping_city_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Country</value>
+        </caseValues>
+        <name>shipping_country_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Country Code</value>
+        </caseValues>
+        <name>shipping_country_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Latitude</value>
+        </caseValues>
+        <name>shipping_latitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Longitude</value>
+        </caseValues>
+        <name>shipping_longitude_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical State/Province</value>
+        </caseValues>
+        <name>shipping_state_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical State/Province Code</value>
+        </caseValues>
+        <name>shipping_state_code_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Street</value>
+        </caseValues>
+        <name>shipping_street_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Physical Zip/Postal Code</value>
+        </caseValues>
+        <name>shipping_zip_account</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Type</value>
+        </caseValues>
+        <name>type_account</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- ACH Approved --></label>
+        <name>ACH_Approved__c</name>
+    </fields>
+    <fields>
+        <help><!-- When a technician delivers the ATM to the site. --></help>
+        <label><!-- ATM Activated --></label>
+        <name>ATM_Activated__c</name>
+    </fields>
+    <fields>
+        <label><!-- ATM --></label>
+        <name>ATM__c</name>
+        <relationshipLabel><!-- Accounts (ATM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accel Amusements --></label>
+        <name>Accel_Amusements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Employee Ownership --></label>
+        <name>Accel_Employee_Ownership__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates Accel_VGT_Live_Date__c has a value. --></help>
+        <label><!-- Accel Live Date Populated --></label>
+        <name>Accel_Live_Date_Populated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Membership --></label>
+        <name>Accel_Membership__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accel VGT Live Date --></label>
+        <name>Accel_VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Access Time --></label>
+        <name>Access_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account CaseSafe Id --></label>
+        <name>Account_CaseSafe_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account HPD --></label>
+        <name>Account_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Has Switch --></label>
+        <name>Account_Has_Switch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Id Fx --></label>
+        <name>Account_Id_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Manager Check --></label>
+        <name>Account_Owner_Manager_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Owner Manager Forceupdate --></label>
+        <name>Account_Owner_Manager_Forceupdate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Rank --></label>
+        <name>Account_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Record URL --></label>
+        <name>Account_Record_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Total HPD --></label>
+        <name>Account_Total_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Acquisition --></label>
+        <lookupFilter>
+            <errorMessage><!-- Acquisition: Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Acquisition__c</name>
+        <relationshipLabel><!-- Accounts (Acquisition) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active DOJ License --></label>
+        <name>Active_DOJ_License__c</name>
+        <relationshipLabel><!-- Accounts (Active DOJ License) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active IBA License --></label>
+        <name>Active_IBA_License__c</name>
+        <relationshipLabel><!-- Accounts (Active IBA License) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Linked IGB Gaming License --></label>
+        <name>Active_IGB_Gaming_License__c</name>
+        <relationshipLabel><!-- Accounts (Active IGB Gaming License) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Kiosk Agreement --></label>
+        <name>Active_Kiosk_Agreement__c</name>
+        <relationshipLabel><!-- Accounts (Active Kiosk Agreement) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Local Gaming License --></label>
+        <name>Active_Local_Gaming_License__c</name>
+        <relationshipLabel><!-- Accounts (Active Local Gaming License) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Local Liquor License --></label>
+        <name>Active_Local_Liquor_License__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Standalone ATM Agreement --></label>
+        <name>Active_Standalone_ATM_Agreement__c</name>
+        <relationshipLabel><!-- Accounts (Active Standalone ATM Agreement) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active State Liquor License --></label>
+        <name>Active_State_Liquor_License__c</name>
+        <relationshipLabel><!-- Accounts (Active State Liquor License) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Active Technology Release --></label>
+        <name>Active_Technology_Release__c</name>
+        <relationshipLabel><!-- Accounts (Active Technology Release) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual VGT Purchased --></label>
+        <name>Actual_VGT_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add/Swap/Reconfigure Instructions --></label>
+        <name>Add_Swap_Reconfigure_Instructions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add VGT Trigger --></label>
+        <name>Add_VGT_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Exists --></label>
+        <name>Addendum_Exists__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please use a comma    (   ,  )   after each email address
+*abc@accel.com, bcz@accel.com --></help>
+        <label><!-- Additional Revenue Statement Recipients --></label>
+        <name>Additional_Mail_Merge_Recipients__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address Gaming History --></label>
+        <name>Address_Gaming_History__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto Renew Date --></label>
+        <name>Agreement_Auto_Renew_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto Renew Length --></label>
+        <name>Agreement_Auto_Renew_Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto Renew Window --></label>
+        <name>Agreement_Auto_Renew_Window__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Based On --></label>
+        <name>Agreement_Based_On__c</name>
+        <picklistValues>
+            <masterLabel>Addendum Date</masterLabel>
+            <translation><!-- Addendum Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement Signed Date</masterLabel>
+            <translation><!-- Agreement Signed Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collective Live Date</masterLabel>
+            <translation><!-- Collective Live Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Current Term of Agreement</masterLabel>
+            <translation><!-- From Current Term of Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Live Date</masterLabel>
+            <translation><!-- Location Live Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Current Signed Date --></label>
+        <name>Agreement_Current_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Expiration Date --></label>
+        <name>Agreement_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Original Signed Date --></label>
+        <name>Agreement_Original_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Signed --></label>
+        <name>Agreement_Signed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Discontinued Date --></label>
+        <name>Agreement_Voided_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Discontinued Reason --></label>
+        <name>Agreement_Voided_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Accel Rejected - Poor Performance</masterLabel>
+            <translation><!-- Accel Rejected - Poor Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel Rejected - Poor Performance: TUA Expired</masterLabel>
+            <translation><!-- Accel Rejected - Poor Performance: TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel Rejected - Poor Performance: Terminated</masterLabel>
+            <translation><!-- Accel Rejected - Poor Performance: Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel Rejected the Location - TUA Expired</masterLabel>
+            <translation><!-- Accel Rejected the Location - TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel Rejected the Location - Terminated</masterLabel>
+            <translation><!-- Accel Rejected the Location - Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel T.U.A. lapsed without renewal</masterLabel>
+            <translation><!-- Accel T.U.A. lapsed without renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel rejected the location</masterLabel>
+            <translation><!-- Accel rejected the location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asset Sale -Lost to another TO</masterLabel>
+            <translation><!-- Asset Sale -Lost to another TO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate does not allow gaming</masterLabel>
+            <translation><!-- Corporate does not allow gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate Account</masterLabel>
+            <translation><!-- Duplicate Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Denied Gaming License</masterLabel>
+            <translation><!-- IGB Denied Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Denied Gaming License Renewal</masterLabel>
+            <translation><!-- IGB Denied Gaming License Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Revoked Gaming License</masterLabel>
+            <translation><!-- IGB Revoked Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Revoked Gaming License- TUA Expired</masterLabel>
+            <translation><!-- IGB Revoked Gaming License- TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Rule 320 Petition</masterLabel>
+            <translation><!-- IGB Rule 320 Petition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Denied Liquor License</masterLabel>
+            <translation><!-- Location Denied Liquor License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Did Not Renew Gaming License</masterLabel>
+            <translation><!-- Location Did Not Renew Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Did Not Renew Gaming License - TUA Expired</masterLabel>
+            <translation><!-- Location Did Not Renew Gaming License - TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Lost Liquor License - TUA Expired</masterLabel>
+            <translation><!-- Location Lost Liquor License - TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Re-applied for New Gaming License</masterLabel>
+            <translation><!-- Location Re-applied for New Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Re-applied for New Gaming License – Expired</masterLabel>
+            <translation><!-- Location Re-applied for New Gaming License – Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signed Extension w/TO - Lost</masterLabel>
+            <translation><!-- Location Signed Extension w/TO - Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signed w/ another TO - TUA Expired</masterLabel>
+            <translation><!-- Location Signed w/ another TO - TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signed w/ another TO - TUA terminated</masterLabel>
+            <translation><!-- Location Signed w/ another TO - TUA terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location ineligible due to school/church/casino/OTB distance</masterLabel>
+            <translation><!-- Location ineligible due to school/church/casino/OTB distance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location ineligible due to school/church/casino/OTB distance - TUA Expired</masterLabel>
+            <translation><!-- Location ineligible due to school/church/casino/OTB distance - TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location is in an opt-out area</masterLabel>
+            <translation><!-- Location is in an opt-out area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location is out of business</masterLabel>
+            <translation><!-- Location is out of business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location lost liquor license</masterLabel>
+            <translation><!-- Location lost liquor license --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location no longer interested in gaming</masterLabel>
+            <translation><!-- Location no longer interested in gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location no longer interested in gaming - TUA Terminated</masterLabel>
+            <translation><!-- Location no longer interested in gaming - TUA Terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location no longer interested in gaming – TUA Expired</masterLabel>
+            <translation><!-- Location no longer interested in gaming – TUA Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location signed with another operator</masterLabel>
+            <translation><!-- Location signed with another operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location signee did not have authority</masterLabel>
+            <translation><!-- Location signee did not have authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location was sold but T.U.A. was not assigned</masterLabel>
+            <translation><!-- Location was sold but T.U.A. was not assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M &amp; A</masterLabel>
+            <translation><!-- M &amp; A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator No Longer Involved</masterLabel>
+            <translation><!-- Partner Operator No Longer Involved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed VGTs from location</masterLabel>
+            <translation><!-- Removed VGTs from location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alarm Keypad Location --></label>
+        <name>Alarm_Keypad_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alarm Monitored --></label>
+        <name>Alarm_Monitored__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alarm Yes/No --></label>
+        <name>Alarm_Yes_No__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amusement ID --></label>
+        <name>Amusement_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+        <relationshipLabel><!-- Accounts (Amusement Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amusement Region --></label>
+        <name>Amusement_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Sales Status --></label>
+        <name>Amusement_Sales_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accel Amusements Discontinued</masterLabel>
+            <translation><!-- Accel Amusements Discontinued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement Signed</masterLabel>
+            <translation><!-- Agreement Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Solicit</masterLabel>
+            <translation><!-- Do Not Solicit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live with Accel</masterLabel>
+            <translation><!-- Live with Accel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sales Qualified</masterLabel>
+            <translation><!-- Not Sales Qualified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the date of when the location went live with Amusements. --></help>
+        <label><!-- Amusements Live Date --></label>
+        <name>Amusements_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Co-Op Budget (Formula) --></label>
+        <name>Annual_Co_Op_Budget_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Co-Op Budget --></label>
+        <name>Annual_Co_Op_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Cost --></label>
+        <name>Annual_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Fee Paid --></label>
+        <name>Application_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Notes --></label>
+        <name>Application_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Password --></label>
+        <name>Application_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Processed By --></label>
+        <name>Application_Processed_By__c</name>
+        <relationshipLabel><!-- Accounts (Application Processed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted By --></label>
+        <name>Application_Submitted_By__c</name>
+        <relationshipLabel><!-- Accounts (Application Submitted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted Date --></label>
+        <name>Application_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted (Project) --></label>
+        <name>Application_Submitted_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted --></label>
+        <name>Application_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Web ID --></label>
+        <name>Application_Web_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Withdrawn Date --></label>
+        <name>Application_Withdrawn_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned PM Tech --></label>
+        <name>Assigned_PM_Tech__c</name>
+        <picklistValues>
+            <masterLabel>AVG</masterLabel>
+            <translation><!-- AVG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aaron Holleman</masterLabel>
+            <translation><!-- Aaron Holleman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aaron Jenkins</masterLabel>
+            <translation><!-- Aaron Jenkins --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adam Olson</masterLabel>
+            <translation><!-- Adam Olson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aidan Kean</masterLabel>
+            <translation><!-- Aidan Kean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brett Moss</masterLabel>
+            <translation><!-- Brett Moss --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Duran</masterLabel>
+            <translation><!-- Brian Duran --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brian Siekierka</masterLabel>
+            <translation><!-- Brian Siekierka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Briana Hamilton</masterLabel>
+            <translation><!-- Briana Hamilton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brianna Burkett</masterLabel>
+            <translation><!-- Brianna Burkett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cedric Ngwa</masterLabel>
+            <translation><!-- Cedric Ngwa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cole Wilton</masterLabel>
+            <translation><!-- Cole Wilton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cory Hanselman</masterLabel>
+            <translation><!-- Cory Hanselman --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Buzzard</masterLabel>
+            <translation><!-- David Buzzard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>David Olsson</masterLabel>
+            <translation><!-- David Olsson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dennis Milligan</masterLabel>
+            <translation><!-- Dennis Milligan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dylan Nelson</masterLabel>
+            <translation><!-- Dylan Nelson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Erin Stauffer</masterLabel>
+            <translation><!-- Erin Stauffer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frank DeMartino</masterLabel>
+            <translation><!-- Frank DeMartino --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gnyle Frank</masterLabel>
+            <translation><!-- Gnyle Frank --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gregory Milligan</masterLabel>
+            <translation><!-- Gregory Milligan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Dennison</masterLabel>
+            <translation><!-- James Dennison --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>James Evans</masterLabel>
+            <translation><!-- James Evans --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Janice Hawbaker</masterLabel>
+            <translation><!-- Janice Hawbaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Ater</masterLabel>
+            <translation><!-- Jason Ater --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jason Koperski</masterLabel>
+            <translation><!-- Jason Koperski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeff Mettille</masterLabel>
+            <translation><!-- Jeff Mettille --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeffrey Johnson</masterLabel>
+            <translation><!-- Jeffrey Johnson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jeremy Willis</masterLabel>
+            <translation><!-- Jeremy Willis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jessica Mills</masterLabel>
+            <translation><!-- Jessica Mills --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jonathan Garner</masterLabel>
+            <translation><!-- Jonathan Garner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jordan Wadsworth</masterLabel>
+            <translation><!-- Jordan Wadsworth --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kaleb Ricklefs</masterLabel>
+            <translation><!-- Kaleb Ricklefs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kenneth Stewart</masterLabel>
+            <translation><!-- Kenneth Stewart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyle Graska</masterLabel>
+            <translation><!-- Kyle Graska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kyle Rorie</masterLabel>
+            <translation><!-- Kyle Rorie --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Larry Bailey</masterLabel>
+            <translation><!-- Larry Bailey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lew Odum</masterLabel>
+            <translation><!-- Lew Odum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lucas Biggers</masterLabel>
+            <translation><!-- Lucas Biggers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matthew Staton</masterLabel>
+            <translation><!-- Matthew Staton --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Knoop</masterLabel>
+            <translation><!-- Michael Knoop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Maselbas</masterLabel>
+            <translation><!-- Michael Maselbas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Michael Murphy</masterLabel>
+            <translation><!-- Michael Murphy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM Test</masterLabel>
+            <translation><!-- PM Test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ralph Hansen</masterLabel>
+            <translation><!-- Ralph Hansen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Randy Hovey</masterLabel>
+            <translation><!-- Randy Hovey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Richard Harms</masterLabel>
+            <translation><!-- Richard Harms --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rob Brzezinski</masterLabel>
+            <translation><!-- Rob Brzezinski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Robert McCarthy</masterLabel>
+            <translation><!-- Robert McCarthy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rosa Lopez</masterLabel>
+            <translation><!-- Rosa Lopez --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott Johnson</masterLabel>
+            <translation><!-- Scott Johnson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shamrock</masterLabel>
+            <translation><!-- Shamrock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shawn Andersen</masterLabel>
+            <translation><!-- Shawn Andersen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabitha Clift</masterLabel>
+            <translation><!-- Tabitha Clift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tony Medina</masterLabel>
+            <translation><!-- Tony Medina --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trini Galvan</masterLabel>
+            <translation><!-- Trini Galvan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>William Mathis</masterLabel>
+            <translation><!-- William Mathis --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Association Scope --></label>
+        <name>Association_Scope__c</name>
+        <picklistValues>
+            <masterLabel>Local</masterLabel>
+            <translation><!-- Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>National</masterLabel>
+            <translation><!-- National --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional</masterLabel>
+            <translation><!-- Regional --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State</masterLabel>
+            <translation><!-- State --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Attendant Key --></label>
+        <name>Attendant_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Revenue --></label>
+        <name>Average_Monthly_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bar? --></label>
+        <name>Bar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Borderline --></label>
+        <name>Borderline__c</name>
+    </fields>
+    <fields>
+        <help><!-- The brand of Account. ie. Accel Entertainment or Tom&apos;s Amusements. --></help>
+        <label><!-- Branding --></label>
+        <name>Branding__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Budget Indicator --></label>
+        <name>Budget_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours: Close --></label>
+        <name>Business_Hours_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours: Open --></label>
+        <name>Business_Hours_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours --></label>
+        <name>Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- CPU Lock Region --></label>
+        <name>CPU_Lock_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign/Watseka</masterLabel>
+            <translation><!-- Champaign/Watseka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland</masterLabel>
+            <translation><!-- Chicagoland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand River Jackpot</masterLabel>
+            <translation><!-- Grand River Jackpot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB</masterLabel>
+            <translation><!-- IGB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- CT Dummy Field --></label>
+        <name>CT_Dummy_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Calculate EAR --></label>
+        <name>Calculate_EAR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Can Re-Installed --></label>
+        <name>Can_Re_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Can Status --></label>
+        <name>Cash_Can_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Only Location --></label>
+        <name>Cash_Only_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clone Mail Merge --></label>
+        <name>Clone_Mail_Merge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coin Hoppers Disabled --></label>
+        <name>Coin_Hoppers_Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Contact Name --></label>
+        <name>Collection_Contact_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Contact Number --></label>
+        <name>Collection_Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Frequency --></label>
+        <name>Collection_Frequency__c</name>
+        <picklistValues>
+            <masterLabel>0.25</masterLabel>
+            <translation><!-- 0.25 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0.5</masterLabel>
+            <translation><!-- 0.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collection Notes --></label>
+        <name>Collection_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Office --></label>
+        <name>Collection_Office__c</name>
+        <picklistValues>
+            <masterLabel>Burr Ridge</masterLabel>
+            <translation><!-- Burr Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign</masterLabel>
+            <translation><!-- Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dubuque</masterLabel>
+            <translation><!-- Dubuque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Glen Carbon</masterLabel>
+            <translation><!-- Glen Carbon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lincoln</masterLabel>
+            <translation><!-- Lincoln --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sioux City</masterLabel>
+            <translation><!-- Sioux City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka</masterLabel>
+            <translation><!-- Watseka --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collection Region --></label>
+        <name>Collection_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissioned As --></label>
+        <name>Commissioned_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Terminals --></label>
+        <name>Committed_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed # of Terminals --></label>
+        <name>Committed_of_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Redemption --></label>
+        <name>Competitor_Redemption__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO --></label>
+        <name>Competitor_TO__c</name>
+        <relationshipLabel><!-- Related Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competitor Termination Received --></label>
+        <name>Competitor_Termination_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 1 --></label>
+        <name>Competitor_VGT_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 2 --></label>
+        <name>Competitor_VGT_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 3 --></label>
+        <name>Competitor_VGT_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 4 --></label>
+        <name>Competitor_VGT_4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 5 --></label>
+        <name>Competitor_VGT_5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor VGT 6 --></label>
+        <name>Competitor_VGT_6__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of competitor vgt fields that are populated. --></help>
+        <label><!-- Competitor VGT Count --></label>
+        <name>Competitor_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concierge Service --></label>
+        <name>Concierge_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Problem --></label>
+        <name>Contract_Problem__c</name>
+        <picklistValues>
+            <masterLabel>Accel signed over another operator</masterLabel>
+            <translation><!-- Accel signed over another operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Another operator signed over Accel</masterLabel>
+            <translation><!-- Another operator signed over Accel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of business name</masterLabel>
+            <translation><!-- Change of business name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change of ownership</masterLabel>
+            <translation><!-- Change of ownership --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lease prohibits gaming</masterLabel>
+            <translation><!-- Lease prohibits gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not executed properly</masterLabel>
+            <translation><!-- Not executed properly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested in gaming</masterLabel>
+            <translation><!-- Not interested in gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not returning calls</masterLabel>
+            <translation><!-- Not returning calls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner refuses to honor agreement</masterLabel>
+            <translation><!-- Owner refuses to honor agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspected legal issue</masterLabel>
+            <translation><!-- Suspected legal issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suspected tax issue</masterLabel>
+            <translation><!-- Suspected tax issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>We suspect location is out of business</masterLabel>
+            <translation><!-- We suspect location is out of business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contracted # of VGT Per year --></label>
+        <name>Contracted_of_VGT_Per_year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contracted # of Software Per Year --></label>
+        <name>Contracted_of_VGT_This_Year__c</name>
+    </fields>
+    <fields>
+        <label><!-- Controller G2S Compatible --></label>
+        <name>Controller_G2S_Compatible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Accounts --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the County__c was auto updated with FCC (Federal Communication Commission) API Data. --></help>
+        <label><!-- County Auto Updated --></label>
+        <name>County_Auto_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC --></help>
+        <label><!-- County LU Auto Updated (POC) --></label>
+        <name>County_LU_Auto_Update__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by Google within 1-3 seconds after creating a new account with an address or updating an account to a new address. --></help>
+        <label><!-- County --></label>
+        <name>County_LU__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This will be updated about 1-2 minutes after a new account is created or account has changed if there is accurate enough physical location information to determine the county. --></help>
+        <label><!-- County (TEXT) --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on the County selected. Updated by Google within 1-3 seconds after creating a new account with an address or updating an account to a new address. --></help>
+        <label><!-- Covid Region --></label>
+        <name>Covid_Region_LU__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- POC COUNTY -&gt; REGION --></help>
+        <label><!-- Covid Region (POC FF) --></label>
+        <name>Covid_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current RT Count --></label>
+        <name>Current_RT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Relaunch Count --></label>
+        <name>Current_Relaunch_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current VGT Count --></label>
+        <name>Current_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Account Name --></label>
+        <name>DBA_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOJ Expiration Date --></label>
+        <name>DOJ_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOJ File Number --></label>
+        <name>DOJ_File_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOJ Request Sent Date --></label>
+        <name>DOJ_Request_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Addendum Uploaded to DUS System --></label>
+        <name>Date_Addendum_Uploaded_to_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date TUA Extension Upload to DUS System --></label>
+        <name>Date_TUA_Extension_Upload_to_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Agreement Purchased --></label>
+        <name>Date_TUA_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date TUA Uploaded to DUS System --></label>
+        <name>Date_TUA_Uploaded_to_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Visit --></label>
+        <name>Date_of_Last_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Live --></label>
+        <name>Days_Live__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Activity --></label>
+        <name>Days_Since_Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last PM Visit --></label>
+        <name>Days_Since_Last_PM_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Special Project --></label>
+        <name>Days_Since_Last_Special_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Visit --></label>
+        <name>Days_Since_Last_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since VGT Live Date --></label>
+        <name>Days_Since_VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Divider Global Picklist --></label>
+        <name>Divider_Global_Picklist__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Mail --></label>
+        <name>Do_Not_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does the Owner Have Other Locations --></label>
+        <name>Does_the_Owner_Have_Other_Locations2__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Does the Owner Have Other Locations? --></label>
+        <name>Does_the_Owner_Have_Other_Locations__c</name>
+    </fields>
+    <fields>
+        <label><!-- DraftKings Agreement --></label>
+        <name>DraftKings_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- EAR HPD Calc --></label>
+        <name>EAR_HPD_Calc__c</name>
+    </fields>
+    <fields>
+        <label><!-- EAR Opp --></label>
+        <name>EAR_Opp__c</name>
+    </fields>
+    <fields>
+        <label><!-- EAR VGT Count Calc --></label>
+        <name>EAR_VGT_Count_Calc__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value is calculated as follows:
+Estimated Annual Revenue = HPD x # of VGTs in this location x 365 x 0.3257 --></help>
+        <label><!-- Estimated Annual  Revenue --></label>
+        <name>Estimated_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated HPD --></label>
+        <name>Estimated_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Value to Accel --></label>
+        <name>Expiration_Value_to_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension 1 Date --></label>
+        <name>Extension_1_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension 2 Date --></label>
+        <name>Extension_2_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension 3 Date --></label>
+        <name>Extension_3_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension 4 Date --></label>
+        <name>Extension_4_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Signed --></label>
+        <name>Extension_Signed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- FEIN Number --></label>
+        <name>FEIN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSG Relationship Manager --></label>
+        <name>FSG_Relationship_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Gigi John</masterLabel>
+            <translation><!-- Gigi John --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gigi John/Trisha Madura</masterLabel>
+            <translation><!-- Gigi John/Trisha Madura --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trisha Madura</masterLabel>
+            <translation><!-- Trisha Madura --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filtered Location Type --></label>
+        <name>Filtered_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Region --></label>
+        <name>Finance_Region_Formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Region --></label>
+        <name>Finance_Region__c</name>
+        <relationshipLabel><!-- Accounts (Finance Region) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fingerprinting Complete Date --></label>
+        <name>Fingerprinting_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fingerprinting Complete --></label>
+        <name>Fingerprinting_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- FlowCheck --></label>
+        <name>FlowCheck__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Bypass Check --></label>
+        <name>Flow_Bypass_Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Bypass --></label>
+        <name>Flow_Bypass__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food? --></label>
+        <name>Food__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Former Location Name --></label>
+        <name>Former_Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Pulled From Location --></label>
+        <name>Funds_Pulled_From_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Pulled / VGT Disabled Reason --></label>
+        <name>Funds_Pulled_VGT_Disabled_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Delayed Reopening</masterLabel>
+            <translation><!-- Delayed Reopening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Expired License</masterLabel>
+            <translation><!-- Expired License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Site Removal</masterLabel>
+            <translation><!-- Full Site Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Closed</masterLabel>
+            <translation><!-- Location Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Compliance</masterLabel>
+            <translation><!-- Out of Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ownership Change</masterLabel>
+            <translation><!-- Ownership Change --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Burglary</masterLabel>
+            <translation><!-- Post Burglary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel/ No VGTS on Site</masterLabel>
+            <translation><!-- Remodel/ No VGTS on Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Issue</masterLabel>
+            <translation><!-- Service Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temp Closure - Covid Mitigation</masterLabel>
+            <translation><!-- Temp Closure - Covid Mitigation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Closure</masterLabel>
+            <translation><!-- Temporary Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unable to Gain Access</masterLabel>
+            <translation><!-- Unable to Gain Access --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funds in Field --></label>
+        <name>Funds_in_Field__c</name>
+        <picklistValues>
+            <masterLabel>Coin Bag</masterLabel>
+            <translation><!-- Coin Bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crash Bag</masterLabel>
+            <translation><!-- Crash Bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M3T Crash Bag</masterLabel>
+            <translation><!-- M3T Crash Bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRT $20 Cassette</masterLabel>
+            <translation><!-- NRT $20 Cassette --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Future Lock Region --></label>
+        <name>Future_Lock_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign/Watseka</masterLabel>
+            <translation><!-- Champaign/Watseka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland</masterLabel>
+            <translation><!-- Chicagoland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Future Service Zone --></label>
+        <name>Future_Service_Zone__c</name>
+        <picklistValues>
+            <masterLabel>Champaign 1</masterLabel>
+            <translation><!-- Champaign 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign 2</masterLabel>
+            <translation><!-- Champaign 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - AVG</masterLabel>
+            <translation><!-- Chicagoland - AVG --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Advanced</masterLabel>
+            <translation><!-- Chicagoland - Advanced --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Lakeshore</masterLabel>
+            <translation><!-- Chicagoland - Lakeshore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Shamrock</masterLabel>
+            <translation><!-- Chicagoland - Shamrock --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland Central</masterLabel>
+            <translation><!-- Chicagoland Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland North 1</masterLabel>
+            <translation><!-- Chicagoland North 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland North 2</masterLabel>
+            <translation><!-- Chicagoland North 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland North 3</masterLabel>
+            <translation><!-- Chicagoland North 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland North 4</masterLabel>
+            <translation><!-- Chicagoland North 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland North 5</masterLabel>
+            <translation><!-- Chicagoland North 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland South 1</masterLabel>
+            <translation><!-- Chicagoland South 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland South 2</masterLabel>
+            <translation><!-- Chicagoland South 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland South 3</masterLabel>
+            <translation><!-- Chicagoland South 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland South 4</masterLabel>
+            <translation><!-- Chicagoland South 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland South 5</masterLabel>
+            <translation><!-- Chicagoland South 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville - D &amp; S Vending</masterLabel>
+            <translation><!-- Collinsville - D &amp; S Vending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 1</masterLabel>
+            <translation><!-- Collinsville 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 2</masterLabel>
+            <translation><!-- Collinsville 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 3</masterLabel>
+            <translation><!-- Collinsville 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 4</masterLabel>
+            <translation><!-- Collinsville 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 5</masterLabel>
+            <translation><!-- Collinsville 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 6</masterLabel>
+            <translation><!-- Collinsville 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville 7</masterLabel>
+            <translation><!-- Collinsville 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria 1</masterLabel>
+            <translation><!-- Peoria 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria 2</masterLabel>
+            <translation><!-- Peoria 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria 3</masterLabel>
+            <translation><!-- Peoria 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria 4</masterLabel>
+            <translation><!-- Peoria 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria 5</masterLabel>
+            <translation><!-- Peoria 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford - Rich &amp; Junnies</masterLabel>
+            <translation><!-- Rockford - Rich &amp; Junnies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 1</masterLabel>
+            <translation><!-- Rockford 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 2</masterLabel>
+            <translation><!-- Rockford 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 3</masterLabel>
+            <translation><!-- Rockford 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 4</masterLabel>
+            <translation><!-- Rockford 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 5</masterLabel>
+            <translation><!-- Rockford 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 6</masterLabel>
+            <translation><!-- Rockford 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford 7</masterLabel>
+            <translation><!-- Rockford 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield 1</masterLabel>
+            <translation><!-- Springfield 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield 2</masterLabel>
+            <translation><!-- Springfield 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield 3</masterLabel>
+            <translation><!-- Springfield 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield 4</masterLabel>
+            <translation><!-- Springfield 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park 1</masterLabel>
+            <translation><!-- Tinley Park 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park 2</masterLabel>
+            <translation><!-- Tinley Park 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park 3</masterLabel>
+            <translation><!-- Tinley Park 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park 4</masterLabel>
+            <translation><!-- Tinley Park 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park 5</masterLabel>
+            <translation><!-- Tinley Park 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka 1</masterLabel>
+            <translation><!-- Watseka 1 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- GP Vendor ID --></label>
+        <name>GP_Vendor_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- GRJ Relationship Manager --></label>
+        <name>GRJ_Relationship_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Alex Plocher</masterLabel>
+            <translation><!-- Alex Plocher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chad Dieters</masterLabel>
+            <translation><!-- Chad Dieters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Charlie Fleck</masterLabel>
+            <translation><!-- Charlie Fleck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Donnie Gorbett</masterLabel>
+            <translation><!-- Donnie Gorbett --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lenny Rakers</masterLabel>
+            <translation><!-- Lenny Rakers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates that Gaming is currently shut down with the Covid region associated with the county --></help>
+        <label><!-- Gaming Shut Down --></label>
+        <name>Gaming_Shut_Down__c</name>
+    </fields>
+    <fields>
+        <label><!-- Go Live Date --></label>
+        <name>Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Shows the grandparent relationship of parents and child relationships --></help>
+        <label><!-- Grand Parent --></label>
+        <name>Grand_Parent__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total (12 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total (4 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total (8 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds In Total (12 Weeks) --></label>
+        <name>HPD_Funds_In_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds In Total (4 Weeks) --></label>
+        <name>HPD_Funds_In_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds In Total (8 Weeks) --></label>
+        <name>HPD_Funds_In_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (12 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (4 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (8 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds in Avg --></label>
+        <name>HPD_Funds_in_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Revenue Total (12 Weeks) --></label>
+        <name>HPD_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Revenue Total (4 Weeks) --></label>
+        <name>HPD_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Revenue Total (8 Weeks) --></label>
+        <name>HPD_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aggregates the Hold Per Day object for the last 6 months if 6 months of monthy HPD Data exists.
+Calculation is: Revenue Total (Net Funds) / # of Vgts) / 6. --></help>
+        <label><!-- HPD Trailing 6 Mth Avg --></label>
+        <name>HPD_TSM_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM --></label>
+        <name>HPD_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- HQ Account --></label>
+        <name>HQ_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- HQ Child Account --></label>
+        <name>HQ_Child_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- HQ Parent Account Id --></label>
+        <name>HQ_Parent_Account_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has stand-alone ATM --></label>
+        <name>Has_Standalone_ATM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical IGB License Number --></label>
+        <name>Historical_IGB_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical IGB # --></label>
+        <name>Historical_IGB__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Data --></help>
+        <label><!-- Hold Per Day Total (Daily) --></label>
+        <name>Hold_Per_Day_Total_Daily__c</name>
+        <relationshipLabel><!-- Accounts (Hold Per Day Total (Daily)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Data --></help>
+        <label><!-- Hold Per Day Total (Monthly) --></label>
+        <name>Hold_Per_Day_Total__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IGB Contact --></label>
+        <name>IGB_Contact__c</name>
+        <relationshipLabel><!-- Accounts (IGB Contact) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IGB Establishment Type --></label>
+        <name>IGB_Establishment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Establishment</masterLabel>
+            <translation><!-- Establishment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fraternal</masterLabel>
+            <translation><!-- Fraternal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Large Truck Stop</masterLabel>
+            <translation><!-- Large Truck Stop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Stop</masterLabel>
+            <translation><!-- Truck Stop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterans</masterLabel>
+            <translation><!-- Veterans --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IGB Inspection Date --></label>
+        <name>IGB_Inspection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License Status --></label>
+        <name>IGB_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License # --></label>
+        <name>IGB_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Office --></label>
+        <name>IGB_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- IL Business Registration Code Expiration --></label>
+        <name>IL_Business_Registration_Code_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- IL Business Registration Code --></label>
+        <name>IL_Business_Registration_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- IL Covid Region --></label>
+        <name>IL_Covid_Region__c</name>
+        <picklistValues>
+            <masterLabel>Region 1</masterLabel>
+            <translation><!-- Region 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 10</masterLabel>
+            <translation><!-- Region 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 2</masterLabel>
+            <translation><!-- Region 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 3</masterLabel>
+            <translation><!-- Region 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 4</masterLabel>
+            <translation><!-- Region 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 5</masterLabel>
+            <translation><!-- Region 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 6</masterLabel>
+            <translation><!-- Region 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 7</masterLabel>
+            <translation><!-- Region 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 8</masterLabel>
+            <translation><!-- Region 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Region 9</masterLabel>
+            <translation><!-- Region 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- If yes, which location(s) --></label>
+        <name>If_yes_which_location_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ineligible Due to Local Ordinance --></label>
+        <name>Ineligible_Due_to_Local_Ordinance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Key Account Manager --></label>
+        <name>Key_Account_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Key Account Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Key Held? --></label>
+        <name>Key_Held__c</name>
+    </fields>
+    <fields>
+        <label><!-- Keys To Location --></label>
+        <name>Keys_To_Location__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Agreement Received --></label>
+        <name>Kiosk_ATM_Agreement_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk Fee --></label>
+        <name>Kiosk_Fee__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date of when the location went live with Kiosks. --></help>
+        <label><!-- Kiosk Live Date --></label>
+        <name>Kiosk_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk Pictures Submitted --></label>
+        <name>Kiosk_Pictures_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last PM Visit Date --></label>
+        <name>Last_PM_Visit_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Special Project Date --></label>
+        <name>Last_Special_Project_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Budget --></label>
+        <name>Last_Year_s_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>Cold Call</masterLabel>
+            <translation><!-- Cold Call --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Generated - Calls to Service Center</masterLabel>
+            <translation><!-- Company Generated - Calls to Service Center --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Generated - Hubspot</masterLabel>
+            <translation><!-- Company Generated - Hubspot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Generated - Telemarketing (External)</masterLabel>
+            <translation><!-- Company Generated - Telemarketing (External) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Generated - Telemarketing (Internal)</masterLabel>
+            <translation><!-- Company Generated - Telemarketing (Internal) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Company Generated - Website</masterLabel>
+            <translation><!-- Company Generated - Website --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Denied --></label>
+        <name>License_Issued_or_Denied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor Issuing Authority --></label>
+        <name>Local_Liq_Licen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Asset Costs --></label>
+        <name>Location_Asset_Costs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Key ID --></label>
+        <name>Location_Key_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Key --></label>
+        <name>Location_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Establishment Type --></label>
+        <name>Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location has AE Player TV --></label>
+        <name>Location_has_AE_Player_TV__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location has Tablet --></label>
+        <name>Location_has_Tablet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location has monitored alarm and camera? --></label>
+        <name>Location_has_monitored_alarm_and_camera__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lock Region --></label>
+        <name>Lock_Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign/Watseka</masterLabel>
+            <translation><!-- Champaign/Watseka --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland</masterLabel>
+            <translation><!-- Chicagoland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand River Jackpot</masterLabel>
+            <translation><!-- Grand River Jackpot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Program Details --></label>
+        <name>Loyalty_Program_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loyalty Program --></label>
+        <name>Loyalty_Program__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mail Merge Contact --></label>
+        <name>Mail_Merge_Contact__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mail Merge Salutation --></label>
+        <name>Mail_Merge_Salutation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Date --></label>
+        <name>Maintenance_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer Names --></label>
+        <name>Manufacturer_Names__c</name>
+        <picklistValues>
+            <masterLabel>AGS</masterLabel>
+            <translation><!-- AGS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARI</masterLabel>
+            <translation><!-- ARI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally</masterLabel>
+            <translation><!-- Bally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicago</masterLabel>
+            <translation><!-- Chicago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT</masterLabel>
+            <translation><!-- IGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MDT</masterLabel>
+            <translation><!-- MDT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novamatic</masterLabel>
+            <translation><!-- Novamatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI</masterLabel>
+            <translation><!-- SPI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS</masterLabel>
+            <translation><!-- WMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Co-Op Spend YTD --></label>
+        <name>Marketing_Co_Op_Spend_YTD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Co-Op Spend YTD (formula) --></label>
+        <name>Marketing_Co_Op_Spend_YTD_formula__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Vendor --></label>
+        <name>Marketing_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Master Agreement --></label>
+        <name>Master_Agreement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Account Owner Change Date --></label>
+        <name>Most_Recent_Account_Owner_Change_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Account Owner Change --></label>
+        <name>Most_Recent_Account_Owner_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Find the VGT Count on the monthly month recent HPD Record attached. --></help>
+        <label><!-- Most Recent HPD VGT Count --></label>
+        <name>Most_Recent_HPD_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent HPD Value --></label>
+        <name>Most_Recent_HPD_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checks to see if the most recent hpd date is within the last 75 days. (Helps solidify live status of location) --></help>
+        <label><!-- Most Recent HPD Within Last 75_days --></label>
+        <name>Most_Recent_HPD_Within_Last_75_days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent HPD (for Case lookup) --></label>
+        <name>Most_Recent_HPD_for_Case_lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Hold Per Day --></label>
+        <name>Most_Recent_Hold_Per_Day__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Indicates that the backed end process upon creation or edit (always update as even on creation it doesn&apos;t run till Data.com updates the lat / long) performed an API query to google and used that to populate the muni lookup. --></help>
+        <label><!-- Muni Auto Updated --></label>
+        <name>Muni_Auto_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- Updated by Google within 1-3 seconds after creating a new account with an address or updating an account to a new address. --></help>
+        <label><!-- Municipality --></label>
+        <name>MunicipalityLookup__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Municipality Allows Gaming --></label>
+        <name>Municipality_Allows_Gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Owner --></label>
+        <name>Municipality_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality State --></label>
+        <name>Municipality_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- NRT Rounding Option Enabled --></label>
+        <name>NRT_Rounding_Option_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- NetSuite Internal Id --></label>
+        <name>NetSuite_Internal_Id__c</name>
+    </fields>
+    <fields>
+        <help><!-- The location&apos;s network name. For example: &quot;NRT-WIFI&quot; --></help>
+        <label><!-- Network Name --></label>
+        <name>Network_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- PROTOTYPE (EXPERIMENTAL) This is a 11 character max nickname focused on display and unique identification of the account in tight areas next to charts on a mobile display. --></help>
+        <label><!-- Nickname --></label>
+        <name>Nickname__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of RT Assets --></label>
+        <name>Number_of_RT_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type notes or other information about the competitive opportunities or selling points you can make. --></help>
+        <label><!-- Opportunities --></label>
+        <name>Opportunities__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>Opportunity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Currently Being Worked --></label>
+        <name>Opportunity_Currently_Being_Worked__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org/Person GA Stores --></label>
+        <name>Org_Person_GA_Stores__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org/Person Total Stores --></label>
+        <name>Org_Person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org URL --></label>
+        <name>Org_URL__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Length of Agreement --></label>
+        <name>Original_Length_of_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Live Date --></label>
+        <name>Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Post TUA Received --></label>
+        <name>Original_Post_TUA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original TUA Extension Received --></label>
+        <name>Original_TUA_Extension_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original TUA Received --></label>
+        <name>Original_TUA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Out of Business --></label>
+        <name>Out_of_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Budget --></label>
+        <name>Over_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Owner --></label>
+        <name>Owner__c</name>
+        <relationshipLabel><!-- Accounts (Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Account Owner&apos;s Manager ID --></label>
+        <name>Owner_s_Manager_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Structure --></label>
+        <name>Ownership_Structure__c</name>
+    </fields>
+    <fields>
+        <label><!-- PC Account --></label>
+        <name>PC_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- PM Date --></label>
+        <name>PM_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- P O Designation --></label>
+        <name>P_O_Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part of Revenue Share --></label>
+        <name>Part_of_Revenue_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator --></label>
+        <name>Partner_Operator__c</name>
+        <relationshipLabel><!-- Accounts (Partner Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Patrons Under 21 Allowed to Enter --></label>
+        <name>Patrons_Under_21_Allowed_to_Enter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pending Co-Op Spend 2018 --></label>
+        <name>Pending_Co_Op_Spend_2018__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical City --></label>
+        <name>Physical_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Auto Designated --></label>
+        <name>Portal_Auto_Designated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pouring Hours End --></label>
+        <name>Pouring_Hours_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pouring Hours Start --></label>
+        <name>Pouring_Hours_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pouring Hours --></label>
+        <name>Pouring_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prior Value Lock Region --></label>
+        <name>Prior_Value_Lock_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Overwrite --></label>
+        <name>Priority_Overwrite__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsolete) Processor --></label>
+        <name>Processor__c</name>
+        <relationshipLabel><!-- Accounts ((Obsolete) Processor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product Interest --></label>
+        <name>Product_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Request Type --></label>
+        <name>Project_Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Gaming Area Assets</masterLabel>
+            <translation><!-- Gaming Area Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Machines</masterLabel>
+            <translation><!-- Gaming Machines --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Projected Marketing Spend --></label>
+        <name>Projected_Marketing_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Bathroom (feet) --></label>
+        <name>Proximity_Bathroom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Main Entrance (in feet) --></label>
+        <name>Proximity_Main_Entrance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Proximity to Highway, Main Street, Train, etc. --></help>
+        <label><!-- Proximity to Major Thoroughfare --></label>
+        <name>Proximity_Major_Thoroughfare__c</name>
+        <picklistValues>
+            <masterLabel>1-3 mi</masterLabel>
+            <translation><!-- 1-3 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3-5 mi</masterLabel>
+            <translation><!-- 3-5 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 1 mi</masterLabel>
+            <translation><!-- &lt; 1 mi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 1k feet</masterLabel>
+            <translation><!-- &lt; 1k feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 5 mi</masterLabel>
+            <translation><!-- &gt; 5 mi --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchased From --></label>
+        <name>Purchased_From__c</name>
+        <relationshipLabel><!-- Accounts (Purchased From) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- New Location Assignment --></label>
+        <name>RM_Assignment_Type__c</name>
+        <picklistValues>
+            <masterLabel>12 Month Only</masterLabel>
+            <translation><!-- 12 Month Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go Live &amp; 12 Month</masterLabel>
+            <translation><!-- Go Live &amp; 12 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go Live Borderline &amp; 12 Month</masterLabel>
+            <translation><!-- Go Live Borderline &amp; 12 Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RM Director Region --></label>
+        <name>RM_Director_Region__c</name>
+        <picklistValues>
+            <masterLabel>Dan Lanno</masterLabel>
+            <translation><!-- Dan Lanno --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenny Odum</masterLabel>
+            <translation><!-- Jenny Odum --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager Region --></label>
+        <name>RM_Region__c</name>
+        <picklistValues>
+            <masterLabel>CSM Region</masterLabel>
+            <translation><!-- CSM Region --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Central - Jenny</masterLabel>
+            <translation><!-- Central - Jenny --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Dan</masterLabel>
+            <translation><!-- Chicagoland - Dan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland - Ryan N.</masterLabel>
+            <translation><!-- Chicagoland - Ryan N. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Northwest - Kerry</masterLabel>
+            <translation><!-- Northwest - Kerry --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South - Hillary</masterLabel>
+            <translation><!-- South - Hillary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield - Colin</masterLabel>
+            <translation><!-- Springfield - Colin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>West - Amy</masterLabel>
+            <translation><!-- West - Amy --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Record Link --></label>
+        <name>Record_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption Info --></label>
+        <name>Redemption_1_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption 2 --></label>
+        <name>Redemption_2__c</name>
+        <relationshipLabel><!-- Accounts (Redemption 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redemption --></label>
+        <name>Redemption__c</name>
+        <relationshipLabel><!-- Accounts (Redemption) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Regional Account --></label>
+        <name>Regional_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Manager --></label>
+        <name>Regional_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Registered with Cook County --></label>
+        <name>Registered_with_Cook_County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+        <relationshipLabel><!-- Accounts (Relationship Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relaunch Date --></label>
+        <name>Relaunch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Sharer --></label>
+        <name>Revenue_Sharer__c</name>
+        <relationshipLabel><!-- Accounts (Revenue Sharer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SGI Equipment Location --></label>
+        <name>SGI_Equipment_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Membership Rcvs Gaming Rev? --></label>
+        <name>Sales_Agent_Membership_Rcvs_Gaming_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Ownership? --></label>
+        <name>Sales_Agent_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent --></label>
+        <name>Sales_Agent__c</name>
+        <relationshipLabel><!-- Accounts (Sales Agent) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Channel --></label>
+        <name>Sales_Channel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Region --></label>
+        <name>Sales_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Funds Pulled --></label>
+        <name>Scheduled_Funds_Pulled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sci Game Name --></label>
+        <name>Sci_Game_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seasonal --></label>
+        <name>Seasonal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Security Cameras --></label>
+        <name>Security_Cameras__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Partner Operator Instructions --></label>
+        <name>Service_Partner_Operator_Instructions__c</name>
+    </fields>
+    <fields>
+        <help><!-- Denotes which user will be the Assigned Resource when a Case is created under this Service Partner Operator --></help>
+        <label><!-- Service Partner Operator Resource --></label>
+        <name>Service_Partner_Operator_Resource__c</name>
+        <relationshipLabel><!-- Accounts (Service Partner Operator Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Partner Operator --></label>
+        <name>Service_Partner_Operator__c</name>
+        <relationshipLabel><!-- Service Partner Operator --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Zone --></label>
+        <name>Service_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>Service_Territory__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Deprecated field --></help>
+        <label><!-- Physical Address Accuracy --></label>
+        <name>Shipping_Address_Accuracy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shortcomings --></label>
+        <name>Shortcomings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site G2S Updated --></label>
+        <name>Site_G2S_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Grade --></label>
+        <name>Site_Grade__c</name>
+    </fields>
+    <fields>
+        <label><!-- Size of Gaming Area --></label>
+        <name>Size_of_Gaming_Area__c</name>
+        <picklistValues>
+            <masterLabel>800-1200 Feet</masterLabel>
+            <translation><!-- 800-1200 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt; 800 Feet</masterLabel>
+            <translation><!-- &lt; 800 Feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt; 1200 Feet</masterLabel>
+            <translation><!-- &gt; 1200 Feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Source Name: Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Source_Name__c</name>
+        <relationshipLabel><!-- Accounts Sourced --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Square Footage --></label>
+        <name>Square_Footage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Agreement Received --></label>
+        <name>Standalone_ATM_Agreement_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the date of when the location went live with Standalone ATM. --></help>
+        <label><!-- Standalone ATM Live Date --></label>
+        <name>Standalone_ATM_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Pictures Submitted --></label>
+        <name>Standalone_ATM_Pictures_Submitted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Machine is not a redemption terminal. --></help>
+        <label><!-- Standalone ATM --></label>
+        <name>Standalone_ATM__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Status --></label>
+        <name>State_Liquor_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Still Live With Competitor --></label>
+        <name>Still_Live_With_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>Street__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type notes or other information about the competitor&apos;s strengths, such as top-selling products and targeted industries or markets. --></help>
+        <label><!-- Strengths --></label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subsidiary --></label>
+        <name>Subsidiary__c</name>
+        <picklistValues>
+            <masterLabel>Accel Entertainment Gaming, LLC</masterLabel>
+            <translation><!-- Accel Entertainment Gaming, LLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulldog Gaming, LLC</masterLabel>
+            <translation><!-- Bulldog Gaming, LLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawkeye Gaming, LLC</masterLabel>
+            <translation><!-- Hawkeye Gaming, LLC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Husker Gaming, LLC</masterLabel>
+            <translation><!-- Husker Gaming, LLC --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Supporting Industries --></label>
+        <name>Supporting_Industries__c</name>
+        <picklistValues>
+            <masterLabel>Bar</masterLabel>
+            <translation><!-- Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convenience</masterLabel>
+            <translation><!-- Convenience --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fuel</masterLabel>
+            <translation><!-- Fuel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>General Retail</masterLabel>
+            <translation><!-- General Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grocery</masterLabel>
+            <translation><!-- Grocery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel/Lodging</masterLabel>
+            <translation><!-- Hotel/Lodging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Restaurant</masterLabel>
+            <translation><!-- Restaurant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Veterans Club</masterLabel>
+            <translation><!-- Veterans Club --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SweepstakesCurrCostShare --></label>
+        <name>SweepstakesCurrCostShare__c</name>
+    </fields>
+    <fields>
+        <label><!-- SweepstakesCurrOptIn --></label>
+        <name>SweepstakesCurrOptIn__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Notes --></label>
+        <name>TUA_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Payment Date --></label>
+        <name>TUA_Payment_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Team? --></label>
+        <name>Team__c</name>
+    </fields>
+    <fields>
+        <label><!-- Threat Matrix --></label>
+        <name>Threat_Matrix__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Three Month Average HPD --></label>
+        <name>Three_Month_Average_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total Accel Marketing Spend --></label>
+        <name>Total_Accel_Marketing_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Agreement Time Left (Days) --></label>
+        <name>Total_Agreement_Time_Left_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Agreement Time Left --></label>
+        <name>Total_Agreement_Time_Left__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Applications --></label>
+        <name>Total_Applications__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Business Hours Open (per week) --></label>
+        <name>Total_Business_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Co-Op Reimbursement --></label>
+        <name>Total_Co_Op_Reimbursement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Length of Agreement Rollup --></label>
+        <name>Total_Length_of_Agreement_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Length of Agreement --></label>
+        <name>Total_Length_of_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Location Marketing Spend --></label>
+        <name>Total_Location_Marketing_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Marketing Requests --></label>
+        <name>Total_Marketing_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Association Notes --></label>
+        <name>Trade_Association_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unapproved Co-Op Amt --></label>
+        <name>Unapproved_Co_Op_Amt__c</name>
+    </fields>
+    <fields>
+        <help><!-- This box indicates whether or not this location is using Accel Entertainment&apos;s cradle point (instead of their own wi-fi network). --></help>
+        <label><!-- Using Accel Cradle Point --></label>
+        <name>Using_Accel_Cradle_Point__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 10 --></label>
+        <name>VGT_10__c</name>
+        <relationshipLabel><!-- Accounts (VGT 10) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 1 Info --></label>
+        <name>VGT_1_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 1 --></label>
+        <name>VGT_1__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 2 Info --></label>
+        <name>VGT_2_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 2 --></label>
+        <name>VGT_2__c</name>
+        <relationshipLabel><!-- Accounts (VGT 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 3 Info --></label>
+        <name>VGT_3_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 3 --></label>
+        <name>VGT_3__c</name>
+        <relationshipLabel><!-- Accounts (VGT 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 4 Info --></label>
+        <name>VGT_4_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 4 --></label>
+        <name>VGT_4__c</name>
+        <relationshipLabel><!-- Accounts (VGT 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 5 Info --></label>
+        <name>VGT_5_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 5 --></label>
+        <name>VGT_5__c</name>
+        <relationshipLabel><!-- Accounts (VGT 5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 6 Info --></label>
+        <name>VGT_6_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT 6 --></label>
+        <name>VGT_6__c</name>
+        <relationshipLabel><!-- Accounts (VGT 6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 7 --></label>
+        <name>VGT_7__c</name>
+        <relationshipLabel><!-- Accounts (VGT 7) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 8 --></label>
+        <name>VGT_8__c</name>
+        <relationshipLabel><!-- Accounts (VGT 8) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGT 9 --></label>
+        <name>VGT_9__c</name>
+        <relationshipLabel><!-- Accounts (VGT 9) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VGTs Disabled --></label>
+        <name>VGTs_Disabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Status --></label>
+        <name>Vendor_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents Pending</masterLabel>
+            <translation><!-- Documents Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Documents Received</masterLabel>
+            <translation><!-- Documents Received --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Type of Vendor --></help>
+        <label><!-- Vendor Type --></label>
+        <name>Vendor_Type__c</name>
+        <picklistValues>
+            <masterLabel>Software</masterLabel>
+            <translation><!-- Software --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Video Gaming Sales Priority --></label>
+        <name>Video_Gaming_Sales_Priority__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation><!-- High --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation><!-- Low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation><!-- Medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Qualified</masterLabel>
+            <translation><!-- Qualified --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Video Gaming Sales Status --></label>
+        <name>Video_Gaming_Sales_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accel Video Gaming Discontinued</masterLabel>
+            <translation><!-- Accel Video Gaming Discontinued --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement Signed</masterLabel>
+            <translation><!-- Agreement Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assigned</masterLabel>
+            <translation><!-- Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Solicit</masterLabel>
+            <translation><!-- Do Not Solicit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live with Accel</masterLabel>
+            <translation><!-- Live with Accel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sales Qualified</masterLabel>
+            <translation><!-- Not Sales Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unassigned</masterLabel>
+            <translation><!-- Unassigned --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Video (Yes/No) --></label>
+        <name>Video_Yes_No__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The location&apos;s Wi-fi Password --></help>
+        <label><!-- Wi-Fi Password --></label>
+        <name>Wi_Fi_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- $100 Fill Level --></label>
+        <name>X100_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Fill Level --></label>
+        <name>X1_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Fill Level --></label>
+        <name>X20_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Fill Level --></label>
+        <name>X50_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Fill Level --></label>
+        <name>X5_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year of Expiration --></label>
+        <name>Year_of_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Years in Business --></label>
+        <name>Years_in_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years to Expiration Count --></label>
+        <name>Years_to_Expiration_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Years to Expiration --></label>
+        <name>Years_to_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yelp --></label>
+        <name>Yelp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Rule --></label>
+        <name>maps__AssignmentRule__c</name>
+        <relationshipLabel><!-- Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- zzzDoNotUseTempNumber --></label>
+        <name>zzzDoNotUseTempNumber__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Competitor TO --></label>
+        <name>Competitor_TO</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record type used when a competitor is transitioning to Accel --></description>
+        <label><!-- Competitor Transition --></label>
+        <name>Competitor_Transition</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- CL Beta --></description>
+        <label><!-- (Obsolete) Count Room --></label>
+        <name>Count_Room</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Investor Account Information --></description>
+        <label><!-- Investor Account --></label>
+        <name>Investor_Account</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Location --></label>
+        <name>Location</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Record Type to track Service Partner Operators for use by Field Service --></description>
+        <label><!-- Service Partner Operator --></label>
+        <name>Service_Partner_Operator</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Trade Association --></label>
+        <name>Trade_Association</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vendors --></label>
+        <name>Vendors</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Created for Inventory Request Project --></description>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the appropriate rights to modify this field. Please contact your administrative team. --></errorMessage>
+        <name>Accel_Establishment_Type_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the appropriate rights to modify this field. Please contact your administrative team. --></errorMessage>
+        <name>Accel_Live_Date_and_Original_Live_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the appropriate rights to modify this field. Please contact your administrative team. --></errorMessage>
+        <name>Account_DBA_Name_Field_Read_Only</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The State field must be in 2-letter format. Example: IL, MO, etc. --></errorMessage>
+        <name>Account_State_Values</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to choose this value. --></errorMessage>
+        <name>Account_Type_Change_To_Temp_Closure</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please review your Municipality value. You have a chosen a Municipality that is not in the same state as this Account. --></errorMessage>
+        <name>Acct_State_Must_Match_Municipality_State</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Amusements_Live_Date_Editing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Kiosk_Live_Date_Editing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Partner Operator you have chosen is not SA Registered. Please check with your Admin. --></errorMessage>
+        <name>Must_Be_SA_Registered_in_IL_to_be_PartOp</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- VGTs can only be added to Live accounts in IL. --></errorMessage>
+        <name>Only_live_accel_accounts_can_add_a_VGT</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Partner Operator you have chosen has SA Delisted date. Please contact Business Admin. --></errorMessage>
+        <name>Partner_opp_has_SA_Delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the appropriate rights to modify this field. Please contact your administrative team. --></errorMessage>
+        <name>Service_Territory_Edits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permissions to modify this field. Please contact your System Administrator. --></errorMessage>
+        <name>Service_Zone_Edits</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Standalone_ATM_Live_Date_Editing</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose a reason for disabling the machines. --></errorMessage>
+        <name>VGTs_Disabled_wo_Reason_Listed</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Change_Owner --></label>
+        <name>Change_Owner</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Ticker_Symbol_Report --></label>
+        <name>Ticker_Symbol_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- AdvRouteVisitWindows --></label>
+        <name>maps__AdvRouteVisitWindows</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SpanningAccountRestore --></label>
+        <name>spanning__SpanningAccountRestore</name>
+    </webLinks>
+</CustomObjectTranslation>

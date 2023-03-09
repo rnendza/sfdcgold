@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>For viewing the Maps tab only.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Maps User Basic</label>
+    <permissionSets>maps__MapsUser</permissionSets>
+    <permissionSets>maps__SFMaps</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

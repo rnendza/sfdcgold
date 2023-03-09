@@ -1,0 +1,12 @@
+<!-- Cl Route Importer Server -->
+<template>
+        <c-cl-related-files
+                if:true={customPermissions}
+                record-id={parentRecordId}
+                display-help-video-link={displayHelpVideoLink}
+                help-file-title={helpFileTitle}
+                custom-permissions={customPermissions}
+                onpublishaction={handlePublishAction}
+                title="Route Files">
+        </c-cl-related-files>
+</template>

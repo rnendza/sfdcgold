@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <description>CL - All Imports</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Cl Import Container</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+        <target>lightning__AppPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage">
+            <property name="displayHelpVideoLink"
+                      label="Display Help Video Link"
+                      description="Display a link to a help via in the 'Assistant' area at the top of the screen"
+                      default="true"
+                      type="Boolean"/>
+            <property name="helpFileTitle"
+                      label="Assistance Help File Title"
+                      description="The title of the file displaying in the assistant section"
+                      default="CL - Importer User Guide"
+                      type="String"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

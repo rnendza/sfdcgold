@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Field_Assessment__c$Name</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$Owner</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$Project__c</field>
+    </columns>
+    <columns>
+        <field>Field_Assessment__c$Account__c.Relationship_Manager__c</field>
+    </columns>
+    <description>Consultation Record Type where Buildout Estimate Received = blank or electrical estimate received = blank, but stage = in progress</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Field_Assessment__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Field_Assessment__c.Consultation</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Field_Assessment__c$Buildout_Estimate_Received_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Field_Assessment__c$Electrical_Estimate_Received_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Field_Assessment__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>In Progress</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Field Assessment Report 4</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Field_Assessment_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Field_Assessment__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

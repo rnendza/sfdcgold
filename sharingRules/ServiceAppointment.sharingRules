@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Share_Service_Appointment_Jeff</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>share with Jeff</description>
+        <label>Share Service Appointment Jeff</label>
+        <sharedTo>
+            <group>Jeff_N</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

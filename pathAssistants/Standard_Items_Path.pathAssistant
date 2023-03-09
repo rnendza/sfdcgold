@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Marketing_Request__c</entityName>
+    <fieldName>Standard_Items_Path__c</fieldName>
+    <masterLabel>Standard Items Path</masterLabel>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;&lt;b&gt;Your item(s) are being reviewed for approval. You may view the approval status below in the related list &amp;quot;Approval History&amp;quot;.&lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Approvals</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard</recordTypeName>
+</PathAssistant>

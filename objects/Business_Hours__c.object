@@ -1,0 +1,501 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AccountID__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>AccountID</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Business Hours</relationshipLabel>
+        <relationshipName>Business_Hours</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>true</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Close_Fx__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Close__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Close Fx</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Close__c</fullName>
+        <externalId>false</externalId>
+        <label>Close</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Day_of_Week__c</fullName>
+        <externalId>false</externalId>
+        <label>Day of Week</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monday</fullName>
+                    <default>false</default>
+                    <label>Monday</label>
+                </value>
+                <value>
+                    <fullName>Tuesday</fullName>
+                    <default>false</default>
+                    <label>Tuesday</label>
+                </value>
+                <value>
+                    <fullName>Wednesday</fullName>
+                    <default>false</default>
+                    <label>Wednesday</label>
+                </value>
+                <value>
+                    <fullName>Thursday</fullName>
+                    <default>false</default>
+                    <label>Thursday</label>
+                </value>
+                <value>
+                    <fullName>Friday</fullName>
+                    <default>false</default>
+                    <label>Friday</label>
+                </value>
+                <value>
+                    <fullName>Saturday</fullName>
+                    <default>false</default>
+                    <label>Saturday</label>
+                </value>
+                <value>
+                    <fullName>Sunday</fullName>
+                    <default>false</default>
+                    <label>Sunday</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Day_of_Week_fx__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Day_of_Week__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Day of Week Fx</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Open_Closed__c</fullName>
+        <externalId>false</externalId>
+        <label>Open/Closed</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open on this day</fullName>
+                    <default>true</default>
+                    <label>Open on this day</label>
+                </value>
+                <value>
+                    <fullName>Closed on this day</fullName>
+                    <default>false</default>
+                    <label>Closed on this day</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Open_Fx__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Open__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Open Fx</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Open__c</fullName>
+        <externalId>false</externalId>
+        <label>Open</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Time</type>
+    </fields>
+    <fields>
+        <fullName>Opportunity__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Business Hours</relationshipLabel>
+        <relationshipName>Business_Hours</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Business Hours</relationshipLabel>
+        <relationshipName>Business_Hours</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Total_Business_Hours_Not_Rounded__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* 
+* @see https://help.salesforce.com/articleView?id=custom_field_time_overview.htm&amp;type=5 
+* for Time Field calculation (see 24 hour time clock considerations below.) 
+* Formula prior to this modification is in a comment at the bottom. 
+*/ 
+
+
+if(ispickval(Open_Closed__c,&quot;Closed on this day&quot;),0,(Close__c-Open__c)/3600000)
+
+
+/*============== 24 hour time clock considerations ===================== 
+You can subtract one time field from another in a formula. The results 
+milliseconds. For example,TimeField1__c has the value “10:00pm” and 
+TimeField2__c has the value “9:00pm”: TimeField1__c - TimeField2__c is 3600000 
+
+The result is never a negative number. Subtraction is the difference 
+between two time values, using a 24-hour clock. 
+
+For example, when calculating the number of hours a business is open, 
+you use the following formula: (ClosedTime - OpenTime) / 3600000. 
+
+ClosedTime = 5 PM, OpenTime = 8 AM, ClosedTime - OpenTime = 9 hours 
+ClosedTime = 5 AM, OpenTime = 7 AM, ClosedTime - OpenTime = 22 hours 
+=========================================================================*/ 
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Previous formula as of 11/13 
+IF( HOUR(Open__c) &gt; HOUR(Close__c), 
+24 - HOUR(Open__c) + HOUR(Close__c), 
+HOUR(Close__c) - HOUR(Open__c)) 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Business Hours Not Rounded</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Business_Hours_Open_Acct__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Total_Business_Hours__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Weekly Business Hours Open</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Business_Hours__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* 
+ * @see https://help.salesforce.com/articleView?id=custom_field_time_overview.htm&amp;type=5 
+ * for Time Field calculation (see 24 hour time clock considerations below.) 
+ * Formula prior to this modification is in a comment at the bottom. 
+ * 
+ *  Use of 2 different fields here to allow for easy future mod. 
+ * 
+ *  ** Req from business was to not round (not to round up to the nearest hour) but to display the actual value. 
+ *    
+ *
+ *  @see Total_Business_Hours_Not_Rounded__c,  ---&gt;  (Close__c - Open__c) / 3600000 
+ */ 
+If(AND((not(ispickval(Open_Closed__c,&quot;Closed on this day&quot;))),!ISBLANK(Open__c),!ISBLANK(Close__c) ,Total_Business_Hours_Not_Rounded__c = 0),
+    24.00,
+    Total_Business_Hours_Not_Rounded__c)
+
+
+/*============== 24 hour time clock considerations ===================== 
+You can subtract one time field from another in a formula. The results 
+milliseconds. For example,TimeField1__c has the value “10:00pm” and 
+TimeField2__c has the value “9:00pm”: TimeField1__c - TimeField2__c is 3600000 
+
+The result is never a negative number. Subtraction is the difference 
+between two time values, using a 24-hour clock. 
+
+For example, when calculating the number of hours a business is open, 
+you use the following formula: (ClosedTime - OpenTime) / 3600000. 
+
+ClosedTime = 5 PM, OpenTime = 8 AM, ClosedTime - OpenTime = 9 hours 
+ClosedTime = 5 AM, OpenTime = 7 AM, ClosedTime - OpenTime = 22 hours 
+=========================================================================*/ 
+
+/*xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx 
+Previous formula as of 11/13 
+IF( HOUR(Open__c) &gt; HOUR(Close__c), 
+24 - HOUR(Open__c) + HOUR(Close__c), 
+HOUR(Close__c) - HOUR(Open__c)) 
+xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Business Hours</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <defaultValue>&quot;Hours of Operation&quot;</defaultValue>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hours of Operation</fullName>
+                    <default>false</default>
+                    <label>Hours of Operation</label>
+                </value>
+                <value>
+                    <fullName>Pouring Hours</fullName>
+                    <default>false</default>
+                    <label>Pouring Hours</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Business Hours</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Open__c</columns>
+        <columns>Close__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>BH - {00000}</displayFormat>
+        <label>Business Hours Number</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Business Hours</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>BH_Close_Conditionally_Required</fullName>
+        <active>true</active>
+        <description>If Open_Closed__c = &apos;Closed on this day&apos; do not make close__c required, otherwise make it required.</description>
+        <errorConditionFormula>/*
+ * @see https://accel-entertainment.monday.com/boards/942883797/pulses/1027154672
+ */
+IF(ISPICKVAL(Open_Closed__c,&apos;Closed on this day&apos;),false,  
+   IF(ISPICKVAL(Open_Closed__c,&apos;Open on this day&apos;), 
+        IF(ISBLANK(TEXT( Close__c )), true, false),false))</errorConditionFormula>
+        <errorDisplayField>Close__c</errorDisplayField>
+        <errorMessage>Please enter a value for the Close Field.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>BH_Open_Conditionally_Required</fullName>
+        <active>true</active>
+        <description>If Open_Closed__c = &apos;Closed on this day&apos; ,do not make Open__c required, otherwise make it required.</description>
+        <errorConditionFormula>/*
+ * @see https://accel-entertainment.monday.com/boards/942883797/pulses/1027154672
+ */
+IF(ISPICKVAL(Open_Closed__c,&apos;Closed on this day&apos;),false,  
+   IF(ISPICKVAL(Open_Closed__c,&apos;Open on this day&apos;), 
+        IF(ISBLANK(TEXT( Open__c )), true, false),false))</errorConditionFormula>
+        <errorDisplayField>Open__c</errorDisplayField>
+        <errorMessage>Please enter a value for the Open Field.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

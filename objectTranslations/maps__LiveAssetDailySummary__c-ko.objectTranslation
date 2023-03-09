@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 자산 일일 요약</value>
+    </caseValues>
+    <fields>
+        <help>사용자 정의 정지 이벤트의 평균 지속 기간, 시간 단위입니다.</help>
+        <label><!-- Average Stop Time (Hours) --></label>
+        <name>maps__AverageStopTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>사용자 정의 정지 이벤트의 평균 지속 기간, 분 단위입니다.</help>
+        <label><!-- Average Stop Time (Minutes) --></label>
+        <name>maps__AverageStopTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>일일 요약 구성에 정의된 대로 해당 날에 기록된 이벤트에서 장치 배터리 수</help>
+        <label><!-- Count of Events - Device Battery On --></label>
+        <name>maps__CountOfEventsDeviceBatteryOn__c</name>
+    </fields>
+    <fields>
+        <help>일일 요약 구성에 정의된 대로 해당 날에 기록된 속도 임계값 이벤트 수</help>
+        <label><!-- Count of Events - Speed Threshold --></label>
+        <name>maps__CountOfEventsSpeedThreshold__c</name>
+    </fields>
+    <fields>
+        <help>일일 요약 구성에 정의된 대로 해당 날에 기록된 과속 이벤트 수</help>
+        <label><!-- Count of Events - Speeding --></label>
+        <name>maps__CountOfSummaryEventsSpeeding__c</name>
+    </fields>
+    <fields>
+        <help>일일 요약 구성에 정의된 대로 해당 날에 기록된 정지 이벤트 수</help>
+        <label><!-- Count of Events - Stops --></label>
+        <name>maps__CountOfSummaryEventsStops__c</name>
+    </fields>
+    <fields>
+        <help>이 요약이 적용되는 날짜</help>
+        <label><!-- Summary Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>장치 ID에 연결된 장치 공급업체</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>엔진이 켜진 상태로 이동하는 데 소비한 총 시간, 시간 단위</help>
+        <label><!-- Drive Time (Hours) --></label>
+        <name>maps__DriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>엔진이 켜진 상태로 이동하는 데 소비한 총 시간, 분 단위</help>
+        <label><!-- Drive Time (Minutes) --></label>
+        <name>maps__DriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>표시된 휴일에 이동한 경우 표시</help>
+        <label><!-- Driving During Holiday Off --></label>
+        <name>maps__DrivingDuringHolidayOff__c</name>
+    </fields>
+    <fields>
+        <help>표시된 근무 시간 외 이동한 경우 표시</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 해당 날에 AWS가 수신한 첫 번째 지점의 전체 데이터 내용을 나타냅니다.</help>
+        <label><!-- First Message Content --></label>
+        <name>maps__FirstMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 해당 날에 AWS가 수신한 첫 번째 지점의 날짜 및 시간을 나타냅니다.</help>
+        <label><!-- First Message Timestamp --></label>
+        <name>maps__FirstMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <help>해당 날 빠른 가속 이벤트를 나타내는 장치 메시지의 수(사용 가능한 경우)</help>
+        <label><!-- Number of Hard Acceleration Events --></label>
+        <name>maps__HardAccelerationCount__c</name>
+    </fields>
+    <fields>
+        <help>해당 날 과도한 브레이크 사용 이벤트를 나타내는 장치 메시지의 수(사용 가능한 경우)</help>
+        <label><!-- Number of Hard Braking Events --></label>
+        <name>maps__HardBrakingCount__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 해당 날에 AWS가 수신한 마지막 지점의 전체 데이터 내용을 나타냅니다.</help>
+        <label><!-- Last Message Content --></label>
+        <name>maps__LastMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>이 필드는 해당 날에 AWS가 수신한 마지막 지점의 날짜 및 시간을 나타냅니다.</help>
+        <label><!-- Last Message Timestamp --></label>
+        <name>maps__LastMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 요약을 기반으로 하는 요약 구성에 대한 참조</help>
+        <label><!-- Live Daily Summary Configuration --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>해당 날 수신한 최대 단일 속도 값(KPH 단위)</help>
+        <label><!-- Maximum Speed (KPH) --></label>
+        <name>maps__MaximumSpeedKPH__c</name>
+    </fields>
+    <fields>
+        <help>해당 날 수신한 최대 단일 속도 값(MPH 단위)</help>
+        <label><!-- Maximum Speed (MPH) --></label>
+        <name>maps__MaximumSpeedMPH__c</name>
+    </fields>
+    <fields>
+        <help>마지막으로 사용 가능한 해당 날 자동차 마일리지, 킬로미터 단위</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>마지막으로 사용 가능한 해당 날 자동차 마일리지, 마일 단위</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>킬로미터 단위로 이동한 총 거리</help>
+        <label><!-- Total Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>마일 단위로 이동한 총 거리</help>
+        <label><!-- Total Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>요약이 생성된 시점에 연결된 장치에 할당되는 사용자</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Maps 라이브 자산 일일 요약 이름</nameFieldLabel>
+</CustomObjectTranslation>

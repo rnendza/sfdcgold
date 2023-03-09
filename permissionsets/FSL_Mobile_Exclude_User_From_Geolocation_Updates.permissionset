@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Supposedly Excludes_specific_mobile_users_from_location_updates_in_FSL. ie. ServiceResource.LastKnownLatitude and ServiceResource.LastKnownLatitude should not be updated by the FSL Mobile app but rather a BlueArrow (GeoTab) process</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>FSL - Mobile - Exclude User From Geolocation Updates</label>
+    <license>FieldServiceMobilePsl</license>
+    <userPermissions>
+        <enabled>true</enabled>
+        <name>OptOutGeoLocationTracking</name>
+    </userPermissions>
+</PermissionSet>

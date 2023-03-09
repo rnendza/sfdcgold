@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Непрерывное движение маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Непрерывные движения маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Непрерывное движение маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Непрерывные движения маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Непрерывного движения маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Непрерывных движений маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Непрерывному движению маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Непрерывным движениям маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Непрерывным движением маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Непрерывными движениями маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Непрерывном движении маршрута Maps Advanced</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Непрерывных движениях маршрута Maps Advanced</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>maps__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route Settings --></label>
+        <name>maps__AdvRouteSettings__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Continuous Travel --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>maps__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Converted To Shift --></label>
+        <name>maps__ConvertedToShift__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>maps__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Address --></label>
+        <name>maps__EndAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- End City --></label>
+        <name>maps__EndCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Country --></label>
+        <name>maps__EndCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>maps__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Lat/Long --></label>
+        <name>maps__EndLatLong__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Location --></label>
+        <name>maps__EndLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Name --></label>
+        <name>maps__EndName__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Postal Code --></label>
+        <name>maps__EndPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- End State/Province --></label>
+        <name>maps__EndStateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Street --></label>
+        <name>maps__EndStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Continuous --></label>
+        <name>maps__IsContinuous__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel --></label>
+        <name>maps__IsTravel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lat/Long --></label>
+        <name>maps__LatLong__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>maps__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>maps__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Location --></label>
+        <name>maps__StartLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Name --></label>
+        <name>maps__StartName__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>maps__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Start</masterLabel>
+            <translation>Начало</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stop</masterLabel>
+            <translation>Остановка</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Continuous Travels --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Имя непрерывного движения планировщика M</nameFieldLabel>
+</CustomObjectTranslation>

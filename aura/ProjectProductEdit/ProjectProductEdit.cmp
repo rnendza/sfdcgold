@@ -1,0 +1,37 @@
+<aura:component controller="ProductSearchController">
+    
+    <!-- PUBLIC ATTRIBUTES -->
+    <aura:attribute name="projectLines" type="List" default="[]" access="public" />
+    <aura:attribute name="recordId" type="String" access="public" />
+    
+    <!-- PRIVATE ATTRIBUTES -->
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="errors" type="Object" default="[]"/>
+    <aura:attribute name="draftProjectLines" type="List" default="[]"/>
+
+    <!-- METHODS -->
+    <aura:method name="saveProjectLineItems">
+        <aura:attribute name="saveProjectLinesCallback" type="Function" />
+    </aura:method>
+
+    <!-- HANDLERS -->
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+
+    <header class="slds-modal__header">
+        <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Edit Selected Products</h2>
+    </header>
+    <div class="slds-modal__content" id="modal-content-id-1">
+        <div style="height: 582px">
+            <lightning:datatable
+                aura:id="projectLineTable"
+                columns="{! v.columns }"
+                data="{! v.projectLines }"
+                keyField="Id"
+                errors="{! v.errors }"
+                oncellchange="{!c.handleEdit}"
+                showRowNumberColumn="true"
+                hideCheckboxColumn="true"
+            />
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Det asynkrona felet för Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Ett asynkront fel för Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Asynkront fel för Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>De asynkrona felen för Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Asynkrona fel för Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Asynkrona fel för Maps Live</value>
+    </caseValues>
+    <fields>
+        <help>Namnet på klassen och eventuellt metoden som felet uppstod i.</help>
+        <label><!-- Class Name --></label>
+        <name>maps__ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>maps__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Typen av fel som togs emot.</help>
+        <label><!-- Error Type --></label>
+        <name>maps__ErrorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>maps__LineNumber__c</name>
+    </fields>
+    <fields>
+        <help>Hänvisning till sammanfattningen som innehöll fel</help>
+        <label><!-- Live Daily Summary Config --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Live Async Errors --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Värdet på det mottagna meddelandet.</help>
+        <label><!-- Message --></label>
+        <name>maps__Message__c</name>
+    </fields>
+    <fields>
+        <help>Hela sObject i JSON-format, om tillgängligt.</help>
+        <label><!-- Object Field Values --></label>
+        <name>maps__ObjectFieldValues__c</name>
+    </fields>
+    <fields>
+        <help>Id för sObject där detta fel inträffade.</help>
+        <label><!-- Object Id --></label>
+        <name>maps__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sobject Type --></label>
+        <name>maps__SobjectType__c</name>
+    </fields>
+    <fields>
+        <help>Värdet på det mottagna stackspåret.</help>
+        <label><!-- Stack Trace --></label>
+        <name>maps__StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>maps__Subject__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Namn på asynkrona fel för Maps Live</nameFieldLabel>
+</CustomObjectTranslation>

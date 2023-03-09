@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Key Code</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Key Codes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Key Code Status --></label>
+        <name>Key_Code_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost</masterLabel>
+            <translation><!-- Lost --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Core Type --></label>
+        <name>Key_Core_Type__c</name>
+        <picklistValues>
+            <masterLabel>BV Door</masterLabel>
+            <translation><!-- BV Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Cut BV</masterLabel>
+            <translation><!-- Core Cut BV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Cut CPU</masterLabel>
+            <translation><!-- Core Cut CPU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Cut MD</masterLabel>
+            <translation><!-- Core Cut MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Core Cut RT</masterLabel>
+            <translation><!-- Core Cut RT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main CPU</masterLabel>
+            <translation><!-- Main CPU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Door</masterLabel>
+            <translation><!-- Main Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption Door</masterLabel>
+            <translation><!-- Redemption Door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal BV</masterLabel>
+            <translation><!-- Removal BV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal CPU</masterLabel>
+            <translation><!-- Removal CPU --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal MD</masterLabel>
+            <translation><!-- Removal MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal RT</masterLabel>
+            <translation><!-- Removal RT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Key Core --></label>
+        <name>Key_Core__c</name>
+        <picklistValues>
+            <masterLabel>Core Cut</masterLabel>
+            <translation><!-- Core Cut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Main Core</masterLabel>
+            <translation><!-- Main Core --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal</masterLabel>
+            <translation><!-- Removal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <relationshipLabel><!-- Key Codes --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

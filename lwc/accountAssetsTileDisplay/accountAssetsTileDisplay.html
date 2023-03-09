@@ -1,0 +1,140 @@
+<!--
+  Account Assets Tile Display
+
+  This component will display VGT and RTS for the Account associated with the record page as
+  defined in the parent component properties.
+
+  @see accountAssets 
+-->
+<template>
+    <lightning-card
+            title={cardTitle}
+            icon-name={cardIcon}>
+        <div class="slds-m-around_x-small">
+            <div if:true={showStencil}>
+                <c-ui-custom-stencil
+                        iterations="3"
+                        type="list" columns="2">
+                </c-ui-custom-stencil>
+            </div>
+            <div if:true={showAccountData}>
+                <div if:true={showVgtMachines}>
+                    <lightning-layout
+                            multiple-rows="true"
+                            horizontal-align="spread">
+                        <template for:each={accountMachineData.vgtMachines} for:item="vgtMachine">
+                            <lightning-layout-item size={numberOfLayoutColumns} key={vgtMachine.asset.Id}
+                                                   padding="horizontal-small"
+                                                   class="slds-p-bottom_small">
+                                <div if:false={showVgtInfoFields}
+                                     class="slds-p-bottom_xx-small">
+                                    {vgtMachine.label}
+                                </div>
+                                <div if:true={showVgtInfoFields}
+                                     class="slds-p-bottom_xx-small">
+                                    {vgtMachine.infoLabel}
+                                </div>
+                                <div class="slds-has-divider_bottom">
+                                    <template if:true={showAssetLink}>
+                                        <c-accel-navigation-link
+                                                if:false={showVgtInfoFields}
+                                                label={vgtMachine.assetName}
+                                                title={vgtMachine.assetLinkHoverTitle}
+                                                target="_blank"
+                                                type="standard__recordPage"
+                                                record-id={vgtMachine.asset.Id}>
+                                        </c-accel-navigation-link>
+                                        <c-accel-navigation-link
+                                                if:true={showVgtInfoFields}
+                                                label={vgtMachine.assetVgtInfo}
+                                                title={vgtMachine.assetLinkHoverTitle}
+                                                target="_blank"
+                                                type="standard__recordPage"
+                                                record-id={vgtMachine.asset.Id}> 
+                                        </c-accel-navigation-link>
+                                    </template>
+                                    <template if:false={showAssetLink}>
+                                        <template if:false={showVgtInfoFields}>
+                                            {vgtMachine.assetName}
+                                        </template>
+                                        <template if:true={showVgtInfoFields}>
+                                            {vgtMachine.assetVgtInfo}
+                                        </template>
+                                    </template>
+                                </div>
+                            </lightning-layout-item>
+                        </template>
+                    </lightning-layout>
+                </div>
+                <div if:true={showRtMachines}>
+                    <lightning-layout multiple-rows="true">
+                        <template for:each={accountMachineData.rtMachines} for:item="rtMachine">
+                            <lightning-layout-item size={accountMachineData.rtDataColSize} key={rtMachine.asset.Id}
+                                                   padding="horizontal-small"
+                                                   class="slds-p-bottom_medium">
+                                <div     if:false={showRtInfoFields}
+                                         class="slds-p-bottom_xx-small">
+                                    {rtMachine.label}
+                                </div>
+                                <div     if:true={showRtInfoFields}
+                                         class="slds-p-bottom_xx-small">
+                                    {rtMachine.infoLabel}
+                                </div>
+                                <div class="slds-has-divider_bottom">
+                                    <template if:true={showAssetLink}>
+                                        <c-accel-navigation-link
+                                                if:false={showRtInfoFields}
+                                                label={rtMachine.assetName}
+                                                title={rtMachine.assetLinkHoverTitle}
+                                                target="_blank"
+                                                type="standard__recordPage"
+                                                record-id={rtMachine.asset.Id}>
+                                        </c-accel-navigation-link>
+                                        <c-accel-navigation-link
+                                                if:true={showRtInfoFields}
+                                                label={rtMachine.assetRtInfo}
+                                                title={rtMachine.assetLinkHoverTitle}
+                                                target="_blank"
+                                                type="standard__recordPage"
+                                                record-id={rtMachine.asset.Id}>
+                                        </c-accel-navigation-link>
+                                    </template>
+                                    <template if:false={showAssetLink}>
+                                        <template if:false={showRtInfoFields}>
+                                            {rtMachine.assetName}
+                                        </template>
+                                        <template if:true={showRtInfoFields}>
+                                            {rtMachine.assetRtInfo}
+                                        </template>
+                                    </template>
+                                </div>
+                            </lightning-layout-item>
+                        </template>
+                    </lightning-layout>
+                </div>
+                <div if:true={showNoMachineDataMsg} class="slds-p-bottom_medium slds-m-horizontal_x-small slds-p-top_small">
+                    <c-ui-scoped-notification
+                            message={noMachineDataMsg}
+                            icon-variant="inverse"
+                            custom-icon-size="x-small"
+                            icon-name="utility:warning"
+                            custom-class="accel-notification_small accel-notification-warning_theme slds-theme_alert-texture"
+                            theme="warning">
+                    </c-ui-scoped-notification>
+                </div>
+                <template if:true={showAccountData}>
+                    <div if:true={showAccountFields} class="slds-m-around_x-small">
+                        <lightning-record-form
+                                if:true={showAccountFields}
+                                record-id={accountId}
+                                object-api-name="Account"
+                                columns={numberOfRecordFormColumns}
+                                fields={accountFieldsToDisplay}
+                                mode="readonly">
+                        </lightning-record-form>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

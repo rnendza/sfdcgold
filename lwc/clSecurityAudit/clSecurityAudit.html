@@ -1,0 +1,181 @@
+<!-- Cl Security Audit -->
+<template>
+    <div if:true={showProgressBar}
+         class="progress-center slds-p-bottom_small slds-text-align_center">
+        <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+    </div>
+    <lightning-card>
+        <lightning-button-menu
+                icon-name="utility:settings"
+                icon-size="medium" if:true={showCardActions} menu-alignment="right"
+                class="accel-icon-blue" 
+                onselect={handleCardMenuSelect}
+                slot="actions" variant="border-filled">
+            <template for:each={cardActions} for:item="option">
+                <lightning-menu-item
+                        prefix-icon-name={option.prefixIconName}
+                        key={option.id}
+                        label={option.label}
+                        value={option.id}>
+                </lightning-menu-item>
+            </template>
+        </lightning-button-menu>
+
+        <h1 slot="title" class="no-wrap">
+            <div class="slds-grid slds-wrap accel-test-borders">
+                <c-ui-card-title
+                        card-title={labels.lblCardTitle}
+                        card-subtitle={labels.lblCardSubtitle}
+                        icon-name="custom:custom91"
+                        icon-size="medium">
+                </c-ui-card-title>
+            </div>
+        </h1>
+        <div style="min-height: 400px">
+            <div if:true={showInfoAssistant}
+                 class="slds-p-horizontal_small">
+                <c-cl-security-audit-assistant
+                        if:true={showAssistance}
+                        title={labels.lblInfoAssistantTitle}
+                        assistance-type="exportFilePerms"
+                        bullet-points={exportFilePermsAssistanceBulletPoints}>
+                </c-cl-security-audit-assistant>
+            </div>
+            <div class="slds-p-horizontal_small">
+                <div if:true={showSearch}>
+                    <div if:true={showDtFilters}
+                         class="slds-m-top_small slds-m-bottom_small slds-p-horizontal_small slds-p-vertical_small slds-box_border slds-box_small"
+                         style="background-color: rgb(250,250,249);">
+                        <div class="slds-p-horizontal_small slds-p-bottom_small">
+                            <div class="slds-grid">
+                                <div class="slds-col slds-size_1-of-2">
+                                    <div id="variants"
+                                         class="slds-p-vertical_x-small slds-grid slds-grid_vertical-align-center">
+                                        <lightning-icon icon-name="standard:search" size="Small"
+                                                        alternative-text="Search" title="Search"></lightning-icon>
+                                        <lightning-formatted-text
+                                                class="slds-card__header-title slds-col slds-p-left_x-small"
+                                                value="Search"></lightning-formatted-text>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                                    <div class="slds-p-top_xx-small">
+                                        <lightning-button-icon
+                                                icon-name="utility:close"
+                                                size="medium"
+                                                onclick={handleSearchFiltersClose}
+                                                alternative-text="Close">
+                                        </lightning-button-icon>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <c-accel-security-audit-filters
+                                    onselect={handleFilterSelect}
+                                    onremove={handleFilterRemove}
+                                    default-selections={defaultSelections}>
+                            </c-accel-security-audit-filters>
+                            <div class="slds-p-top_small">
+                                <lightning-button
+                                        variant="brand"
+                                        disabled={disableRerunButton}
+                                        style="display: grid; width: 100%"
+                                        name="runQuery"
+                                        data-id="rerunquery"
+                                        icon-name="utility:refresh"
+                                        label="Rerun Query"
+                                        title="Click here to rerun the data query"
+                                        onclick={handleButtonClick}>
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- ==========   NO DATA FOUND  ============ -->
+                <div if:true={showNoDcata}>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_small"
+                            header-text="No Data found"
+                            body-text="Please refine your search using the search filters.">
+                    </c-ui-empty-state>
+                </div>
+                <div if:true={showStencil}>
+                    <c-ui-custom-stencil
+                            iterations="16"
+                            child-class="slds-var-m-around_xxx-small"
+                            type="list" columns="4">
+                    </c-ui-custom-stencil>
+                </div>
+                <template if:true={showDatatable}>
+
+                    <div class="slds-p-top_small slds-p-bottom_small">
+
+                        <div class="slds-p-bottom_small slds-box_small slds-box_border">
+                            <div class="slds-grid slds-wrap slds-p-around_x-small">
+                                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_x-small">
+                                    <div>
+                                        <span class="slds-text-color_weak slds-text-body_small">
+                                            Showing {totalFilteredRows} of {totalServerRows} rows.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-6 slds-medium-size_1-of-6 slds-small-size_1-of-1">
+                                            <lightning-icon
+                                                    data-id="export"
+                                                    onclick={handleButtonClick}
+                                                    icon-name="doctype:csv" alternative-text="csv" size="medium"
+                                                    title="csv"
+                                                    class="slds-p-right_xx-small">
+                                            </lightning-icon>
+                                        </div>
+                                        <div class="slds-col slds-large-size_5-of-6 slds-medium-size_5-of-6 slds-small-size_1-of-1">
+                                            <lightning-input
+                                                    if:true={showDtSearch}
+                                                    onchange={handleDtSearchKeyChange}
+                                                    name="enter-search"
+                                                    placeholder="Search Object or Field.."
+                                                    variant="label-hidden"
+                                                    type="search"
+                                            ></lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-text-align_right">
+                                    <lightning-button
+                                            variant="brand"
+                                            name="export"
+                                            data-id="export"
+                                            icon-name="utility:download" class="slds-m-left_x-small"
+                                            label={labels.lblExportButtonTitle}
+                                            title="Click here to export the details to a csv file."
+                                            onclick={handleButtonClick}>
+                                    </lightning-button>
+                                </div>
+                            </div>
+                        </div>
+                        <template if:true={showDatatable}>
+                        <lightning-datatable
+                                key-field="dtKey"
+                                data={dtDataRecords}
+                                columns={colHeaders}
+                                hide-checkbox-column="true"
+                                show-row-number-column="true"
+                                onsort={handleDtSort}
+                                is-loading={dtLoading}
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                class="slds-table_header-fixed_container
+                           slds-border_top
+                           slds-max-medium-table_stacked
+                           slds-table_bordered
+                           slds-table_col-bordered">
+                        </lightning-datatable>
+                        </template>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

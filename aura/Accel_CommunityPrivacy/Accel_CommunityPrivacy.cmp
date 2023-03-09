@@ -1,0 +1,27 @@
+<aura:component description="Accel_CommunityPrivacy"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityInfoController">
+
+    <aura:attribute name="privacyText" type="String"/>
+    <aura:attribute name="currentUserId" type="String" default="{!$SObjectType.CurrentUser.Id}" />
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+
+    <lightning:overlayLibrary aura:id="privacyOverlayLib"/>
+
+    <div class="slds-is-relative" style="min-height: 20vh;">
+        <div class="c-container">
+            <div>
+                <div>
+                    <lightning:formattedRichText value="{!v.privacyText}"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

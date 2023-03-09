@@ -1,0 +1,58 @@
+<!-- Cl Admin Route Schedule Search -->
+<template>
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card">
+        <lightning-card>
+            <lightning-button-menu
+                    if:true={cardOptions}
+                    slot="actions" icon-name="utility:down" icon-size="x-small"
+                    onselect={handleMenuSelect}
+                    menu-alignment="right" variant="border-filled">
+                <template for:each={cardOptions} for:item="option">
+                    <lightning-menu-item key={option.id} value={option.id}
+                                         label={option.label}></lightning-menu-item>
+                </template>
+            </lightning-button-menu>
+            <h1 slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title
+                            card-title='Route Schedule Search'
+                            card-title-style={cardTitleStyle}
+                            icon-name="standard:search"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </h1>
+            <div class="accel-accordion-content">
+                <div class="accel-test-borders slds-m-horizontal_x-small">
+                    <div>
+
+                        <lightning-input type="search" onchange={handleKeyChange} class="slds-m-bottom_small"
+                                         variant="label-hidden"
+                                         value={searchKey}>
+
+                        </lightning-input>
+                        <lightning-datatable key-field="rsId" data={data} columns={columns} sorted-by={sortedBy}
+                                             hide-checkbox-column="true"
+                                             sorted-direction={sortedDirection} onsort={sortColumns}>
+                        </lightning-datatable>
+                        <lightning-layout horizontal-align="space" class="slds-p-top_small">
+                            <lightning-layout-item flexibility="auto">
+                                <lightning-button icon-name="utility:chevronleft" onclick={previousHandler}>
+                                </lightning-button>
+                            </lightning-layout-item>
+                            <lightning-layout-item flexibility="auto">
+                               {page} of {totalPage}
+                            </lightning-layout-item>
+                            <lightning-layout-item flexibility="auto">
+                                <lightning-button icon-name="utility:chevronright" icon-position="right"
+                                                  onclick={nextHandler}></lightning-button>
+                            </lightning-layout-item>
+                        </lightning-layout>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

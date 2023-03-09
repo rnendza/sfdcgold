@@ -1,0 +1,56 @@
+.lgc-bg {
+    background-color: rgb(242, 242, 242);
+}
+
+.lgc-bg-inverse {
+    background-color: rgb(22, 50, 92);
+}
+.lgc-mouseover-border {
+    border: 2px solid #1589ee;
+}
+li {
+    border: 2px solid transparent;
+}
+
+.accel-dl_horizontal__label {
+    width:50%;
+}
+.accel-dl_horizontal__detail {
+    width:50%;
+}
+.accel-test-borders {
+    border:0px dotted red;
+}
+.accel-form-theme_shade {
+    /*background-color: rgb(244,246,249);*/
+    /*background-color: red;*/
+}
+.accel-card_subtitle {
+    font-size: .75rem;
+}
+.accel-rs-outer-container {
+    min-height:35em;
+}
+.accel-ul {
+    min-height: 500px;
+}
+.accel-rs-card {
+    min-height:35em;
+    background: rgba( 246, 246, 246, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.accel-glassmorphism_tile {
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+}
+.accel-helptext {
+    padding-top:0!important;
+}
+.accel-card-height-min {
+    min-height:500px;
+}

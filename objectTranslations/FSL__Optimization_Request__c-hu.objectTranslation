@@ -1,0 +1,921 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérés</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérések</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseim</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérése</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérései</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérést</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréseket</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemet</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimet</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérését</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseit</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésnek</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréseknek</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemnek</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimnek</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésének</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseinek</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésében</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiben</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréséből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiből</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésbe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekbe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésembe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimbe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésébe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseibe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésektől</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemtől</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimtől</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésétől</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseitől</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréshez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekhez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemhez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimhez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréséhez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseihez</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréssé</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekké</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemmé</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimmé</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésévé</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseivé</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréssel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekkel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemmel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimmel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésével</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseivel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésre</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekre</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemre</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimre</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésére</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseire</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kéréseken</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésén</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérésein</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréséről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiről</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréséért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésekig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérésemig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréséig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérésenként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Optimalizálási kérések</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kéréseimként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Optimalizálási kérések</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kéréseiként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Optimalizálási kérések</value>
+    </caseValues>
+    <fields>
+        <label><!-- All Services Mode --></label>
+        <name>FSL__All_Tasks_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time After --></label>
+        <name>FSL__AvgTravelTimeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time before --></label>
+        <name>FSL__AvgTravelTimeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time Without Home After --></label>
+        <name>FSL__AvgTravelTimeWithoutHomeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time Without Home Before --></label>
+        <name>FSL__AvgTravelTimeWithoutHomeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel After Rso In Minutes --></label>
+        <name>FSL__Avg_Travel_After_Rso__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Before Rso In Minutes --></label>
+        <name>FSL__Avg_Travel_Before_Rso__c</name>
+    </fields>
+    <fields>
+        <label><!-- CandidatesIds Json --></label>
+        <name>FSL__CandidatesIds_Json__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed With Errors --></label>
+        <name>FSL__Completed_With_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Identifier --></label>
+        <name>FSL__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Details --></label>
+        <name>FSL__Failure_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Reason --></label>
+        <name>FSL__Failure_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already Running</masterLabel>
+            <translation>Már fut</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click Authorize</masterLabel>
+            <translation>Kattintson az Engedélyezés gombra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrupted data</masterLabel>
+            <translation>Sérült adatok</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Availability Rule</masterLabel>
+            <translation>Nincs elérhetőségi szabály</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>Ismeretlen</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Filter By Boolean --></label>
+        <name>FSL__Filter_By_Boolean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish --></label>
+        <name>FSL__Finish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Services With Empty Location --></label>
+        <name>FSL__Include_Services_With_Empty_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsHealthCheckFailed --></label>
+        <name>FSL__IsHealthCheckFailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objects Scheduled --></label>
+        <name>FSL__Objects_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objects To Schedule --></label>
+        <name>FSL__Objects_To_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimization Data --></label>
+        <name>FSL__Optimization_Data__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Optimization Request Queue --></label>
+        <name>FSL__Optimization_Request_Queue__c</name>
+        <relationshipLabel><!-- Optimization Request Queue --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originating Resource Absence --></label>
+        <name>FSL__Originating_Resource_Absence__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originating Service Appointment --></label>
+        <name>FSL__Originating_Service_Appointment__c</name>
+        <relationshipLabel><!-- Optimization Requests (Originating_Service Appointment) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Progress Start --></label>
+        <name>FSL__Request_Progress_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result Json --></label>
+        <name>FSL__Result_Json__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>FSL__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Recipe --></label>
+        <name>FSL__Scheduling_Recipe__c</name>
+        <relationshipLabel><!-- Scheduling Recipe --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment --></label>
+        <name>FSL__Service_Appointment__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Resource --></label>
+        <name>FSL__Service_Resource__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>FSL__Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>FSL__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Befejezett</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed First Optimization Day</masterLabel>
+            <translation>Befejezett első optimalizálási nap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Sikertelen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>Folyamatban</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>Megnyitott</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>Várakozó</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text Status --></label>
+        <name>FSL__Text_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Per Service --></label>
+        <name>FSL__Time_Per_Service__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>Magas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>Alacsony</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>Közepes</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number Of Capacity Based Resources --></label>
+        <name>FSL__TotalNumberOfCapacityBasedResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Crews --></label>
+        <name>FSL__TotalNumberOfCrews__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Optimizable Services --></label>
+        <name>FSL__TotalNumberOfOptimizableServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Resources --></label>
+        <name>FSL__TotalNumberOfResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Scheduled Services After --></label>
+        <name>FSL__TotalNumberOfScheduledServicesAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Scheduled Services Before --></label>
+        <name>FSL__TotalNumberOfScheduledServicesBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time After --></label>
+        <name>FSL__TotalTravelTimeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Before --></label>
+        <name>FSL__TotalTravelTimeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Without Home After --></label>
+        <name>FSL__TotalTravelTimeWithoutHomeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Without Home Before --></label>
+        <name>FSL__TotalTravelTimeWithoutHomeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Capacity --></label>
+        <name>FSL__TotalWorkCapacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Duration Scheduled After --></label>
+        <name>FSL__TotalWorkDurationScheduledAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Duration Scheduled Before --></label>
+        <name>FSL__TotalWorkDurationScheduledBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Optimization Time --></label>
+        <name>FSL__Total_Optimization_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>FSL__Type__c</name>
+        <picklistValues>
+            <masterLabel>Fill-In Schedule</masterLabel>
+            <translation>Kitöltés ütemezése</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fix Overlaps</masterLabel>
+            <translation>Átfedések javítása</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Optimization</masterLabel>
+            <translation>Globális optimalizálás</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Nearby SAs</masterLabel>
+            <translation>Csoportosítás a szerviztalálkozók közelébe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Schedule Optimization</masterLabel>
+            <translation>Erőforrás-ütemezés optimalizálása</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Reshuffle</masterLabel>
+            <translation>Szerviztalálkozó átalakítása</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Utilization Total After --></label>
+        <name>FSL__UtilizationTotalAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Total Before --></label>
+        <name>FSL__UtilizationTotalBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Wrench After --></label>
+        <name>FSL__UtilizationWrenchAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Wrench Before --></label>
+        <name>FSL__UtilizationWrenchBefore__c</name>
+    </fields>
+    <nameFieldLabel>Optimalizálási kérelem száma</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- Related Service Territory --></label>
+        <name>FSL__Related_Service_Territory</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Related Service Territory Member --></label>
+        <name>FSL__Related_Service_Territory_Member</name>
+    </sharingReasons>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

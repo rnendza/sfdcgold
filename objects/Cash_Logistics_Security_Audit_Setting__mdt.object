@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Csv_Export_File_Name_Prefix__c</fullName>
+        <description>The prefix of the file name to export. It will be named [thisfield]_[datettimevalue].csv</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The prefix of the file name to export. It will be named [thisfield]_[datettimevalue].csv</inlineHelpText>
+        <label>Csv Export File Name Prefix</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Debug_Console__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show debug entries in the browser console.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show debug entries in the browser console.</inlineHelpText>
+        <label>Debug Console</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Field_History_Objects__c</fullName>
+        <description>For Field Audit components. Limit the Field History Object Filter to these specific history objects.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>For Field Audit components. Limit the Field History Object Filter to these specific history objects.</inlineHelpText>
+        <label>Field History Objects</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Max_Datatable_Rows__c</fullName>
+        <defaultValue>250</defaultValue>
+        <description>This will limit the display of datatable rows. The User will still be able to export the full superset of data.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This will limit the display of datatable rows. The User will still be able to export the full superset of data.</inlineHelpText>
+        <label>Max Datatable Rows</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Permissions_Label__c</fullName>
+        <defaultValue>&quot;None&quot;</defaultValue>
+        <description>The label to show when no permissions are found. ie &quot;None&quot;.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The label to show when no permissions are found. ie &quot;None&quot;.</inlineHelpText>
+        <label>No Permissions Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Permission_Set_Names__c</fullName>
+        <defaultValue>&quot;Cash_Logistics_Read_Edit_Access&quot;</defaultValue>
+        <description>A comma delimited string of PermissionSet Developer Names.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A comma delimited string of PermissionSet Developer Names.</inlineHelpText>
+        <label>Permission Set Names</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profile_Names__c</fullName>
+        <defaultValue>&quot;CL - Route Collector&quot;</defaultValue>
+        <description>A Comma Delimited String of Profile Names.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A Comma Delimited String of Profile Names.</inlineHelpText>
+        <label>Profile Names</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Show_Datatable_Search__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This will allow further filtering of the datatable. This is client side only and different from the filters which fire a server side query.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>This will allow further filtering of the datatable. This is client side only and different from the filters which fire a server side query.</inlineHelpText>
+        <label>Show Datatable Search</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Field_Description__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show Field Description (Where applicable). This is pulled from the FieldDefinition Object.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show Field Description (Where applicable). This is pulled from the FieldDefinition Object.</inlineHelpText>
+        <label>Show Field Description</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Filters__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Beta - Allow the user to select filters for the datatable. ie pick profiles, permsets etc. Uses other metadata as default selections.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Beta - Allow the user to select filters for the datatable. ie pick profiles, permsets etc. Uses other metadata as default selections.</inlineHelpText>
+        <label>Show Filters</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Info_Assistant__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>The Info Assistant page help box at the top. Check this to show it.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Info Assistant page help box at the top. Check this to show it.</inlineHelpText>
+        <label>Show Info Assistant</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Special_Fields_Label__c</fullName>
+        <defaultValue>&quot;Secure:Read&quot;</defaultValue>
+        <description>@see the Special_Fields__c field desc</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>@see the Special_Fields__c field desc</inlineHelpText>
+        <label>Special Fields Label</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Special_Fields__c</fullName>
+        <defaultValue>&quot;id,lastactivitydate,lastreferenceddate,lastvieweddate,lastmodifiedbyid,systemmodstamp,ownerid,createddate,createdbyid,isdeleted,lastmodifieddate&quot;</defaultValue>
+        <description>List of comma delimited, lower case field api names to be listed as Secure:Read in the UI as they do not have records in FieldPermissions @see https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_fieldpermissions.htm</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>List of comma delimited, lower case field api names to be listed as Secure:Read in the UI as they do not have records in FieldPermissions @see https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_fieldpermissions.htm</inlineHelpText>
+        <label>Special Fields</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>sObject_Api_Names__c</fullName>
+        <defaultValue>&quot;Route_Processing_Sheet__c&quot;</defaultValue>
+        <description>A Comma Delimited String of sObject Api Names.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A Comma Delimited String of sObject Api Names.</inlineHelpText>
+        <label>sObject Api Names</label>
+        <length>255</length>
+        <required>true</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Cash Logistics Security Audit Setting</label>
+    <pluralLabel>Cash Logistics Security Audit Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

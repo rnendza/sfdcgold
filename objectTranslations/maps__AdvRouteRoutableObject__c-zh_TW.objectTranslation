@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps Advanced 路線可建立路線物件</value>
+    </caseValues>
+    <fields>
+        <label><!-- Available Hours Defaults --></label>
+        <name>maps__AvailableHoursDefaults__c</name>
+    </fields>
+    <fields>
+        <label><!-- Core Base Object Id --></label>
+        <name>maps__CoreBaseObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default End Date --></label>
+        <name>maps__DefaultEndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Frequency Length Units --></label>
+        <name>maps__DefaultFrequencyLengthUnits__c</name>
+        <picklistValues>
+            <masterLabel>months</masterLabel>
+            <translation>月</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>weeks</masterLabel>
+            <translation>週</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Frequency Length --></label>
+        <name>maps__DefaultFrequencyLength__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Max Days Between Visits --></label>
+        <name>maps__DefaultMaxDaysBetweenVisits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Min Days Between Visits --></label>
+        <name>maps__DefaultMinDaysBetweenVisits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Start Date --></label>
+        <name>maps__DefaultStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Target Visits --></label>
+        <name>maps__DefaultTargetVisits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Visit Duration --></label>
+        <name>maps__DefaultVisitDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date Field --></label>
+        <name>maps__EndDateField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency Length Field --></label>
+        <name>maps__FrequencyLengthField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo --></label>
+        <name>maps__IsPromo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Days Between Visits Field --></label>
+        <name>maps__MaxDaysBetweenVisitsField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Min Days Between Visits Field --></label>
+        <name>maps__MinDaysBetweenVisitsField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object --></label>
+        <name>maps__Object__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Available For --></label>
+        <name>maps__PromoAvailableFor__c</name>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation>事件</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promo Field Association --></label>
+        <name>maps__PromoFieldAssociation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Object --></label>
+        <name>maps__PromoObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date Field --></label>
+        <name>maps__StartDateField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Visits Field --></label>
+        <name>maps__TargetVisitsField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Field Apis --></label>
+        <name>maps__TooltipFieldApis__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Duration Field --></label>
+        <name>maps__VisitDurationField__c</name>
+    </fields>
+    <nameFieldLabel>Maps Advanced 路線可建立路線物件名稱</nameFieldLabel>
+</CustomObjectTranslation>

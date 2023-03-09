@@ -1,0 +1,2278 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Assessment - All --></label>
+        <name>Assessment_All</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Business Info --></label>
+        <name>Business_Info</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Closing --></label>
+        <name>Closing</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Closure --></label>
+        <name>Closure</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Closure Reason --></label>
+        <name>Closure_Reason</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Custom Presentation --></label>
+        <name>Custom_Presentation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Date Vetter --></label>
+        <name>Date_Vetter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Executive Approval --></label>
+        <name>Executive_Approval</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Game Plan --></label>
+        <name>Game_Plan</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gaming Layout --></label>
+        <name>Gaming_Layout</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Geography --></label>
+        <name>Geography</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Licensing Eligibility --></label>
+        <name>Licensing_Eligibility</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Location Story --></label>
+        <name>Location_Story</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Main Page --></label>
+        <name>Main_Page</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Negotiation --></label>
+        <name>Negotiation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Negotiation Commisions --></label>
+        <name>Negotiation_Commisions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Negotiation Commissions --></label>
+        <name>Negotiation_Commissions</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Negotiation Vetter --></label>
+        <name>Negotiation_Vetter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Opportunity Information --></label>
+        <name>Opportunity_Information</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Presentation --></label>
+        <name>Presentation</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Previous Captured Fields --></label>
+        <name>Previous_Captured_Fields</name>
+    </fieldSets>
+    <fields>
+        <help><!-- Does an Accel employee have ownership in this location? --></help>
+        <label><!-- Accel Employee Ownership --></label>
+        <name>Accel_Employee_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Establishment Type --></label>
+        <name>Accel_Establishment_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- If yes, who? --></help>
+        <label><!-- Accel Owner --></label>
+        <name>Accel_Owner__c</name>
+        <relationshipLabel><!-- Opportunities (Accel Owner) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Accel TUA Uploaded --></label>
+        <name>Accel_TUA_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted As --></label>
+        <name>Accepted_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Approval Requested --></label>
+        <name>Addendum_Approval_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Items Requested --></label>
+        <name>Addendum_Items_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Request Date --></label>
+        <name>Addendum_Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Active --></label>
+        <name>Agreement_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Record Created --></label>
+        <name>Agreement_Record_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipal Average Hold Per Day --></label>
+        <name>Amount_Projected_from_Municipality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non Video Gaming Approval --></label>
+        <name>Amusement_Exec_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Types --></label>
+        <name>Amusement_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- In order for the data to be accurate, the locations must be the same type of establishment for which you are requesting a presentation. --></help>
+        <label><!-- Analysis Location 1 --></label>
+        <name>Analysis_Location_1__c</name>
+        <relationshipLabel><!-- Opportunities (Analysis Location 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- In order for the data to be accurate, the locations must be the same type of establishment for which you are requesting a presentation. --></help>
+        <label><!-- Analysis Location 2 --></label>
+        <name>Analysis_Location_2__c</name>
+        <relationshipLabel><!-- Opportunities (Analysis Location 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Made --></label>
+        <name>Application_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Applied and Inspected --></label>
+        <name>Applied_and_Inspected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Show Date --></label>
+        <name>Appointment_Show_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assessment --></label>
+        <name>Assessment__c</name>
+        <relationshipLabel><!-- Opportunities (Assessment) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assisting Sales Manager --></label>
+        <name>Assisting_Sales_Manager__c</name>
+        <relationshipLabel><!-- Opportunities (Assisting Sales Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Available Acreage --></label>
+        <name>Available_Acreage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolls up 3 months of HPD Revenue for all Accounts (Accel Locations)  associated with the Municipality.
+(HPD Revenue Total / Total VGT Count) / 90 --></help>
+        <label><!-- Average HPD for Accel Locations --></label>
+        <name>Average_HPD_for_Accel_Locations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolls up 3 months of HPD Revenue for all Account associated with the Municipality
+(HPD Revenue Total / Total VGT Count) / 90 --></help>
+        <label><!-- Average HPD for Municipality --></label>
+        <name>Average_HPD_for_municipality__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rolls up 3 months of HPD Funds In for the Municipality 
+ie. HPD Funds In total / Total VGT Count) / 90 --></help>
+        <label><!-- Average Monthly Funds In --></label>
+        <name>Average_Monthly_Funds_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Gallons --></label>
+        <name>Average_Monthly_Gallons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Budget Confirmed --></label>
+        <name>Budget_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildout Expected Completion Date --></label>
+        <name>Buildout_Expected_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Entity Gaming Experience --></label>
+        <name>Business_Entity_Gaming_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Only --></label>
+        <name>Cash_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Client Boarded for Digital Marketing --></label>
+        <name>Client_Boarded_for_Digital_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Start --></label>
+        <name>Close_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Loss Reason --></label>
+        <name>Closed_Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Accel Rejected Location</masterLabel>
+            <translation><!-- Accel Rejected Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current TUA Doesn’t Expire for Years</masterLabel>
+            <translation><!-- Current TUA Doesn’t Expire for Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Decided Against Gaming</masterLabel>
+            <translation><!-- Decided Against Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Solicit</masterLabel>
+            <translation><!-- Do Not Solicit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Happy With Current TO</masterLabel>
+            <translation><!-- Happy With Current TO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Happy with Current Provider</masterLabel>
+            <translation><!-- Happy with Current Provider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In a Contract</masterLabel>
+            <translation><!-- In a Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Activity in 30 Days</masterLabel>
+            <translation><!-- No Activity in 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Interested</masterLabel>
+            <translation><!-- Not Interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Sales Qualified</masterLabel>
+            <translation><!-- Not Sales Qualified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Already Assigned</masterLabel>
+            <translation><!-- Opportunity Already Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Reassignment</masterLabel>
+            <translation><!-- Opportunity Reassignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic - Signed with Competitor</masterLabel>
+            <translation><!-- Organic - Signed with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Renewed TUA with Current TO</masterLabel>
+            <translation><!-- Renewed TUA with Current TO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed With Another TO</masterLabel>
+            <translation><!-- Signed With Another TO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed with Competitor</masterLabel>
+            <translation><!-- Signed with Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sold to New Owners</masterLabel>
+            <translation><!-- Sold to New Owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Went Out of Business</masterLabel>
+            <translation><!-- Went Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Went with another company</masterLabel>
+            <translation><!-- Went with another company --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Commission $ 1 --></label>
+        <name>Commission_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission $ 2 --></label>
+        <name>Commission_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission $ 3 --></label>
+        <name>Commission_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissioned As Date --></label>
+        <name>Commissioned_As_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissioned As (Track Value Changes) --></label>
+        <name>Commissioned_As_Track_Value_Changes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commissioned As --></label>
+        <name>Commissioned_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Terminals --></label>
+        <name>Committed_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competition Points --></label>
+        <name>Competition_Points__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Contract Expiration Date --></label>
+        <name>Competitor_Contract_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why are they switching? What kinds of equipment do they have? Security, How did you come in contact with the location? When did you come in contact? --></help>
+        <label><!-- Competitor Story --></label>
+        <name>Competitor_Story__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO --></label>
+        <name>Competitor_TO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TUA Uploaded --></label>
+        <name>Competitor_TUA_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Termination Notice Uploaded --></label>
+        <name>Competitor_Termination_Notice_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Termination Notice --></label>
+        <name>Competitor_Termination_Notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Approved --></label>
+        <name>Compliance_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporation Status --></label>
+        <name>Corporation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dissolved</masterLabel>
+            <translation><!-- Dissolved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NA Sole Proprietor</masterLabel>
+            <translation><!-- NA Sole Proprietor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not in good standing</masterLabel>
+            <translation><!-- Not in good standing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost Per Entree --></label>
+        <name>Cost_Per_Entree__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Processor --></label>
+        <name>Credit_Card_Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Terminal Installed --></label>
+        <name>Credit_Card_Terminal_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Terminal Shipped --></label>
+        <name>Credit_Card_Terminal_Shipped__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit for TUA Commission --></label>
+        <name>Credit_for_TUA_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Procuring TUA --></label>
+        <name>Credit_for_TUA__c</name>
+        <relationshipLabel><!-- Opportunities (Credit for TUA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Acreage --></label>
+        <name>Current_Acreage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Gaming Signage --></label>
+        <name>Current_Gaming_Signage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Opp Type Open --></label>
+        <name>Current_Opp_Type_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please include product recommendations for applicable Opportunity Type. --></help>
+        <label><!-- Current/Proposed Product Notes --></label>
+        <name>Current_Proposed_Product_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Currently With Competitor TO --></label>
+        <name>Currently_With_Competitor_TO__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currently With Competitor --></label>
+        <name>Currently_With_Competitor__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Currently with Amusement Operator? --></label>
+        <name>Currently_with_Amusement_Operator__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Presentation Duration --></label>
+        <name>Custom_Presentation_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Presentation Needed --></label>
+        <name>Custom_Presentation_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation Notes --></label>
+        <name>Custom_Presentation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Presentation Slides --></label>
+        <name>Custom_Presentation_Options__c</name>
+        <picklistValues>
+            <masterLabel>C-Store and Truck Stop Gaming</masterLabel>
+            <translation><!-- C-Store and Truck Stop Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Industry Primer</masterLabel>
+            <translation><!-- Corporate_Industry Primer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Licensure</masterLabel>
+            <translation><!-- Corporate_Licensure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Revenue Optimization</masterLabel>
+            <translation><!-- Corporate_Revenue Optimization --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Standard GA</masterLabel>
+            <translation><!-- Corporate_Standard GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Standard IL</masterLabel>
+            <translation><!-- Corporate_Standard IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate_Standard PA</masterLabel>
+            <translation><!-- Corporate_Standard PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dart Leagues</masterLabel>
+            <translation><!-- Dart Leagues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Darts</masterLabel>
+            <translation><!-- Darts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Revenue</masterLabel>
+            <translation><!-- Gaming Revenue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming in Missouri</masterLabel>
+            <translation><!-- Gaming in Missouri --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois Sports Betting</masterLabel>
+            <translation><!-- Illinois Sports Betting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service &amp; Support</masterLabel>
+            <translation><!-- Service &amp; Support --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Operator Pie Chart</masterLabel>
+            <translation><!-- Terminal Operator Pie Chart --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Presentation Start --></label>
+        <name>Custom_Presentation_Start__c</name>
+    </fields>
+    <fields>
+        <help><!-- Complete number of Current/Requested VGTs under Negotiation --></help>
+        <label><!-- Recommend VGT Proposal --></label>
+        <name>Data_Analysis_Report_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Accel LOI Signed (Date) --></label>
+        <name>Date_Accel_LOI_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Accel LOI Signed --></label>
+        <name>Date_Accel_LOI_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Agreement Signed --></label>
+        <name>Date_Agreement_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Second Vetter Assigned --></label>
+        <name>Date_Second_Vetter_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Activity --></label>
+        <name>Days_Since_Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Close --></label>
+        <name>Days_to_Close__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days to Competitor Expiration --></label>
+        <name>Days_to_Competitor_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use data group&apos;s gaming report to describe surrounding area gaming dynamics --></help>
+        <label><!-- Describe surrounding area gaming dynamic --></label>
+        <name>Describe_surrounding_area_gaming_dynamic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details About Competitor --></label>
+        <name>Details_About_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Discovery Completed --></label>
+        <name>Discovery_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distance to Thoroughfare (miles) --></label>
+        <name>Distance_to_Thoroughfare_miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver&apos;s License Signature Matches TUA --></label>
+        <name>Driver_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- EAR Account Calc --></label>
+        <name>EAR_Account_Calc__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is necessary to move forward with gaming application? (i.e. liquor license, build out, regulatory). --></help>
+        <label><!-- Eligibility Notes --></label>
+        <name>Eligibility_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Locked --></label>
+        <name>Equipment_Locked__c</name>
+    </fields>
+    <fields>
+        <help><!-- This value is calculated as follows:
+Estimated Annual Revenue = HPD x # of VGTs in this location x 365 x 0.3257 --></help>
+        <label><!-- Estimated Annual  Revenue --></label>
+        <name>Estimated_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated End Date --></label>
+        <name>Estimated_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated HPD --></label>
+        <name>Estimated_HPD__c</name>
+    </fields>
+    <fields>
+        <help><!-- Terminal Operator&apos;s share of Annual NTI x Probability of Opportunity --></help>
+        <label><!-- Estimated Revenue - Weighted --></label>
+        <name>Estimated_Revenue_Weighted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Start Date --></label>
+        <name>Estimated_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated State Liquor License Issued --></label>
+        <name>Estimated_State_Liquor_License_Issued__c</name>
+    </fields>
+    <fields>
+        <label><!-- Example of Gaming Build-Out Area --></label>
+        <name>Example_of_Gaming_Build_Out_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executed Addendum Returned Date --></label>
+        <name>Executed_Addendum_Returned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Approval Delay --></label>
+        <name>Executive_Approval_Delay__c</name>
+        <picklistValues>
+            <masterLabel>Assets transferred to New Account</masterLabel>
+            <translation><!-- Assets transferred to New Account --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Business Hours</masterLabel>
+            <translation><!-- Business Hours --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Go-Live</masterLabel>
+            <translation><!-- Competitor Go-Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor TUA</masterLabel>
+            <translation><!-- Competitor TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance Speculative</masterLabel>
+            <translation><!-- Compliance Speculative --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Info</masterLabel>
+            <translation><!-- Contact Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counsel Review</masterLabel>
+            <translation><!-- Counsel Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Assessment</masterLabel>
+            <translation><!-- Location Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Details</masterLabel>
+            <translation><!-- Opportunity Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pictures</masterLabel>
+            <translation><!-- Pictures --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revised TUA</masterLabel>
+            <translation><!-- Revised TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOS: Not in Good Standing</masterLabel>
+            <translation><!-- SOS: Not in Good Standing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Vetting</masterLabel>
+            <translation><!-- Second Vetting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Termination Notice</masterLabel>
+            <translation><!-- Termination Notice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Executive Approval Duration --></label>
+        <name>Executive_Approval_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Approval Notes --></label>
+        <name>Executive_Approval_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Executive Approval Start --></label>
+        <name>Executive_Approval_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Existing/Proposed GamingArea Segregation --></label>
+        <name>Existing_Proposed__c</name>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None (open area)</masterLabel>
+            <translation><!-- None (open area) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Room</masterLabel>
+            <translation><!-- Separate Room --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stanchions</masterLabel>
+            <translation><!-- Stanchions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Temporary Partition Wall</masterLabel>
+            <translation><!-- Temporary Partition Wall --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fee Verified --></label>
+        <name>Fee_Verified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment --></label>
+        <name>Field_Assessment__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Final Approval --></label>
+        <name>Final_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Use data group&apos;s gaming report to describe surrounding area gaming dynamics --></help>
+        <label><!-- Gaming Dynamics --></label>
+        <name>Gaming_Dynamics__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Experience --></label>
+        <name>Gaming_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Status --></label>
+        <name>Gaming_Status__c</name>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic</masterLabel>
+            <translation><!-- Organic --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- General Surroundings --></label>
+        <name>General_Surroundings__c</name>
+        <picklistValues>
+            <masterLabel>Airport</masterLabel>
+            <translation><!-- Airport --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Church</masterLabel>
+            <translation><!-- Church --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial/Industrial Park</masterLabel>
+            <translation><!-- Commercial/Industrial Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cornfield</masterLabel>
+            <translation><!-- Cornfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Hall</masterLabel>
+            <translation><!-- Event Hall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gas Station</masterLabel>
+            <translation><!-- Gas Station --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hotel</masterLabel>
+            <translation><!-- Hotel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mall</masterLabel>
+            <translation><!-- Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ongoing Road Construction</masterLabel>
+            <translation><!-- Ongoing Road Construction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential Housing</masterLabel>
+            <translation><!-- Residential Housing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Train Station</masterLabel>
+            <translation><!-- Train Station --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Go Live Expected Date --></label>
+        <name>Go_Live_Expected_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- (Trailing Twelve Month) Rolls up TTM of HPD Revenue for an Account.
+(TTM / Total VGT Count) / 365 --></help>
+        <label><!-- Location TTM --></label>
+        <name>HPD_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Liquor License --></label>
+        <name>Has_Liquor_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has the ownership changed? --></label>
+        <name>Has_the_ownership_changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Homework Complete --></label>
+        <name>Homework_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours of Operation --></label>
+        <name>Hours_of_Operation__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- How many VGTs can you set? --></label>
+        <name>How_many_VGTs_can_you_set__c</name>
+    </fields>
+    <fields>
+        <label><!-- How many VGTs do you recommend setting --></label>
+        <name>How_many_VGTs_do_you_recommend_setting__c</name>
+    </fields>
+    <fields>
+        <help><!-- how much investment capital will they spend on the location --></help>
+        <label><!-- How much investment capital spend --></label>
+        <name>How_much_investment_capital_spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Application Status --></label>
+        <name>IGB_Application_Status__c</name>
+        <picklistValues>
+            <masterLabel>Placeholder Value 1</masterLabel>
+            <translation><!-- Placeholder Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Placeholder Value 2</masterLabel>
+            <translation><!-- Placeholder Value 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IP or Dial-up --></label>
+        <name>IP_Dialup__c</name>
+        <picklistValues>
+            <masterLabel>Dial-up</masterLabel>
+            <translation><!-- Dial-up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IP</masterLabel>
+            <translation><!-- IP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IP or Dial-Up --></label>
+        <name>IP_or_Dial_Up__c</name>
+        <picklistValues>
+            <masterLabel>Dial-Up</masterLabel>
+            <translation><!-- Dial-Up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IP</masterLabel>
+            <translation><!-- IP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Internet Ready --></label>
+        <name>Internet_Ready__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Invoice Paid By Client --></label>
+        <name>Invoice_Paid_By_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice for Digital Marketing --></label>
+        <name>Invoice_for_Digital_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is there a dedicated gaming area --></label>
+        <name>Is_there_a_dedicated_gaming_area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is this model a change from past model --></label>
+        <name>Is_this_model_a_change_from_past_model__c</name>
+    </fields>
+    <fields>
+        <label><!-- LOI Submitted By --></label>
+        <name>LOI_Submitted_By__c</name>
+        <relationshipLabel><!-- Opportunities (LOI Submitted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Event Date --></label>
+        <name>Last_Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Description --></label>
+        <name>Last_Event_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Subject --></label>
+        <name>Last_Event_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Type --></label>
+        <name>Last_Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest date to send second term notice --></label>
+        <name>Latest_date_to_send_second_term_notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest date to send term notice --></label>
+        <name>Latest_date_to_send_term_notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Approved --></label>
+        <name>Lead_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Gen Type --></label>
+        <name>Lead_Gen_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Issued or Denied --></label>
+        <name>License_Issued_or_Denied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Link to Presentation --></label>
+        <name>Link_to_Presentation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Obtained --></label>
+        <name>Liquor_License_Obtained__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Pouring Hours --></label>
+        <name>Liquor_License_Pouring_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Pouring Hours --></label>
+        <name>Liquor_License_Pouring__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Progress --></label>
+        <name>Local_Liquor_License_Progress__c</name>
+        <picklistValues>
+            <masterLabel>App Not Submitted</masterLabel>
+            <translation><!-- App Not Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>App Submitted</masterLabel>
+            <translation><!-- App Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter Submitted to City Clerk</masterLabel>
+            <translation><!-- Letter Submitted to City Clerk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Approved</masterLabel>
+            <translation><!-- License Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Denied</masterLabel>
+            <translation><!-- License Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Unavailable</masterLabel>
+            <translation><!-- License Unavailable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Restriction</masterLabel>
+            <translation><!-- Municipal Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting on Board Approval</masterLabel>
+            <translation><!-- Waiting on Board Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Assessment Duration --></label>
+        <name>Location_Assessment_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Assessment Start --></label>
+        <name>Location_Assessment_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Status --></label>
+        <name>Location_Status_actual__c</name>
+    </fields>
+    <fields>
+        <label><!-- Loss Reason --></label>
+        <name>Loss_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget / Lost Funding</masterLabel>
+            <translation><!-- No Budget / Lost Funding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Decision / Non-Responsive</masterLabel>
+            <translation><!-- No Decision / Non-Responsive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Price</masterLabel>
+            <translation><!-- Price --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing --></label>
+        <name>Marketing__c</name>
+        <picklistValues>
+            <masterLabel>A-frame</masterLabel>
+            <translation><!-- A-frame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Back in 5 Minutes Cards</masterLabel>
+            <translation><!-- Back in 5 Minutes Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banner</masterLabel>
+            <translation><!-- Banner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Feather Flag</masterLabel>
+            <translation><!-- Feather Flag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Table Tent</masterLabel>
+            <translation><!-- Table Tent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Window Decal</masterLabel>
+            <translation><!-- Window Decal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Meeting with Decision Maker Completed --></label>
+        <name>Meeting_with_Decision_Maker_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meeting with Decision Maker Scheduled --></label>
+        <name>Meeting_with_Decision_Maker_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Application Rcvd from Client --></label>
+        <name>Merchant_Application_Rcvd_from_Client__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Application for Credit Card --></label>
+        <name>Merchant_Application_for_Credit_Card__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Solutions Approval Entry --></label>
+        <name>Merchant_Solutions_Approval_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Merchant Solutions Approved Date --></label>
+        <name>Merchant_Solutions_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field must be filled out via the &quot;Submit Custom Presentation Request&quot; action --></help>
+        <label><!-- Presentation Type --></label>
+        <name>Mock_Up_Options__c</name>
+        <picklistValues>
+            <masterLabel>Corporate Presentation</masterLabel>
+            <translation><!-- Corporate Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sketch Up Animation &amp; VGT Proposal</masterLabel>
+            <translation><!-- Sketch Up Animation &amp; VGT Proposal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sketch Up Animation Only</masterLabel>
+            <translation><!-- Sketch Up Animation Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Obtain a Liquor License</masterLabel>
+            <translation><!-- To Obtain a Liquor License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Proposal Only</masterLabel>
+            <translation><!-- VGT Proposal Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Municipality Lookup --></label>
+        <name>Municipality_Lookup__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Municipality TTM --></label>
+        <name>Municipality_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pulls from the Municipality associated with the Account (location) of type Accel Account. --></help>
+        <label><!-- Num of Accel Locations in Municipality --></label>
+        <name>Nbr_of_Accel_locations_in_municipality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiation Duration --></label>
+        <name>Negotiation_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Negotiation Start Date --></label>
+        <name>Negotiation_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- New TUA Length --></label>
+        <name>New_TUA_Length__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is the next step? --></help>
+        <label><!-- Next Steps --></label>
+        <name>Next_Steps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Current VGTs --></label>
+        <name>No_of_Current_VGTs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of POS Terminals --></label>
+        <name>Number_of_POS_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Parking Spaces --></label>
+        <name>Number_of_Parking_Spaces__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please provide the number of products requested for applicable Opportunity Type. For Gaming Machines, only include number of cabinets (no gaming area assets). --></help>
+        <label><!-- Number of Products Requested --></label>
+        <name>Number_of_Products_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Open/Closed --></label>
+        <name>Open_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Manager Check Fx --></label>
+        <name>Opp_Manager_Check_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Owner Active --></label>
+        <name>Opp_Owner_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opp Owner Manager --></label>
+        <name>Opp_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Age --></label>
+        <name>Opportunity_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Amount --></label>
+        <name>Opportunity_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity CaseSafe Id --></label>
+        <name>Opportunity_CaseSafe_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Count --></label>
+        <name>Opportunity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Read-Only --></label>
+        <name>Opportunity_Read_Only__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Referrer --></label>
+        <lookupFilter>
+            <errorMessage><!-- Opportunity Referrer: Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Opportunity_Referrer__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commission Split 1 --></label>
+        <name>Opportunity_Split_1__c</name>
+        <relationshipLabel><!-- Opportunities (Opportunity Split 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commission Split 2 --></label>
+        <name>Opportunity_Split_2__c</name>
+        <relationshipLabel><!-- Opportunities (Opportunity Split 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Commission Split 3 --></label>
+        <name>Opportunity_Split_3__c</name>
+        <relationshipLabel><!-- Opportunities (Opportunity Split 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Status Reason --></label>
+        <name>Opportunity_Status_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Account and Related Items</masterLabel>
+            <translation><!-- Account and Related Items --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement/Documentation Needed</masterLabel>
+            <translation><!-- Agreement/Documentation Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Application</masterLabel>
+            <translation><!-- Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Relationship</masterLabel>
+            <translation><!-- Building Relationship --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cannot Connect w/ Decision Maker</masterLabel>
+            <translation><!-- Cannot Connect w/ Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Agreement Expires 3-5 Years</masterLabel>
+            <translation><!-- Competitor Agreement Expires 3-5 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Agreement Expires greater than 5 years</masterLabel>
+            <translation><!-- Competitor Agreement Expires greater than 5 years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Agreement expires less than 1 year</masterLabel>
+            <translation><!-- Competitor Agreement expires less than 1 year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Acceptance</masterLabel>
+            <translation><!-- Corporate Acceptance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Status / Tax Issue</masterLabel>
+            <translation><!-- Corporate Status / Tax Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counsel Review</masterLabel>
+            <translation><!-- Counsel Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal Record Identified</masterLabel>
+            <translation><!-- Criminal Record Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Not Ready</masterLabel>
+            <translation><!-- Customer Not Ready --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer on Vacation</masterLabel>
+            <translation><!-- Customer on Vacation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery/Prepare for Sale Overdue</masterLabel>
+            <translation><!-- Discovery/Prepare for Sale Overdue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery/Preparing for Sale</masterLabel>
+            <translation><!-- Discovery/Preparing for Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Distance Restriction</masterLabel>
+            <translation><!-- Distance Restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exceeded Eligiblity Timeline</masterLabel>
+            <translation><!-- Exceeded Eligiblity Timeline --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA Gift Card</masterLabel>
+            <translation><!-- GA Gift Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Application</masterLabel>
+            <translation><!-- Gaming Application --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Area Buildout</masterLabel>
+            <translation><!-- Gaming Area Buildout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquor License - Local</masterLabel>
+            <translation><!-- Liquor License - Local --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquor License - State</masterLabel>
+            <translation><!-- Liquor License - State --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost Momentum</masterLabel>
+            <translation><!-- Lost Momentum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lost to Competitor</masterLabel>
+            <translation><!-- Lost to Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M &amp; A</masterLabel>
+            <translation><!-- M &amp; A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting w/ Decision Maker Scheduled</masterLabel>
+            <translation><!-- Meeting w/ Decision Maker Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipal Requirements</masterLabel>
+            <translation><!-- Municipal Requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Chance at Eligibility</masterLabel>
+            <translation><!-- No Chance at Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Actively Worked/ Reassignment</masterLabel>
+            <translation><!-- Not Actively Worked/ Reassignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Approval</masterLabel>
+            <translation><!-- Opportunity Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Details</masterLabel>
+            <translation><!-- Opportunity Details --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Business</masterLabel>
+            <translation><!-- Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Poor Sales Qualfification</masterLabel>
+            <translation><!-- Poor Sales Qualfification --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Second Vetting</masterLabel>
+            <translation><!-- Second Vetting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Timing</masterLabel>
+            <translation><!-- Timing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck Stop Requirements</masterLabel>
+            <translation><!-- Truck Stop Requirements --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Status --></label>
+        <name>Opportunity_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed Won</masterLabel>
+            <translation><!-- Closed Won --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Do Not Recycle</masterLabel>
+            <translation><!-- Do Not Recycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Track</masterLabel>
+            <translation><!-- On Track --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Track in Eligibility</masterLabel>
+            <translation><!-- On Track in Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Postponed</masterLabel>
+            <translation><!-- Postponed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recycle</masterLabel>
+            <translation><!-- Recycle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stalled</masterLabel>
+            <translation><!-- Stalled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stuck in Eligibility</masterLabel>
+            <translation><!-- Stuck in Eligibility --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Type --></label>
+        <name>Opportunity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amusements</masterLabel>
+            <translation><!-- Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Gaming Machines</masterLabel>
+            <translation><!-- Competitor Gaming Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Extension</masterLabel>
+            <translation><!-- Gaming Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jurisdiction Opt-Out Gaming Machines</masterLabel>
+            <translation><!-- Jurisdiction Opt-Out Gaming Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merger &amp; Acquisition Gaming Machines</masterLabel>
+            <translation><!-- Merger &amp; Acquisition Gaming Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic Gaming Machines</masterLabel>
+            <translation><!-- Organic Gaming Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone ATM</masterLabel>
+            <translation><!-- Standalone ATM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Live Date --></label>
+        <name>Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- &quot;Other&quot; Reason --></label>
+        <name>Other_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Page Navigator --></label>
+        <name>Page_Category__c</name>
+        <picklistValues>
+            <masterLabel>Closure</masterLabel>
+            <translation><!-- Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Game Plan</masterLabel>
+            <translation><!-- Game Plan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensing Eligibility</masterLabel>
+            <translation><!-- Licensing Eligibility --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opportunity Information</masterLabel>
+            <translation><!-- Opportunity Information --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ParentAcctId --></label>
+        <name>ParentAcctId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parking --></label>
+        <name>Parking__c</name>
+        <picklistValues>
+            <masterLabel>Garage</masterLabel>
+            <translation><!-- Garage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meter</masterLabel>
+            <translation><!-- Meter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private lot</masterLabel>
+            <translation><!-- Private lot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Street</masterLabel>
+            <translation><!-- Street --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator Credit Commission --></label>
+        <name>Partner_Operator_Credit_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator Credit --></label>
+        <name>Partner_Operator_Credit__c</name>
+        <relationshipLabel><!-- Opportunities (Partner Operator Credit) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Patrons Under 21 Allowed to Enter --></label>
+        <name>Patrons_Under_21_Allowed_to_Enter__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Physical Address --></label>
+        <name>Physical_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Acreage --></label>
+        <name>Potential_Acreage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Presentation Appt Date --></label>
+        <name>Presentation_Appt_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project ID --></label>
+        <name>Project_ID_Lookup__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project ID Delete --></label>
+        <name>Project_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project ID Delete 2 --></label>
+        <name>Project_Lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Projected --></label>
+        <name>Projection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Redemption --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria! --></errorMessage>
+        </lookupFilter>
+        <name>Proposed_Redemption__c</name>
+        <relationshipLabel><!-- Opportunities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Bathroom --></label>
+        <name>Proximity_to_Bathroom__c</name>
+        <picklistValues>
+            <masterLabel>5 to 10 feet</masterLabel>
+            <translation><!-- 5 to 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Closest Hwy Exit (miles) --></label>
+        <name>Proximity_to_Closest_Hwy_Exit_miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Closest Main St (miles) --></label>
+        <name>Proximity_to_Closest_Main_St_miles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity to Main Entrance --></label>
+        <name>Proximity_to_Main_Entrance__c</name>
+        <picklistValues>
+            <masterLabel>5 to 10 feet</masterLabel>
+            <translation><!-- 5 to 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Qualified Revenue Date --></label>
+        <name>Qualified_Revenue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- ROI Analysis Completed --></label>
+        <name>ROI_Analysis_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for Application --></label>
+        <name>Ready_for_Application__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related Sales Effort --></label>
+        <name>Related_Sales_Effort__c</name>
+        <relationshipLabel><!-- Related Sales Effort --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Remaining Time Left on Agreement --></label>
+        <name>Remaining_Time_Left_on_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Retail Area --></label>
+        <name>Retail_Area__c</name>
+        <picklistValues>
+            <masterLabel>Downtown</masterLabel>
+            <translation><!-- Downtown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone</masterLabel>
+            <translation><!-- Standalone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strip Mall</masterLabel>
+            <translation><!-- Strip Mall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Thoroughfare</masterLabel>
+            <translation><!-- Thoroughfare --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Membership Rcvs Gaming Rev? --></label>
+        <name>Sales_Agent_Membership_Rcvs_Gaming_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Ownership? --></label>
+        <name>Sales_Agent_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Ops Initial Approval --></label>
+        <name>Sales_Ops_Initial_Approval__c</name>
+    </fields>
+    <fields>
+        <help><!-- Select All that Apply --></help>
+        <label><!-- Sales Toolbox --></label>
+        <name>Sales_Toolbox__c</name>
+        <picklistValues>
+            <masterLabel>Accel Newsletter</masterLabel>
+            <translation><!-- Accel Newsletter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM Resource Page</masterLabel>
+            <translation><!-- BDM Resource Page --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case Studies</masterLabel>
+            <translation><!-- Case Studies --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Darts Brochure</masterLabel>
+            <translation><!-- Darts Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Touch Presentation</masterLabel>
+            <translation><!-- First Touch Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing Brochure</masterLabel>
+            <translation><!-- Marketing Brochure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Folder</masterLabel>
+            <translation><!-- North Folder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South Folder</masterLabel>
+            <translation><!-- South Folder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch to Accel - Truck Stop Brochure</masterLabel>
+            <translation><!-- Switch to Accel - Truck Stop Brochure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Second Vetter --></label>
+        <name>Second_Vetter__c</name>
+        <relationshipLabel><!-- Opportunities (Second Vetter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Name (user) --></label>
+        <name>Source_Name_user__c</name>
+        <relationshipLabel><!-- Opportunities (Source Name (user)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sources of Foot Traffic --></label>
+        <name>Sources_of_Foot_Traffic__c</name>
+        <picklistValues>
+            <masterLabel>Commercial (office)</masterLabel>
+            <translation><!-- Commercial (office) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manufacturing</masterLabel>
+            <translation><!-- Manufacturing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Residential</masterLabel>
+            <translation><!-- Residential --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail</masterLabel>
+            <translation><!-- Retail --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transportation (main route - highway, busy thoroughfare)</masterLabel>
+            <translation><!-- Transportation (main route - highway, busy thoroughfare) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Relationships --></label>
+        <name>Special_Relationships__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Style of Food --></label>
+        <name>Specific_Style_of_Food__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Name (Text) --></label>
+        <name>Stage_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Probability --></label>
+        <name>State_Liquor_License_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Type --></label>
+        <name>State_Liquor_License_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit for Leadership Approval --></label>
+        <name>Submit_Exec_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit Machine Request --></label>
+        <name>Submit_Machine_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit --></label>
+        <name>Submit__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter Chairs, Spacers,and Type of Segregation --></help>
+        <label><!-- Suggested Gaming Area Assets --></label>
+        <name>Suggested_Gaming_Area_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- Enter suggested VGTs and Redemption that were discussed with location. --></help>
+        <label><!-- Suggested VGTs/RT --></label>
+        <name>Suggested_VGTs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Pictures --></label>
+        <name>Support_Pictures__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Submitted By --></label>
+        <name>TUA_Submitted_By2__c</name>
+        <relationshipLabel><!-- Opportunities (TUA Submitted By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- TUA Submitted On Behalf Of --></label>
+        <name>TUA_Submitted_On_Behalf_Of__c</name>
+        <relationshipLabel><!-- Opportunities (TUA Submitted On Behalf Of) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Terms of Agreement --></label>
+        <name>Terms_of_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thank you! --></label>
+        <name>Thank_you__c</name>
+    </fields>
+    <fields>
+        <label><!-- Threat Matrix --></label>
+        <name>Threat_Matrix__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Business Hours Open (per week) --></label>
+        <name>Total_Business_Hours_Open_per_week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking Number --></label>
+        <name>Tracking_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Buildout --></label>
+        <name>Type_of_Buildout__c</name>
+        <picklistValues>
+            <masterLabel>Cosmetic</masterLabel>
+            <translation><!-- Cosmetic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Work</masterLabel>
+            <translation><!-- Electrical Work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Interior Gut</masterLabel>
+            <translation><!-- Full Interior Gut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Room Addition</masterLabel>
+            <translation><!-- Gaming Room Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ground Up Build</masterLabel>
+            <translation><!-- Ground Up Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remodel</masterLabel>
+            <translation><!-- Remodel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Gaming Area</masterLabel>
+            <translation><!-- Separate Gaming Area --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Chairs --></label>
+        <name>Type_of_Chairs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Example: Bingo, Trivia, Live Music, Karaoke --></help>
+        <label><!-- Type of Entertainment --></label>
+        <name>Type_of_Entertainment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of POS System --></label>
+        <name>Type_of_POS_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Parking --></label>
+        <name>Type_of_Parking__c</name>
+        <picklistValues>
+            <masterLabel>On-site parking lot (7 spaces or below)</masterLabel>
+            <translation><!-- On-site parking lot (7 spaces or below) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On-site parking lot (above 7 spaces)</masterLabel>
+            <translation><!-- On-site parking lot (above 7 spaces) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Street</masterLabel>
+            <translation><!-- Street --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Spacers --></label>
+        <name>Type_of_Spacers__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identify performance and relationship strength indicators. --></help>
+        <label><!-- Vetting Notes --></label>
+        <name>Vetting_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vetting Questionnaire --></label>
+        <name>Vetting_Questionnaire__c</name>
+        <relationshipLabel><!-- Vetting Questionnaire --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Website Completed --></label>
+        <name>Website_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website Started (if applicable) --></label>
+        <name>Website_Started_if_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Email Sent (Digital Marketing) --></label>
+        <name>Welcome_Email_Sent_Digital_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are competitor VGT game sets --></label>
+        <name>What_are_competitor_VGT_game_sets__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are competitor layouts --></label>
+        <name>What_are_competitor_layouts__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are competitor marketing strategies? Look on FB, Yelp, Twitter, Instagram, Ect. - Do they have a loyalty program --></help>
+        <label><!-- What are competitor marketing strategies --></label>
+        <name>What_are_competitor_marketing_strategies__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are the changes being made? --></label>
+        <name>What_are_the_changes_being_made__c</name>
+    </fields>
+    <fields>
+        <label><!-- What are their expectations from Accel? --></label>
+        <name>What_are_their_expectations_from_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confidence do you have that they win --></label>
+        <name>What_confidence_do_you_have_that_they_wi__c</name>
+    </fields>
+    <fields>
+        <label><!-- What evidence to support this claim --></label>
+        <name>What_evidence_to_support_this_claim__c</name>
+    </fields>
+    <fields>
+        <help><!-- What is competitor Food &amp; Beverage? I.e. pub, italian, pizza, simple, ect. --></help>
+        <label><!-- What is competitor Food &amp; Beverage? --></label>
+        <name>What_is_competitor_Food_Beverage__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the business model --></label>
+        <name>What_is_the_business_model__c</name>
+    </fields>
+    <fields>
+        <label><!-- What is the layout --></label>
+        <name>What_is_the_layout__c</name>
+    </fields>
+    <fields>
+        <label><!-- What were the gaming results? --></label>
+        <name>What_was_the_gaming_results_from_the_pri__c</name>
+    </fields>
+    <fields>
+        <label><!-- What weaknesses did they correct --></label>
+        <name>What_weaknesses_did_they_correct__c</name>
+    </fields>
+    <fields>
+        <label><!-- Where is it located? --></label>
+        <name>Where_is_it_located__c</name>
+        <picklistValues>
+            <masterLabel>Downtown</masterLabel>
+            <translation><!-- Downtown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Off the beaten path</masterLabel>
+            <translation><!-- Off the beaten path --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rural</masterLabel>
+            <translation><!-- Rural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stripmall</masterLabel>
+            <translation><!-- Stripmall --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Who are the target customers --></label>
+        <name>Who_are_the_target_customers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why are they changing their TO? --></label>
+        <name>Why_are_they_changing_their_TO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why does location not have gaming --></label>
+        <name>Why_does_location_not_have_gaming__c</name>
+        <picklistValues>
+            <masterLabel>Against Gaming</masterLabel>
+            <translation><!-- Against Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Gaming Area</masterLabel>
+            <translation><!-- Denied Gaming Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landlord Restrictions</masterLabel>
+            <translation><!-- Landlord Restrictions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Corporation</masterLabel>
+            <translation><!-- New Corporation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Owners</masterLabel>
+            <translation><!-- New Owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out</masterLabel>
+            <translation><!-- Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Religious Beliefs</masterLabel>
+            <translation><!-- Religious Beliefs --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Why have they never had gaming --></label>
+        <name>Why_have_they_never_had_gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why would they gamble at this location --></label>
+        <name>Why_would_they_gamble_at_this_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Why would they go to this location --></label>
+        <name>Why_would_they_go_to_this_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wifi Router Installed --></label>
+        <name>Wifi_Router_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wifi Router Shipped (if applicable) --></label>
+        <name>Wifi_Router_Shipped_if_applicable__c</name>
+    </fields>
+    <fields>
+        <label><!-- Second Vetter&apos;s Regional Lead --></label>
+        <name>X2nd_Vetter_Regional_Lead__c</name>
+        <relationshipLabel><!-- Opportunities (Second Vetter&apos;s Regional Lead) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Pulls from the municipality associated with the account (location). --></help>
+        <label><!-- Number of Gaming Locations in Town --></label>
+        <name>nbr_of_gaming_locations_in_town__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- AE Non Video Gaming --></label>
+        <name>AE_Non_Video_Gaming</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AE Video Gaming --></label>
+        <name>AE_Video_Gaming</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please enter the owner of this record (Accel Employee Ownership is checked) --></errorMessage>
+        <name>Accel_Employee_Ownership_Requires_User</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only the Account Owner will have access to create a new opportunity. Please chatter @ salesoperations requesting to become the Account Owner. --></errorMessage>
+        <name>Acct_owner_must_equal_opp_owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunities need to get machine and executive approval before being set to closed won. --></errorMessage>
+        <name>Cant_Close_Win_Without_Approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must complete the field &quot;TUA Submitted By&quot; in order to submit this opportunity for approval. --></errorMessage>
+        <name>Cant_submit_for_approval_without_TUA</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select &quot;Opportunity Status Reason&quot; --></errorMessage>
+        <name>Closed_Lost_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a Relationship Manager on the Account before closing this Opportunity. --></errorMessage>
+        <name>Closed_Won_No_Assigned_RM</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Commission Split is not SA Registered. --></errorMessage>
+        <name>Commission_Split1_SA_Agent_Delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Commission Split is not SA Registered. --></errorMessage>
+        <name>Commission_Split1_must_be_SA_registered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Commission Split 2 SA Agent is delisted. Please contact your Admin. --></errorMessage>
+        <name>Commission_Split2_SA_Agent_Delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Commission Split 2 is not SA Registered. --></errorMessage>
+        <name>Commission_Split2_must_be_SA_registered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Opportunity can not be closed until the Competitor Termination Notice, Accel TUA, and Competitor TUA are Uploaded. --></errorMessage>
+        <name>Competitor_Opportunity_Update</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have indicated that there is a current Competitor TO, however, none is listed on the Account. Please update the Account with the correct current Competitor TO. --></errorMessage>
+        <name>Competitor_TO_Must_Be_Entered_on_Acct</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- We show that an Opportunity of this same type is currently open, therefore this Opportunity cannot be worked. Please contact your admin if you believe this to be in error. --></errorMessage>
+        <name>Current_Opp_Type_Open</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a value for Date Agreement Signed --></errorMessage>
+        <name>Date_Agreement_Signed_Stage_Dependent</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Internal Review stage cannot be manually chosen. Please select the Submit for Approval button. --></errorMessage>
+        <name>Exec_Stage_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to close this opportunity as won, an active extension agreement must be in place. --></errorMessage>
+        <name>Extension_Agreement_Active</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Field Assessment must be filled out and added to the Opportunity before closing the Opportunity. --></errorMessage>
+        <name>Field_Assessment_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must enter 1 through 10. --></errorMessage>
+        <name>Limit_Committed_Terminals_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You have chosen an Opportunity Product that requires approval before the Opportunity can be closed as won. Please click Submit for Approval. --></errorMessage>
+        <name>Merchant_Solutions_cant_close_won_wo_app</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Custom Presentation Options, Presentation Options, or Data Analysis Report must be filled out before moving to Negotiation. --></errorMessage>
+        <name>Negotiation_Stage_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter &quot;New TUA Length&quot; --></errorMessage>
+        <name>New_TUA_Length</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not allowed to close this opportunity as won. --></errorMessage>
+        <name>Opportunity_Close_Won_Limitations</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You are not listed as the Account Owner. Please contact Sales Ops for permission to open an Opportunity. --></errorMessage>
+        <name>Opportunity_Owner_Must_Equal_Acct_Owner</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- An Opportunity cannot be edited after being Closed. --></errorMessage>
+        <name>Opportunity_Read_Only_Closed_Won</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter &quot;Other&quot; Reason --></errorMessage>
+        <name>Other_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Person Procuring TUA has SA Delisted date. Please contact your admin. --></errorMessage>
+        <name>PersonProcuringTUA_is_Delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Person Procuring TUA is not SA Registered. Please contact your admin.. --></errorMessage>
+        <name>PersonProcuringTUA_must_be_SA_registered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;TUA Submitted by&quot; source you have chosen is not SA Registered, therefore it cannot be chosen as a &quot;TUA Submitted By&quot;. --></errorMessage>
+        <name>TUA_Submitted_By_must_be_SA_registered</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;TUA Submitted by&quot; source you have chosen has SA Delisted date. Please consult your admin. --></errorMessage>
+        <name>TUA_submitted_by_is_delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter &quot;Remaining Time Left on Current TUA Agreement&quot; --></errorMessage>
+        <name>Time_Left_on_Agreement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- There must be a Location Assessment tied to the Opportunity before moving to the Custom Presentation Stage --></errorMessage>
+        <name>Vetting_Questionnaire_Stage_Requirement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Enter &quot;Details About the Competitor&quot; --></errorMessage>
+        <name>details_about_competitor</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Executive_Summary_Report --></label>
+        <name>Executive_Summary_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Vetting_Questionnaire_Report --></label>
+        <name>Vetting_Questionnaire_Report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SpanningOpportunityRestore --></label>
+        <name>spanning__SpanningOpportunityRestore</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Addendum_Request_Approved</name>
+        <subject><!-- Addendum Request Approved --></subject>
+    </workflowTasks>
+    <workflowTasks>
+        <description><!-- A new custom presentation needs analysis. --></description>
+        <name>Analysis_Needed</name>
+        <subject><!-- Analysis Needed --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

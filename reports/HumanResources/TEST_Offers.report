@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Jobs__c$Name</field>
+    </columns>
+    <columns>
+        <field>Jobs__c.Job_Offers__r$Name</field>
+    </columns>
+    <columns>
+        <field>Jobs__c.Job_Offers__r$Applicant_Name__c</field>
+    </columns>
+    <columns>
+        <field>Jobs__c.Job_Offers__r$Job_Title__c</field>
+    </columns>
+    <columns>
+        <field>Jobs__c.Job_Offers__r$Proposed_Start_Date__c</field>
+    </columns>
+    <columns>
+        <field>Jobs__c.Job_Offers__r$Hired_in_ADP_Elec_Onboarding_Created__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>TEST Offers</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Jobs_and_Job_Offers__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Jobs__c.Job_Offers__r$Proposed_Start_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Jobs__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CURRENT</interval>
+    </timeFrameFilter>
+</Report>

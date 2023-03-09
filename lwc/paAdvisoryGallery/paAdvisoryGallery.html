@@ -1,0 +1,317 @@
+<!-- Pa Advisory Gallery -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <div if:true={showProgressBar}
+                     class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                    <template if:true={_isExporting}>
+                        <div>
+                            {exportStatusLabel}
+                        </div>
+                    </template>
+                    <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+                </div>
+
+                <!--- ===== Card Button Icons ===== -->
+                <div slot="actions">
+                    <!--- ===== PDF Export Icon (Builder Property)  ===== -->
+                    <template if:true={allowPdfExport}>
+                        <lightning-icon
+                                icon-name="doctype:pdf"
+                                data-iconbuttonid="btnExportPdf"
+                                class="slds-m-right_medium"
+                                onclick={handleIconButtonClick}
+                                alternative-text="View Tile List">
+                        </lightning-icon>
+                    </template>
+                    <!--- ===== Image vs Datatable toggle (Builder Property) ===== -->
+                    <template if:true={allowListVsImageToggle}>
+                        <lightning-button-icon
+                                icon-name="utility:tile_card_list"
+                                data-iconbuttonid="btnDisplayTile"
+                                class={imageIconClass}
+                                onclick={handleIconButtonClick}
+                                alternative-text="View Tile List">
+                        </lightning-button-icon>
+                        <lightning-button-icon
+                                icon-name="utility:table"
+                                data-iconbuttonid="btnDisplayTable"
+                                onclick={handleIconButtonClick}
+                                alternative-text="View Table List"
+                                class={tableIconClass} >
+                        </lightning-button-icon>
+                    </template>
+                    <!--- ===== Filter Toggle (Builder Property) ===== -->
+                    <template if:true={showFilterIcon}>
+                        <lightning-button-icon
+                                onclick={handleFilterToggle}
+                                icon-name="utility:filterList"
+                                alternative-text="Filter"
+                                title="Filter">
+                        </lightning-button-icon>
+                    </template>
+                    <!--- ===== Sort Menu (Builder Property) ===== -->
+                    <template if:true={showSortIcon}>
+                        <lightning-button-menu
+                                disabled={disableSortMenuButton}
+                                if:true={sortOptions}
+                                slot="actions" icon-name="utility:sort" icon-size="medium"
+                                onselect={handleSortMenuSelect}
+                                class="accel-blue-icon slds-m-left_x-small"
+                                menu-alignment="right" variant="border-filled">
+                            <template for:each={sortOptions} for:item="option">
+                                <lightning-menu-item
+                                        key={option.id}
+                                        data-menuid={option.id}
+                                        value={option.id}
+                                        label={option.label}
+                                        prefix-icon-name={option.prefixIconName}>
+                                </lightning-menu-item>
+                            </template>
+                        </lightning-button-menu>
+                    </template>
+                </div>
+
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title={cardTitle}
+                                    sub-title-text-style="font-size:.80rem"
+                                    icon-name={cardIcon}
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+                <!--- ===== Loading stencil ===== -->
+                <template if:true={showStencil}>
+                    <c-ui-custom-stencil
+                            iterations="9"
+                            child-class="slds-var-m-around-small"
+                            type="list" columns="3">
+                    </c-ui-custom-stencil>
+                </template>
+
+                <div class="slds-p-horizontal_small">
+                    <template if:true={showSearchResults}>
+                        <!-- ======  Client Side Filters (Builder Property) ======= -->
+                        <template if:true={_showFilters}>
+                            <div class="slds-m-bottom_x-small">
+                                <c-pa-advisory-filters
+                                        ontextfilterkeypress={handleTextFilterKeyPress}
+                                        onclosefilters={handleCloseFilters}
+                                        filter-container-class="accel-silver-background"
+                                        user-place-holder={userPlaceHolder}
+                                        city-place-holder={cityPlaceHolder}
+                                        filters-label={filtersLabel}
+                                        filters-applied-label={filtersAppliedLabel}
+                                        min-filter-chars={minFilterChars}>
+                                </c-pa-advisory-filters>
+                            </div>
+                        </template>
+
+                        <template if:true={allowPdfExport}>
+                            <c-pa-advisory-pdf-export
+                                    oncancelpdf={handleCancelPdf}
+                                    debug-console={_debugConsole}>
+                            </c-pa-advisory-pdf-export>
+                        </template>
+
+                        <!-- ======  Image Gallery (Builder Property) ======= -->
+                        <template if:true={displayImageView}>
+                            <template if:true={showTotals}>
+                                <div class="slds-m-left_xx-small slds-m-bottom_xx-small">
+                                    <div class="slds-box_x-small slds-box_border accel-silver-background">
+                                        <div class="slds-grid slds-wrap slds-p-around_xx-small">
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="slds-text-body_small">
+                                                    <template if:false={mobile}>
+                                                        Showing <b>{totalDisplayedRows}</b> of {totalSearchRecordCount}
+                                                        items
+                                                    </template>
+                                                    <template if:true={mobile}>
+                                                        {totalDisplayedRows} of {totalSearchRecordCount}
+                                                    </template>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="slds-text-color_weak slds-text-body_small slds-text-align_right">
+                                                    <template if:true={showSortIcon}>
+                                                        <template if:true={_selectedSortOption}>
+                                                            <span>
+                                                            <lightning-icon
+                                                                    size="x-small"
+                                                                    icon-name={_currentSortedByIcon}>
+                                                            </lightning-icon>
+                                                            </span>
+                                                            <span class="slds-text-color_weak slds-text-body_small">
+                                                            &nbsp;Sorted by {_selectedSortOption.label}
+                                                            </span>
+                                                        </template>
+                                                    </template>
+                                                    <template if:true={_loadMoreStatus}>
+                                                        <span class="slds-text-color_success">
+                                                        {_loadMoreStatus}
+                                                        </span>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                            <!-- ======  NOT USING INFINITE SCROLLING ! (Builder Property) ======= -->
+                            <template if:false={useInfiniteScroll}>
+                                <div class="slds-grid slds-wrap" data-id="pdfcontent">
+                                    <template for:each={filteredUserRecords} for:item="user">
+                                        <div key={user.paAdvisoryId}
+                                             class="slds-col slds-p-around_x-small slds-p-top_small
+                                            slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                                            <a href="javascript:void(0)" data-sfdcid={user.paAdvisoryId}
+                                               onclick={handlePhotoClick}>
+                                                <div class="slds-box slds-box_xx-small accel-pic-container">
+                                                    <div onmouseover={handlePhotoMouseover}
+                                                         onmouseout={handlePhotoMouseout}>
+                                                        <div class="slds-text-align_center  slds-p-top_x-small">
+                                                            <div class="xxxxzoom">
+                                                                <div>
+                                                                    <img    alt={user.paFullName}
+                                                                            src={user.paImgSrc}
+                                                                            title={user.paFullName}
+                                                                            style={photoStyle}
+                                                                            class={photoCls} />
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div>
+                                                        <div class="slds-text-align_center slds-truncate">
+                                                            <div>
+                                                                <span class="slds-text-body_small">{user.paFullName}</span>
+                                                            </div>
+                                                            <template if:true={showSortIcon}>
+                                                                <div>
+                                                                    <lightning-formatted-date-time value={user.paAdvisoryDate}
+                                                                                                   year="2-digit" month="2-digit" day="2-digit">
+                                                                    </lightning-formatted-date-time>
+                                                                </div>
+                                                            </template>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                    </template>
+                                </div>
+
+                                <template if:true={showExportButton}>
+                                    <div class="slds-p-top_medium">
+                                        <div class="slds-text-align_right slds-p-right_xx-small">
+                                            <c-pa-advisory-export
+                                                    onexport={handleExport}>
+                                            </c-pa-advisory-export>
+                                        </div>
+                                    </div>
+                                </template>
+                            </template>
+                            <!-- ======  USING INFINITE SCROLLING ! (Builder Property) ======= -->
+                            <template if:true={useInfiniteScroll}>
+                                <div class="scrollContainer"
+                                     style={scrollContainerStyle}
+                                     onscroll={handleScroll}>
+                                    <div class="scrollArea" data-id="pdfcontentinfinitescroll">
+                                        <div class="slds-grid slds-wrap">
+                                            <template for:each={filteredUserRecords} for:item="user">
+                                                <div key={user.paAdvisoryId}
+                                                     class="slds-col slds-p-around_xx-small
+                                                        slds-size_12-of-12 slds-small-size_12-of-12 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                                                    <a href="javascript:void(0)" data-sfdcid={user.paAdvisoryId}
+                                                       onclick={handlePhotoClick}>
+                                                        <div class="slds-box slds-box_xx-small"
+                                                             style="background-color: rgb(243,243,243)">
+                                                            <div onmouseover={handlePhotoMouseover}
+                                                                 onmouseout={handlePhotoMouseout}>
+                                                                <div class="slds-text-align_center slds-p-top_x-small">
+                                                                    <div>
+                                                                        <img    alt={user.paFullName}
+                                                                                src={user.paImgSrc}
+                                                                                title={user.paFullName}
+                                                                                style={photoStyle}
+                                                                                class={photoCls} />
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div>
+                                                                <div class="slds-text-align_center slds-truncate">
+                                                                    <div>
+                                                                        <span class="slds-text-body_small">{user.paFullName}</span>
+                                                                    </div>
+                                                                    <template if:true={showSortIcon}>
+                                                                        <div>
+                                                                            <lightning-formatted-date-time value={user.paAdvisoryDate}
+                                                                                                          year="2-digit" month="2-digit" day="2-digit">
+                                                                            </lightning-formatted-date-time>
+                                                                        </div>
+                                                                    </template>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </a>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- CSV Export Button (Builder Property)--->
+                                <template if:true={showExportButton}>
+                                    <div class="slds-p-top_medium">
+                                        <div class="slds-text-align_right slds-p-right_xx-small">
+                                            <c-pa-advisory-export
+                                                    onexport={handleExport}
+                                                    btn-icon-name={exportBtnIconName}
+                                                    btn-variant={exportBtnVariant}
+                                                    btn-label={exportBtnLabel}
+                                                    btn-title={exportBtnTitle}>
+                                            </c-pa-advisory-export>
+                                        </div>
+                                    </div>
+                                </template>
+                            </template>
+                        </template>
+                        <!-- ======  Data Table Gallery (Builder Property) ======= -->
+                        <template if:true={displayTableView}>
+                            <c-pa-advisory-gallery-table
+                                    allow-csv-export={allowCsvExport}
+                                    advanced-search-params={_dtSearchParams}
+                                    use-infinite-scroll={useInfiniteScroll}
+                                    dt-container-style={dtContainerStyle}
+                                    infinite-scroll-max-items={infiniteScrollMaxTableItems}
+                                    show-table-row-num-column={showTableRowNumColumn}
+                                    debug-console={debugConsole}
+                                    ondtrowclicked={handleDatatableRowSelected}
+                                    ondtsorted={handleDatatableSorted}>
+                            </c-pa-advisory-gallery-table>
+                        </template>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+    <!-- ===== Modal User Details ===== -->
+    <c-pa-advisory-user-details
+            if:true={isUserDetailsVisible}
+            cancel-label='Close'
+            cancel-icon-name="utility:close"
+            debug-console={debugConsole}
+            cancel-variant="brand"
+            header-icon={cardIcon}
+            visible={isUserDetailsVisible}
+            original-message={dialogPayload}
+            name="userDetails"
+            onmodalaction={handleModalUserDetailsClick}>
+    </c-pa-advisory-user-details>
+</template>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>
+        Accel Auth Session - Displays Users Session Info, Allows filtering, search, and export of sessions
+        as well as removal of sessions.
+    </description>
+    <isExposed>true</isExposed>
+    <masterLabel>Accel Auth Session</masterLabel>
+    <targets>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage,lightning__AppPage">
+            <property   name="cardTitle" type="String"
+                        label="Card Title"
+                        default="User Sessions"
+                        description="This will be used as the title of the card displaying the user session data."
+                        placeholder="Please enter card title."/>
+            <property   name="cardIcon" type="String"
+                        label="Card Icon"
+                        default="standard:omni_supervisor"
+                        description="This will be used for the icon for main card."
+                        placeholder="Please enter card icon."/>
+            <property   name="cardTitleSearch" type="String"
+                        label="Search Card Title"
+                        default="Session Search"
+                        description="This will be used as the title of the card displaying the server side search"
+                        placeholder="Please enter search card title."/>
+            <property   name="btnSearchLabel" type="String"
+                        label="Search Button Label"
+                        default="Session Search"
+                        description="This will be used as the label for the server side search button."
+                        placeholder="Please enter search button label."/>
+<!--            <property   name="parentAccountApiName" type="String"-->
+<!--                        label="Parent Account Field"-->
+<!--                        required="true"-->
+<!--                        description="The Name of the Parent Account Field. Ie which field on the Object points to the Account for which you want to see assets from?"-->
+<!--                        datasource="apex://AccelEditorAccountLookupFieldPicker"/>-->
+<!--            <property   name="accountFieldsToDisplay" type="String"-->
+<!--                        label="Account Fields to Display"-->
+<!--                        required="true"-->
+<!--                        default="HPD_Funds_in_Avg__c,Attendant_Key__c,Accel_Amusements__c"-->
+<!--                        description="The API Names of the Account fields to display (comma delim). Enter the word none if you do not want any account data to display."/>-->
+<!--            <property   name="showVgtInfoFields" type="Boolean"-->
+<!--                        label="Use VGT Info Fields"-->
+<!--                        default="false"-->
+<!--                        description="If true, this will use a concatenated value to display as the asset link (ie. Asset.Current_Info__c ie. Asset.Name + Asset.Model + Asset.SerialNumber. Similar to the project Current Asset Info page.If false this will use the Asset.Name field"/>-->
+<!--            <property   name="showRtInfoFields" type="Boolean"-->
+<!--                        label="Use RT Info Fields"-->
+<!--                        default="false"-->
+<!--                        description="If true, this will use a the Asset.Model__c value to display as the asset link (ie Asset.Current_Info__c. Similar to the project Current Asset Info page.If false this will use the Asset.Name field"/>-->
+<!--            <property   name="showAssetLink" type="Boolean"-->
+<!--                        label="Use link to VGT or Redemption Asset"-->
+<!--                        default="true"-->
+<!--                        description="If true, this will show a link to the VGT or Redemption Asset as it does in Cases currently"/>-->
+<!--            <property   name="displayType" type="String"-->
+<!--                        label="Display Type"-->
+<!--                        datasource="Tile,List"-->
+<!--                        default="Tile"-->
+<!--                        required="true"-->
+<!--                        description="The Type of Display of the Data (currently only tile supported). List will display Assets in datatable (Alpha Level and should NOT be used yet)"/>-->
+<!--            <property   name="showMsgIfNoMachines" type="Boolean"-->
+<!--                        label="Show Msg If No Machines"-->
+<!--                        default="false"-->
+<!--                        description="If true, If no machines are found for the account, a warning message will be displayed, otherwise no warning message will display."/>-->
+            <property   name="debugConsole" type="Boolean"
+                        label="Show debug messages in the browser console"
+                        default="false"
+                        description="If true, debug messages will show in the browser console, otherwise no messages, other then errors will display
+                        ."/>
+            <supportedFormFactors>
+                <supportedFormFactor type="Large" />
+                <supportedFormFactor type="Small" />
+            </supportedFormFactors>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

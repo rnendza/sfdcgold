@@ -1,0 +1,3 @@
+<apex:page standardController="Vetting_Questionnaire__c">
+    <apex:relatedList list="Business_Hours__r"  subject="{!Vetting_Questionnaire__c.Account__c}"/>
+</apex:page>

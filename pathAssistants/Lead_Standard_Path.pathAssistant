@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Lead</entityName>
+    <fieldName>Status</fieldName>
+    <masterLabel>Lead Standard Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Lead_Disqualificatino_Reason__c</fieldNames>
+        <info>&lt;p&gt;Lead Disqualification Reason is required. &lt;/p&gt;</info>
+        <picklistValueName>Disqualified</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Sales Ops will Authorize that the Lead is true, genuine and Sales Qualified. Before Authorizing the Lead, Sales Ops will complete the following:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Municipality&lt;/li&gt;&lt;li&gt;Sales Region&lt;/li&gt;&lt;li&gt;Business Start Date&lt;/li&gt;&lt;li&gt;Age of Business (automatically calculated)&lt;/li&gt;&lt;/ul&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;span style=&quot;font-size: 13px;&quot;&gt;Help! &lt;/span&gt;&lt;a href=&quot;https://accelentertainment.my.salesforce.com/sfc/p/1I000001dLpo/a/1I000000Q9tU/naAFnEVgOoeBDvhxYpOhXrpo4MUT3Vz9V3CQ9y33YNA&quot; target=&quot;_blank&quot;&gt;What is Sales Qualified?&lt;/a&gt;&lt;/p&gt;</info>
+        <picklistValueName>Lead Authorization</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;Continue to nurture the Lead until there is a genuine two-way interest in doing business. Nurture your Lead by sending emails and updating the Activity.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;strong&gt;Next Step&lt;/strong&gt;: Submit the Lead for Authorization once the following information has been identified:&lt;/p&gt;&lt;ul&gt;&lt;li&gt;Account Name (DBA Name &amp;amp; Legal Name)&lt;/li&gt;&lt;li&gt;Address (Gaming Experience &amp;amp; Establishment Type)&lt;/li&gt;&lt;li&gt;Contact Name (Phone Number &amp;amp; Email)&lt;/li&gt;&lt;li&gt;Product Interest&lt;/li&gt;&lt;li&gt;Established Address&lt;/li&gt;&lt;/ul&gt;</info>
+        <picklistValueName>Lead Nurturing</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <info>&lt;p&gt;When the Lead is created the Stage will default to Lead Prospect. The Lead Owner will be assigned to the Lead to further discover if this Lead is viable to continue nurturing.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;b&gt;Next Step:&lt;/b&gt; Lead Owner should advance to Lead Nurturing Stage to accept ownership of this Lead.&lt;/p&gt;</info>
+        <picklistValueName>Lead Prospect</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Standard</recordTypeName>
+</PathAssistant>

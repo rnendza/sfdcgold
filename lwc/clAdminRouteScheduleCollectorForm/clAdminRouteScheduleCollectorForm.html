@@ -1,0 +1,45 @@
+<!-- Cl Admin Route Schedule Collector Form -->
+<template>
+    <div if:true={showForm} class="">
+        <div class={_editFormStyle}>
+            <lightning-record-edit-form
+                    record-id={rsId}
+                    object-api-name="Route_Schedule__c"
+                    onload={handleLoad}
+                    onerror={handleError}
+                    onsuccess={handleSuccess}
+                    density={formDensity}
+                    form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+                <div if:true={showStencil}>
+                    <div class="">
+                        <c-ui-custom-stencil
+                                iterations="1"
+                                type="list" columns="1">
+                        </c-ui-custom-stencil>
+                    </div>
+                </div>
+                <div class="">
+                    <div class={inputsClass}>
+                        <lightning-input-field
+                                field-name={_collector1Field}
+                                onchange={handleInputChange}
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+                        <lightning-input-field
+                                onchange={handleInputChange}
+                                field-name={_collector2Field}
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+                        <lightning-input-field
+                                onchange={handleInputChange}
+                                field-name={_assignedDriverField}
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </div>
+</template>

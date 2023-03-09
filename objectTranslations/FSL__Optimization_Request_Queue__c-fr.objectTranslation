@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>File d&apos;attente de requêtes d&apos;optimisation</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Files d&apos;attente de requêtes d&apos;optimisation</value>
+    </caseValues>
+    <fields>
+        <label><!-- Current  Running Requests --></label>
+        <name>FSL__Current_Running_Requests__c</name>
+    </fields>
+    <fields>
+        <label><!-- Identifier --></label>
+        <name>FSL__Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Related Optimization Requests --></label>
+        <name>FSL__Total_Related_Optimization_Requests__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Numéro de file d&apos;attente d&apos;optimisation</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

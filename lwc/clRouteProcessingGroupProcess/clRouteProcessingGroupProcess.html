@@ -1,0 +1,73 @@
+<!-- Cl Route Processing Process -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+    <div>
+        <div class="slds-p-around_xxx-small">
+            <lightning-card>
+                <h1 slot="title" class="no-wrap">
+                    <div class="slds-grid slds-wrap accel-test-borders">
+                        <c-ui-card-title
+                                card-title="Processing"
+                                card-subtitle="Incomplete Routes"
+                                icon-name="standard:location"
+                                onbackclicked={handleBackClicked}
+                                back-button-label="Back"
+                                show-back-button={showBackButton}
+                                icon-size="medium">
+                        </c-ui-card-title>
+                    </div>
+                </h1>
+                <!-- ==========   RS DATA ============ -->
+                <div     if:true={showRsData}
+                         class="slds-p-bottom_large accel-card-height-min accel-test-borders">
+                    <ul
+                            name="listOuterTag"
+                            class="slds-has-dividers_bottom-space slds-m-around_small">
+
+                        <template for:each={rsData} for:item="rs">
+
+                            <li name="listItemContainer"
+                                class="slds-item lgc-bg accel-glassmorphism_tile slds-m-bottom_small"
+                                style={rs.rsGroupRowStyle}
+                                key={rs.rsGroupDate}
+                                data-rsgroupdate={rs.rsGroupDate}
+                                onclick={handleItemSelected}>
+
+                                <lightning-tile type="media"
+                                                actions={rsActions}
+                                                onactiontriggered={handleAction}
+                                                label={rs.rsName}>
+                                    <lightning-icon
+                                            size="small"
+                                            slot="media" icon-name="standard:event"></lightning-icon>
+                                    <div class="slds-truncate" title={rs.rsGroupName}>
+                                        <dl class="slds-dl_horizontal ">
+                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label accel-test-borders">
+                                                <p    class="slds-truncate" title={rs.rsGroupName}>{rs.rsGroupName}
+                                                </p>
+                                            </dt>
+                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail accel-test-borders">
+                                                <p class="slds-truncate" title={rs.rsGroupStatusDesc}>{rs.rsGroupStatusDesc}
+                                                </p>
+                                            </dd>
+                                        </dl>
+                                    </div>
+                                </lightning-tile>
+                            </li>
+                        </template>
+                    </ul>
+                </div>
+                <!-- ==========   NO DATA FOUND  ============ -->
+                <div if:true={showNoData}>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_large"
+                            header-text="No Routes Found"
+                            body-text={emptyBodyText}>
+                    </c-ui-empty-state>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

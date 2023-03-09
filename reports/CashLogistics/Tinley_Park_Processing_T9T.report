@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Route_Processing_Sheet__c.RT_Total_Drop__c:SUM+Route_Processing_Sheet__c.Reject_Drop_Total__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>RT Total Drop + Reject Total Drop</description>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>RT Incoming Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Route_Processing_Sheet__c.VGT_Actual_Drop__c:SUM+Route_Processing_Sheet__c.BV_Drop_Total__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>Actual VGT Drop + BV Drop Total</description>
+        <developerName>FORMULA2</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>VGT Incoming Total</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Route_Processing_Sheet__c.RT_Incoming_Total__c:SUM+Route_Processing_Sheet__c.VGT_Incoming_Total__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <description>RT + VGT Incoming Total</description>
+        <developerName>FORMULA3</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Incoming</masterLabel>
+        <scale>2</scale>
+    </aggregates>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>FORMULA3</column>
+        </chartSummaries>
+        <chartType>VerticalColumn</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Route_Processing_Sheet__c$Route_Name__c</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Route_Processing_Sheet__c$Name</field>
+    </columns>
+    <columns>
+        <field>Route_Processing_Sheet__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Route_Processing_Sheet__c$License_Number__c</field>
+    </columns>
+    <columns>
+        <field>Route_Processing_Sheet__c$Collection_Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$RT_Total_Drop__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$Reject_Drop_Total__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$VGT_Actual_Drop__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$BV_Drop_Total__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$RT_Incoming_Total__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Processing_Sheet__c$VGT_Incoming_Total__c</field>
+    </columns>
+    <description>Processing Room Report of Incoming Money</description>
+    <filter>
+        <criteriaItems>
+            <column>Route_Processing_Sheet__c$Processing_Location__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Tinley Park</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <field>Route_Processing_Sheet__c$Collection_Date__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Route_Processing_Sheet__c$Route_Name__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Tinley Park Incoming Summary Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Route_Processing_Sheets_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Route_Processing_Sheet__c$Collection_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

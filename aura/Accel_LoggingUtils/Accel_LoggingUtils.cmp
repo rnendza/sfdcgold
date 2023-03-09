@@ -1,0 +1,18 @@
+<aura:component description="Accel_LoggingUtils" access="global" controller="Accel_LoggingUtilsController">
+
+    <aura:attribute name="sendErrorToServer" type="Boolean" default="true"
+                    description="If true, will call the apex controller and and the log the error there
+                         in addition to the console "/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+
+    <aura:method name="log" action="{!c.log}" access="global">
+        <aura:attribute name="cmpName" type="string" default="--- log"/>
+        <aura:attribute name="level" type="string" default="info"/>
+        <aura:attribute name="msg" type="String" required="true"/>
+        <aura:attribute name="obj" type="Object"/>
+        <aura:attribute name="errorRecordTypeId" type="String" description="Pass this if not logging from a community"/>
+    </aura:method>
+
+</aura:component>

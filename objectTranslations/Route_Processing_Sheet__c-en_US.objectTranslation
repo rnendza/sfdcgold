@@ -1,0 +1,954 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Processing Sheet</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Processing Sheets</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account DBA --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Route Processing Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- (Depreciated) Actual Drop --></label>
+        <name>Actual_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Best guess --></help>
+        <label><!-- All Note Count Grand Total --></label>
+        <name>All_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- BV Drop Total --></label>
+        <name>BV_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- BV Value --></label>
+        <name>BV_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Return Unused Drop --></label>
+        <name>Cash_Return_Unused_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Return Unused --></label>
+        <name>Cash_Return_Unused__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $100 Drop Total --></label>
+        <name>Cassette_100_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $100 Note Count Drop --></label>
+        <name>Cassette_100_Note_Count_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- $100 Note Count Outbound --></label>
+        <name>Cassette_100_Note_Count_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsolete 29) Cassette $100 Note Count --></label>
+        <name>Cassette_100_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsol30)Cassette $100 Reject Note Count --></label>
+        <name>Cassette_100_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $100 Total --></label>
+        <name>Cassette_100_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 1 Denomination --></label>
+        <name>Cassette_1_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $1 Drop Total --></label>
+        <name>Cassette_1_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $1 Note Count Drop --></label>
+        <name>Cassette_1_Note_Count_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Note Count Outbound --></label>
+        <name>Cassette_1_Note_Count_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 1 Note Count --></label>
+        <name>Cassette_1_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 1 Reject Note Count --></label>
+        <name>Cassette_1_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $1 Total --></label>
+        <name>Cassette_1_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 1 Value --></label>
+        <name>Cassette_1_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $20 Drop Total --></label>
+        <name>Cassette_20_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $20 Note Count Drop --></label>
+        <name>Cassette_20_Note_Count_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Note Count Outbound --></label>
+        <name>Cassette_20_Note_Count_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsolete 25) Cassette $20 Note Count --></label>
+        <name>Cassette_20_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsole26)Cassette $20 Reject Note Count --></label>
+        <name>Cassette_20_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $20 Total --></label>
+        <name>Cassette_20_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 2 Denomination --></label>
+        <name>Cassette_2_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 2 Note Count --></label>
+        <name>Cassette_2_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 2 Reject Note Count --></label>
+        <name>Cassette_2_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 2 Value --></label>
+        <name>Cassette_2_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 3 Denomination --></label>
+        <name>Cassette_3_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 3 Note Count --></label>
+        <name>Cassette_3_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 3 Reject Note Count --></label>
+        <name>Cassette_3_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 3 Value --></label>
+        <name>Cassette_3_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 4 Denomination --></label>
+        <name>Cassette_4_Denomination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 4 Note Count --></label>
+        <name>Cassette_4_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 4 Reject Note Count --></label>
+        <name>Cassette_4_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 4 Value --></label>
+        <name>Cassette_4_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $50 Drop Total --></label>
+        <name>Cassette_50_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $50 Note Count Drop --></label>
+        <name>Cassette_50_Note_Count_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Note Count Outbound --></label>
+        <name>Cassette_50_Note_Count_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsolete 27) Cassette $50 Note Count --></label>
+        <name>Cassette_50_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsole28)Cassette $50 Reject Note Count --></label>
+        <name>Cassette_50_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $50 Total --></label>
+        <name>Cassette_50_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $5 Drop Total --></label>
+        <name>Cassette_5_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $5 Note Count Drop --></label>
+        <name>Cassette_5_Note_Count_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Note Count Outbound --></label>
+        <name>Cassette_5_Note_Count_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- (OBSOLETE 18) Cassette $5 Note Count --></label>
+        <name>Cassette_5_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- (Obsolet19)Cassette $5 Reject Note Count --></label>
+        <name>Cassette_5_Reject_Note_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette $5 Total --></label>
+        <name>Cassette_5_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette 5 Value --></label>
+        <name>Cassette_5_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coin Bag Number --></label>
+        <name>Coin_Bag_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Coin Bag On Site --></label>
+        <name>Coin_Bag_On_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Date --></label>
+        <name>Collection_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user that last modified the collection status. --></help>
+        <label><!-- Collection Status Last Modified By --></label>
+        <name>Collection_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Collection Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date/time the collection status was last modified. --></help>
+        <label><!-- Collection Status Last Modified Date --></label>
+        <name>Collection_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Copied down from the parent Route Schedule Account. --></help>
+        <label><!-- Collection Type --></label>
+        <name>Collection_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Collector 1 User Name --></help>
+        <label><!-- Collector 1 --></label>
+        <name>Collector_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Collector 2 UserName --></help>
+        <label><!-- Collector 2 --></label>
+        <name>Collector_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collector RT Fields Completed --></label>
+        <name>Collector_RT_Fields_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user that last modified the collector RT Status. --></help>
+        <label><!-- Collector RT Status Last Modified By --></label>
+        <name>Collector_RT_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Collector RT Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the collector RT Status was last modified. --></help>
+        <label><!-- Collector RT Status Last Modified Date --></label>
+        <name>Collector_RT_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count Room --></label>
+        <name>CountRoom__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Count Room) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Crash Bag Number --></label>
+        <name>Crash_Bag_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Crash Bag On Site --></label>
+        <name>Crash_Bag_On_Site__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- End RT Replenishment Date --></label>
+        <name>End_RT_Replenishment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- End RT Replenishment User --></label>
+        <name>End_RT_Replenishment_User__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (End RT Replenishment User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- End VGT Collection Date --></label>
+        <name>End_VGT_Collection_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- End VGT Collection User --></label>
+        <name>End_VGT_Collection_User__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (End VGT Collection User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Enter Total Drop --></label>
+        <name>Enter_Total_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Expected Drop --></label>
+        <name>Expected_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extra Cassette On Site --></label>
+        <name>Extra_Cassette_On_Site__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fill Type --></label>
+        <name>Fill_Type__c</name>
+        <picklistValues>
+            <masterLabel>Emergency</masterLabel>
+            <translation><!-- Emergency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand pay</masterLabel>
+            <translation><!-- Hand pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial</masterLabel>
+            <translation><!-- Initial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Funds in the Field --></label>
+        <name>Funds_In_Field__c</name>
+        <picklistValues>
+            <masterLabel>Cassette</masterLabel>
+            <translation><!-- Cassette --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coin Bag</masterLabel>
+            <translation><!-- Coin Bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crash Bag</masterLabel>
+            <translation><!-- Crash Bag --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Actual Inbound --></label>
+        <name>Inbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Number --></label>
+        <name>License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Funds In Field Value --></label>
+        <name>Location_Funds_In_Field_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- M3T Crash Bag Number --></label>
+        <name>M3T_Crash_Bag_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Meter Processing Complete --></label>
+        <name>Meter_Processing_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- NRT $20 Cassette Number --></label>
+        <name>NRT_20_Cassette_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is field is populated from Notes__c. Rich Text / Long text fields are useless when it comes to Formula Fields. This will take the first 255 so we can properly evaluate that field. This is trigger maintained. --></help>
+        <label><!-- Notes Text Area --></label>
+        <name>Notes_Text_Area__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- The stop # associated with this location via route import or schedule creation (not modified by the collector) --></help>
+        <label><!-- Original Stop Number --></label>
+        <name>Original_Stop_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound Total --></label>
+        <name>Outbound_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outbound --></label>
+        <name>Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous RT Collection --></label>
+        <name>Previous_RT_Collection__c</name>
+        <relationshipLabel><!-- Previous RT Collection --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous VGT Collection --></label>
+        <name>Previous_VGT_Collection__c</name>
+        <relationshipLabel><!-- Previous VGT Collection --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Processing Location --></label>
+        <name>Processing_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Status Last Modified By --></label>
+        <name>Processing_Process_Changed_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Processing Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the processing status was last modified. --></help>
+        <label><!-- Processing Status Last Modified Date --></label>
+        <name>Processing_Process_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Status --></label>
+        <name>Processing_Process_Status__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED PROCESSING</masterLabel>
+            <translation><!-- COMPLETED PROCESSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing Incomplete</masterLabel>
+            <translation><!-- Processing Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Fill Status Last Modified By --></label>
+        <name>Processing_Status_Changed_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Fill Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The date/time the fill status was last modified. --></help>
+        <label><!-- Fill Status Last Modified Date --></label>
+        <name>Processing_Status_Changed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- More processor based since reqs differed between the status for a collector and the status for a processor. --></help>
+        <label><!-- Fill Status --></label>
+        <name>Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED FILL</masterLabel>
+            <translation><!-- COMPLETED FILL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Yet Filled</masterLabel>
+            <translation><!-- Not Yet Filled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The User that last modified the processor RT Status. --></help>
+        <label><!-- Processor RT Status Last Modified By --></label>
+        <name>Processor_RT_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Processor RT Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the processor RT Status was last modified. --></help>
+        <label><!-- Processor RT Status Last Modified Date --></label>
+        <name>Processor_RT_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processor RT Status --></label>
+        <name>Processor_RT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date/time that any one of the questions were last modified in the front end UI by the user. --></help>
+        <label><!-- Questions Last Modified --></label>
+        <name>Questions_Last_Modified__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Incoming Total --></label>
+        <name>RT_Incoming_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Reconciliation Notes --></label>
+        <name>RT_Reconciliation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Reconciliation Status --></label>
+        <name>RT_Reconciliation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled</masterLabel>
+            <translation><!-- Reconciled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RT Total Drop --></label>
+        <name>RT_Total_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Unit ID --></label>
+        <name>RT_Unit_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Variance Reason --></label>
+        <name>RT_Variance_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Collector Error - Counts Enterered Incorrectly</masterLabel>
+            <translation><!-- Collector Error - Counts Enterered Incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offset</masterLabel>
+            <translation><!-- Offset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing Error - Cassettes Swapped</masterLabel>
+            <translation><!-- Processing Error - Cassettes Swapped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejects Not Brought Back</masterLabel>
+            <translation><!-- Rejects Not Brought Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Back Office Totals</masterLabel>
+            <translation><!-- Used Back Office Totals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-fill</masterLabel>
+            <translation><!-- e-fill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RT Variance --></label>
+        <name>RT_Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reconciled --></label>
+        <name>Reconciled__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Reconciliation Status --></label>
+        <name>Reconciliation_Status__c</name>
+        <picklistValues>
+            <masterLabel>Normal</masterLabel>
+            <translation><!-- Normal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outstanding</masterLabel>
+            <translation><!-- Outstanding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconciled</masterLabel>
+            <translation><!-- Reconciled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption Asset --></label>
+        <name>Redemption_Asset__c</name>
+        <relationshipLabel><!-- Route Processing Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redemption Bill Test Completed --></label>
+        <name>Redemption_Bill_Test_Completed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- @TODO automation sets this based on ? --></help>
+        <label><!-- Collector RT Status --></label>
+        <name>Redemption_Terminal_Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- FF to RSA.Redemption_Type_From_Asset__c. The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr ) --></help>
+        <label><!-- Redemption Type --></label>
+        <name>Redemption_Type_From_Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption Type(Obsolete) --></label>
+        <name>Redemption_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject Drop Total --></label>
+        <name>Reject_Drop_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reject Total --></label>
+        <name>Reject_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replenishment Type --></label>
+        <name>Replenishment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash Fill</masterLabel>
+            <translation><!-- Cash Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Audit</masterLabel>
+            <translation><!-- Full Audit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Exists in case we want to artificially roll up values to Route Account. --></help>
+        <label><!-- Route Account --></label>
+        <name>Route_Account__c</name>
+        <relationshipLabel><!-- Route Processing Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Formula pointing to the route (associated with the route schedule) current geolocation expressed as text of lat,lng --></help>
+        <label><!-- Route Current Geolocation --></label>
+        <name>Route_Current_Geolocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- Internal field indicating the user that last send the route end email for this RPS. --></help>
+        <label><!-- Route End Email Sent By --></label>
+        <name>Route_End_Email_Sent_By__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Route End Email Sent By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Internal field indicating when the user hit the route send email button. --></help>
+        <label><!-- Route End Email Sent Date --></label>
+        <name>Route_End_Email_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- not sure? --></help>
+        <label><!-- Route Fill Date --></label>
+        <name>Route_Fill_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- A formula field to the route associated with the route schedule of this record. --></help>
+        <label><!-- Route Name --></label>
+        <name>Route_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Exists in case we want to roll up info to RSA --></help>
+        <label><!-- Route Schedule Account --></label>
+        <name>Route_Schedule_Account__c</name>
+        <relationshipLabel><!-- Route Processing Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Route Schedule --></label>
+        <name>Route_Schedule__c</name>
+        <relationshipLabel><!-- Route Processing Sheets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Snapshot Cassette --></label>
+        <name>Snapshot_Cassette__c</name>
+    </fields>
+    <fields>
+        <label><!-- Snapshot New Cassette --></label>
+        <name>Snapshot_New_Cassette__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- Start RT Replenishment Date --></label>
+        <name>Start_RT_Replenishment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- Start RT Replenishment User --></label>
+        <name>Start_RT_Replenishment_User__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Start RT Replenishment User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- Start VGT Collection Date --></label>
+        <name>Start_VGT_Collection_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- Start VGT Collection User --></label>
+        <name>Start_VGT_Collection_User__c</name>
+        <relationshipLabel><!-- Route Processing Sheets (Start VGT Collection User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Collection Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Started</masterLabel>
+            <translation><!-- Not Started --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skipped</masterLabel>
+            <translation><!-- Skipped --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Stop Number --></label>
+        <name>Stop_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pending Bus Reqs.. This indicates a survey has at least been partially filled out. --></help>
+        <label><!-- Survey Completed --></label>
+        <name>Survey_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- asdf --></help>
+        <label><!-- Survey Question PL Test 1 --></label>
+        <name>Survey_Question_PL_Test_1__c</name>
+        <picklistValues>
+            <masterLabel>Val A</masterLabel>
+            <translation><!-- Val A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Val B</masterLabel>
+            <translation><!-- Val B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Val C</masterLabel>
+            <translation><!-- Val C --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Survey Questions Date Test 1 --></label>
+        <name>Survey_Questions_Date_Test_1__c</name>
+    </fields>
+    <fields>
+        <help><!-- dlrs maintained --></help>
+        <label><!-- Total Completed Meter Readings --></label>
+        <name>Total_Completed_Meter_Readings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Quick Demo formula didn&apos;t know what other field to use --></help>
+        <label><!-- Total Drop --></label>
+        <name>Total_Drop__c</name>
+    </fields>
+    <fields>
+        <help><!-- DLRS Maintained. Asset.BV_Type__c --></help>
+        <label><!-- Total JCM BV Type --></label>
+        <name>Total_JCM_BV_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- DLRS Maintained --></help>
+        <label><!-- Total MEI BV Type --></label>
+        <name>Total_MEI_BV_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- DLRS Maintained. --></help>
+        <label><!-- Total MEI Small BV Type --></label>
+        <name>Total_MEI_Small_BV_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Meter Readings Associated with this Route Processing Sheet. (DLRS Maintained) This is refreshed once an hour at the top of the hour --></help>
+        <label><!-- Total Meter Readings --></label>
+        <name>Total_Meter_Readings__c</name>
+    </fields>
+    <fields>
+        <help><!-- DLRS Maintained --></help>
+        <label><!-- Total Processing Completed Meter Reading --></label>
+        <name>Total_Processing_Completed_Meter_Reading__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total RT Onsite Time --></label>
+        <name>Total_RT_Onsite_Time__c</name>
+    </fields>
+    <fields>
+        <help><!-- POC For Billy --></help>
+        <label><!-- Total RT Replenishment Time (Mins) --></label>
+        <name>Total_RT_Replenishment_Time_Mins__c</name>
+    </fields>
+    <fields>
+        <help><!-- poc for billy --></help>
+        <label><!-- Total VGT Time (Mins) --></label>
+        <name>Total_VGT_Time_Mins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Treasury RT Status --></label>
+        <name>Treasury_RT_Status__c</name>
+        <picklistValues>
+            <masterLabel>Collector Error-Counts Entered Incorrectly</masterLabel>
+            <translation><!-- Collector Error-Counts Entered Incorrectly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other﻿</masterLabel>
+            <translation><!-- Other﻿ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing Error-Cassettes Swapped</masterLabel>
+            <translation><!-- Processing Error-Cassettes Swapped --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejects Not Brought Back</masterLabel>
+            <translation><!-- Rejects Not Brought Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Used Back Office Totals</masterLabel>
+            <translation><!-- Used Back Office Totals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>e-fill</masterLabel>
+            <translation><!-- e-fill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Actual Drop --></label>
+        <name>VGT_Actual_Drop__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Incoming Total --></label>
+        <name>VGT_Incoming_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Reconciliation Notes --></label>
+        <name>VGT_Reconciliation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Variance Reason --></label>
+        <name>VGT_Variance_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Bad Meter Read</masterLabel>
+            <translation><!-- Bad Meter Read --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machine Down</masterLabel>
+            <translation><!-- Machine Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Meters Taken</masterLabel>
+            <translation><!-- No Meters Taken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offset</masterLabel>
+            <translation><!-- Offset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Possible Missing Can</masterLabel>
+            <translation><!-- Possible Missing Can --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>w/ Ram Clear</masterLabel>
+            <translation><!-- w/ Ram Clear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Variance --></label>
+        <name>Variance__c</name>
+    </fields>
+    <fields>
+        <label><!-- $100 Note Count --></label>
+        <name>X100_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $100 Note Value Outbound --></label>
+        <name>X100_Note_Value_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- $10 Note Count --></label>
+        <name>X10_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Note Count --></label>
+        <name>X1_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Note Value Outbound --></label>
+        <name>X1_Note_Value_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Note Count --></label>
+        <name>X20_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Note Value Outbound --></label>
+        <name>X20_Note_Value_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Note Count --></label>
+        <name>X50_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Note Value Outbound --></label>
+        <name>X50_Note_Value_Outbound__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Note Count --></label>
+        <name>X5_Note_Count_Grand_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Note Value Outbound --></label>
+        <name>X5_Note_Value_Outbound__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

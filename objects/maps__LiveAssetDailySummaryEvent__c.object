@@ -1,0 +1,580 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>maps__AlertSent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Denotes if this event was included in a previous email alert</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Denotes if this event was included in a previous email alert</inlineHelpText>
+        <label>Alert Sent</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__AverageSpeed_kph__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Average speed over the course of the event, in kilometers per hour</inlineHelpText>
+        <label>Average Speed (kph)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__AverageSpeed_mph__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Average speed over the course of the event, in miles per hour</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__AverageSpeed_kph__c * 0.62137, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Average speed over the course of the event, in miles per hour</inlineHelpText>
+        <label>Average Speed (mph)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__City__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps Live City address field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>City of event location (when available)</inlineHelpText>
+        <label>City</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Country__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps Live Country address field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Country of event location (when available)</inlineHelpText>
+        <label>Country</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__EndUnixTimeStamp__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>End Unix Time Stamp</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__EventEnded__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Timestamp of event end</inlineHelpText>
+        <label>Event Ended</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__EventOccuredAMorPM__c</fullName>
+        <deprecated>false</deprecated>
+        <description>AM/PM is determined based on the Timezone of the device.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>AM/PM is determined based on the Timezone of the device.</inlineHelpText>
+        <label>Event Occurred in AM or PM</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>AM</fullName>
+                    <default>false</default>
+                    <label>AM</label>
+                </value>
+                <value>
+                    <fullName>PM</fullName>
+                    <default>false</default>
+                    <label>PM</label>
+                </value>
+                <value>
+                    <fullName>AM/PM</fullName>
+                    <default>false</default>
+                    <label>AM/PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__EventStarted__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Timestamp of event start</inlineHelpText>
+        <label>Event Started</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__EventType__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Type of summary event represented by this record</inlineHelpText>
+        <label>Event Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Stop</fullName>
+                    <default>false</default>
+                    <label>Stop</label>
+                </value>
+                <value>
+                    <fullName>Speeding</fullName>
+                    <default>false</default>
+                    <label>Speeding</label>
+                </value>
+                <value>
+                    <fullName>Hard Acceleration</fullName>
+                    <default>false</default>
+                    <label>Hard Acceleration</label>
+                </value>
+                <value>
+                    <fullName>Hard Braking</fullName>
+                    <default>false</default>
+                    <label>Hard Braking</label>
+                </value>
+                <value>
+                    <fullName>Speed Threshold</fullName>
+                    <default>false</default>
+                    <label>Speed Threshold</label>
+                </value>
+                <value>
+                    <fullName>First Message of Day</fullName>
+                    <default>false</default>
+                    <label>First Message of Day</label>
+                </value>
+                <value>
+                    <fullName>Last Message of Day</fullName>
+                    <default>false</default>
+                    <label>Last Message of Day</label>
+                </value>
+                <value>
+                    <fullName>First Motion</fullName>
+                    <default>false</default>
+                    <label>First Motion</label>
+                </value>
+                <value>
+                    <fullName>Last Motion</fullName>
+                    <default>false</default>
+                    <label>Last Motion</label>
+                </value>
+                <value>
+                    <fullName>Live App Toggle On</fullName>
+                    <default>false</default>
+                    <label>Live App Toggle On</label>
+                </value>
+                <value>
+                    <fullName>Live App Toggle Off</fullName>
+                    <default>false</default>
+                    <label>Live App Toggle Off</label>
+                </value>
+                <value>
+                    <fullName>Device Battery On</fullName>
+                    <default>false</default>
+                    <label>Device Battery On</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__Full_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>This is the full address of where the event occurred</inlineHelpText>
+        <label>Full Address</label>
+        <length>500</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__LiveAssetDailySummary__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Live Asset Daily Summary record to which this event relates</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Live Asset Daily Summary record to which this event relates</inlineHelpText>
+        <label>Live Asset Daily Summary</label>
+        <referenceTo>maps__LiveAssetDailySummary__c</referenceTo>
+        <relationshipLabel>Live Asset Daily Summary Events</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaryEvents</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>maps__LiveDailyDriveTrip__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Live Daily Drive Trip</label>
+        <referenceTo>maps__LiveDailyDriveTrip__c</referenceTo>
+        <relationshipLabel>Live Asset Daily Summary Events</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaryEvents</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__Number_of_Associations__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Number of Associations</label>
+        <summaryForeignKey>maps__LiveEventAssociation__c.maps__LiveAssetDailySummaryEvent__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>maps__OdometerKm__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Odometer value (km) captured at the time of event</inlineHelpText>
+        <label>Odometer (km)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__OdometerMiles__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Odometer value (mi) captured at the time of event</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__OdometerKm__c * 0.62137, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Odometer value (mi) captured at the time of event</inlineHelpText>
+        <label>Odometer (mi)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Order__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Stop Order</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Position__c</fullName>
+        <deprecated>false</deprecated>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <inlineHelpText>Asset location at start of event</inlineHelpText>
+        <label>Position</label>
+        <required>false</required>
+        <scale>7</scale>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>maps__PostalCode__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps Live Postal Code address field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Postal Code of event location (when available)</inlineHelpText>
+        <label>Postal Code</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__PostedSpeedLimit_KPH__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Posted speed limit where event occurs, when available, in kilometers per hour</inlineHelpText>
+        <label>Posted Speed Limit (kph)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__PostedSpeedLimit_MPH__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the posted speed limit of where the event took place.</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__PostedSpeedLimit_KPH__c * 0.62137, 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Posted speed limit where event occurs, when available, in miles per hour</inlineHelpText>
+        <label>Posted Speed Limit (mph)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__StartUnixTimeStamp__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Start Unix Time Stamp</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__State__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps Live State address field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>State of event location (when available)</inlineHelpText>
+        <label>State</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Street_Address__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Maps Live Street Address field</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Street address of event location (when available)</inlineHelpText>
+        <label>Street Address</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TotalEventTimeHours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Duration of a stop event in hours. (only available for Stop events)</inlineHelpText>
+        <label>Event Duration (Hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TotalEventTimeMinutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Duration of a stop event in minutes. (only available for Stop events)</inlineHelpText>
+        <label>Event Duration (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Maps Live Asset Daily Summary Event</label>
+    <nameField>
+        <displayFormat>{00000000}</displayFormat>
+        <label>Maps Live Asset Daily Summary Event Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Maps Live Asset Daily Summary Events</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

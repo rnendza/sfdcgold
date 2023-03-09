@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Planungsrichtlinienziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Planungsrichtlinienziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Planungsrichtlinienziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Planungsrichtlinienziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Planungsrichtlinienziels</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Planungsrichtlinienziele</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Planungsrichtlinienziel</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Planungsrichtlinienzielen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Scheduling Policy Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Goal --></label>
+        <name>FSL__Service_Goal__c</name>
+        <relationshipLabel><!-- Scheduling Policy Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>FSL__Weight__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Name des Planungsrichtlinienziels</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Weight can&apos;t have zero value --></errorMessage>
+        <name>FSL__Not_Zero</name>
+    </validationRules>
+</CustomObjectTranslation>

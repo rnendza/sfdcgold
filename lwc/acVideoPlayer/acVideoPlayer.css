@@ -1,0 +1,11 @@
+.accel-test-borders { /*border:2px dotted red*/ }
+.accel-video-outer-container {min-height: 400px}
+.accel-video-iframe {border:0;}
+.accel-video-selector {padding-bottom: 10px}
+/* https://embedresponsively.com/   (Experimental) Vimeo gives response params with plus version I believe. */
+.accel-vimeo-embed-container {
+    position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; max-width: 100%;
+}
+.accel-vimeo-embed-container iframe, .accel-vimeo-embed-container object, .accel-vimeo-embed-container embed {
+    position: absolute; top: 0; left: 0; width: 100%; height: 100%;
+}

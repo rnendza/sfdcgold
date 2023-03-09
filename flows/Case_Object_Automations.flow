@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Notify Kevin Beaver and CallCenterRepresentatives@accelentertainment.com</description>
+        <name>Send_Notification_for_10th_Frame</name>
+        <label>Send Notification for 10th Frame</label>
+        <locationX>578</locationX>
+        <locationY>695</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailBody10thFrame</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>CallCenterRepresentatives@accelentertainment.com,patricka@accelentertainment.com,irvinp@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!$Record.Account.Name} - New Case</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify DavidH@accelentertainment.com, analisr@accelentertainment.com, amandaa@accelentertainment.com, markov@accelentertainment.com, joshua.hanafin@accelentertainment.com, lorik@accelentertainment.com</description>
+        <name>Send_notification_for_other_accounts</name>
+        <label>Send notification for other accounts</label>
+        <locationX>842</locationX>
+        <locationY>695</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Not10thFrameEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>DavidH@accelentertainment.com, analisr@accelentertainment.com, amandaa@accelentertainment.com, joshua.hanafin@accelentertainment.com, lorik@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!$Record.Account.Name} - New Case</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <constants>
+        <name>NullDate</name>
+        <dataType>Date</dataType>
+    </constants>
+    <decisions>
+        <name>Created_or_Updated</name>
+        <label>Created or Updated</label>
+        <locationX>545</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Switch_Account</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Created</defaultConnectorLabel>
+        <rules>
+            <name>Updated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_What_was_modified</targetReference>
+            </connector>
+            <label>Updated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_What_was_modified</name>
+        <label>Evaluate: What was modified?</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_Field_changed_to_Closed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Closed</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Clear_Next_Dispatch_field</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Status Field changed to &quot;Closed&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Use this decision for different creation conditions</description>
+        <name>Switch_Account</name>
+        <label>Evaluate Creation Criteria</label>
+        <locationX>908</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Account_has_Switch</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Account_Has_Switch__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>THE_10TH_FRAME_LOUNGE</targetReference>
+            </connector>
+            <label>Account has Switch</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>THE_10TH_FRAME_LOUNGE</name>
+        <label>THE 10TH FRAME LOUNGE?</label>
+        <locationX>710</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Send_notification_for_other_accounts</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Name</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>THE 10TH FRAME LOUNGE</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Notification_for_10th_Frame</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <description>Not related to FSL
+Send Notification when a Case is Created on Accounts w/Switch
+Clear &quot;Next Dispatch&quot; field when Status = Closed</description>
+    <environments>Default</environments>
+    <interviewLabel>Case: Case Object Automations {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Case Object Automations</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>when status = closed</description>
+        <name>Clear_Next_Dispatch_field</name>
+        <label>Clear &quot;Next Dispatch&quot; field</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <inputAssignments>
+            <field>Next_Dispatch__c</field>
+            <value>
+                <elementReference>NullDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>419</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Created_or_Updated</targetReference>
+        </connector>
+        <object>Case</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>EmailBody10thFrame</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>New case was created
+Case Number:  {!$Record.CaseNumber}
+Created on:  {!$Record.CreatedDate}
+Description:  {!$Record.Description}
+Reminder-Technician must arrive within 1 hour to location.
+Case Link:  {!$Record.Detail_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Not10thFrameEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>New case was created
+Case Number:  {!$Record.CaseNumber}
+Created on:  {!$Record.CreatedDate}
+Description:  {!$Record.Description}
+Case Link:  {!$Record.Detail_Link__c}</text>
+    </textTemplates>
+</Flow>

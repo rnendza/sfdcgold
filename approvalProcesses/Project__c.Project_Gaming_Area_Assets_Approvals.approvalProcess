@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+        <field>Project_Notes__c</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Regional_Manager__c</name>
+                <type>relatedUserField</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <entryCriteria>
+            <formula>AND( ($User.ProfileId &lt;&gt; &apos;00e1I000000Zxfi&apos;),OR(AND(High_End_Product_Rollup__c &gt; 0,  HPD_TTM__c  &lt; 150),  ISBLANK(HPD_TTM__c)))</formula>
+        </entryCriteria>
+        <ifCriteriaNotMet>ApproveRecord</ifCriteriaNotMet>
+        <label>Non Video Gaming Regional Approval</label>
+        <name>Non_Video_Gaming_Regional_Approval</name>
+    </approvalStep>
+    <emailTemplate>unfiled$public/Proj_Gaming_Assets_Appr_request</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Project__c.Project_Type__c</field>
+            <operation>equals</operation>
+            <value>Gaming Area Assets</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Proj_status_to_parts_fulfillment</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Project_Approved_Notification_to_Owner</name>
+            <type>Alert</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>false</finalApprovalRecordLock>
+    <finalRejectionActions>
+        <action>
+            <name>Proj_Gaming_Area_Assets_rejection</name>
+            <type>Alert</type>
+        </action>
+        <action>
+            <name>proj_status_rejected</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalRejectionActions>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>Proj_Status_to_reg_approvals</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Update_Project_Submitted_Date_field</name>
+            <type>FieldUpdate</type>
+        </action>
+    </initialSubmissionActions>
+    <label>Project: Gaming Area Assets Approvals</label>
+    <processOrder>5</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

@@ -1,0 +1,13 @@
+<design:component label="Accel_Community Custom Login Form">
+    <design:attribute name="startUrl"/>
+    <design:attribute name="usernameLabel" default="Email"/>
+    <design:attribute name="passwordLabel" default="Password"/>
+    <design:attribute name="loginButtonLabel" default="Sign in"/>
+    <design:attribute name="forgotPasswordLabel" default="Forgot your password?"/>
+    <design:attribute name="formTitleLabel" default="Accel Entertainment Location Portal"/>
+    <design:attribute name="formHelpLabel"  default="Sign in with your Accel portal credentials"/>
+    <design:attribute name="forgotPasswordUrl"/>
+    <design:attribute name="selfRegisterLabel" default="Not a member?"/>
+    <design:attribute name="selfRegisterUrl"/>
+    <design:attribute name="defaultExpId" description="The default experience id if none exists as a query parm" default="accel"/>
+</design:component>

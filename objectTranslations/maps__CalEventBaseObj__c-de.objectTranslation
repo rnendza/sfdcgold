@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Maps-Kalenderereignis-Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Maps-Kalenderereignis-Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Maps-Kalenderereignis-Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Maps-Kalenderereignis-Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Maps-Kalenderereignis-Basisobjekts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Maps-Kalenderereignis-Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Maps-Kalenderereignis-Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Maps-Kalenderereignis-Basisobjekten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Maps Base Object Field --></label>
+        <name>maps__BaseObjectField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enabled --></label>
+        <name>maps__Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- EventObject --></label>
+        <name>maps__EventObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Custom</masterLabel>
+            <translation>Benutzerdefiniert</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Standard</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Maps-Kalenderereignis-Basisobjektname</nameFieldLabel>
+</CustomObjectTranslation>

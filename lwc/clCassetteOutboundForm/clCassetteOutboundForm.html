@@ -1,0 +1,80 @@
+<!-- Cl Cassette Outbound Form -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div if:true={showForm}
+         class="">
+        <div class="accel-form_container slds-p-bottom_large slds-p-top_none accel-test-borders">
+
+            <lightning-record-view-form record-id={rpsId}
+                                        object-api-name={objectApiName}
+                                        onload={handleLoad}
+                                        density={formDensity}
+                                        form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+                <div if:true={showStencil}>
+                    <div class="slds-p-around_none">
+                        <c-ui-custom-stencil
+                                iterations="4"
+                                type="list" columns="1">
+                        </c-ui-custom-stencil>
+                    </div>
+                </div>
+                <div class="slds-p-around_x-small accel-outbound-form-theme_shade accel-test-borders">
+                    <div class="slds-p-top_small accel-test-borders">
+                        <div class={inputsClass}>
+
+                            <lightning-output-field
+                                    field-name="X1_Note_Value_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name="Cassette_1_Note_Count_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+
+                            <lightning-output-field
+                                    field-name="X5_Note_Value_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name="Cassette_5_Note_Count_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+
+                            <lightning-output-field
+                                    field-name="X20_Note_Value_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name="Cassette_20_Note_Count_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+
+                            <lightning-output-field
+                                    field-name="X50_Note_Value_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name="Cassette_50_Note_Count_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+
+                            <lightning-output-field
+                                    field-name="X100_Note_Value_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name="Cassette_100_Note_Count_Outbound__c"
+                                    class="">
+                            </lightning-output-field>
+
+                        </div>
+                    </div>
+
+                </div>
+            </lightning-record-view-form>
+        </div>
+
+    </div>
+</template>

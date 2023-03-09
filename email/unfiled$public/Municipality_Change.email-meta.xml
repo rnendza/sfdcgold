@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Municipality Change</name>
+    <style>none</style>
+    <subject>There was a change in {!Account.MunicipalityLookup__c}</subject>
+    <textOnly>Compliance has added a change to {!Account.MunicipalityLookup__c}. Please log in and take a look as this will impact your accounts. Click here for link to the Municipality:
+
+{!Municipality__c.Link}</textOnly>
+    <type>custom</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

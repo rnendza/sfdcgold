@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Execução de plano de atribuição de mapas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Execuções de plano de atribuição de mapas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Iteration Count --></label>
+        <name>maps__BatchIterationCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Job Id --></label>
+        <name>maps__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache End Time --></label>
+        <name>maps__CacheEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache Start Time --></label>
+        <name>maps__CacheStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing End Time --></label>
+        <name>maps__ProcessingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Start Time --></label>
+        <name>maps__ProcessingStartTime__c</name>
+    </fields>
+    <fields>
+        <help>Limite de consultas atingido</help>
+        <label><!-- Query Limit Hit --></label>
+        <name>maps__QueryLimitHit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>maps__QueryLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Assigned Count --></label>
+        <name>maps__RecordsAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Error Count --></label>
+        <name>maps__RecordsErrorCount__c</name>
+    </fields>
+    <fields>
+        <help>Número de registros não atribuídos</help>
+        <label><!-- Records Not Assigned Count --></label>
+        <name>maps__RecordsNotAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Total --></label>
+        <name>maps__RecordsTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation>Anulado</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caching</masterLabel>
+            <translation>Colocando em cache</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Concluído</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Falha</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Processando</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>Em fila</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome da execução do plano de atribuição </nameFieldLabel>
+</CustomObjectTranslation>

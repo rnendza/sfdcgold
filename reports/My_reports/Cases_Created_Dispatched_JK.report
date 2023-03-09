@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Created_Date_Time__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Assigned_Resource__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Tech_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Johnny Kincinas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Johnny Kincinas</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$CreatedBy</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Johnny Kincinas</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Cases Created/Dispatched (JK)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments_with_Work_Orders_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Cases.WorkOrders.ServiceAppointments$Created_Date_Time__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account.Cases.WorkOrders$Work_Order_Created_Date_Time__c</dateColumn>
+        <interval>INTERVAL_CURFY</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,26 @@
+<!--
+   Cl Backend Map - Currently just supports Route_Schedule__c and Route__c
+-->
+<template>
+    <lightning-card title={cardTitle}
+                    class="slds-theme_shade"
+                    icon-name="standard:location">
+
+        <div class="deprecated_______slds-theme_shade">
+            <div if:true={formattedAddress}
+                 class="slds-p-bottom_small slds-p-left_medium">
+                {formattedAddress}
+            </div>
+            <div if:true={originGeo}>
+                <c-cl-map
+                        map-provider-access-token={mapProviderAccessToken}
+                        origin-geo={originGeo}
+                        map-default-zoom={mapDefaultZoom}
+                        mapbox-style-url-suffix={mapboxStyleUrlSuffix}
+                        map-height={mapHeight}>
+                </c-cl-map>
+            </div>
+        </div>
+
+    </lightning-card>
+</template>

@@ -1,0 +1,12 @@
+<aura:component description="Accel_SimpleCsvExporter" access="global">
+
+    <aura:method name="doExport" action="{!c.doExport}" access="global">
+        <aura:attribute name="arrayToExport"    type="Object[]"     required="true" />
+        <aura:attribute name="fieldNames"       type="String[]"     required="true" />
+        <aura:attribute name="fileName"         type="String"       required="true" />
+        <aura:attribute name="columns"          type="Object[]"     required="false" />
+        <aura:attribute name="callback"         type="function"     required="true" />
+        <aura:attribute name="responseDto"      type="Object"       required="false"/>
+    </aura:method>
+
+</aura:component>

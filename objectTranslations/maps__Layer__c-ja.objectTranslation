@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>レイヤ</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArcGIS WebMap Click2Create --></label>
+        <name>maps__ArcGISWebMapC2C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email On Aggregation Success --></label>
+        <name>maps__EmailOnAggregationSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>レイヤのオプションを JSON 形式で保存するために使用されます。</help>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <help>レコードが表すレイヤ種別を決定するために使用されます。</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>データレイヤ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation>テリトリー</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile Set</masterLabel>
+            <translation>タイルセット</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>ユーザの個人フォルダの直下にある場合は入力され、それ以外の場合は空白になります。空白でフォルダ参照が空白の場合、これは法人フォルダに表示されます。フォルダが入力されている場合は、個人フォルダまたは法人フォルダの可能性もあります。</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>maps__Version__c</name>
+    </fields>
+    <nameFieldLabel>レイヤ名</nameFieldLabel>
+</CustomObjectTranslation>

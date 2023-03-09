@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps ライブ日次運転</value>
+    </caseValues>
+    <fields>
+        <help>午前/午後はデバイスのタイムゾーンに基づいて判断されます</help>
+        <label><!-- AM or PM Drive Trip --></label>
+        <name>maps__AMorPMDriveTrip__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>AM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>午前/午後</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>PM</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた市区町村</help>
+        <label><!-- Begin Trip City --></label>
+        <name>maps__BeginTripCity__c</name>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた国</help>
+        <label><!-- Begin Trip Country --></label>
+        <name>maps__BeginTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>この移動が開始された時刻</help>
+        <label><!-- Begin Trip Date/Time --></label>
+        <name>maps__BeginTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた場所の住所</help>
+        <label><!-- Begin Trip Full Address --></label>
+        <name>maps__BeginTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた場所の郵便番号</help>
+        <label><!-- Begin Trip Postal Code --></label>
+        <name>maps__BeginTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた都道府県</help>
+        <label><!-- Begin Trip State --></label>
+        <name>maps__BeginTripState__c</name>
+    </fields>
+    <fields>
+        <help>この移動の開始であるイベントレコードへの参照</help>
+        <label><!-- Begin Trip Stop --></label>
+        <name>maps__BeginTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (Begin Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>移動の開始が行われた町名・番地</help>
+        <label><!-- Begin Trip Street --></label>
+        <name>maps__BeginTripStreet__c</name>
+    </fields>
+    <fields>
+        <help>移動の日付</help>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>移動が明記された休日中に行われたかどうかの指定</help>
+        <label><!-- Driving During Holiday --></label>
+        <name>maps__DrivingDuringHoliday__c</name>
+    </fields>
+    <fields>
+        <help>移動が明記された勤務時間外に行われたかどうかの指定</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた市区町村</help>
+        <label><!-- End Trip City --></label>
+        <name>maps__EndTripCity__c</name>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた国</help>
+        <label><!-- End Trip Country --></label>
+        <name>maps__EndTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>この移動が終了した時刻</help>
+        <label><!-- End Trip Date/Time --></label>
+        <name>maps__EndTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた場所の住所</help>
+        <label><!-- End Trip Full Address --></label>
+        <name>maps__EndTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた場所の郵便番号</help>
+        <label><!-- End Trip Postal Code --></label>
+        <name>maps__EndTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた都道府県</help>
+        <label><!-- End Trip State --></label>
+        <name>maps__EndTripState__c</name>
+    </fields>
+    <fields>
+        <help>この移動の停止であるイベントレコードへの参照</help>
+        <label><!-- End Trip Stop --></label>
+        <name>maps__EndTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (End Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>移動の終了が行われた町名・番地</help>
+        <label><!-- End Trip Street --></label>
+        <name>maps__EndTripStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>この経費情報が関連するライブ納入商品日次サマリーレコード</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>この移動の明記された運転者</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>移動における急加速イベントの合計数</help>
+        <label><!-- Total # of Hard Accel Events In Trip --></label>
+        <name>maps__TotalNumOfHardAccelEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>この移動内の急減速イベントの合計数</help>
+        <label><!-- Total # of Hard Braking Events this Trip --></label>
+        <name>maps__TotalNumOfHardBrakeEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>この移動ないの最大速度しきい値イベントの合計数</help>
+        <label><!-- Total # of Speed Thresh Events in Trip --></label>
+        <name>maps__TotalNumOfSpeedThresholdEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>この移動内の速度超過イベントの合計数</help>
+        <label><!-- Total # of Speeding Events within Trip --></label>
+        <name>maps__TotalNumOfSpeedingEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>これは、マイル単位の合計移動距離です。</help>
+        <label><!-- Trip Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>この移動の時間単位の期間</help>
+        <label><!-- Trip Drive Time (Hours) --></label>
+        <name>maps__TripDriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>この移動の分単位の期間</help>
+        <label><!-- Trip Drive Time (Minutes) --></label>
+        <name>maps__TripDriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>その日の移動の順序</help>
+        <label><!-- Trip Order --></label>
+        <name>maps__TripOrder__c</name>
+    </fields>
+    <nameFieldLabel>Maps ライブ日次運転移動名</nameFieldLabel>
+</CustomObjectTranslation>

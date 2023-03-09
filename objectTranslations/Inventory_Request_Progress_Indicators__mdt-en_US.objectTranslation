@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory Request Progress Indicator</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory Request Progress Indicators</value>
+    </caseValues>
+    <fields>
+        <help><!-- Future enhancement. --></help>
+        <label><!-- Applicable Record Type Dev Names --></label>
+        <name>Applicable_Record_Type_Dev_Names__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current --></label>
+        <name>Current__c</name>
+    </fields>
+    <fields>
+        <help><!-- Description of the progress stage (you can put raw html here) --></help>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- The actual value displayed. --></help>
+        <label><!-- DisplayValue --></label>
+        <name>DisplayValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- The api value of the selected &apos;stage&apos; --></help>
+        <label><!-- Value --></label>
+        <name>Value__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

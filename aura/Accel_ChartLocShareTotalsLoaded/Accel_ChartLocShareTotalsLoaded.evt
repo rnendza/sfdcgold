@@ -1,0 +1,5 @@
+<aura:event type="APPLICATION" description="Accel_ChartLocShareTotalsLoaded">
+    <aura:attribute name="locationMonthlyData" type="Object" />
+    <aura:attribute name="locationMonthlyFrequency" type="Integer" default="12" />
+    <aura:attribute name="locationMonthlyDataDescription" type="String"  />
+</aura:event>

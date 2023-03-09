@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 일간 주행</value>
+    </caseValues>
+    <fields>
+        <help>오전/오후는 장치의 표준 시간대를 기준으로 결정됩니다</help>
+        <label><!-- AM or PM Drive Trip --></label>
+        <name>maps__AMorPMDriveTrip__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>오전</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>오전/오후</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>오후</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이동이 시작된 구/군/시</help>
+        <label><!-- Begin Trip City --></label>
+        <name>maps__BeginTripCity__c</name>
+    </fields>
+    <fields>
+        <help>이동이 시작된 장소의 국가</help>
+        <label><!-- Begin Trip Country --></label>
+        <name>maps__BeginTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>이 이동이 시작된 시간</help>
+        <label><!-- Begin Trip Date/Time --></label>
+        <name>maps__BeginTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>이동이 시작된 장소의 주소</help>
+        <label><!-- Begin Trip Full Address --></label>
+        <name>maps__BeginTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>이동이 시작된 장소의 우편 번호</help>
+        <label><!-- Begin Trip Postal Code --></label>
+        <name>maps__BeginTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>이동이 시작된 장소의 시/도</help>
+        <label><!-- Begin Trip State --></label>
+        <name>maps__BeginTripState__c</name>
+    </fields>
+    <fields>
+        <help>이 이동이 시작되는 이벤트 레코드 조회</help>
+        <label><!-- Begin Trip Stop --></label>
+        <name>maps__BeginTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (Begin Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이동이 시작된 장소의 상세 주소</help>
+        <label><!-- Begin Trip Street --></label>
+        <name>maps__BeginTripStreet__c</name>
+    </fields>
+    <fields>
+        <help>이동 날짜</help>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>이동이 표시된 휴일 내 이루어진 경우 표시</help>
+        <label><!-- Driving During Holiday --></label>
+        <name>maps__DrivingDuringHoliday__c</name>
+    </fields>
+    <fields>
+        <help>이동이 표시된 근무 시간 외 이루어진 경우 표시</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>이동이 종료된 장소의 구/군/시</help>
+        <label><!-- End Trip City --></label>
+        <name>maps__EndTripCity__c</name>
+    </fields>
+    <fields>
+        <help>이동이 종료된 장소의 국가</help>
+        <label><!-- End Trip Country --></label>
+        <name>maps__EndTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>이 이동이 종료된 시간</help>
+        <label><!-- End Trip Date/Time --></label>
+        <name>maps__EndTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>이동이 종료된 장소의 주소</help>
+        <label><!-- End Trip Full Address --></label>
+        <name>maps__EndTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>이동이 종료된 장소의 우편 번호</help>
+        <label><!-- End Trip Postal Code --></label>
+        <name>maps__EndTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>이동이 종료된 장소의 시/도</help>
+        <label><!-- End Trip State --></label>
+        <name>maps__EndTripState__c</name>
+    </fields>
+    <fields>
+        <help>이 이동이 종료되는 이벤트 레코드 조회</help>
+        <label><!-- End Trip Stop --></label>
+        <name>maps__EndTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (End Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이동이 종료되는 장소의 상세 주소</help>
+        <label><!-- End Trip Street --></label>
+        <name>maps__EndTripStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>이 주행 거리가 연결된 실시간 자산 일일 요약 레코드</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 이동의 표시된 운전자</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>이동 시 높은 가속 이벤트 총 #</help>
+        <label><!-- Total # of Hard Accel Events In Trip --></label>
+        <name>maps__TotalNumOfHardAccelEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>이 이동 내 과도한 브레이크 사용 이벤트 총 #</help>
+        <label><!-- Total # of Hard Braking Events this Trip --></label>
+        <name>maps__TotalNumOfHardBrakeEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>이 이동 내 최대 속도 임계값 이벤트 총 #</help>
+        <label><!-- Total # of Speed Thresh Events in Trip --></label>
+        <name>maps__TotalNumOfSpeedThresholdEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>이 이동 내 과속 이벤트 총 #</help>
+        <label><!-- Total # of Speeding Events within Trip --></label>
+        <name>maps__TotalNumOfSpeedingEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>마일 단위의 총 이동 거리입니다.</help>
+        <label><!-- Trip Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>이 이동의 기간, 시간 단위</help>
+        <label><!-- Trip Drive Time (Hours) --></label>
+        <name>maps__TripDriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>이 이동의 기간, 분 단위</help>
+        <label><!-- Trip Drive Time (Minutes) --></label>
+        <name>maps__TripDriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>하루 종일 이동 순서</help>
+        <label><!-- Trip Order --></label>
+        <name>maps__TripOrder__c</name>
+    </fields>
+    <nameFieldLabel>Maps 실시간 일일 운전 이동 이름</nameFieldLabel>
+</CustomObjectTranslation>

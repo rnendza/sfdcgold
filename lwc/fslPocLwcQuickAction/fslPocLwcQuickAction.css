@@ -1,0 +1,25 @@
+.accel-dl_horizontal__label { width:30%;font-weight: bold;padding-top: .55rem}
+.accel-dl_horizontal__detail { width:70%; }
+.accel-tile-container {background-color: white}
+.accel-form-tile-container {background-color: rgb(250,250,249);}
+.accel-tile-header-container {background-color: rgb(243,242,242);}
+.accel-dotted-link {
+    border-bottom: var(--lwc-borderWidthThin, 1px) dotted;
+    color: var(--lwc-brandTextLink,rgb(1, 118, 211));
+    text-decoration: none;
+    font-size: .95rem;
+}
+.accel-record-create-icon-white {
+    color: white;
+    --sds-c-icon-color-foreground-default: white;
+}
+.accel-card-theme {
+   /* background-color: rgb(250,250,249);*/
+    background-color: white;
+}
+.accel-no-data-container {
+    background-color: white;
+}
+.accel-component-theme  {
+    background-color: white;
+}

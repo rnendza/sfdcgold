@@ -1,0 +1,230 @@
+<aura:component description="Accel_CommunityLocHpdAndExprData" implements="lightning:isUrlAddressable,flexipage:availableForAllPageTypes">
+
+    <!-- Generally meant  to be passed in by the parent component -->
+    <aura:attribute name="activeSections" type="List" access="public"/>
+    <!-- local / private version of the above.. @see handleActiveAccordionSectionsChange -->
+    <aura:attribute name="localActiveSections" type="List" access="private"/>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/311323513 -->
+    <aura:attribute name="locationLicenseSummary" type="Object"/>
+    <aura:attribute name="locationLicenseData" type="Object"/>
+    <aura:attribute name="locDataTabLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="errorThrown" type="Boolean" default="false"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    <!--- Value change handler.. basically watches for any change on attribute -->
+    <aura:handler name="change" value="{!v.activeSections}" action="{!c.handleActiveAccordionSectionsChange}"/>
+
+
+    <div class="accel-location-detail-outer-container">
+
+        <aura:if isTrue="{! and(v.locDataTabLoaded,!v.errorThrown) }">
+            <aura:set attribute="else">
+                <lightning:spinner alternativeText="Loading" />
+            </aura:set>
+        </aura:if>
+        <div>
+            <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/311323513 -->
+            <c:acLocationDetailHelp locationLicenseSummary="{!v.locationLicenseSummary}"/>
+        </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-small-size--1-of-1 slds-medium-size_1-of-1 slds-large-size--1-of-1">
+                <lightning:accordion
+                allowMultipleSectionsOpen="true"
+                aura:id="accelLocAccordion"
+                activeSectionName="{!v.localActiveSections}"
+                class="accel-accordion accel-accordion-list-item accel-accordion-links">
+
+            <aura:iteration items="{!v.locationLicenseData}" var="locWrap" indexVar="idx">
+                <div class="accel-accordion-section-outer-container">
+                <lightning:accordionSection name="{!locWrap.accountId}"
+                                            class="accel-accordion-section accel-accordion-links"
+                                            label="{!locWrap.accountName + ' - ' + locWrap.shippingStreet + ' - '+ locWrap.shippingCity}">
+
+                    <aura:set attribute="body">
+                        <div class="accel-shadow-drag accel-location-dates-outer-container" >
+                            <div class="accel-layout-expiration-hpd-dates">
+                                <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters">
+                                    <div class="slds-col slds-size_1-of-1 slds-small-size--12-of-12  slds-medium-size_12-of-12 slds-large-size_6-of-12"
+                                         style="margin-bottom: 10px;">
+                                        <div class="accel-exp-date-header-container accel-expiration-date-title">
+                                            <lightning:icon iconName="utility:date_time"
+                                                            class="accel-exp-date-icon"
+                                                            size="xx-small"
+                                                            alternativeText="Expiration Date image"/>
+
+                                            License Dates
+                                        </div>
+                                        <dl class="slds-list_horizontal slds-wrap accel-license-data">
+<!--                                            <dt class="slds-item_label slds-text-color_default accel-expiration-hpd-dates-labels"-->
+<!--                                                title="IGB Expiration Date">Accel VGT Live:-->
+<!--                                            </dt>-->
+<!--                                            <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"-->
+<!--                                                title="{!locWrap.accelVgtLiveDate}">-->
+<!--                                                <lightning:formattedDateTime-->
+<!--                                                        timeZone="UTC"-->
+<!--                                                        year="numeric" month="2-digit" day="2-digit"-->
+<!--                                                        value="{!locWrap.accelVgtLiveDate}"/>-->
+<!--                                            </dd>-->
+                                            <aura:if isTrue="{!locWrap.igbLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default accel-expiration-hpd-dates-labels"
+                                                    title="IGB Expiration Date">IGB:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{!locWrap.igbLicenseExpDate}">
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{!locWrap.igbLicenseExpDate}"/>
+
+                                                    <aura:if isTrue="{!locWrap.igbLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        title="Your IGB Gaming license has expired!"
+                                                                        size="xx-small"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.igbLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your IGB Gaming license will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                            <aura:if isTrue="{!locWrap.stateLiquorLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default  accel-expiration-hpd-dates-labels"
+                                                    title="State Liquor License">State
+                                                    Liquor:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{#locWrap.stateLiquorLicenseExpDate}">
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{#locWrap.stateLiquorLicenseExpDate}"/>
+                                                    <aura:if isTrue="{!locWrap.stateLiquorLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        size="xx-small"
+                                                                        title="Your state liquor license has expired!"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.stateLiquorLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your IGB Gaming license will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                            <aura:if isTrue="{!locWrap.localLiquorLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default  accel-expiration-hpd-dates-labels"
+                                                    title="Local Liquor License">Local
+                                                    Liquor:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{#locWrap.localLiquorLicenseExpDate}">
+
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{#locWrap.localLiquorLicenseExpDate}"/>
+                                                    <aura:if isTrue="{!locWrap.localLiquorLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        title="Your local liquor license has expired!"
+                                                                        size="xx-small"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.localLiquorLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your local license will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                            <aura:if isTrue="{!locWrap.localGamingLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default  accel-expiration-hpd-dates-labels"
+                                                    title="Local Gaming License">Local
+                                                    Gaming:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{#locWrap.localGamingLicenseExpDate}">
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{#locWrap.localGamingLicenseExpDate}"/>
+                                                    <aura:if isTrue="{!locWrap.localGamingLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        title="Your local gaming license has expired!"
+                                                                        size="xx-small"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.localGamingLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your local gaming will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                            <aura:if isTrue="{!locWrap.dojLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default accel-expiration-hpd-dates-labels"
+                                                    title="DOJ Expiration Date">DOJ:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{!locWrap.dojLicenseExpDate}">
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{!locWrap.dojLicenseExpDate}"/>
+                                                    <aura:if isTrue="{!locWrap.dojLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        title="Your DOJ license has expired!"
+                                                                        size="xx-small"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.dojLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your DOJ license will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                            <aura:if isTrue="{!locWrap.ibaLicenseExpDate}">
+                                                <dt class="slds-item_label slds-text-color_default accel-expiration-hpd-dates-labels"
+                                                    title="IBA Expiration Date">IBA:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-expiration-hpd-dates-values"
+                                                    title="{!locWrap.ibaLicenseExpDate}">
+                                                    <lightning:formattedDateTime
+                                                            timeZone="UTC"
+                                                            year="numeric" month="2-digit" day="2-digit"
+                                                            value="{!locWrap.ibaLicenseExpDate}"/>
+                                                    <aura:if isTrue="{!locWrap.ibaLicenseExpired}">
+                                                        <lightning:icon iconName="utility:error"
+                                                                        title="Your IBA Gaming license has expired!"
+                                                                        size="xx-small"
+                                                                        class="accel-error-icon"/>
+                                                    </aura:if>
+                                                    <aura:if isTrue="{!locWrap.ibaLicenseExpiring}">
+                                                        <lightning:icon iconName="utility:warning"
+                                                                        title="Your IBA Gaming license will expire soon!"
+                                                                        size="xx-small"
+                                                                        class="accel-warn-icon"/>
+                                                    </aura:if>
+                                                </dd>
+                                            </aura:if>
+                                        </dl>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </aura:set>
+                </lightning:accordionSection>
+                </div>
+            </aura:iteration>
+        </lightning:accordion>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Voce regola di lavoro</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Voci regola di lavoro</value>
+    </caseValues>
+    <fields>
+        <help>Durata della pausa in minuti.</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Numero di minuti dall&apos;inizio della disponibilità della risorsa di servizio all&apos;ora di inizio della prima pausa consentita. Ad esempio, immettere 120 per pianificare una pausa almeno due ore dopo l&apos;inizio della giornata.</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>Numero di minuti dall&apos;inizio della disponibilità della risorsa di servizio all&apos;ora di fine dell&apos;ultima pausa consentita. Ad esempio, immettere 300 per pianificare una pausa pranzo che termini non oltre cinque ore dopo l&apos;inizio della giornata.</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome voce regola di lavoro</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

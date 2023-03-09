@@ -1,0 +1,215 @@
+<!-- Cl Admin Rps -->
+<template>
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card"  onclick={handleOuterContainerClick}>
+        <lightning-card>
+            <h1 slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title
+                            card-title='RPS Creation'
+                            card-title-style={cardTitleStyle}
+                            icon-name="custom:custom25"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </h1>
+            <div class="accel-test-borders slds-m-horizontal_x-small" >
+                <lightning-tabset variant="scoped" active-tab-value={_activeTabValue} class="accel-tab-set accel-scoped-tab-set">
+                    <lightning-tab
+                            icon-name="standard:form"
+                            onactive={handleTabClick}
+                            value="tab_rpscreate"
+                            label="Create RPS">
+                        <div
+                               class="xxxslds-border_bottom xxxslds-color__border_gray-4">
+                            <div
+                                    if:true={showRpsCreateButton}
+                                    class="slds-text-color_weak slds-m-bottom_x-small slds-p-horizontal_xx-small">
+                                <lightning-icon icon-name="utility:info_alt" size="x-small" class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                                Use this to create RPS and Meter record for <b>{rsName}</b>. You may enter collector / assigned driver if desired. After hitting the start button
+                                a chained batch job will be fired that inserts RPS Records and Meter records.
+                            </div>
+                            <div if:true={showStencil}>
+                                <c-ui-custom-stencil
+                                        iterations="1"
+                                        child-class="slds-var-m-around_xxx-small"
+                                        type="list" columns="1">
+                                </c-ui-custom-stencil>
+                            </div>
+                            <div
+                                    if:false={rsId}
+                                    class="slds-text-color_weak slds-m-bottom_x-small slds-p-horizontal_xx-small">
+                                <lightning-icon icon-name="utility:info_alt" size="x-small" class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                                First select a route schedule. Note: Schedules are filtered by those with no current RPS Sheets.
+                            </div>
+                            <div    if:false={_isBatchJobRunning}
+                                    class="slds-p-bottom_medium">
+                                <div class="slds-grid slds-gutters slds-wrap">
+                                    <div    if:true={showRouteScheduleOptions}
+                                            class="slds-col slds-size_12-of-12">
+                                            <div class="slds-p-horizontal_xx-small">
+                                                test
+                                            <c-record-autocomplete
+                                                    data-id="rsinput"
+                                                    s-object-api-name='Route_Schedule__c'
+                                                    option-icon-name="standard:service_appointment"
+                                                    primary-display-field='Name'
+                                                    secondary-display-field='Route_Collection_Date__c'
+                                                    search-label="Route Schedule to add sheets"
+                                                    primary-filter-field='Name'
+                                                    onrecordselected={handleScheduleSelected}
+                                                    additional-where-criteria={additionalWhereCriteria}
+                                                    min-characters="2"
+                                                    customautofocus="false"
+                                                    customrequired="true"
+                                                    manually-reload-autocomplete={refreshAllAutocompletes}
+                                                    preload-results="true"
+                                                    max-rows="50"
+                                                    place-holder='Select a route schedule..'>
+                                            </c-record-autocomplete>
+                                            </div>
+                                        <div if:true={showRpsCreateButton}>
+                                            <div class="slds-text-color_weak">
+                                                <template if:true={showNoCollectorInfo}>
+                                                        <div>
+                                                            <c-cl-admin-route-schedule-collector-form
+                                                                rs-id={rsId}>
+                                                            </c-cl-admin-route-schedule-collector-form>
+                                                        </div>
+                                                </template>
+                                            </div>
+                                        </div>
+                                        <div if:true={showExistingRpsInfo}>
+                                            <ul class="slds-list_dotted">
+                                                <li>{_totalNumberRpsRecords} processing sheets created.</li>
+                                                <li>{_totalMeterReadings} meter readings created.</li>
+                                                <li>{_totalNumberOfAccounts} accounts assigned.</li>
+                                            </ul>
+                                        </div>
+                                        <div if:true={showNoAccountsMessage}>
+                                            <div class="slds-p-top_small">
+                                                <c-ui-scoped-notification
+                                                        message="You have no accounts associated with this Route Schedule. Please add some accounts."
+                                                        custom-icon-size="small"
+                                                        custom-class="accel-notification-info_theme"
+                                                        theme="light">
+                                                </c-ui-scoped-notification>
+                                                <div class="slds-p-left_large slds-p-top_small">
+                                                <a href='#' onclick={handleRsNavToRecordView}>View {rpsName}</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </lightning-tab>
+                    <lightning-tab
+                            value="tab_rpsDelete"
+                            if:true={showDeleteTab}
+                            label="Delete RPS">
+                        <div if:true={showRpsDeleteButton}
+                             class="slds-p-bottom_large slds-m-bottom_medium slds-p-top_small slds-border_bottom slds-color__border_gray-4">
+                            <div class="slds-text-color_weak">
+                                <lightning-icon icon-name="utility:info_alt" size="x-small" class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                                Use this to <span class="slds-text-color_destructive"><b>DELETE</b></span> the
+                                {_totalNumberRpsRecords} RPS records and {_totalMeterReadings} Meter records for route schedule <b>{rpsName}</b>. You will be prompted for
+                                confirmation.
+                            </div>
+                            <div class="slds-m-top_small">
+                                <button
+                                        name="submitDeleteRPS"
+                                        onclick={handleRpsDeleteClick}
+                                        data-id="rpsDeleteButton"
+                                        title="DELETE All RPS Records!"
+                                        style="padding:.15em"
+                                        class="slds-button slds-button_destructive slds-button_stretch ">
+                                    <span style="font-size: 1.05em">Delete Rps And Meter Readings</span>
+                                    <span class="slds-p-left_xx-small">
+                            <lightning-icon
+                                    icon-name="utility:record_delete"
+                                    alternative-text=""
+                                    variant="inverse"
+                                    size="x-small"
+                                    title="">
+                            </lightning-icon>
+                        </span>
+                                </button>
+                            </div>
+                        </div>
+                        <div if:true={showMetersDeleteButton}>
+                            <div class="slds-text-color_weak slds-p-bottom_medium">
+                                <lightning-icon icon-name="utility:info_alt" size="x-small" class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                                Use this to <span class="slds-text-color_destructive"><b>DELETE</b></span> only
+                                the existing {_totalMeterReadings} Meter records for route schedule <b>{rpsName}</b>. The {_totalNumberRpsRecords} RPS records will not be deleted. You will be prompted for
+                                confirmation.
+                            </div>
+                            <div class="slds-m-top_small">
+                                <button
+                                        name="submitDeleteMeters"
+                                        onclick={handleMetersDeleteClick}
+                                        data-id="metersDeleteButton"
+                                        title="DELETE All Meter Reading Records!"
+                                        style="padding:.15em"
+                                        class="slds-button slds-button_destructive slds-button_stretch ">
+                                    <span style="font-size: 1.05em">Delete Meter Readings Only</span>
+                                    <span class="slds-p-left_xx-small">
+                            <lightning-icon
+                                    icon-name="utility:record_delete"
+                                    alternative-text=""
+                                    variant="inverse"
+                                    size="x-small"
+                                    title="">
+                            </lightning-icon>
+                        </span>
+                                </button>
+                            </div>
+                        </div>
+                    </lightning-tab>
+                </lightning-tabset>
+
+
+            </div>
+            <div slot="footer" >
+                <div if:true={showScopedMsg} class="slds-p-bottom_small">
+                    <c-ui-scoped-notification
+                            icon-name={scopedMsg.iconName}
+                            icon-variant={scopedMsg.iconVariant}
+                            custom-class={scopedMsg.customClass}
+                            custom-icon-size={scopedMsg.iconCustomSize}
+                            theme={scopedMsg.theme}
+                            dismissible={scopedMsg.dismissible}
+                            message={scopedMsg.message}>
+                    </c-ui-scoped-notification>
+                </div>
+                <div if:true={showRpsCreateButton}>
+                    <button
+                            name="submitForm"
+                            onclick={handleRpsCreateClick}
+                            data-id="rpsSubmitButton"
+                            title="Fire Rps Creation!"
+                            style="padding:.15em"
+                            class="slds-button slds-button_brand slds-button_stretch ">
+                        <span style="font-size: 1.05em;">Start Rps Creation Job</span>
+                        <span class="slds-p-left_xx-small">
+                                        <lightning-icon
+                                                icon-name="utility:record_create"
+                                                alternative-text=""
+                                                size="x-small"
+                                                class="accel-record-create-icon-white"
+                                                title="">
+                                        </lightning-icon>
+                                    </span>
+                    </button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+    <c-cl-event-subscriber
+            onjobprocessing={handleBatchJobProcessing}
+            onjobcomplete={handleBatchJobComplete}>
+    </c-cl-event-subscriber>
+
+</template>

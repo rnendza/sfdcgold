@@ -1,0 +1,31 @@
+<apex:page docType="html-5.0" standardController="Marketing_Request__c">
+
+
+    <style>
+        .mypage  {
+            
+            margin: 0px 0;
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            }
+    </style>
+    
+    <div class="mypage">
+   <h1 style="text-align: center;font-family: tahoma;color:black;font-size: 16px;font-weight: bold; ">
+                    INSTRUCTIONS 
+</h1>
+       <p>Under Total Quote Amount, enter cost of ALL collateral, advertisements, and prizes for which location will be reimbursed. Under Requested Reimbursement Amount, enter the amount the location is expecting for reimbursement.</p>
+
+
+
+<p>Upon saving the request, choose ALL applicable product names from the related Marketing Products list. If your product is not available, choose Other, and specify the item. Be sure to fill out prices and quantities of each item. For Prizes, put the total prize value as the cost.</p>
+
+
+
+<p>Then, go to Notes and Attachments to upload your documentation (Letter Agreement, Tax Affidavit, Disclosures, Final Artwork). If these items are not uploaded, the request will not be approved.  When you are done, simply click save, and the request will be forwarded to Marketing.</p>  
+
+<p>When you have obtained ALL paid invoices, including winners forms, upload below under Notes and Attachments, then click Promotion Complete. This will initiate your reimbursement.</p>
+    </div>
+    
+</apex:page>

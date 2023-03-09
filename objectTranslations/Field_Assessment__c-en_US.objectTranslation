@@ -1,0 +1,494 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Field Assessment</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Field Assessments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Field Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Buildout Needed --></label>
+        <name>Additional_Buildout_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Electrical Work Needed --></label>
+        <name>Additional_Electrical_Work_Needed__c</name>
+        <picklistValues>
+            <masterLabel>Day of Transition</masterLabel>
+            <translation><!-- Day of Transition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post Transition</masterLabel>
+            <translation><!-- Post Transition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prior to Transition</masterLabel>
+            <translation><!-- Prior to Transition --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Assigned To --></label>
+        <name>Assigned_To__c</name>
+        <relationshipLabel><!-- Field Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Buildout Estimate Approved Amount --></label>
+        <name>Buildout_Estimate_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildout Estimate Received Date --></label>
+        <name>Buildout_Estimate_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildout Progress --></label>
+        <name>Buildout_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Buildout Start Date --></label>
+        <name>Buildout_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+        <relationshipLabel><!-- Field Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contractor of Record --></label>
+        <name>Contractor_of_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Describe placement of the RT --></label>
+        <name>Describe_placement_of_the_RT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe the placement of the gaming area in relation to the layout of the establishment. --></help>
+        <label><!-- Description of placement --></label>
+        <name>Description_of_placement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Estimate Approved Amount --></label>
+        <name>Electrical_Estimate_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Estimate Received Date --></label>
+        <name>Electrical_Estimate_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Scheduled Date --></label>
+        <name>Electrical_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Work Status --></label>
+        <name>Electrical_Work_Status__c</name>
+        <picklistValues>
+            <masterLabel>Electrical Work Completed</masterLabel>
+            <translation><!-- Electrical Work Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Work Needed</masterLabel>
+            <translation><!-- Electrical Work Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical Work Not Needed</masterLabel>
+            <translation><!-- Electrical Work Not Needed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Buildout Completion Date --></label>
+        <name>Estimated_Buildout_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Buildout Start Date --></label>
+        <name>Estimated_Buildout_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Assigned Date --></label>
+        <name>Field_Assessment_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Scheduled Date --></label>
+        <name>Field_Assessment_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Field_Assessment__c</name>
+        <relationshipLabel><!-- Field Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gaming Area Partition --></label>
+        <name>Gaming_Area_Partition__c</name>
+        <picklistValues>
+            <masterLabel>Half Walls (something less than floor to ceiling)</masterLabel>
+            <translation><!-- Half Walls (something less than floor to ceiling) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No walls</masterLabel>
+            <translation><!-- No walls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not fully enclosed - includes stanchions</masterLabel>
+            <translation><!-- Not fully enclosed - includes stanchions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Separate Room - Floor to Ceiling Walls</masterLabel>
+            <translation><!-- Separate Room - Floor to Ceiling Walls --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gaming Area Square Footage --></label>
+        <name>Gaming_Area_Square_Footage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Experience --></label>
+        <name>Gaming_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Equip/Layout Change Form Completed --></label>
+        <name>IGB_Equip_Layout_Change_Form_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Are there any layout and gaming area commitments? --></help>
+        <label><!-- Layout &amp; Gaming Area Commitments --></label>
+        <name>Layout_Gaming_Area_Commitments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout Submitted Date --></label>
+        <name>Layout_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select all that apply. --></help>
+        <label><!-- Changes: Select All That Apply --></label>
+        <name>List_of_Changes_Additions__c</name>
+        <picklistValues>
+            <masterLabel>Cosmetic Changes (i.e. paint, flooring)</masterLabel>
+            <translation><!-- Cosmetic Changes (i.e. paint, flooring) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electric work completed</masterLabel>
+            <translation><!-- Electric work completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Interior Gut</masterLabel>
+            <translation><!-- Full Interior Gut --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Room Addition</masterLabel>
+            <translation><!-- Gaming Room Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ground Up Build</masterLabel>
+            <translation><!-- Ground Up Build --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Wall</masterLabel>
+            <translation><!-- Half Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location is ready for electrical work</masterLabel>
+            <translation><!-- Location is ready for electrical work --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No buildout</masterLabel>
+            <translation><!-- No buildout --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Does the TV feature non-gaming content, i.e. ESPN, CNN, etc)? --></help>
+        <label><!-- Non-gaming TV in gaming area --></label>
+        <name>Non_gaming_TV_in_gaming_area__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Manager Notes --></label>
+        <name>Project_Manager_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Stage --></label>
+        <name>Project_Stage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Field Assessments --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed VGT Setup --></label>
+        <name>Proposed_VGT_Setup__c</name>
+        <picklistValues>
+            <masterLabel>Back-to-back with end cap</masterLabel>
+            <translation><!-- Back-to-back with end cap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Carousel</masterLabel>
+            <translation><!-- Carousel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Half Moon</masterLabel>
+            <translation><!-- Half Moon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-line (one wall)</masterLabel>
+            <translation><!-- In-line (one wall) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-line split (multiple walls)</masterLabel>
+            <translation><!-- In-line split (multiple walls) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-line with back to back</masterLabel>
+            <translation><!-- In-line with back to back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In-line with standalone</masterLabel>
+            <translation><!-- In-line with standalone --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stand alone (greater than 16&quot; apart)</masterLabel>
+            <translation><!-- Stand alone (greater than 16&quot; apart) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity of RT to nearest windows/doors --></label>
+        <name>Proximity_of_RT_to_nearest_windows_doors__c</name>
+        <picklistValues>
+            <masterLabel>5-10 feet</masterLabel>
+            <translation><!-- 5-10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity of gaming area to bar --></label>
+        <name>Proximity_of_gaming_area_to_bar__c</name>
+        <picklistValues>
+            <masterLabel>5-10 feet</masterLabel>
+            <translation><!-- 5-10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity of gaming area to bathroom --></label>
+        <name>Proximity_of_gaming_area_to_bathroom__c</name>
+        <picklistValues>
+            <masterLabel>5-10 feet</masterLabel>
+            <translation><!-- 5-10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 5 feet</masterLabel>
+            <translation><!-- Less than 5 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proximity of gaming area to front door --></label>
+        <name>Proximity_of_gaming_area_to_front_door__c</name>
+        <picklistValues>
+            <masterLabel>5-10 feet</masterLabel>
+            <translation><!-- 5-10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greater than 10 feet</masterLabel>
+            <translation><!-- Greater than 10 feet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Less than 4 feet</masterLabel>
+            <translation><!-- Less than 4 feet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RT Relocate --></label>
+        <name>RT_Relocate__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Day of Install</masterLabel>
+            <translation><!-- Day of Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relocate IGB Approved --></label>
+        <name>Relocate_IGB_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Equip/Layout Change Form Submit --></label>
+        <name>Relocate_Request_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spacer Request --></label>
+        <name>Spacer_Request__c</name>
+        <picklistValues>
+            <masterLabel>Custom spacers</masterLabel>
+            <translation><!-- Custom spacers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No spacers (VGTs set as standalone)</masterLabel>
+            <translation><!-- No spacers (VGTs set as standalone) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No spacers (machines in contact)</masterLabel>
+            <translation><!-- No spacers (machines in contact) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Spacers</masterLabel>
+            <translation><!-- Standard Spacers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Discovery</masterLabel>
+            <translation><!-- Discovery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation><!-- In Progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Buildout --></label>
+        <name>Type_of_Buildout__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Required Disconnect --></label>
+        <name>VGT_Required_Disconnect__c</name>
+        <picklistValues>
+            <masterLabel>SAS 1</masterLabel>
+            <translation><!-- SAS 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 10</masterLabel>
+            <translation><!-- SAS 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 2</masterLabel>
+            <translation><!-- SAS 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 3</masterLabel>
+            <translation><!-- SAS 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 4</masterLabel>
+            <translation><!-- SAS 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 5</masterLabel>
+            <translation><!-- SAS 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 6</masterLabel>
+            <translation><!-- SAS 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 7</masterLabel>
+            <translation><!-- SAS 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 8</masterLabel>
+            <translation><!-- SAS 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 9</masterLabel>
+            <translation><!-- SAS 9 --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Add/Swap/Reconfigure --></label>
+        <name>Add_Swap_Reconfigure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitor --></label>
+        <name>Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Consultation type Field Assessment is used for PM to meet with Location Owner to discuss build out. --></description>
+        <label><!-- Consultation --></label>
+        <name>Consultation</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organic --></label>
+        <name>Organic</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

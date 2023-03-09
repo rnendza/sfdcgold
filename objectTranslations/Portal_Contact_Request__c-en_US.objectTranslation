@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Portal Contact Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Portal Contact Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel VGT Live Date --></label>
+        <name>Accel_VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 10 RM --></label>
+        <name>Additional_Account_10_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 10 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Additional_Account_10__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Additional Account 10) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 6 RM --></label>
+        <name>Additional_Account_6_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 6 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Additional_Account_6__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Additional Account 6) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 7 RM --></label>
+        <name>Additional_Account_7_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 7 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Additional_Account_7__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Additional Account 7) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 8 RM --></label>
+        <name>Additional_Account_8_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 8 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Additional_Account_8__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Additional Account 8) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 9 RM --></label>
+        <name>Additional_Account_9_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 9 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Additional_Account_9__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Additional Account 9) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Information --></label>
+        <name>Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alias --></label>
+        <name>Alias__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Action --></label>
+        <name>Approval_Action__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved By --></label>
+        <name>Approved_By__c</name>
+    </fields>
+    <fields>
+        <help><!-- Which one is the primary related account? --></help>
+        <label><!-- DBA Name (Direct Relationship) --></label>
+        <name>DBA_Name_Direct_Relationship__c</name>
+        <relationshipLabel><!-- Portal Contact Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Does gaming decision maker approve this contact having access to their location(s) portal data? --></help>
+        <label><!-- Does Key Gaming Decision Maker Approve? --></label>
+        <name>Does_Key_Gaming_Decision_Maker_Approve__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Email --></label>
+        <name>Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Full Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is this contact on the gaming application and/or liquor license, or are they a Mail Merge Recipient? --></help>
+        <label><!-- Is Contact Key Gaming Decision Maker? --></label>
+        <name>Is_Contact_Key_Gaming_Decision_Maker__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Portal Support Ticketing System --></label>
+        <name>Portal_Support_Ticketing_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Meeting Date --></label>
+        <name>Proposed_Meeting_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Rejection --></label>
+        <name>Reason_for_Rejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Manager --></label>
+        <name>Regional_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected By --></label>
+        <name>Rejected_By__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 1 RM --></label>
+        <name>Related_Account_1_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 1 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Related_Account_1__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Related Account 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 2 RM --></label>
+        <name>Related_Account_2_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 2 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Related_Account_2__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Related Account 2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 3 RM --></label>
+        <name>Related_Account_3_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 3 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Related_Account_3__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Related Account 3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 4 RM --></label>
+        <name>Related_Account_4_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 4 --></label>
+        <lookupFilter>
+            <errorMessage><!-- Account Type must be Accel, Temp Closure, or Other. --></errorMessage>
+        </lookupFilter>
+        <name>Related_Account_4__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Related Account 4) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 5 RM --></label>
+        <name>Related_Account_5_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Account 5 --></label>
+        <name>Related_Account_5__c</name>
+        <relationshipLabel><!-- Portal Contact Requests (Related Account 5) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Created in case record types are needed in the future. --></description>
+        <label><!-- Standard Portal Contact Request Record Type --></label>
+        <name>Standard_Portal_Contact_Request_Record_Type</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This request can no longer be edited because a decision was made. --></errorMessage>
+        <name>Cannot_Edit_After_Approval_Action</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, enter a value for &quot;Does Key Gaming Decision Maker Approve?&quot; field. --></errorMessage>
+        <name>Does_Key_Gaming_Decision_Maker_Approve</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter a reason for the rejection of this PCR. --></errorMessage>
+        <name>Reason_for_Rejection_is_required</name>
+    </validationRules>
+</CustomObjectTranslation>

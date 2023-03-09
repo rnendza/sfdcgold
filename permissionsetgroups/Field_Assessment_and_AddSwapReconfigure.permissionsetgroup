@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Users have the ability to mark Field Assessments as complete and update the Add/Swap/reconfigure status on projects.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Field Assessment and Add/Swap/Reconfigure</label>
+    <mutingPermissionSets>Modify_All_Muted</mutingPermissionSets>
+    <permissionSets>John_Ciszek_Field_Assessments</permissionSets>
+    <permissionSets>Project_Add_Swap_Reconfigure_Approval</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

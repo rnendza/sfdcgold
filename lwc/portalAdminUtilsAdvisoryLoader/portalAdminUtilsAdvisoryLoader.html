@@ -1,0 +1,149 @@
+<!-- Portal Admin Utils Advisory Loader -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <div if:true={showProgressBar}
+                     class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                    <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+                </div>
+
+                <!--- ===== Card Button Menu ===== -->
+                <lightning-button-menu
+                        icon-name="utility:settings"
+                        icon-size="medium" if:true={showCardActions} menu-alignment="right"
+                        class="accel-icon-blue"
+                        onselect={handleCardMenuSelect}
+                        slot="actions" variant="border-filled">
+                    <template for:each={cardActions} for:item="option">
+                        <lightning-menu-item
+                                prefix-icon-name={option.prefixIconName}
+                                key={option.id}
+                                label={option.label}
+                                value={option.id}>
+                        </lightning-menu-item>
+                    </template>
+                </lightning-button-menu>
+
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title={cardTitle}
+                                    card-subtitle={cardSubTitle}
+                                    sub-title-text-style="font-size:.80rem"
+                                    icon-name="standard:data_mapping"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+
+                <template if:true={_isLoading}>
+                    <c-ui-custom-stencil
+                            iterations="6"
+                            child-class="slds-var-m-around-small"
+                            type="list" columns="3">
+                    </c-ui-custom-stencil>
+                </template>
+
+                <div class="slds-p-horizontal_small">
+
+                    <!--- ===== Assistant / Help ===== -->
+                    <c-portal-admin-advisory-loader-assistant
+                            if:true={showAssistance}
+                            title={assistanceTitle}
+                            bullet-point-category={paAdvisoryBulletPointCategory}
+                            bullet-points={paAdvisoryBulletPoints}>
+                    </c-portal-admin-advisory-loader-assistant>
+
+                    <!-- ======  Server Side Search ======= -->
+                    <template if:true={showServerSideSearch}>
+                        <c-portal-advisory-loader-search
+                                start-date={startDate}
+                                end-date={endDate}
+                                match-to-sfdc-recs={matchToSfdcReqs}
+                                custom-mdt-dev-name={customMdtDevName}
+                                search-button-variant="brand"
+                                debug-console={debugConsole}
+                                is-upserting={_isUpserting}
+                                onsearchcompleted={handleSearchCompleted}
+                                onclosesearchfilter={handleSearchFiltersClose}>
+                        </c-portal-advisory-loader-search>
+                    </template>
+                    <!-- ======  Datatable / Results ======= -->
+                    <template if:true={showUserRecords}>
+                        <div if:false={showServerSideSearch} class="slds-p-top_small"></div>
+                        <!-- ======  Datatable Client Side Filters ======= -->
+                        <div class="slds-p-bottom_small slds-box_small slds-box_border">
+                            <div class="slds-grid slds-wrap slds-p-around_x-small">
+                                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_x-small">
+                                    <div>
+                                        <span>
+                                            <lightning-icon
+                                                    icon-name="standard:filter_criteria"
+                                                    class="slds-m-right_x-small"
+                                                    size="small">
+                                            </lightning-icon>
+                                        </span>
+                                        <span class="slds-text-color_weak slds-text-body_small">
+                                            Showing <b>{totalFilteredRows}</b> of {totalServerRows} rows.
+                                        </span>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                            <lightning-input
+                                                    onchange={handleDtSearchKeyChange}
+                                                    name="enter-search"
+                                                    value={_dtFilter}
+                                                    placeholder="Filter Users.."
+                                                    variant="label-hidden"
+                                                    type="search"
+                                            ></lightning-input>
+                                        </div>
+                                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="slds-text-align_right slds-p-horizontal_medium">
+                                                    <button
+                                                            name="upsertRecords"
+                                                            data-id="upsertrecords"
+                                                            class="slds-button slds-button_destructive slds-m-left_x-small slds-button_stretch"
+                                                            title="Click here UPSERT records."
+                                                            disabled={disableUpsertButton}
+                                                            onclick={handleButtonClick}>
+                                                            <span class="slds-p-right_xx-small">
+                                                                <lightning-icon
+                                                                    icon-name="utility:record_create"
+                                                                    variant="inverse"
+                                                                    alternative-text=""
+                                                                    size="x-small"
+                                                                    title="">
+                                                                </lightning-icon>
+                                                            </span>
+                                                        {upsertButtonLabel}
+                                                    </button>
+                                                </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <lightning-datatable key-field={dtKeyField}
+                                             data={dtDataRecords}
+                                             hide-checkbox-column="true"
+                                             columns={columns}
+                                             sorted-direction={sortDirection}
+                                             sorted-by={sortBy}
+                                             onrowaction={handleRowAction}
+                                             onsort={handleDtSort}
+                                             class={dtClasses}>
+                        </lightning-datatable>
+                    </template>
+
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

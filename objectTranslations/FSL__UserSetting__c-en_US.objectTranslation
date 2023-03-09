@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Date Horizon Properties --></label>
+        <name>FSL__Date_Horizon_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days In Utilization View --></label>
+        <name>FSL__DaysInUtilizationView__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Left Panel --></label>
+        <name>FSL__DefaultLeftPanel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Duration --></label>
+        <name>FSL__Drag_Na_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Label --></label>
+        <name>FSL__Drag_Na_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Type --></label>
+        <name>FSL__Drag_Na_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Territories --></label>
+        <name>FSL__FavoriteTerritories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Candidates --></label>
+        <name>FSL__Filter_Candidates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filters --></label>
+        <name>FSL__Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Palette --></label>
+        <name>FSL__Gantt_Palette__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gantt Chart Policy --></label>
+        <name>FSL__Gantt_Policy__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gantt View Finish Hour --></label>
+        <name>FSL__Gantt_View_Finish_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt View Start Hour --></label>
+        <name>FSL__Gantt_View_Start_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlight Weekeneds --></label>
+        <name>FSL__Highlight_Weekeneds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Weekends --></label>
+        <name>FSL__Include_Weekends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Polygons --></label>
+        <name>FSL__Invisible_Polygons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Panel Width Percentage --></label>
+        <name>FSL__Left_Panel_Width_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load On Today --></label>
+        <name>FSL__Load_On_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lock Gantt --></label>
+        <name>FSL__Lock_Gantt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longterm Minimum Absence Duration --></label>
+        <name>FSL__Longterm_Min_Absence_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longterm Minimum Service Duration --></label>
+        <name>FSL__Longterm_Min_Service_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months on view --></label>
+        <name>FSL__Longterm_Num_Of_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marker Clustering --></label>
+        <name>FSL__Map_Markers_Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Object Markers --></label>
+        <name>FSL__Map_Object_Markers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Reports --></label>
+        <name>FSL__Map_Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Gantt Dates --></label>
+        <name>FSL__Match_Gantt_Dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Filter --></label>
+        <name>FSL__Resource_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Row Height --></label>
+        <name>FSL__Resource_Row_Height__c</name>
+        <picklistValues>
+            <masterLabel>large</masterLabel>
+            <translation><!-- large --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>medium</masterLabel>
+            <translation><!-- medium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>small</masterLabel>
+            <translation><!-- small --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>xsmall</masterLabel>
+            <translation><!-- xsmall --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduling horizon limit --></label>
+        <name>FSL__Scheduling_horizon_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected List View --></label>
+        <name>FSL__Selected_List_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service List Coloring --></label>
+        <name>FSL__ServiceListColoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services_List_Height Percentage --></label>
+        <name>FSL__Services_List_Height_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Per Page --></label>
+        <name>FSL__Services_Per_Page__c</name>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation><!-- 100 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>125</masterLabel>
+            <translation><!-- 125 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150</masterLabel>
+            <translation><!-- 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation><!-- 50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation><!-- 75 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Show Favorite Territories Tab --></label>
+        <name>FSL__ShowFavoriteTerritoriesTab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show only MDT in Longterm --></label>
+        <name>FSL__Show_Only_MDT_In_Longterm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Orphan Services --></label>
+        <name>FSL__Show_Orphan_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Filter Logic Operator --></label>
+        <name>FSL__Skills_Logic_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggled Territories --></label>
+        <name>FSL__Toggled_Territories__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>FSL__User__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Utilization Properties --></label>
+        <name>FSL__Utilization_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Capacity Type --></label>
+        <name>FSL__View_Capacity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day</masterLabel>
+            <translation><!-- Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation><!-- Month --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation><!-- Week --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

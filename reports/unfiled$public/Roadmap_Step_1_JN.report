@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c$Account__c</field>
+    </columns>
+    <description>For all new projects that have not begun the Field Assessment (if it is a new install or add) or that have not reached the stage for VGT allocation.
+Still Needs: Project Type, &amp; a way to figure out when can a project get VGTs allocated.</description>
+    <filter>
+        <criteriaItems>
+            <column>Project__c$Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Closure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Field_Assessments__r$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>FA</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Date_of_Asset_Allocation__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Add_Swap_Reconfigure_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>New,Pending Regional Manager Approval,Pending Machine Assignment,Pending Executive Approval</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Roadmap - Step 1 (JN)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Projects_and_Field_Assessments__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c$Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

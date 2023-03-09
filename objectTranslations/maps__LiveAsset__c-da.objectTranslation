@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivet</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktiv</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Live-aktiv</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktiverne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktiver</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Live-aktiver</value>
+    </caseValues>
+    <fields>
+        <help>Er aktivet aktuelt et aktivt lager/flådeelement?</help>
+        <label><!-- Active --></label>
+        <name>maps__Active__c</name>
+    </fields>
+    <fields>
+        <help>Beskyttet id til at identificere aktiver i firmaet</help>
+        <label><!-- Asset Id --></label>
+        <name>maps__AssetId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Fabrikat for køretøj eller ikke-køretøj</help>
+        <label><!-- Make --></label>
+        <name>maps__Make__c</name>
+    </fields>
+    <fields>
+        <help>Model af et køretøj eller ikke-køretøj</help>
+        <label><!-- Model --></label>
+        <name>maps__Model__c</name>
+    </fields>
+    <fields>
+        <help>Seneste tilgængelige odometer-aflæsning i kilometer</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Seneste tilgængelige odometer-aflæsning i mil</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>Et entydigt id for ikke-motoriserede og terrængående aktiver</help>
+        <label><!-- Serial Number --></label>
+        <name>maps__SerialNumber__c</name>
+    </fields>
+    <fields>
+        <help>Aktivtype, køretøj eller ikke-køretøj osv.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other Equipment</masterLabel>
+            <translation>Andet udstyr</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation>Køretøj</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Id-nummer på aktiver af typen køretøj</help>
+        <label><!-- VIN --></label>
+        <name>maps__VIN__c</name>
+    </fields>
+    <fields>
+        <help>År for fabrikat/model for aktivet.</help>
+        <label><!-- Year --></label>
+        <name>maps__Year__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Maps Live-aktivnavn</nameFieldLabel>
+</CustomObjectTranslation>

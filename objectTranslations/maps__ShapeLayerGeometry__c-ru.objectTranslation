@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Геометрия слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Геометрии слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Геометрию слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Геометрии слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Геометрии слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Геометрий слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Геометрии слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Геометриям слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Геометрией слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Геометриями слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Геометрии слоя формы Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Геометриях слоя формы Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 10 --></label>
+        <name>maps__Geometry10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 2 --></label>
+        <name>maps__Geometry2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 3 --></label>
+        <name>maps__Geometry3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 4 --></label>
+        <name>maps__Geometry4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 5 --></label>
+        <name>maps__Geometry5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 6 --></label>
+        <name>maps__Geometry6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 7 --></label>
+        <name>maps__Geometry7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 8 --></label>
+        <name>maps__Geometry8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 9 --></label>
+        <name>maps__Geometry9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry Size --></label>
+        <name>maps__GeometrySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry --></label>
+        <name>maps__Geometry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Shape Layer --></label>
+        <name>maps__ShapeLayer__c</name>
+        <relationshipLabel><!-- Shape Layers Geometries --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Имя геометрии</nameFieldLabel>
+</CustomObjectTranslation>

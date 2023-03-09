@@ -1,0 +1,27 @@
+<apex:page docType="html-5.0" standardController="Marketing_Request__c">
+    
+
+    <style>
+        .mypage  {
+            margin: 12px 0;
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            }
+    </style>
+    
+    <div class="mypage">
+     <h style="text-align: center;font-family: tahoma;color:black;font-size: 16px;font-weight: bold; ">
+                    INSTRUCTIONS 
+</h>
+        <p>
+        <ul style="list-style-type: square;font-family: tahoma;">Upon saving record, choose your item for reimbursement from the related Marketing Product list.</ul>
+        Please choose only 1 item per reimbursement request. When you are done, simply click save, and the request will be forwarded to Marketing. Marketing will obtain approvals for your item and let you know when the location is approved to move forward with their ad or item. 
+       </p>
+       <p style="font-family: tahoma;">Once your paid invoice is received, click File and upload the paid invoice, then click the button for Submit Invoice. This will initiate the Accounting check process.
+       </p>
+       
+       
+    </div>
+    
+</apex:page>

@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Account$Purchased_From__c</field>
+    </columns>
+    <columns>
+        <field>Account$Revenue_Sharer__c</field>
+    </columns>
+    <columns>
+        <field>Account$Sales_Agent__c</field>
+    </columns>
+    <columns>
+        <field>Account$Source_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account$Amusement_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Account$Mail_Merge_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$IGB_Contact__c</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Original_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Current_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Type</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7 OR 8</booleanFilter>
+        <criteriaItems>
+            <column>Account$Amusement_Operator__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$IGB_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Mail_Merge_Contact__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Sales_Agent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Source_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Partner_Operator__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Revenue_Sharer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Purchased_From__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contact Audit: Accounts</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account</field>
+    </columns>
+    <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Referrer__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Split_1__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Split_2__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Split_3__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Date_Agreement_Signed__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Credit_for_TUA__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$TUA_Submitted_On_Behalf_Of__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity$StageName</field>
+    </columns>
+    <columns>
+        <field>Opportunity$CloseDate</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3 OR 4 OR 5 OR 6 OR 7</booleanFilter>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Split_1__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Split_2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Split_3__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Credit_for_TUA__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Partner_Operator_Credit__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$TUA_Submitted_On_Behalf_Of__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Opportunity$Opportunity_Referrer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contact Audit: Opportunities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Op_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity$StageName</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Addendum_Request_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

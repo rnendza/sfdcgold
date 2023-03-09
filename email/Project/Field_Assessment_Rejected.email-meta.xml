@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Sent to the Field Assessment owner when an Assessment is Rejected</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Field Assessment Rejected</name>
+    <style>none</style>
+    <subject>Field Assessment Rejected: {!Field_Assessment__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>When Scheduled Install Date is populated, and email alert is sent to Laine</description>
+        <name>Send_Notification</name>
+        <label>Send Notification</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>varAlertMessage</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>lainel@accelentertainment.com,jordant@accelentertainment.com,nicolej@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>A Project Has a Scheduled Install Date</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <description>Send notifications when Scheduled Install Date is populated.</description>
+    <environments>Default</environments>
+    <interviewLabel>Project: Scheduled {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project: Scheduled Install Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Send_Notification</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterFormula>and(
+not(ISBLANK({!$Record.Scheduled_Install_Date__c})),  {!$Record.Account__r.ShippingState}=&quot;IL&quot;,
+or(  {!$Record.RecordType.DeveloperName}=&quot;Competitor&quot;,    {!$Record.RecordType.DeveloperName}=&quot;Organic&quot;)
+)</filterFormula>
+        <object>Project__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>varAlertMessage</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A project has a Scheduled Install Date. Below, are the pertinent details.
+
+DBA Name:  {!$Record.Account__r.DBA_Account_Name__c}
+
+State: {!$Record.State__c}
+
+Physical Address: {!$Record.Physical_Address__c}
+
+IGB License #:  {!$Record.IGB_License__c}
+
+Scheduled Install Date:  {!$Record.Scheduled_Install_Date__c}
+
+Project Record Link:
+{!$Record.Project_Record_Link__c}</text>
+    </textTemplates>
+</Flow>

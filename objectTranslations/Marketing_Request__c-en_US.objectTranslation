@@ -1,0 +1,2985 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Marketing Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Marketing Requests</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel Artwork Theme (SCS) --></label>
+        <name>Accel_Artwork_Theme_SCS__c</name>
+        <picklistValues>
+            <masterLabel>$$$ Reels with Cash</masterLabel>
+            <translation><!-- $$$ Reels with Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cosmic Reels</masterLabel>
+            <translation><!-- Cosmic Reels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diamond in the Rough</masterLabel>
+            <translation><!-- Diamond in the Rough --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted - Honeycomb</masterLabel>
+            <translation><!-- Frosted - Honeycomb --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diagonal Stripes – Thick</masterLabel>
+            <translation><!-- Frosted – Diagonal Stripes – Thick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diagonal Stripes – Thin</masterLabel>
+            <translation><!-- Frosted – Diagonal Stripes – Thin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diamonds</masterLabel>
+            <translation><!-- Frosted – Diamonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Half Solid Wall</masterLabel>
+            <translation><!-- Frosted – Half Solid Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Reels</masterLabel>
+            <translation><!-- Frosted – Reels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Suites</masterLabel>
+            <translation><!-- Frosted – Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming – Reels, Cards, Wheel (Black &amp; White)</masterLabel>
+            <translation><!-- Gaming – Reels, Cards, Wheel (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Logo Gaming</masterLabel>
+            <translation><!-- Logo Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midnight Lights with 777 Reels (Black &amp; White)</masterLabel>
+            <translation><!-- Midnight Lights with 777 Reels (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neon Lights – 777 Reels, Cards, Wheel</masterLabel>
+            <translation><!-- Neon Lights – 777 Reels, Cards, Wheel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neon Sign on Brick Wall</masterLabel>
+            <translation><!-- Neon Sign on Brick Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Vegas – 777 Reels, Cards, Poker Chips</masterLabel>
+            <translation><!-- New Vegas – 777 Reels, Cards, Poker Chips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Vegas</masterLabel>
+            <translation><!-- Old Vegas --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retro Gaming</masterLabel>
+            <translation><!-- Retro Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Lineup (Black &amp; White)</masterLabel>
+            <translation><!-- VGT Lineup (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Lineup (Color)</masterLabel>
+            <translation><!-- VGT Lineup (Color) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT with Cash (Black &amp; White)</masterLabel>
+            <translation><!-- VGT with Cash (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegas - $$$ Reels, Cards, Poker Chips</masterLabel>
+            <translation><!-- Vegas - $$$ Reels, Cards, Poker Chips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegas Skyline (Black &amp; White)</masterLabel>
+            <translation><!-- Vegas Skyline (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegas Skyline (Color)</masterLabel>
+            <translation><!-- Vegas Skyline (Color) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Poker</masterLabel>
+            <translation><!-- Video Poker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vintage Gaming</masterLabel>
+            <translation><!-- Vintage Gaming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accel Payment Percentage --></label>
+        <name>Accel_Payment_Percentage__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the amount of the Total Cost Share that Accel is to pay. --></help>
+        <label><!-- Accel Portion of Cost Share --></label>
+        <name>Accel_Portion_of_Cost_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Product --></label>
+        <name>Accel_Product__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotional Giveaway Posters</masterLabel>
+            <translation><!-- Promotional Giveaway Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punch Cards</masterLabel>
+            <translation><!-- Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vouchers</masterLabel>
+            <translation><!-- Vouchers --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accel Tag Line --></label>
+        <name>Accel_Tag_Line__c</name>
+        <picklistValues>
+            <masterLabel>24 Hour Gaming</masterLabel>
+            <translation><!-- 24 Hour Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Big Jackpot Won Here</masterLabel>
+            <translation><!-- Big Jackpot Won Here --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hit the Jackpot</masterLabel>
+            <translation><!-- Hit the Jackpot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Must be 19 or Older to Enter</masterLabel>
+            <translation><!-- Must be 19 or Older to Enter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Must be 21 or Older to Enter</masterLabel>
+            <translation><!-- Must be 21 or Older to Enter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play Skill Games</masterLabel>
+            <translation><!-- Play Skill Games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play Slots</masterLabel>
+            <translation><!-- Play Slots --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Play to Win Cash</masterLabel>
+            <translation><!-- Play to Win Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Private Gaming Room</masterLabel>
+            <translation><!-- Private Gaming Room --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accel&apos;s Customized Printed Collateral --></label>
+        <name>Accel_s_Customized_Printed_Collateral__c</name>
+        <picklistValues>
+            <masterLabel>Accel’s Quick Promo Picks Posters (50/50 Split)</masterLabel>
+            <translation><!-- Accel’s Quick Promo Picks Posters (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel’s Quick Promo Picks Punch Cards (50/50 Split)</masterLabel>
+            <translation><!-- Accel’s Quick Promo Picks Punch Cards (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel’s Quick Promo Picks Scratch Off Cards (50/50 Split)</masterLabel>
+            <translation><!-- Accel’s Quick Promo Picks Scratch Off Cards (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn – Promotional Posters (50/50 Split)</masterLabel>
+            <translation><!-- Autumn – Promotional Posters (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic - Promotional Posters (50/50 Split)</masterLabel>
+            <translation><!-- Generic - Promotional Posters (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring – Promotional Posters (50/50 Split)</masterLabel>
+            <translation><!-- Spring – Promotional Posters (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer – Promotional Posters (50/50 Split)</masterLabel>
+            <translation><!-- Summer – Promotional Posters (50/50 Split) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Winter – Promotional Posters (50/50 Split)</masterLabel>
+            <translation><!-- Winter – Promotional Posters (50/50 Split) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AccountID --></label>
+        <name>AccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Budget Indicator --></label>
+        <name>Account_Budget_Indicator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Marketing Requests (Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Actual Run End Date --></label>
+        <name>Actual_Run_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Actual Run Start Date --></label>
+        <name>Actual_Run_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional Brand Ambassador --></label>
+        <name>AdditionalBrandAmbassador__c</name>
+        <relationshipLabel><!-- Marketing Requests (Additional Brand Ambassador) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Approver --></label>
+        <name>Additional_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Additional Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ALE Loc Adjustment Notes --></label>
+        <name>Adjustments_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- All Items Ready for Pickup --></label>
+        <name>All_Items_Ready_for_Pickup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Approved Amount --></label>
+        <name>Amount_Paid_By_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Paid --></label>
+        <name>Amount_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Won Graphic --></label>
+        <name>Amount_Won_Graphic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Co-Op Budget --></label>
+        <name>Annual_Co_Op_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Notes --></label>
+        <name>Approval_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approvals Complete? --></label>
+        <name>Approvals_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- April --></label>
+        <name>April__c</name>
+    </fields>
+    <fields>
+        <label><!-- Art Approval TAT --></label>
+        <name>Art_Approval_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Art Approver --></label>
+        <name>Art_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Art Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Artwork Approved --></label>
+        <name>Artwork_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Artwork Due Date --></label>
+        <name>Artwork_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Artwork Height (in inches) --></label>
+        <name>Artwork_Height_in_inches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Artwork Width (inches) --></label>
+        <name>Artwork_Width__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Brand Ambassador --></label>
+        <name>Assigned_Brand_Ambassador__c</name>
+        <relationshipLabel><!-- Marketing Requests (Assigned Brand Ambassador) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned Digital Coordinator --></label>
+        <name>Assigned_Digital_Coordinator__c</name>
+        <relationshipLabel><!-- Marketing Requests (Assigned Digital Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned Email Approver --></label>
+        <name>Assigned_Email_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Assigned Email Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned Marketing Coordinator --></label>
+        <name>Assigned_Marketing_Coordinator__c</name>
+        <relationshipLabel><!-- Marketing Requests (Assigned Marketing Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- August --></label>
+        <name>August__c</name>
+    </fields>
+    <fields>
+        <label><!-- Azure External Id --></label>
+        <name>Azure_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Month --></label>
+        <name>Billing_Start_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Billing Start Year --></label>
+        <name>Billing_Start_Year__c</name>
+        <picklistValues>
+            <masterLabel>2023</masterLabel>
+            <translation><!-- 2023 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2024</masterLabel>
+            <translation><!-- 2024 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2025</masterLabel>
+            <translation><!-- 2025 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brand Ambassador Status --></label>
+        <name>Brand_Ambassador_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approval</masterLabel>
+            <translation><!-- Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Complete</masterLabel>
+            <translation><!-- Event Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Setup</masterLabel>
+            <translation><!-- Event Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information Stage</masterLabel>
+            <translation><!-- Information Stage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event Data</masterLabel>
+            <translation><!-- Post-Event Data --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Brand Ambassador --></label>
+        <name>Brand_Ambassador__c</name>
+        <relationshipLabel><!-- Marketing Requests (Brand Ambassador) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Are there any reason why installation in this location will be challenging (furniture in the way, thin walls, thing already on wall, wall made of something other than drywall- - -like concrete or glass, etc)? --></help>
+        <label><!-- Challenges to Installation --></label>
+        <name>Challenges_to_Installation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check Number --></label>
+        <name>Check_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chromebit Serial Number --></label>
+        <name>Chromebit_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Op Budget --></label>
+        <name>Co_Op_Budget__c</name>
+    </fields>
+    <fields>
+        <label><!-- Co-Op Project Stages --></label>
+        <name>Co_Op_Project_Stages__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Invoice</masterLabel>
+            <translation><!-- Pending Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collateral Type --></label>
+        <name>Collateral_Quantity__c</name>
+        <picklistValues>
+            <masterLabel>10 Posters - $45/$22.50</masterLabel>
+            <translation><!-- 10 Posters - $45/$22.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1000 Scratch Off Cards - $630/$315</masterLabel>
+            <translation><!-- 1000 Scratch Off Cards - $630/$315 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>200 Scratch Off Cards - $230/$115</masterLabel>
+            <translation><!-- 200 Scratch Off Cards - $230/$115 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>400 Scratch Off Cards - $375/187.50</masterLabel>
+            <translation><!-- 400 Scratch Off Cards - $375/187.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5 Posters - $40/$20</masterLabel>
+            <translation><!-- 5 Posters - $40/$20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 Punch Cards - $69/34.50</masterLabel>
+            <translation><!-- 500 Punch Cards - $69/34.50 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>500 Scratch Off Tickets - $94/$47</masterLabel>
+            <translation><!-- 500 Scratch Off Tickets - $94/$47 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compliance Approver 1 --></label>
+        <name>Compliance_Approver_1__c</name>
+        <relationshipLabel><!-- Marketing Requests (Compliance Approver 1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Final Compliance Approver --></label>
+        <name>Compliance_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Final Compliance Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compliance Artwork Approval --></label>
+        <name>Compliance_Artwork_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Artwork Approved --></label>
+        <name>Compliance_Artwork_Compliance_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Rejection Reason --></label>
+        <name>Compliance_Denial_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Need Values</masterLabel>
+            <translation><!-- Need Values --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compliance TAT --></label>
+        <name>Compliance_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Chromebit Coordinator --></label>
+        <name>Content_Coordinator__c</name>
+        <relationshipLabel><!-- Marketing Requests (Chromebit Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Content Note --></label>
+        <name>Content_Note__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Approval TAT --></label>
+        <name>Cost_Approval_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Approval Stage --></label>
+        <name>Cost_Approval__c</name>
+        <picklistValues>
+            <masterLabel>Cost Approved</masterLabel>
+            <translation><!-- Cost Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cost Rejected</masterLabel>
+            <translation><!-- Cost Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cost Approver --></label>
+        <name>Cost_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Cost Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Cost Share Sent To Accounting --></label>
+        <name>Cost_Share_Sent_To_Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cost Approval --></label>
+        <name>Cost_approval_yes_no__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Beacon in ALE --></label>
+        <name>Create_Beacon_in_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Task --></label>
+        <name>Create_Task__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Size? --></label>
+        <name>Custom_Size__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DBA Address --></label>
+        <name>DBA_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name --></label>
+        <name>DBA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Accounting Approval Rcvd --></label>
+        <name>Date_Accounting_Approval_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Accounting Approves Opt Out --></label>
+        <name>Date_Accounting_Approves_Opt_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Added to Calendar of Events --></label>
+        <name>Date_Added_to_Calendar_of_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Ambassador Event Scheduled --></label>
+        <name>Date_Ambassador_Event_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Approved By Emily --></label>
+        <name>Date_Approved_By_Emily__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Check Issued --></label>
+        <name>Date_Check_Issued__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Chromebit Is Set Up --></label>
+        <name>Date_Chromebit_Is_Set_Up__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Final Compliance Approval --></label>
+        <name>Date_Compliance_Approval_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Cost Approval Received --></label>
+        <name>Date_Cost_Approval_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Cost Share Received --></label>
+        <name>Date_Cost_Share_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Disclaimers Pulled from File Section --></help>
+        <label><!-- Date Disclaimers Pulled from File Sectn --></label>
+        <name>Date_Disclaimers_Pulled_from_File_Sectn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Email Approved --></label>
+        <name>Date_Email_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Email/Text Approved --></label>
+        <name>Date_Email_Text_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Event Notification Sent to Ambassad --></label>
+        <name>Date_Event_Notification_Sent_to_Ambassad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Feedback and Results Sent to RM --></label>
+        <name>Date_Feedback_and_Results_Sent_to_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Letter Agreement Uploaded --></label>
+        <name>Date_Letter_Agreement_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Location Opts Out --></label>
+        <name>Date_Location_Opts_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Marketing Manager Approval Rcvd --></label>
+        <name>Date_Marketing_Manager_Approval_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Ordered From Vendor --></label>
+        <name>Date_Ordered_From_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Players Pulled From ALE --></label>
+        <name>Date_Players_Pulled_From_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Promo Posters Sent to Location --></label>
+        <name>Date_Promo_Posters_Sent_to_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Proofreader Approval Rcvd --></label>
+        <name>Date_Proofreader_Approval_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Quote Finalized --></label>
+        <name>Date_Quote_1_Finalized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Quote 2 Finalized --></label>
+        <name>Date_Quote_2_Finalized__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Rcvd From Vendor --></label>
+        <name>Date_Rcvd_From_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Received From Content Coordinator --></label>
+        <name>Date_Received_From_Content_Coordinator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Regional Lead Approval Received --></label>
+        <name>Date_Regional_Lead_Approval_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Returned From Graphic Designer --></label>
+        <name>Date_Returned_From_Graphic_Designer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent For Final Compliance Approval --></label>
+        <name>Date_Sent_For_Compliance_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent For Cost Approval --></label>
+        <name>Date_Sent_For_Cost_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent For Cost Share --></label>
+        <name>Date_Sent_For_Cost_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent For Location Approval --></label>
+        <name>Date_Sent_For_Location_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent To Emily --></label>
+        <name>Date_Sent_To_Emily__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Art Approval --></label>
+        <name>Date_Sent_for_Art_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Email/Text Approval --></label>
+        <name>Date_Sent_for_Email_Text_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Marketing Manager Approval --></label>
+        <name>Date_Sent_for_Marketing_Manager_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Proofread --></label>
+        <name>Date_Sent_for_Proofread__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Quote --></label>
+        <name>Date_Sent_for_Quote_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Quote #2 --></label>
+        <name>Date_Sent_for_Quote_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent for Regional Lead Approval --></label>
+        <name>Date_Sent_for_Regional_Lead_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Accounting --></label>
+        <name>Date_Sent_to_Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Compliance Approver 1 --></label>
+        <name>Date_Sent_to_Compliance_Approver_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Content Coordinator --></label>
+        <name>Date_Sent_to_Content_Coordinator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Digital Coordinator --></label>
+        <name>Date_Sent_to_Digital_Coordinator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Email Approver --></label>
+        <name>Date_Sent_to_Email_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Graphic Designer --></label>
+        <name>Date_Sent_to_Graphic_Designer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Sent to Installer --></label>
+        <name>Date_Sent_to_Installer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Social Media Graphics Sent to Locat --></label>
+        <name>Date_Social_Media_Graphics_Sent_to_Locat__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Social Media Post Made --></label>
+        <name>Date_Social_Media_Post_Made__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Social Media Post Sent for Approval --></label>
+        <name>Date_Social_Media_Post_Sent_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Social media Post Approved --></label>
+        <name>Date_Social_media_Post_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Submit Opt Out to Accounting --></label>
+        <name>Date_Submit_Opt_Out_to_Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Art Approval --></label>
+        <name>Date_of_Art_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Compliance 1 Approval --></label>
+        <name>Date_of_Compliance_1_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Compliance Rejection --></label>
+        <name>Date_of_Compliance_Rejection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Digital Approval --></label>
+        <name>Date_of_Digital_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Event --></label>
+        <name>Date_of_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Event --></label>
+        <name>Date_of_Event_fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Install --></label>
+        <name>Date_of_Install__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Edit --></label>
+        <name>Date_of_Last_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Location Approval --></label>
+        <name>Date_of_Location_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of MC Acknowledgement --></label>
+        <name>Date_of_MC_Acknowledgement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of RM/BDM Completion --></label>
+        <name>Date_of_RM_BDM_Completion__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date to Send Email --></label>
+        <name>Date_to_Send_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date to Send Text Message --></label>
+        <name>Date_to_Send_Text_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Due --></label>
+        <name>Days_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Notes --></label>
+        <name>Days_Since_Last_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Sent to Accounting --></label>
+        <name>Days_Since_Sent_to_Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Until Event --></label>
+        <name>Days_Until_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deactivate Location Manager User in ALE --></label>
+        <name>Deactivate_Location_Manager_User_in_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- December --></label>
+        <name>December__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction Days Elapsed --></label>
+        <name>Deduction_Days_Elapsed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction End Date --></label>
+        <name>Deduction_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deduction Start Date --></label>
+        <name>Deduction_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design Complete --></label>
+        <name>Design_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Design TAT --></label>
+        <name>Design_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Digital Path Stages --></label>
+        <name>Digital_Path_Stages__c</name>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Direct Mail/Postage --></label>
+        <name>Direct_Mail_Postage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disenroll Tablet Hexnode ID --></label>
+        <name>Disenroll_Tablet_Hexnode_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- How far is the install location from two electrical outlets that will be used (measure from the center of the intended monitor space)? --></help>
+        <label><!-- Distance from Electrical Outlet --></label>
+        <name>Distance_from_Electrical_Outlet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does Location Have TouchTunes Jukebox? --></label>
+        <name>Does_Location_Have_TouchTunes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes, Location has Accel TouchTunes</masterLabel>
+            <translation><!-- Yes, Location has Accel TouchTunes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Does Location Have Wi-Fi? --></label>
+        <name>Does_Location_Have_Wi_Fi__c</name>
+        <picklistValues>
+            <masterLabel>No (If no, Location cannot get TouchTunes TV)</masterLabel>
+            <translation><!-- No (If no, Location cannot get TouchTunes TV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes (provide Network Name/Password below)</masterLabel>
+            <translation><!-- Yes (provide Network Name/Password below) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Double Sided --></label>
+        <name>Double_Sided__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drawing Date and Time --></label>
+        <name>Drawing_Date_and_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- EXTERNAL ID --></label>
+        <name>EXTERNAL_ID__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fill out the approver name, then click Submit for Approval --></help>
+        <label><!-- Email/Text Approver --></label>
+        <name>Email_Text_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Email/Text Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email/Text Coordinator --></label>
+        <name>Email_Text_Coordinator__c</name>
+        <relationshipLabel><!-- Marketing Requests (Email/Text Coordinator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Email UpShow to Disenroll Location --></label>
+        <name>Email_UpShow_to_Disenroll_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Emailed Compliance &amp; Chattered WeeklyPay --></label>
+        <name>Emailed_Compliance_Chattered_WeeklyPay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated # of Attendees --></label>
+        <name>Estimated_of_Attendees__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event End Time --></label>
+        <name>Event_End_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event End Time --></label>
+        <name>Event_End_Time_fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Photos Uploaded --></label>
+        <name>Event_Photos_Uploaded__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Start Time --></label>
+        <name>Event_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Start Time --></label>
+        <name>Event_Start_Time_fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Run End Date --></label>
+        <name>Expected_Run_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Run Start Date --></label>
+        <name>Expected_Run_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Total Prize Value --></label>
+        <name>Expected_Total_Prize_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Location Entries from ALE --></label>
+        <name>Export_Location_Entries_from_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Player Data from ALE --></label>
+        <name>Export_Player_Data_from_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- FSG User Lookup --></label>
+        <name>FSG_User_Lookup__c</name>
+        <relationshipLabel><!-- Marketing Requests (FSG User Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- February --></label>
+        <name>February__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feedback Notes From Jr Ambassador --></label>
+        <name>Feedback_Notes_From_Jr_Ambassador__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filled In Tinley --></label>
+        <name>Filled_In_Tinley__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Approval Submission --></label>
+        <name>Finance_Approval_Submission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Flow Trigger --></label>
+        <name>Flow_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Play Expiration Date --></label>
+        <name>Free_Play_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Free Play Offer Amount --></label>
+        <name>Free_Play_Offer_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Design Overdue --></label>
+        <name>Graphic_Design_Overdue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Designer Notes --></label>
+        <name>Graphic_Designer_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Graphic Designer --></label>
+        <name>Graphic_Designer__c</name>
+        <picklistValues>
+            <masterLabel>Artwork Not Needed</masterLabel>
+            <translation><!-- Artwork Not Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Elizabeth Nelson</masterLabel>
+            <translation><!-- Elizabeth Nelson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jake Garcia</masterLabel>
+            <translation><!-- Jake Garcia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>John Calaunan</masterLabel>
+            <translation><!-- John Calaunan --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lea Guerrero</masterLabel>
+            <translation><!-- Lea Guerrero --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lindsey Scott</masterLabel>
+            <translation><!-- Lindsey Scott --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lisa Mallo</masterLabel>
+            <translation><!-- Lisa Mallo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marisa Kinn</masterLabel>
+            <translation><!-- Marisa Kinn --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Matt Lusa</masterLabel>
+            <translation><!-- Matt Lusa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scott LeBeau</masterLabel>
+            <translation><!-- Scott LeBeau --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HQ Account --></label>
+        <name>HQ_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hashtag --></label>
+        <name>Hashtag__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License Number --></label>
+        <name>IGB_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License Status --></label>
+        <name>IGB_License_Status__c</name>
+        <picklistValues>
+            <masterLabel>Licensed</masterLabel>
+            <translation><!-- Licensed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not Licensed</masterLabel>
+            <translation><!-- Not Licensed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ITEM REF CRM --></label>
+        <name>ITEM_REF_CRM__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Yes, List Name As It Will Appear --></label>
+        <name>If_Yes_List_Name_As_It_Will_Appear__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in Co-Op Budget? --></label>
+        <name>Include_in_Co_Op_Budget__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Information Stage Complete --></label>
+        <name>Information_Stage_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Information Stage Notes --></label>
+        <name>Information_Stage_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Register New User in ALE --></label>
+        <name>Initial_Sender_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Create Location in ALE --></label>
+        <name>Initial_User_Setup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Completed --></label>
+        <name>Install_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Install Required? Yes/No --></label>
+        <name>Install_Required_Yes_No__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Installation Notes --></label>
+        <name>Installation_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installer Name --></label>
+        <name>Installer_Name__c</name>
+        <relationshipLabel><!-- Marketing Requests (Installer Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Invoice Submission Notes --></label>
+        <name>Invoice_Submission_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Invoice # --></label>
+        <name>Invoice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Location Participating in Sweepstakes --></label>
+        <name>Is_Location_Participating_in_Sweepstakes__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is This Location Part of Other Locations --></label>
+        <name>Is_This_Location_Part_of_Other_Locations__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Classification --></label>
+        <name>Item_Classification__c</name>
+        <picklistValues>
+            <masterLabel>Darts Posters</masterLabel>
+            <translation><!-- Darts Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Folders</masterLabel>
+            <translation><!-- Folders --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meeting Handout</masterLabel>
+            <translation><!-- Meeting Handout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Presentation</masterLabel>
+            <translation><!-- Sales Presentation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Water Bottles</masterLabel>
+            <translation><!-- Water Bottles --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item (Historical) --></label>
+        <name>Item_Historical__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please describe any custom details here. --></help>
+        <label><!-- Item Notes --></label>
+        <name>Item_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Subtype --></label>
+        <name>Item_Subtype__c</name>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweepstakes</masterLabel>
+            <translation><!-- Sweepstakes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Item Name --></label>
+        <name>Item_lookup__c</name>
+        <relationshipLabel><!-- Marketing Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Item(s) For Event --></label>
+        <name>Item_s_For_Event__c</name>
+        <picklistValues>
+            <masterLabel>Large Plinko Board</masterLabel>
+            <translation><!-- Large Plinko Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small Plinko Board</masterLabel>
+            <translation><!-- Small Plinko Board --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spin Wheel</masterLabel>
+            <translation><!-- Spin Wheel --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- July --></label>
+        <name>July__c</name>
+    </fields>
+    <fields>
+        <label><!-- June --></label>
+        <name>June__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Item Notes Edit --></label>
+        <name>Last_Item_Notes_Edit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Ad (in seconds) --></label>
+        <name>Length_of_Ad_in_seconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter Agreement Sent to RM --></label>
+        <name>Letter_Agreement_Sent_to_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter Agreement on File --></label>
+        <name>Letter_Agreement_on_File__c</name>
+    </fields>
+    <fields>
+        <label><!-- Licensed Denied Date --></label>
+        <name>Licensed_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Address --></label>
+        <name>Location_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Approval TAT --></label>
+        <name>Location_Approval_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Co-Op Spend YTD 2019 --></label>
+        <name>Location_Co_Op_Spend_YTD_2019__c</name>
+    </fields>
+    <fields>
+        <help><!-- Does Location Want 100% or 50/50 Content Split? --></help>
+        <label><!-- Location Content Split --></label>
+        <name>Location_Content_Split__c</name>
+        <picklistValues>
+            <masterLabel>100% Accel Content</masterLabel>
+            <translation><!-- 100% Accel Content --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50/50 Content Split</masterLabel>
+            <translation><!-- 50/50 Content Split --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Cost Share Amount Rollup --></label>
+        <name>Location_Cost_Share_Amount_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Cost Share Amount --></label>
+        <name>Location_Cost_Share_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Donation --></label>
+        <name>Location_Donation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Install Contact Phone # --></label>
+        <name>Location_Install_Contact_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Install Contact --></label>
+        <name>Location_Install_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Live Status --></label>
+        <name>Location_Live_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Name on Item? --></label>
+        <name>Location_Name_on_Item__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Spend YTD 2018 --></label>
+        <name>Location_Spend_YTD2018__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Summary --></label>
+        <name>Location_Summary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Sweepstakes Participation --></label>
+        <name>Location_Sweepstakes_Participation__c</name>
+        <picklistValues>
+            <masterLabel>No, but location wishes to sign up for sweepstakes</masterLabel>
+            <translation><!-- No, but location wishes to sign up for sweepstakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No, location does not wish to sign up for sweepstakes</masterLabel>
+            <translation><!-- No, location does not wish to sign up for sweepstakes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes, this is Tier 1 Location</masterLabel>
+            <translation><!-- Yes, this is Tier 1 Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes, this is Tier 2 Location</masterLabel>
+            <translation><!-- Yes, this is Tier 2 Location --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MRP Rollup Count --></label>
+        <name>MRP_Rollup_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manager (Approvals) --></label>
+        <name>Manager_Approvals__c</name>
+    </fields>
+    <fields>
+        <label><!-- March --></label>
+        <name>March__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Acknowledgement TAT --></label>
+        <name>Marketing_Acknowledgement_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Approval --></label>
+        <name>Marketing_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Cost Rejection Reason --></label>
+        <name>Marketing_Cost_Rejection_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Need Values</masterLabel>
+            <translation><!-- Need Values --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Expense Type --></label>
+        <name>Marketing_Expense_Type__c</name>
+        <picklistValues>
+            <masterLabel>Advertisement - Marketing Controlled</masterLabel>
+            <translation><!-- Advertisement - Marketing Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CapEx</masterLabel>
+            <translation><!-- CapEx --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Op - Field Controlled</masterLabel>
+            <translation><!-- Co-Op - Field Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HR Department</masterLabel>
+            <translation><!-- HR Department --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Markets</masterLabel>
+            <translation><!-- New Markets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Program &amp; Support - Marketing Controlled</masterLabel>
+            <translation><!-- Program &amp; Support - Marketing Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rewards - Marketing Controlled</masterLabel>
+            <translation><!-- Rewards - Marketing Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard - Field Controlled</masterLabel>
+            <translation><!-- Standard - Field Controlled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tradeshows – Sales Department</masterLabel>
+            <translation><!-- Tradeshows – Sales Department --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Manager Approver --></label>
+        <name>Marketing_Manager_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Marketing Manager Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketing Project Status --></label>
+        <name>Marketing_Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Acknowledged</masterLabel>
+            <translation><!-- Acknowledged --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved - Payment Pending</masterLabel>
+            <translation><!-- Approved - Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed in Full</masterLabel>
+            <translation><!-- Completed in Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Designing</masterLabel>
+            <translation><!-- Designing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Setup</masterLabel>
+            <translation><!-- Equipment Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gathering Quotes</masterLabel>
+            <translation><!-- Gathering Quotes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Approval</masterLabel>
+            <translation><!-- In Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt Out</masterLabel>
+            <translation><!-- Opt Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordering</masterLabel>
+            <translation><!-- Ordering --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Completed</masterLabel>
+            <translation><!-- Partially Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Co-Op Invoice</masterLabel>
+            <translation><!-- Pending Co-Op Invoice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Installation</masterLabel>
+            <translation><!-- Pending Installation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Promotion Invoices</masterLabel>
+            <translation><!-- Pending Promotion Invoices --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending RM</masterLabel>
+            <translation><!-- Pending RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Completed</masterLabel>
+            <translation><!-- Project Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM Needs to Submit For Approval</masterLabel>
+            <translation><!-- RM Needs to Submit For Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Added By RM</masterLabel>
+            <translation><!-- Request Added By RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to Warehouse</masterLabel>
+            <translation><!-- Submitted to Warehouse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>To Accounting</masterLabel>
+            <translation><!-- To Accounting --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request Count --></label>
+        <name>Marketing_Request_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request Prior Status --></label>
+        <name>Marketing_Request_Prior_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- May --></label>
+        <name>May__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Items --></label>
+        <name>Mkgt_Submission_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month and Tier --></label>
+        <name>Month_and_Tier__c</name>
+    </fields>
+    <fields>
+        <label><!-- My Project Name --></label>
+        <name>My_Project_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Installer --></label>
+        <name>Name_of_Installer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name of Person Requesting --></label>
+        <name>Name_of_Person_Requesting__c</name>
+        <relationshipLabel><!-- Marketing Requests (Name of Person Requesting) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Need Help with Measurements --></label>
+        <name>Need_Help_with_Measurements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Newspaper Ad --></label>
+        <name>Newspaper_Ad__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes About Upcoming Event --></label>
+        <name>Notes_About_Upcoming_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- November --></label>
+        <name>November__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Edits --></label>
+        <name>Number_of_Edits__c</name>
+    </fields>
+    <fields>
+        <label><!-- October --></label>
+        <name>October__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator Logo --></label>
+        <name>Operator_Logo__c</name>
+        <picklistValues>
+            <masterLabel>Abraham Gaming</masterLabel>
+            <translation><!-- Abraham Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel Entertainment</masterLabel>
+            <translation><!-- Accel Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fair Share Gaming</masterLabel>
+            <translation><!-- Fair Share Gaming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opt Out Notes --></label>
+        <name>Opt_Out_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Notes --></label>
+        <name>Order_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outdoor Sign Cost Rollup --></label>
+        <name>Outdoor_Sign_Cost_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outdoor Sign Quantity --></label>
+        <name>Outdoor_Sign_Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Outdoor Signage Status --></label>
+        <name>Outdoor_Sign_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Over Max --></label>
+        <name>Over_Max__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall TAT --></label>
+        <name>Overall_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overdue From Vendor --></label>
+        <name>Overdue_From_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator --></label>
+        <name>Partner_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Payment Memo --></label>
+        <name>Payment_Memo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pending Co-Op Spend Criteria --></label>
+        <name>Pending_Co_Op_Spend_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personalized Cost Share Rcvd --></label>
+        <name>Personalized_Cost_Share_Rcvd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pickup Location --></label>
+        <name>Pickup_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pictures Uploaded --></label>
+        <name>Pictures_Uploaded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post-Event Data Complete --></label>
+        <name>Post_Event_Data_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Event Data Complete --></label>
+        <name>Pre_Event_Data_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pre-Event Marketing Promotions Notes --></label>
+        <name>Pre_Event_Marketing_Promotions_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Out Prizes,Unit Cost,Giveaway Date --></label>
+        <name>Prize_Type_and_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prize(s) --></label>
+        <name>Prize_s__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Completed Date --></label>
+        <name>Project_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Due Date --></label>
+        <name>Project_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Name --></label>
+        <name>Project_Name__c</name>
+        <relationshipLabel><!-- Marketing Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project Stage --></label>
+        <name>Project_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approval</masterLabel>
+            <translation><!-- Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approved - Payment Pending</masterLabel>
+            <translation><!-- Approved - Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete (Vendor Invoice Pending)</masterLabel>
+            <translation><!-- Complete (Vendor Invoice Pending) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Setup</masterLabel>
+            <translation><!-- Equipment Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Complete</masterLabel>
+            <translation><!-- Event Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event Setup</masterLabel>
+            <translation><!-- Event Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opt-Out</masterLabel>
+            <translation><!-- Opt-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Order</masterLabel>
+            <translation><!-- Order --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Install</masterLabel>
+            <translation><!-- Pending Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Post-Event Data</masterLabel>
+            <translation><!-- Post-Event Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Completion</masterLabel>
+            <translation><!-- Project Completion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Quote</masterLabel>
+            <translation><!-- Quote --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Setup</masterLabel>
+            <translation><!-- Setup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Total Cost To Location --></label>
+        <name>Project_Total_Cost_To_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Total Cost to Accel --></label>
+        <name>Project_Total_Cost_to_Accel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Budget Spend --></label>
+        <name>Projected_Budget_Spend__c</name>
+    </fields>
+    <fields>
+        <label><!-- Projected Spend (at time of request) --></label>
+        <name>Projected_Spend_at_time_of_request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo End Date --></label>
+        <name>Promo_End_Date_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo End Date --></label>
+        <name>Promo_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo ID --></label>
+        <name>Promo_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Location --></label>
+        <name>Promo_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Stage --></label>
+        <name>Promo_Path_Stages__c</name>
+        <picklistValues>
+            <masterLabel>Accounting</masterLabel>
+            <translation><!-- Accounting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Design</masterLabel>
+            <translation><!-- Design --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Info</masterLabel>
+            <translation><!-- Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Invoice</masterLabel>
+            <translation><!-- Pending Invoice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promo Start Date --></label>
+        <name>Promo_Start_Date_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promo Start Date --></label>
+        <name>Promo_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Complete --></label>
+        <name>Promotion_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Sub ID --></label>
+        <name>Promotion_Sub_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion Type --></label>
+        <name>Promotion_Type__c</name>
+        <picklistValues>
+            <masterLabel>AE.BET Game</masterLabel>
+            <translation><!-- AE.BET Game --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn Giveaway</masterLabel>
+            <translation><!-- Autumn Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baseball</masterLabel>
+            <translation><!-- Baseball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Basketball</masterLabel>
+            <translation><!-- Basketball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bundle of Giveaways</masterLabel>
+            <translation><!-- Bundle of Giveaways --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Every Day Giveaway</masterLabel>
+            <translation><!-- Every Day Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Finalist Giveaway</masterLabel>
+            <translation><!-- Finalist Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Football</masterLabel>
+            <translation><!-- Football --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic Giveaway</masterLabel>
+            <translation><!-- Generic Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Giveaway on Sweepstakes Tablet</masterLabel>
+            <translation><!-- Giveaway on Sweepstakes Tablet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Prize Giveaway</masterLabel>
+            <translation><!-- Grand Prize Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hot Seat</masterLabel>
+            <translation><!-- Hot Seat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other (Location Made Up Their Own Promo)</masterLabel>
+            <translation><!-- Other (Location Made Up Their Own Promo) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Players Choice Giveaway</masterLabel>
+            <translation><!-- Players Choice Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Plinko</masterLabel>
+            <translation><!-- Plinko --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Progressive Jackpot</masterLabel>
+            <translation><!-- Progressive Jackpot --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Punch Cards</masterLabel>
+            <translation><!-- Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Scratch Off Cards</masterLabel>
+            <translation><!-- Scratch Off Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spin the Wheel</masterLabel>
+            <translation><!-- Spin the Wheel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring Giveaway</masterLabel>
+            <translation><!-- Spring Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer Giveaway</masterLabel>
+            <translation><!-- Summer Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly Giveaway</masterLabel>
+            <translation><!-- Weekly Giveaway --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Winter Giveaway</masterLabel>
+            <translation><!-- Winter Giveaway --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Promotion is Paid --></label>
+        <name>Promotion_is_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Promotion will run on Sweepstakes Tablet --></label>
+        <name>Promotion_will_run_on_Sweepstakes_Tablet__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Check this box only upon uploading a copy of paid invoice. --></help>
+        <label><!-- Submit Invoice --></label>
+        <name>Proof_of_Payment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proofreader Approver --></label>
+        <name>Proofreader_Approver__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quantity --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote #1 Bid --></label>
+        <name>Quote_1_Bid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote #1 Vendor --></label>
+        <name>Quote_1_Vendor__c</name>
+        <relationshipLabel><!-- Marketing Requests (Quote #1 Vendor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote #2 Bid --></label>
+        <name>Quote_2_Bid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote #2 Vendor --></label>
+        <name>Quote_2_Vendor__c</name>
+        <relationshipLabel><!-- Marketing Requests (Quote #2 Vendor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quote Amount --></label>
+        <name>Quote_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote # (From Vendor) --></label>
+        <name>Quote_From_Vendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Notes --></label>
+        <name>Quote_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote Stage Complete? --></label>
+        <name>Quote_Stage_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote TAT --></label>
+        <name>Quote_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quote # --></label>
+        <name>Quote__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Detail Link --></label>
+        <name>Record_Detail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North</masterLabel>
+            <translation><!-- North --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>South</masterLabel>
+            <translation><!-- South --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Reimbursement Paid --></label>
+        <name>Reimbursement_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Relationship_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Release Forms Signed and Saved to Server --></label>
+        <name>Release_Forms_Signed_and_Saved_to_Server__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reorder Of --></label>
+        <name>Reorder_Of__c</name>
+        <relationshipLabel><!-- Marketing Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reorder? --></label>
+        <name>Reorder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date Age --></label>
+        <name>Request_Date_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Sent --></label>
+        <name>Request_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request # --></label>
+        <name>Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Reimbursement Amount --></label>
+        <name>Requested_Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor Manager --></label>
+        <name>Requestor_Manager__c</name>
+        <relationshipLabel><!-- Marketing Requests (Requestor Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requests/Details/Additional Information --></label>
+        <name>Requests_Details_Additional_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- ALE Location Setup Notes --></label>
+        <name>Robo_Setup_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rush --></label>
+        <name>Rush__c</name>
+    </fields>
+    <fields>
+        <label><!-- September --></label>
+        <name>September__c</name>
+    </fields>
+    <fields>
+        <label><!-- Single Sided --></label>
+        <name>Single_Sided__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fill out the name and this will automatically send an approval email. --></help>
+        <label><!-- Social Media Approver --></label>
+        <name>Social_Media_Approver__c</name>
+        <relationshipLabel><!-- Marketing Requests (Social Media Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Social Media Post Made --></label>
+        <name>Social_Media_Post_Made__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Spend Ratio --></label>
+        <name>Spend_Ratio__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Cost? --></label>
+        <name>Split_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Split Cost with Location? --></label>
+        <name>Split_Cost_with_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Artwork Theme (C) --></label>
+        <name>Standard_Custom_Size_Design__c</name>
+        <picklistValues>
+            <masterLabel>$$$ Reels with Cash</masterLabel>
+            <translation><!-- $$$ Reels with Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10 Free Slot Play – Vouchers</masterLabel>
+            <translation><!-- $10 Free Slot Play – Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10 on 10th Visit – Punch Cards</masterLabel>
+            <translation><!-- $10 on 10th Visit – Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$10 on 5th Visit – Punch Cards</masterLabel>
+            <translation><!-- $10 on 5th Visit – Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$15 Free Slot Play – Vouchers</masterLabel>
+            <translation><!-- $15 Free Slot Play – Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$20 Free Slot Play – Vouchers</masterLabel>
+            <translation><!-- $20 Free Slot Play – Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5 Free Slot Play – Vouchers</masterLabel>
+            <translation><!-- $5 Free Slot Play – Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5 on 10th Visit – Punch Cards</masterLabel>
+            <translation><!-- $5 on 10th Visit – Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>$5 on 5th Visit – Punch Cards</masterLabel>
+            <translation><!-- $5 on 5th Visit – Punch Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Autumn - Promotional Posters</masterLabel>
+            <translation><!-- Autumn - Promotional Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diagonal Stripes – Thick</masterLabel>
+            <translation><!-- Frosted – Diagonal Stripes – Thick --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diagonal Stripes – Thin</masterLabel>
+            <translation><!-- Frosted – Diagonal Stripes – Thin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Diamonds</masterLabel>
+            <translation><!-- Frosted – Diamonds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Half Solid Wall</masterLabel>
+            <translation><!-- Frosted – Half Solid Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Reels</masterLabel>
+            <translation><!-- Frosted – Reels --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frosted – Suites</masterLabel>
+            <translation><!-- Frosted – Suites --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming – Reels, Cards, Wheel (Black &amp; White)</masterLabel>
+            <translation><!-- Gaming – Reels, Cards, Wheel (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Generic - Promotional Posters</masterLabel>
+            <translation><!-- Generic - Promotional Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Midnight Lights with 777 Reels (Black &amp; White)</masterLabel>
+            <translation><!-- Midnight Lights with 777 Reels (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neon Lights – 777 Reels, Cards, Wheel</masterLabel>
+            <translation><!-- Neon Lights – 777 Reels, Cards, Wheel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neon Sign on Brick Wall</masterLabel>
+            <translation><!-- Neon Sign on Brick Wall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Vegas – 777 Reels, Cards, Poker Chips</masterLabel>
+            <translation><!-- New Vegas – 777 Reels, Cards, Poker Chips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spring - Promotional Posters</masterLabel>
+            <translation><!-- Spring - Promotional Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Summer - Promotional Posters</masterLabel>
+            <translation><!-- Summer - Promotional Posters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Lineup (Black &amp; White)</masterLabel>
+            <translation><!-- VGT Lineup (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Lineup (Color)</masterLabel>
+            <translation><!-- VGT Lineup (Color) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT with Cash (Black &amp; White)</masterLabel>
+            <translation><!-- VGT with Cash (Black &amp; White) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vegas - $$$ Reels, Cards, Poker Chips</masterLabel>
+            <translation><!-- Vegas - $$$ Reels, Cards, Poker Chips --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Winter - Promotional Posters</masterLabel>
+            <translation><!-- Winter - Promotional Posters --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard Items Stage --></label>
+        <name>Standard_Items_Path__c</name>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed In Full</masterLabel>
+            <translation><!-- Completed In Full --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partially Filled</masterLabel>
+            <translation><!-- Partially Filled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request</masterLabel>
+            <translation><!-- Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request Sent To Warehouse</masterLabel>
+            <translation><!-- Request Sent To Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standard Product --></label>
+        <name>Standard_Product__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State_fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit Request to Marketing --></label>
+        <name>Submit_Request_to_Marketing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit for Approval Trigger --></label>
+        <name>Submit_for_Approval_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Summary of Event --></label>
+        <name>Summary_of_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sweepstakes Product Added --></label>
+        <name>Sweepstakes_Product_Added__c</name>
+    </fields>
+    <fields>
+        <label><!-- TV Serial Number --></label>
+        <name>TV_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Assigned To --></label>
+        <name>Task_Assigned_To__c</name>
+        <relationshipLabel><!-- Marketing Requests (Task Assigned To) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Task Comments --></label>
+        <name>Task_Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Due Date --></label>
+        <name>Task_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Task Subject --></label>
+        <name>Task_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Vendor Name --></label>
+        <name>Third_Party_Vendor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tier Selection --></label>
+        <name>Tier_Selection__c</name>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location Opt Out in Salesforce --></label>
+        <name>Tier_Switch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Approved Amount --></label>
+        <name>Total_Approved_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This is the entire cost of items classified under Cost Share. --></help>
+        <label><!-- Total Cost Share Amount --></label>
+        <name>Total_Cost_Share_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Cost of Items --></label>
+        <name>Total_Cost_of_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Check-Ins --></label>
+        <name>Total_Number_of_Check_Ins__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Current Outdoor Signs --></label>
+        <name>Total_Number_of_Current_Outdoor_Signs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of First Time Players --></label>
+        <name>Total_Number_of_First_Time_Players__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Player Surveys Complete --></label>
+        <name>Total_Number_of_Player_Surveys_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Players Within ALE --></label>
+        <name>Total_Players_Within_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prize Cost --></label>
+        <name>Total_Prize_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Prize Reimbursement Amount --></label>
+        <name>Total_Prize_Reimbursement_Amount__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will be the total amount the location is spending on the co-op or promo.  This means all collateral, advertisements, and prize values (cash or item value). --></help>
+        <label><!-- Total Quote Amount --></label>
+        <name>Total_Quote_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Reimbursed By Accounting --></label>
+        <name>Total_Reimbursed_By_Accounting__c</name>
+    </fields>
+    <fields>
+        <label><!-- TouchTunes Status --></label>
+        <name>TouchTunes_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approval</masterLabel>
+            <translation><!-- Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Setup</masterLabel>
+            <translation><!-- Equipment Setup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Information</masterLabel>
+            <translation><!-- Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Install</masterLabel>
+            <translation><!-- Pending Install --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AE Player TV Warehouse Items Complete --></label>
+        <name>TouchTunes_Warehouse_Items_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trade Show --></label>
+        <name>Trade_Show__c</name>
+        <relationshipLabel><!-- Marketing Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accel Entertainment (Office Use Only)</masterLabel>
+            <translation><!-- Accel Entertainment (Office Use Only) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Co-Op</masterLabel>
+            <translation><!-- Co-Op --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital Marketing</masterLabel>
+            <translation><!-- Digital Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotions</masterLabel>
+            <translation><!-- Promotions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation><!-- Standard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Custom Size</masterLabel>
+            <translation><!-- Standard Custom Size --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Menu</masterLabel>
+            <translation><!-- VIP Menu --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Event --></label>
+        <name>Type_of_Event__c</name>
+        <picklistValues>
+            <masterLabel>Anniversary</masterLabel>
+            <translation><!-- Anniversary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Appreciation</masterLabel>
+            <translation><!-- Customer Appreciation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Entertainment</masterLabel>
+            <translation><!-- Entertainment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Free Play Event (Nebraska)</masterLabel>
+            <translation><!-- Free Play Event (Nebraska) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Go-Live</masterLabel>
+            <translation><!-- Gaming Go-Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grand Opening</masterLabel>
+            <translation><!-- Grand Opening --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Unapproved Co-Op Amount --></label>
+        <name>Unapproved_Co_Op_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unapproved Co-Op Criteria --></label>
+        <name>Unapproved_Co_Op_Criteria__c</name>
+    </fields>
+    <fields>
+        <label><!-- Uncheck Participating in ALE --></label>
+        <name>Uncheck_Participating_in_ALE__c</name>
+    </fields>
+    <fields>
+        <label><!-- AE Player TV Content Share --></label>
+        <name>UpShow_Content_Share__c</name>
+        <picklistValues>
+            <masterLabel>100% Accel (No Cost to Location)</masterLabel>
+            <translation><!-- 100% Accel (No Cost to Location) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50% Location/50% Accel ($5 Monthly Fee)</masterLabel>
+            <translation><!-- 50% Location/50% Accel ($5 Monthly Fee) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- AE Player TV Monitor Add --></label>
+        <name>UpShow_Monitor_Add__c</name>
+        <picklistValues>
+            <masterLabel>Add to Accel-owned 49&quot; monitor</masterLabel>
+            <translation><!-- Add to Accel-owned 49&quot; monitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add to Location pre-existing monitor</masterLabel>
+            <translation><!-- Add to Location pre-existing monitor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RM/BDM Name --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Marketing Requests (RM/BDM Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIP --></label>
+        <name>VIP__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Contact Name --></label>
+        <name>Vendor_Contact_Name__c</name>
+        <relationshipLabel><!-- Marketing Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vendor Needed --></label>
+        <name>Vendor_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Vendor TAT --></label>
+        <name>Vendor_TAT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vertical --></label>
+        <name>Vertical__c</name>
+    </fields>
+    <fields>
+        <help><!-- Describe in detail where AE Player TV will be installed within the location. --></help>
+        <label><!-- Where will AE Player TV be Installed? --></label>
+        <name>Where_will_TouchTunes_be_Installed__c</name>
+    </fields>
+    <fields>
+        <label><!-- WiFi Network Name --></label>
+        <name>WiFi_Network_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- WiFi Password --></label>
+        <name>WiFi_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor Amount --></label>
+        <name>Winning_Bid_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vendor --></label>
+        <name>Winning_Vendor__c</name>
+        <relationshipLabel><!-- Marketing Requests (Winning Vendor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Horizontal --></label>
+        <name>horizontal__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- For internal marketing projects only --></description>
+        <label><!-- Accel Entertainment (Office Use Only) --></label>
+        <name>Accel_Entertainment_Office_Use_Only</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Brand Ambassador Events --></label>
+        <name>Brand_Ambassador_Events</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Items for Reimbursement --></description>
+        <label><!-- Co-Op --></label>
+        <name>Co_Op</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Customized --></label>
+        <name>Customized</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Digital Marketing --></label>
+        <name>Digital_Marketing</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard Custom Size --></label>
+        <name>Non_Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Promotions --></label>
+        <name>Promotions</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Sweepstakes --></label>
+        <name>Sweepstakes</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- AE Player TV --></label>
+        <name>TouchTunes</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- You do not have sufficient permissions to modify this field. --></errorMessage>
+        <name>Assigned_MC_restricted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, enter Billing Start Month and Billing Start Year information. --></errorMessage>
+        <name>Billing_Start_Month_and_Year_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Approvals of cost must be obtained prior to submitting the invoice. --></errorMessage>
+        <name>Cannot_submit_invoice_without_approval</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- For this record type, you cannot choose more than one Marketing Request Product. --></errorMessage>
+        <name>Multiple_Products_Cannot_Be_Chosen</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose whether or not a vendor is needed. Field: Vendor Needed --></errorMessage>
+        <name>Vendor_Needed_accel_ent_only</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,79 @@
+<template>
+    <div if:true={showCompletedData} class="slds-p-top--medium">
+        <div class="slds-box slds-box_x-small" style="background-color:rgb(250, 255, 189);">
+            <div class="accel-inline-list">
+                <div class="slds-grid slds-wrap slds-gutters">
+                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--4-of-12">
+                        <dl class="slds-list_inline">
+                            <dt class="slds-item_label slds-truncate" title={completedAccountResult.accountType}>
+                                {completedAccountResult.accountType}
+                            </dt>
+                            <dd class="slds-item_detail slds-truncate" title="Account Name">
+                                <span class="slds-text-title_bold">
+                                    <c-accel-navigation-link    label={completedAccountResult.accountName}
+                                                                title="Navigate to the account record page."
+                                                                target="_blank"
+                                                                type="standard__recordPage"
+                                                                record-id={completedAccountResult.accountId}>
+                                    </c-accel-navigation-link>
+                                </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--4-of-12">
+                        <dl class="slds-list_inline">
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="Account">Most Recent
+                                Hpd
+                            </dt>
+                            <dd class="slds-item_detail slds-truncate"
+                                title={completedAccountResult.mostRecentHpdName}>
+                                  <span class="slds-text-title_bold">
+                                <c-accel-navigation-link label={completedAccountResult.mostRecentHpdName}
+                                                         title="Navigate to the hold per day record page."
+                                                         target="_blank"
+                                                         type="standard__recordPage"
+                                                         record-id={completedAccountResult.mostRecentHpdId}>
+                                </c-accel-navigation-link>
+                                  </span>
+                                &nbsp;-&nbsp;
+                                <lightning-formatted-date-time
+                                        value={completedAccountResult.mostRecentHpdDate}
+                                        year="numeric" month="numeric" day="numeric">
+                                </lightning-formatted-date-time>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--2-of-12">
+                        <dl class="slds-list_inline">
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="HPD Total Record">Hpd Total
+                            </dt>
+                            <dd class="slds-item_detail slds-truncate"
+                                title={completedAccountResult.hpdTotalName}>
+                                  <span class="slds-text-title_bold">
+                                <c-accel-navigation-link label={completedAccountResult.hpdTotalName}
+                                                         title="Navigate to the hold per day total record page."
+                                                         target="_blank"
+                                                         type="standard__recordPage"
+                                                         record-id={completedAccountResult.hpdTotalId}>
+                                </c-accel-navigation-link>
+                                  </span>
+                            </dd>
+                        </dl>
+                    </div>
+                    <div class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--2-of-12">
+                        <dl class="slds-list_inline">
+                            <dt class="slds-item_label slds-text-color_weak slds-truncate" title="HPD Total Record"># of Hpds Copied
+                            </dt>
+                            <dd class="slds-item_detail slds-truncate"
+                                title={completedAccountResult.totalHpds}>
+                                  <span class="slds-text-title_bold">
+                                    {completedAccountResult.totalHpds}
+                                  </span>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

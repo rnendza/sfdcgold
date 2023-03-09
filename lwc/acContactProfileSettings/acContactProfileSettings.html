@@ -1,0 +1,122 @@
+<!-- Ac Contact Profile Settings (Community User Settings)  -->
+<template>
+    <!-- DIV below is so we can inject css into the DOM as workaround to LWC Shadow DOM Limitations. -->
+    <div lwc:dom="manual" class="fake-theme-overrides-class"></div>
+    <div data-id="widthMeasurement"></div> <!-- Get width of template for mobile resizing -->
+
+    <div class="slds-box accel-shadow-drop accel-mobile-box-margins accel-box-header accel-form">
+        <div>
+            <div class="accel-back-bottom-top-container">
+                <div class="accel-back-button-top" >
+                    <div if:true={isSettingsRetrieved}>
+                        <lightning-button variant="neutral" label="Back" title="Back to previous page."
+                                          icon-name="utility:back" icon-position="left"
+                                          onclick={handleBackClick} class="">
+                        </lightning-button>
+                    </div>
+                </div>
+            </div>
+            <h3>
+                <lightning-icon icon-name="utility:settings" size="small"
+                                class="slds-m-right_xx-small accel-blue-icon">
+                </lightning-icon>
+                My Portal Settings
+            </h3>
+            <div>
+                <lightning-tabset class="accel-tab-set">
+                    <lightning-tab label="Display">
+                        <div if:false={isSettingsRetrieved} class="slds-is-relative">
+                            <lightning-spinner alternative-text="Loading..."></lightning-spinner>
+                        </div>
+                        <div if:true={isRunningUpdate} class="slds-is-relative">
+                            <lightning-spinner size="large" variant="brand" alternative-text="Updating setting"></lightning-spinner>
+                        </div>
+                        <div class="slds-grid slds-wrap" style="font-family: SFS,Helvetica,Arial,sans-serif;">
+                            <template iterator:fieldsetwrap={profileSettings}>
+                                <div key={fieldsetwrap.value.fieldSetName}
+                                     class="slds-col slds-size--1-of-1 slds-small-size--1-of-1 slds-medium-size--1-of-1
+                                            slds-large-size--1-of-2">
+                                    <div class="slds-form slds-m-right_x-small" role="list">
+                                        <div class="slds-form__row">
+                                            <div class="slds-form__item" role="listitem">
+                                                <fieldset
+                                                        class=" slds-form-element slds-form-element_stacked slds-box
+                                                                accel-form-group-box">
+                                                    <legend class=" slds-form-element__legend slds-form-element__label
+                                                                    accel-form-group-label">
+                                                        <template if:true={fieldsetwrap.value.displayFieldSetIcon}>
+                                                            <lightning-icon
+                                                                    icon-name={fieldsetwrap.value.fieldSetIconName}
+                                                                    size={fieldSetIconSize}
+                                                                    class="slds-m-right_xx-small">
+                                                            </lightning-icon>
+                                                        </template>
+                                                        {fieldsetwrap.value.fieldSetLabel}
+                                                    </legend>
+                                                    <div class="slds-form-element__control">
+                                                        <template iterator:fieldwrap={fieldsetwrap.value.fieldWrappers}>
+                                                            <div key={fieldwrap.value.fieldApiName}
+                                                                 data-recordid={_communityUserSetting.Id}
+                                                                 data-label={fieldwrap.value.fieldLabel}
+                                                                 class="accel-checkbox-container accel-form-element-label">
+                                                                <div class="slds-grid">
+                                                                    <div class="slds-col slds-size--10-of-12
+                                                                                slds-small-size--10-of-12 slds-medium-size--3-of-5
+                                                                                slds-large-size--5-of-6">
+                                                                        <span class="slds-form-element__label accel-form-element-label
+                                                                                accel-form-element-label-active">
+                                                                                {fieldwrap.value.fieldLabel}
+                                                                        </span>
+                                                                        <template if:true={fieldwrap.value.displayFieldHelp}>
+                                                                            <div class="accel-help-icon-container">
+                                                                                <lightning-helptext class="accel-help-icon" content={fieldwrap.value.fieldHelp}>
+                                                                                </lightning-helptext>
+                                                                            </div>
+                                                                        </template>
+                                                                    </div>
+                                                                    <div class="slds-col slds-size--2-of-12 slds-small-size--2-of-12
+                                                                                slds-medium-size--2-of-5 slds-large-size--1-of-6">
+                                                                        <div class="accel-setting-container">
+                                                                        <lightning-input type="toggle"
+                                                                                         value={fieldwrap.value.fieldValue}
+                                                                                         checked={fieldwrap.value.fieldValue}
+                                                                                         class="rtl"
+                                                                                         onchange={handleCheckboxChange}
+                                                                                         message-toggle-active={fieldwrap.value.msgToggleActive}
+                                                                                         message-toggle-inactive={fieldwrap.value.msgToggleInactive}
+                                                                                         data-recordid={_communityUserSetting.Id}
+                                                                                         data-label={fieldwrap.value.fieldLabel}
+                                                                                         name={fieldwrap.value.fieldApiName}>
+                                                                        </lightning-input>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </template>
+                                                    </div>
+                                                </fieldset>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </lightning-tab>
+                    <lightning-tab label="Profile">
+                        <c-ac-profile-settings></c-ac-profile-settings>
+                    </lightning-tab>
+                </lightning-tabset>
+                <div style="width:100%">
+                    <div if:true={isSettingsRetrieved}>
+                        <div class="accel-back-button" style="text-align: right">
+                            <lightning-button variant="neutral" label="Back" title="Back"
+                                              icon-name="utility:back" icon-position="left"
+                                              onclick={handleBackClick} class="">
+                            </lightning-button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

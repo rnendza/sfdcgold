@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Custom metadata settings to configure utility items for the Service Cloud Console.</description>
+    <fields>
+        <fullName>Allow_Custom_Notifications__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Allow all custom notifications</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Allow all custom notifications</inlineHelpText>
+        <label>Allow Custom Notifications</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Case_Age_Bottom_Sort__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Max age of case till it gets sorted to the bottom</inlineHelpText>
+        <label>Case Age Bottom Sort  (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Case_Created_Override__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>In addition to profile this will look for a name in the createdby of the case  ie OR CreatedBy.Name like &apos;%Nendza%</inlineHelpText>
+        <label>Case Created Override</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Client_Side_Eval_Increment_Seconds__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The amount of seconds to rerun client side eval of data to determine if we hit limits / data changed.</inlineHelpText>
+        <label>Client Side Eval Increment Seconds</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Disable_Accepted_But_Not_En_Route_PE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Disable Accepted But Not En-Route PE</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_No_Assigned_Resource_PE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked. disable the firing of the no assigned resources platform event in the cases trigger.</inlineHelpText>
+        <label>Disable No Assigned Resource PE</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Rejected_PE__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Disable Rejected PE</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Utility_Bar_Auto_Open__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Disable Utility Bar Auto Open</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Max_Age_of_Cases__c</fullName>
+        <defaultValue>5</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Max Age of Cases in Minutes</inlineHelpText>
+        <label>Max Age of Cases</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>No_Assigned_Resource_PE_Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Platform Event Endpoint for No Assigned Resources</inlineHelpText>
+        <label>No Assigned Resource PE Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_Msg_Body__c</fullName>
+        <defaultValue>&quot;Please be sure to acknowledge all service appointments on your FSL schedule, thank you.&quot;</defaultValue>
+        <description>The Body in the notification sent to a mobile device or SFDC Desktop bell notification.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Body in the notification sent to a mobile device or SFDC Desktop bell notification.</inlineHelpText>
+        <label>Notification Msg Body</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_Msg_Send_Age_Mins__c</fullName>
+        <defaultValue>3</defaultValue>
+        <description>The criteria of the Amt of minutes a notification should be sent in.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The criteria of the Amt of minutes a notification should be sent in.</inlineHelpText>
+        <label>Notification Msg Send Age (Mins)</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Notification_Msg_Title__c</fullName>
+        <defaultValue>&quot;Service Appointment Acknowledgement Required!&quot;</defaultValue>
+        <description>The Title in the notification sent to a mobile device or SFDC Desktop bell notification.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Title in the notification sent to a mobile device or SFDC Desktop bell notification.</inlineHelpText>
+        <label>Notification Msg Title</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profile_Names_to_Watch__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Profile Names to Watch</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Rejected_Created_Date_Nbr_of_Days__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Rejected Created Date Nbr of Days</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_To_Watch__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status To Watch</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Svc Utility Bar Setting</label>
+    <pluralLabel>Svc Utility Bar Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

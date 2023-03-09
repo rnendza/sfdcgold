@@ -1,0 +1,94 @@
+<!-- Accel Admin Utils Container -->
+<template>
+    <c-lightning-app-style-overrides></c-lightning-app-style-overrides>
+    <lightning-tabset variant="scoped"
+                      active-tab-value={_activeTabValue}
+                      class="accel-tab-set accel-scoped-tab-set">
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:apps"
+                value="tab_utils_home"
+                label="Modules">
+                <c-accel-admin-welcome
+                        onutilsmoduleselected={handleUtilsModuleOptionSelected}>
+                </c-accel-admin-welcome>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:asset_audit"
+                value="tab_utils_audit_trails"
+                label="Audit Trail">
+            <c-accel-audit-trails
+                debug-console={debugConsole
+                show-assistance={showAssistance}
+                default-search-to-open={auditTrailDefaultSearchToOpen}>
+            </c-accel-audit-trails>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:user"
+                value="tab_utils_auth_sessions"
+                label="Users">
+                <c-accel-admin-users-container
+                    debug-console="true">
+                </c-accel-admin-users-container>
+<!--            <c-accel-auth-session-->
+<!--                    debug-console={debugConsole}-->
+<!--                    show-assistance={showAssistance}>-->
+<!--            </c-accel-auth-session>-->
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="custom:custom86"
+                value="tab_utils_pa_gallery"
+                label="PA Gallery">
+            <c-pa-advisory-gallery
+                    allow-filters={paGalleryAllowFilters}
+                    allow-csv-export={paGalleryTableAllowCsvExport}
+                    use-infinite-scroll={paGalleryUseInfiniteScroll}
+                    infinite-scroll-max-image-items={paGalleryInfiniteScrollMaxImageItems}
+                    infinite-scroll-max-table-items={paGalleryInfiniteScrollMaxTableItems}
+                    show-table-row-num-column={paGalleryShowTableRowNumColumn}
+                    scroll-container-style={paGalleryScrollContainerStyle}
+                    dt-container-style={paGalleryDtContainerStyle}
+                    card-title={paGalleryCardTitle}
+                    card-icon={paGalleryCardIcon}
+                    allow-mouse-over-highlight={paGalleryAllowMouseOverHighlight}
+                    allow-list-vs-image-toggle={paGalleryAllowListVsImageToggle}
+                    user-place-holder={paGalleryFiltersUserPlaceHolder}
+                    city-place-holder={paGalleryFiltersCityPlaceHolder}
+                    filters-label={paGalleryFiltersFiltersLabel}
+                    filters-applied-label={paGalleryFiltersFiltersAppliedLabel}
+                    min-filter-chars={paGalleryFiltersMinFilterChars}
+                    debug-console={debugConsole}>
+            </c-pa-advisory-gallery>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:location"
+                value="tab_utils_gpsstatus"
+                label="GPS Status">
+            <c-geo-tab-admin-device-status
+                    debug-console="true"
+                    show-assistance="true">
+            </c-geo-tab-admin-device-status>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:work_capacity_usage"
+                value="tab_utils_jobs"
+                label="Sch Jobs">
+            <c-accel-admin-job-monitor>
+            </c-accel-admin-job-monitor>
+        </lightning-tab>
+    </lightning-tabset>
+
+
+
+</template>

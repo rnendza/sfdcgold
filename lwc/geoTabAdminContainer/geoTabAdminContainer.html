@@ -1,0 +1,92 @@
+<!-- Geo Tab Admin Container -->
+<template>
+    <lightning-tabset variant="scoped"
+                      active-tab-value={_activeTabValue}
+                      class="accel-tab-set accel-scoped-tab-set">
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:guidance_center"
+                value="tab_utils_home"
+                label="Welcome">
+            <c-geo-tab-admin-welcome ></c-geo-tab-admin-welcome>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:device"
+                value="tab_utils_devices"
+                label="Devices">
+            <c-geo-tab-admin-devices
+                    debug-console="true"
+                    show-assistance="true">
+            </c-geo-tab-admin-devices>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:location"
+                value="tab_utils_devicestatus"
+                label="Device Status">
+            <c-geo-tab-admin-device-status
+                debug-console="true"
+                show-assistance="true">
+            </c-geo-tab-admin-device-status>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:service_resource"
+                value="tab_utils_serviceresourceloc"
+                label="Svc Resources">
+            <c-geo-tab-svc-resource-location
+                    debug-console="true"
+                    show-assistance="false">
+            </c-geo-tab-svc-resource-location>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:incident"
+                value="tab_utils_serviceresourcehistory"
+                label="SR History">
+            <c-geo-tab-svc-resource-history
+                    debug-console="true"
+                    show-assistance="false">
+            </c-geo-tab-svc-resource-history>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:shift_scheduling_operation"
+                value="tab_utils_schjobs"
+                label="Jobs">
+            <c-geo-tab-schedule-maint
+                    debug-console="true"
+                    show-assistance="true">
+            </c-geo-tab-schedule-maint>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="custom:custom77"
+                value="tab_utils_security"
+                label="Security">
+            <c-geo-tab-admin-security
+                    debug-console="true"
+                    show-assistance="true">
+            </c-geo-tab-admin-security>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:logging"
+                value="tab_utils_logs"
+                label="Logs">
+            <c-geo-tab-logs
+                    debug-console="true"
+                    show-assistance="true">
+            </c-geo-tab-logs>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

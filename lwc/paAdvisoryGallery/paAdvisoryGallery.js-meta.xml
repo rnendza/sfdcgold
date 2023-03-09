@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Pa Advisory Gallery</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Pa Advisory Gallery</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="photoStyle" type="String"
+                      label="Photo CSS Style"
+                      required="false"
+                      default="height:300px;width:300px"
+                      description="The style applied to the image tag"/>
+            <property name="photoCls" type="String"
+                      label="Photo CSS Class"
+                      required="false"
+                      description="The css class applied to the image tag. (css must exist in the component css file)"/>
+            <property name="useInfiniteScroll" type="boolean"
+                      label="Use Infinite Scroll"
+                      required="false"
+                      default="true"
+                      description="Use Infinite Scroll in the Gallery."/>
+            <property name="allowFilters" type="boolean"
+                      label="Allow List Filters"
+                      required="false"
+                      default="false"
+                      description="Allow filters on the gallery display"/>
+            <property name="allowSortIcon" type="boolean"
+                      label="Allow Sort Menu - Beta"
+                      required="false"
+                      default="false"
+                      description="Allow a sort menu icon to appear. Experimental when used with Infinite Scrolling!!!"/>
+            <property name="allowListVsImageToggle" type="boolean"
+                      label="Allow Table / Image Toggle"
+                      required="false"
+                      default="true"
+                      description="Allow The display of data via datatable or images"/>
+            <property name="allowPdfExport" type="boolean"
+                      label="Allow Pdf Export (Dev In Progress)"
+                      required="false"
+                      default="false"
+                      description="Allow The export of the Gallery view to a pdf."/>
+            <property name="allowCsvExport" type="boolean"
+                      label="Allow Csv Export"
+                      required="false"
+                      default="false"
+                      description="Allow The export of the table view to a csv."/>
+            <property name="infiniteScrollMaxImageItems" type="integer"
+                      label="Infinite Scroll # of Images to Display"
+                      required="false"
+                      default="30"
+                      description="the Max Images to display without scrolling."/>
+            <property name="infiniteScrollMaxTableItems" type="integer"
+                      label="Infinite Scroll # of Datatable Rows to Display"
+                      required="false"
+                      default="100"
+                      description="the Max Datatable Rows to display without scrolling."/>
+            <property name="dtContainerStyle" type="string"
+                      label="Datatable Container Style"
+                      required="true"
+                      default="height: 38rem;"
+                      description="The Style Applied to the Datatable. This is important is infinite scrolling is based on the height of the datatable."/>
+            <property name="scrollContainerStyle" type="string"
+                      label="Infinite Scroll Container Style"
+                      required="false"
+                      default="max-height:700px"
+                      description="The Style Applied to the Scroll Container Div (if infinite scroll used)."/>
+            <property name="cardTitle" type="String"
+                      label="Card Title"
+                      required="false"
+                      default="PA Advisories"
+                      description="The Title of the PA Advisories Gallery Card"/>
+            <property name="cardIcon" type="String"
+                      label="Card Icon"
+                      required="false"
+                      default="custom:custom86"
+                      description="The icon name of the PA Advisories Gallery Card (search for lds icons)"/>
+            <property name="showTableRowNumColumn" type="boolean"
+                      label="Show Table Row Numbers"
+                      required="false"
+                      default="true"
+                      description="Show the table row numbers on the datatable (if applicable)."/>
+            <property name="allowMouseOverHighlight" type="boolean"
+                      label="Allow Mouseover highlight"
+                      required="false"
+                      default="true"
+                      description="When hovering over an image highlight yellow"/>
+            <property name="userPlaceHolder" type="string"
+                      label="Filters - User placeholder"
+                      required="false"
+                      default="Enter user..."
+                      description="Filters - User placeholder"/>
+            <property name="cityPlaceHolder" type="string"
+                      label="Filters - City placeholder"
+                      required="false"
+                      default="Enter city..."
+                      description="Filters - City placeholder"/>
+            <property name="filtersLabel" type="string"
+                      label="Filters - Filters Label"
+                      required="false"
+                      default="Filters"
+                      description="Filters - Filters Label."/>
+            <property name="filtersAppliedLabel" type="string"
+                      label="Filters Applied Label"
+                      required="false"
+                      default="Filters Applied"
+                      description="Filters - Filters Applied Label."/>
+            <property name="minFilterChars" type="Integer"
+                      label="Filters - Min Filter Chars"
+                      required="false"
+                      default="2"
+                      description="The minimum number of characters entered before the filter is applied."/>
+            <property name="exportStatusLabel" type="String"
+                      label="Export - Status Label"
+                      required="false"
+                      default="Creating your csv export (All Items) ........"
+                      description="The text shown on the progress indicator while performing a csv export."/>
+            <property name="debugConsole" type="boolean"
+                      label="Pa Advisory Debug Console"
+                      required="false"
+                      default="true"
+                      description="Show debug logs in the browser console."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

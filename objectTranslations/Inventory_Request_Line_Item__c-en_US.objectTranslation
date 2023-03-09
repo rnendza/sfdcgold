@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory Request Line Item</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory Request Line Items</value>
+    </caseValues>
+    <fields>
+        <help><!-- Indicated that Assets have already been created for the Quantity Assigned to this line item. --></help>
+        <label><!-- All Line Assets Created --></label>
+        <name>All_Line_Assets_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- The item has passed all checks to create assets.. ie. it hasn&apos;t already created assets, it has a recieved date.. etc.etc. --></help>
+        <label><!-- Eligible to Create Assets --></label>
+        <name>Eligible_to_Create_Assets__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Status of Entire Inventory Request --></help>
+        <label><!-- IR Status --></label>
+        <name>Inventory_Request_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Link to the Parent IR Record. --></help>
+        <label><!-- Inventory Request --></label>
+        <name>Inventory_Request__c</name>
+        <relationshipLabel><!-- Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Inventory Request Line Item Number --></help>
+        <label><!-- Item # --></label>
+        <name>Item_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Manufacturer associated with the product selected --></help>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total # of Assets Created for this line item. --></help>
+        <label><!-- Total # of Assets Created --></label>
+        <name>Number_of_Assets_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Asset --></label>
+        <name>Parent_Asset__c</name>
+        <relationshipLabel><!-- Inventory Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The nickname of the associated model (product) --></help>
+        <label><!-- Product Nickname --></label>
+        <name>Product_Nickname__c</name>
+    </fields>
+    <fields>
+        <help><!-- The product to create assets from This must be a product record type of Gaming Software. Any default values when clicking the input are most recently viewed records. To Search enter at least 2 characters and then hit enter or click the search icon. --></help>
+        <label><!-- Product --></label>
+        <lookupFilter>
+            <errorMessage><!-- You must select a product of type Gaming Software. --></errorMessage>
+            <informationalMessage><!-- Please select a product of type Gaming Software --></informationalMessage>
+        </lookupFilter>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Inventory Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Qty of Assets to Create --></help>
+        <label><!-- Qty of assets to create --></label>
+        <name>Qty_of_assets_to_create__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Original Quantity to be requested and approved. --></help>
+        <label><!-- Quantity Requested --></label>
+        <name>Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- The date the Item was received in the warehouse. --></help>
+        <label><!-- Received Date --></label>
+        <name>Received_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Number of products received in the warehouse that you want to create at this point in time. Will default to zero. --></help>
+        <label><!-- Quantity to Create --></label>
+        <name>Received_Quantity__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field reflects Software Vendor Accounts . Any values that display immediately are recently viewed Vendors. To search, type at least the first 2 characters of the Vendor Name and hit enter or the search icon. --></help>
+        <label><!-- Vendor --></label>
+        <lookupFilter>
+            <errorMessage><!-- Vendor must be an Account with a record type of &apos;Vendors&apos;. and have Account.Vendor_Type__c = &apos;Software&apos; --></errorMessage>
+            <informationalMessage><!-- Vendor much be an Account of Recordtype &apos;Vendors&apos;. and be a software vendor. --></informationalMessage>
+        </lookupFilter>
+        <name>Vendor__c</name>
+        <relationshipLabel><!-- Inventory Request Line Items --></relationshipLabel>
+    </fields>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Quantity to create  must be &lt;= Quantity Requested and must not exceed the Quantity Requested - the Total # of Assets already created. --></errorMessage>
+        <name>Qty_Received_is_lteq_Qty_Requested_new</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Quantity Requested cannot be modified after the request has been approved --></errorMessage>
+        <name>Qty_Req_cant_be_changed_after_approved</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Quantity must be &gt; 0. --></errorMessage>
+        <name>Qty_Requested_is_Greater_then_Zero</name>
+    </validationRules>
+</CustomObjectTranslation>

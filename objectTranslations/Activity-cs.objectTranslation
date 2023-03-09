@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Activity Count --></label>
+        <name>Activity_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Manager Fx --></label>
+        <name>Activity_Manager_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Owner Active --></label>
+        <name>Activity_Owner_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Activity Owner Manager --></label>
+        <name>Activity_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Task/Event --></label>
+        <name>Age_of_Task_Event__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Count --></label>
+        <name>Appointment_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Paid --></label>
+        <name>Appointment_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appointment Set By --></label>
+        <name>Appointment_Set_By__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned To Manager --></label>
+        <name>Assigned_To_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Did They Show Up? --></label>
+        <name>Did_They_Showup__c</name>
+        <picklistValues>
+            <masterLabel>No Show</masterLabel>
+            <translation><!-- No Show --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Show</masterLabel>
+            <translation><!-- Show --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Event Count --></label>
+        <name>Event_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type (Reports) --></label>
+        <name>Event_Type_Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <help>Počet všech událostí</help>
+        <label><!-- Count of Events --></label>
+        <name>FSL__Count_of_Events__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Tasks --></label>
+        <name>FSL__Count_of_Tasks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event Type --></label>
+        <name>FSL__Event_Type__c</name>
+        <picklistValues>
+            <masterLabel>Resource Absence</masterLabel>
+            <translation>Absence zdroje</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Appointment</masterLabel>
+            <translation>Schůzka služby</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date &amp; Time (custom) --></label>
+        <name>Last_Modified_Date_Time_custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Gen Appointment Type --></label>
+        <name>Lead_Gen_Appointment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Inbound</masterLabel>
+            <translation><!-- Inbound --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Outbound</masterLabel>
+            <translation><!-- Outbound --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Marketing Task --></label>
+        <name>Marketing_Task__c</name>
+    </fields>
+    <fields>
+        <help><!-- The state of the record in the &quot;Name&quot; field. --></help>
+        <label><!-- &quot;Name&quot; State --></label>
+        <name>Name_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone Call Count --></label>
+        <name>Phone_Call_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- The state of the record in the &quot;Related To&quot; record. --></help>
+        <label><!-- &quot;Related To&quot; State --></label>
+        <name>Related_To_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- &quot;Related to&quot; Record Name --></label>
+        <name>Related_to_Record_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Count --></label>
+        <name>Visit_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Base Object --></label>
+        <name>maps__BaseObjectId__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Layer Id --></label>
+        <name>maps__LayerId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route Waypoint --></label>
+        <name>maps__WA_AdvRouteWaypoint__c</name>
+        <relationshipLabel><!-- Activities --></relationshipLabel>
+    </fields>
+</CustomObjectTranslation>

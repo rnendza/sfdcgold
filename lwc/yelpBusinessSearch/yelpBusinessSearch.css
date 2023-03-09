@@ -1,0 +1,29 @@
+.accel-image-container {  width: 100%;}
+.accel-search-input {background-color: #D5A210}
+.c3llc-yelp-search-theme {background-color:#FF0000 }
+.accel-bar-image {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+.star-rating {
+@extend %flex-display;
+    align-items: center;
+    font-size: 3em;
+    justify-content: center;
+}
+.back-stars {
+@extend %flex-display;
+    color: #bb5252;
+    position: relative;
+    text-shadow: 4px 4px 10px #843a3a;
+}
+.front-stars {
+@extend %flex-display;
+    color: #FFBC0B;
+    overflow: hidden;
+    position: absolute;
+    text-shadow: 2px 2px 5px #d29b09;
+    top: 0;
+    transition: all .5s
+}

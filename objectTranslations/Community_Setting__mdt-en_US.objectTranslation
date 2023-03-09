@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Community Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Community Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Comma Delim --></help>
+        <label><!-- Account Types --></label>
+        <name>Account_Types__c</name>
+    </fields>
+    <fields>
+        <help><!-- When a CRM User logs in via the contact record. If this box it checked it will allow a toast. --></help>
+        <label><!-- Allow Impersonation Toast --></label>
+        <name>Allow_Impersonation_Toast__c</name>
+    </fields>
+    <fields>
+        <label><!-- Debug Console --></label>
+        <name>Debug_Console__c</name>
+    </fields>
+    <fields>
+        <help><!-- Disables the license expiration popup --></help>
+        <label><!-- Disable License Expiration Messaging --></label>
+        <name>Disable_License_Expiration_Messaging__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Terms of Service Autodisplay --></label>
+        <name>Disable_Terms_of_Service_Autodisplay__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this do display the bottom navigation (whats new link etc) --></help>
+        <label><!-- Display Bottom Nav Options --></label>
+        <name>Display_Bottom_Nav_Options__c</name>
+    </fields>
+    <fields>
+        <help><!-- Display the privacy link in the bottom nav bar. Prereq is display bottom nav bar is checked. --></help>
+        <label><!-- Display Privacy Link --></label>
+        <name>Display_Privacy_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export Field Names --></label>
+        <name>Export_Field_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- Max number of accounts to return. (used primarily for us logging in as system admins!) --></help>
+        <label><!-- Max Account Results --></label>
+        <name>Max_Account_Results__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Number of days.. to consider a license expiration warning --></help>
+        <label><!-- Number of Days to Warn To Expiration --></label>
+        <name>Number_of_Days_to_Warn_To_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Privacy Text --></label>
+        <name>Privacy_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms of Service Text --></label>
+        <name>Terms_of_Service_Text__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

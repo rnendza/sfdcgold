@@ -1,0 +1,199 @@
+<!-- Cl Linked Rps -->
+<template>
+    <!-- USED TO INJECT STYLE TAGS TO OVERRIDE CSS CAN GET AROUND SHADOW DOM -->
+    <div lwc:dom="manual" class="fake-sfdc-console-card-overrides-class"></div>
+
+    <div class="accel-console-card"> <!-- class used as unique selector in injected styles -->
+
+        <lightning-card  title={cardTitleCustom}  icon-name={cardIconName}>
+            
+            <!--- CARD MENU OPTIONS HEADER -->
+            <div slot="actions">
+                <template if:true={showFilterIcon}>
+                    <lightning-button-icon-stateful
+                            onclick={handleFilterToggle}
+                            selected={_showFilters}
+                            icon-name="standard:filter"
+                            size="small"
+                            variant="border-filled"
+                            alternative-text="Filter"
+                            title="Filter">
+                    </lightning-button-icon-stateful>
+                </template>
+            </div>
+
+            <!-- CARD BODY -->
+            <div class="slds-p-bottom_x-small slds-p-horizontal_xx-small">
+
+                <!-- ======  Result Data Filters ======= -->
+                <template if:true={allowFilterMenuAction}>
+                    <div class={filterMenuClass}> <!-- Left in DOM. hide/show as needed. -->
+                        <div class="slds-p-left_xx-small slds-p-bottom_small">
+                            <c-cl-linked-rps-filters
+                                    filters-label="RPS Filters"
+                                    onvarianceoptionsselected={handleFilterValueSelected}
+                                    allow-collection-date-filters={allowCollectionDateFilter}
+                                    oncollectiondateoptionselected={handleCollectionDatePlValueSelected}
+                                    onclose={handleFilterToggle}
+                                    variances-map={_variancesMap}
+                                    debug-console={debugConsole}
+                                    selected-variance-options={selectedVarianceOptions}>
+                            </c-cl-linked-rps-filters>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- ======  Pills For Result Data Filters =======  -->
+                <template if:true={showFilterPills}>
+                        <div class="slds-p-horizontal_xxx-small slds-p-bottom_xx-small">
+                            <template for:each={selectedVariancePills} for:item="pill">
+                                <lightning-pill class="slds-m-around_xx-small accel-pill"
+                                                name={pill.value} label={pill.label}
+                                                onclick={removeFilterPill}
+                                                key={pill.value}>
+                                    <lightning-icon if:true={varianceFilterPillIconName}
+                                                    icon-name={varianceFilterPillIconName}
+                                                    alternative-text={pill.label}></lightning-icon>
+                                </lightning-pill>
+                            </template>
+                        </div>
+                </template>
+
+                <!-- ======  COMPACT LAYOUT ON HOVER (NOT READY YET... FOR FUTURE USE ONLY) ======= -->
+                <template if:true={allowCompactLoOnHover}>
+                    <c-accel-compact-layout-on-hover
+                            s-object-name="Route_Processing_Sheet__c"
+                            record-id={_objectRecordId} >
+                    </c-accel-compact-layout-on-hover>
+                </template>
+
+                <!-- === ROW LIMIT OPTIONS === -->
+                <template if:true={showRowLimitOptions}>
+                    <div class="slds-border_bottom slds-m-bottom_xx-small slds-p-bottom_xx-small">
+                        <div class="slds-p-left_x-small slds-p-bottom_xxx-small">
+                            <c-ui-list-limit-filter
+                                    row-limit-options={rowLimitOptions}
+                                    select-style={_limitSelectStyle}
+                                    debug-console={debugConsole}
+                                    onoptionselected={handleLimitOptionSelected}>
+                            </c-ui-list-limit-filter>
+                        </div>
+                    </div>
+                </template>
+
+                <!-- DATA RESULTS -->
+                <template for:each={rpsWrappers} for:item="rps"  if:true={showRpsRows} >
+
+                    <div class="slds-has-divider_bottom slds-m-bottom_xx-small slds-p-bottom_xx-small" key={rps.rpsId}>
+                        <lightning-tile type="media" label="">
+
+                            <!-- RECORD LINK   onmouseover={handleRpsLinkMouseover}-->
+                            <span class="accel-dotted-link"
+                                  data-rpsid={rps.rpsId}>
+                                <a  href="javascript:void(0);"
+                                    data-rpsid={rps.rpsId}
+                                    title="Click to view record."
+                                    onclick={handleNavToRpsView}>
+                                    {rps.rpsName}
+                                </a>
+                            </span>
+
+                            <!-- RECORD FIELDS -->
+                            <dl class="slds-dl_horizontal">
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        {fields.Collection_Date__c.label}:
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        <lightning-formatted-date-time
+                                                value={rps.rpsCollectionDate}>
+                                        </lightning-formatted-date-time>
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        {fields.Collection_Type__c.label}:
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        {rps.rpsCollectionType}
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        {fields.Variance__c.label}:
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        <lightning-formatted-number if:false={rps.hasVgtVariance}
+                                                                    class="slds-text-body_small"
+                                                                    value={rps.rpsVgtVariance}
+                                                                    format-style="currency"
+                                                                    currency-code={_currency}>
+                                        </lightning-formatted-number>
+                                        <lightning-formatted-number if:true={rps.hasVgtVariance}
+                                                                    class="slds-text-color_error slds-text-body_small"
+                                                                    value={rps.rpsVgtVariance}
+                                                                    format-style="currency"
+                                                                    currency-code={_currency}>
+                                        </lightning-formatted-number>
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        {fields.RT_Variance__c.label}:
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate slds-text-body_small">
+                                        <lightning-formatted-number if:false={rps.hasRtVariance}
+                                                                    class="slds-text-body_small"
+                                                                    value={rps.rpsRtVariance}
+                                                                    format-style="currency"
+                                                                    currency-code={_currency}>
+                                        </lightning-formatted-number>
+                                        <lightning-formatted-number if:true={rps.hasRtVariance}
+                                                                    class="slds-text-color_error slds-text-body_small"
+                                                                    value={rps.rpsRtVariance}
+                                                                    format-style="currency"
+                                                                    currency-code={_currency}>
+                                        </lightning-formatted-number>
+                                    </p>
+                                </dd>
+                            </dl>
+                        </lightning-tile>
+                    </div>
+                </template>
+
+                <!-- LOADING STENCIL -->
+                <template if:true={showStencil}>
+                    <c-ui-custom-stencil
+                            iterations={_stencilIterations}
+                            type="list" columns={_stencilColumns}>
+                    </c-ui-custom-stencil>
+                </template>
+
+                <!-- NO LINKED RECORDS FOUND -->
+                <template if:true={showNoLinkedRps} >
+                    <div class="slds-p-around_small">
+                        {customNoRecordsText}
+                    </div>
+                </template>
+            </div>
+
+            <!-- CARD FOOTER (VIEW ALL / REDIRECT TO PARENT ACCOUNT RELATED LIST) -->
+            <div slot="footer" if:true={showRpsRows}>
+                <a  href="javascript:void(0);"
+                    title="Click to view all records."
+                    onclick={handleNavToRelatedListView}>
+                    <b>{viewAllCustom}</b>
+                </a>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

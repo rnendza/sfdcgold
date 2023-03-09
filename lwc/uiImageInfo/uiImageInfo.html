@@ -1,0 +1,36 @@
+<!-- Ui Image Info -->
+<template>
+    <div class="slds-grid slds-gutters_x-small slds-wrap">
+        <div class="slds-col slds-size_1-of-1">
+            <lightning-icon icon-name="doctype:image"
+                            title={imgTitleFull}
+                            class="slds-m-right_xx-small"
+                            size="x-small"></lightning-icon>
+                <span class="slds-truncate_container_25" title={imgTitleFull}>
+                    {imgTitleDisplay}&nbsp;({imgSize})
+                </span>
+
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-var-m-top_xx-small">
+            <lightning-icon icon-name="standard:avatar"
+                            class="slds-m-right_xx-small "
+                            size="x-small"></lightning-icon>
+                {imgUserName}
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-var-m-top_xx-small">
+            <lightning-icon icon-name="standard:event"
+                            class="slds-m-right_xx-small"
+                            size="x-small"></lightning-icon>
+            <lightning-formatted-date-time
+                    value={imgDate} year="numeric" month="numeric" day="numeric" hour="2-digit"
+                    minute="2-digit" time-zone-name="short" hour12="true"></lightning-formatted-date-time></p>
+        </div>
+        <div    if:true={imgViewCount}
+                class="slds-col slds-size_1-of-1 slds-var-m-top_xx-small">
+            <lightning-icon icon-name="standard:number_input"
+                            class="slds-m-right_xx-small"
+                            size="x-small"></lightning-icon>
+                Viewed {imgViewCount} times.
+        </div>
+    </div>
+</template>

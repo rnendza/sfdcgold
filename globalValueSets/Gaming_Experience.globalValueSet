@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>New to Gaming</fullName>
+        <default>false</default>
+        <label>New to Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>PHG - New Owners</fullName>
+        <default>false</default>
+        <label>PHG - New Owners</label>
+    </customValue>
+    <customValue>
+        <fullName>PHG - New Business Entity</fullName>
+        <default>false</default>
+        <label>PHG - New Business Entity</label>
+    </customValue>
+    <customValue>
+        <fullName>PHG - New Owners &amp; New Business Entity</fullName>
+        <default>false</default>
+        <label>PHG - New Owners &amp; New Business Entity</label>
+    </customValue>
+    <customValue>
+        <fullName>Currently Live with Gaming</fullName>
+        <default>false</default>
+        <label>Currently Live with Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>Has Gaming</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Has Gaming</label>
+    </customValue>
+    <customValue>
+        <fullName>Previously Had Gaming</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Previously Had Gaming</label>
+    </customValue>
+    <masterLabel>Gaming Experience</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

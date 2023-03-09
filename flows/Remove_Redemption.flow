@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Remove Redemption {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Remove Redemption</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Remove_Redemption</name>
+        <label>Remove Redemption</label>
+        <locationX>319</locationX>
+        <locationY>242</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>accountIdVar</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>Redemption__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>assetIdVar</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Redemption__c</field>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Remove_Redemption</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>accountIdVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>assetIdVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

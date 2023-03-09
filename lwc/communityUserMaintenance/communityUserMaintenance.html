@@ -1,0 +1,36 @@
+<template>
+    <lightning-tabset class="accel-tab-set" active-tab-value={activeTabValue}>
+        <lightning-tab label="Contacts" class="c3llc-autocomplete-tab"
+                       value="Contacts"
+                       icon-name="standard:contact"
+                       onactive={handleTabSelect}>
+
+            <div>
+                <template if:true={isProcessing}>
+                    <lightning-spinner
+                            size="large"
+                            variant="brand"
+                            alternative-text="processing"></lightning-spinner>
+                </template>
+                <div>
+                    <lightning-datatable
+                            key-field="userId"
+                            data={portalUsers}
+                            row-number-offset={rowOffset}
+                            hide-checkbox-column="true"
+                            onrowaction={handleRowAction}
+                            show-row-number-column="false"
+                            columns={contactColumns}
+                            class="accel-chrome-hardware-acceleration accel-datatable-styled accel-datatable-compact slds-no-row-hover">
+                    </lightning-datatable>
+                </div>
+            </div>
+        </lightning-tab>
+        <lightning-tab label="Accounts" class="c3llc-autocomplete-tab"
+                       value="Accounts"
+                       icon-name="standard:account"
+                       onactive={handleTabSelect}>
+               <c-community-account-maint ></c-community-account-maint>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

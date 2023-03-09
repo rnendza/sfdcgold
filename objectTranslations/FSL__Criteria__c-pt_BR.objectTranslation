@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Critério</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Critérios</value>
+    </caseValues>
+    <fields>
+        <label><!-- Criteria Items --></label>
+        <name>FSL__Criteria_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logic --></label>
+        <name>FSL__Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>FSL__Object_Type__c</name>
+        <picklistValues>
+            <masterLabel>Service Appointment</masterLabel>
+            <translation>Compromisso de serviço</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territories --></label>
+        <name>FSL__Territories__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Type --></label>
+        <name>FSL__User_Type__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation>Administrador</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation>Agente</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community</masterLabel>
+            <translation>Comunidade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispatcher</masterLabel>
+            <translation>Despachante</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource</masterLabel>
+            <translation>Recurso</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Types --></label>
+        <name>FSL__Work_Types__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do critério</nameFieldLabel>
+</CustomObjectTranslation>

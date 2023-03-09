@@ -1,0 +1,2545 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Product_Request_Record_Page2</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Product_Request_Record_Page2</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <externalSharingModel>ReadWrite</externalSharingModel>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Information__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account.Priority__c)+&quot; - &quot;+ Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Information</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Information</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Asset_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( ISBLANK(Asset__c ), &quot;&quot;,
+
+
+
+IF( TEXT(Type__c) = &apos;Parts Consumed Backfill&apos;, &quot;&quot;, Asset__r.Asset_Playable_Image__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Asset Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Cancellation_Notes__c</fullName>
+        <externalId>false</externalId>
+        <label>Cancellation Notes</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>CaseId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Comments</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Created_By_Formula__c</fullName>
+        <externalId>false</externalId>
+        <formula>CreatedBy.FirstName + &quot; &quot; +CreatedBy.LastName</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Created By</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Created_by__c</fullName>
+        <externalId>false</externalId>
+        <label>Created by</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Delivery_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Delivery Method</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Pickup</fullName>
+                    <default>false</default>
+                    <label>Pickup</label>
+                </value>
+                <value>
+                    <fullName>FedEx</fullName>
+                    <default>false</default>
+                    <label>FedEx</label>
+                </value>
+                <value>
+                    <fullName>Shuttle</fullName>
+                    <default>false</default>
+                    <label>Shuttle</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DestinationLocationId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Difference_Between_Requested_Consumed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Quantity_Requested__c - Product_Consumed__r.QuantityConsumed</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Difference Between Requested &amp; Consumed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Exclude_from_List_View__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+
+AND (TEXT(Status ) = &apos;Received&apos;, OR( ISBLANK(Product_Consumed__c),  RMA_Status__c = &apos;RMA Not Expected&apos; , RMA_Status__c = &apos;RMA Received&apos;)), 
+
+AND(TEXT(Type__c) = &apos;Warehouse Restock&apos; , TEXT(Sub_Status__c) = &apos;Received at Warehouse&apos;)
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exclude from Burr Ridge List View</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Exclude_from_Local_Warehouse_List_View__c</fullName>
+        <externalId>false</externalId>
+        <formula>OR(
+
+AND(
+
+ TEXT(Type__c) = &apos;Parts Consumed Backfill&apos; , 
+ TEXT(Sub_Status__c) = &apos;Received at Warehouse&apos;, 
+ OR(
+      ISBLANK( Product_Consumed__c ), 
+      RMA_Status__c = &apos;RMA Not Expected&apos; , 
+      RMA_Status__c = &apos;RMA Received&apos;
+    )), 
+
+
+
+AND(
+ 
+ TEXT(Type__c) = &apos;Parts on Order&apos; , 
+ TEXT(Sub_Status__c) = &apos;Picked Up by Tech&apos;, 
+ OR(
+      ISBLANK(Product_Consumed__c), 
+      RMA_Status__c = &apos;RMA Not Expected&apos; , 
+      RMA_Status__c = &apos;RMA Received&apos;
+    )),
+
+
+AND(
+ TEXT(Type__c) = &apos;Warehouse Restock&apos;, 
+ TEXT(Sub_Status__c) = &apos;Received at Warehouse&apos;
+
+    ) 
+
+
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Exclude from Local Warehouse List View</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Is_Machine_Out_Of_Order__c</fullName>
+        <externalId>false</externalId>
+        <label>Is Machine Out of Order</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Jobs__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Jobs</label>
+        <referenceTo>Jobs__c</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Locally_Available__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Locally Available</label>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location_DBA_Name__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Location DBA Name</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Location_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Marketing_Request__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Record_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>Marketing_Request__r.RecordType.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Record Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Request__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Marketing Request</label>
+        <referenceTo>Marketing_Request__c</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>NeedByDate</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Part_Requested__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please Provide an Accel Item # or Vendor Item #</inlineHelpText>
+        <label>Part # Requested</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Consumed_Defined__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Product Consumed Defined</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_Consumed_Number__c</fullName>
+        <description>Populated in the Log Parts Consumed FSM flow; used to match the Product Consumed with the related Product Request record.</description>
+        <externalId>false</externalId>
+        <label>Product Consumed Number</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Consumed__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <inlineHelpText>The Product Consumed record that this Product Request fulfilled. This could either be a case where a product was consumed and a backfill Product Request was auto-generated, or when a Parts On Order Product Request is generated and the parts are later consumed. This field is auto-populated via the mobile app.</inlineHelpText>
+        <label>Product Consumed</label>
+        <referenceTo>ProductConsumed</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Request_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Case.RMA__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Request Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product_Warehouse_App__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Product2.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Products</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Product Requests (Product(Warehouse App))</relationshipLabel>
+        <relationshipName>Product_Requests1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Quantity_Consumed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Consumed__r.QuantityConsumed</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Quantity Consumed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity_Requested__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity Requested</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RMA_Details__c</fullName>
+        <externalId>false</externalId>
+        <formula>RMA_Status__c +&quot; - &quot;+ RMA_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RMA Details</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RMA_Number__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product_Consumed__r.RMA_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RMA Number</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RMA_Status_Picklist__c</fullName>
+        <externalId>false</externalId>
+        <label>RMA Status Picklist</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RMA Pulled</fullName>
+                    <default>false</default>
+                    <label>RMA Pulled</label>
+                </value>
+                <value>
+                    <fullName>RMA Shipped</fullName>
+                    <default>false</default>
+                    <label>RMA Shipped</label>
+                </value>
+                <value>
+                    <fullName>RMA Received</fullName>
+                    <default>false</default>
+                    <label>RMA Received</label>
+                </value>
+                <value>
+                    <fullName>RMA Not Expected</fullName>
+                    <default>false</default>
+                    <label>RMA Not Expected</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>RMA_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT( Product_Consumed__r.RMA_Status__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>RMA Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>RMA__c</fullName>
+        <externalId>false</externalId>
+        <label>RMA #</label>
+        <length>120</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Request_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Request Count</label>
+        <summarizedField>ProductRequestLineItem.Count__c</summarizedField>
+        <summaryForeignKey>ProductRequestLineItem.ParentId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Requests_Filled__c</fullName>
+        <externalId>false</externalId>
+        <label>Requests Filled</label>
+        <summarizedField>ProductRequestLineItem.Count__c</summarizedField>
+        <summaryFilterItems>
+            <field>ProductRequestLineItem.Marketing_Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ProductRequestLineItem.ParentId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>SAS_Machine_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( Asset__r.Record_Type_Name__c = &apos;VGT&apos;, &quot;SAS&quot;+&quot; &quot;+ Asset__r.SAS__c + &quot; - &quot;+  Asset__r.Model__c, 
+
+  IF( OR(Asset__r.Record_Type_Name__c = &apos;Redemption&apos;, Asset__r.Record_Type_Name__c = &apos;Redemption(COAM)&apos;),  Asset__r.SAS__c +&quot; - &quot;+&apos;Redemption&apos;, &apos;General Supplies&apos;))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAS &amp; Machine Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Service_Appointment__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Service Appointment</label>
+        <referenceTo>ServiceAppointment</referenceTo>
+        <relationshipLabel>Product Requests</relationshipLabel>
+        <relationshipName>Product_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>ShipToAddress</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Ship_to_Accel_Regional_Office__c</fullName>
+        <externalId>false</externalId>
+        <label>Ship to Accel Regional Office:</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Burr Ridge</fullName>
+                    <default>false</default>
+                    <label>Burr Ridge</label>
+                </value>
+                <value>
+                    <fullName>Champaign</fullName>
+                    <default>false</default>
+                    <label>Champaign</label>
+                </value>
+                <value>
+                    <fullName>Collinsville</fullName>
+                    <default>false</default>
+                    <label>Collinsville</label>
+                </value>
+                <value>
+                    <fullName>LaSalle</fullName>
+                    <default>false</default>
+                    <label>LaSalle</label>
+                </value>
+                <value>
+                    <fullName>Peoria</fullName>
+                    <default>false</default>
+                    <label>Peoria</label>
+                </value>
+                <value>
+                    <fullName>Tinley Park (FSG)</fullName>
+                    <default>false</default>
+                    <label>Tinley Park (FSG)</label>
+                </value>
+                <value>
+                    <fullName>Rich &amp; Junnie&apos;s</fullName>
+                    <default>false</default>
+                    <label>Rich &amp; Junnie&apos;s</label>
+                </value>
+                <value>
+                    <fullName>Rockford</fullName>
+                    <default>false</default>
+                    <label>Rockford</label>
+                </value>
+                <value>
+                    <fullName>Watseka</fullName>
+                    <default>false</default>
+                    <label>Watseka</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ShipmentType</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>SourceLocationId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>Sub_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Sub-Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Part Picked</fullName>
+                    <default>false</default>
+                    <label>Part Picked</label>
+                </value>
+                <value>
+                    <fullName>Part Shipped</fullName>
+                    <default>false</default>
+                    <label>Part Shipped</label>
+                </value>
+                <value>
+                    <fullName>Received at Warehouse</fullName>
+                    <default>false</default>
+                    <label>Received at Warehouse</label>
+                </value>
+                <value>
+                    <fullName>Picked Up by Tech</fullName>
+                    <default>false</default>
+                    <label>Picked Up by Tech</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>TO_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>TO Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Backordered_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Backordered Count</label>
+        <summarizedField>ProductRequestLineItem.Count__c</summarizedField>
+        <summaryFilterItems>
+            <field>ProductRequestLineItem.Marketing_Status__c</field>
+            <operation>equals</operation>
+            <value>Backordered</value>
+        </summaryFilterItems>
+        <summaryForeignKey>ProductRequestLineItem.ParentId</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Order_Completed__c</fullName>
+        <externalId>false</externalId>
+        <formula>Requests_Filled__c =  Request_Count__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Order Completed</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Parts on Order</fullName>
+                    <default>false</default>
+                    <label>Parts on Order</label>
+                </value>
+                <value>
+                    <fullName>Parts Consumed Backfill</fullName>
+                    <default>false</default>
+                    <label>Parts Consumed Backfill</label>
+                </value>
+                <value>
+                    <fullName>Warehouse Restock</fullName>
+                    <default>false</default>
+                    <label>Warehouse Restock</label>
+                </value>
+                <value>
+                    <fullName>Cage Request</fullName>
+                    <default>false</default>
+                    <label>Cage Request</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VGT_SAS_or_General_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>VGT SAS # or General Items</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>Redemption</fullName>
+                    <default>false</default>
+                    <label>Redemption</label>
+                </value>
+                <value>
+                    <fullName>General Supplies/Consumables</fullName>
+                    <default>false</default>
+                    <label>General Supplies/Consumables</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>WorkOrderId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>WorkOrderLineItemId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <listViews>
+        <fullName>All_Burr_Ridge_Outbound_Product_Requests</fullName>
+        <booleanFilter>1 AND ( 2 OR 3)</booleanFilter>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Burr Ridge Warehouse</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Accel Central Hub</value>
+        </filters>
+        <label>Burr Ridge Central All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Collinsville_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Collinsville Warehouse</value>
+        </filters>
+        <label>Collinsville All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_Cage_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Product_Warehouse_App__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Status</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Type__c</field>
+            <operation>equals</operation>
+            <value>Cage Request</value>
+        </filters>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Warehouse_Request</value>
+        </filters>
+        <label>All Open Cage Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Open_RMAs</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>RMA_Status_Picklist__c</columns>
+        <columns>Name</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Asset__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Burr Ridge Warehouse</value>
+        </filters>
+        <filters>
+            <field>RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>RMA Pulled,RMA Shipped</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>All Open RMAs</label>
+    </listViews>
+    <listViews>
+        <fullName>All_ProductRequests</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Burr_Ride_Central</fullName>
+        <booleanFilter>(1 AND 2 AND 3 AND 4) Or (2 AND 3 AND 4 And 5)</booleanFilter>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Burr Ridge Warehouse</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Received,Shipped,Backordered,Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Part Shipped,Picked Up by Tech</value>
+        </filters>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Accel Central Hub</value>
+        </filters>
+        <label>Burr Ridge Central Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Burr_Ride_Central_Backordered_Parts</fullName>
+        <booleanFilter>(1 AND 2 AND 3) OR (1 AND 3 AND 4)</booleanFilter>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Burr Ridge Warehouse</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Backordered</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Accel Central Hub</value>
+        </filters>
+        <label>Burr Ridge Central Backordered Parts</label>
+    </listViews>
+    <listViews>
+        <fullName>Burr_Ridge_Central_Open_RMAs</fullName>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <columns>Account_Information__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>RMA_Number__c</columns>
+        <columns>RMA_Status__c</columns>
+        <columns>RMA_Status_Picklist__c</columns>
+        <columns>Name</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Asset__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RMA_Status__c</field>
+            <operation>equals</operation>
+            <value>RMA Pulled,RMA Shipped</value>
+        </filters>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>equals</operation>
+            <value>Burr Ridge Warehouse</value>
+        </filters>
+        <label>Burr Ridge Central Open RMAs</label>
+    </listViews>
+    <listViews>
+        <fullName>Champaign_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Champaign Warehouse</value>
+        </filters>
+        <label>Champaign All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Champaign_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Champaign Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Champaign Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Collinsville_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Collinsville Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Collinsville Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>In_Process_Requests</fullName>
+        <columns>Name</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <columns>WorkOrder</columns>
+        <columns>WorkOrderLineItem</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>In Process</value>
+        </filters>
+        <label>In Process Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>My_ProductRequests</fullName>
+        <filterScope>Mine</filterScope>
+        <label>My Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Product_Requests_Lightning_Page</fullName>
+        <columns>Name</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>My Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>My_WH_Parts_Requests</fullName>
+        <columns>Name</columns>
+        <columns>Account</columns>
+        <columns>RecordType</columns>
+        <columns>Type__c</columns>
+        <columns>SourceLocation</columns>
+        <columns>DestinationLocation</columns>
+        <columns>Asset__c</columns>
+        <columns>Product_Warehouse_App__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Status</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Completed</value>
+        </filters>
+        <label>My WH Parts Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>New_Requests</fullName>
+        <columns>Name</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <columns>WorkOrder</columns>
+        <columns>WorkOrderLineItem</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>New</value>
+        </filters>
+        <label>New Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Peoria_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Peoria Warehouse</value>
+        </filters>
+        <label>Peoria All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Peoria_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Peoria Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Peoria Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Received_Requests</fullName>
+        <columns>Name</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <columns>WorkOrder</columns>
+        <columns>WorkOrderLineItem</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Received</value>
+        </filters>
+        <label>Received Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Rockford_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Rockford Warehouse</value>
+        </filters>
+        <label>Rockford All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Rockford_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Rockford Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Rockford Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Service_Product_Requests_For_Conversion</fullName>
+        <columns>Name</columns>
+        <columns>WorkOrder</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>RecordType</columns>
+        <columns>Type__c</columns>
+        <columns>RMA_Details__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Marketing_Request</value>
+        </filters>
+        <filters>
+            <field>SourceLocation</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Service Product Requests For Conversion</label>
+    </listViews>
+    <listViews>
+        <fullName>Shipped_Requests</fullName>
+        <columns>Name</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <columns>WorkOrder</columns>
+        <columns>WorkOrderLineItem</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Shipped</value>
+        </filters>
+        <label>Shipped Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Springfield_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Springfield Warehouse</value>
+        </filters>
+        <label>Springfield All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Springfield_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Springfield Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Springfield Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Submitted_Requests</fullName>
+        <columns>Name</columns>
+        <columns>LastModifiedDate</columns>
+        <columns>LastModifiedBy</columns>
+        <columns>WorkOrder</columns>
+        <columns>WorkOrderLineItem</columns>
+        <columns>DestinationLocation</columns>
+        <columns>SourceLocation</columns>
+        <columns>Case</columns>
+        <columns>Account</columns>
+        <filterScope>Mine</filterScope>
+        <filters>
+            <field>Status</field>
+            <operation>equals</operation>
+            <value>Submitted</value>
+        </filters>
+        <label>Submitted Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Tinley_Park_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Tinley Park Warehouse</value>
+        </filters>
+        <label>Tinley Park All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Tinley_Park_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Tinley Park Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Tinley Park Open Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Watseka_All_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>Created_By_Formula__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Watseka Warehouse</value>
+        </filters>
+        <label>Watseka All Product Requests</label>
+    </listViews>
+    <listViews>
+        <fullName>Watseka_Inbound_Product_Requests</fullName>
+        <columns>Account_Information__c</columns>
+        <columns>Name</columns>
+        <columns>Asset_Status__c</columns>
+        <columns>SAS_Machine_Type__c</columns>
+        <columns>Product__c</columns>
+        <columns>Quantity_Requested__c</columns>
+        <columns>Type__c</columns>
+        <columns>Locally_Available__c</columns>
+        <columns>Status</columns>
+        <columns>Sub_Status__c</columns>
+        <columns>Cancellation_Notes__c</columns>
+        <columns>TO_Number__c</columns>
+        <columns>RMA_Details__c</columns>
+        <columns>CreatedDate</columns>
+        <columns>WorkOrder</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RecordType</field>
+            <operation>equals</operation>
+            <value>ProductRequest.Service_Part_Request</value>
+        </filters>
+        <filters>
+            <field>DestinationLocation</field>
+            <operation>equals</operation>
+            <value>Watseka Warehouse</value>
+        </filters>
+        <filters>
+            <field>Exclude_from_Local_Warehouse_List_View__c</field>
+            <operation>equals</operation>
+            <value>0</value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operation>notEqual</operation>
+            <value>Cancelled</value>
+        </filters>
+        <filters>
+            <field>Sub_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Picked Up by Tech</value>
+        </filters>
+        <label>Watseka Open Product Requests</label>
+    </listViews>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Marketing_Request</fullName>
+        <active>true</active>
+        <label>Marketing Request</label>
+        <picklistValues>
+            <picklist>Delivery_Method__c</picklist>
+            <values>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pickup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shuttle</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_Machine_Out_Of_Order__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RMA_Status_Picklist__c</picklist>
+            <values>
+                <fullName>RMA Not Expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Pulled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Shipped</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ship_to_Accel_Regional_Office__c</picklist>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LaSalle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rich %26 Junnie%27s</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park %28FSG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Watseka</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ShipmentType</picklist>
+            <values>
+                <fullName>Next Business Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overnight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rush</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>In Process</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shipped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Status__c</picklist>
+            <values>
+                <fullName>Part Picked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part Shipped</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Parts Consumed Backfill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts on Order</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_SAS_or_General_Items__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Supplies%2FConsumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Service_Part_Request</fullName>
+        <active>true</active>
+        <label>Service Part Request</label>
+        <picklistValues>
+            <picklist>Delivery_Method__c</picklist>
+            <values>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pickup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shuttle</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_Machine_Out_Of_Order__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RMA_Status_Picklist__c</picklist>
+            <values>
+                <fullName>RMA Not Expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Pulled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Shipped</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ship_to_Accel_Regional_Office__c</picklist>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LaSalle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rich %26 Junnie%27s</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park %28FSG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Watseka</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ShipmentType</picklist>
+            <values>
+                <fullName>Next Business Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overnight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rush</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Backordered</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Committed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Transit</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Received</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Status__c</picklist>
+            <values>
+                <fullName>Part Picked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part Shipped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Up by Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Received at Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Parts Consumed Backfill</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Parts on Order</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Warehouse Restock</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_SAS_or_General_Items__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Supplies%2FConsumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Warehouse_Request</fullName>
+        <active>true</active>
+        <label>Warehouse Request</label>
+        <picklistValues>
+            <picklist>Delivery_Method__c</picklist>
+            <values>
+                <fullName>FedEx</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pickup</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Shuttle</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Is_Machine_Out_Of_Order__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>RMA_Status_Picklist__c</picklist>
+            <values>
+                <fullName>RMA Not Expected</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Pulled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Received</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RMA Shipped</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Ship_to_Accel_Regional_Office__c</picklist>
+            <values>
+                <fullName>Burr Ridge</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Champaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Collinsville</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>LaSalle</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Peoria</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rich %26 Junnie%27s</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rockford</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tinley Park %28FSG%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Watseka</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>ShipmentType</picklist>
+            <values>
+                <fullName>Next Business Day</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Overnight</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Pick Up</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Rush</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status</picklist>
+            <values>
+                <fullName>Cancelled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Completed</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Ready to Pick Up</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sub_Status__c</picklist>
+            <values>
+                <fullName>Part Picked</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Part Shipped</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Picked Up by Tech</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Received at Warehouse</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Cage Request</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>VGT_SAS_or_General_Items__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>5</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>General Supplies%2FConsumables</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Redemption</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>LastModifiedDate</customTabListAdditionalFields>
+        <customTabListAdditionalFields>LastModifiedBy</customTabListAdditionalFields>
+        <customTabListAdditionalFields>WorkOrder</customTabListAdditionalFields>
+        <customTabListAdditionalFields>WorkOrderLineItem</customTabListAdditionalFields>
+        <customTabListAdditionalFields>DestinationLocation</customTabListAdditionalFields>
+        <customTabListAdditionalFields>SourceLocation</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Case</customTabListAdditionalFields>
+        <customTabListAdditionalFields>Account</customTabListAdditionalFields>
+        <excludedStandardButtons>New</excludedStandardButtons>
+        <lookupDialogsAdditionalFields>LastModifiedDate</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>LastModifiedBy</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>WorkOrder</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>WorkOrderLineItem</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>DestinationLocation</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>SourceLocation</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Case</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Account</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedDate</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>LastModifiedBy</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>WorkOrder</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>WorkOrderLineItem</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>DestinationLocation</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>SourceLocation</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Case</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Account</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedDate</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LastModifiedBy</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>WorkOrder</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>WorkOrderLineItem</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>DestinationLocation</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>SourceLocation</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Case</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Account</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <validationRules>
+        <fullName>Require_Cancellation_Notes_if_Cancelled</fullName>
+        <active>true</active>
+        <description>This Validation Rule requires the user to input Cancellation Details if the Status is set to Cancelled.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Status , &apos;Cancelled&apos;),
+ISBLANK( Cancellation_Notes__c ))</errorConditionFormula>
+        <errorMessage>You must input notes in the Cancellation Notes field in order to change the Status to Cancelled.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_SubStatus_Cleared</fullName>
+        <active>true</active>
+        <description>Validation rule to require the substatus be cleared if the status is not In Transit or Received</description>
+        <errorConditionFormula>AND(
+
+    NOT(
+         ISPICKVAL( Status , &apos;Received&apos;)), 
+    NOT(
+         ISPICKVAL( Status, &apos;In Transit&apos;)),
+
+NOT(ISBLANK(TEXT( Sub_Status__c )))
+
+)</errorConditionFormula>
+        <errorDisplayField>Sub_Status__c</errorDisplayField>
+        <errorMessage>Sub-Status must be cleared when Status does not equal In Transit or Received</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_SubStatus_for_Backfill_Received</fullName>
+        <active>true</active>
+        <description>Validation Rule to require the sub-status be filled in when a status of &apos;Received&apos; is selected and Type is &apos;Parts Consumed Backfill&apos;</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status , &apos;Received&apos;),
+
+ISPICKVAL( Type__c , &apos;Parts Consumed Backfill&apos;),
+
+
+NOT(ISPICKVAL( Sub_Status__c , &apos;Received at Warehouse&apos;))
+
+)</errorConditionFormula>
+        <errorDisplayField>Sub_Status__c</errorDisplayField>
+        <errorMessage>Set Sub-Status to Received at Warehouse</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_SubStatus_for_InTransit</fullName>
+        <active>true</active>
+        <description>Validation Rule to require the sub-status be filled in when a status of &apos;In-Transit&apos; is selected</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status , &apos;In Transit&apos;),
+
+NOT(OR(ISPICKVAL( Sub_Status__c, &apos;Part Picked&apos;), ISPICKVAL(Sub_Status__c, &apos;Part Shipped&apos;)))
+)</errorConditionFormula>
+        <errorDisplayField>Sub_Status__c</errorDisplayField>
+        <errorMessage>Set Sub-Status to Part Picked or Part Shipped</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_SubStatus_for_Parts_on_Order_Rec</fullName>
+        <active>true</active>
+        <description>Validation Rule to require the sub-status be filled in when a status of &apos;Received&apos; is selected and Type is &apos;Parts on Order&apos;</description>
+        <errorConditionFormula>AND(ISPICKVAL( Status , &apos;Received&apos;),
+
+ISPICKVAL( Type__c , &apos;Parts on Order&apos;),
+
+
+NOT(OR(ISPICKVAL( Sub_Status__c , &apos;Picked Up by Tech&apos;),
+ISPICKVAL(Sub_Status__c, &apos;Received at Warehouse&apos;)))
+
+)</errorConditionFormula>
+        <errorDisplayField>Sub_Status__c</errorDisplayField>
+        <errorMessage>Set Sub-Status to Received at Warehouse or Picked Up by Tech</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Require_TO_Number_when_Part_is_Shipped</fullName>
+        <active>true</active>
+        <description>This Validation Rule prevents users from setting the Sub-Status to &quot;Part Shipped&quot; without populating the TO Number field.</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Sub_Status__c ,&quot;Part Shipped&quot;),
+ISBLANK(TO_Number__c))</errorConditionFormula>
+        <errorMessage>You must input a TO Number before setting the Sub-Status to Part Shipped.</errorMessage>
+    </validationRules>
+</CustomObject>

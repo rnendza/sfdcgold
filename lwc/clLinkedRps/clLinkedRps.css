@@ -1,0 +1,14 @@
+.accel-card-header { padding-bottom: 10px; }
+.accel-dl_horizontal__label { width:30%; }
+.accel-dl_horizontal__detail { width:70%; }
+
+.accel-pill {
+    --sds-c-pill-color-background: rgb(251,253,190);
+    --sds-c-pill-line-height: 1.25;
+    --sds-c-pill-color-border: rgb(21,57,238);
+}
+.accel-dotted-link {
+    border-bottom: var(--lwc-borderWidthThin, 1px) dotted;
+    color: var(--lwc-brandTextLink,rgb(1, 118, 211));
+    text-decoration: none;
+}

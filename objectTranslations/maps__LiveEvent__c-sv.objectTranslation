@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps-livehändelsen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En Maps-livehändelse</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps-livehändelse</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps-livehändelserna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps-livehändelser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps-livehändelser</value>
+    </caseValues>
+    <fields>
+        <help>Intern användning</help>
+        <label><!-- Correlation Id --></label>
+        <name>maps__CorrelationId__c</name>
+    </fields>
+    <fields>
+        <help>Enhet involverad i händelse och regel</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Datum &amp; tid för inträde</help>
+        <label><!-- Entry Date Time --></label>
+        <name>maps__EntryDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Plats för inträdesposition</help>
+        <label><!-- Entry Position --></label>
+        <name>maps__EntryPosition__c</name>
+    </fields>
+    <fields>
+        <help>Datum &amp; tid för utträde</help>
+        <label><!-- Exit Date Time --></label>
+        <name>maps__ExitDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Plats för utträdesposition</help>
+        <label><!-- Exit Position --></label>
+        <name>maps__ExitPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Posttyp för skapad händelse</help>
+        <label><!-- Live Event Type --></label>
+        <name>maps__LiveEventType__c</name>
+        <picklistValues>
+            <masterLabel>Enters</masterLabel>
+            <translation>Inträden</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exits</masterLabel>
+            <translation>Utträden</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Slå upp till IoT-enhet som skapade händelsen</help>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID för extern regel</help>
+        <label><!-- Rule Id --></label>
+        <name>maps__RuleId__c</name>
+    </fields>
+    <fields>
+        <help>Namnet eller etiketten för denna regel</help>
+        <label><!-- Rule Name --></label>
+        <name>maps__RuleName__c</name>
+    </fields>
+    <fields>
+        <help>Mängden tid som tillbringats inom ett geostaket i timmar</help>
+        <label><!-- Time Spent in Geofence (Hours) --></label>
+        <name>maps__TimeSpentinGeofenceHours__c</name>
+    </fields>
+    <fields>
+        <help>Mängden tid som tillbringats inom ett geostaket i minuter</help>
+        <label><!-- Time Spent in Geofence (Minutes) --></label>
+        <name>maps__TimeSpentinGeofenceMinutes__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Namn på livehändelse för Maps</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>guar__AuraEnabledLabel__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>AuraEnabledLabel</label>
+        <length>12</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>guar__Included_Objects__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Objects to include in report assessment. Comma Separated object api names.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Objects to include in report assessment. Comma Separated object api names.</inlineHelpText>
+        <label>Included Objects</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>10</visibleLines>
+    </fields>
+    <label>GUAR Setting</label>
+    <pluralLabel>GUAR Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

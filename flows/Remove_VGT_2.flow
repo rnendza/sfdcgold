@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>49.0</apiVersion>
+    <interviewLabel>Remove VGT 2 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Remove VGT 2</label>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Remove_VGT_2</name>
+        <label>Remove VGT 2</label>
+        <locationX>455</locationX>
+        <locationY>202</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>accountIdVar</elementReference>
+            </value>
+        </filters>
+        <filters>
+            <field>VGT_2__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>assetIdVar</elementReference>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>VGT_2__c</field>
+        </inputAssignments>
+        <object>Account</object>
+    </recordUpdates>
+    <startElementReference>Remove_VGT_2</startElementReference>
+    <status>Active</status>
+    <variables>
+        <name>accountIdVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <name>assetIdVar</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

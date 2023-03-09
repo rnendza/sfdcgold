@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Relationship_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Account.Projects__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Projects__r$Install_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Account.Projects__r$Compliance_Go_Live__c</field>
+    </columns>
+    <columns>
+        <field>Account.Projects__r$Compliance_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Account.Projects__r$Local_Liquor_License_Issuing_Authority__c</field>
+    </columns>
+    <description>6th VGT - Municipality Req. Needed</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Projects__r$Compliance_Go_Live__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Projects__r$X6th_VGT_Project__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Projects__r$Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IGB Approval,Install Scheduled,SGI Project Scheduled,Closure</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>6th VGT - Municipality Req. Needed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Projects__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

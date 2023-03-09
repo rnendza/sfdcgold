@@ -1,0 +1,74 @@
+.THIS .slds-form-element__label {
+    color:black;font-weight:600
+}
+.THIS .apexcharts-canvas {
+    background-image: linear-gradient(to left bottom, #140a83, #001169, #00124e, #060d32, #040418);
+}
+.THIS .accel-search-btn {
+    color:white!important;
+}
+.THIS .echarts-bar-chart {
+    width:100%;min-height:500px
+}
+.THIS .echarts-machine-daily-locshare-pie {
+    width:100%;min-height:500px
+}
+.THIS .accel-grid-spinner {
+    z-index: 10000;
+    position: fixed;
+}
+/*
+.THIS .slds-button_icon-bare{
+    display: none;
+}
+*/
+.THIS .accel-csv-download-icon svg {
+    fill : green;
+}
+.THIS .accel-chart-shadow-drag {
+    /* override sfdc shadowDrag */
+    box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+}
+.THIS .accel-chart-container {
+    background-color: white;
+}
+.THIS .accel-shadow-drag {
+    box-shadow: t(shadowDrag);
+}
+
+
+
+.THIS  .accel-treegrid-machine-data  tr {
+    line-height: .68rem!important;
+    font-size: .97em!important;
+    color: black!important;
+    padding-top: 0.1rem!important;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem!important;
+    padding-left: 0.5rem;
+}
+.THIS  .accel-treegrid-machine-data  td {
+    line-height: .68rem!important;
+    font-size: .97em!important;
+    color: black!important;
+    padding-top: 0.1rem!important;
+    padding-right: 0.5rem;
+    padding-bottom: 0.2rem!important;
+    padding-left: 0.5rem;
+}
+.THIS .accel-treegrid-machine-data thead th span {
+    background-color: #F3F2F2;
+   /* min-height:1rem!important;*/
+    /*font-size:.9em;*/
+    font-weight:600;
+}
+.THIS .slds-th__action-button .slds-dropdown-trigger .slds-dropdown-trigger_click {
+    display:none!important;
+}
+.THIS .accel-treegrid-machine-data thead th {
+   /* padding-top:.2rem!important;
+    padding-bottom: .2rem!important;*/
+}
+.THIS .accel-top-search-input-container {
+    margin-bottom:20px;
+}

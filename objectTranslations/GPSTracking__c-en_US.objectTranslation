@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>GPSTracking</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>GPSTracking</value>
+    </caseValues>
+    <fields>
+        <label><!-- ActivityStatus --></label>
+        <name>ActivityStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- CollectionVehicle --></label>
+        <name>CollectionVehicle__c</name>
+        <relationshipLabel><!-- GPSTracking --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Timestamp --></label>
+        <name>Timestamp__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

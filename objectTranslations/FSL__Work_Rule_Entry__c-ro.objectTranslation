@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Intrarea de regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Intrare de regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Intrările de reguli de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Intrări de reguli de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Intrării de regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Intrării de regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Intrărilor de regulă de lucru</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Intrărilor de regulă de lucru</value>
+    </caseValues>
+    <fields>
+        <help>Durata pauzei, în minute.</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Numărul de minute între începutul disponibilității resursei de servicii și cel mai timpuriu început de pauză permis. De exemplu, introduceți 120 pentru a programa o pauză la cel puțin două ore după începerea zilei.</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>Numărul de minute între începutul disponibilității resursei de servicii și cel mai târziu început de pauză permis. De exemplu, introduceți 300 pentru a programa o pauză care să se termină cu mai târziu decât la cinci ore după începerea zilei.</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nume intrare regulă de lucru</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+</CustomObjectTranslation>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<QuickAction xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldOverrides>
+        <field>DueDate</field>
+        <formula>NOW()+1</formula>
+    </fieldOverrides>
+    <fieldOverrides>
+        <field>EarliestStartTime</field>
+        <formula>NOW()</formula>
+    </fieldOverrides>
+    <label>Manual Appointment</label>
+    <optionsCreateFeedItem>true</optionsCreateFeedItem>
+    <quickActionLayout>
+        <layoutSectionStyle>TwoColumnsLeftToRight</layoutSectionStyle>
+        <quickActionLayoutColumns>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>EarliestStartTime</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+            <quickActionLayoutItems>
+                <emptySpace>false</emptySpace>
+                <field>DueDate</field>
+                <uiBehavior>Required</uiBehavior>
+            </quickActionLayoutItems>
+        </quickActionLayoutColumns>
+        <quickActionLayoutColumns/>
+    </quickActionLayout>
+    <targetObject>ServiceAppointment</targetObject>
+    <targetParentField>ParentRecord</targetParentField>
+    <targetRecordType>ServiceAppointment.Service</targetRecordType>
+    <type>Create</type>
+</QuickAction>

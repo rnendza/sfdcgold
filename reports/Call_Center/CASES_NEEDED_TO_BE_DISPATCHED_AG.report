@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_65585986</developerName>
+        <masterLabel>Age Of Case</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case$Age_of_Case_Hours__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>10</to>
+            </sourceValues>
+            <value>&lt;15 minutes</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>10</from>
+                <to>60</to>
+            </sourceValues>
+            <value>15-60 minutes</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>60</from>
+                <to>1,440</to>
+            </sourceValues>
+            <value>60-1440 minutes</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>1,440</from>
+            </sourceValues>
+            <value>1+ day(s)</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_45488997</developerName>
+        <masterLabel>HPD Group</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Case$Account.Three_Month_Average_HPD__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>50</to>
+            </sourceValues>
+            <value>&lt;$50 HPD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>50</from>
+                <to>100</to>
+            </sourceValues>
+            <value>$50 - $100 HPD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>100</from>
+                <to>500</to>
+            </sourceValues>
+            <value>$100 - $500 HPD</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>500</from>
+            </sourceValues>
+            <value>$500+ HPD</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_47523696</developerName>
+        <masterLabel>PRIORITY</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Case$PriorityLookup__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>A</sourceValue>
+            </sourceValues>
+            <value>HIGH PRIORITY</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Case$Age_of_Case_Hours__c</field>
+    </columns>
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$City__c</field>
+    </columns>
+    <columns>
+        <field>Case$Service_Region__c</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Case$Assigned_Resource__c</field>
+    </columns>
+    <columns>
+        <field>Case$Service_Category__c</field>
+    </columns>
+    <columns>
+        <field>Case$Work_Type__c</field>
+    </columns>
+    <columns>
+        <field>Case$Description</field>
+    </columns>
+    <columns>
+        <field>BucketField_45488997</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4) AND 5 AND 6</booleanFilter>
+        <criteriaItems>
+            <column>Case$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>New,In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Assigned_Resource__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Assigned_Resource__c.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>equals</operator>
+            <value>Accel Call Center</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Age_of_Case_Hours__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>false</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>3</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Account.ShippingState</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>GA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_65585986</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>CASES NEEDED TO BE DISPATCHED-AG</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseBase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Case$Age_of_Case_Hours__c</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

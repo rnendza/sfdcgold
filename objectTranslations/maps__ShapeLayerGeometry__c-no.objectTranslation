@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Geometrien for Maps-formoverlegg</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Geometri for Maps-formoverlegg</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Geometri for Maps-formoverlegg</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Geometriene for Maps-formoverlegg</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Geometrier for Maps-formoverlegg</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Geometrier for Maps-formoverlegg</value>
+    </caseValues>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 10 --></label>
+        <name>maps__Geometry10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 2 --></label>
+        <name>maps__Geometry2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 3 --></label>
+        <name>maps__Geometry3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 4 --></label>
+        <name>maps__Geometry4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 5 --></label>
+        <name>maps__Geometry5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 6 --></label>
+        <name>maps__Geometry6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 7 --></label>
+        <name>maps__Geometry7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 8 --></label>
+        <name>maps__Geometry8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry 9 --></label>
+        <name>maps__Geometry9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry Size --></label>
+        <name>maps__GeometrySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geometry --></label>
+        <name>maps__Geometry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Shape Layer --></label>
+        <name>maps__ShapeLayer__c</name>
+        <relationshipLabel><!-- Shape Layers Geometries --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Geometrinavn</nameFieldLabel>
+</CustomObjectTranslation>

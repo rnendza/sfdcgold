@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Livello</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Livelli</value>
+    </caseValues>
+    <fields>
+        <label><!-- ArcGIS WebMap Click2Create --></label>
+        <name>maps__ArcGISWebMapC2C__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email On Aggregation Success --></label>
+        <name>maps__EmailOnAggregationSuccess__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Consente di archiviare le opzioni del livello in formato JSON.</help>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <help>Consente di determinare il tipo di livello rappresentato dal record.</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>Livello dati</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory</masterLabel>
+            <translation>Territorio</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tile Set</masterLabel>
+            <translation>Riquadro impostato</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Popolato se direttamente in una cartella personale dell&apos;utente. In caso contrario, vuoto. Se vuoto e la ricerca cartelle è vuota, viene visualizzato nella cartella aziendale. Se la cartella non è vuota, potrebbe essere una cartella personale o aziendale.</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>maps__Version__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome livello</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

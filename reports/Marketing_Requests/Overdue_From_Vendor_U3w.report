@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Winning_Vendor__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Marketing_Request_Products__r$Product__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Name</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Marketing_Request__c$Overdue_From_Vendor__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Marketing_Request__c$Overdue_From_Vendor__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>14</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c$Vendor_Needed__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>No</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c$Marketing_Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>On Hold,Cancelled</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Overdue From Vendor</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Requests_with_Marketingg_Request_Product__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

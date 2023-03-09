@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Naming convention for new records, and sets status as New.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varProjectNameFx</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account__r.Name} + &quot; &quot; + TEXT({!$Record.Project_Type__c}) + &quot; &quot; +TEXT({!$Record.CreatedDate})</expression>
+    </formulas>
+    <interviewLabel>Project Gaming Assets Naming Convention &amp; New Status {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Project Gaming Assets Naming Convention &amp; New Status</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Status_to_New</name>
+        <label>Status to &quot;New&quot;</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Project_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Gaming Area Assets</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Project_Status__c</field>
+            <value>
+                <stringValue>New</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Project_Name</name>
+        <label>Update Project Name</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <connector>
+            <targetReference>Status_to_New</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>varProjectNameFx</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Project_Name</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Project_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Gaming Area Assets</stringValue>
+            </value>
+        </filters>
+        <object>Project__c</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>varProjectName</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>{!$Record.Account__r.Name} + &quot; &quot; + {!$Record.Project_Type__c} + &quot; Project&quot; + &quot; &quot; + TODAY()</text>
+    </textTemplates>
+</Flow>

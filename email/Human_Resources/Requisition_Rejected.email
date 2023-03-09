@@ -1,0 +1,7 @@
+Your requisition for {!Jobs__c.Job_Title__c} has been denied. Please click the link below to review the denial:
+
+{!Jobs__c.Link}
+
+{!ApprovalRequest.Process_Approver}
+
+{!ApprovalRequest.Comments}

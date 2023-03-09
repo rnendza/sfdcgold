@@ -1,0 +1,686 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Job_Offer_Record_Page1</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Job_Offer_Record_Page1</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Additional_Offer_Details__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Offer Details</label>
+        <length>32768</length>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Applicant_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Application__r.Candidate__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Applicant Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Application__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Application</label>
+        <referenceTo>Job_Applications__c</referenceTo>
+        <relationshipLabel>Job Offers</relationshipLabel>
+        <relationshipName>Job_Offers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Background_Authorization_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Authorization Returned</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Background_Check_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Check Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Background_Check_Started__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Check Started</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Base_Compensation__c</fullName>
+        <externalId>false</externalId>
+        <label>Base Compensation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Bonus__c</fullName>
+        <externalId>false</externalId>
+        <label>Bonus</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Candidate_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Application__r.Candidate__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Candidate Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Candidate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Candidate</label>
+        <referenceTo>Candidate__c</referenceTo>
+        <relationshipLabel>Job Offers</relationshipLabel>
+        <relationshipName>Job_Offers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Compensation_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Compensation Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Hourly</fullName>
+                    <default>false</default>
+                    <label>Hourly</label>
+                </value>
+                <value>
+                    <fullName>Annual Salary</fullName>
+                    <default>false</default>
+                    <label>Annual Salary</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Date_of_Formal_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Date Offer Extended</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Verbal_Offer__c</fullName>
+        <externalId>false</externalId>
+        <label>Date of Verbal Offer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Drug_Physical_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Drug/Physical Completed</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Employee_Agreement_Covenants_Sent_On__c</fullName>
+        <externalId>false</externalId>
+        <label>Employee Agreement/Covenants Sent On</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Employment_Agreement__c</fullName>
+        <externalId>false</externalId>
+        <label>Employment Agreement</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No EA</fullName>
+                    <default>false</default>
+                    <label>No EA</label>
+                </value>
+                <value>
+                    <fullName>Non-solicit/non-compete 1 yr</fullName>
+                    <default>false</default>
+                    <label>Non-solicit/non-compete 1 yr</label>
+                </value>
+                <value>
+                    <fullName>Non-solicit/non-compete 2 yr</fullName>
+                    <default>false</default>
+                    <label>Non-solicit/non-compete 2 yr</label>
+                </value>
+                <value>
+                    <fullName>Non-solicit 1 yr</fullName>
+                    <default>false</default>
+                    <label>Non-solicit 1 yr</label>
+                </value>
+                <value>
+                    <fullName>Non-solicit 2 yr</fullName>
+                    <default>false</default>
+                    <label>Non-solicit 2 yr</label>
+                </value>
+                <value>
+                    <fullName>GA ECA</fullName>
+                    <default>false</default>
+                    <label>GA ECA</label>
+                </value>
+                <value>
+                    <fullName>Nebraska 12 Months EA</fullName>
+                    <default>false</default>
+                    <label>Nebraska 12 Months EA</label>
+                </value>
+                <value>
+                    <fullName>Nebraska 18 Months EA</fullName>
+                    <default>false</default>
+                    <label>Nebraska 18 Months EA</label>
+                </value>
+                <value>
+                    <fullName>North Carolina EA</fullName>
+                    <default>false</default>
+                    <label>North Carolina EA</label>
+                </value>
+                <value>
+                    <fullName>Amendment to EA</fullName>
+                    <default>false</default>
+                    <label>Amendment to EA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Executed_Offer_Letter_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Executed Offer Letter Returned</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Hired_in_ADP_Elec_Onboarding_Created__c</fullName>
+        <externalId>false</externalId>
+        <label>Hired in ADP-Elec Onboarding Created</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Job_Offer_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Job Offer Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Offer Extended</fullName>
+                    <default>false</default>
+                    <label>Offer Extended</label>
+                </value>
+                <value>
+                    <fullName>Accepted</fullName>
+                    <default>false</default>
+                    <label>Accepted</label>
+                </value>
+                <value>
+                    <fullName>Offer Rejected</fullName>
+                    <default>false</default>
+                    <label>Offer Rejected</label>
+                </value>
+                <value>
+                    <fullName>No Longer Onboarding</fullName>
+                    <default>false</default>
+                    <label>No Longer Onboarding</label>
+                </value>
+                <value>
+                    <fullName>Compliance Approved - Pending Formal Offer</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Compliance Approved - Pending Formal Offer</label>
+                </value>
+                <value>
+                    <fullName>Formal Offer Sent</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Formal Offer Sent</label>
+                </value>
+                <value>
+                    <fullName>Negotation</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Negotation</label>
+                </value>
+                <value>
+                    <fullName>Offered</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Offered</label>
+                </value>
+                <value>
+                    <fullName>Pending Compliance Approval</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pending Compliance Approval</label>
+                </value>
+                <value>
+                    <fullName>Pending Offer</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pending Offer</label>
+                </value>
+                <value>
+                    <fullName>Verbal Offer Made</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Verbal Offer Made</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Job_Title__c</fullName>
+        <externalId>false</externalId>
+        <formula>Application__r.Jobs__r.Job_Title__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Job Title</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Jobs__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Jobs</label>
+        <referenceTo>Jobs__c</referenceTo>
+        <relationshipLabel>Job Offers</relationshipLabel>
+        <relationshipName>Job_Offers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_Hiring_Manager__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Supervisor</label>
+        <referenceTo>Contact</referenceTo>
+        <relationshipLabel>Job Offers</relationshipLabel>
+        <relationshipName>Job_Offers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Proposed_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Proposed Start Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Reports_To__c</fullName>
+        <externalId>false</externalId>
+        <formula>Jobs__r.New_Hire_Will_Report_To__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Reports To</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Sales_Incentive_Plan__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Incentive Plan</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Value 1</fullName>
+                    <default>false</default>
+                    <label>Value 1</label>
+                </value>
+                <value>
+                    <fullName>Value 2</fullName>
+                    <default>false</default>
+                    <label>Value 2</label>
+                </value>
+                <value>
+                    <fullName>Value 3</fullName>
+                    <default>false</default>
+                    <label>Value 3</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Source__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Source</label>
+        <referenceTo>Job_Resource__c</referenceTo>
+        <relationshipLabel>Job Offers</relationshipLabel>
+        <relationshipName>Job_Offers</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Wants_and_Warrants_Returned__c</fullName>
+        <externalId>false</externalId>
+        <label>Wants and Warrants Returned</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Welcome_Email_Sent__c</fullName>
+        <externalId>false</externalId>
+        <label>Welcome Email Sent</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <label>Job Offer</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Offer_Status__c</columns>
+        <columns>Background_Authorization_Returned__c</columns>
+        <columns>Executed_Offer_Letter_Returned__c</columns>
+        <columns>Applicant_Name__c</columns>
+        <columns>Background_Check_Started__c</columns>
+        <columns>Hired_in_ADP_Elec_Onboarding_Created__c</columns>
+        <columns>Welcome_Email_Sent__c</columns>
+        <columns>Wants_and_Warrants_Returned__c</columns>
+        <columns>Drug_Physical_Completed__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Job_Offers_Paperwork_Check</fullName>
+        <columns>NAME</columns>
+        <columns>Job_Offer_Status__c</columns>
+        <columns>Applicant_Name__c</columns>
+        <columns>Job_Title__c</columns>
+        <columns>Proposed_Start_Date__c</columns>
+        <columns>Executed_Offer_Letter_Returned__c</columns>
+        <columns>Wants_and_Warrants_Returned__c</columns>
+        <columns>Background_Authorization_Returned__c</columns>
+        <columns>Background_Check_Started__c</columns>
+        <columns>Hired_in_ADP_Elec_Onboarding_Created__c</columns>
+        <columns>Welcome_Email_Sent__c</columns>
+        <columns>Background_Check_Completed__c</columns>
+        <columns>Drug_Physical_Completed__c</columns>
+        <columns>Employee_Agreement_Covenants_Sent_On__c</columns>
+        <columns>Employment_Agreement__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Job_Offer_Status__c</field>
+            <operation>notEqual</operation>
+            <value>Offer Rejected</value>
+        </filters>
+        <label>Job Offers - Paperwork Check -</label>
+        <sharedTo>
+            <group>Human_Resources</group>
+        </sharedTo>
+    </listViews>
+    <nameField>
+        <displayFormat>JO-{0000}</displayFormat>
+        <label>Job Offer Number</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Job Offers</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Candidate__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Jobs__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>Employment_Agreement_is_Required</fullName>
+        <active>true</active>
+        <description>If job offer status = offer extended, you must fill out Employment Agreement</description>
+        <errorConditionFormula>AND(
+ISPICKVAL( Job_Offer_Status__c , &quot;Offer Extended&quot;) ,
+ISPICKVAL( Employment_Agreement__c ,&quot;&quot;) )</errorConditionFormula>
+        <errorDisplayField>Employment_Agreement__c</errorDisplayField>
+        <errorMessage>When Job Offer Status is Offer Extended, an Employment Agreement value is required.
+Please, enter an Employment Agreement value.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Proposed_Start_Date_must_be_filled_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(ISPICKVAL(Job_Offer_Status__c , &quot;Accepted&quot;),ISBLANK( Proposed_Start_Date__c ))</errorConditionFormula>
+        <errorMessage>In order to mark this Job Offer as Accepted, please fill out a Proposed Start Date. This date can be changed later if needed.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

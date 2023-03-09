@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job Applicant</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job Applicants</value>
+    </caseValues>
+    <fields>
+        <label><!-- Application Status --></label>
+        <name>Application_Status__c</name>
+        <picklistValues>
+            <masterLabel>Call to schedule interview</masterLabel>
+            <translation><!-- Call to schedule interview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hired</masterLabel>
+            <translation><!-- Hired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Interview Scheduled</masterLabel>
+            <translation><!-- Interview Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Review</masterLabel>
+            <translation><!-- Pending Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Candidate --></label>
+        <name>Candidate__c</name>
+        <relationshipLabel><!-- Job Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Job Offer --></label>
+        <name>Create_Job_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Applied --></label>
+        <name>Date_Applied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Interview Date --></label>
+        <name>Interview_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jobs --></label>
+        <name>Jobs__c</name>
+        <relationshipLabel><!-- Job Applicants --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <relationshipLabel><!-- Job Applicants --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

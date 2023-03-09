@@ -1,0 +1,169 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Logistics Experience Cloud Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Logistics Experience Cloud Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow Address Click to Google Maps --></label>
+        <name>Allow_Address_Click_to_Google_Maps__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, if the are no routes assigned to the collector for the current day, the home page will redirect to a route selection view. --></help>
+        <label><!-- Allow Collector Route Selection --></label>
+        <name>Allow_Collector_Route_Selection__c</name>
+    </fields>
+    <fields>
+        <help><!-- Allow the page to use long polling ie. CometD. ie the Bayeux protocol. This Will allow Server Side push and the page to react immediate to data changes. --></help>
+        <label><!-- Allow Long polling --></label>
+        <name>Allow_Long_polling__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this will allow a collector to drag and drop RPS Sheets on the home page to set the RPS.Stop_Number__c field (BETA) --></help>
+        <label><!-- Allow RPS Drag And Drop --></label>
+        <name>Allow_RPS_Drag_And_Drop__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will show reorder (up / down arrows) on the Route Processing Sheet. This will allow the user to change the stop number value on the route processing sheet and thus reorder location stops. --></help>
+        <label><!-- Allow RPS Reorder --></label>
+        <name>Allow_RPS_Reorder__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this to show image metadata next to the picture. --></help>
+        <label><!-- Display Image Metadata --></label>
+        <name>Display_Image_Metadata__c</name>
+    </fields>
+    <fields>
+        <help><!-- Display Distance (Miles) Between locations on rps sheets. --></help>
+        <label><!-- Display Location Distance --></label>
+        <name>Display_Location_Distance__c</name>
+    </fields>
+    <fields>
+        <help><!-- Determines what Route_Schedule__c.Fill_Date__c is populated with. 0 = current date the job is run.. +1 = the next date after the job is run.. -1 = the previous date..etc. --></help>
+        <label><!-- Fill Date Increment --></label>
+        <name>Fill_Date_Increment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Compression Ratio --></label>
+        <name>Image_Compression_Ratio__c</name>
+    </fields>
+    <fields>
+        <help><!-- The maintenance message for the the footer (static) --></help>
+        <label><!-- Maintenance Footer Msg --></label>
+        <name>Maintenance_Footer_Msg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show a maintenance message via toast upon login. (1 time ) --></help>
+        <label><!-- Maintenance Toast Msg --></label>
+        <name>Maintenance_Toast_Msg__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Cycle --></label>
+        <name>Next_Cycle__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma delimited list of profiles names to insert CL_User_Setting__c records for upon creation of a user. --></help>
+        <label><!-- Profiles For User Settings --></label>
+        <name>Profiles_For_User_Settings__c</name>
+    </fields>
+    <fields>
+        <help><!-- Require Meter image (snapshot) associated with the meter reading for its status to be marked as completed. --></help>
+        <label><!-- Require Meter Image --></label>
+        <name>Require_Meter_Image__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show BV Type Counts of the Assets if they are not 0 --></help>
+        <label><!-- Show BV Types --></label>
+        <name>Show_BV_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Back Button --></label>
+        <name>Show_Back_Button__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show Route_Processing_Sheet__c.Account__r.Collection_Notes__c on collector RPS View. --></help>
+        <label><!-- Show Collection Notes --></label>
+        <name>Show_Collection_Notes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show Crashbag checkboxes for the collector on the RT View for an NRT. --></help>
+        <label><!-- Show CrashBag Checkbox on RT --></label>
+        <name>Show_CrashBag_Checkbox_on_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Invalid Routes --></label>
+        <name>Show_Invalid_Routes__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show a static maintenance Msg in the footer (every page) --></help>
+        <label><!-- Show Maintenance Footer Msg --></label>
+        <name>Show_Maintenance_Footer_Msg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show a maintenance message via toast upon login (1 time) --></help>
+        <label><!-- Show Maintenance Toast Msg --></label>
+        <name>Show_Maintenance_Toast_Msg__c</name>
+    </fields>
+    <fields>
+        <help><!-- IF checked show the phone number if for any entity (if displayed) as lightning-help-text. ie an info icon that will display phone when hovered over / touched. otherwise displays as text immediately --></help>
+        <label><!-- Show Phone As Helptext --></label>
+        <name>Show_Phone_As_Helptext__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show start / end timestamps for RPS RT and VGT --></help>
+        <label><!-- Show RPS Location Timestamp --></label>
+        <name>Show_RPS_Location_Timestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show the new and current rt coin image picture selector / coin icons. --></help>
+        <label><!-- Show RT Coin Images --></label>
+        <name>Show_RT_Coin_Images__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Send Route End Email Menu Item --></label>
+        <name>Show_Send_Route_End_Email_Menu_Item__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Complete Style --></label>
+        <name>Status_Complete_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Completed Fill Style --></label>
+        <name>Status_Completed_Fill_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Completed Processing Style --></label>
+        <name>Status_Completed_Processing_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Fill Incomplete Style --></label>
+        <name>Status_Fill_Incomplete_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status In Progress Style --></label>
+        <name>Status_In_Progress_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Not Started Style --></label>
+        <name>Status_Not_Started_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Processing Incomplete Style --></label>
+        <name>Status_Processing_Incomplete_Style__c</name>
+    </fields>
+    <fields>
+        <help><!-- Not really a definitive name placed on req for this but activates the following https://accel-entertainment.monday.com/boards/1300348967/pulses/2140464230 --></help>
+        <label><!-- Use Processor Grouping --></label>
+        <name>Use_Processor_Grouping__c</name>
+    </fields>
+    <fields>
+        <help><!-- The version of the app --></help>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

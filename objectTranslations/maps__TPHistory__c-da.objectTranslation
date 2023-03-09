@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Justeringshistorikregistreringen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Justeringshistorikregistrering</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Justeringshistorikregistrering</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Justeringshistorikregistreringerne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Justeringshistorikregistreringer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Justeringshistorikregistreringer</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alignment --></label>
+        <name>maps__Alignment__c</name>
+        <relationshipLabel><!-- History Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Off-Platform Snapshot Id --></label>
+        <name>maps__SnapshotId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of History Record --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Optimization</masterLabel>
+            <translation>Optimering</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot</masterLabel>
+            <translation>Øjebliksbillede</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Modification</masterLabel>
+            <translation>Områderedigering</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Navn</nameFieldLabel>
+</CustomObjectTranslation>

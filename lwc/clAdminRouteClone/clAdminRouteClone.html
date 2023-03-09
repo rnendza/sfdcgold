@@ -1,0 +1,136 @@
+<!-- Cl Admin Route Clone -->
+<template>
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card">
+        <lightning-card>
+            <lightning-button-menu
+                    if:true={cardOptions}
+                    slot="actions" icon-name="utility:down" icon-size="x-small"
+                    onselect={handleMenuSelect}
+                    menu-alignment="right" variant="border-filled">
+                <template for:each={cardOptions} for:item="option">
+                    <lightning-menu-item key={option.id} value={option.id}
+                                         label={option.label}></lightning-menu-item>
+                </template>
+            </lightning-button-menu>
+            <h1 slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title
+                            card-title='Route Utils'
+                            card-title-style={cardTitleStyle}
+                            icon-name="custom:custom31"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </h1>
+            <div class="accel-accordion-content">
+                <div class="accel-test-borders slds-m-horizontal_x-small">
+                    <lightning-tabset variant="scoped" active-tab-value={_activeTabValue} class="accel-tab-set accel-scoped-tab-set">
+                        <lightning-tab
+                                label="Clone"
+                                value="tab_rtclone"
+                                onactive={handleTabClick}
+                                class="accel-scoped-tab-red-icon"
+                                icon-name="custom:custom31">
+                            <div if:true={_showRouteLink} class="slds-p-bottom_small">
+                        <div if:true={route}>
+                            <b>
+                                <a href="#" onclick={handleRouteNavToRecordView}>View {route.routeName}</a>
+                            </b>
+                        </div>
+                    </div>
+                            <div
+                            class="">
+                        <div class="slds-m-bottom_medium">
+                            <lightning-icon icon-name="utility:info_alt" size="x-small"
+                                            class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                            Use this to clone a route and its existing accounts. Only 1 Route__c record
+                            and 1-M Route_Account__c record(s) will be created.
+                        </div>
+                        <div if:true={_isUpdating} style="max-height: 200px">
+                            <c-ui-custom-stencil
+                                    iterations="1"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="1">
+                            </c-ui-custom-stencil>
+                        </div>
+                        <div if:false={_isUpdating}
+                             class="slds-p-bottom_medium">
+                            <div class="slds-grid slds-gutters slds-wrap">
+
+                                <div if:true={showRouteSelectOptions}
+                                     class="slds-col slds-size_12-of-12">
+                                    <div class="slds-select_container">
+                                        <select class="slds-select" id="select-route"
+                                                onchange={handleRouteSelected}>
+                                            <template for:each={routeOptions} for:item="option">
+                                                <option key={option.label} class="uiInputSelectOption"
+                                                        selected={option.selected}
+                                                        value={option.value}>{option.label}
+                                                </option>
+                                            </template>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12">
+                                    <lightning-input
+                                            onchange={handleNewRouteNameChange}
+                                            value={_newRouteName}
+                                            label="New Route Name"
+                                            type="next">
+                                    </lightning-input>
+                                </div>
+                                <div class="slds-col slds-size_12-of-12">
+                                    <lightning-input
+                                            onchange={handleRouteCycleNumberChange}
+                                            value={_routeCycleNumber}
+                                            label="New Route Cycle Number"
+                                            type="number">
+                                    </lightning-input>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        </lightning-tab>
+                    </lightning-tabset>
+                </div>
+            </div>
+            <div slot="footer">
+                <div if:true={showScopedMsg} class="slds-p-bottom_small">
+                    <c-ui-scoped-notification
+                            icon-name={scopedMsg.iconName}
+                            icon-variant={scopedMsg.iconVariant}
+                            custom-class={scopedMsg.customClass}
+                            custom-icon-size={scopedMsg.iconCustomSize}
+                            theme={scopedMsg.theme}
+                            dismissible={scopedMsg.dismissible}
+                            message={scopedMsg.message}
+                            onalertcontainerdismissed={handleAlertContainerDismissed}>
+                    </c-ui-scoped-notification>
+                </div>
+                <div if:true={showRouteCloneButton}>
+                    <button
+                            name="cloneRoute"
+                            onclick={handleRouteCloneClick}
+                            data-id="routeCloneClick"
+                            title="Clone Route"
+                            style="padding:.15em"
+                            class="slds-button slds-button_brand accel-admin-button slds-button_stretch ">
+                        <span style="font-size: 1.05em;">Clone Route</span>
+                        <span class="slds-p-left_xx-small">
+                                        <lightning-icon
+                                                icon-name="utility:copy"
+                                                alternative-text=""
+                                                size="x-small"
+                                                class="accel-record-create-icon-white"
+                                                title="">
+                                        </lightning-icon>
+                                    </span>
+                    </button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+</template>

@@ -1,0 +1,173 @@
+<template>
+    <div lwc:dom="manual" class="create-fake-input-overrides-class"></div>
+    <!-- get a precise measurement of width in case we need to go mobile -->
+    <div data-id="widthMeasurement"></div>
+
+    <div class="slds-grid slds-wrap">
+        <div class="slds-col slds-size_1-of-1 slds-large-size_5-of-12">
+            <div>
+                <div class="slds-form">
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control">
+                            <c-record-autocomplete
+                                    data-id="accountInput"
+                                    s-object-api-name='Account'
+                                    option-icon-name="standard:account"
+                                    primary-display-field='Name'
+                                    secondary-display-field='ShippingAddress'
+                                    secondary-display-field-is-address-field="true"
+                                    secondary-display-field-address-property-1="street"
+                                    secondary-display-field-address-property-2="city"
+                                    secondary-display-field-address-property-3="state"
+                                    primary-filter-field='Name'
+                                    secondary-filter-field="ShippingStreet"
+                                    additional-where-criteria={accountWhereCriteria}
+                                    search-label="Account"
+                                    onrecordselected={handleAccountSelected}
+                                    min-characters="2"
+                                    input-style={_lookupInputStyle}
+                                    customautofocus="true"
+                                    customrequired="true"
+                                    place-holder='Search for an account name (2 or more chars)..'>
+                            </c-record-autocomplete>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control c3llc-input-container">
+                            <lightning-input label="First Name" name="firstName"
+                                             value={firstName}
+                                             data-id="firstName"
+                                             onchange={handleInputChange}
+                                             required>
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control c3llc-input-container">
+                            <lightning-input label="Last Name" name="lastName"
+                                             value={lastName}
+                                             onchange={handleInputChange}
+                                             data-id="lastName"
+                                             required>
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control c3llc-input-container">
+                            <lightning-input label="Email" type="email" name="emailAddress"
+                                             value={emailAddress}
+                                             data-id="emailAddress"
+                                             onchange={handleInputChange}
+                                             required>
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <div class="slds-form-element slds-form-element_stacked">
+                        <div class="slds-form-element__control c3llc-input-container">
+                            <lightning-input label="Username" type="email" name="userName"
+                                             value={userName}
+                                             data-id="userName"
+                                             onchange={handleInputChange}
+                                             required>
+                            </lightning-input>
+                        </div>
+                    </div>
+                    <template if:true={showPortalProfileOptions}>
+                        <div class="slds-form-element slds-form-element_stacked">
+                            <div class="slds-form-element__control c3llc-input-container">
+                                <lightning-combobox
+                                        name="portalProfile"
+                                        label="Portal Profile"
+                                        required
+                                        value={portalProfileId}
+                                        placeholder="Select Portal Profile"
+                                        options={portalProfileOptions}
+                                        onchange={handlePortalProfileChange}>
+                                </lightning-combobox>
+                            </div>
+                        </div>
+                    </template>
+                    <div class="slds-form-element slds-form-element_stacked">
+
+                        <div class="slds-form-element__control slds-p-top--medium" style="width:100%">
+                            <button name="saveButton"
+                                    data-id="saveButton"
+                                    title="Create Portal User"
+                                    class="slds-button slds-button_brand slds-button_stretch "
+                                    onclick={handleButtonClick}>
+                                Create Portal User
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <template if:true={isProcessing}>
+                <div class="slds-is-relative">
+                    <lightning-spinner
+                            size="large"
+                            variant="brand"
+                            alternative-text="processing"></lightning-spinner>
+                </div>
+            </template>
+        </div>
+        <div class="slds-col slds-size_1-of-1 slds-large-size_7-of-12 slds-p-left--large">
+            <div if:true={showRightSideHelp}>
+                <div class="slds-theme--shade accel-square-box__info">
+                    <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                        <div class="slds-media__figure">
+                            <lightning-icon icon-name="utility:info"
+                                            size="small"
+                                            alternative-text="Create Assets Assistance">
+                            </lightning-icon>
+                        </div>
+                        <div class="slds-media__body">
+                            <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                                <b>Portal User Creation Assistance</b>
+                            </div>
+                            <div class="accel-detailed-body-text">
+                                <div class="accel-hard-wrap-text">
+                                    <ul class="slds-list_dotted">
+                                        <li class="c3llc-li-container">
+                                            This will create a portal user as well as contact and associate the account selected as their
+                                            primary account.
+                                        </li>
+                                        <li class="c3llc-li-container">
+                                            <template if:true={pwSendOptionSelected}>
+                                            A random password will be automatically generated and sent to the user
+                                                 as well as portal support. The user should be able to login immediately
+                                            </template>
+                                            <template if:false={pwSendOptionSelected}>
+                                               A password will not be set and the user will not recieve an email.
+                                            </template>
+                                        </li>
+                                        <li class="c3llc-li-container">
+                                            Applicable permissions will be added for the portal user.
+                                        </li>
+                                        <li class="c3llc-li-container">
+                                            You may use the <b>Assign Tab</b> to add additional accounts.
+                                        </li>
+                                        <li class="c3llc-li-container">
+                                            Email addresses and user names are generally the same but can be different
+                                            if
+                                            the user has
+                                            already used that email address to log into salesforce.
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <template if:true={showPortalAdminSecuritySettings}>
+                                <div class="slds-p-top--small">
+                                    <c-community-user-create-admin-options
+                                            pw-gen-type-value={pwGenTypeValue}
+                                            onpwsendoptionselected={handlePwSendOptionSelected}
+                                            onpwgentypeselected={handlePwGenTypeSelected}>
+                                    </c-community-user-create-admin-options>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

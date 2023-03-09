@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>FSL 作業</value>
+    </caseValues>
+    <fields>
+        <label><!-- Finished --></label>
+        <name>FSL__Finished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Method Id --></label>
+        <name>FSL__Future_Method_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiator --></label>
+        <name>FSL__Initiator__c</name>
+        <relationshipLabel><!-- FSL Operations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>FSL__Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Booking</masterLabel>
+            <translation>約會預訂</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Get Candidates</masterLabel>
+            <translation>取得應徵者</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule</masterLabel>
+            <translation>排程</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnSchedule</masterLabel>
+            <translation>取消排程</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ResultText --></label>
+        <name>FSL__ResultText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Metric --></label>
+        <name>FSL__featureMetric__c</name>
+    </fields>
+    <nameFieldLabel>FSL 作業名稱</nameFieldLabel>
+</CustomObjectTranslation>

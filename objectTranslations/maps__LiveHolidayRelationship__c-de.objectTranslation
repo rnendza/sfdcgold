@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Feiertagsbeziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Feiertagsbeziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Feiertagsbeziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Feiertagsbeziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Feiertagsbeziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Feiertagsbeziehungen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Maps-Live-Feiertagsbeziehung</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Maps-Live-Feiertagsbeziehungen</value>
+    </caseValues>
+    <fields>
+        <help>Der diesem Feiertag zugeordnete Fahrer</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Live Holiday Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Datensatz für die Feiertagszeit</help>
+        <label><!-- Live Holiday Time --></label>
+        <name>maps__LiveHolidayTime__c</name>
+        <relationshipLabel><!-- Live Holiday Relationships --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name der Maps-Live-Feiertagsbeziehung</nameFieldLabel>
+</CustomObjectTranslation>

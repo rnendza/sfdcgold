@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" access="global" description="Accel_ChartLocShareTotalMonthSelected">
+    <aura:attribute name="dateSelected" type="Date" />
+    <aura:attribute name="accountIds" type="List" />
+</aura:event>

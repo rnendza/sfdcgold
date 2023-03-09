@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Click2Create --></label>
+        <name>Click2Create</name>
+    </fieldSets>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Account Name (DBA Name)</value>
+        </caseValues>
+        <name>company_lead</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <help><!-- Does an Accel Employee own any part of this business? --></help>
+        <label><!-- Accel Employee Ownership --></label>
+        <name>Accel_Employee_Ownership__c</name>
+    </fields>
+    <fields>
+        <help><!-- Calculated by Business Start Date --></help>
+        <label><!-- Age of Business (Years) --></label>
+        <name>Age_of_Business_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Business (Years) --></label>
+        <name>Age_of_Business__c</name>
+        <picklistValues>
+            <masterLabel>3-6</masterLabel>
+            <translation><!-- 3-6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&lt;3</masterLabel>
+            <translation><!-- &lt;3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>&gt;6</masterLabel>
+            <translation><!-- &gt;6 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+        <relationshipLabel><!-- Leads (Amusement Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator (account) --></label>
+        <name>Amusement_Operator_account__c</name>
+        <relationshipLabel><!-- Leads (Amusement Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Sales Operations Authorization Approval --></help>
+        <label><!-- Approval Status --></label>
+        <name>Approval_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bar? --></label>
+        <name>Bar__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours: Closed --></label>
+        <name>Business_Hours_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Hours: Open --></label>
+        <name>Business_Hours_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Phone Number --></label>
+        <name>Business_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Business Start Date --></label>
+        <name>Business_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Campaign --></label>
+        <name>Campaign__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cash Only --></label>
+        <name>Cash_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this is an existing Competitor Account, lookup here --></help>
+        <label><!-- Competitor Account --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value must be a competitor account --></errorMessage>
+        </lookupFilter>
+        <name>Competitor_Account__c</name>
+        <relationshipLabel><!-- Leads (Competitor Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Competitor Estimated Annual Revenue --></label>
+        <name>Competitor_Estimated_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Live Date --></label>
+        <name>Competitor_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO --></label>
+        <name>Competitor_TO__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact Role --></label>
+        <name>Contact_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate Detail Report Matches --></label>
+        <name>Corporate_Detail_Report_Matches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Credit Card Processor --></label>
+        <name>Credit_Card_Processor__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name --></label>
+        <name>DBA_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Date &amp; Time --></label>
+        <name>Date_Time_of_Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dynamic Session Link --></label>
+        <name>Dynamic_Session_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Owner Name --></label>
+        <name>Employee_Contact__c</name>
+        <relationshipLabel><!-- Leads as Owner --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If &quot;Accel Empolyee Ownership&quot; is checked, please provide employee name --></help>
+        <label><!-- Employee Name --></label>
+        <name>Employee_Name__c</name>
+        <relationshipLabel><!-- Leads (Employee Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Facebook --></label>
+        <name>Facebook__c</name>
+    </fields>
+    <fields>
+        <label><!-- Food Served --></label>
+        <name>Food_Served__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hint: PHG = Previously Had Gaming --></help>
+        <label><!-- Address Gaming History --></label>
+        <name>Gaming_Experience__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Operator --></label>
+        <name>Gaming_Operator__c</name>
+        <relationshipLabel><!-- Leads (Gaming Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Has Liquor License --></label>
+        <name>Has_Liquor_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours of Operation --></label>
+        <name>Hours_of_Operation__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IGB License Status --></label>
+        <name>IGB_License_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active License</masterLabel>
+            <translation><!-- Active License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New owners</masterLabel>
+            <translation><!-- New owners --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No longer licensed</masterLabel>
+            <translation><!-- No longer licensed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reincorporated</masterLabel>
+            <translation><!-- Reincorporated --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IGB License # --></label>
+        <name>IGB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inside Sales Rep --></label>
+        <name>Inside_Sales_Rep__c</name>
+        <relationshipLabel><!-- Leads (Inside Sales Rep) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- LeadSourceText --></label>
+        <name>LeadSourceText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Approved --></label>
+        <name>Lead_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Authorization Date --></label>
+        <name>Lead_Authorization_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Authorizer --></label>
+        <name>Lead_Authorizer__c</name>
+        <relationshipLabel><!-- Leads (Lead Authorizer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead Disqualification Reason --></label>
+        <name>Lead_Disqualificatino_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Customer Already Identified</masterLabel>
+            <translation><!-- Customer Already Identified --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inaccurate Data</masterLabel>
+            <translation><!-- Inaccurate Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Budget</masterLabel>
+            <translation><!-- No Budget --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not a Fit</masterLabel>
+            <translation><!-- Not a Fit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested</masterLabel>
+            <translation><!-- Not interested --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unresponsive</masterLabel>
+            <translation><!-- Unresponsive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Lead Gen Type --></label>
+        <name>Lead_Gen_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Manager Check Fx --></label>
+        <name>Lead_Manager_Check_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Owner Active --></label>
+        <name>Lead_Owner_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Owner Manager --></label>
+        <name>Lead_Owner_Manager__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Owner Profile --></label>
+        <name>Lead_Owner_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Product Type --></label>
+        <name>Lead_Product_Type__c</name>
+        <picklistValues>
+            <masterLabel>Gaming</masterLabel>
+            <translation><!-- Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merchant Solutions</masterLabel>
+            <translation><!-- Merchant Solutions --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the Lead came from a Referral, who? --></help>
+        <label><!-- Lead Referrer Name --></label>
+        <name>Lead_Referrer_Name__c</name>
+        <relationshipLabel><!-- Leads (Lead Referrer Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead Score --></label>
+        <name>Lead_Score__c</name>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Type --></label>
+        <name>Liquor_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Status --></label>
+        <name>Location_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Establishment Type --></label>
+        <name>Location_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Majority Sharehold Matches Liquor License? --></help>
+        <label><!-- Maj. Sharehold Matches Liquor License --></label>
+        <name>Majority_Sharehold_Matches_Liquor_Licens__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Allows Gaming --></label>
+        <name>Municipality_Allows_Gaming2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality State --></label>
+        <name>Municipality_State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Press enter when searching to ensure you select the municipality with in the correct State --></help>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of POS Terminals --></label>
+        <name>Number_of_POS_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- On Hold Reason --></label>
+        <name>On_Hold_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Checking License Availability</masterLabel>
+            <translation><!-- Checking License Availability --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Funds Not Available</masterLabel>
+            <translation><!-- Funds Not Available --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal Business Discussion Needed</masterLabel>
+            <translation><!-- Internal Business Discussion Needed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs More Time to Think</masterLabel>
+            <translation><!-- Needs More Time to Think --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Live Date --></label>
+        <name>Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PLEASE NOTE: --></label>
+        <name>PLEASE_NOTE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Account --></label>
+        <name>Parent_Account__c</name>
+        <relationshipLabel><!-- Leads (Parent Account) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Please check all that apply --></help>
+        <label><!-- Product Interest --></label>
+        <name>Product_Interest__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prospect Id --></label>
+        <name>Prospect_Id__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Prospect Source --></label>
+        <name>Prospect_Source__c</name>
+    </fields>
+    <fields>
+        <help><!-- What are their primary reasons for changing their TO --></help>
+        <label><!-- Reason for Changing Operator --></label>
+        <name>Reason_for_Changing_Operator__c</name>
+        <picklistValues>
+            <masterLabel>Collections</masterLabel>
+            <translation><!-- Collections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machines</masterLabel>
+            <translation><!-- Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent --></label>
+        <name>Sales_Agent__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Region --></label>
+        <name>Sales_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Name --></label>
+        <lookupFilter>
+            <errorMessage><!-- Value does not exist or does not match filter criteria. --></errorMessage>
+        </lookupFilter>
+        <name>Source_Name__c</name>
+        <relationshipLabel><!-- Leads (Source Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Name (user) --></label>
+        <name>Source_Name_user__c</name>
+        <relationshipLabel><!-- Leads (Source Name (user)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Square Footage --></label>
+        <name>Square_Footage__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Status --></label>
+        <name>State_Liquor_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit Lead --></label>
+        <name>Submit_Lead__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Number of Hours --></label>
+        <name>Total_Number_of_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Amusements --></label>
+        <name>Type_of_Amusements__c</name>
+        <picklistValues>
+            <masterLabel>Darts</masterLabel>
+            <translation><!-- Darts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Digital content screen (not cable TV)</masterLabel>
+            <translation><!-- Digital content screen (not cable TV) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Leagues</masterLabel>
+            <translation><!-- Leagues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Juke box</masterLabel>
+            <translation><!-- Other Juke box --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool</masterLabel>
+            <translation><!-- Pool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool table</masterLabel>
+            <translation><!-- Pool table --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sweepstakes machine</masterLabel>
+            <translation><!-- Sweepstakes machine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TouchTunes</masterLabel>
+            <translation><!-- TouchTunes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Games</masterLabel>
+            <translation><!-- Video Games --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of POS System --></label>
+        <name>Type_of_POS_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year Established --></label>
+        <name>Year_Established__c</name>
+    </fields>
+    <fields>
+        <label><!-- # Years in Business --></label>
+        <name>Years_in_Business__c</name>
+    </fields>
+    <fields>
+        <label><!-- Yelp --></label>
+        <name>Yelp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Rule --></label>
+        <name>maps__AssignmentRule__c</name>
+        <relationshipLabel><!-- Leads --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- # of Proposed VGT --></label>
+        <name>of_Proposed_VGT__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of VGTs --></label>
+        <name>of_VGTs__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Competitor --></label>
+        <name>Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organic --></label>
+        <name>Organic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standard --></label>
+        <name>Standard</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- In order to approve this lead, you must fill out the Municipality and Business Start Date. --></errorMessage>
+        <name>Cannot_approve_wo_fields</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You cannot convert this lead as it has been rejected by Sales Ops. --></errorMessage>
+        <name>Cannot_convert_if_rejected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- It is not permissible to edit a lead once it has been converted. Please contact Sales Ops with any questions. --></errorMessage>
+        <name>Cannot_edit_once_converted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Lead Source = Partner Operator, supply the Partner Operator Name. --></errorMessage>
+        <name>Complete_Partner_Operator_if_Lead_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Lead Source = Sales Agent, supply the Sales Agent Name. --></errorMessage>
+        <name>Complete_Sales_Agent_if_Lead_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Source Name you have chosen is not SA Registered. Please check with Sales Ops if you have any questions. --></errorMessage>
+        <name>LeadSourceNameMustBeSARegisteredIL</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Source Name you have chosen has SA Delisted date. Please contact your admin --></errorMessage>
+        <name>LeadSourceName_SA_Delisted</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Lead Status must be set to &quot;New&quot; when a Lead is created. --></errorMessage>
+        <name>LeadStatusRule</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select Lead Disqualification Reason --></errorMessage>
+        <name>Lead_Disqualified_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select an On Hold Reason --></errorMessage>
+        <name>Lead_On_Hold_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please include the Lead Referrer name. --></errorMessage>
+        <name>Lead_Referrer_Name_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please review your Municipality value. You have a chosen a Municipality that is not in the same state as your submitted Lead. --></errorMessage>
+        <name>Lead_State_Must_Match_Municipality_State</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The State field must be in 2-letter format. Example: IL, MO, etc. --></errorMessage>
+        <name>Lead_State_Values</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the City. --></errorMessage>
+        <name>Lead_Submission_City</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Company Name. --></errorMessage>
+        <name>Lead_Submission_DBA_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Email field. --></errorMessage>
+        <name>Lead_Submission_Email</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Lead Source. --></errorMessage>
+        <name>Lead_Submission_Lead_Source</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Legal Name. --></errorMessage>
+        <name>Lead_Submission_Legal_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Address. --></errorMessage>
+        <name>Lead_Submission_Need_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Phone Number field. --></errorMessage>
+        <name>Lead_Submission_Phone</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Product Interest. --></errorMessage>
+        <name>Lead_Submission_Product_Interest</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the address street. --></errorMessage>
+        <name>Lead_Submission_Street_Address</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You must fill out Address Gaming History in order to submit this lead. --></errorMessage>
+        <name>Lead_Submit_Address_Gaming_History</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Accel Establishment Type. --></errorMessage>
+        <name>Lead_Submit_Establishment_Type</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to submit a lead, you must fill out the Contact Name --></errorMessage>
+        <name>Lead_Submit_Last_Name</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to edit this field. --></errorMessage>
+        <name>Limit_Lead_Status_Edit_Access</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to convert this lead, please be sure the following fields have information:
+
+Cash Only
+Type of POS System
+Number of POS Terminals
+Credit Card Processor --></errorMessage>
+        <name>Merchant_Solutions_Fields_must_be_filled</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Organic leads must have a municipality listed prior to conversion. --></errorMessage>
+        <name>Organic_Leads_Must_Have_Muni</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If Accel Employee Ownership is checked, provide Employee Name --></errorMessage>
+        <name>Required_if_Accel_Employee_Ownership_is1</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Status must be set to &quot;Lead Prospect&quot; upon creation of the Lead. --></errorMessage>
+        <name>Standard_Lead_Status_Lead_Prospect</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have permission to convert this lead. --></errorMessage>
+        <name>User_cannot_convert_lead</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleNews --></label>
+        <name>GoogleNews</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SpanningLeadRestore --></label>
+        <name>spanning__SpanningLeadRestore</name>
+    </webLinks>
+</CustomObjectTranslation>

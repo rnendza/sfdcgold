@@ -1,0 +1,712 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>send an email to Assigned Brand Ambassador</description>
+        <name>Notify_Assigned_Brand_Ambassador</name>
+        <label>Notify Assigned Brand Ambassador</label>
+        <locationX>578</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Assigned_Digital_Coordinator_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>NotifyAssignedBrandAmbassador</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedBrandAmbassadorEmail</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You&apos;ve Been Assigned as the Brand Ambassador for Marketing Request {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>send an email to Assigned Digital Coordinator telling them they need to approve the record (this is NOT a formal approval process).</description>
+        <name>Notify_Assigned_Digital_Coordinator_0</name>
+        <label>Notify Assigned Digital Coordinator</label>
+        <locationX>50</locationX>
+        <locationY>1031</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Assigned_Email_Approver</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>DigitalCoordinatorNotifcationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedDigitalCoordinatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You&apos;ve Been Assigned as the Digital Coordinator for Marketing Request {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>send an email to Assigned Digital Coordinator telling them they need to approve the record (this is NOT a formal approval process).</description>
+        <name>Notify_Assigned_Digital_Coordinator_0_0</name>
+        <label>Notify Assigned Digital Coordinator</label>
+        <locationX>578</locationX>
+        <locationY>1031</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Assigned_Email_Approver_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>DigitalCoordinatorNotifcationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedDigitalCoordinatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You&apos;ve Been Assigned as the Digital Coordinator for Marketing Request {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>send an email to Assigned Digital Coordinator telling them they need to approve the record (this is NOT a formal approval process).</description>
+        <name>Notify_Assigned_Email_Approver_0</name>
+        <label>Notify Assigned Email Approver</label>
+        <locationX>50</locationX>
+        <locationY>1487</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Date_Email_Approved</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailApproverNotificationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedEmailApprover</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You&apos;ve Been Assigned as the Email Approver for Marketing Request {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>send an email to Assigned Digital Coordinator telling them they need to approve the record (this is NOT a formal approval process).</description>
+        <name>Notify_Assigned_Email_Approver_0_0</name>
+        <label>Notify Assigned Email Approver</label>
+        <locationX>578</locationX>
+        <locationY>1487</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Date_Email_Approved_0</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>EmailApproverNotificationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedEmailApprover</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>You&apos;ve Been Assigned as the Email Approver for Marketing Request {!$Record.Name}</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Digital_Coordinator</name>
+        <label>Notify Digital Coordinator</label>
+        <locationX>50</locationX>
+        <locationY>1823</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>AssignedDigitalCoordinatorApprovedNotification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedDigitalCoordinatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Marketing Request {!$Record.Name} Is Approved</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Digital_Coordinator_0</name>
+        <label>Notify Digital Coordinator</label>
+        <locationX>578</locationX>
+        <locationY>1823</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Update_status_to_Post_Event_Data</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>AssignedDigitalCoordinatorApprovedNotification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <elementReference>varAssignedDigitalCoordinatorEmailAddress</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Marketing Request {!$Record.Name} Is Approved</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Evaluate_Assigned_Brand_Ambassador</name>
+        <label>Evaluate Assigned Brand Ambassador</label>
+        <locationX>710</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Assigned_Digital_Coordinator_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assigned_Brand_Ambassador_is_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Brand_Ambassador__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Assigned_Brand_Ambassador</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Assigned Brand Ambassador is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Assigned_Digital_Coordinator</name>
+        <label>Evaluate Assigned Digital Coordinator</label>
+        <locationX>182</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Assigned_Email_Approver</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assigned_Digital_Coordinator_is_Populated_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Digital_Coordinator__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Sent_to_Assigned_Digital_Coordinator_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Assigned Digital Coordinator is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Assigned_Digital_Coordinator_0</name>
+        <label>Evaluate Assigned Digital Coordinator</label>
+        <locationX>710</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Assigned_Email_Approver_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assigned_Digital_Coordinator_is_Populated_0_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Digital_Coordinator__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Sent_to_Assigned_Digital_Coordinator_0_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Assigned Digital Coordinator is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Assigned_Email_Approver</name>
+        <label>Evaluate Assigned Email Approver</label>
+        <locationX>182</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Date_Email_Approved</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assigned_Email_Approver_is_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Email_Approver__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Sent_to_Email_Approver</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Assigned Email Approver is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Assigned_Email_Approver_0</name>
+        <label>Evaluate Assigned Email Approver</label>
+        <locationX>710</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Date_Email_Approved_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Assigned_Email_Approver_is_Populated_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Assigned_Email_Approver__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Sent_to_Email_Approver_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Assigned Email Approver is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Date_Email_Approved</name>
+        <label>Evaluate Date Email Approved</label>
+        <locationX>182</locationX>
+        <locationY>1703</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Date_Email_Approved_Is_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_Email_Approved__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Digital_Coordinator</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Date Email Approved Is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Date_Email_Approved_0</name>
+        <label>Evaluate Date Email Approved</label>
+        <locationX>710</locationX>
+        <locationY>1703</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Project_Completed_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Date_Email_Approved_Is_Populated_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_Email_Approved__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Digital_Coordinator_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Date Email Approved Is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Date_of_Final_Compliance_Approval</name>
+        <label>Evaluate Date of Final Compliance Approval</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Assigned_Digital_Coordinator</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Date_of_Final_Compliance_Approval_is_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Date_Compliance_Approval_Rcvd__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Project_Completed_Date_field</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Date of Final Compliance Approval is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Project_Completed_Date</name>
+        <label>Evaluate Project Completed Date</label>
+        <locationX>710</locationX>
+        <locationY>2159</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Project_Completed_Date_Is_Populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Project_Completed_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Status_Fields</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Project Completed Date Is Populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Record_Type</name>
+        <label>Evaluate Record Type</label>
+        <locationX>644</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Promotions</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Promotions</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_Date_of_Final_Compliance_Approval</targetReference>
+            </connector>
+            <label>Promotions</label>
+        </rules>
+        <rules>
+            <name>Brand_Ambassador_Events</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Brand_Ambassador_Events</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_Assigned_Brand_Ambassador</targetReference>
+            </connector>
+            <label>Brand Ambassador Events</label>
+        </rules>
+    </decisions>
+    <description>This flow is specific to Promotions  and Ambassador Marketing Requests</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>varTodaysDate</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Marketing Requests: Promotions Record Type Automations {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Marketing Requests: Promotions Record Type Automations</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Date_Sent_to_Assigned_Digital_Coordinator_0</name>
+        <label>Update Date Sent to Assigned Digital Coordinator</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Notify_Assigned_Digital_Coordinator_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Date_Sent_to_Digital_Coordinator__c</field>
+            <value>
+                <elementReference>varTodaysDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Date_Sent_to_Assigned_Digital_Coordinator_0_0</name>
+        <label>Update Date Sent to Assigned Digital Coordinator</label>
+        <locationX>578</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Notify_Assigned_Digital_Coordinator_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Date_Sent_to_Digital_Coordinator__c</field>
+            <value>
+                <elementReference>varTodaysDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Date_Sent_to_Email_Approver</name>
+        <label>Update Date Sent to Email Approver</label>
+        <locationX>50</locationX>
+        <locationY>1367</locationY>
+        <connector>
+            <targetReference>Notify_Assigned_Email_Approver_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Date_Sent_to_Email_Approver__c</field>
+            <value>
+                <elementReference>varTodaysDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Date_Sent_to_Email_Approver_0</name>
+        <label>Update Date Sent to Email Approver</label>
+        <locationX>578</locationX>
+        <locationY>1367</locationY>
+        <connector>
+            <targetReference>Notify_Assigned_Email_Approver_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Date_Sent_to_Email_Approver__c</field>
+            <value>
+                <elementReference>varTodaysDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Project_Completed_Date_field</name>
+        <label>Update Project Completed Date field</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Evaluate_Assigned_Digital_Coordinator</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Project_Completed_Date__c</field>
+            <value>
+                <elementReference>varTodaysDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>•	Once you fill out the Project Completed Date, the status should move to Project Completed and so should the status bar.</description>
+        <name>Update_Status_Fields</name>
+        <label>Update Status Fields</label>
+        <locationX>578</locationX>
+        <locationY>2279</locationY>
+        <inputAssignments>
+            <field>Marketing_Project_Status__c</field>
+            <value>
+                <stringValue>Project Completed</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Project_Stage__c</field>
+            <value>
+                <stringValue>Event Complete</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_status_to_Post_Event_Data</name>
+        <label>Update status to &quot;Post Event Data&quot;</label>
+        <locationX>578</locationX>
+        <locationY>1943</locationY>
+        <connector>
+            <targetReference>Evaluate_Project_Completed_Date</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Project_Stage__c</field>
+            <value>
+                <stringValue>Post-Event Data</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>518</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Evaluate_Record_Type</targetReference>
+        </connector>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xZQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000WNedQAG</stringValue>
+            </value>
+        </filters>
+        <object>Marketing_Request__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+    <textTemplates>
+        <description>o	Once the Email approver adds the date to “date Email Approved”, an automatic email should be sent to the “Assigned Digital Coordinator” that the request has been approved.</description>
+        <name>AssignedDigitalCoordinatorApprovedNotification</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Greetings {!$Record.Assigned_Digital_Coordinator__r.FirstName},
+This is an automated notification to inform you that Marketing Request {!$Record.Name} has been approved. You may access the record via the link below.
+{!$Record.Record_Detail_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>DigitalCoordinatorNotifcationBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Greetings {!$Record.Assigned_Digital_Coordinator__r.FirstName},
+This is an automated notification that you have been assigned as the Digital Coordinator for the Marketing Request {!$Record.Name}. You may use the link below to access the record.
+{!$Record.Record_Detail_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>EmailApproverNotificationBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Greetings {!$Record.Assigned_Email_Approver__r.FirstName},
+This is an automated notification that you have been assigned as the Email Approver for the Marketing Request {!$Record.Name}. You may use the link below to access the record.
+{!$Record.Record_Detail_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>NotifyAssignedBrandAmbassador</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Dear {!$Record.Assigned_Brand_Ambassador__r.FirstName},
+
+You have been assigned as the Brand Ambassador for Marketing Request {!$Record.Name}. You may access the record by clicking the link below.
+
+{!$Record.Record_Detail_Link__c}</text>
+    </textTemplates>
+    <variables>
+        <name>varAssignedBrandAmbassadorEmail</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Assigned_Brand_Ambassador__r.Email</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>varAssignedDigitalCoordinatorEmailAddress</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Assigned_Digital_Coordinator__r.Email</elementReference>
+        </value>
+    </variables>
+    <variables>
+        <name>varAssignedEmailApprover</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <elementReference>$Record.Assigned_Email_Approver__r.Email</elementReference>
+        </value>
+    </variables>
+</Flow>

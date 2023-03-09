@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Dayna_Marketing_Tests__r$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Dayna_Marketing_Tests__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Dayna_Marketing_Tests__r$Marketing_Project_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Dayna_Marketing_Tests__r$Project_Total_Cost_to_Accel__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Dayna_Marketing_Tests__r$Project_Total_Cost_To_Location__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Partner_Operator__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Fair Share</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Dayna_Marketing_Tests__r$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Marketing_Request__c.Co_Op,Marketing_Request__c.Digital_Marketing,Marketing_Request__c.Non_Standard,Marketing_Request__c.Promotions,Marketing_Request__c.Customized</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FSG Custom/Co-Op Mktg Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Marketing_Requests_with_Marketing_Re__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Extension_2_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

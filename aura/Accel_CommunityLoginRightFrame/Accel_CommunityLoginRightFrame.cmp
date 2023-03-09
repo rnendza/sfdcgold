@@ -1,0 +1,72 @@
+<aura:component description="Accel_CommunityLoginRightFrame" implements="forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="expid" type="String" required="false" description="The branding experience ID" />
+
+    <aura:dependency resource="siteforce:registerQueryEventMap" type="EVENT"/>
+    <aura:handler event="c:setStartUrl" action="{!c.setStartUrl}"/>
+    <aura:handler event="c:setExpId" action="{!c.setExpId}"/>
+    <aura:dependency resource="c:setExpId" type="EVENT"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.initialize}"/>
+    <div style="border:1px dotted red;height:800px" >
+    <span style="font-size:.8em">
+    @TODO Configure dynaminc content based on expid.. styling etc. expId={!expId}
+    <br/> iframe? html? static resource?
+    </span>
+        <div class="post-listing">
+
+
+
+            <div class="post-item bgimg-main" style="background-image: url(&quot;https://www.accelentertainment.com/hubfs/Blog%20Graphics/01.%20January%202019/Traditional%20Marketing%20in%20Your%20Bar:%20Outdoor%20Signage.jpg&quot;);">
+                <a href="https://www.accelentertainment.com/blog/traditional-marketing-in-your-bar-outdoor-signage">
+
+
+                    <div class="hs-featured-image-wrapper bg-img">
+                                            <span class="hs-featured-image-link">
+                                                <img src="https://www.accelentertainment.com/hubfs/Blog%20Graphics/01.%20January%202019/Traditional%20Marketing%20in%20Your%20Bar:%20Outdoor%20Signage.jpg" class="hs-featured-image" alt="Traditional marketing at your bar"/>
+                                            </span>
+                    </div>
+
+
+
+
+                </a>
+                <div class="post-header text-white">
+
+                    <p id="hubspot-topic_data">
+
+                        <a class="topic-link" href="https://www.accelentertainment.com/blog/topic/marketing-your-business">Marketing Your Business</a>
+
+                    </p>
+
+                    <h2><a href="https://www.accelentertainment.com/blog/traditional-marketing-in-your-bar-outdoor-signage">Traditional Marketing in Your Bar: Outdoor Signage</a></h2>
+                    <!--
+                    <div id="hubspot-author_data" class="hubspot-editable fl100" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+                        <div class="hs-author-avatar"> <img src="https://www.accelentertainment.com/hubfs/Pictures/Employee%20Images/Emily%20Kiger%20Headshot.jpg" alt="Emily Kiger"/> </div>
+                        <div class="hubspot-author-name fl100">By
+
+                            <a class="author-link" href="https://www.accelentertainment.com/blog/author/emily-kiger">Emily Kiger</a>
+
+                            <div class="author-social">
+
+
+                                <a href="https://www.linkedin.com/in/emily-kiger-4a7748112/" target="_blank" class="hs-author-social-link hs-social-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+
+
+                            </div>
+
+                        </div>
+                    </div>
+            -->
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!--
+    <c:Accel_Iframe iframeUrl="{!v.iframeUrl}" width="{!v.width}" height="{!v.height}" scrolling="{!v.scrolling}" frameBorder="{!v.frameBorder}"/>
+    -->
+
+</aura:component>

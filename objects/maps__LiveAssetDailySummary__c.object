@@ -1,0 +1,550 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>maps__AverageStopTimeHours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Average duration of user-defined stop events, in hours.</inlineHelpText>
+        <label>Average Stop Time (Hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__AverageStopTimeMinutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Average duration of user-defined stop events, in minutes.</inlineHelpText>
+        <label>Average Stop Time (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CountOfEventsDeviceBatteryOn__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Count of the device battery on events recorded that day, as defined in the daily summary configuration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of the device battery on events recorded that day, as defined in the daily summary configuration</inlineHelpText>
+        <label>Count of Events - Device Battery On</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CountOfEventsSpeedThreshold__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Count of the speed threshold events recorded that day, as defined in the daily summary configuration</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of the speed threshold events recorded that day, as defined in the daily summary configuration</inlineHelpText>
+        <label>Count of Events - Speed Threshold</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CountOfSummaryEventsSpeeding__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of the speeding events recorded that day, as defined in the daily summary configuration</inlineHelpText>
+        <label>Count of Events - Speeding</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CountOfSummaryEventsStops__c</fullName>
+        <defaultValue>0</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of the stop events recorded that day, as defined in the daily summary configuration</inlineHelpText>
+        <label>Count of Events - Stops</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Date__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Date and time report generated</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date that this summary applies to</inlineHelpText>
+        <label>Summary Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__DeviceId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>true</externalId>
+        <inlineHelpText>Device Vendor concatenated with Device ID</inlineHelpText>
+        <label>Device Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__DriveTimeHours__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Total time spent moving with engine on, in hours</inlineHelpText>
+        <label>Drive Time (Hours)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__DriveTimeMinutes__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Total time spent moving with engine on, in minutes</inlineHelpText>
+        <label>Drive Time (Minutes)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__DrivingDuringHolidayOff__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indication if a trip took place within denoted holiday off</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indication if a trip took place within denoted holiday off</inlineHelpText>
+        <label>Driving During Holiday Off</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__DrivingOutsideWorkingHours__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>Indication if a trip took place outside of denoted working hours</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indication if a trip took place outside of denoted working hours</inlineHelpText>
+        <label>Driving Outside Working Hours</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__FirstMessageContent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the full data content of the first point received by aws for the day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field represents the full data content of the first point received by aws for the day.</inlineHelpText>
+        <label>First Message Content</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__FirstMessageTimestamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the date and time of the first point received by aws for the day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field represents the date and time of the first point received by aws for the day.</inlineHelpText>
+        <label>First Message Timestamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__HardAccelerationCount__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Number of Quick Acceleration message count</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of device messages indicating a quick acceleration event that day (when available)</inlineHelpText>
+        <label>Number of Hard Acceleration Events</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__HardBrakingCount__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Count of device messages indicating a hard braking event that day (when available)</inlineHelpText>
+        <label>Number of Hard Braking Events</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__LastMessageContent__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the full data content of the last point received by aws for the day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field represents the full data content of the last point received by aws for the day.</inlineHelpText>
+        <label>Last Message Content</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__LastMessageTimestamp__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field represents the date and time of the last point received by aws for the day.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field represents the date and time of the last point received by aws for the day.</inlineHelpText>
+        <label>Last Message Timestamp</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__LiveAsset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Live Asset</label>
+        <referenceTo>maps__LiveAsset__c</referenceTo>
+        <relationshipLabel>Maps Live Asset Daily Summaries</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__LiveDailySummaryConfig__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Reference to the summary configuration that this summary is based on</inlineHelpText>
+        <label>Live Daily Summary Configuration</label>
+        <referenceTo>maps__LiveDailySummaryConfig__c</referenceTo>
+        <relationshipLabel>Maps Live Asset Daily Summaries</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__LiveDriver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Driver</label>
+        <referenceTo>maps__LiveDriver__c</referenceTo>
+        <relationshipLabel>Maps Live Asset Daily Summaries</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__LiveIoTDevice__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>Lookup to the Live IoT Device object</description>
+        <externalId>false</externalId>
+        <label>Live IoT Device</label>
+        <referenceTo>maps__LiveIoTDevice__c</referenceTo>
+        <relationshipLabel>Maps Live Asset Daily Summaries</relationshipLabel>
+        <relationshipName>LiveAssetDailySummaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__MaximumSpeedKPH__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Maximum single speed value received that day (in KPH)</inlineHelpText>
+        <label>Maximum Speed (KPH)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__MaximumSpeedMPH__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Top speed traveled</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__MaximumSpeedKPH__c * 0.62137, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Maximum single speed value received that day (in MPH)</inlineHelpText>
+        <label>Maximum Speed (MPH)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__OdometerKm__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Last available odometer reading of the day, in kilometers</inlineHelpText>
+        <label>Odometer (km)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__OdometerMiles__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Last available odometer reading of the day, in miles</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__OdometerKm__c * 0.62137, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Last available odometer reading of the day, in miles</inlineHelpText>
+        <label>Odometer (mi)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TripDistanceKm__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <inlineHelpText>Total distance traveled in kilometers</inlineHelpText>
+        <label>Total Distance (km)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TripDistanceMiles__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the value &apos;distance&apos; from the AWS response</description>
+        <externalId>false</externalId>
+        <formula>ROUND(maps__TripDistanceKm__c * 0.62137, 2)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Total distance traveled in miles</inlineHelpText>
+        <label>Total Distance (mi)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>The User that is assigned to the associated Device at the time that the Summary was created</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The User that is assigned to the associated Device at the time that the Summary was created</inlineHelpText>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>LiveAssetDailySummaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Maps Live Asset Daily Summary</label>
+    <nameField>
+        <displayFormat>{MMDDYY}-{0000}</displayFormat>
+        <label>Maps Live Asset Daily Summary Name</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Maps Live Asset Daily Summaries</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

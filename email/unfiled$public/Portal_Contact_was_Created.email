@@ -1,0 +1,16 @@
+<messaging:emailTemplate subject="A New Portal Contact Has Been Created" recipientType="User" relatedToType="Contact">
+
+<messaging:htmlEmailBody >
+<br></br>
+A new portal contact was created.
+
+<p></p>
+
+<p>Contact Record Link: <a href="{!LEFT($Api.Partner_Server_URL_290,FIND('services',$Api.Partner_Server_URL_290)-1)}{!relatedTo.Id}">{!relatedTo.Name}</a></p>
+<p>Direct Account Record Link: <a href="{!LEFT($Api.Partner_Server_URL_290,FIND('services',$Api.Partner_Server_URL_290)-1)}{!relatedTo.AccountId}">{!relatedTo.Account_Name_Text__c}</a></p>
+
+
+<br></br>
+<br></br>
+</messaging:htmlEmailBody>
+</messaging:emailTemplate>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Accel_Entertainment</letterhead>
+    <name>Application Processor Added</name>
+    <style>freeForm</style>
+    <subject>Application Processor Added</subject>
+    <textOnly>Hello {!LicenseApplication__c.Application_Submitted_By__c},
+
+
+
+You have been selected as an Application Processor for this Application:{!LicenseApplication__c.Name}.
+
+
+
+Link to Application Record: {!LicenseApplication__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

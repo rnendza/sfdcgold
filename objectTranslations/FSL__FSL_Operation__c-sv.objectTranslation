@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>FSL-åtgärden</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En FSL-åtgärd</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>FSL-åtgärd</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>FSL-åtgärderna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>FSL-åtgärder</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>FSL-åtgärder</value>
+    </caseValues>
+    <fields>
+        <label><!-- Finished --></label>
+        <name>FSL__Finished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Method Id --></label>
+        <name>FSL__Future_Method_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiator --></label>
+        <name>FSL__Initiator__c</name>
+        <relationshipLabel><!-- FSL Operations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>FSL__Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Booking</masterLabel>
+            <translation>Göra bokning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Get Candidates</masterLabel>
+            <translation>Hämta kandidater</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule</masterLabel>
+            <translation>Schema</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnSchedule</masterLabel>
+            <translation>Ta bort från schema</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ResultText --></label>
+        <name>FSL__ResultText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Metric --></label>
+        <name>FSL__featureMetric__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Namn på FSL-operation</nameFieldLabel>
+</CustomObjectTranslation>

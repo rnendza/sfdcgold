@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>LicenseApplication__c$Name</field>
+    </columns>
+    <columns>
+        <field>LicenseApplication__c$Opportunity__c</field>
+    </columns>
+    <columns>
+        <field>LicenseApplication__c$Opportunity__c.Opportunity_Type__c</field>
+    </columns>
+    <columns>
+        <field>LicenseApplication__c$Opportunity__c.StageName</field>
+    </columns>
+    <columns>
+        <field>LicenseApplication__c$Id</field>
+    </columns>
+    <columns>
+        <field>LicenseApplication__c$Opportunity__c.Opportunity_CaseSafe_Id__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>LicenseApplication__c$Opportunity__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LicenseApplication__c$Opportunity__c.Opportunity_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Amusements,Merchant Solutions,Digital Marketing</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>LicenseApplication__c$Opportunity__c.StageName</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Application w lost opp or non-gaming opp</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Applications__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>LicenseApplication__c$Application_Appeal_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

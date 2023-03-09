@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <assignments>
+        <description>Set the End Time on the Resource Absence to current time.</description>
+        <name>Set_Resource_Absence_End_Time</name>
+        <label>Set Resource Absence End Time</label>
+        <locationX>740</locationX>
+        <locationY>470</locationY>
+        <assignmentItems>
+            <assignToReference>ResourceAbsence.End</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>$Flow.CurrentDateTime</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Update_the_Resource_Absence</targetReference>
+        </connector>
+    </assignments>
+    <description>Action in Resource Absence to Set End time of a Resource Absence to Current Time.</description>
+    <interviewLabel>Resource Absence - {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Resource Absence - Set End Time (Break)</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>FREE_FORM_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>FieldServiceMobile</processType>
+    <recordLookups>
+        <description>Get the Resource Absence.</description>
+        <name>Get_Resource_Absence</name>
+        <label>Get Resource Absence</label>
+        <locationX>712</locationX>
+        <locationY>204</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Get_Service_Resource</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>Id</elementReference>
+            </value>
+        </filters>
+        <object>ResourceAbsence</object>
+        <outputReference>ResourceAbsence</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Start</queriedFields>
+        <queriedFields>End</queriedFields>
+        <queriedFields>ResourceId</queriedFields>
+    </recordLookups>
+    <recordLookups>
+        <description>Get the Service Resource related to the Resource Absence.</description>
+        <name>Get_Service_Resource</name>
+        <label>Get Service Resource</label>
+        <locationX>610</locationX>
+        <locationY>338</locationY>
+        <assignNullValuesIfNoRecordsFound>false</assignNullValuesIfNoRecordsFound>
+        <connector>
+            <targetReference>Set_Resource_Absence_End_Time</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Id</field>
+            <operator>EqualTo</operator>
+            <value>
+                <elementReference>ResourceAbsence.ResourceId</elementReference>
+            </value>
+        </filters>
+        <object>ServiceResource</object>
+        <outputReference>ServiceResource</outputReference>
+        <queriedFields>Id</queriedFields>
+        <queriedFields>Name</queriedFields>
+    </recordLookups>
+    <recordUpdates>
+        <description>Update the Resource Absence in the Database.</description>
+        <name>Update_the_Resource_Absence</name>
+        <label>Update the Resource Absence</label>
+        <locationX>625</locationX>
+        <locationY>584</locationY>
+        <connector>
+            <targetReference>Success_Screen</targetReference>
+        </connector>
+        <faultConnector>
+            <targetReference>Error_Screen</targetReference>
+        </faultConnector>
+        <inputReference>ResourceAbsence</inputReference>
+    </recordUpdates>
+    <screens>
+        <name>Error_Screen</name>
+        <label>Error Screen</label>
+        <locationX>1006</locationX>
+        <locationY>330</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>ErrorMessage</name>
+            <fieldText>&lt;p&gt;An error has occurred and your break was not Ended.&lt;/p&gt;&lt;p&gt;Please try again or contact your Salesforce Administrator.&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <screens>
+        <name>Success_Screen</name>
+        <label>Success Screen</label>
+        <locationX>719</locationX>
+        <locationY>721</locationY>
+        <allowBack>true</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>true</allowPause>
+        <fields>
+            <name>SuccessMessage</name>
+            <fieldText>&lt;p&gt;Congrats {!ServiceResource.Name}!&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;You have ended your break starting at:&lt;/p&gt;&lt;p&gt;{!ResourceAbsence.Start}&lt;/p&gt;&lt;p&gt;The End Time of your break was set to:&lt;/p&gt;&lt;p&gt;{!ResourceAbsence.End}&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <showFooter>true</showFooter>
+        <showHeader>true</showHeader>
+    </screens>
+    <start>
+        <locationX>586</locationX>
+        <locationY>48</locationY>
+        <connector>
+            <targetReference>Get_Resource_Absence</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <variables>
+        <description>Id from the scoped object.</description>
+        <name>Id</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+    <variables>
+        <description>Name of the Resource Absence.</description>
+        <name>Name</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Accel Tech</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>ResourceAbsence</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ResourceAbsence</objectType>
+    </variables>
+    <variables>
+        <description>Service Resource related to the Resource Absence</description>
+        <name>ServiceResource</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>ServiceResource</objectType>
+    </variables>
+</Flow>

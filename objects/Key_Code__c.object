@@ -1,0 +1,379 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Key_Code_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Code Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Active</fullName>
+                    <default>false</default>
+                    <label>Active</label>
+                </value>
+                <value>
+                    <fullName>Lost</fullName>
+                    <default>false</default>
+                    <label>Lost</label>
+                </value>
+                <value>
+                    <fullName>Inactive</fullName>
+                    <default>false</default>
+                    <label>Inactive</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key_Core_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Core Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <controllingField>Key_Core__c</controllingField>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Main Door</fullName>
+                    <default>false</default>
+                    <label>Main Door</label>
+                </value>
+                <value>
+                    <fullName>BV Door</fullName>
+                    <default>false</default>
+                    <label>BV Door</label>
+                </value>
+                <value>
+                    <fullName>Redemption Door</fullName>
+                    <default>false</default>
+                    <label>Redemption Door</label>
+                </value>
+                <value>
+                    <fullName>Main CPU</fullName>
+                    <default>false</default>
+                    <label>Main CPU</label>
+                </value>
+                <value>
+                    <fullName>Removal MD</fullName>
+                    <default>false</default>
+                    <label>Removal MD</label>
+                </value>
+                <value>
+                    <fullName>Removal BV</fullName>
+                    <default>false</default>
+                    <label>Removal BV</label>
+                </value>
+                <value>
+                    <fullName>Removal RT</fullName>
+                    <default>false</default>
+                    <label>Removal RT</label>
+                </value>
+                <value>
+                    <fullName>Removal CPU</fullName>
+                    <default>false</default>
+                    <label>Removal CPU</label>
+                </value>
+                <value>
+                    <fullName>Core Cut MD</fullName>
+                    <default>false</default>
+                    <label>Core Cut MD</label>
+                </value>
+                <value>
+                    <fullName>Core Cut BV</fullName>
+                    <default>false</default>
+                    <label>Core Cut BV</label>
+                </value>
+                <value>
+                    <fullName>Core Cut RT</fullName>
+                    <default>false</default>
+                    <label>Core Cut RT</label>
+                </value>
+                <value>
+                    <fullName>Core Cut CPU</fullName>
+                    <default>false</default>
+                    <label>Core Cut CPU</label>
+                </value>
+            </valueSetDefinition>
+            <valueSettings>
+                <controllingFieldValue>Main Core</controllingFieldValue>
+                <valueName>Main Door</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Main Core</controllingFieldValue>
+                <valueName>BV Door</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Main Core</controllingFieldValue>
+                <valueName>Redemption Door</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Main Core</controllingFieldValue>
+                <valueName>Main CPU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Removal</controllingFieldValue>
+                <valueName>Removal MD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Removal</controllingFieldValue>
+                <valueName>Removal BV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Removal</controllingFieldValue>
+                <valueName>Removal RT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Removal</controllingFieldValue>
+                <valueName>Removal CPU</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Core Cut</controllingFieldValue>
+                <valueName>Core Cut MD</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Core Cut</controllingFieldValue>
+                <valueName>Core Cut BV</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Core Cut</controllingFieldValue>
+                <valueName>Core Cut RT</valueName>
+            </valueSettings>
+            <valueSettings>
+                <controllingFieldValue>Core Cut</controllingFieldValue>
+                <valueName>Core Cut CPU</valueName>
+            </valueSettings>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Key_Core__c</fullName>
+        <externalId>false</externalId>
+        <label>Key Core</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Main Core</fullName>
+                    <default>false</default>
+                    <label>Main Core</label>
+                </value>
+                <value>
+                    <fullName>Removal</fullName>
+                    <default>false</default>
+                    <label>Removal</label>
+                </value>
+                <value>
+                    <fullName>Core Cut</fullName>
+                    <default>false</default>
+                    <label>Core Cut</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Region__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Region</label>
+        <referenceTo>Region__c</referenceTo>
+        <relationshipLabel>Key Codes</relationshipLabel>
+        <relationshipName>Key_Codes</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Key Code</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Key_Code_Status__c</columns>
+        <columns>Key_Core__c</columns>
+        <columns>Key_Core_Type__c</columns>
+        <columns>Region__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Key_Codes</fullName>
+        <columns>NAME</columns>
+        <filterScope>Mine</filterScope>
+        <label>All Key Codes</label>
+    </listViews>
+    <nameField>
+        <label>Key Code Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Key Codes</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>Private</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

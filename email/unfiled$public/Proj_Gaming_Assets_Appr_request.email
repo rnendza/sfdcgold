@@ -1,0 +1,9 @@
+{!Project__c.Name}
+Owner: {!Project__c.OwnerFullName}
+Notes: {!Project__c.Project_Notes__c}
+
+
+
+Please click link below for Project details:
+
+{!Project__c.Link}

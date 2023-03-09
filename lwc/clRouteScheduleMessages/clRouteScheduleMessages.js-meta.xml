@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>52.0</apiVersion>
+    <description>Cash Logistics - Handles Server Side Route_Schedule__c Messaging</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Cl Route Schedule Messages</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Route_Schedule__c</object>
+            </objects>
+            <property name="messageDisplayType"
+                      label="Message Display Type"
+                      description="The type of message to display to the user"
+                      default="ScopedNotification"
+                      type="String"
+                      datasource="ScopedNotification,Toast"/>
+            <property name="scopedMessageDuration"
+                      label="Scoped Message Duration"
+                      description="The # of seconds to show the scoped notification (0) means forever. N/A for toasts."
+                      default="10"
+                      type="Integer"
+                      max="180"
+                      min="0"/>
+            <property name="scopedMessageDismissible"
+                      label="Scoped Message Dismissible"
+                      description="Provides a way for the user to close out of the scoped message"
+                      default="false"
+                      type="Boolean"/>
+
+            <!--            <property name="mapHeight"-->
+            <!--                      label="The height of the map"-->
+            <!--                      description="Width set automatically internally in the component"-->
+            <!--                      default="425px"-->
+            <!--                      type="String"-->
+            <!--                      placeholder="425px"  />-->
+            <!--            <property name="isReverseGeoOriginAddress"-->
+            <!--                      label="Perform Reverse Geo Lookup on Geo Address"-->
+            <!--                      description="Calls out to good to get the address for the lat / long coordinates"-->
+            <!--                      default="true"-->
+            <!--                      type="Boolean"/>-->
+            <!--            <property name="cardTitle"-->
+            <!--                      label="Card Title"-->
+            <!--                      description="Enter the title the of the card that contains the map here"-->
+            <!--                      default="Route Base Location"-->
+            <!--                      type="String"-->
+            <!--                      placeholder="Card Title"/>-->
+            <!--            <property name="mapboxStyleUrlSuffix"-->
+            <!--                      label="Mapbox Style"-->
+            <!--                      description="Enter style url suffix for the mapbox layer (see mapbox doc)"-->
+            <!--                      default="mapbox/satellite-streets-v11"-->
+            <!--                      type="String"-->
+            <!--                      placeholder="Mapbox style"/>-->
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

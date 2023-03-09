@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_28747692</developerName>
+        <masterLabel>Owner</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Opportunity$Owner</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Annette Wodzinski</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Charity Schultz</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Dale Vandenberg</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Daniel Carbaugh</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>David Lipkin</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jack Felkamp</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jake Menendez</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>James Hanna</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jared March</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Jeff Ellis</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>John Deppe</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Lazzara</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Rotramel</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Michael Stuart</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Mike Lee</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Paul McCaffrey</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scott Admire</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tara Stone</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tony Curtale</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Tony Mestan</sourceValue>
+            </sourceValues>
+            <value>BDM</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SalesforceAdmin</sourceValue>
+            </sourceValues>
+            <value>Salesforce Admin</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBar</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_28747692</groupingColumn>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <title>Opps Created This Week: Admin vs BDMs</title>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity$RecordType</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Opportunity_Referrer__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Gaming_Experience__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity$Total_Business_Hours_Open_per_week__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity$LastActivityDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner.Title</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner.UserRole</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Owner.Profile.Name</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_28747692</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Opportunity$Owner</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Opps Created This Week: BDM vs Admin</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Op_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$CreatedDate</dateColumn>
+        <interval>INTERVAL_THISWEEK</interval>
+    </timeFrameFilter>
+</Report>

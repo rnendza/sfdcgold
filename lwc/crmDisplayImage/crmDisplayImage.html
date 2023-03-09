@@ -1,0 +1,16 @@
+<!--
+===== crmDisplayImage ======
+This is a simple wrapper around an html img element loading the image from an internal SFDC Static resource.
+Required public props are imageName and imageFolder for which it will use to search the static resource zipped file.
+Assumed file extension is .png but can be overridden via one of the many optional properties. (See optional api
+props in the js)
+
+The most basic aura usage is:
+<c:crmDisplayImage imageName ="ImageFileName" />
+
+Note: if of no imageFolder property is passed it will assume the root of the static resource zip.
+Note: the static resource url is currently hardcoded to.  '@salesforce/resourceUrl/crm_image_resources';
+-->
+<template>
+    <img src={imageUrl} height={imageHeight} width={imageWidth} class={imageClass} style={imageStyle} alt={imageAlt} />
+</template>

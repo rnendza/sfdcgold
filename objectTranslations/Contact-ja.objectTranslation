@@ -1,0 +1,652 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden. --></help>
+        <label><!-- (DEPRECATE) Yesterday Location Share --></label>
+        <name>AC_Home_Display_Yesterday_Location_Share__c</name>
+    </fields>
+    <fields>
+        <help><!-- Checked indicates that an address will display for your location on the Home page / Previous day for location share chart. Unchecked indicates a DBA Name will display --></help>
+        <label><!-- (DEPRECATE) Display Location Address --></label>
+        <name>AC_Home_Location_Address_Display__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name (Text) --></label>
+        <name>Account_Name_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account RM --></label>
+        <name>Account_RM__c</name>
+        <relationshipLabel><!-- Contacts (Account RM) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Acquisition --></label>
+        <name>Acquisition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Completed --></label>
+        <name>Background_Check_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- CaseSafeId --></label>
+        <name>CaseSafeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Community Contact --></label>
+        <name>Community_Contact__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Date the user clicked accept after reading the Terms of Service in communities. --></help>
+        <label><!-- Community Terms Accepted Date --></label>
+        <name>Community_Terms_Accepted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- PO Designation is based on the Contact Type and Primary Sales Agent Type --></help>
+        <label><!-- Contact PO Designation --></label>
+        <name>Contact_PO_Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- xContact Type --></label>
+        <name>Contact_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amusement Operator</masterLabel>
+            <translation><!-- Amusement Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User</masterLabel>
+            <translation><!-- User --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contact Type --></label>
+        <name>Contact_UType__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amusement Operator</masterLabel>
+            <translation><!-- Amusement Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted</masterLabel>
+            <translation><!-- Delisted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Operator</masterLabel>
+            <translation><!-- Terminal Operator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Do Not Email --></label>
+        <name>Do_Not_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Do Not Mail --></label>
+        <name>Do_Not_Mail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Role --></label>
+        <name>Employee_Role__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive</masterLabel>
+            <translation><!-- Executive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM</masterLabel>
+            <translation><!-- RM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Email Address --></label>
+        <name>IGB_Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Email Contact --></label>
+        <name>IGB_Email_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive --></label>
+        <name>Inactive__c</name>
+    </fields>
+    <fields>
+        <help><!-- Key Contact for Trade Association accounts. --></help>
+        <label><!-- Key Contact --></label>
+        <name>Key_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Expiration Date --></label>
+        <name>License_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mail Merge Recipient --></label>
+        <name>Mail_Merge_Recipient__c</name>
+    </fields>
+    <fields>
+        <label><!-- Non-Soliciting Sales Agent --></label>
+        <name>Non_Soliciting_Sales_Agent__c</name>
+    </fields>
+    <fields>
+        <help><!-- (lawyer, accountant, bar owner, town mayor, etc.) --></help>
+        <label><!-- Other Professional Roles --></label>
+        <name>Other_Professional_Roles__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Designation --></label>
+        <name>PO_Designation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator Type --></label>
+        <name>Partner_Operator_Type__c</name>
+        <picklistValues>
+            <masterLabel>Acquisition</masterLabel>
+            <translation><!-- Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terminal Operator</masterLabel>
+            <translation><!-- Terminal Operator --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator --></label>
+        <name>Partner_Operator__c</name>
+    </fields>
+    <fields>
+        <help><!-- If this field is populated, it was created as a the result of the Portal Contact Request record that populates it. --></help>
+        <label><!-- Portal Contact Request --></label>
+        <name>Portal_Contact_Request__c</name>
+        <relationshipLabel><!-- Contacts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferred/Primary Language --></label>
+        <name>Preferred_Primary_Language__c</name>
+        <picklistValues>
+            <masterLabel>Arabic</masterLabel>
+            <translation><!-- Arabic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Armenian</masterLabel>
+            <translation><!-- Armenian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bengali</masterLabel>
+            <translation><!-- Bengali --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Cantonese)</masterLabel>
+            <translation><!-- Chinese (Cantonese) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chinese (Mandarin)</masterLabel>
+            <translation><!-- Chinese (Mandarin) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>English</masterLabel>
+            <translation><!-- English --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>French</masterLabel>
+            <translation><!-- French --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>German</masterLabel>
+            <translation><!-- German --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Greek</masterLabel>
+            <translation><!-- Greek --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hebrew</masterLabel>
+            <translation><!-- Hebrew --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hindi</masterLabel>
+            <translation><!-- Hindi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hmong</masterLabel>
+            <translation><!-- Hmong --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Italian</masterLabel>
+            <translation><!-- Italian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Japanese</masterLabel>
+            <translation><!-- Japanese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Korean</masterLabel>
+            <translation><!-- Korean --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Panjabi</masterLabel>
+            <translation><!-- Panjabi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Persian</masterLabel>
+            <translation><!-- Persian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Polish</masterLabel>
+            <translation><!-- Polish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Portuguese</masterLabel>
+            <translation><!-- Portuguese --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Russian</masterLabel>
+            <translation><!-- Russian --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spanish</masterLabel>
+            <translation><!-- Spanish --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tagalog</masterLabel>
+            <translation><!-- Tagalog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urdu</masterLabel>
+            <translation><!-- Urdu --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vietnamese</masterLabel>
+            <translation><!-- Vietnamese --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please select type of Sales Agent --></help>
+        <label><!-- Primary Sales Agent Type --></label>
+        <name>Primary_Sales_Agent_Type__c</name>
+        <picklistValues>
+            <masterLabel>Delisted Employee Sales Agent</masterLabel>
+            <translation><!-- Delisted Employee Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Independent Sales Agent</masterLabel>
+            <translation><!-- Delisted Independent Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Non-Soliciting Sales Agent</masterLabel>
+            <translation><!-- Delisted Non-Soliciting Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Third Party Sales Agent</masterLabel>
+            <translation><!-- Delisted Third Party Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Sales Agent</masterLabel>
+            <translation><!-- Employee Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Sales Agent</masterLabel>
+            <translation><!-- Independent Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Soliciting Sales Agent</masterLabel>
+            <translation><!-- Non Soliciting Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Sales Agent</masterLabel>
+            <translation><!-- Third Party Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- RM&apos;s email --></label>
+        <name>RM_s_email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Roles --></label>
+        <name>Roles__c</name>
+        <picklistValues>
+            <masterLabel>Amusement Service</masterLabel>
+            <translation><!-- Amusement Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bar Manager</masterLabel>
+            <translation><!-- Bar Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bartender</masterLabel>
+            <translation><!-- Bartender --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Key Decision Maker</masterLabel>
+            <translation><!-- Key Decision Maker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Landlord</masterLabel>
+            <translation><!-- Landlord --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>License Holder</masterLabel>
+            <translation><!-- License Holder --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manager</masterLabel>
+            <translation><!-- Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Owner</masterLabel>
+            <translation><!-- Old Owner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner/Fraternal Signatory</masterLabel>
+            <translation><!-- Owner/Fraternal Signatory --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PSIC</masterLabel>
+            <translation><!-- PSIC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>President</masterLabel>
+            <translation><!-- President --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Staff</masterLabel>
+            <translation><!-- Staff --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Treasurer</masterLabel>
+            <translation><!-- Treasurer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Gaming Manager</masterLabel>
+            <translation><!-- Video Gaming Manager --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SA Agreement Sent for Review --></label>
+        <name>SA_Agreement_Sent_Review__c</name>
+    </fields>
+    <fields>
+        <label><!-- SA Agreement Signed --></label>
+        <name>SA_Agreement_Signed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Mark if individual is not an official Third Party / Independent Sales Agent yet. --></help>
+        <label><!-- SA Background Check Initiated --></label>
+        <name>SA_Background_Check_Initiated__c</name>
+    </fields>
+    <fields>
+        <label><!-- SA Delisted --></label>
+        <name>SA_Delisted__c</name>
+    </fields>
+    <fields>
+        <label><!-- SA Onboarding Complete --></label>
+        <name>SA_Onboarding_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- SA Registered --></label>
+        <name>SA_Registered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce User Role --></label>
+        <name>SF_User_Role__c</name>
+    </fields>
+    <fields>
+        <label><!-- Salesforce User --></label>
+        <name>SF_User__c</name>
+        <relationshipLabel><!-- Contacts (Salesforce User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Documentation --></label>
+        <name>Sales_Agent_Documentation__c</name>
+        <picklistValues>
+            <masterLabel>Addendum to ASA</masterLabel>
+            <translation><!-- Addendum to ASA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Background Check Disclosure and Authorization Form</masterLabel>
+            <translation><!-- Background Check Disclosure and Authorization Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commission Split Form</masterLabel>
+            <translation><!-- Commission Split Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driver&apos;s License</masterLabel>
+            <translation><!-- Driver&apos;s License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fingerprint Receipt</masterLabel>
+            <translation><!-- Fingerprint Receipt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISA Agreement</masterLabel>
+            <translation><!-- ISA Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ISA Registration Form</masterLabel>
+            <translation><!-- ISA Registration Form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Original Release of Info</masterLabel>
+            <translation><!-- Original Release of Info --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recent Photo of Individual</masterLabel>
+            <translation><!-- Recent Photo of Individual --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Packet</masterLabel>
+            <translation><!-- SA Packet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TPSA Agreement</masterLabel>
+            <translation><!-- TPSA Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent --></label>
+        <name>Sales_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Secondary Sales Agent Type --></label>
+        <name>Secondary_Sales_Agent_Type__c</name>
+        <picklistValues>
+            <masterLabel>Delisted Employee Sales Agent</masterLabel>
+            <translation><!-- Delisted Employee Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Independent Sales Agent</masterLabel>
+            <translation><!-- Delisted Independent Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Non Soliciting Sales Agent</masterLabel>
+            <translation><!-- Delisted Non Soliciting Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delisted Third Party Sales Agent</masterLabel>
+            <translation><!-- Delisted Third Party Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee Sales Agent</masterLabel>
+            <translation><!-- Employee Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Independent Sales Agent</masterLabel>
+            <translation><!-- Independent Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non Soliciting Sales Agent</masterLabel>
+            <translation><!-- Non Soliciting Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Third Party Sales Agent</masterLabel>
+            <translation><!-- Third Party Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Terminal Operator --></label>
+        <name>Terminal_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Third Party Sales Agent --></label>
+        <name>Third_Party_Sales_Agent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Accel Employee</masterLabel>
+            <translation><!-- Accel Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accounting Contact</masterLabel>
+            <translation><!-- Accounting Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amusement Contact</masterLabel>
+            <translation><!-- Amusement Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor Contact</masterLabel>
+            <translation><!-- Competitor Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Contact</masterLabel>
+            <translation><!-- Corporate Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer</masterLabel>
+            <translation><!-- Customer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Contact</masterLabel>
+            <translation><!-- IGB Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Prospect</masterLabel>
+            <translation><!-- Prospect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Store Contact</masterLabel>
+            <translation><!-- Store Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TO Competitor Contact</masterLabel>
+            <translation><!-- TO Competitor Contact --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vendor</masterLabel>
+            <translation><!-- Vendor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Employee --></label>
+        <name>User__c</name>
+    </fields>
+    <fields>
+        <help><!-- VP of Sales Approval for Commission Split --></help>
+        <label><!-- VP Sales Commission Split Approval --></label>
+        <name>VP_Sales_Commission_Split_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- WFTrigger --></label>
+        <name>WFTrigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- License # --></label>
+        <name>license_number__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- General --></label>
+        <name>General</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Please reach out to @PortalSupport if this contact&apos;s portal access needs to be revoked. --></errorMessage>
+        <name>Cannot_Check_Inactive_if_Community_Conta</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please select the Primary Sales Agent Type. --></errorMessage>
+        <name>Primary_Sales_Agent</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleMaps --></label>
+        <name>GoogleMaps</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- GoogleSearch --></label>
+        <name>GoogleSearch</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- SpanningContactRestore --></label>
+        <name>spanning__SpanningContactRestore</name>
+    </webLinks>
+</CustomObjectTranslation>

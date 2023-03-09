@@ -1,0 +1,349 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Basisobjekts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Basisobjekte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Basisobjekt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Basisobjekten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address Object --></label>
+        <name>maps__AddressObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Assignment Dirty Flag --></label>
+        <name>maps__AutoAssignmentDirtyFlag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>maps__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean City --></label>
+        <name>maps__CleanCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean Country --></label>
+        <name>maps__CleanCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean County --></label>
+        <name>maps__CleanCounty__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean District --></label>
+        <name>maps__CleanDistrict__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean Postal Code --></label>
+        <name>maps__CleanPostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean State --></label>
+        <name>maps__CleanState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Clean Street --></label>
+        <name>maps__CleanStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Type --></label>
+        <name>maps__DeviceType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Vendor --></label>
+        <name>maps__DeviceVendor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Global Search --></label>
+        <name>maps__DisableGlobalSearch__c</name>
+    </fields>
+    <fields>
+        <label><!-- In Active --></label>
+        <name>maps__InActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated --></label>
+        <name>maps__LastUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>maps__Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>maps__Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- MapIt Proximity Measurement Unit --></label>
+        <name>maps__MapIt_Proximity_Measurement_Unit__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Fuß</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kilometers</masterLabel>
+            <translation>Kilometer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Meters</masterLabel>
+            <translation>Meter</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Miles</masterLabel>
+            <translation>Meilen</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yards</masterLabel>
+            <translation>Yards</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MapIt Proximity On --></label>
+        <name>maps__MapIt_Proximity_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- MapIt Proximity Radius --></label>
+        <name>maps__MapIt_Proximity_Radius__c</name>
+    </fields>
+    <fields>
+        <label><!-- MapIt Show Inside Shape --></label>
+        <name>maps__MapIt_Show_Inside_Shape__c</name>
+    </fields>
+    <fields>
+        <label><!-- MapIt Zoom Control --></label>
+        <name>maps__MapIt_Zoom_Control__c</name>
+    </fields>
+    <fields>
+        <label><!-- MapIt Zoom To Fit --></label>
+        <name>maps__MapIt_Zoom_To_Fit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>maps__Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polyline Vertices --></label>
+        <name>maps__PolylineVertices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Polymorphic Address Object --></label>
+        <name>maps__PolymorphicAddressObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>maps__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Field --></label>
+        <name>maps__PriorityField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority Type --></label>
+        <name>maps__PriorityType__c</name>
+        <picklistValues>
+            <masterLabel>Einstein</masterLabel>
+            <translation>Einstein</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation>Andere</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pardot</masterLabel>
+            <translation>Pardot</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Processing --></label>
+        <name>maps__Processing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Quality --></label>
+        <name>maps__Quality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Id --></label>
+        <name>maps__RecordTypeId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing End Time --></label>
+        <name>maps__RoutingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Has Address --></label>
+        <name>maps__RoutingHasAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Is Flexible --></label>
+        <name>maps__RoutingIsFlexible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Start Time --></label>
+        <name>maps__RoutingStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Settings --></label>
+        <name>maps__Settings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shape --></label>
+        <name>maps__Shape__c</name>
+    </fields>
+    <fields>
+        <label><!-- Similarity --></label>
+        <name>maps__Similarity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skip Failed Geocodes --></label>
+        <name>maps__SkipFailedGeocodes__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>maps__State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>maps__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Ten --></label>
+        <name>maps__Tooltip10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Eleven --></label>
+        <name>maps__Tooltip11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Twelve --></label>
+        <name>maps__Tooltip12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Thirteen --></label>
+        <name>maps__Tooltip13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Fourteen --></label>
+        <name>maps__Tooltip14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Fifteen --></label>
+        <name>maps__Tooltip15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip One --></label>
+        <name>maps__Tooltip1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Two --></label>
+        <name>maps__Tooltip2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Three --></label>
+        <name>maps__Tooltip3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Four --></label>
+        <name>maps__Tooltip4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Five --></label>
+        <name>maps__Tooltip5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Six --></label>
+        <name>maps__Tooltip6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Seven --></label>
+        <name>maps__Tooltip7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Eight --></label>
+        <name>maps__Tooltip8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Nine --></label>
+        <name>maps__Tooltip9__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Geofence</masterLabel>
+            <translation>Geofence</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live</masterLabel>
+            <translation>Live</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marker</masterLabel>
+            <translation>Markierung</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Verified Latitude --></label>
+        <name>maps__VerifiedLatitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Verified Longitude --></label>
+        <name>maps__VerifiedLongitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- testLat --></label>
+        <name>maps__testLat__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Basisobjekt</nameFieldLabel>
+</CustomObjectTranslation>

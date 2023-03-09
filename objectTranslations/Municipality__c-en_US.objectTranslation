@@ -1,0 +1,644 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Municipality</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Municipalities</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel Location Revenue Avg (12 Weeks) --></label>
+        <name>Accel_Location_Revenue_Avg_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age Restriction --></label>
+        <name>Age_Restriction__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alcohol Pouring License Requirement --></label>
+        <name>Alcohol_Pouring_License_Requirement__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alert Account Owners of Change --></label>
+        <name>Alert_Account_Owners__c</name>
+    </fields>
+    <fields>
+        <help><!-- Will send an email to the relationship manager associated to the child account(s) of this record. --></help>
+        <label><!-- Alert Relationship Managers of Change --></label>
+        <name>Alert_Relationship_Managers_of_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert SalesOps of Change --></label>
+        <name>Alert_SalesOps_of_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allows 6th VGT --></label>
+        <name>Allows_6th_VGT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Allows Gaming --></label>
+        <name>Allows_Gaming__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allows Gaming in NonTraditional Est. --></label>
+        <name>Allows_Gaming_in_Non_Trad_Establishments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allows Same Owner Operator? --></label>
+        <name>Allows_Same_Owner_Operator__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amount Played --></label>
+        <name>Amount_Played__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Won --></label>
+        <name>Amount_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of games/location --></label>
+        <name>Amount_of_games_location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Annual Sticker Fee per Machine --></label>
+        <name>Annual_Sticker_Fee_per_Machine__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average HPD for Accel Locations --></label>
+        <name>Average_HDP_for_Accel_Locations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Pull from Hold Per Day Total Object. --></help>
+        <label><!-- Average HPD For Municipality --></label>
+        <name>Average_HPD_For_Municipality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background check on applicants? --></label>
+        <name>Background_check_on_applicants__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days), Looks for an Accel Establishment Type of &apos;Bar&apos; or &apos;Restaurant&apos; --></help>
+        <label><!-- Bar/Restaurant Count --></label>
+        <name>Bar_Restaurant_Count__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days), Looks for an Accel Establishment Type of &apos;C-Store&apos; --></help>
+        <label><!-- C-Store Count --></label>
+        <name>C_Store_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Casino Types --></label>
+        <name>Casino_Types__c</name>
+        <picklistValues>
+            <masterLabel>Commercial Land</masterLabel>
+            <translation><!-- Commercial Land --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Commercial River</masterLabel>
+            <translation><!-- Commercial River --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Track (Horse/Dog)</masterLabel>
+            <translation><!-- Track (Horse/Dog) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tribal/Native</masterLabel>
+            <translation><!-- Tribal/Native --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Confirmed With --></label>
+        <name>Confirmed_With__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact Number --></label>
+        <name>Contact_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days) on the account to ensure it&apos;s live. --></help>
+        <label><!-- Establishment Count --></label>
+        <name>Establishment_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Establishment Licensing Difficulty --></label>
+        <name>Establishment_Licensing_Difficulty__c</name>
+        <picklistValues>
+            <masterLabel>Difficult</masterLabel>
+            <translation><!-- Difficult --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Moderate</masterLabel>
+            <translation><!-- Moderate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simple</masterLabel>
+            <translation><!-- Simple --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Establishment Split --></label>
+        <name>Establishment_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds In (TTM) --></label>
+        <name>Funds_In_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds in --></label>
+        <name>Funds_in__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds out --></label>
+        <name>Funds_out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Centrally Linked --></label>
+        <name>Gaming_Centrally_Linked__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gaming Machines Certified --></label>
+        <name>Gaming_Machines_Certified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days), Looks for an Accel Establishment Type of &apos;Gaming Parlor&apos; --></help>
+        <label><!-- Gaming Parlor Count --></label>
+        <name>Gaming_Parlor_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds In (12 Weeks) --></label>
+        <name>HPD_Funds_In_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds In (4 Weeks) --></label>
+        <name>HPD_Funds_In_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds In (8 Weeks) --></label>
+        <name>HPD_Funds_In_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Out (TTM) --></label>
+        <name>HPD_Funds_Out_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Out (12 Weeks) --></label>
+        <name>HPD_Funds_out_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue (12 Weeks) --></label>
+        <name>HPD_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue (4 Weeks) --></label>
+        <name>HPD_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue (8 Weeks) --></label>
+        <name>HPD_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD --></label>
+        <name>HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hold Per Day Total (Daily) --></label>
+        <name>Hold_Per_Day_Total_Daily__c</name>
+        <relationshipLabel><!-- Municipalities (Hold Per Day Total (Daily)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hold Per Day Totals --></label>
+        <name>Hold_Per_Day_Total__c</name>
+        <relationshipLabel><!-- Municipalities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Home Town Rule --></label>
+        <name>Hometown_Role__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Law which legalizes Gaming Machines --></label>
+        <name>Law_which_legalizes_Gaming_Machines__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Available Types --></label>
+        <name>Liquor_License_Available_Types2__c</name>
+        <picklistValues>
+            <masterLabel>Consumption Combo</masterLabel>
+            <translation><!-- Consumption Combo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Premise</masterLabel>
+            <translation><!-- On Premise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordinance</masterLabel>
+            <translation><!-- Ordinance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Available --></label>
+        <name>Liquor_License_Available__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location License Required --></label>
+        <name>Location_License_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location State License Annual Fee --></label>
+        <name>Location_State_License_Annual_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Bet --></label>
+        <name>Max_Bet__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Jackpot per Spin --></label>
+        <name>Max_Jackpot_per_Spin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Share --></label>
+        <name>Muncipality_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipal Restrictions --></label>
+        <name>Municipal_Restrictions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Fee --></label>
+        <name>Municipality_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Population --></label>
+        <name>Municipality_Population__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Type --></label>
+        <name>Municipality_Type__c</name>
+        <picklistValues>
+            <masterLabel>Industrial</masterLabel>
+            <translation><!-- Industrial --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rural</masterLabel>
+            <translation><!-- Rural --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Suburban</masterLabel>
+            <translation><!-- Suburban --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Urban</masterLabel>
+            <translation><!-- Urban --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Municipality VGT Allowance Notes --></label>
+        <name>Municipality_VGT_Allowance_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- NTI Tax Rate 30% --></label>
+        <name>NTI_Tax_Rate_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- NTI --></label>
+        <name>NTI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of Accounts of type Accel Account. --></help>
+        <label><!-- # of Accel locations --></label>
+        <name>Nbr_of_Accel_locations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup of location accounts --></help>
+        <label><!-- # of gaming locations in town --></label>
+        <name>Nbr_of_gaming_locations_in_town__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Revenue --></label>
+        <name>Net_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Wagering Activity --></label>
+        <name>Net_Wagering_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Municipal Meeting --></label>
+        <name>Next_Municipal_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Municipality Meeting Info --></label>
+        <name>Next_Municipality_Meeting_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator License Required --></label>
+        <name>Operator_License_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Operator Split --></label>
+        <name>Operator_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator State License Annual Fee --></label>
+        <name>Operator_State_License_Annual_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operator State License Initial Fee --></label>
+        <name>Operator_State_License_Initial_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Org URL --></label>
+        <name>Org_URL__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts All Other Establishment Types --></help>
+        <label><!-- Other Count --></label>
+        <name>Other_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Other Gaming Rev Requirements --></label>
+        <name>Other_Gaming_Rev_Requirements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Municipality --></label>
+        <name>Parent_Municipality__c</name>
+        <relationshipLabel><!-- Related Municipalities --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Per Capita Income --></label>
+        <name>Per_Capita_Income__c</name>
+    </fields>
+    <fields>
+        <label><!-- Population --></label>
+        <name>Population__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pour License Availability Timeline(Days) --></label>
+        <name>Pour_License_Availability_Timeline_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preferred Method of Contact --></label>
+        <name>Preferred_Method_of_Contact__c</name>
+        <picklistValues>
+            <masterLabel>Email</masterLabel>
+            <translation><!-- Email --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone</masterLabel>
+            <translation><!-- Phone --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption Prizes of Gaming Machines --></label>
+        <name>Redemption_Prizes_of_Gaming_Machines__c</name>
+        <picklistValues>
+            <masterLabel>Cash</masterLabel>
+            <translation><!-- Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pre-Paid Gift Cards</masterLabel>
+            <translation><!-- Pre-Paid Gift Cards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Retail Merchandise In-Store Credit</masterLabel>
+            <translation><!-- Retail Merchandise In-Store Credit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regulator of Gaming Machines --></label>
+        <name>Regulator_of_Gaming_Machines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restriction on Prize --></label>
+        <name>Restriction_on_Prize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue (TTM) --></label>
+        <name>Revenue_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Specific Ordinance Restrictions/Reqrmnts --></label>
+        <name>Specific_Ordinance_Restrictions_Reqrmnts__c</name>
+    </fields>
+    <fields>
+        <help><!-- When checked, this indicates that this is a state level record and a parent record to municipalities. --></help>
+        <label><!-- State Record --></label>
+        <name>State_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Share --></label>
+        <name>State_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Split --></label>
+        <name>State_Split__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days),  Looks for an Accel Establishment Type of &apos;Truck Stop&apos; --></help>
+        <label><!-- Truck Stop Count --></label>
+        <name>Truck_Stop_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Electronic Gaming Machines --></label>
+        <name>Type_of_Electronic_Gaming_Machines__c</name>
+        <picklistValues>
+            <masterLabel>Chance</masterLabel>
+            <translation><!-- Chance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fishing</masterLabel>
+            <translation><!-- Fishing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pull-Tab</masterLabel>
+            <translation><!-- Pull-Tab --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skill</masterLabel>
+            <translation><!-- Skill --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Skill --></label>
+        <name>Type_of_Skill__c</name>
+        <picklistValues>
+            <masterLabel>Bump</masterLabel>
+            <translation><!-- Bump --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nudge</masterLabel>
+            <translation><!-- Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preview</masterLabel>
+            <translation><!-- Preview --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Simon Says</masterLabel>
+            <translation><!-- Simon Says --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speedometer</masterLabel>
+            <translation><!-- Speedometer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tic-Tac-Toe</masterLabel>
+            <translation><!-- Tic-Tac-Toe --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Additional Requirements --></label>
+        <name>VGT_Additional_Requirements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Counts all Live locations existing in Salesforce for accounts of type Accel Account or Competitor Account. Uses the existence of a most recent HPD Record (within 75 days) on the account to ensure it&apos;s live. Uses the VGT Count from the Most Recent HPD Rec. --></help>
+        <label><!-- VGT Count --></label>
+        <name>VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Expiration of Permit --></label>
+        <name>VGT_Expiration_of_Permit__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Licensing Requirement --></label>
+        <name>VGT_Licensing_Requirement__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Permit Fee Per Machine --></label>
+        <name>VGT_Permit_Fee_Per_Machine__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGTs Allowed - Licensed Establishments --></label>
+        <name>VGTs_Allowed_Licensed_Establishments__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGTs Allowed - Truck Stops --></label>
+        <name>VGTs_Allowed_Truck_Stops__c</name>
+    </fields>
+    <fields>
+        <help><!-- The year that the law for legalizing gaming passed. --></help>
+        <label><!-- Year Law Passed --></label>
+        <name>Year_Law_Passed__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Casinos in State --></label>
+        <name>of_Casinos_in_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Families --></label>
+        <name>of_Families__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please select a State for this municipality --></errorMessage>
+        <name>State_Field_Must_Be_Populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Year Law Passed must be a number. --></errorMessage>
+        <name>Year_Law_Passed_must_be_a_number</name>
+    </validationRules>
+</CustomObjectTranslation>

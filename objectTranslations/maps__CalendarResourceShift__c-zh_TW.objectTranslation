@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 行事曆資源排班</value>
+    </caseValues>
+    <fields>
+        <label><!-- Break Duration (Minutes) --></label>
+        <name>maps__BreakDuration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Break End Hour --></label>
+        <name>maps__BreakEndHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Break End Minute --></label>
+        <name>maps__BreakEndMinute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Break Start Hour --></label>
+        <name>maps__BreakStartHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Break Start Minute --></label>
+        <name>maps__BreakStartMinute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Address --></label>
+        <name>maps__EndAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Hour --></label>
+        <name>maps__EndHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Location --></label>
+        <name>maps__EndLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Minute --></label>
+        <name>maps__EndMinute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Id --></label>
+        <name>maps__ResourceId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Address --></label>
+        <name>maps__StartAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Hour --></label>
+        <name>maps__StartHour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Location --></label>
+        <name>maps__StartLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Minute --></label>
+        <name>maps__StartMinute__c</name>
+    </fields>
+    <nameFieldLabel>排班名稱</nameFieldLabel>
+</CustomObjectTranslation>

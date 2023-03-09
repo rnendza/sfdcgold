@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Logistics Automation Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Logistics Automation Setting</value>
+    </caseValues>
+    <fields>
+        <help><!-- If unchecked, the automation will be bypassed. --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on. --></help>
+        <label><!-- Email Template Dev Name --></label>
+        <name>Email_Template_Dev_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Email Addresses --></label>
+        <name>External_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fire any and all platform events that are published from the automation. --></help>
+        <label><!-- Fire Platform Event --></label>
+        <name>Fire_Platform_Event__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, this will prevent delete of a record regardless of profile / security. --></help>
+        <label><!-- Prevent Record Delete --></label>
+        <name>Prevent_Record_Delete__c</name>
+    </fields>
+    <fields>
+        <help><!-- A Comma Delimited List of Public Group Developer Names to send the email to (used for whoIds) --></help>
+        <label><!-- Public Group Dev Names --></label>
+        <name>Public_Group_Dev_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked will save the email as an activity as well. @see https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_email_outbound_base.htm .Note this must be false if the email is being sent to users! --></help>
+        <label><!-- Save As Activity --></label>
+        <name>Save_As_Activity__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked and the applicable automation process sends email, emails will be sent. If not, emails will not be sent. ie the automation still runs but no emails are sent. --></help>
+        <label><!-- Send Email --></label>
+        <name>Send_Email__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

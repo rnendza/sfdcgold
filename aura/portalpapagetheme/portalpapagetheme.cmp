@@ -1,0 +1,65 @@
+<aura:component implements="forceCommunity:themeLayout" access="global"
+                description="PA Portal Page Theme Layout">
+
+
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+
+    <!--component div wrapper start -->
+    <div>
+
+        <!--header -->
+            <div class="slds-grid   slds-grid_align-spread accel-community-header">
+                <div class="slds-col slds-size_2-of-6">
+                    <div class="accel-logo-container">
+                        <!-- injected via design tokens ie.. in builder.. theme / images / company logo -->
+                         <img class="accel-logo-img" src="{!$Resource.Accel_Community_Logo}"/>
+                    </div>
+                </div>
+
+                <div class="slds-col slds-size_2-of-6 accel-desktop-profile" >
+                    <div class="profileMenuRegion slds-float_right  accel-profile-menu-region">
+                        {!v.profileMenu}
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-6 accel-mobile-profile">
+                    <input class="menu-btn" type="checkbox" id="menu-btn" onclick="{!c.mobileMenuToggle}"/>
+                    <label class="menu-icon" for="menu-btn"><span class="navicon"></span></label>
+                </div>
+            </div>
+
+            <div class="accel-theme-mobile-menu">
+                <div>
+                <c:Accel_CommunityVerticalNav />
+                </div>
+            </div>
+        <!-- end header -->
+
+        <!-- begin content wrapper  -->
+        <!-- <div class="accel-body-wrapper"> -->
+
+            <!--vertical nav pane on the left -->
+            <div class="accel-nav">
+                <div>
+                    <c:Accel_CommunityVerticalNav/>
+                </div>
+            </div>
+
+            <!--end vertical nav pane -->
+
+            <!--main content pane adjacent to nav filling entire width -->
+        <div class="accel-content-wrapper">
+                <div class="accel-content">
+                    <div>
+                    {!v.body}
+                    </div>
+                </div>
+        </div>
+            <!--end main content pane -->
+
+       <!-- </div> -->
+        <!-- end content section -->
+
+    </div>
+    <!--end of component div wrapper -->
+
+</aura:component>

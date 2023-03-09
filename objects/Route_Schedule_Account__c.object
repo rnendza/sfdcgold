@@ -1,0 +1,520 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Schedule_Account_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Schedule_Account_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>Route_Schedule_Account_Advanced_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Route_Schedule_Account_Advanced_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Route_Schedule__c</fields>
+        <fields>Account__c</fields>
+        <fields>Stop_Number__c</fields>
+        <fields>Collection_Type__c</fields>
+        <label>Route_Schedule_Account_Advanced_Compact_Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>POC Junction Route_Schedule__c &lt;----&gt; Account</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <lookupFilter>
+            <active>false</active>
+            <filterItems>
+                <field>Account.Accel_VGT_Live_Date__c</field>
+                <operation>notEqual</operation>
+                <value></value>
+            </filterItems>
+            <infoMessage>Account Must Have A VGT Live Date</infoMessage>
+            <isOptional>true</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Route Schedule Accounts</relationshipLabel>
+        <relationshipName>Route_Schedule_Accounts</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Cassette_100_Fill_Level__c</fullName>
+        <description>Number of $100 notes to fill at this location with for this specific collection.</description>
+        <externalId>false</externalId>
+        <label>$100 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_1_Fill_Level__c</fullName>
+        <description>Number of $1 notes to fill at this location with for this specific collection.</description>
+        <externalId>false</externalId>
+        <label>$1 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_20_Fill_level__c</fullName>
+        <description>Number of $20 notes to fill at this location with for this specific collection.</description>
+        <externalId>false</externalId>
+        <label>$20 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_50_Fill_Level__c</fullName>
+        <description>Number of $50 notes to fill at this location with for this specific collection.</description>
+        <externalId>false</externalId>
+        <label>$50 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cassette_5_Fill_Level__c</fullName>
+        <description>Number of $5 notes to fill at this location with for this specific collection.</description>
+        <externalId>false</externalId>
+        <label>$5 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collection_Type__c</fullName>
+        <description>Used for additional fills.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Used for additional fills.</inlineHelpText>
+        <label>Collection Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Collection_Type</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Fill_Levels_Completed__c</fullName>
+        <description>Signifies that all the fill levels have a value.</description>
+        <externalId>false</externalId>
+        <formula>FALSE
+/*
+AND( X1_Fill_Level__c != 0,
+     X5_Fill_Level__c != 0,
+     X20_Fill_Level__c != 0,
+     X100_Fill_Level__c != 0 )
+*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Signifies that all the fill levels have a value.</inlineHelpText>
+        <label>Fill Levels Completed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Asset_Manual_Override__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Bypasses any update logic of attempted automatic set of Redemption_Type_From_Asset__c and Redemption_Asset__c in preference of allow an admin to manually set it. (BEFORE UPDATE EVENT ONLY)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Bypasses any update logic of attempted automatic set of Redemption_Type_From_Asset__c and Redemption_Asset__c in preference of allow an admin to manually set it. (BEFORE UPDATE EVENT ONLY)</inlineHelpText>
+        <label>Redemption Asset Manual Override</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Flows to Rps.Redemption_Asset__c. Needed to see which redemption terminal we are using for the unified display. @see clRouteSvc.tagRedemptionTypes(List&lt;Route_Schedule_Account__c&gt; rsas)  (called from RSA Trigger)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The application redemption terminal.</inlineHelpText>
+        <label>Redemption Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Route Schedule Accounts</relationshipLabel>
+        <relationshipName>Route_Schedule_Accounts</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Terminal__c</fullName>
+        <description>Use this to select which Redemption Terminal is desired.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Use this to select which Redemption Terminal is desired. Defaults to RT1</inlineHelpText>
+        <label>Redemption Terminal</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>RT1</fullName>
+                    <default>true</default>
+                    <label>RT1</label>
+                </value>
+                <value>
+                    <fullName>RT2</fullName>
+                    <default>false</default>
+                    <label>RT2</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Redemption_Type_From_Asset__c</fullName>
+        <description>The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr )</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr )</inlineHelpText>
+        <label>Redemption Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Redemption_Type__c</fullName>
+        <description>FF to account - redemption - gp manufacturer</description>
+        <externalId>false</externalId>
+        <formula>Account__r.Redemption__r.GP_Manufacturer__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Redemption Type (Obsolete)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Replenishment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Replenishment Type</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Full Audit</fullName>
+                    <default>true</default>
+                    <label>Full Audit</label>
+                </value>
+                <value>
+                    <fullName>Cash Fill</fullName>
+                    <default>false</default>
+                    <label>Cash Fill</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Route_Schedule__c</fullName>
+        <externalId>false</externalId>
+        <label>Route Schedule</label>
+        <referenceTo>Route_Schedule__c</referenceTo>
+        <relationshipLabel>Route Schedule Accounts</relationshipLabel>
+        <relationshipName>Route_Schedule_Accounts</relationshipName>
+        <relationshipOrder>1</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Stop_Number__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Stop Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_RTs__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Total # of Redemption Terminals. (Set on Creation of RSA)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total # of Redemption Terminals. (Set on Creation of RSA)</inlineHelpText>
+        <label>Total # of RTs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X100_Fill_Level__c</fullName>
+        <description>Number of $100 notes to fill a redemption at this location with. Used for Cash Logistics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of $100 notes to fill a redemption at this location with. Used for Cash Logistics.</inlineHelpText>
+        <label>$100 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X1_Fill_Level__c</fullName>
+        <description>Number of $1 notes to fill a redemption at this location with. Used for Cash Logistics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of $1 notes to fill a redemption at this location with. Used for Cash Logistics.</inlineHelpText>
+        <label>$1 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X20_Fill_Level__c</fullName>
+        <description>Number of $20 notes to fill a redemption at this location with. Used for Cash Logistics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of $20 notes to fill a redemption at this location with. Used for Cash Logistics.</inlineHelpText>
+        <label>$20 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>X5_Fill_Level__c</fullName>
+        <description>Number of $5 notes to fill a redemption at this location with. Used for Cash Logistics.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Number of $5 notes to fill a redemption at this location with. Used for Cash Logistics.</inlineHelpText>
+        <label>$5 Fill Level</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <label>Route Schedule Account</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Route_Schedule__c</columns>
+        <columns>Stop_Number__c</columns>
+        <columns>Collection_Type__c</columns>
+        <columns>Account__c</columns>
+        <columns>Fill_Levels_Completed__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>RSA-{00000000}</displayFormat>
+        <label>RSA #</label>
+        <trackHistory>true</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Route Schedule Accounts</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

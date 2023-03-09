@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>47.0</apiVersion>
+    <description>Accel Ware House Parts Request</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Accel Ware House Parts Request</masterLabel>
+    <targets>
+        <target>lightning__RecordAction</target>
+        <target>lightning__AppPage</target>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__AppPage,lightning__RecordPage">
+            <property name="afterSaveListViewApiName"
+                      label="ListView To RedirectTo"
+                      description="After a succesful save, redirect to this listview"
+                      default="My_WH_Parts_Requests"
+                      required="true"
+                      type="String" />
+            <property name="maxQtyRequestedAllowed"
+                      label="Max Allowed Qty Requested"
+                      description="The maximum # for ProductRequest.Quantity_Requested__c"
+                      default="20"
+                      type="Integer" />
+            <property name="formRecordTypeName"
+                      label="Form record type name"
+                      description="Record Type name of record being created"
+                      default="Warehouse Request"
+                      required="true"
+                      type="String" />
+            <property name="cardTitle"
+                      label="Card Title"
+                      description="The Title of the card (If the header is displayed)."
+                      default="Request Part"
+                      type="String"/>
+            <property name="cardIconName"
+                      label="Card Icon name"
+                      description="The Name of the icon used next to the card title (see the SLDS)"
+                      default="standard:product_request"
+                      type="String"/>
+            <property name="submitButtonLabel"
+                      label="Form Submit Button Label"
+                      description="The label of the primary Submit Button"
+                      default="Create Product Request"
+                      type="String"/>
+            <property name="searchObjectApiName"
+                      label="Search ObjectApiName"
+                      description="Api Name of the object reusableLookup cmp will be querying"
+                      default="Asset"
+                      type="String"/>
+            <property name="searchObjectLabel"
+                      label="Search Object Label"
+                      description="Label of the object reusableLookup cmp will be querying"
+                      default="Asset"
+                      type="String"/>
+            <property name="searchLabel"
+                      label="Search Label"
+                      description="Label displayed on the search cmp"
+                      default="Asset #"
+                      type="String"/>
+            <property name="searchIconName"
+                      label="Search Icon Name"
+                      description="Name of the object icon for the records it is looking up"
+                      default="standard:asset_object"
+                      type="String"/>
+            <property name="searchFieldApiName"
+                      label="Field Api Name"
+                      description="First field displayed for returned records"
+                      default="Name"
+                      type="String"/>
+            <property name="searchOtherFieldApiName"
+                      label="Other Field Api Name"
+                      description="Second field displayed for returned records"
+                      default="Model__c"
+                      type="String"/>
+            <property name="searchHelpText"
+                      label="Search Help Text"
+                      description="Help text displayed next to the search label"
+                      default="Search for VGT or RT Asset by Asset #"
+                      type="String"/>
+            <property name="searchParentFieldApiName"
+                      label="Search Parent Field Api Name"
+                      description="Parent field of records you are searching"
+                      default="AccountId"
+                      type="String"/>
+            <property name="searchRecordTypeFilter"
+                      label="Search Record Type Filter"
+                      description="Used to filter for certain record types when using reusableLookup cmp"
+                      default="(\'VGT\', \'Redemption\')"
+                      type="String"/>
+            <supportedFormFactors>
+                <supportedFormFactor type="Large" />
+                <supportedFormFactor type="Small" />
+            </supportedFormFactors>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

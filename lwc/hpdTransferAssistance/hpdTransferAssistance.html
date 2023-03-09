@@ -1,0 +1,101 @@
+<template>
+    <div class="slds-theme--shade accel-square-box__info">
+        <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+            <div class="slds-media__figure">
+                <lightning-icon icon-name="utility:info"
+                                size="small"
+                                alternative-text="HPD Transfer Assistance">
+                </lightning-icon>
+            </div>
+            <div class="slds-media__body">
+                <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                    <b>HPD Transfer Assistance</b>
+                </div>
+                <div class="accel-detailed-body-text">
+                    <div class="accel-hard-wrap-text">
+                        <ul class="slds-list_dotted">
+                            <li class="c3llc-li-container">
+                                <a href="javascript:void(0);"
+                                   onclick={handlePreviewHelpFile}
+                                   title="Click here to download a help video">
+                                    <i class="fa fa-download slds-p-right--x-small" aria-hidden="true"></i>
+                                    Download help video.
+                                </a>
+                            </li>
+                            <li if:true={showAdvancedOptions} class="c3llc-li-container">
+                                <a href="javascript:void(0);"
+                                   onclick={handleHideAdvancedOptions}
+                                   title="Hide Advanced Options">
+                                    <i class="fa fa-eye-slash slds-p-right--x-small" aria-hidden="true"></i>&nbsp;
+                                    Hide advanced form options.
+                                </a>
+                            </li>
+                            <li if:false={showAdvancedOptions} class="c3llc-li-container">
+                                <a href="javascript:void(0);"
+                                   onclick={handleShowAdvancedOptions}
+                                   title="Show Advanced Options">
+                                    <i class="fa fa-eye slds-p-right--x-small"
+                                       aria-hidden="true"></i>
+                                   Show advanced form options.
+                                </a>
+                            </li>
+                            <li if:true={allFormFieldsValid} class="c3llc-li-container">
+                                Discontinued Account Selected:<br/>
+                                <c-accel-navigation-link label={sourceAccountSelected.primaryDisplayValue}
+                                                         title="Navigate to the account record page."
+                                                         target="_blank"
+                                                         type="standard__recordPage"
+                                                         record-id={sourceAccountSelected.id}>
+                                </c-accel-navigation-link>
+                            </li>
+                            <li if:true={allFormFieldsValid} class="c3llc-li-container">
+                                Competitor Account Selected:<br/>
+                                <c-accel-navigation-link label={targetAccountSelected.primaryDisplayValue}
+                                                         title="Navigate to the account record page."
+                                                         type="standard__recordPage"
+                                                         record-id={targetAccountSelected.id}>
+                                </c-accel-navigation-link>
+                            </li>
+                            <li if:false={showAdvancedOptions} class="c3llc-li-container">
+                                                        <span if:true={allFormFieldsValid}>
+                                                            <b>Click Transfer HPD to Start your job.</b>
+                                                        </span>
+                                <span if:false={allFormFieldsValid}>
+                                                            Enter your account information and the user you wish to send a results email and click Transfer HPD.
+                                                        </span>
+                            </li>
+                            <li if:true={showAdvancedOptions} class="c3llc-li-container">
+                                                          <span if:false={allFormFieldsValid}>
+                                                            Enter your account information and the user you wish to send a results email
+                                                              &nbsp;and click Tranfer HPD. Advanced fields are optional.
+                                                          </span>
+                                <span if:true={allFormFieldsValid}>
+                                                            <b>Click Transfer HPD to start your job.</b>
+                                                        </span>
+                            </li>
+                            <li if:true={commitTrans} class="c3llc-li-container">
+                                These changes <span class="slds-text-color_success">will be committed.</span>
+                            </li>
+                            <li if:false={commitTrans} class="c3llc-li-container">
+                                <span class="slds-text-color_destructive">
+                                These changes will be rolled back.
+                                </span>
+                            </li>
+                            <li class="c3llc-li-container">
+                                Results will be displayed in the check status tab.
+                                <span if:true={userWasSelected}>
+                                                            &nbsp;Detailed results will be sent to&nbsp;
+                                     <c-accel-navigation-link label={userSelected.primaryDisplayValue}
+                                                              title="Navigate to the user record page."
+                                                              type="standard__recordPage"
+                                                              record-id={userSelected.id}>
+                                </c-accel-navigation-link>
+                                                        </span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

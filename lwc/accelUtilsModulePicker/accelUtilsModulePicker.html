@@ -1,0 +1,55 @@
+<!-- Accel Utils Module Picker -->
+<template>
+    <lightning-card>
+
+        <h3 slot="title">
+<!--            <lightning-icon icon-name="standard:apps" size="small"></lightning-icon>-->
+<!--            <span class="slds-p-left_x-small">-->
+<!--                Choose module-->
+<!--            </span>-->
+        </h3>
+        <div class="slds-p-around_none slds-m-top_x-small slds-m-bottom_medium slds-m-horizontal_none">
+            <lightning-layout multiple-rows>
+                <lightning-layout-item size="12" padding="around-small">
+                    <div class="slds-p-around_medium slds-text-align_center">
+                        <div>
+                            <template for:each={utilsModules} for:item="item" for:index="idx">
+                                <div class={item.pickerSize} key={item.idx}>
+
+                                    <input type="radio"
+                                           id={item.id}
+                                           data-id={item.id}
+                                           value={item.label}
+                                           name="set1"
+                                           onclick={handleModuleClick}
+                                           onchange={handleModuleChange}
+                                           disabled={item.disabled}/>
+                                    <label for={item.id}>
+                                            <span class="slds-visual-picker__figure slds-visual-picker__text slds-align_absolute-center">
+                                                <span>
+                                                    <lightning-icon
+                                                            icon-name={item.icon}
+                                                            size="large"
+                                                            alternative-text="Event" >
+                                                    </lightning-icon>
+                                                </span>
+                                            </span>
+                                        <lightning-icon variant="inverse"
+                                                        class="slds-icon_container slds-visual-picker__text-check"
+                                                        icon-name="utility:check" alternative-text="check"
+                                                        size="x-small"
+                                                        title="small size">
+                                        </lightning-icon>
+                                        <span class="slds-visual-picker__body" >
+                                                    <span class="slds-text-title">{item.label}</span>
+                                                </span>
+                                    </label>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </lightning-layout-item>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+</template>

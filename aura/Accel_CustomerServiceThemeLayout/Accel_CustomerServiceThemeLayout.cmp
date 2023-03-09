@@ -1,0 +1,41 @@
+<aura:component implements="forceCommunity:themeLayout" access="global"
+                description="Accel Community Customer Service Theme Layout">
+
+    <aura:attribute name="search" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="profileMenu" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="navBar" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="newHeader" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="footer" type="Aura.Component[]" />
+
+    <div>
+        <!-- ================= Begin Accel Custom ==================== -->
+        <div class="slds-grid   slds-grid_align-spread accel-community-header">
+            <div class="slds-col slds-size_2-of-6">
+                <div class="accel-logo-container">
+                    <!-- injected via design tokens ie.. in builder.. theme / images / company logo -->
+                </div>
+            </div>
+            <div class="slds-col slds-grow-none">
+                <div class="searchRegion  accel-search-region">
+                    {!v.search}
+                </div>
+            </div>
+            <div class="slds-col slds-size_2-of-6"  >
+                <div class="profileMenuRegion slds-float_right  accel-profile-menu-region">
+                    {!v.profileMenu}
+                </div>
+            </div>
+        </div>
+        <!-- =============== End Accel Custom ========================= -->
+        <div class="navigation  accel-navigation">
+            {!v.navBar}
+        </div>
+        <div class="mainContentArea  accel-main-content-area">
+            {!v.body}
+        </div>
+        <div id="footer"  class="footer accel-footer">
+            {!v.footer}
+        </div>
+    </div>
+
+</aura:component>

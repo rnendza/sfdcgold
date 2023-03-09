@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>X30_Day_Notification</name>
+        <label>30 Day Notification</label>
+        <locationX>314</locationX>
+        <locationY>396</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Create_30_days_Custom_Notifications_Sent_Record</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Notificationfor30Days</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Relationship_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>X45_Day_Notification</name>
+        <label>45 Day Notification</label>
+        <locationX>50</locationX>
+        <locationY>396</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Create_45_day_Custom_Notifications_Sent_Record</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Notificationfor45Days</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Relationship_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Evaluate_Days_Since_Last_Visit</name>
+        <label>Evaluate Days Since Last Visit</label>
+        <locationX>314</locationX>
+        <locationY>276</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>X45_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_Since_Last_Visit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>45.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>X45_Day_Notification</targetReference>
+            </connector>
+            <label>=45 Days</label>
+        </rules>
+        <rules>
+            <name>X30_Days</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Days_Since_Last_Visit__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <numberValue>30.0</numberValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>X30_Day_Notification</targetReference>
+            </connector>
+            <label>=30 Days</label>
+        </rules>
+    </decisions>
+    <description>For IL accounts, when the last visit done on the account is 30 or 45 days prior, a chatter notification is sent to the RM on the account.</description>
+    <environments>Default</environments>
+    <interviewLabel>Account: Notify RM of Visits {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Notify RM of NO Visits</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>When the notification is sent, create a record for it in the &quot;Custom Notifications Sent&quot; object, with Alert Type &quot;No Visit in 30 Days&quot;</description>
+        <name>Create_30_days_Custom_Notifications_Sent_Record</name>
+        <label>Create  30-days &quot;Custom Notifications Sent&quot; Record</label>
+        <locationX>314</locationX>
+        <locationY>516</locationY>
+        <inputAssignments>
+            <field>Alert_Type__c</field>
+            <value>
+                <stringValue>No Visit in 30 Days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Custom_Notification_Api_Name__c</field>
+            <value>
+                <stringValue>None</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DBA_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Msg_Body__c</field>
+            <value>
+                <elementReference>Notificationfor30Days</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>$Record.Relationship_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Custom_Notifications_Sent__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordCreates>
+        <description>When the notification is sent, create a record for it in the &quot;Custom Notifications Sent&quot; object, with Alert Type &quot;No Visit in 45 Days&quot;</description>
+        <name>Create_45_day_Custom_Notifications_Sent_Record</name>
+        <label>Create 45-day &quot;Custom Notifications Sent&quot; Record</label>
+        <locationX>50</locationX>
+        <locationY>516</locationY>
+        <inputAssignments>
+            <field>Alert_Type__c</field>
+            <value>
+                <stringValue>No Visit in 45 Days</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Custom_Notification_Api_Name__c</field>
+            <value>
+                <stringValue>None</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>DBA_Name__c</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Msg_Body__c</field>
+            <value>
+                <elementReference>Notificationfor45Days</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>User__c</field>
+            <value>
+                <elementReference>$Record.Relationship_Manager__c</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Custom_Notifications_Sent__c</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Evaluate_Days_Since_Last_Visit</targetReference>
+        </connector>
+        <filterLogic>(1 or 2) AND (3 or 4) and 5</filterLogic>
+        <filters>
+            <field>Days_Since_Last_Visit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <numberValue>30.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Days_Since_Last_Visit__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <numberValue>45.0</numberValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Accel Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Type</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Temp Closure</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>ShippingState</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>IL</stringValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <schedule>
+            <frequency>Daily</frequency>
+            <startDate>2022-08-03</startDate>
+            <startTime>05:00:00.000Z</startTime>
+        </schedule>
+        <triggerType>Scheduled</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Notificationfor30Days</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is automated message to inform you that you have not visited {!$Record.Name} in the past 30 days. 
+Please, make it a priority to visit ASAP!
+
+Account DBA Name: {!$Record.Name}
+Legal Name: {!$Record.Legal_Name__c}
+Accel VGT Live Date: {!$Record.Accel_VGT_Live_Date__c}
+IGB License Number: {!$Record.IGB_License__c}
+Physical Address:  
+{!$Record.ShippingStreet}
+{!$Record.ShippingCity}, {!$Record.ShippingState}, {!$Record.ShippingPostalCode}
+Link to account:  
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Notificationfor45Days</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is automated message to inform you that you have not visited {!$Record.Name} in the past 45 days.  
+Please, make it a priority to visit ASAP!
+
+Account DBA Name: {!$Record.Name}
+Legal Name: {!$Record.Legal_Name__c}
+Accel VGT Live Date: {!$Record.Accel_VGT_Live_Date__c}
+IGB License Number: {!$Record.IGB_License__c}
+Physical Address:  
+{!$Record.ShippingStreet}
+{!$Record.ShippingCity}, {!$Record.ShippingState}, {!$Record.ShippingPostalCode}
+Link to account:  
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>varMessageBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>DBA Name:  {!$Record.Name}
+IGB #:  {!$Record.IGB_License__c}
+Accel VGT Live Date:  {!$Record.Accel_VGT_Live_Date__c}
+HPD:  {!$Record.Account_HPD__c}</text>
+    </textTemplates>
+</Flow>

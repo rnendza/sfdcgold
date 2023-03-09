@@ -1,0 +1,137 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+                access="global"
+                controller="CaseController">
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="rawData" type="Object" access="PRIVATE"/>
+
+    <aura:attribute name="searchMdt" type="Custom_Search__mdt"/>
+    <aura:attribute name="searchExecuted" type="Boolean" default="false"/>
+    <aura:attribute name="searchInputValRefresher" type="Boolean" default="true"/>
+
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="sortedBy" type="String"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <aura:attribute name="searchResult" type="List"
+                    description="use for store and display case list return from server"/>
+    <aura:attribute name="searchKeyword" type="String" description="use for store user search input"/>
+    <aura:attribute name="filterKeyword" type="String" description="use for store user search input"/>
+
+    <aura:attribute name="currentPageNumber" type="Integer" default="1"/>
+    <aura:attribute name="pageSize" type="Integer" default="{!v.searchMdt.Number_of_Results_per_Page__c}"/>
+    <aura:attribute name="totalPages" type="Integer" default="false"/>
+    <aura:attribute name="pageList" type="List" default="false"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <div class="bg">
+        <lightning:card title="{!v.searchMdt.Search_Title__c}"
+                        iconName="standard:case" class="bg">
+
+            <div class="slds-xxxxm-around_medium">
+                <lightning:layout verticalAlign="end">
+
+                    <lightning:layoutItem size="4" padding="around-small">
+                        <aura:if isTrue="{!v.searchInputValRefresher}">
+                            <span onkeypress="{!c.checkEnterKey}">
+                            <lightning:input value="{!v.searchKeyword}"
+                                             type="search"
+                                             required="true"
+                                             variant="label-hidden"
+                                             messageWhenValueMissing="{!v.searchMdt.Message_When_Value_Missing__c}"
+                                             placeholder="{!v.searchMdt.Search_Input_Placeholder__c}"
+                                             aura:id="searchField"/>
+                            </span>
+                        </aura:if>
+                    </lightning:layoutItem>
+                    <lightning:layoutItem size="3" padding="around-small" class="slds-align-top">
+                        <lightning:button onclick="{!c.doSearch}"
+                                          variant="neutral"
+                                          label="Search"
+                                          iconName="utility:search"/>
+                    </lightning:layoutItem>
+                </lightning:layout>
+                <aura:if isTrue="{!v.showSpinner}">
+                    <lightning:spinner variant="brand" size="large" aura:id="assetSearchSpinner"
+                                       alternativeText="{!v.spinnerAltText}"/>
+                </aura:if>
+            </div>
+            <aura:if isTrue="{!and(empty(v.data),v.searchExecuted,v.searchKeyword != null, v.searchKeyword != '') }">
+                <div class="slds-m-around_medium">
+                    {!format(v.searchMdt.Results_Not_Found_Message__c,v.searchKeyword)}
+                </div>
+            </aura:if>
+            <aura:if isTrue="{!not(empty(v.data))}">
+                <div class="slds-m-around_medium" style="margin-top:0rem">
+                    <div class="slds-grid slds-m-around_small" style="margin-top:0rem">
+                        <div class="slds-col slds-align-bottom slds-size_9-of-12">
+                            <div class="slds-text-body--small">
+                                {!format(v.searchMdt.Results_Found_Message__c,v.rawData.length)}
+                            </div>
+                        </div>
+                        <div class="slds-col slds-align-bottom slds-size_3-of-12 slds-hide">
+                            <!--- for future use notice slds-hide class above -->
+                            <lightning:input value="{!v.filterKeyword}"
+                                             type="search"
+                                             class="slds-input-small"
+                                             placeholder="Filter results..."
+                                             aura:id="filterField"/>
+                        </div>
+                    </div>
+                    <lightning:datatable data="{! v.data }"
+                                         columns="{! v.columns }"
+                                         class="slds-max-medium-table_stacked"
+                                         sortedBy="{!v.sortedBy}"
+                                         sortedDirection="{!v.sortedDirection}"
+                                         onsort="{!c.updateColumnSorting}"
+                                         keyField="Id"
+                                         showRowNumberColumn="false"
+                                         hideCheckboxColumn="true"/>
+                </div>
+                <aura:if isTrue="{!v.totalPages > 1}">
+                    <lightning:layout horizontalAlign="center">
+                        <lightning:layoutItem padding="around-small" flexibility="auto">
+                            <lightning:button label="First" iconName="utility:left" iconPosition="left"
+                                              onclick="{!c.onFirst}" disabled="{! v.currentPageNumber == 1}"/>
+                            <lightning:button iconName="utility:chevronleft" iconPosition="left"
+                                              onclick="{!c.onPrev}" disabled="{! v.currentPageNumber == 1}"/>
+                            <span class="slds-p-horizontal_x-small">
+                                <a onclick="{!c.processMe}" name="1"
+                                   class="{! (v.currentPageNumber == 1) ? 'selected' : ''}">1</a>
+                            </span>
+                            <span class="slds-p-horizontal_xxx-small">
+                                <a>...</a>
+                            </span>
+
+                            <aura:iteration items="{!v.pageList}" var="item">
+                                <span class="slds-p-horizontal_x-small">
+                                    <a onclick="{!c.processMe}" name="{!item}"
+                                       class="{! (v.currentPageNumber == item) ? 'selected' : ''}">{!item}</a>
+                                </span>
+                            </aura:iteration>
+
+                            <span class="slds-p-horizontal_xxx-small">
+                                <a>...</a>
+                            </span>
+                            <span class="slds-p-horizontal_x-small">
+                                <a onclick="{!c.processMe}" name="{!v.totalPages}"
+                                   class="{! (v.currentPageNumber == v.totalPages) ? 'selected' : ''}">{!v.totalPages}</a>
+                            </span>
+                            <lightning:button iconName="utility:chevronright" iconPosition="right"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onNext}"/>
+                            <lightning:button label="Last" iconName="utility:right" iconPosition="right"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onLast}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:if>
+            </aura:if>
+        </lightning:card>
+    </div>
+
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+</aura:component>

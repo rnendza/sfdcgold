@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Evaluate_Agreement_Based_On_field</name>
+        <label>Evaluate Agreement Based On field</label>
+        <locationX>226</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Update_Expiration_Date_0_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Location_Live_Date</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Agreement_Based_On__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Location Live Date</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>fx_check_expiration_date</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Is_there_a_Start_Date</targetReference>
+            </connector>
+            <label>Location Live Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <description>Check to see if Agreement Start Date has been previously populated.</description>
+        <name>Is_there_a_Start_Date</name>
+        <label>Is there a Start Date?</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Update_Start_Date</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Agreement Start Date is Nul</defaultConnectorLabel>
+        <rules>
+            <name>Start_Date_is_Prepopulated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.StartDate</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Agreement_Expiration_Date_0_0_0</targetReference>
+            </connector>
+            <label>Start Date is Prepopulated</label>
+        </rules>
+    </decisions>
+    <description>This flow updates start and renewal dates on agreements of various record types.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Agreement Auto Renew Date = Agreement Expiration Date - Agreement Auto Review Window</description>
+        <name>fx_Auto_Renew_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.Agreement_End_Date__c} - {!fx_Auto_Renew_Window_Number}</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Auto_Renew_Window_Number</name>
+        <dataType>Number</dataType>
+        <expression>VALUE(TEXT({!$Record.Agreement_Auto_Renew_Window__c}))</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <description>if formula evaluates to true, then the agreement was renewed</description>
+        <name>fx_check_expiration_date</name>
+        <dataType>Boolean</dataType>
+        <expression>IF({!$Record.Agreement_End_Date__c}&gt;{!fx_Original_Expiration_Date},true,false)</expression>
+    </formulas>
+    <formulas>
+        <name>fx_Length_Of_Agreement</name>
+        <dataType>Number</dataType>
+        <expression>VALUE({!$Record.Length_of_Agreement__c})</expression>
+        <scale>2</scale>
+    </formulas>
+    <formulas>
+        <name>fx_Original_Expiration_Date</name>
+        <dataType>Date</dataType>
+        <expression>addmonths({!$Record.StartDate}, ({!fx_Length_Of_Agreement}*12))</expression>
+    </formulas>
+    <formulas>
+        <description>Enter Agreement Start Date based on Account: ____________ Live Date with respect to the record type.</description>
+        <name>StartDate_Formula</name>
+        <dataType>Date</dataType>
+        <expression>Case({!$Record.RecordType.DeveloperName},
+&quot;Kiosk_Agreement&quot;,{!$Record.Account.Kiosk_Live_Date__c},
+&quot;Amusement_Agreement&quot;,{!$Record.Account.Amusements_Live_Date__c},
+&quot;Standalone_ATM_Agreement&quot;,{!$Record.Account.Standalone_ATM_Live_Date__c},
+&quot;GA_COAM_Class_B&quot;,{!$Record.Account.Accel_VGT_Live_Date__c},
+&quot;Gaming_Agreement&quot;,{!$Record.Account.Accel_VGT_Live_Date__c},
+{!$Record.StartDate})</expression>
+    </formulas>
+    <interviewLabel>Agreements Date {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Agreements Date</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_State_field</name>
+        <label>Update &quot;Account State&quot; field</label>
+        <locationX>226</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Evaluate_Agreement_Based_On_field</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Account_State__c</field>
+            <value>
+                <elementReference>$Record.Account.ShippingState</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Agreement_Auto_Renew_Date</name>
+        <label>Update Agreement Auto-Renew Date</label>
+        <locationX>226</locationX>
+        <locationY>1247</locationY>
+        <inputAssignments>
+            <field>Agreement_Auto_Renew_Date__c</field>
+            <value>
+                <elementReference>fx_Auto_Renew_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Agreement_Expiration_Date_0_0_0</name>
+        <label>Update Agreement Expiration Date</label>
+        <locationX>50</locationX>
+        <locationY>911</locationY>
+        <connector>
+            <targetReference>Update_Expiration_Date_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Agreement_End_Date__c</field>
+            <value>
+                <elementReference>fx_Original_Expiration_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Overwrite Agreement Expiration Date with value of Agreement Termination Date</description>
+        <name>Update_Expiration_Date_0_0_0</name>
+        <label>Update Expiration Date</label>
+        <locationX>226</locationX>
+        <locationY>1127</locationY>
+        <connector>
+            <targetReference>Update_Agreement_Auto_Renew_Date</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Agreement_Termination_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Agreement_End_Date__c</field>
+            <value>
+                <elementReference>$Record.Agreement_Termination_Date__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>Update Start Date based on record type</description>
+        <name>Update_Start_Date</name>
+        <label>Update Start Date</label>
+        <locationX>138</locationX>
+        <locationY>695</locationY>
+        <connector>
+            <targetReference>Update_Agreement_Expiration_Date_0_0_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>StartDate</field>
+            <value>
+                <elementReference>StartDate_Formula</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>100</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Account_State_field</targetReference>
+        </connector>
+        <filterFormula>and(
+or(ISPICKVAL({!$Record.Status}, &quot;Draft&quot;),ISPICKVAL({!$Record.Status}, &quot;In Approval&quot;),ISPICKVAL({!$Record.Status}, &quot;Active&quot;)),
+or({!$Record.RecordType.DeveloperName}=&quot;Kiosk_Agreement&quot;,{!$Record.RecordType.DeveloperName}=&quot;Standalone_ATM_Agreement&quot;,{!$Record.RecordType.DeveloperName}=&quot;Amusement_Agreement&quot;,{!$Record.RecordType.DeveloperName}=&quot;Gaming_Agreement&quot;,{!$Record.RecordType.DeveloperName}=&quot;GA_COAM_Class_B&quot;)
+)</filterFormula>
+        <object>Contract</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

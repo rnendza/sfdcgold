@@ -1,0 +1,1426 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Kiosk ATM Agreement Received --></label>
+        <name>ATM_Agreement_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Amusements --></label>
+        <name>Accel_Amusements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Termination Amendment Signed Date --></label>
+        <name>Accel_Termination_Amendment_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Physical State --></label>
+        <name>Account_Physical_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account State --></label>
+        <name>Account_State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Acknowledgement of Master Received Date --></label>
+        <name>Acknowledgement_of_Master_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Signed Date --></label>
+        <name>Addendum_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addendum Type --></label>
+        <name>Addendum_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amusements</masterLabel>
+            <translation><!-- Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Auto Renewal Removal</masterLabel>
+            <translation><!-- Auto Renewal Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buildout</masterLabel>
+            <translation><!-- Buildout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Compliance</masterLabel>
+            <translation><!-- Compliance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment</masterLabel>
+            <translation><!-- Equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service</masterLabel>
+            <translation><!-- Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Terms</masterLabel>
+            <translation><!-- Terms --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto-Renew Date --></label>
+        <name>Agreement_Auto_Renew_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto Renew Length --></label>
+        <name>Agreement_Auto_Renew_Length__c</name>
+        <picklistValues>
+            <masterLabel>0.05</masterLabel>
+            <translation><!-- 0.05 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0.08</masterLabel>
+            <translation><!-- 0.08 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>0.5</masterLabel>
+            <translation><!-- 0.5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10</masterLabel>
+            <translation><!-- 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11</masterLabel>
+            <translation><!-- 11 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>12</masterLabel>
+            <translation><!-- 12 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>13</masterLabel>
+            <translation><!-- 13 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>14</masterLabel>
+            <translation><!-- 14 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>15</masterLabel>
+            <translation><!-- 15 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>16</masterLabel>
+            <translation><!-- 16 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>17</masterLabel>
+            <translation><!-- 17 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>18</masterLabel>
+            <translation><!-- 18 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>19</masterLabel>
+            <translation><!-- 19 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>20</masterLabel>
+            <translation><!-- 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>6</masterLabel>
+            <translation><!-- 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>7</masterLabel>
+            <translation><!-- 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>8</masterLabel>
+            <translation><!-- 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>9</masterLabel>
+            <translation><!-- 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Auto Renew Window --></label>
+        <name>Agreement_Auto_Renew_Window__c</name>
+        <picklistValues>
+            <masterLabel>0</masterLabel>
+            <translation><!-- 0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>120</masterLabel>
+            <translation><!-- 120 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150</masterLabel>
+            <translation><!-- 150 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>180</masterLabel>
+            <translation><!-- 180 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>30</masterLabel>
+            <translation><!-- 30 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>45</masterLabel>
+            <translation><!-- 45 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>60</masterLabel>
+            <translation><!-- 60 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>90</masterLabel>
+            <translation><!-- 90 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Based On --></label>
+        <name>Agreement_Based_On__c</name>
+        <picklistValues>
+            <masterLabel>Addendum Date</masterLabel>
+            <translation><!-- Addendum Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agreement Signed Date</masterLabel>
+            <translation><!-- Agreement Signed Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collective Live Date</masterLabel>
+            <translation><!-- Collective Live Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>From Current Term of Agreement</masterLabel>
+            <translation><!-- From Current Term of Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Live Date</masterLabel>
+            <translation><!-- Location Live Date --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Denied Date --></label>
+        <name>Agreement_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Expiration Date --></label>
+        <name>Agreement_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Revisions --></label>
+        <name>Agreement_Revisions__c</name>
+        <picklistValues>
+            <masterLabel>Counsel Review</masterLabel>
+            <translation><!-- Counsel Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hand written notes</masterLabel>
+            <translation><!-- Hand written notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Address</masterLabel>
+            <translation><!-- Incorrect Address --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect DBA Name</masterLabel>
+            <translation><!-- Incorrect DBA Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Entity</masterLabel>
+            <translation><!-- Incorrect Entity --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Legal Name</masterLabel>
+            <translation><!-- Incorrect Legal Name --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incorrect Permit #</masterLabel>
+            <translation><!-- Incorrect Permit # --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Owner&apos;s Initials</masterLabel>
+            <translation><!-- Location Owner&apos;s Initials --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Person Procuring TUA revision</masterLabel>
+            <translation><!-- Person Procuring TUA revision --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed Prior to Sale</masterLabel>
+            <translation><!-- Signed Prior to Sale --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Updated Compliant TUA</masterLabel>
+            <translation><!-- Updated Compliant TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for Liquor License</masterLabel>
+            <translation><!-- Waiting for Liquor License --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Signed Date --></label>
+        <name>Agreement_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Only enter this information if the location has indicated they do not want to renew the agreement.
+The Agreement Termination Date should be the end of the current active agreement. --></help>
+        <label><!-- Agreement Termination Date --></label>
+        <name>Agreement_Termination_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Terms (years) --></label>
+        <name>Agreement_Terms_years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Type (Lookup) --></label>
+        <name>Agreement_Type_Lookup__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Version (Lookup) --></label>
+        <name>Agreement_Version_Lookup__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Voided Date --></label>
+        <name>Agreement_Voided_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Voided Reason --></label>
+        <name>Agreement_Voided_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Accel Rejected the Location</masterLabel>
+            <translation><!-- Accel Rejected the Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Accel TUA lapsed without renewal</masterLabel>
+            <translation><!-- Accel TUA lapsed without renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Application Denied</masterLabel>
+            <translation><!-- IGB Application Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Denied Gaming License</masterLabel>
+            <translation><!-- IGB Denied Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Denied Gaming License Renewal</masterLabel>
+            <translation><!-- IGB Denied Gaming License Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Revoked Gaming License</masterLabel>
+            <translation><!-- IGB Revoked Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Did Not Renew Gaming License</masterLabel>
+            <translation><!-- Location Did Not Renew Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Ineligible Due To School/Church/OTB  Distance</masterLabel>
+            <translation><!-- Location Ineligible Due To School/Church/OTB  Distance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Lost Liquor License</masterLabel>
+            <translation><!-- Location Lost Liquor License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location No Longer Interested in Gaming</masterLabel>
+            <translation><!-- Location No Longer Interested in Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signed with Another Operator</masterLabel>
+            <translation><!-- Location Signed with Another Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signee Did Not Have Authority</masterLabel>
+            <translation><!-- Location Signee Did Not Have Authority --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Was Sold but TUA was Not Assigned</masterLabel>
+            <translation><!-- Location Was Sold but TUA was Not Assigned --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location is Out of Business</masterLabel>
+            <translation><!-- Location is Out of Business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location is in an opt-out area</masterLabel>
+            <translation><!-- Location is in an opt-out area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location was Denied Liquor License</masterLabel>
+            <translation><!-- Location was Denied Liquor License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rule 320 application timeline not met</masterLabel>
+            <translation><!-- Rule 320 application timeline not met --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Agreement__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Auto Renew Length --></label>
+        <name>Auto_Renew_Length__c</name>
+        <picklistValues>
+            <masterLabel>1 Year</masterLabel>
+            <translation><!-- 1 Year --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2 Years</masterLabel>
+            <translation><!-- 2 Years --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3 Years</masterLabel>
+            <translation><!-- 3 Years --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cause of Termination --></label>
+        <name>Cause_of_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Status --></label>
+        <name>Closed_Status__c</name>
+        <picklistValues>
+            <masterLabel>Expired</masterLabel>
+            <translation><!-- Expired --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Void</masterLabel>
+            <translation><!-- Void --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Original Live Date --></label>
+        <name>Competitor_Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Original Termination Recieved --></label>
+        <name>Competitor_Original_Termination_Recieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TUA Expiration Date Validated --></label>
+        <name>Competitor_TUA_Expiration_Date_Validated__c</name>
+        <picklistValues>
+            <masterLabel>In Review</masterLabel>
+            <translation><!-- In Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Competitor Termination Received --></label>
+        <name>Competitor_Termination_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO Lookup --></label>
+        <name>Competitor__c</name>
+        <relationshipLabel><!-- Contracts (Competitor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compliance Review Status --></label>
+        <name>Compliance_Review_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Final Review</masterLabel>
+            <translation><!-- Final Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initial Review</masterLabel>
+            <translation><!-- Initial Review --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stalled</masterLabel>
+            <translation><!-- Stalled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Contract Problem --></label>
+        <name>Contract_Problem__c</name>
+    </fields>
+    <fields>
+        <label><!-- Customer Percentage --></label>
+        <name>Customer_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- DBA Name Lookup --></label>
+        <name>DBA_Name_Lookup__c</name>
+        <relationshipLabel><!-- Agreements (DBA Name Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Date Addendum Uploaded to DUS System --></label>
+        <name>Date_Addendum_Uploaded_to_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date TUA Extension Uploaded DUS System --></label>
+        <name>Date_TUA_Extension_Uploaded_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Agreement Purchased --></label>
+        <name>Date_TUA_Purchased__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Agreement Uploaded to DUS System --></label>
+        <name>Date_TUA_Uploaded_to_RTT_System__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Letter --></label>
+        <name>Date_of_Letter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Does Not Consent --></label>
+        <name>Does_Not_Consent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement end date --></label>
+        <name>End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Extension Notice Based On --></label>
+        <name>Extension_Notice_Based_On__c</name>
+        <picklistValues>
+            <masterLabel>Agreement Signed Date</masterLabel>
+            <translation><!-- Agreement Signed Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Current Term of Agreement</masterLabel>
+            <translation><!-- Current Term of Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Extension Notice Signed Date --></label>
+        <name>Extension_Notice_Signed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fulfilled --></label>
+        <name>Fulfilled__c</name>
+    </fields>
+    <fields>
+        <label><!-- ILCC Percentage of Ownership --></label>
+        <name>ILCC_Percentage_of_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Data Fee --></label>
+        <name>Kiosk_ATM_Data_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Data Plan --></label>
+        <name>Kiosk_ATM_Data_Plan__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Live Date --></label>
+        <name>Kiosk_ATM_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Location Commission --></label>
+        <name>Kiosk_ATM_Location_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Operator Commission --></label>
+        <name>Kiosk_ATM_Operator_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Pictures Submitted --></label>
+        <name>Kiosk_ATM_Pictures_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Status --></label>
+        <name>Kiosk_ATM_Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation><!-- Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Contract</masterLabel>
+            <translation><!-- Missing Contract --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing Contract/FEIN</masterLabel>
+            <translation><!-- Missing Contract/FEIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Missing FEIN</masterLabel>
+            <translation><!-- Missing FEIN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No ATM</masterLabel>
+            <translation><!-- No ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending ATM Turn-On</masterLabel>
+            <translation><!-- Pending ATM Turn-On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending NRT Approval</masterLabel>
+            <translation><!-- Pending NRT Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submittal</masterLabel>
+            <translation><!-- Pending Submittal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM Surcharge --></label>
+        <name>Kiosk_ATM_Surcharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk ATM TID --></label>
+        <name>Kiosk_ATM_TID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kiosk Fee --></label>
+        <name>Kiosk_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Agreement (Days Live) --></label>
+        <name>Length_of_Agreement_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Agreement --></label>
+        <name>Length_of_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Term (Months) --></label>
+        <name>Length_of_Contract__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Terms --></label>
+        <name>Length_of_Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Revenue Share Percentage --></label>
+        <name>Location_Revenue_Share_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Agreement Received --></label>
+        <name>Original_Agreement_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Live Date --></label>
+        <name>Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Post License TUA Received --></label>
+        <name>Original_Post_License_TUA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original TUA Extension Received --></label>
+        <name>Original_TUA_Extension_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original TUA Received --></label>
+        <name>Original_TUA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part of Revenue Share --></label>
+        <name>Part_of_Revenue_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Percentage of Ownership --></label>
+        <name>Percentage_of_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Person Procuring LOI --></label>
+        <name>Person_Procuring_LOI__c</name>
+        <relationshipLabel><!-- Agreements (Person Procuring LOI) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Person Procuring Agreement --></label>
+        <name>Person_Procuring_TUA2__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Post TUA --></label>
+        <name>Post_TUA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Agreements --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Properly Terminated --></label>
+        <name>Properly_Terminated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Purchased From --></label>
+        <name>Purchased_From__c</name>
+        <relationshipLabel><!-- Agreement Purchased From --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RM Director Region --></label>
+        <name>RM_Director_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Link --></label>
+        <name>Record_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager Region --></label>
+        <name>Relationship_Manager_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requested Amusement Equipment --></label>
+        <name>Requested_Amusement_Equipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Revenue Sharer --></label>
+        <name>Revenue_Sharer__c</name>
+        <relationshipLabel><!-- Contracts (Revenue Sharer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signatory Rights? --></label>
+        <name>Signatory_Rights__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Agreement Received --></label>
+        <name>Standalone_ATM_Agreement_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Data Fee --></label>
+        <name>Standalone_ATM_Data_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Live Date --></label>
+        <name>Standalone_ATM_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Location Commission --></label>
+        <name>Standalone_ATM_Location_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Operator Commission --></label>
+        <name>Standalone_ATM_Operator_Commission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Pictures Submitted --></label>
+        <name>Standalone_ATM_Pictures_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Status --></label>
+        <name>Standalone_ATM_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled</masterLabel>
+            <translation><!-- Disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Install</masterLabel>
+            <translation><!-- Pending Install --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM Surcharge --></label>
+        <name>Standalone_ATM_Surcharge__c</name>
+    </fields>
+    <fields>
+        <label><!-- Standalone ATM TID --></label>
+        <name>Standalone_ATM_TID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subsidiary Percentage --></label>
+        <name>Subsidiary_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Lookup --></label>
+        <name>TUA_Lookup__c</name>
+        <relationshipLabel><!-- Agreements (TUA Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement Notes --></label>
+        <name>TUA_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Type --></label>
+        <name>TUA_Type__c</name>
+        <picklistValues>
+            <masterLabel>Acknowledgement of Addendum</masterLabel>
+            <translation><!-- Acknowledgement of Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Covid Extension</masterLabel>
+            <translation><!-- Covid Extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension Addendum</masterLabel>
+            <translation><!-- Extension Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension Master TUA</masterLabel>
+            <translation><!-- Extension Master TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension Notice</masterLabel>
+            <translation><!-- Extension Notice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Extension TUA</masterLabel>
+            <translation><!-- Extension TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Master TUA</masterLabel>
+            <translation><!-- Master TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUA</masterLabel>
+            <translation><!-- TUA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Agreement Version --></label>
+        <name>TUA_Version__c</name>
+        <picklistValues>
+            <masterLabel>01292021</masterLabel>
+            <translation><!-- 01292021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01292021 (QUICKPAY)</masterLabel>
+            <translation><!-- 01292021 (QUICKPAY) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (GA ATM)</masterLabel>
+            <translation><!-- 01302023 (GA ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (GA ClassA)</masterLabel>
+            <translation><!-- 01302023 (GA ClassA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (IA AMUSEMENT)</masterLabel>
+            <translation><!-- 01302023 (IA AMUSEMENT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (IA ATM)</masterLabel>
+            <translation><!-- 01302023 (IA ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (NC ATM)</masterLabel>
+            <translation><!-- 01302023 (NC ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (NE AMUSEMENT)</masterLabel>
+            <translation><!-- 01302023 (NE AMUSEMENT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (NE ATM)</masterLabel>
+            <translation><!-- 01302023 (NE ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01302023 (NE M3T)</masterLabel>
+            <translation><!-- 01302023 (NE M3T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01312023 (WY AMUSEMENT)</masterLabel>
+            <translation><!-- 01312023 (WY AMUSEMENT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01312023 (WY M3T)</masterLabel>
+            <translation><!-- 01312023 (WY M3T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>01312023 (WY RET)</masterLabel>
+            <translation><!-- 01312023 (WY RET) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06092022 (10YRNC)</masterLabel>
+            <translation><!-- 06092022 (10YRNC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>06242020 (STD-CELL)</masterLabel>
+            <translation><!-- 06242020 (STD-CELL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (GA ClassA)</masterLabel>
+            <translation><!-- 08242022 (GA ClassA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (GA ClassB)</masterLabel>
+            <translation><!-- 08242022 (GA ClassB) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (IA ATM)</masterLabel>
+            <translation><!-- 08242022 (IA ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (IL AMUSEMENT)</masterLabel>
+            <translation><!-- 08242022 (IL AMUSEMENT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (IL ATM)</masterLabel>
+            <translation><!-- 08242022 (IL ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (IL QUICKPAY)</masterLabel>
+            <translation><!-- 08242022 (IL QUICKPAY) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (IL TUA)</masterLabel>
+            <translation><!-- 08242022 (IL TUA) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (MO LOI)</masterLabel>
+            <translation><!-- 08242022 (MO LOI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (NC ATM)</masterLabel>
+            <translation><!-- 08242022 (NC ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (NC VLT)</masterLabel>
+            <translation><!-- 08242022 (NC VLT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (NE ATM)</masterLabel>
+            <translation><!-- 08242022 (NE ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>08242022 (PA LOI)</masterLabel>
+            <translation><!-- 08242022 (PA LOI) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>082712 (STD)</masterLabel>
+            <translation><!-- 082712 (STD) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09132022 (GA ClassB) (w/GC)</masterLabel>
+            <translation><!-- 09132022 (GA ClassB) (w/GC) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>091812 (STD-CELL)</masterLabel>
+            <translation><!-- 091812 (STD-CELL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09212022 (NE M3T)</masterLabel>
+            <translation><!-- 09212022 (NE M3T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>09262022 (IL M3T)</masterLabel>
+            <translation><!-- 09262022 (IL M3T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10062022 (GA ATM)</masterLabel>
+            <translation><!-- 10062022 (GA ATM) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>10112022 (GA Master Class B)</masterLabel>
+            <translation><!-- 10112022 (GA Master Class B) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11162020</masterLabel>
+            <translation><!-- 11162020 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>11162020 (STD-CELL)</masterLabel>
+            <translation><!-- 11162020 (STD-CELL) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Specific Agreement</masterLabel>
+            <translation><!-- Customer Specific Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DK Gaming Agreement</masterLabel>
+            <translation><!-- DK Gaming Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Historical</masterLabel>
+            <translation><!-- Historical --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-01292021</masterLabel>
+            <translation><!-- IL-01292021 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-01292021 (8YR)</masterLabel>
+            <translation><!-- IL-01292021 (8YR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-04272022 (8YR)</masterLabel>
+            <translation><!-- IL-04272022 (8YR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-05082020 (8YR)</masterLabel>
+            <translation><!-- IL-05082020 (8YR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-05082020 (GRAND RIVER)</masterLabel>
+            <translation><!-- IL-05082020 (GRAND RIVER) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-10272020 (8 YR)</masterLabel>
+            <translation><!-- IL-10272020 (8 YR) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL-10272020 (GRAND RIVER)</masterLabel>
+            <translation><!-- IL-10272020 (GRAND RIVER) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Modified To Days Live Via Addendum</masterLabel>
+            <translation><!-- Modified To Days Live Via Addendum --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>﻿06242020 (STD)</masterLabel>
+            <translation><!-- ﻿06242020 (STD) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parent TUA --></label>
+        <name>TUA__c</name>
+        <relationshipLabel><!-- Contracts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technology Release Form Received Date --></label>
+        <name>Technology_Release_Form_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Technology Release Form Received --></label>
+        <name>Technology_Release_Form_Received__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Termination Notice (1) Sent --></label>
+        <name>Termination_Notice_1_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Notice (2) Due Date --></label>
+        <name>Termination_Notice_2_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Notice (2) Sent --></label>
+        <name>Termination_Notice_2_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Termination Notice (1) Due Date --></label>
+        <name>Termination_Notice_Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Terms --></label>
+        <name>Terms__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Agreement Time --></label>
+        <name>Total_Agreement_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Days Left on Agreement --></label>
+        <name>Total_Time_Left_on_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version Number --></label>
+        <name>Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel VGT Live Date --></label>
+        <name>accel_vgt_live_date_formula__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- ATM --></label>
+        <name>ATM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Accel Termination Amendment --></label>
+        <name>Accel_Termination_Amendment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Addendum --></label>
+        <name>Addendum</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Amusement Agreement --></label>
+        <name>Amusement_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitor TO TUA --></label>
+        <name>Competitor_TUA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- DraftKings Agreement --></label>
+        <name>DraftKings_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Extension Notice --></label>
+        <name>Extension</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- GA COAM Class B --></label>
+        <name>GA_COAM_Class_B</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Gaming Agreement --></label>
+        <name>Gaming_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Kiosk Agreement --></label>
+        <name>Kiosk_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Letter of Intent --></label>
+        <name>Letter_of_Intent</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Location Termination Letter --></label>
+        <name>Location_Termination_Letter</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Master TUA --></label>
+        <name>Master_TUA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Standalone ATM Agreement --></label>
+        <name>Standalone_ATM_Agreement</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- TUA --></label>
+        <name>TUA</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Technology Release --></label>
+        <name>Technology_Release</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitor Termination Notice --></label>
+        <name>Termination_Notice</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Universal Fee Allocation --></label>
+        <name>Universal_Fee_Allocation</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Agreement_Expiration_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Agreement_Start_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the editing privileges to modify this field. --></errorMessage>
+        <name>Agreement_Termination_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A Voided Reason must be selected. --></errorMessage>
+        <name>Agreement_Voided_Reason_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Length of Agreement must be the number of years --></errorMessage>
+        <name>Length_of_Agreement_must_be_a_Number</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, specify what type of equipment you are requesting in the Notes field. --></errorMessage>
+        <name>Notes_for_Other_Equipments</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &apos;Person Procuring Agreement&apos; must be filled out. --></errorMessage>
+        <name>Person_Procuring_Agreement_Field</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out the Agreement Version. --></errorMessage>
+        <name>TUA_Version_Must_Be_Filled_Out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The &quot;Customer Percentage&quot; and the &quot;Subsidiary Percentage&quot; fields cannot be blank and they must total 100%, for Nebraska agreements. --></errorMessage>
+        <name>percentage_fields_sum_must_equal_100</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+</CustomObjectTranslation>

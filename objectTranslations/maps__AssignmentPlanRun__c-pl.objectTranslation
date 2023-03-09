@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Uruchomienie planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Uruchomienia planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Uruchomienie planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Uruchomienia planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Uruchomienia planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Uruchomień planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Uruchomieniu planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Uruchomieniom planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Uruchomieniem planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Uruchomieniami planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Uruchomieniu planu przypisania Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Uruchomieniach planu przypisania Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Iteration Count --></label>
+        <name>maps__BatchIterationCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Job Id --></label>
+        <name>maps__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache End Time --></label>
+        <name>maps__CacheEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache Start Time --></label>
+        <name>maps__CacheStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing End Time --></label>
+        <name>maps__ProcessingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Start Time --></label>
+        <name>maps__ProcessingStartTime__c</name>
+    </fields>
+    <fields>
+        <help>Osiągnięte ograniczenie zapytania</help>
+        <label><!-- Query Limit Hit --></label>
+        <name>maps__QueryLimitHit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>maps__QueryLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Assigned Count --></label>
+        <name>maps__RecordsAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Error Count --></label>
+        <name>maps__RecordsErrorCount__c</name>
+    </fields>
+    <fields>
+        <help>Liczba rekordów, które nie zostały przypisane</help>
+        <label><!-- Records Not Assigned Count --></label>
+        <name>maps__RecordsNotAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Total --></label>
+        <name>maps__RecordsTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation>Przerwano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caching</masterLabel>
+            <translation>Dodawanie do pamięci podręcznej</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Ukończone</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Niepowodzenie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Przetwarzanie</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>Zakolejkowane</translation>
+        </picklistValues>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Nazwa uruchomienia planu przypisania Map</nameFieldLabel>
+</CustomObjectTranslation>

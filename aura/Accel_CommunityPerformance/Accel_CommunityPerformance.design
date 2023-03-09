@@ -1,0 +1,8 @@
+<design:component>
+    <design:attribute name="displayMachineComparison" label="Display the machine comparison chart"
+                      description="Toggling this will turn on / off the machine comparison chart."
+                      default="true" required="false"/>
+    <design:attribute name="debugConsole" label="Debug logs to console for this component"
+                      description="Toggling this will turn on / off logging to the browser console."
+                      default="false" required="false"/>
+</design:component>

@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>駕車設定檔</value>
+    </caseValues>
+    <fields>
+        <label><!-- Hazardous Materials --></label>
+        <name>maps__Hazardous_Materials__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>否</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>是</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Height Units --></label>
+        <name>maps__HeightUnits__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>英呎</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>公尺</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>maps__Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length Units --></label>
+        <name>maps__LengthUnits__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>英呎</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>公尺</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Length --></label>
+        <name>maps__Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Axles --></label>
+        <name>maps__NumberOfAxles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Trailers --></label>
+        <name>maps__NumberOfTrailers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Type --></label>
+        <name>maps__ProfileType__c</name>
+        <picklistValues>
+            <masterLabel>Car</masterLabel>
+            <translation>車輛</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck</masterLabel>
+            <translation>卡車</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weight Per Axle --></label>
+        <name>maps__WeightPerAxle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight Units --></label>
+        <name>maps__WeightUnits__c</name>
+        <picklistValues>
+            <masterLabel>kilos</masterLabel>
+            <translation>公斤</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pounds</masterLabel>
+            <translation>磅</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tons</masterLabel>
+            <translation>噸</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>maps__Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Width Units --></label>
+        <name>maps__WidthUnits__c</name>
+        <picklistValues>
+            <masterLabel>ft</masterLabel>
+            <translation>英呎</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>公尺</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Width --></label>
+        <name>maps__Width__c</name>
+    </fields>
+    <nameFieldLabel>駕車設定檔名稱</nameFieldLabel>
+</CustomObjectTranslation>

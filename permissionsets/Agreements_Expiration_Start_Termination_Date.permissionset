@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Agreements_Expiration_Start_Termination_Date</name>
+    </customPermissions>
+    <description>For Agreement Expiration Date, Agreement Start Date, and Agreement Termination Date validation rules.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Agreements: Expiration, Start, &amp; Termination Date</label>
+</PermissionSet>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Logistics Survey Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Logistics Survey Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- If checked. the field will not be displayed on the form. --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <help><!-- If there is a value, display logic will evaluate this value (business logic in lwc) to determine if we need to display this field conditionally. ie sample value = Account__r.Funds_in_Field__c --></help>
+        <label><!-- Dependent On --></label>
+        <name>Dependent_On__c</name>
+    </fields>
+    <fields>
+        <help><!-- Looks up the Dependent on Field and ensures this value exists in that field. --></help>
+        <label><!-- Dependent Value --></label>
+        <name>Dependent_Value__c</name>
+    </fields>
+    <fields>
+        <help><!-- The field is disabled. ie it does not get submitted to the server. --></help>
+        <label><!-- Disabled --></label>
+        <name>Disabled__c</name>
+    </fields>
+    <fields>
+        <help><!-- Field field api name for the particular field on the sObject --></help>
+        <label><!-- Field Api Name --></label>
+        <name>Field_Api_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The css override class for the field --></help>
+        <label><!-- Field Class --></label>
+        <name>Field_Class__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label of the field on the form. --></help>
+        <label><!-- Field Label --></label>
+        <name>Field_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- The order the field displays on the form. --></help>
+        <label><!-- Order --></label>
+        <name>Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked the field is read only (but is submitted to the server) --></help>
+        <label><!-- Read Only --></label>
+        <name>Read_Only__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked, the field will be made required on the form. --></help>
+        <label><!-- Required --></label>
+        <name>Required__c</name>
+    </fields>
+    <fields>
+        <help><!-- The API name of the sObject for the form. This must be the same for all developer names. Route_Processing_Sheet__c --></help>
+        <label><!-- SObject Api Name --></label>
+        <name>SObject_Api_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- The custom developer name for the form. this should be the same for fall fields within the form. --></help>
+        <label><!-- Survey Dev Name --></label>
+        <name>Survey_Dev_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- If the field is a text area or rich text area this will override the default SFDC CSS to set the height of the enterable value. ie. 150px --></help>
+        <label><!-- Text Area Min Height --></label>
+        <name>Text_Area_Min_Height__c</name>
+    </fields>
+    <fields>
+        <help><!-- The variant of the label for the field @see https://developer.salesforce.com/docs/component-library/bundle/lightning-input-field/documentation --></help>
+        <label><!-- Variant --></label>
+        <name>Variant__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- If you mark the field as required please do not mark as disabled as well. --></errorMessage>
+        <name>CL_VR_REQ_NO_DISABLED</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If you mark the field as required please do not mark as read only as well. --></errorMessage>
+        <name>CL_VR_REQ_NO_READONLY</name>
+    </validationRules>
+</CustomObjectTranslation>

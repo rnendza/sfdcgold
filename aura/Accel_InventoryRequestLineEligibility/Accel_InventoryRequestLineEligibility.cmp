@@ -1,0 +1,61 @@
+<aura:component
+        description="Accel_InventoryRequestLineEligibility">
+
+    <aura:attribute name="inventoryRequestLineItem" type="Inventory_Request_Line_Item__c"/>
+    <aura:attribute name="messageTitle" type="String" default="Help"/>
+    <aura:attribute name="showCreateMsg" type="Boolean" default="false"/>
+    <aura:attribute name="showAllCreatedMsg" type="Boolean" default="false"/>
+    <aura:attribute name="allCreatedMsg" type="String" default=""/>
+    <aura:attribute name="boxClass" type="String" default="accel-square-box__info"/>
+    <aura:attribute name="boxIconName" type="String" default="utility:info"/>
+    <aura:attribute name="lineItemChecks" type="Object"/>
+    <aura:attribute name="progressBarValue" type="Integer" default="0" />
+    <aura:attribute name="showProgressBar" type="Boolean" default="true" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:appEvent" action="{!c.handleApplicationEvent}"/>
+
+    <ltng:require styles="{!$Resource.font_awesome_v5_free + '/css/all.css'}"
+                  scripts="{!$Resource.font_awesome_v5_free + '/js/all.js'}"
+                  afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="accel-admin-help-outer-container">
+        <div class="{!'slds-theme--shade ' +v.boxClass}">
+            <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="{!v.boxIconName}"
+                                    size="small"
+                                    alternativeText="Create Assets Assistance"/>
+                </div>
+                <div class="slds-media__body">
+                    <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                        <b>{!v.messageTitle}</b>
+                    </div>
+                    <div class="accel-detailed-body-text">
+                        <aura:if isTrue="{!and(v.lineItemChecks !=null)}">
+                            <div class="accel-pw-checks">
+                                <ul class="fa-ul">
+                                    <aura:iteration items="{!v.lineItemChecks}" var="check">
+                                        <li><span class="fa-li"><i class="{!check.iconClass}"></i></span>
+                                            <span class="{!check.textClass}">
+                                                <aura:unescapedHtml value="{!check.description}" />
+                                            </span>
+                                        </li>
+                                    </aura:iteration>
+                                </ul>
+                            </div>
+                        </aura:if>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+   <aura:if isTrue="{!v.showProgressBar}" >
+        <div style="margin-top:15px">
+            <c:ProgressBar valueNow="{!v.progressBarValue}" />
+        </div>
+   </aura:if>
+
+</aura:component>

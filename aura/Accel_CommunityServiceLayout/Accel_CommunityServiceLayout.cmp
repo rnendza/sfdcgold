@@ -1,0 +1,40 @@
+<aura:component implements="forceCommunity:layout"
+                extends="c:Accel_CommunitySectionLayout"
+                access="global" >
+
+    <aura:attribute name="section_1_title" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="section_2_title" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="section_1_content_1" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="section_2_content_1" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="section_2_content_2" type="Aura.Component[]" required="false"></aura:attribute>
+    <aura:attribute name="section_2_content_3" type="Aura.Component[]" required="false"></aura:attribute>
+
+
+    <div class="container">
+
+        <div class="section">
+            <div class="section-title">
+                {!v.section_1_title}
+            </div>
+            <div class="row">
+                <div class="whole half-height">{!v.section_1_content_1}</div>
+            </div>
+        </div>
+        <div class="section">
+            <div class="section-title">
+                {!v.section_2_title}
+            </div>
+            <div class="row">
+                <div class="five-sixths">{!v.section_2_content_1}</div>
+                <div class="sixth">
+                    <div class="row">
+                        <div class="whole">{!v.section_2_content_2}</div>
+                        <div class="whole">{!v.section_2_content_3}</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+</aura:component>

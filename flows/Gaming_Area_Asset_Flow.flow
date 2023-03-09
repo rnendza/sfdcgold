@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Project_Type</name>
+        <label>Project Type</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Project_Update_Non_Gaming</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Gaming_Area_Assets</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Project_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Gaming Area Assets</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Project_Type_Update</targetReference>
+            </connector>
+            <label>Gaming Area Assets</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Gaming Area Asset Flow {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Gaming Area Asset Flow</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Project_Type_Update</name>
+        <label>Project Type Update</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Gaming_Area_Assets__c</field>
+            <value>
+                <elementReference>$Record.Project_Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Project_Update_Non_Gaming</name>
+        <label>Project Update Non Gaming</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Field Assessment</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>IGB Approval</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Install Scheduled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>SGI Project Scheduled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Closure</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Project_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Approvals</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Not_Gaming_Area_Assets__c</field>
+            <value>
+                <elementReference>$Record.Project_Status__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Project_Type</targetReference>
+        </connector>
+        <object>Project__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

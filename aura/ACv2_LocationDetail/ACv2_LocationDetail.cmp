@@ -1,0 +1,39 @@
+<aura:component description="Accel Community Location Detail"
+                controller="Accel_CommunityLocationDetailController"
+                implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes"
+                access="public">
+
+    <aura:attribute name="locationLicenseData" type="Object"/>
+    <aura:attribute name="locationLicenseSummary" type="Object"/>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/311323513 -->
+    <aura:attribute name="activeSections" type="List"/>
+    <aura:attribute name="locDataTabLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="errorThrown" type="Boolean" default="false"
+                    description="Will inform child component that we had an error thus stop the spinner!"/>
+
+    <aura:attribute name="noLicenseDataFoundMsg" type="String"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <aura:registerEvent name="appEventSetActiveAccordionSections" type="c:Accel_Evt_Generic"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+
+    <!-- override theme for left and right margins. we don't need that much on
+     communities takes care of that. mobile! -->
+    <div class="fake-theme-overrides-class"></div>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/311323513
+         Added locationLicence Summary to pass down to grandchild help display cmp.
+    -->
+    <c:Accel_CommunityLocHpdAndExprData
+            activeSections="{!v.activeSections}"
+            locationLicenseSummary="{!v.locationLicenseSummary}"
+            locationLicenseData="{!v.locationLicenseData}"
+            errorThrown="{!v.errorThrown}"
+            locDataTabLoaded="{!v.locDataTabLoaded}"/>
+
+
+</aura:component>

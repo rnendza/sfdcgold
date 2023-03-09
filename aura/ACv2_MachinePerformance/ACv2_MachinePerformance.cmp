@@ -1,0 +1,409 @@
+<aura:component description="Accel Machine Performance"
+                controller="Accel_MachinePerformanceV2"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+
+    <!--    <ltng:require-->
+    <!--            scripts="{!join (',', $Resource.echart4, $Resource.echartgl)}"-->
+    <!--            afterScriptsLoaded="{!c.scriptsLoaded}"/>-->
+    <ltng:require
+            scripts="{!$Resource.echart4}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+
+    <aura:attribute name="dMetric" type="String" />
+    <aura:attribute name="dFrequency" type="String" />
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <aura:attribute name="dateSelectOptions" type="List"/>
+    <aura:attribute name="selectedDate" type="String" />
+    <aura:attribute name="yesterday" type="String"/>
+    <aura:attribute name="oldestDate" type="String" default="2017-01-01"/>
+    <aura:attribute name="startDate" type="String" />
+    <aura:attribute name="endDate" type="String" />
+    <aura:attribute name="startHDate" type="String" />
+    <aura:attribute name="endHDate" type="String" />
+    <aura:attribute name="dailyMachineData" type="List" />
+    <aura:attribute name="aggregateMachineData" type="List" />
+    <aura:attribute name="ytdRevenue" type="String" />
+    <aura:attribute name="ytdRevenueDiffString" type="String" default ="--" />
+    <aura:attribute name="ytdRevenueDiff" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenue" type="String" />
+    <aura:attribute name="mtdRevenueDiffMOM" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenueDiffMOMString" type="String" default="--" />
+    <aura:attribute name="mtdRevenueDiffYOY" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenueDiffYOYString" type="String" default="--" />
+    <aura:attribute name="estRevenue" type="String" />
+    <aura:attribute name="estRevenueDiffString" type="String" default ="--" />
+    <aura:attribute name="estRevenueDiff" type="Decimal" default="0"/>
+    <aura:attribute name="totalRevenue" type="String" />
+    <aura:attribute name="totalFundsIn" type="String" />
+    <aura:attribute name="totalAmountWon" type="String" />
+
+    <aura:attribute name="month" type="String" default=""/>
+    <aura:attribute name="year" type="String" default="2020"/>
+    <aura:attribute name="pieTitle" type="String" default="Revenue by Machine"/>
+
+
+    <aura:attribute name="sortedBy" type="String" default="hpdDate"/>
+    <aura:attribute name="sortedDirection" type="String" default="desc"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="dataTable" type="List" default="[]"/>
+    <aura:attribute name="historicalData" type="List" />
+    <aura:attribute name="historicalDataTable" type="List" default="[]"/>
+
+    <aura:attribute name="mostPopularMachine" type="String"/>
+    <aura:attribute name="mostProfitableMachine" type="String"/>
+
+    <aura:attribute name="estimatedRevenueMonthName" type="String"/>
+    <aura:attribute name="revenueMtdMonthName" type="String"/>
+    <!--8-23-2019 @see https://accel-entertainment.monday.com/boards/286658657/pulses/294454017-->
+    <aura:attribute name="serverYesterdayDate" type="Date"
+                    description="The calculated yesterday date as calculated on the backing controller called in the init" />
+    <aura:attribute name="debugConsole" type="Boolean" default="true"
+                    description="Allows turning on and off of logging logic either here or via design attribute"/>
+    <!--- END Yesterday Date stuff -->
+    <aura:attribute  name="showMachinePerfSpinner" type="Boolean" default="false" access="private" />
+    <aura:attribute  name="machinePerfSpinnerAltText" type="Boolean" default="...processing" access="private" />
+
+    <aura:attribute name="communityUserSettings" type="Object"
+                    description="Contains Community User Settings"/>
+    <aura:attribute name="communityUserSettingsNotFound"  type="Boolean" default="false" />
+    <aura:attribute name="renderMachineTabs" type="Boolean" default="false" />
+    <aura:attribute name="renderMachineChart" type="Boolean" default="false" />
+
+    <aura:attribute name="machineImageData" type="List" />
+    <aura:attribute name="prevMachineImageData" type="List" />
+    <aura:attribute name="cityMachineImageData" type="List" />
+    <aura:attribute name="prevCityMachineImageData" type="List" />
+    <aura:attribute name="machineTabData" type="List" />
+    <aura:attribute name="selectedFrequency" type="String" default="Daily"/>
+    <aura:attribute name="mainTabsetSelectedTab" type="String" default="perfTab" />
+
+
+    <c:Accel_Promises context="{!this}"/>
+    <aura:handler name="init" value="{!this }" action="{!c.doInit }"/>
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_SimpleCsvExporter aura:id="csvExporter"/>
+
+
+    <div style="border:0px dotted red" >
+        <!-- location select box -->
+
+        <div class="slds-grid  slds-grid_vertical-align-start slds-wrap accselect">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                <lightning:combobox name="accountSelect"
+                                    label="Location"
+                                    placeholder="Select a Location"
+                                    class="accel-select"
+                                    options="{! v.userAccountOptions }"
+                                    value="{!v.selectedAccountId}"
+                                    onchange="{! c.onChangeAccount }"/>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+            </div>
+        </div>
+
+        <!-- main body -->
+        <lightning:tabset variant="scoped" class="mainTabset">
+            <!-- performance tab -->
+            <lightning:tab id="perfTab" label="Performance" onactive="{!c.tabSelected}" iconName="standard:display_text" >
+                <!-- top 3 boxes -->
+                <div class="slds-grid slds-p-around_medium accel-mobile-block accel-center">
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Revenue_YTD_Machine_Perf__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-m-horizontal_medium msgbox-medium accel-mobile-margin-bottom accel-mobile-margin-sides">
+                            <div class="accel-mtd-box-top"><span class="month">{!v.year} </span> Revenue Year-to-Date</div>
+
+
+                            <div style="display:inline-block">
+                                <div class="mtd-value">${!v.ytdRevenue}&nbsp;</div>
+                            </div>
+                            <div class="mtd-value" style="display:inline-block;">
+                                <aura:renderIf isTrue="{!v.ytdRevenueDiff >= 0}">
+                                    <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small"/>
+                                    <aura:set attribute="else">
+                                        <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small"/>
+                                    </aura:set>
+                                </aura:renderIf>
+                                <span class="{!v.ytdRevenueDiff >= 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.ytdRevenueDiffString}
+                                        % </span><span class="accel-metric">Y/Y</span>
+                            </div>
+
+                        </div>
+                    </aura:if>
+                    <!-- Show if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Revenue_MTD_Machine_Perf__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-m-horizontal_medium msgbox-medium accel-mobile-margin-bottom accel-mobile-margin-sides">
+                            <div class="accel-mtd-box-top"><span class="month">{!v.revenueMtdMonthName}</span> Revenue
+                                Month-to-Date
+                            </div>
+                            <div style="display:inline-block">
+                                <div class="mtd-value">${!v.mtdRevenue}&nbsp;</div>
+                            </div>
+                            <div class="mtd-value" style="display:inline-block;">
+                                <aura:renderIf isTrue="{!v.mtdRevenueDiffYOY >= 0}">
+                                    <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small"/>
+                                    <aura:set attribute="else">
+                                        <lightning:icon class="iconRed" iconName="utility:arrowdown"
+                                                        size="small"/>
+                                    </aura:set>
+                                </aura:renderIf>
+                                <span class="{!v.mtdRevenueDiffYOY >= 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.mtdRevenueDiffYOYString}
+                                    %  </span><span class="accel-metric">Y/Y</span>
+                            </div>
+                        </div>
+                    </aura:if>
+                    <!-- Show if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Estimated_Revenue__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-m-horizontal_medium msgbox-medium accel-mobile-margin-bottom accel-mobile-margin-sides">
+                            <div class="accel-mtd-box-top"><span class="month">{!v.estimatedRevenueMonthName}</span>
+                                Estimated Revenue
+                            </div>
+                            <div style="display:inline-block">
+                                <div class="mtd-value">${!v.estRevenue}</div>
+                            </div>
+                            <!-- //compare estimation % change from last year/kinda useless/difficult to explain
+                            <div class="mtd-value" style="display:inline-block">
+                                <aura:renderIf isTrue="{!v.estRevenueDiff >= 0}">
+                                    <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small"/>
+                                    <aura:set attribute="else">
+                                        <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small"/>
+                                    </aura:set>
+                                </aura:renderIf>
+                                <span class="{!v.estRevenueDiff >= 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.estRevenueDiffString}
+                                            % </span><span class="accel-metric">M/M</span>
+                            </div>
+                            -->
+                        </div>
+                    </aura:if>
+                </div>
+
+                <!-- chart and picture tabs container -->
+                <div class="slds-grid accel-mobile-block accel-center">
+                    <!-- revenue pie chart area -->
+                    <aura:if isTrue="{!or(v.communityUserSettings.Display_Machine_Chart__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-order_2 slds-size_6-of-12 slds-p-top_x-large accel-top-container accel-mobile-full accel-mobile-margin-bottom">
+                            <div>
+                                <div class="pieTitle">{!v.pieTitle}</div>
+                                <div class="slds-grid">
+                                    <div class="slds-col slds-size_1-of-3 accel-date-range">
+                                        <lightning:select aura:id="monthSelect" name="monthSelect" label="Date Range"
+                                                          class="accel-select"
+                                                          onchange="{!c.onChangeMonthSelect}"
+                                                          value="{!v.selectedDate}">
+                                            <option value="90" label="Last 90 Days">Last 90 Days</option>
+                                            <option value="30" label="Last 30 Days">Last 30 Days</option>
+                                            <option value="Yesterday" label="Yesterday">Yesterday</option>
+                                            <option value="Cust" label="Custom Range">Custom Range</option>
+                                            <aura:iteration items="{!v.dateSelectOptions}" var="item">
+                                                <option label="{!item.label}" value="{!item.value}">{!item.label}</option>
+                                            </aura:iteration>
+                                        </lightning:select>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3 accel-btn-group">
+                                        <lightning:buttonGroup>
+                                            <lightning:button label="Revenue"
+                                                              class="accel-btn-is-selected accel-mobile-btn"
+                                                              name="Revenue"
+                                                              aura:id="Revenue"
+                                                              onclick="{!c.changeGraph}"/>
+                                            <lightning:button label="Funds In"
+                                                              class = "accel-mobile-btn"
+                                                              name="FundsIn"
+                                                              aura:id="FundsIn"
+                                                              onclick="{!c.changeGraph}"/>
+                                        </lightning:buttonGroup>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3 mobile-none"></div>
+                                </div>
+                                <aura:if isTrue="{!v.selectedDate == 'Cust'}">
+                                    <div style="display:block">
+                                        <div class="slds-grid">
+                                            <div class="slds-col slds-size_1-of-5 slds-p-right_x-small accel-desktop-date-select accel-mobile-date-select" style="min-width: 160px">
+                                                <lightning:input aura:id="aStartDate" label="Start Date" type="date" autocomplete="off" name="startDate" placeholder="Start Date" value="{!v.startDate}" onchange="{!c.onDateUpdated}" min="{!v.oldestDate}" max="{!v.yesterday}" aria-autocomplete="none"/>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-5  accel-desktop-date-select accel-mobile-date-select" style="min-width: 160px">
+                                                <lightning:input aura:id="bStartDate" label ="End Date" type="date" autocomplete="off" name="endDate" placeholder="End Date" value="{!v.endDate}" onchange="{!c.onDateUpdated}"  min="{!v.oldestDate}" max="{!v.yesterday}" aria-autocomplete="none"/>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </aura:if>
+                                <div>
+                                    <div class="slds-grid week-grouped-container">
+                                        <div class="slds-col slds-size_1-of-3 week-heading-container">
+                                            <div class="accel-fiscal-heading">Total Revenue </div>
+                                            <div class="accel-curr-week-total">{!v.totalRevenue}</div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-3 week-heading-container">
+                                            <div class="accel-fiscal-heading">Total Funds In </div>
+                                            <div class="accel-curr-week-total-funds">{!v.totalFundsIn}</div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-3 week-heading-container" style="margin-right: 0!important">
+                                            <div class="accel-fiscal-heading mobile-total-amt-pad">Total Amount Won </div>
+                                            <div class="accel-curr-week-total-funds" style="color: goldenrod !important">{!v.totalAmountWon}</div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div>
+                                <!--
+                                https://accel-entertainment.monday.com/boards/286658657/pulses/294451871
+                                Note this probably isn't going to be positioned as desired on all devices but really the whole css box
+                                model of this page needs to be redesigned first.
+                                -->
+                                <div  style="position:relative;">
+                                    <lightning:spinner aura:id="machinePerfSpinner" variant="brand" size="large"
+                                                       alternativeText="{!v.machinePerfSpinnerAltText}"
+                                                       class="{!((v.showMachinePerfSpinner)? '': 'slds-hide')}"/>
+                                </div>
+                            </div>
+                            <div class="machinePie" aura:id="machinePie"></div>
+                        </div>
+                    </aura:if>
+                    <!--my machine tabs -->
+                    <aura:if isTrue="{!or(v.communityUserSettings.Display_Machine_Tabs__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-order_1 slds-size_6-of-12 slds-p-top_x-large slds-p-right_xx-large accel-top-container accel-mobile-full accel-mobile-margin-bottom" style="min-width:310px">
+                            <div class="machineTabTitle">My Machines</div>
+                            <lightning:tabset variant="scoped" selectedTabId="1" class="machineTabset">
+                                <aura:iteration var="machine" items="{!v.machineTabData}">
+                                    <lightning:tab label="{!machine.tabName}" id="{!machine.index}" class="machineTabs">
+                                        <div class="slds-grid">
+                                            <!-- machine text details -->
+                                            <div class="machineDetailsContainer">
+                                                <div class="machineHeader">IGB Tag #</div>
+                                                <div class="machineHeaderValue" style="color: #696969">{!machine.igbTag}</div>
+                                                <div class="machineHeader">VGT Live Date</div>
+                                                <div class="machineHeaderValue" style="color: blue">{!machine.liveDate}</div>
+                                                <div class="machineHeader">My Average Funds In Per Day </div>
+                                                <div class="slds-grid">
+                                                    <div style="line-height:20px;">
+                                                        <div class="machineHeaderValue" style="color: deepskyblue; display:inline-block; padding-top:5px;">{!machine.avgFundsIn}</div>
+                                                        <div style="display:inline-block">
+                                                            <div class="mobileYY">
+                                                                <aura:renderIf isTrue="{!machine.avgDiff >= 0}">
+                                                                    <lightning:icon class="iconBlue" iconName="utility:arrowup" size="x-small"/>
+                                                                    <aura:set attribute="else">
+                                                                        <lightning:icon class="iconRed" iconName="utility:arrowdown" size="x-small"/>
+                                                                    </aura:set>
+                                                                </aura:renderIf>
+                                                                <span class="{!machine.avgDiff >= 0 ? 'pos-profit-funds' :'neg-profit'}">{!machine.avgDiffString}
+                                            % </span><span style="color:black;">Y/Y</span>
+                                                                <lightning:helptext class="machineHeaderIcon"  content="Calculated based on the previous 90 days then compares to that same time period in the prior year" />
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="machineHeader machineHeaderPadRight">Statewide Average Funds In Per Day for <span style="color: #696969">{!machine.tabName}s</span></div>
+                                                <div style="line-height:20px;">
+                                                    <div class="machineHeaderValue" style="color: deepskyblue; display:inline-block; padding-top:5px;">${!machine.municipalityAvg}</div>
+                                                    <div style="display:inline-block">
+                                                        <div class="mobileYY">
+                                                            <aura:renderIf isTrue="{!machine.municipalityAvgDiff >= 0}">
+                                                                <lightning:icon class="iconBlue" iconName="utility:arrowup" size="x-small"/>
+                                                                <aura:set attribute="else">
+                                                                    <lightning:icon class="iconRed" iconName="utility:arrowdown" size="x-small"/>
+                                                                </aura:set>
+                                                            </aura:renderIf>
+                                                            <span class="{!machine.municipalityAvgDiff >= 0 ? 'pos-profit-funds' :'neg-profit'}">{!machine.municipalityAvgDiffString}
+                                            % </span><span style="color:black;">Y/Y</span>
+                                                            <lightning:helptext class="machineHeaderIcon" content="Calculated based on the previous 90 days for all Accel locations in the state of the same type as your location then compares to that same time period in the prior year" />
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-size_1-of-2" style="min-width: 200px !important; padding: 5px 0px 0px 10px; margin:auto">
+                                                <!-- image container -->
+                                                <div style="min-width: 180px !important; text-align:center">
+                                                    <c:acDisplayImage imageName="{!machine.imageName}"
+                                                                      imageFolder = "{!machine.imageFolder}"
+                                                                      imageType = "{!machine.imageType}"/>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </lightning:tab>
+                                </aura:iteration>
+                            </lightning:tabset>
+                        </div>
+                    </aura:if>
+                </div>
+            </lightning:tab>
+
+            <!--historical data tab -->
+            <lightning:tab id="histTab" label="Historical Data" onactive="{!c.tabSelected}" iconName="standard:event">
+                <div class="historicalContainer">
+                    <div class="slds-grid historicalSelect">
+                        <div class="freqPicker" style="min-width: 110px">
+                            <lightning:select aura:id="histSelect" name="histSelect" label="Frequency"
+                                              class="mobile-frequency"
+                                              onchange="{!c.onFrequencyChange}"
+                                              value="{!v.selectedFrequency}">
+                                <option value="Daily" label="Daily">Daily</option>
+                                <!-- to be implemented  <option value="Weekly" label="Weekly">Weekly</option> -->
+                                <option value="Monthly" label="Monthly">Monthly</option>
+                            </lightning:select>
+                        </div>
+                        <div class="freqDatePicker">
+                            <div class="slds-col  slds-size_1-of-2 slds-p-right_x-small accel-desktop-date-select accel-mobile-date-select" style="min-width: 110px">
+                                <lightning:input aura:id="hStartDate" label="Start Date"  readonly= "{!not(v.selectedFrequency == 'Daily')}" type="date" autocomplete="off" name="startHDate" placeholder="Start Date" value="{!v.startHDate}" onchange="{!c.onHDateUpdated}" min="{!v.oldestDate}" max="{!v.yesterday}" aria-autocomplete="none"/>
+                            </div>
+                            <div class="slds-col  slds-size_1-of-2 slds-p-right_x-small accel-desktop-date-select accel-mobile-date-select" style="min-width: 110px">
+                                <lightning:input aura:id="hStartDate" label ="End Date" readonly= "{!not(v.selectedFrequency == 'Daily')}" type="date" autocomplete="off" name="endHDate" placeholder="End Date" value="{!v.endHDate}" onchange="{!c.onHDateUpdated}"  min="{!v.oldestDate}" max="{!v.yesterday}" aria-autocomplete="none"/>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mobileDownload" style="text-align: right; padding-top: 8px; padding-bottom: 8px">
+                        <lightning:button iconName="utility:download"
+                                          iconPosition="left"
+                                          label="Download Data"
+                                          aura:id="btnCsvDownload"
+                                          onclick="{!c.downloadData}"
+                                          class="downloadBtn" />
+                    </div>
+                    <div class="histTableDiv">
+                        <!-- lightning datatables suck for doing anything custom -ZM
+
+                    <lightning:datatable data="{!v.historicalDataTable}"
+                                     columns="{!v.columns}"
+                                     keyField="hpdId"
+                                     sortedBy="{!v.sortedBy}"
+                                     sortedDirection="{!v.sortedDirection}"
+                                     class="histTable slds-no-row-hover"
+                                     showRowNumberColumn="false"
+                                     resizeColumnDisabled="true"
+                                     hideCheckboxColumn="true" /> -->
+
+                        <table class="histTable">
+                            <tr class="histHeader">
+                                <th style="border-top:none !important; border-right: none !important">Date</th>
+                                <th style="border-top:none !important">Location Share</th>
+                                <th style="border-top:none !important">Revenue</th>
+                                <th style="border-top:none !important">Funds In</th>
+                                <th style="border-top:none !important">Funds Out</th>
+                                <th style="border-top:none !important">Amount Played</th>
+                                <th style="border-top:none !important">Amount Won</th>
+                            </tr>
+                            <tbody>
+                            <aura:iteration items="{!v.historicalDataTable}" var="item" indexVar="index">
+                                <tr>
+                                    <th style="font-weight: normal; font-size: 13px; color: black !important">{!item.hpdDate}</th><td>{!item.locShare}</td><td>{!item.netRevenue}</td><td>{!item.fundsIn}</td><td>{!item.fundsOut}</td><td>{!item.amtPlayed}</td><td>{!item.amtWon}</td>
+                                </tr>
+                            </aura:iteration>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </lightning:tab>
+        </lightning:tabset>
+    </div>
+
+</aura:component>

@@ -1,0 +1,11 @@
+<template>
+    <lightning-carousel scroll-duration={scrollDuration} disable-auto-scroll={disableAutoScroll}>
+        <template for:each={imageUrls} for:item="url" >
+                <lightning-carousel-image
+                    key={url}
+                    src={url}
+                    class="accel-carousel-image"
+            ></lightning-carousel-image>
+        </template>
+    </lightning-carousel>
+</template>

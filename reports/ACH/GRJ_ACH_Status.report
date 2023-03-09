@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Account.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Account.Legal_Name__c</field>
+    </columns>
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Account.Relationship_Manager__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.ACH_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Account.Application_Web_ID__c</field>
+    </columns>
+    <columns>
+        <field>Account.Application_Password__c</field>
+    </columns>
+    <columns>
+        <field>Account.FEIN_Number__c</field>
+    </columns>
+    <columns>
+        <field>Account.Partner_Operator__c</field>
+    </columns>
+    <description>GRJ Locations that do not have ACHs approved yet</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Partner_Operator__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>startsWith</operator>
+            <value>grand river jackpot,llc</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.ACH_Approved__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accel Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>GRJ ACH Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>1900-10-23</startDate>
+    </timeFrameFilter>
+</Report>

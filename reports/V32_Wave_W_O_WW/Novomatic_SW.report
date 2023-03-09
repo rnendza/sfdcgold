@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ASSET.NAME</field>
+    </columns>
+    <columns>
+        <field>ASSET.DESCRIPTION</field>
+    </columns>
+    <columns>
+        <field>Asset.Software__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Software_Upgraded_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Asset.Software__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NOV_B114_r23341_OPT_E3,NOV_B114_r23341_OPT_E3_F,NOV_B117_r24603_OPT_E4_20A,NOV_B117_r24603_OPT_E4_34,NOV_B126_r39813_36_92,NOV_B126_r39813_36_92.5,NOV_B126_r39813_36_94,NOV_G2S_B123_r33921_36,NOV_G2S_B123_r34367_36,NOV_G2S_B125_r37941_36G_92.5,NOV_G2S_B125_r37941_36G_94</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Novomatic SW</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountAsset</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

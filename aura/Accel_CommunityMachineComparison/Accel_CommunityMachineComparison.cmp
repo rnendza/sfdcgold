@@ -1,0 +1,63 @@
+<!--
+========================================================================================================================
+
+It is advised to filter by Accel_CommunityMachineComparison  in your browser console to only receive messages for
+this component. (assuming attribute debugConsole is set to true)
+
+This component is available for use in communities or within the backend crm app as well (ie implements)
+
+@see Accel_ChartMachineComparisonDisplay.cmp   - Cmp that builds the options for the chart.
+@see Accel_CommunityMachineCompController.apex - Apex controller that retrieves new data.
+========================================================================================================================
+-->
+<aura:component description="Accel_CommunityMachineComparison"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityMachineCompController">
+    <ltng:require
+            scripts="{!$Resource.accelcommunity_alpha_echarts + '/echarts.min.js'}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <!-- ==========  Incoming Params from Parent Search Component ============ -->
+    <aura:attribute name="selectedAccount"      type="Object" />
+
+    <!-- ========== private data retrieved from the server ================ -->
+    <aura:attribute name="hpdData" type="List" access="private" />
+    <aura:attribute name="machineAverages" type="List" access="private" />
+    <aura:attribute name="setMachineNames"     type="Set" />
+
+    <!-- =========  Various toggles ============ -->
+    <aura:attribute name="showComparisonSpinner" type="Boolean"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="false" />
+    <aura:attribute name="useParentChartData" type="Boolean" default="false"/>
+
+    <!-- ========= Various system events ============ -->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler name="destroy" value="{!this}" action="{!c.handleDestroy}"/>
+
+    <!-- ========= Clicked Event on Machine Totals Pie Chart ======= -->
+    <aura:handler event="c:Accel_Evt_MachineClicked" action="{!c.handleMachineClickedEvent}"/>
+
+    <!--- ======= Change Handler on data passed from parent. ====== -->
+    <aura:handler name="change" value="{!v.selectedAccount}" action="{!c.selectedAccountChange}"/>
+
+
+    <!-- ============== Chart Option Builder ==================== -->
+    <c:Accel_ChartMachineComparisonDisplay aura:id="chartMachineComparisonDisplay"/>
+    <!-- ============== General Utilities ==================== -->
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils  aura:id="loggingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+
+    <lightning:spinner variant="brand" size="large" aura:id="locComparisonSpinner"
+                       class="{!((v.showComparisonSpinner)? '': 'slds-hide')}"
+                       alternativeText="Loading"/>
+
+    <div class="accel-chart-shadow-drag accel-chart-container" style="border:0px dotted red">
+        <div class="accel-echarts-machine-comparison-container">
+            <div class="accel-echarts-machine-comparison-chart"  aura:id="echartsMachineComparison">
+                <!-- injected via Echarts -->
+            </div>
+        </div>
+    </div>
+</aura:component>

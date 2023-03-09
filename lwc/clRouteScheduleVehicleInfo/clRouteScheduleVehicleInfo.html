@@ -1,0 +1,98 @@
+<!-- Cl Route Schedule Vehicle Info -->
+<template>
+
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+
+    <div if:true={showForm}
+         class="">
+        <div class="accel-form_container slds-p-bottom_large">
+            <!--  onsubmit={handleSubmit} -->
+            <lightning-record-edit-form record-id={routeScheduleId}
+                                        object-api-name={objectApiName}
+                                        onload={handleLoad}
+                                        onsubmit={handleVehicleSubmit}
+                                        onerror={handleError}
+                                        onsuccess={handleSuccess}
+                                        density={formDensity}
+                                        form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+                <div class="accel-form-theme_shade slds-p-around_large">
+                    <div if:true={showStencil}>
+                        <div class="slds-p-around_small">
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </div>
+                    </div>
+                    <div class={inputsClass}>
+
+                        <div if:true={formHelpMsg}
+                             class="slds-p-bottom_small">
+                            <div class="slds-grid">
+                                <div class="slds-col slds-size_11-of-12">
+                                    {formHelpMsg}
+                                </div>
+                                <div class="slds-col slds-text-align_right slds-size_1-of-12">
+                                    <lightning-button-icon icon-name="utility:close"
+                                                           onclick={handleCloseClicked}
+                                                           alternative-text="Close"
+                                                           title="Close">
+                                    </lightning-button-icon>
+                                </div>
+                            </div>
+                        </div>
+
+                        <lightning-input-field
+                                tabindex=0
+                                field-name="Vehicle__c"
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+
+                        <lightning-input-field
+                                field-name="Vehicle_License__c"
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+
+                        <lightning-input-field
+                                field-name="Assigned_Driver__c"
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+
+                        <lightning-input-field
+                                field-name="Starting_Vehicle_Milage__c"
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+                        <lightning-input-field
+                                if:true={showEndingMileage}
+                                required={allFieldsRequired}
+                                field-name="Ending_Vehicle_Milage__c"
+                                class="xslds-form-element_1-col">
+                        </lightning-input-field>
+                        <div class="slds-m-top_medium">
+                            <button
+                                    name="submitForm"
+                                    type="submit"
+                                    data-id="submitButton"
+                                    title="Save Vehicle Info"
+                                    style="padding:.30em"
+                                    class="slds-button slds-button_brand slds-button_stretch ">
+                                                <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                                <span style="font-size: 1.25em">Save</span>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+        </div>
+    </div>
+</template>

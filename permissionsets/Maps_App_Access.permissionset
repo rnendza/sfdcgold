@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <applicationVisibilities>
+        <application>Salesforce_Maps</application>
+        <visible>true</visible>
+    </applicationVisibilities>
+    <description>This is for access to the custom maps app and it&apos;s associated objects. It does not give outright access to the actual Maps app which shows live maps.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Maps App Access</label>
+</PermissionSet>

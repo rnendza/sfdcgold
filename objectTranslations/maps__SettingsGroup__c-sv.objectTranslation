@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Inställningsgruppen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En inställningsgrupp</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Inställningsgrupp</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Inställningsgrupperna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Inställningsgrupper</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Inställningsgrupper</value>
+    </caseValues>
+    <fields>
+        <label><!-- Allow Exports --></label>
+        <name>maps__AllowExports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Auto Checkout Enabled --></label>
+        <name>maps__AutoCheckOut__c</name>
+    </fields>
+    <fields>
+        <label><!-- Button Set --></label>
+        <name>maps__ButtonSet__c</name>
+        <relationshipLabel><!-- Maps Settings Groups --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Create Data Layers --></label>
+        <name>maps__CreateDataLayers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Off-Platform Processing Location --></label>
+        <name>maps__DataRegion__c</name>
+        <picklistValues>
+            <masterLabel>Europe</masterLabel>
+            <translation>Europa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North America</masterLabel>
+            <translation>Nordamerika</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Map Tile --></label>
+        <name>maps__DefaultMapTile__c</name>
+        <picklistValues>
+            <masterLabel>ESRI Imagery</masterLabel>
+            <translation>ESRI-bilder</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESRI Street</masterLabel>
+            <translation>ESRI-gata</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ESRI Topography</masterLabel>
+            <translation>ESRI-topografi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Hybrid</masterLabel>
+            <translation>Google Hybrid</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Road</masterLabel>
+            <translation>Google Road</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Satellite</masterLabel>
+            <translation>Google Satellite</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Google Terrain</masterLabel>
+            <translation>Google Terrain</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Default Values --></label>
+        <name>maps__DefaultValues__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Editable Tooltips --></label>
+        <name>maps__EditableTooltips__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable ArcGIS --></label>
+        <name>maps__EnableArcGIS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Enable Polyline --></label>
+        <name>maps__EnablePolyline__c</name>
+    </fields>
+    <fields>
+        <label><!-- Folder Admin --></label>
+        <name>maps__FolderAdmin__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Personal Folder --></label>
+        <name>maps__HidePersonalFolder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Mobile Tracking --></label>
+        <name>maps__LiveMobileTracking__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Export Size --></label>
+        <name>maps__MaxExportSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Query Size External Objs --></label>
+        <name>maps__MaxQuerySizeExternal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Query Size --></label>
+        <name>maps__MaxQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Mobile Query Size --></label>
+        <name>maps__MobileQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Object Search Language --></label>
+        <name>maps__ObjectSearchLanguage__c</name>
+        <picklistValues>
+            <masterLabel>SOQL</masterLabel>
+            <translation>SOQL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOSL</masterLabel>
+            <translation>SOSL</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Profile --></label>
+        <name>maps__Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proxy --></label>
+        <name>maps__ProxyUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Allow Self Hosted Data Creation --></label>
+        <name>maps__SelfHostedDataUser__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show User Folders --></label>
+        <name>maps__ShowUserFolders__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Weather --></label>
+        <name>maps__ShowWeather__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manage Territory Layer --></label>
+        <name>maps__TerritoryLayerCreation__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Settings Groups --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Namn på inställningsgrupp</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Workflow Field Updates --></label>
+        <name>footprint__Footprint_FieldUpdates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field usage per Record Type --></label>
+        <name>footprint__Footprint_Line_Item_rt__c</name>
+    </fields>
+    <fields>
+        <label><!-- API Name --></label>
+        <name>footprint__Footprint_Line_Items_APIName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom --></label>
+        <name>footprint__Footprint_Line_Items_Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Analysis --></label>
+        <name>footprint__Footprint_Line_Items_Object_Analysis__c</name>
+        <relationshipLabel><!-- Footprint Fields --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Populated On (%) --></label>
+        <name>footprint__Footprint_Line_Items_Populated_On_Perc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Populated On --></label>
+        <name>footprint__Footprint_Line_Items_Populated_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Properties --></label>
+        <name>footprint__Footprint_Line_Items_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Types --></label>
+        <name>footprint__Footprint_Line_Items_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Required --></label>
+        <name>footprint__Footprint_Line_Items_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>footprint__Footprint_Line_Items_Type__c</name>
+        <picklistValues>
+            <masterLabel>CheckBox</masterLabel>
+            <translation><!-- CheckBox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Number</masterLabel>
+            <translation><!-- Number --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Text</masterLabel>
+            <translation><!-- Text --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SObject --></label>
+        <name>footprint__Footprint_Line_Items_sObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Workflow Rules --></label>
+        <name>footprint__Footprint_WorkflowRules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reports --></label>
+        <name>footprint__Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Validation rules --></label>
+        <name>footprint__footprint_Validation_rules__c</name>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CL User Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CL User Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- FF To User Profile Name --></help>
+        <label><!-- Profile --></label>
+        <name>Profile__c</name>
+    </fields>
+    <fields>
+        <help><!-- Retains state of the toggle button in the app (match to asset.recordtype) --></help>
+        <label><!-- Selected Machine Type --></label>
+        <name>Selected_Machine_Type__c</name>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT</masterLabel>
+            <translation><!-- VGT --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- FF to User.IsActive --></help>
+        <label><!-- User Status --></label>
+        <name>User_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to the Standard User Record. (Must be CL Profile or Accel Super User Profile or Accel Regional Route Management Profile... or you must be an Admin To Override) --></help>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- CL User Settings --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

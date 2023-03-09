@@ -1,0 +1,251 @@
+<!-- Pa Advisory User Details -->
+<template>
+    <template if:true={visible}>
+        <div class="slds-container_small">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01"
+                     aria-modal="true" aria-describedby="modal-content-id-1"
+                     class="slds-modal slds-fade-in-open slds-modal_large">
+                <div class="slds-modal__container">
+                    <button
+                            name="cancel"
+                            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={hideModalBox}>
+                        <lightning-icon icon-name="utility:close"
+                                        alternative-text="close"
+                                        variant="inverse"
+                                        size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <header class="slds-modal__header accel-modal_header">
+                        <template if:true={headerIcon}>
+                            <lightning-icon
+                                    class="slds-float_left"
+                                    icon-name={headerIcon}
+                                    size="small">
+                            </lightning-icon>
+                        </template>
+                        <h2 data-id="title">
+                            <div class="slds-text-heading_large slds-hyphenate slds-text-title_bold">
+                                {modalTitle}
+                            </div>
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_small" id="modal-content-id-1"
+                         style="min-height: 350px;">
+                        <div if:true={showProgressBar}
+                             class="progress-center slds-p-bottom_small">
+                            <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+                        </div>
+                        <template if:true={showUserDetails}>
+                            <div data-id="userDetails">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-large-size_2-of-12 slds-medium-size_4-of-12 slds-small-size_1-of-1 accel-user-image-container">
+                                        <template if:true={paAdvisory.Has_Image__c}>
+                                            <div class="slds-text-title_bold slds-text-heading_large slds-p-bottom_x-small slds-p-top_small">
+                                                {paAdvisory.Full_Name__c}
+                                            </div>
+                                            <div>
+                                                <lightning-formatted-rich-text
+                                                        value={paAdvisory.Photo__c}>
+                                                </lightning-formatted-rich-text>
+                                            </div>
+                                            <div class="slds-p-top_small">
+                                                <div class="slds-text-heading_label slds-p-bottom_xx-small">
+                                                    <b>Description</b>
+                                                </div>
+                                                <div class="slds-text-body_small">
+                                                    <div>DOB: {paAdvisory.Birth_Date__c}</div>
+                                                    <div>SSN: {paAdvisory.SSN__c}</div>
+                                                    <div>Hair Color: {paAdvisory.Hair_Color__c}</div>
+                                                    <div>Eye Color: {paAdvisory.Eye_Color__c}</div>
+                                                    <div>Gender: {paAdvisory.Gender__c}</div>
+                                                    <div>Height: {paAdvisory.Height__c}</div>
+                                                    <template if:true={paAdvisory.Weight__c}>
+                                                        <div>Weight: {paAdvisory.Weight__c}</div>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template if:false={paAdvisory.Has_Image__c}>
+                                            <div class="slds-text-title_bold slds-p-bottom_xx-small">
+                                                {paAdvisory.Full_Name__c}
+                                            </div>
+                                            <div style="color:red">
+                                                NO IMAGE
+                                            </div>
+                                            <div class="slds-p-top_small">
+                                                <div class="slds-text-heading_label slds-p-bottom_xx-small">
+                                                    <b>Physical Description</b>
+                                                </div>
+                                                <div class="slds-text-body_small">
+                                                    <div>DOB: {paAdvisory.Birth_Date__c}</div>
+                                                    <div>SSN: {paAdvisory.SSN__c}</div>
+                                                    <div>Hair Color: {paAdvisory.Hair_Color__c}</div>
+                                                    <div>Eye Color: {paAdvisory.Eye_Color__c}</div>
+                                                    <div>Gender: {paAdvisory.Gender__c}</div>
+                                                    <div>Height: {paAdvisory.Height__c}</div>
+                                                    <template if:true={paAdvisory.Weight__c}>
+                                                        <div>Weight: {paAdvisory.Weight__c}</div>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="slds-col slds-large-size_10-of-12 slds-medium-size_8-of-12 slds-small-size_1-of-1 accel-user-data-container">
+                                        <div class="slds-grid slds-wrap">
+
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Docket #</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Docket_Number__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Advisory Date</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Advisory_Date__c}</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Advisory #</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Advisory_Number__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Request Date</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Request_Date__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Advisory type</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Advisory_Type__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Exclusion Period</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Exclusion_Period__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Removal Code</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {paAdvisory.Intake_Removal_Code__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Exclusion Type</b></span>
+                                                </div>
+                                                <div>
+                                                    <span>{paAdvisory.Exclusion_Type__c}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-border_top slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2
+                                                        slds-small-size_1-of-1 slds-p-top_x-small slds-m-top_small slds-p-bottom_x-small">
+                                                <div class="slds-text-heading_label">
+                                                    <b>Address</b>
+                                                </div>
+                                                <lightning-formatted-address
+                                                        title="Address"
+                                                        street={paAdvisory.Address_1__c}
+                                                        city={paAdvisory.City__c}
+                                                        province={paAdvisory.State_Code__c}
+                                                        postal-code={paAdvisory.Postal_Code__c}>
+                                                </lightning-formatted-address>
+                                            </div>
+                                            <div class="slds-border_top slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2
+                                                    slds-small-size_1-of-1 slds-p-top_x-small slds-m-top_small slds-p-bottom_x-small">
+                                                <div class="slds-text-heading_label">
+                                                    <b>Mobile Phone</b>
+                                                </div>
+                                                <lightning-formatted-phone
+                                                        title="Mobile Number"
+                                                        value={paAdvisory.Cell_Phone__c}>
+                                                </lightning-formatted-phone>
+                                                <template if:true={paAdvisory.Phone__c}>
+                                                    <div class="slds-text-heading_label slds-p-top_xx-small">
+                                                        <b>Phone</b>
+                                                    </div>
+                                                    <lightning-formatted-phone
+                                                            title="Phone Number"
+                                                            value={paAdvisory.Phone__c}>
+                                                    </lightning-formatted-phone>
+                                                </template>
+                                            </div>
+                                            <template if:true={paAdvisory.Comments__c}>
+                                                <div class="slds-col slds-size_1-of-1 slds-p-top_medium slds-border_top">
+                                                    <div class="slds-text-heading_label">
+                                                        <b>Comments</b>
+                                                    </div>
+                                                    <div>
+                                                        <lightning-formatted-rich-text
+                                                                value={paAdvisory.Comments__c}>
+                                                        </lightning-formatted-rich-text>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                            <template if:true={paAdvisory.Violations__c}>
+                                                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                                                    <div class="slds-text-heading_label">
+                                                        <b>Violations</b>
+                                                    </div>
+                                                    <div>
+                                                        <lightning-formatted-rich-text
+                                                                value={paAdvisory.Violations__c}>
+                                                        </lightning-formatted-rich-text>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                        <p if:true={showStencil}>
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer accel-modal_footer">
+                        <div class="slds-text-align_right" if:false={_isProcessing}>
+                            <lightning-button
+                                    if:true={cancelLabel}
+                                    variant={cancelVariant}
+                                    class="slds-m-right_medium"
+                                    name="cancel"
+                                    icon-name={cancelIconName}
+                                    data-id="cancel"
+                                    label={cancelLabel}
+                                    title={cancelLabel}
+                                    onclick={handleClick}>
+                            </lightning-button>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </template>
+</template>

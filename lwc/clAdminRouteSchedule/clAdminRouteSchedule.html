@@ -1,0 +1,114 @@
+<!-- Cl Admin Route Schedule -->
+<template>
+
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card"  onclick={handleOuterContainerClick}>
+        <lightning-card>
+            <h1 slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title
+                            card-title='Route Schedule Utils'
+                            card-title-style={cardTitleStyle}
+                            icon-name="custom:custom25"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </h1>
+            <div class="accel-test-borders slds-m-horizontal_x-small" >
+                <lightning-tabset variant="scoped" active-tab-value={_activeTabValue} class="accel-tab-set accel-scoped-tab-set">
+                    <lightning-tab
+                            icon-name="custom:custom25"
+                            onactive={handleTabClick}
+                            value="tab_schcreate"
+                            label="Create Schedule">
+                        <div>
+                            <div >
+                                <div class="slds-p-bottom_small slds-text-color_weak">
+                                    <lightning-icon icon-name="utility:info_alt" size="x-small"
+                                                    class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                                    Use this to create route schedules for <b>Fill Cycle #{scheduleNextCycle}</b>. A job will
+                                    be started
+                                    and Route Schedules (with Accounts) will be created based on the corresponding
+                                    route(s).<br/>
+                                    <!--                                <a href="#" onclick={handleNavToListView}>View All Route Schedules</a>-->
+                                </div>
+                                <div if:true={_isBatchJobRunning}>
+                                    <c-ui-custom-stencil
+                                            iterations="1"
+                                            child-class="slds-var-m-around_xxx-small"
+                                            type="list" columns="1">
+                                    </c-ui-custom-stencil>
+                                </div>
+                                <div if:false={_isBatchJobRunning}
+                                        class="slds-p-bottom_medium">
+                                    <div class="slds-grid slds-gutters slds-wrap">
+                                        <div class="slds-col slds-size_1-of-1">
+                                            <lightning-input
+                                                    onchange={handleRouteCollectionDateChange}
+                                                    value={_routeCollectionDate}
+                                                    label="Route Collection Date"
+                                                    type="date">
+                                            </lightning-input>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-1 slds-p-top_medium">
+                                            <lightning-input
+                                                    onchange={handleRouteFillDateChange}
+                                                    value={_routeFillDate}
+                                                    label="Route Fill Date"
+                                                    type="date">
+                                            </lightning-input>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-1 slds-align-bottom">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </lightning-tab>
+                </lightning-tabset>
+
+
+            </div>
+            <div slot="footer" >
+                <div if:true={showScopedMsg} class="slds-p-bottom_small">
+                    <c-ui-scoped-notification
+                            icon-name={scopedMsg.iconName}
+                            icon-variant={scopedMsg.iconVariant}
+                            custom-class={scopedMsg.customClass}
+                            custom-icon-size={scopedMsg.iconCustomSize}
+                            theme={scopedMsg.theme}
+                            dismissible={scopedMsg.dismissible}
+                            message={scopedMsg.message}>
+                    </c-ui-scoped-notification>
+                </div>
+                <div   if:true={showRouteSchCreateButton}>
+                    <button
+                            name="createRouteSchedules"
+                            onclick={handleRsCreateClick}
+                            data-id="rssSubmitButton"
+                            title="Fire Route Schedule Creation"
+                            style="padding:.15em"
+                            class="slds-button slds-button_brand accel-admin-button slds-button_stretch ">
+                        <span style="font-size: 1.05em;">Start Route Schedule Creation Job</span>
+                        <span class="slds-p-left_xx-small">
+                                        <lightning-icon
+                                                icon-name="utility:record_create"
+                                                alternative-text=""
+                                                size="x-small"
+                                                class="accel-record-create-icon-white"
+                                                title="">
+                                        </lightning-icon>
+                                    </span>
+                    </button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+    <c-cl-event-subscriber
+            onjobprocessing={handleBatchJobStatusProcessing}
+            onjobcomplete={handleBatchJobStatusComplete}>
+    </c-cl-event-subscriber>
+
+</template>

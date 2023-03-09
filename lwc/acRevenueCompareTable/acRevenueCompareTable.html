@@ -1,0 +1,141 @@
+<!-- Ac Revenue Compare Table -->
+<template>
+    <div data-id="widthMeasurement"></div>
+    <div class="slds-p-bottom--medium slds-p-left--xx-small accel-box-header">
+        <div class="slds-grid slds-wrap" style="margin-right:15px">
+            <div class="slds-col slds-large-size_5-of-6 slds-small-size--4-of-5  slds-medium-size--4-of-6">
+                <h3>
+                    <lightning-icon icon-name="standard:related_list"
+                                    size={headerIconSize}
+                                    class="slds-m-right_xx-small">
+                    </lightning-icon>
+                    <span>
+                    {tableHeader}
+                    </span>
+                </h3>
+            </div>
+            <div class="slds-col slds-large-size_1-of-6 slds-small-size--1-of-5  slds-medium-size--2-of-6 ">
+                <template if:false={displayNoDataMsg}>
+                    <div style="text-align: right">
+                        <button onclick={handleDownload} title="Click to download csv export"
+                                class="slds-button slds-button_neutral accel-csv-download-button accel-hide-0-to-767">
+                        <span class="" style="margin-right:5px;">Download</span>
+                            <lightning-icon class="accel-csv-download-button" icon-name="utility:download"
+                                            size="xx-small">
+                            </lightning-icon>
+                        </button>
+                        <span onclick={handleDownload} title="Click to download csv export">
+                            <lightning-icon class="accel-csv-download-button accel-hide-768-up" icon-name="utility:download"
+                                            size="xx-small">
+                            </lightning-icon>
+                        </span>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </div>
+    <template if:false={displayNoDataMsg}>
+        <!-- DESKTOP Version not displayed 0-1224 -->
+        <template if:true={showBigDatatable}>
+            <div>
+                <lightning-datatable
+                        class="accel-chrome-hardware-acceleration accel-datatable-styled accel-datatable-compact slds-no-row-hover"
+                        data={tableData}
+                        columns={tableColumns}
+                        sorted-by={sortBy}
+                        sorted-direction={sortDirection}
+                        onsort={handleSortClick}
+                        key-field="Name"
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </div>
+        </template>
+        <!-- MOBILE / TABLET not displayed 1224 and up.-->
+        <template if:true={showSmallDatatable}>
+            <div class="">
+                <section>
+                    <div class="accel-table__wrapper">
+                        <table class="table accel-chrome-hardware-acceleration"
+                               summary="Location Share Change">
+                            <thead>
+                            </thead>
+                            <tbody>
+                            <template iterator:tablerow={tableData}>
+                                <!---
+                                @TODO formatting should be dynamic based on type of data! also iterate col data for dyn display
+                                or really just created accel-mobile-datatable or something so we can share the columns
+                                and data from the lightning-datatable
+                                -->
+                                <tr key={tablerow.value.address}>
+                                    <th scope="row">{tablerow.value.dbaName}</th>
+                                    <td data-header="Address"><p>{tablerow.value.address}</p></td>
+                                    <td data-header="City"><p>{tablerow.value.city}</p></td>
+                                    <td data-header={month1FundsInLabel}>
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.startDateFundsIn}
+                                                                        format-style="currency"
+                                                                        currency-code="USD">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                    <td data-header={month2FundsInLabel}>
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.endDateFundsIn}
+                                                                        format-style="currency"
+                                                                        currency-code="USD">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                    <td data-header="Funds In % Change">
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.fundsInPctChange}
+                                                                        maximum-fraction-digits="2"
+                                                                        format-style="percent">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                    <td data-header={month1LocShareInLabel}>
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.startDateLocShare}
+                                                                        format-style="currency"
+                                                                        currency-code="USD">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                    <td data-header={month2LocShareInLabel}>
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.endDateLocShare}
+                                                                        format-style="currency"
+                                                                        currency-code="USD">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                    <td data-header="Loc Share % Change" class={tablerow.value.showClass}>
+                                        <p>
+                                            <lightning-formatted-number value={tablerow.value.locSharePctChange}
+                                                                        maximum-fraction-digits="2"
+                                                                        format-style="percent">
+                                            </lightning-formatted-number>
+                                        </p>
+                                    </td>
+                                </tr>
+                            </template>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+            </div>
+        </template>
+    </template>
+    <template if:true={displayNoDataMsg}> <!-- @TODO make this a component -->
+        <div class="slds-box">
+            <div class="slds-inline_icon_text slds-grid slds-inline_icon_text--warning">
+                <lightning-icon icon-name="utility:warning" variant="warning" size="small">
+                </lightning-icon>
+                <div class="slds-col slds-align-middle slds-p-left--medium">
+                    <p>No location data found for filters applied. </p>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,31 @@
+<!-- Accel Admin Users Container -->
+<template>
+
+    <lightning-tabset variant="default"
+                      active-tab-value={_activeTabValue}>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-tab'
+                icon-name="standard:omni_supervisor"
+                value="tab_utils_auth_sessions"
+                label="User Sessions">
+            <c-accel-auth-session
+                    hide-card-title="true"
+                    debug-console={debugConsole}
+                    show-assistance={showAssistance}>
+            </c-accel-auth-session>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-tab'
+                icon-name="custom:custom76"
+                value="tab_utils_logins"
+                label="User Logins">
+            <c-accel-login-histories
+                    debug-console={debugConsole}
+                    hide-card-title="true">
+            </c-accel-login-histories>
+        </lightning-tab>
+    </lightning-tabset>
+
+</template>

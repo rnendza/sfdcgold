@@ -1,0 +1,51 @@
+<!-- Cl Footer -->
+<template>
+    <!--- display is intentionally delayed by 2 seconds to wait for content container to display -->
+    <div    if:true={_displayFooter}
+            class="accel-footer-container slds-p-around_x-small">
+        <div    if:true={_showMaintenanceFooterMsg}
+                class="slds-grid slds-wrap slds-p-horizontal_small slds-p-bottom_small">
+            <div class="slds-col slds-size_1-of-1">
+                <c-ui-scoped-notification
+                    icon-name="utility:warning"
+                    icon-variant="inverse"
+                    custom-class="accel-notification_small accel-notification-warning_theme slds-theme_alert-texture"
+                    custom-icon-size="x-small"
+                    theme="warning"
+                    message={_maintFooterMsg}>
+                </c-ui-scoped-notification>
+            </div>
+        </div>
+        <div class="slds-grid slds-wrap">
+            <div class="slds-col slds-large-size_8-of-12 slds-medium-size_10-of-12 slds-small-size_1-of-2">
+                <div    if:true={userProfileMsg}
+                        class="accel-light-text accel-footer-text slds-p-left_small">
+                    <div if:true={displayProfileWarningText}>
+                        <lightning-icon
+                                icon-name='utility:info'
+                                size="x-small"
+                                class="slds-p-right_x-small"
+                                alternative-text="Information">
+                        </lightning-icon>
+                        {userProfileMsg}
+                        <lightning-icon
+                                icon-name="utility:close"
+                                class="slds-p-left_xx-small"
+                                size="x-small"
+                                alternative-text="Close"
+                                onclick={handleDismissWarningText}>
+                        </lightning-icon>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-large-size_2-of-12 slds-max-medium-hide slds-max-small-hide">
+            </div>
+            <div class="slds-col slds-large-size_2-of-12 slds-medium-size_2-of-12 slds-small-size_1-of-2 slds-text-align_right ">
+                <div    if:true={appVersion}
+                        class="accel-light-text accel-footer-text slds-p-right_small">
+                    {appVersion}
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

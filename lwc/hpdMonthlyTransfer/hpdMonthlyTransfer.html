@@ -1,0 +1,217 @@
+<template>
+    <c-lightning-app-style-overrides ></c-lightning-app-style-overrides>
+    <div lwc:dom="manual" class="tab-theme-overrides-class"></div>
+
+    <lightning-tabset class="accel-secondary-tab-set"
+                      active-tab-value={activeTabValue}>
+        <lightning-tab label="Execute" class="c3llc-autocomplete-tab"
+                       value="Execute"
+                       icon-name="standard:work_queue"
+                       onactive={handleTabSelect}>
+            <div class="slds-p-horizontal--medium">
+                <div class="slds-grid slds-gutters_direct-medium slds-wrap">
+                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--8-of-12 slds-wrap">
+                        <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                            <div class={autocompleteContainerClass}>
+                                <div class="">
+                                    <c-record-autocomplete
+                                            s-object-api-name='Account'
+                                            option-icon-name="standard:account"
+                                            custom-id="sourceAccountRecordComplete"
+                                            primary-display-field='Name'
+                                            secondary-display-field-is-address-field="true"
+                                            secondary-display-field='ShippingAddress'
+                                            secondary-display-field-address-property-1="street"
+                                            secondary-display-field-address-property-2="city"
+                                            secondary-display-field-address-property-3="state"
+                                            primary-filter-field='Name'
+                                            secondary-filter-field="ShippingStreet"
+                                            additional-where-criteria={sourceAccountWhereCriteria}
+                                            search-label={sourceAccountInputLabel}
+                                            onrecordselected={handleSourceAccountSelected}
+                                            min-characters="1"
+                                            input-style={_inputStyle}
+                                            label-class="c3llc-wizard-form-labels"
+                                            customautofocus="true"
+                                            trigger-focus={triggerFirstInputFocus}
+                                            customrequired="true"
+                                            place-holder='Enter account name'>
+                                    </c-record-autocomplete>
+                                </div>
+                            </div>
+                            <div class={toggleContainerClass} >
+                                <div class="slds-grid slds-gutters">
+                                    <div class="slds-col slds-size--1-of-2">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label c3llc-wizardxxx-form-labels"
+                                                   for="commitToggle">
+                                                <lightning-formatted-rich-text
+                                                        value={commitToggleLabel}></lightning-formatted-rich-text>
+                                            </label>
+                                            <lightning-input type="toggle" label="" variant="label-hidden"
+                                                             value={commitTrans}
+                                                             onchange={handleCommitToggleChange}
+                                                             data-id="commitToggle">
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-2">
+                                        <div class="slds-form-element">
+                                            <label class="slds-form-element__label c3llcxxxx-wizard-form-labels"
+                                                   for="chainToggle">
+                                                <lightning-formatted-rich-text
+                                                        value={chainToggleLabel}></lightning-formatted-rich-text>
+                                            </label>
+                                            <lightning-input type="toggle" label="" variant="label-hidden"
+                                                             value={chainBatchJobs}
+                                                             onchange={handleChainToggleChange}
+                                                             data-id="chainToggle">
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class={autocompleteContainerClass}>
+                                <div class="">
+                                    <c-record-autocomplete
+                                            custom-id="targetAccountRecordComplete"
+                                            s-object-api-name='Account'
+                                            option-icon-name="standard:account"
+                                            primary-display-field='Name'
+                                            secondary-display-field-is-address-field=true
+                                            secondary-display-field='ShippingAddress'
+                                            secondary-display-field-address-property-1="street"
+                                            secondary-display-field-address-property-2="city"
+                                            secondary-display-field-address-property-3="state"
+                                            primary-filter-field='Name'
+                                            custom-required="true"
+                                            secondary-filter-field="ShippingStreet"
+                                            additional-where-criteria={targetAccountWhereCriteria}
+                                            search-label={targetAccountInputLabel}
+                                            onrecordselected={handleTargetAccountSelected}
+                                            min-characters="1"
+                                            input-style={_inputStyle}
+                                            customrequired="true"
+                                            label-class="c3llc-wizard-form-labels"
+                                            place-holder='Enter account name'>
+                                    </c-record-autocomplete>
+                                </div>
+                            </div>
+                            <div class={toggleContainerClass}>
+                                <lightning-slider
+                                        label="Job Batch Size"
+                                        step="1"
+                                        max="50"
+                                        min="1"
+                                        size="large"
+                                        value={batchSize}
+                                        onchange={handleSliderChangeBatchSize}>
+                                </lightning-slider>
+
+                            </div>
+                            <div    if:true={profileNames}
+                                    class={autocompleteContainerClass}>
+                                <c-record-autocomplete
+                                        custom-id="userRecordComplete"
+                                        s-object-api-name='User'
+                                        option-icon-name="standard:user"
+                                        primary-display-field='Name'
+                                        secondary-display-field='Email'
+                                        primary-filter-field='Name'
+                                        additional-where-criteria={userEmailWhereCriteria}
+                                        search-label={userEmailInputLabel}
+                                        onrecordselected={handleUserEmailSelected}
+                                        default-selected={defaultUserIdSelected}
+                                        min-characters="1"
+                                        preload-results="true"
+                                        max-rows="500"
+                                        customrequired="true"
+                                        input-style={_inputStyle}
+                                        label-class="c3llc-wizard-form-labels"
+                                        place-holder='Enter user name' >
+                                </c-record-autocomplete>
+
+                            </div>
+                            <div class={toggleContainerClass}>
+                                <lightning-slider
+                                        label="Job Status Refresh Interval (seconds)"
+                                        step=".5"
+                                        max="20"
+                                        min=".5"
+                                        size="large"
+                                        value={statusRefreshInterval}
+                                        onchange={handleSliderChangeRefreshInterval}>
+                                </lightning-slider>
+                            </div>
+                            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--1-of-1 slds-p-top_xx-large">
+                                <div class="slds-p-top--small">
+                                    <button onclick={handleExecute} style="padding: 3px"
+                                            class="slds-button slds-button_success slds-button_stretch">
+                                        <span style="color:black;font-weight: bold;font-size: 1.25em">Transfer HPD</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-1 slds-large-size--4-of-12 slds-p-top--small">
+                        <div style="min-height: 300px">
+                            <c-hpd-transfer-assistance
+                                    all-form-fields-valid={allValid}
+                                    source-account-selected={sourceAccountSelected}
+                                    target-account-selected={targetAccountSelected}
+                                    user-was-selected={userWasSelected}
+                                    user-selected={userSelected}
+                                    commit-trans={commitTrans}
+                                    onpreviewhelpfile={navigateToHelpVideo}
+                                    ontoggleadvancedform={handleToggleAdvancedForm}>
+                            </c-hpd-transfer-assistance>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </lightning-tab>
+
+            <lightning-tab label="Check Status"
+                           value="Job Status"
+                           data-id="jobStatusTab"
+                           icon-name="standard:report"
+                           onactive={handleTabSelect}>
+                <div class="slds-p-horizontal--medium">
+                    <c-batch-jobs-status
+                            if:true={displayBatchStatus}
+                            recipient-email-user-id={recipientEmailUserId}
+                            job-params={jobParams}
+                            job-id={batchId}
+                            async-job-name={asyncJobName}
+                            batch-status-refresh-interval={statusRefreshInterval}
+                            chain-batch-jobs={chainBatchJobs}
+                            batch-job-triggered={batchJobTriggered}
+                            show-batch-job-help-section="false"
+                            apex-class-names={apexClassNames}
+                            onalljobscompleted={handleAllJobsCompleted} >
+                        <div slot="jobCompletedData">
+                            <c-hpd-monthly-transfer-completed-data
+                                    if:true={showCompletedData}
+                                    completed-account-id={completedAccountId} >
+                            </c-hpd-monthly-transfer-completed-data>
+                        </div>
+                        <div slot="jobResultsAssistance">
+                            <ul class="slds-list_dotted">
+                                <li if:true={chainBatchJobs} class="c3llc-li-container">
+                                    You have chosen to chain batch jobs so you will see multiple job results.
+                                </li>
+                                <li class="c3llc-li-container" if:true={fullUserSelected}>
+                                    Detailed results have been sent to {fullUserSelected.Email}
+                                </li>
+                                <li class="c3llc-li-container" if:true={fullUserSelected}>
+                                    If any failures occur, they will be included in the email.
+                                </li>
+                            </ul>
+                        </div>
+                    </c-batch-jobs-status>
+                </div>
+            </lightning-tab>
+
+    </lightning-tabset>
+</template>

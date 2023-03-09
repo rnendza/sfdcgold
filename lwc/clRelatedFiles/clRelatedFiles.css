@@ -1,0 +1,18 @@
+.accel-test-borders {border:1px dotted red}
+.accel-dt-container {
+    background-color: rgb(203 204 206 / 23%);
+}
+:host {
+    --sds-c-card-color-background: rgb(203 204 206 / 23%);
+    --sds-c-card-color-border: black;
+    --sds-c-card-sizing-border:1px;
+
+}
+.accel-file-uploader {
+    --sds-c-button-neutral-color-background: rgb(1,118,211);
+    --sds-c-button-text-color: white;
+    --sds-c-button-line-height:2.25rem;
+}
+.accel-files-card {
+    display: block;
+}

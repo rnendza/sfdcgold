@@ -1,0 +1,51 @@
+<!--
+ - Specifically for Inventory_Request__c.Account__c (A lookup field) but to surface it as
+ - native html select with default selected options and mobile support for use in a w.
+ -->
+<aura:component
+        implements="lightning:availableForFlowScreens" access="global"
+        controller="InventoryRequestController"
+        description="auraIrAccountSelect - Populate Inventory_Request__c.Account__c values filtered by RT = Warehouse">
+
+    <aura:attribute name="options" type="List" access="PRIVATE"/>
+
+    <aura:attribute name="fieldHelpText" type="String" access="global" default="Select an Account"/>
+    <aura:attribute name="showFieldHelp" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="selectedValue" type="String" access="global"/>
+    <aura:attribute name="defaultSelectedAccountName" type="String" access="Global" default="Accel Entertainment - HQ" />
+    <aura:attribute name="defaultSelectedValue" type="String" access="global" default="0017A00000VBG7tQAH"
+                    description="deprecated in favor of defaultselectedAccountName!"/>
+    <aura:attribute name="required" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="disabled" type="Boolean" access="global" default="true"/>
+    <aura:attribute name="debugConsole" type="Boolean" access="global" default="false"/>
+    <aura:attribute name="fieldLabel" type="String" access="global" default="Account"/>
+
+    <aura:attribute name="accountWhereCriteria" type="String" access="global"
+                    default="RecordType.DeveloperName = 'Warehouse'"/>
+    <aura:attribute name="focusFirstFormField"  type="Boolean" default="false" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="slds-p-bottom--large slds-p-top--medium">
+        <div style="position:relative;">
+            <aura:if isTrue="{!v.showFieldHelp}">
+                <lightning:helptext class="accel-helptext-popover" content="{!v.fieldHelpText}"/>
+            </aura:if>
+            <lightning:select name="accountSelect" aura:id="accountSelect"
+                              onchange="{!c.handleOnChange}"
+                              required="{!v.required}"
+                              label="{!v.fieldLabel}"
+                              value="{!v.selectedValue}"
+                              disabled="{!v.disabled}">
+                <aura:iteration items="{!v.options}" var="option">
+                    <option text="{!option.label}" value="{!option.value}" selected="{!option.selected}"/>
+                </aura:iteration>
+            </lightning:select>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 이벤트</value>
+    </caseValues>
+    <fields>
+        <help>내부 사용</help>
+        <label><!-- Correlation Id --></label>
+        <name>maps__CorrelationId__c</name>
+    </fields>
+    <fields>
+        <help>이벤트 및 규칙과 관련된 장치</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>입력 날짜 및 시간</help>
+        <label><!-- Entry Date Time --></label>
+        <name>maps__EntryDateTime__c</name>
+    </fields>
+    <fields>
+        <help>입력 위치의 위치</help>
+        <label><!-- Entry Position --></label>
+        <name>maps__EntryPosition__c</name>
+    </fields>
+    <fields>
+        <help>끝내기 날짜 및 시간</help>
+        <label><!-- Exit Date Time --></label>
+        <name>maps__ExitDateTime__c</name>
+    </fields>
+    <fields>
+        <help>끝내기 위치의 위치</help>
+        <label><!-- Exit Position --></label>
+        <name>maps__ExitPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>만든 이벤트의 레코드 유형</help>
+        <label><!-- Live Event Type --></label>
+        <name>maps__LiveEventType__c</name>
+        <picklistValues>
+            <masterLabel>Enters</masterLabel>
+            <translation>입력</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exits</masterLabel>
+            <translation>끝내기</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>이벤트를 만든 IoT 장치 조회</help>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>외부 규칙 ID</help>
+        <label><!-- Rule Id --></label>
+        <name>maps__RuleId__c</name>
+    </fields>
+    <fields>
+        <help>이 규칙에 대한 이름 또는 레이블</help>
+        <label><!-- Rule Name --></label>
+        <name>maps__RuleName__c</name>
+    </fields>
+    <fields>
+        <help>지오펜스 내에서 소비한 시간(시간)</help>
+        <label><!-- Time Spent in Geofence (Hours) --></label>
+        <name>maps__TimeSpentinGeofenceHours__c</name>
+    </fields>
+    <fields>
+        <help>지오펜스 내에서 소비한 시간(분)</help>
+        <label><!-- Time Spent in Geofence (Minutes) --></label>
+        <name>maps__TimeSpentinGeofenceMinutes__c</name>
+    </fields>
+    <nameFieldLabel>Maps 실시간 이벤트 이름</nameFieldLabel>
+</CustomObjectTranslation>

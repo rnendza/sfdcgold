@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Uputa za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Upute za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Uputu za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Upute za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Upute za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Uputa za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Uputi za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Uputama za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Uputom za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Uputama za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Uputi za raspoređivanje</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Uputama za raspoređivanje</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FSL__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>FSL__Criteria__c</name>
+        <relationshipLabel><!-- Scheduling Recipes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>FSL__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Behavior --></label>
+        <name>FSL__Expected_Behavior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Known Location Threshold --></label>
+        <name>FSL__LKL_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Actions --></label>
+        <name>FSL__Post_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>FSL__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Specific --></label>
+        <name>FSL__Scenario_Specific__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Type --></label>
+        <name>FSL__Scenario_Type__c</name>
+        <picklistValues>
+            <masterLabel>Overlap (Post-Emergency Scheduling)</masterLabel>
+            <translation>Preklapanje (raspoređivanje nakon slučaja hitnosti)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlap (SA Lengthened)</masterLabel>
+            <translation>Preklapanje (uslužna obveza produljena)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Canceled</masterLabel>
+            <translation>Uslužna obveza otkazana</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Shortened</masterLabel>
+            <translation>Uslužna obveza skraćena</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Scheduling Recipes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Semi Automated --></label>
+        <name>FSL__Semi_Automated__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naziv uputa za raspoređivanje</nameFieldLabel>
+</CustomObjectTranslation>

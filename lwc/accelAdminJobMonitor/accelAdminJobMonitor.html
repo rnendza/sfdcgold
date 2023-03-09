@@ -1,0 +1,49 @@
+<!-- Accel Admin Job Monitor -->
+<template>
+    <div class="slds-grid slds-wrap slds-gutters_direct-x-small">
+        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+            <c-geo-tab-schedule-maint
+                    card-title="GPS - BlueArrow"
+                    card-subtitle=""
+                    card-icon-name="standard:location"
+                    debug-console="true"
+                    job-card-body-style="min-height:150px"
+                    show-assistance={showGeoAssistance}>
+            </c-geo-tab-schedule-maint>
+        </div>
+        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+            <c-pa-advisory-schedule-maint
+                    card-title="Advisories"
+                    card-subtitle=""
+                    debug-console="true"
+                    job-card-body-style="min-height:150px"
+                    show-assistance="false">
+            </c-pa-advisory-schedule-maint>
+        </div>
+        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-top_small">
+            <c-app-log-schedule-maint
+                    card-title="App Log Pruning Jobs"
+                    debug-console="true"
+                    job-card-body-style="min-height:150px">
+            </c-app-log-schedule-maint>
+        </div>
+        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-top_small">
+            <c-fsl-schedule-maint
+                    card-title="FSL Jobs"
+                    card-subtitle=""
+                    debug-console="true"
+                    job-card-body-style="min-height:150px"
+                    show-assistance="false">
+            </c-fsl-schedule-maint>
+        </div>
+        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-top_small">
+                <c-cl-schedule-maint
+                        card-title="Cash Logistics Jobs"
+                        card-subtitle=""
+                        debug-console="true"
+                        job-card-body-style="min-height:150px"
+                        show-assistance="false">
+                </c-cl-schedule-maint>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,633 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>These are the users associated to a Advanced Route template.
+This object holds information needed to route the user</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>false</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>maps__AdvRouteTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is the associated Advanced Route template for the user</description>
+        <externalId>false</externalId>
+        <label>Maps Advanced Route Template</label>
+        <referenceTo>maps__AdvRouteTemplate__c</referenceTo>
+        <relationshipLabel>Maps Advanced Route Template Users</relationshipLabel>
+        <relationshipName>AdvRouteTemplateUsers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__AsyncApexJobId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the job id for the asyncronous apex processing</description>
+        <externalId>false</externalId>
+        <label>Async Apex Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__AutomaticOpStartsOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the date that the automatic optimization will start reoptimizing on.</description>
+        <externalId>false</externalId>
+        <label>Automatic Op Starts On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__BaseUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the base salesforce url; used in email templates</description>
+        <externalId>false</externalId>
+        <formula>maps__AdvRouteTemplate__r.maps__BaseUrl__c</formula>
+        <label>Base Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CurrentJobAttempts__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is to track how many times the current day has been attempted to route</description>
+        <externalId>false</externalId>
+        <label>Current Job Attempts</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CurrentProcessingStatusBulk__c</fullName>
+        <deprecated>false</deprecated>
+        <description>These are the bulk processing statuses</description>
+        <externalId>false</externalId>
+        <label>Current Processing Status Bulk</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Available For Submission</fullName>
+                    <default>true</default>
+                    <label>Available For Submission</label>
+                </value>
+                <value>
+                    <fullName>Next Working Day Submitted</fullName>
+                    <default>false</default>
+                    <label>Next Working Day Submitted</label>
+                </value>
+                <value>
+                    <fullName>Building Route Request Needs Processing</fullName>
+                    <default>false</default>
+                    <label>Building Route Request Needs Processing</label>
+                </value>
+                <value>
+                    <fullName>Building Route Request</fullName>
+                    <default>false</default>
+                    <label>Building Route Request</label>
+                </value>
+                <value>
+                    <fullName>Routing Poll Submitted</fullName>
+                    <default>false</default>
+                    <label>Routing Poll Submitted</label>
+                </value>
+                <value>
+                    <fullName>Next Working Day Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Next Working Day Not Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__CurrentProcessingStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is used to determine where we are in the process and rather or not we need to kick off the next step.</description>
+        <externalId>false</externalId>
+        <label>Current Processing Status</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Object Priorities Submitted</fullName>
+                    <default>false</default>
+                    <label>Object Priorities Submitted</label>
+                </value>
+                <value>
+                    <fullName>Object Priorities Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Object Priorities Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Routing Submitted</fullName>
+                    <default>false</default>
+                    <label>Routing Submitted</label>
+                </value>
+                <value>
+                    <fullName>Routing Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Routing Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Routing Poll Submitted</fullName>
+                    <default>false</default>
+                    <label>Routing Poll Submitted</label>
+                </value>
+                <value>
+                    <fullName>Routing Poll Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Routing Poll Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Next Working Day Submitted</fullName>
+                    <default>false</default>
+                    <label>Next Working Day Submitted</label>
+                </value>
+                <value>
+                    <fullName>Next Working Day Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Next Working Day Not Submitted</label>
+                </value>
+                <value>
+                    <fullName>Available For Submission</fullName>
+                    <default>true</default>
+                    <label>Available For Submission</label>
+                </value>
+                <value>
+                    <fullName>Geocoding Submitted</fullName>
+                    <default>false</default>
+                    <label>Geocoding Submitted</label>
+                </value>
+                <value>
+                    <fullName>Geocoding Not Submitted</fullName>
+                    <default>false</default>
+                    <label>Geocoding Not Submitted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__CurrentTemplateRangeStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the start date of the current template range for a repeating template</description>
+        <externalId>false</externalId>
+        <label>Current Template Range Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__DateProcessing__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the date that is currently being routed</description>
+        <externalId>false</externalId>
+        <label>Date Processing</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__DeletePreviousRouteData__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is used to delete previous advanced route generated output when reoptimizing</description>
+        <externalId>false</externalId>
+        <label>Delete Previous Route Data</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__JobSubmittedAt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field tracks the last time a job was submitted</description>
+        <externalId>false</externalId>
+        <label>Job Submitted At</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__KillRouteGeneration__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This boolean will be set to true if we need to kill the routing process for this template user</description>
+        <externalId>false</externalId>
+        <label>Kill Route Generation</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__LastAutoOptimizationRunAt__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Last Auto Optimization Run At</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__LastFailedJobError__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to hold the last failed job&apos;s error of the routing job to be displayed in an email template</description>
+        <externalId>false</externalId>
+        <label>Last Failed Job Error</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__LastJobStoppedStatus__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to hold the last stopped job status of the routing job to be displayed in an email template</description>
+        <externalId>false</externalId>
+        <label>Last Job Stopped Status</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__LastLocation__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the last location registered by the user.  Used when routing the partial day from last location.</description>
+        <displayLocationInDecimal>true</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Last Location</label>
+        <required>false</required>
+        <scale>15</scale>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>maps__LastOptimizationRunAt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the last time that a route optimization was run</description>
+        <externalId>false</externalId>
+        <label>Last Optimization Run At</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__LastOptimizationSucceededAt__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field tracks the last time a job was submitted and it was successful</description>
+        <externalId>false</externalId>
+        <label>Last Optimization Succeeded At</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>maps__NeedsDeleting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This will flag a template user for batch deletion</description>
+        <externalId>false</externalId>
+        <label>Needs Deleting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__NextEmailId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the id of the next email to send out</description>
+        <externalId>false</externalId>
+        <label>Next Email Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__OptimizeFromCurrentTime__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This flag lets us know if we are optimizing from the current time or the next day</description>
+        <externalId>false</externalId>
+        <label>Optimize From Current Time</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__ProcessRoutingNeeded__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This is a checkbox to let us know that the Queue Routing Batch needs to process this user</description>
+        <externalId>false</externalId>
+        <label>Process Routing Needed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__ProfileId__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Profile Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__ReadyForUse__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox determines if the template user is ready for the user to input their data and is also used to determine if the user is ready for routing</description>
+        <externalId>false</externalId>
+        <label>Ready for Use</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__RoutingJobId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the job id for the current route processing</description>
+        <externalId>false</externalId>
+        <label>Routing Job Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__RoutingStartedOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>this is the date that the current reoptimization started on</description>
+        <externalId>false</externalId>
+        <label>Routing Started On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__SendCompletionEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Send Completion Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__SendNextEmail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This lets us know if we need to send out an email</description>
+        <externalId>false</externalId>
+        <label>Send Next Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__StopRoutingOnDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the date that the current route process should generate till</description>
+        <externalId>false</externalId>
+        <label>Stop Routing on Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__UserEmail__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the email of the associated user</description>
+        <externalId>false</externalId>
+        <label>User Email</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__UserFirstName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the first name of the associated user</description>
+        <externalId>false</externalId>
+        <label>User First Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__UserLastName__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the last name of the associated user</description>
+        <externalId>false</externalId>
+        <label>User Last Name</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__UserTimeZoneKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the time zone key of the associated user</description>
+        <externalId>false</externalId>
+        <label>User Time Zone Key</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is the user associated to the template</description>
+        <externalId>false</externalId>
+        <label>User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>AdvRouteTemplateUsers</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Maps Advanced Route Template User</label>
+    <nameField>
+        <label>Maps Advanced Route Template User Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Maps Advanced Route Template Users</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

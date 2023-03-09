@@ -1,0 +1,42 @@
+<!--
+== Ui Card Title ==
+General slds card title slot used in preference of <lightning-card title="xzy">
+to allow for more content / formatting.
+-->
+<template>
+    <div class="slds-grid accel-test-borders"   onmousedown={handleBackClick} tabindex="-1">
+        <!--
+              If show back button passed in as true, the back button will display as opposed to the standard
+              card icon parent cmp handles the click and nav based on a custom evt fired upwards.
+        -->
+        <div class="slds-col accel-test-borders">
+            <lightning-icon if:false={showBackButton}
+                            icon-name={iconName}
+                            size={iconSize} class={iconClass}>
+            </lightning-icon>
+            <span if:true={showBackButton}
+                  class={backButtonClass}
+                  style={backButtonStyle}>
+                <a href=""
+                   title={backButtonLabel}>
+                    <lightning-icon
+                        size="x-small"
+                        class=""
+                        icon-name="action:back">
+                    </lightning-icon>
+                </a>
+            </span>
+        </div>
+        <div class="slds-col accel-test-borders">
+            <!-- card title required -->
+            <div class="slds-p-left_x-small accel-test-borders" style={cardTitleStyle}>{cardTitle}</div>
+            <!-- all the below dynamic based on what the parent cmp desires -->
+            <div class="slds-p-left_small accel-test-borders">
+                <span if:true={cardSubtitle} class={subTitleTextClass} style={subTitleTextStyle}>{cardSubtitle}</span>
+                <span if:true={cardSecondSubtitle} class={subTitleTextClass} style={subTitleTextStyle}><br/>{cardSecondSubtitle}</span>
+                <span if:true={cardThirdSubtitle} class={subTitleTextClass} style={subTitleTextStyle}><br/>{cardThirdSubtitle}</span>
+                <span if:true={cardFourthSubtitle} class={subTitleTextClass} style={subTitleTextStyle}><br/>{cardFourthSubtitle}</span>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>County</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Counties</value>
+    </caseValues>
+    <fields>
+        <help><!-- Geo Point (Centroid) field Split into lat / long --></help>
+        <label><!-- County Center Point --></label>
+        <name>County_Center_Point__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Covid Region that this county is associated with. If Not Illinois, Defaults to a bucket Covid Region --></help>
+        <label><!-- Covid Region --></label>
+        <name>Covaid_Region__c</name>
+        <relationshipLabel><!-- Counties --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The General Description of the Covid Region --></help>
+        <label><!-- Covid Region Desc --></label>
+        <name>Covid_Region_Desc__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Federal Information Processing Standard Publication 6-4 (FIPS 6-4). This helps to uniquely ID a county with state being the first 2 digits and county the last three --></help>
+        <label><!-- FIPS --></label>
+        <name>FIPS_Text__c</name>
+    </fields>
+    <fields>
+        <help><!-- The numeric version of FIPS (SFDC Will insert commas in number fields so you might want to go with the text version (labeled just FIPS) for display. --></help>
+        <label><!-- FIPS (Numeric) --></label>
+        <name>FIPS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Gaming Mitigation Status as determined by the counties covid region. --></help>
+        <label><!-- Gaming Shut Down --></label>
+        <name>Gaming_Shut_Down__c</name>
+    </fields>
+    <fields>
+        <help><!-- The polygon coordinates of the county. --></help>
+        <label><!-- Geo Shape Boundary --></label>
+        <name>Geo_Shape_Boundary__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total number of accounts within this county. --></help>
+        <label><!-- Total Accounts --></label>
+        <name>Total_Accounts__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

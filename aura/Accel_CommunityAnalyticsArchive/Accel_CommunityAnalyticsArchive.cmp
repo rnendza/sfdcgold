@@ -1,0 +1,20 @@
+<aura:component description="Accel Analytics Archive"
+                implements="forceCommunity:availableForAllPageTypes">
+
+
+    <div>
+        <div class="accel-account-selector">
+            @TODO insert component to select an account here, including the HQ accounts
+        </div>
+        <div class="accel-file-selector">
+            @TODO based on account selected, populate all non-revenue files linked to that account<br/>
+            @TODO when file selected, open in light box or open in a content frame on this page? easier/quicker?<br/>
+            @TODO keep revenue files out of this list
+        </div>
+    </div>
+
+
+
+
+
+</aura:component>

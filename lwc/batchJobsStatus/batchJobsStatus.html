@@ -1,0 +1,142 @@
+<template>
+    <div lwc:dom="manual" class="fake-theme-overrides-class"></div>
+
+    <div>
+        <div class="slds-grid slds-gutters slds-wrap slds-p-bottom--medium">
+            <div class="slds-col slds-small-size--1-of-1 slds-large-size--3-of-4 slds-size--3-of-4">
+                <div if:true={showRunningJobSelected}>
+                    <div if:true={anyRunningJobsFound} class="accel-execution-status">
+                        Job execution status:&nbsp;
+                        <span if:true={allJobsCompleted}>
+                            <span class="slds-text-color_success">
+                                <span if:true={chainBatchJobs}>
+                                    <b>All Jobs are complete!</b>
+                                </span>
+                                <span if:false={chainBatchJobs}>
+                                    <b>Job is complete!</b>
+                                </span>
+                            </span>
+                        </span>
+                    </div>
+                    <div if:false={anyRunningJobsFound}>
+                        No current jobs found.
+                    </div>
+                </div>
+                <div if:false={showRunningJobSelected}>
+                    <div if:false={anyTodaysJobsFound}>
+                        No jobs run by you today.
+                    </div>
+                    <div if:true={anyTodaysJobsFound}>
+                        The following jobs have been run by you today:
+                    </div>
+                </div>
+            </div>
+            <div class="slds-p-right--medium slds=col slds-small-size--1-of-1 slds-large-size--1-of-4 slds-size--1-of-4">
+                <lightning-combobox
+                        name="batchJobView"
+                        variant="label-hidden"
+                        value={batchJobViewValue}
+                        options={batchJobViewOptions}
+                        onchange={handleBatchJobPlChange}  >
+                </lightning-combobox>
+            </div>
+            <div    if:true={showRunningJob}
+                    class="slds-col slds-size--1-of-1">
+                <div if:false={allJobsCompleted}>
+                    <div if:true={showOverallJobStatus}>
+                        <span style="color:darkorange;font-size: .90em">
+                            {asyncJobRecord.Overall_Job_Status__c}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <c-accel-spinner
+                if:true={isProcessing}
+                show-spinner={isProcessing}>
+        </c-accel-spinner>
+
+        <div    if:true={anyJobsFound}
+                class="dt-container"
+                style={resultsTableStyle} >
+            <lightning-datatable
+                    key-field="jobId"
+                    data={jobs}
+                    row-number-offset={rowOffset}
+                    hide-checkbox-column="true"
+                    show-row-number-column="false"
+                    columns={columns}
+                    class=" accel-chrome-hardware-acceleration  slds-table_bordered slds-table_col-bordered accel-datatable-styled
+                            accel-datatable-compact slds-no-row-hover accel-dt-font"
+                    sorted-direction={sortedDirection}
+                    sorted-by={sortedBy}
+                    onsort={handleDatatableSort}>
+            </lightning-datatable>
+        </div>
+        <div if:true={showRunningJobSelected}>
+            <slot name="jobCompletedData"></slot>
+        </div>
+    </div>
+    <div    if:true={showRunningJob}
+            class="slds-p-top--medium accel-job-params">
+        <div class="slds-grid slds-gutters slds-wrap">
+            <div class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2 slds-p-top--small">
+                <div  if:true={anyRunningJobsFound}>
+                    <div class="slds-p-bottom--x-small">
+                        <b>Job Parameters Used:</b>
+                    </div>
+                    <table class="accel-job-params slds-table slds-table_bordered slds-table_cell-buffer slds-table_col-bordered">
+                        <thead>
+                        <tr class="slds-text-title_bold" style="font-size: .80rem">
+                            <th scope="col">
+                                <div title="Parameter Name">Name</div>
+                            </th>
+                            <th scope="col">
+                                <div title="Parameter Value">Value</div>
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <template for:each={paramDatas} for:item="param">
+                            <tr key={param.paramName}>
+                                <th scope="col">
+                                    <div title={param.paramName}>{param.paramName}</div>
+                                </th>
+                                <th scope="col">
+                                    <div title={param.paramValue}>{param.paramValue}</div>
+                                </th>
+                            </tr>
+                        </template>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div    if:true={anyRunningJobsFound}
+                    class="slds-col slds-size--1-of-1 slds-medium-size--1-of-2 slds-large-size--1-of-2 slds-p-top--small">
+                <div if:true={showBatchJobHelpSection}
+                     class="">
+                    <div class="slds-theme--shade accel-square-box__info">
+                        <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                            <div class="slds-media__figure">
+                                <lightning-icon icon-name="utility:info"
+                                                size="small"
+                                                alternative-text="Job Results Assistance">
+                                </lightning-icon>
+                            </div>
+                            <div class="slds-media__body accel-job-results-assistance">
+                                <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                                    <b>Job Results Assistance</b>
+                                </div>
+                                <div class="accel-detailed-body-text">
+                                    <div class="accel-hard-wrap-text">
+                                        <slot name="jobResultsAssistance"></slot>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

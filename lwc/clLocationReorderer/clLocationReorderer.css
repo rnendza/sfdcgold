@@ -1,0 +1,34 @@
+.accel-dnd-ghost {
+    opacity: 0.6; border:4px dotted #005FB2 !important;
+}
+.accel-dnd-chosen {
+    background-color: #74ec74 !important;
+    color:black!important;
+    border:3px dotted #6b8eb0 !important;
+    font-weight: bold!important;
+}
+.accel-dnd-chosen a:link {
+    color:black!important;
+}
+.accel-drag-icon {
+    --sds-c-icon-color-foreground-default:rgb(0,95,178);
+}
+.accel-dl_horizontal__label {
+    width:40%;
+    font-size:.90em;
+}
+.accel-dl_horizontal__detail {
+    width:60%;
+    font-size:.90em;
+}
+.lgc-bg {
+    background-color: rgb(243,243,243)
+}
+.accel-glassmorphism_tile {
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+}
+.accel-date-text {
+    font-size: .90em;
+}

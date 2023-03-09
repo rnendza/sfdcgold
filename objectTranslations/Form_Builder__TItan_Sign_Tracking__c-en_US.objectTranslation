@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- By Email --></label>
+        <name>Form_Builder__By_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comment --></label>
+        <name>Form_Builder__Comment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Company Signature --></label>
+        <name>Form_Builder__Company_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Document Link --></label>
+        <name>Form_Builder__Document_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Event --></label>
+        <name>Form_Builder__Event__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disclaimer Confirmed</masterLabel>
+            <translation><!-- Disclaimer Confirmed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Draft</masterLabel>
+            <translation><!-- Draft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sent</masterLabel>
+            <translation><!-- Sent --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signed</masterLabel>
+            <translation><!-- Signed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Viewed</masterLabel>
+            <translation><!-- Viewed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- MetaData --></label>
+        <name>Form_Builder__MetaData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Personal Signature --></label>
+        <name>Form_Builder__Personal_Signature__c</name>
+    </fields>
+    <fields>
+        <label><!-- Step Number --></label>
+        <name>Form_Builder__Step_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- TItan Document --></label>
+        <name>Form_Builder__TItan_Document__c</name>
+        <relationshipLabel><!-- TItan Sign Trackings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Titan Signature ID --></label>
+        <name>Form_Builder__Titan_Signature_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Using IP Address --></label>
+        <name>Form_Builder__Using_IP_Address__c</name>
+    </fields>
+</CustomObjectTranslation>

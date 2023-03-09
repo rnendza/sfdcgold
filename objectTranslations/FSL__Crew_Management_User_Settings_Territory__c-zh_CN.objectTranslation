@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>班组管理用户设置区域</value>
+    </caseValues>
+    <fields>
+        <label><!-- Crew Management User Settings --></label>
+        <name>FSL__Crew_Management_User_Settings__c</name>
+        <relationshipLabel><!-- Crew Management User Settings Territory --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>FSL__Service_Territory__c</name>
+        <relationshipLabel><!-- Crew Management User Settings Territory --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>班组管理用户设置区域名称</nameFieldLabel>
+</CustomObjectTranslation>

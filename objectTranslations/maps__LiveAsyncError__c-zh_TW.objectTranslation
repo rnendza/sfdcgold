@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 即時非同步錯誤</value>
+    </caseValues>
+    <fields>
+        <help>錯誤來源類別名稱及選擇性提供的方法。</help>
+        <label><!-- Class Name --></label>
+        <name>maps__ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>maps__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>接收的錯誤類型。</help>
+        <label><!-- Error Type --></label>
+        <name>maps__ErrorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>maps__LineNumber__c</name>
+    </fields>
+    <fields>
+        <help>參考有錯誤的摘要</help>
+        <label><!-- Live Daily Summary Config --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Live Async Errors --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>接收的訊息值。</help>
+        <label><!-- Message --></label>
+        <name>maps__Message__c</name>
+    </fields>
+    <fields>
+        <help>JSON 格式的整個 sObject，若可提供。</help>
+        <label><!-- Object Field Values --></label>
+        <name>maps__ObjectFieldValues__c</name>
+    </fields>
+    <fields>
+        <help>發生此錯誤的 sObject 識別碼。</help>
+        <label><!-- Object Id --></label>
+        <name>maps__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sobject Type --></label>
+        <name>maps__SobjectType__c</name>
+    </fields>
+    <fields>
+        <help>接收的堆疊追蹤值。</help>
+        <label><!-- Stack Trace --></label>
+        <name>maps__StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>maps__Subject__c</name>
+    </fields>
+    <nameFieldLabel>Maps 即時非同步錯誤名稱</nameFieldLabel>
+</CustomObjectTranslation>

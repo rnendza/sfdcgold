@@ -1,0 +1,18 @@
+<apex:page docType="html-5.0" standardStylesheets="false" standardController="WorkOrder" >
+    <apex:includeLightning />
+    
+    <div id="lightning" />
+    
+    <script>
+    $Lightning.use("c:PM_WorkOrder", function() {
+        $Lightning.createComponent("c:PM_Work_Order_Line_Item",
+                                   {
+                                
+                                   },
+                                   "lightning",
+                                   function(cmp) {
+                                       // do some stuff
+                                   });
+    });
+    </script>
+</apex:page>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Opportunity_Edit_After_Closed_Lost</name>
+    </customPermissions>
+    <description>Allows users to modify opportunities after they have been closed Lost. This perm set only has 	&quot;Opportunity: Edit After Closed Lost&quot; custom permission</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Opportunity: Edit After Closed Lost</label>
+</PermissionSet>

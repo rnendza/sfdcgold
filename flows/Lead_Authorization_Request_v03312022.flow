@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>All states</description>
+        <name>Lead_Authorization_Request_0</name>
+        <label>Lead Authorization Request</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>Lead.Lead_Authorization_Request</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>State</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Georgia, Nebraska, and North Carolina Lead Authorization Requests go to the Users listed in the Lead Authorization Request (GA, NE, NC only) email alert.</description>
+        <name>Lead_Authorization_Request_GA_NE_NC_only</name>
+        <label>Lead Authorization Request (GA, NE, NC only)</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <actionName>Lead.Lead_Authorization_Request_GA_NE_NC_only</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Illinois Lead Authorization Requests go to the recipients listed in the Lead Authorization Request (IL only) email alert.</description>
+        <name>Lead_Authorization_Request_IL</name>
+        <label>Lead Authorization Request (IL)</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <actionName>Lead.Lead_Authorization_Request_IL</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <description>The recipient(s) of the Lead Authorization Request email alert depends on the Lead&apos;s state (IL, GA, NE, etc.)</description>
+        <name>State</name>
+        <label>State?</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.State</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lead_Authorization_Request_IL</targetReference>
+            </connector>
+            <label>IL</label>
+        </rules>
+        <rules>
+            <name>GA_NE_or_NC</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.State</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>GA</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.State</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NE</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.State</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>NC</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Lead_Authorization_Request_GA_NE_NC_only</targetReference>
+            </connector>
+            <label>GA, NE, or NC</label>
+        </rules>
+    </decisions>
+    <description>When the &quot;Submit Lead&quot; button is clicked, a Lead Authorization Request email alert goes to the appropriate Lead Approver(s). The Lead Approver is based on the Lead&apos;s state (IL, GA, NE, etc.).</description>
+    <interviewLabel>Lead Authorization Request v03312022 {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Lead Authorization Request v04262022.2</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Uncheck_Submit_Lead</name>
+        <label>Uncheck Submit Lead</label>
+        <locationX>314</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Lead_Authorization_Request_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Lead Authorization</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Submit_Lead__c</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>188</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Uncheck_Submit_Lead</targetReference>
+        </connector>
+        <filterLogic>(1 AND 2) OR (3 AND 4)</filterLogic>
+        <filters>
+            <field>Submit_Lead__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Submit_Lead__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Lead Authorization</stringValue>
+            </value>
+        </filters>
+        <object>Lead</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Evento de mapas ativos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Eventos de mapas ativos</value>
+    </caseValues>
+    <fields>
+        <help>Uso interno</help>
+        <label><!-- Correlation Id --></label>
+        <name>maps__CorrelationId__c</name>
+    </fields>
+    <fields>
+        <help>Dispositivo envolvido no evento e regra</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Data e hora de entrada</help>
+        <label><!-- Entry Date Time --></label>
+        <name>maps__EntryDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Local da posição de entrada</help>
+        <label><!-- Entry Position --></label>
+        <name>maps__EntryPosition__c</name>
+    </fields>
+    <fields>
+        <help>Data e hora de saída</help>
+        <label><!-- Exit Date Time --></label>
+        <name>maps__ExitDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Local da posição de saída</help>
+        <label><!-- Exit Position --></label>
+        <name>maps__ExitPosition__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Tipo de registro de evento criado</help>
+        <label><!-- Live Event Type --></label>
+        <name>maps__LiveEventType__c</name>
+        <picklistValues>
+            <masterLabel>Enters</masterLabel>
+            <translation>Entra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exits</masterLabel>
+            <translation>Sai</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Pesquisa do dispositivo IoT que criou o evento</help>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Live Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ID da regra externa</help>
+        <label><!-- Rule Id --></label>
+        <name>maps__RuleId__c</name>
+    </fields>
+    <fields>
+        <help>O nome ou a etiqueta desta regra</help>
+        <label><!-- Rule Name --></label>
+        <name>maps__RuleName__c</name>
+    </fields>
+    <fields>
+        <help>Tempo gasto dentro da cerca geográfica em horas</help>
+        <label><!-- Time Spent in Geofence (Hours) --></label>
+        <name>maps__TimeSpentinGeofenceHours__c</name>
+    </fields>
+    <fields>
+        <help>Tempo gastro dentro da cerca geográfica em minutos</help>
+        <label><!-- Time Spent in Geofence (Minutes) --></label>
+        <name>maps__TimeSpentinGeofenceMinutes__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome do evento do Maps Live</nameFieldLabel>
+</CustomObjectTranslation>

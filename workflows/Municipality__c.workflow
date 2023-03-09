@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workflow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <alerts>
+        <fullName>Alert_for_6th_VGT</fullName>
+        <description>Alert for 6th VGT</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>johnj@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Municipality_Allows_6th_VGT</template>
+    </alerts>
+    <alerts>
+        <fullName>Municipality_SalesOps_Alert</fullName>
+        <description>Municipality SalesOps Alert</description>
+        <protected>false</protected>
+        <recipients>
+            <recipient>bethanym@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>brandtc@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>jennifers@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>margaretg@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>margaretw@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>pennys@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>rhiannonr@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>samanthaw@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <recipients>
+            <recipient>sharlab@accelentertainment.com</recipient>
+            <type>user</type>
+        </recipients>
+        <senderType>CurrentUser</senderType>
+        <template>unfiled$public/Municipality_SalesOps_Changes</template>
+    </alerts>
+</Workflow>

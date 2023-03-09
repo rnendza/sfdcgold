@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Inventory_Request_Line_Item_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Inventory_Request_Line_Item_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>IR_Line_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>IR_Line_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Item_Number__c</fields>
+        <fields>Inventory_Request_Status__c</fields>
+        <fields>Product__c</fields>
+        <fields>Vendor__c</fields>
+        <fields>Quantity__c</fields>
+        <fields>Number_of_Assets_Created__c</fields>
+        <fields>Received_Date__c</fields>
+        <fields>All_Line_Assets_Created__c</fields>
+        <fields>Product_Nickname__c</fields>
+        <label>IR Line Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Child Line Items for the Inventory Request object allowing the capture of products by model (1 record per model)</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>All_Line_Assets_Created__c</fullName>
+        <description>Indicated that Assets have already been created for the Quantity Assigned to this line item.</description>
+        <externalId>false</externalId>
+        <formula>Quantity__c ==  Number_of_Assets_Created__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Indicated that Assets have already been created for the Quantity Assigned to this line item.</inlineHelpText>
+        <label>All Line Assets Created</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Eligible_to_Create_Assets__c</fullName>
+        <description>The item has passed all checks to create assets.. ie. it hasn&apos;t already created assets, it has a recieved date.. etc.etc.</description>
+        <externalId>false</externalId>
+        <formula>/*
+ * Used by Flows (and the UI to determine whether to show / allow Asset Creation for an IR Line Item.
+ * Note Vendor is probably obsolete.
+ */
+
+AND( 
+/* ======  ALL Assets have not already been created for the line  ====== */
+!All_Line_Assets_Created__c, 
+
+/* ======  The Parent IR has a PO Number Populated  ====== */
+ !ISBLANK( Inventory_Request__r.PO_Number__c ),
+
+/* ======  The Parent IR has a IR Approved Date  Populated  ====== */
+ !ISBLANK( Inventory_Request__r.IR_Approved_Date__c ),
+
+/* ======  The Parent IR has a PO Approved Date  Populated  ====== */
+ !ISBLANK( Inventory_Request__r.PO_Submitted_Date__c ),
+
+/* ======  The Item has been given a received date  ====== */
+ !ISBLANK( Received_Date__c ),
+
+/* ======  The Item has been given a Manufacturer  OBSOLETE 
+ !ISBLANK( Manufacturer__c ),*/
+
+/* ======  The Item has a qty received &gt; 0  ====== */
+(  Received_Quantity__c &gt; 0 ),
+
+/* ======  The Item has been assigned a vendor date ======= */
+ !ISBLANK( Vendor__c )
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The item has passed all checks to create assets.. ie. it hasn&apos;t already created assets, it has a recieved date.. etc.etc.</inlineHelpText>
+        <label>Eligible to Create Assets</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inventory_Request_Status__c</fullName>
+        <description>FF to the parent Inventory Request Status</description>
+        <externalId>false</externalId>
+        <formula>TEXT(Inventory_Request__r.Status__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Status of Entire Inventory Request</inlineHelpText>
+        <label>IR Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Inventory_Request__c</fullName>
+        <description>Link tto the Parent IR Record.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Link to the Parent IR Record.</inlineHelpText>
+        <label>Inventory Request</label>
+        <referenceTo>Inventory_Request__c</referenceTo>
+        <relationshipLabel>Request Line Items</relationshipLabel>
+        <relationshipName>Inventory_Request_Line_Items</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>true</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Item_Number__c</fullName>
+        <description>Trigger maintained. Simply allows line 1,2,3 etc.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Inventory Request Line Item Number</inlineHelpText>
+        <label>Item #</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Manufacturer__c</fullName>
+        <description>Product__r.Manufacturer__r.Name</description>
+        <externalId>false</externalId>
+        <formula>/*===============================================================================
+ * This is a formula field that pulls the account name (accounts of record type 
+ * manufacturer) associated with the manufacture tied to the selected product. 
+ *===============================================================================
+ */
+Product__r.Manufacturer__r.Name
+/* RJN DEFECT FOUND 2-5-2020 Product__r.Manufacturer__r.DBA_Account_Name__c*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Manufacturer associated with the product selected</inlineHelpText>
+        <label>Manufacturer</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Assets_Created__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The total # of Assets Created for this line item.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total # of Assets Created for this line item.</inlineHelpText>
+        <label>Total # of Assets Created</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Parent_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Parent Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Inventory Request Line Items</relationshipLabel>
+        <relationshipName>Inventory_Request_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Product_Nickname__c</fullName>
+        <description>The nickname of the associated model (product)</description>
+        <externalId>false</externalId>
+        <formula>Product__r.Nickname__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The nickname of the associated model (product)</inlineHelpText>
+        <label>Product Nickname</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The product to create assets from. This must be a product record type of Gaming Software. The addition of the 2nd filter is needed to solve what appears to be a spring 2020 bug</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The product to create assets from This must be a product record type of Gaming Software. Any default values when clicking the input are most recently viewed records. To Search enter at least 2 characters and then hit enter or click the search icon.</inlineHelpText>
+        <label>Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2</booleanFilter>
+            <errorMessage>You must select a product of type Gaming Software.</errorMessage>
+            <filterItems>
+                <field>Product2.RecordType.Name</field>
+                <operation>equals</operation>
+                <value>Gaming Software</value>
+            </filterItems>
+            <filterItems>
+                <field>Product2.Record_Type_Text__c</field>
+                <operation>equals</operation>
+                <value>Gaming Software</value>
+            </filterItems>
+            <infoMessage>Please select a product of type Gaming Software</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Inventory Request Line Items</relationshipLabel>
+        <relationshipName>Inventory_Request_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Qty_of_assets_to_create__c</fullName>
+        <description>The Qty of Assets to create (Helper in case assets were created by some of them then delete)</description>
+        <externalId>false</externalId>
+        <formula>/*Quantity__c -  Number_of_Assets_Created__c*/
+ Received_Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Qty of Assets to Create</inlineHelpText>
+        <label>Qty of assets to create</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The Original Quantity to be requested and approved.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Original Quantity to be requested and approved.</inlineHelpText>
+        <label>Quantity Requested</label>
+        <precision>5</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Received_Date__c</fullName>
+        <description>The date the Item was received in the warehouse.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date the Item was received in the warehouse.</inlineHelpText>
+        <label>Received Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Received_Quantity__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>The Number of products received in the warehouse that you want to create at this point in time. Will default to zero.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Number of products received in the warehouse that you want to create at this point in time. Will default to zero.</inlineHelpText>
+        <label>Quantity to Create</label>
+        <precision>6</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vendor__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>An Account filtered by Record Type of Vendors and Account.Vendor_Type__c = &apos;Software&apos;</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This field reflects Software Vendor Accounts . Any values that display immediately are recently viewed Vendors. To search, type at least the first 2 characters of the Vendor Name and hit enter or the search icon.</inlineHelpText>
+        <label>Vendor</label>
+        <lookupFilter>
+            <active>true</active>
+            <errorMessage>Vendor must be an Account with a record type of &apos;Vendors&apos;. and have Account.Vendor_Type__c = &apos;Software&apos;</errorMessage>
+            <filterItems>
+                <field>Account.RecordTypeId</field>
+                <operation>equals</operation>
+                <value>Vendors</value>
+            </filterItems>
+            <filterItems>
+                <field>Account.Vendor_Type__c</field>
+                <operation>equals</operation>
+                <value>Software</value>
+            </filterItems>
+            <infoMessage>Vendor much be an Account of Recordtype &apos;Vendors&apos;. and be a software vendor.</infoMessage>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Inventory Request Line Items</relationshipLabel>
+        <relationshipName>Inventory_Request_Line_Items</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <label>Inventory Request Line Item</label>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <nameField>
+        <displayFormat>IR-Line-{0000000}</displayFormat>
+        <label>Line Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Inventory Request Line Items</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ControlledByParent</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Qty_Received_is_lteq_Qty_Requested_new</fullName>
+        <active>true</active>
+        <description>Ensures the Quantity Received is less then or equal to the Quantity Requested - Total Number of Assets Created</description>
+        <errorConditionFormula>/*===============================================================================
+* Ensures the following:
+*
+*
+* When an Inventory Request Line Item is being created / updated...
+*
+* 1. The Qty received &lt;= Qty Requested
+* 2. AND the Parent Bypass_Validation_Rules__c is not = TRUE
+*
+*================================================================================
+*
+*/
+AND(Inventory_Request__r.Bypass_Validation_Rules__c != TRUE,
+
+OR(Received_Quantity__c &gt; Quantity__c,Received_Quantity__c &gt; Quantity__c -  Number_of_Assets_Created__c )
+ )</errorConditionFormula>
+        <errorDisplayField>Received_Quantity__c</errorDisplayField>
+        <errorMessage>Quantity to create  must be &lt;= Quantity Requested and must not exceed the Quantity Requested - the Total # of Assets already created.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Qty_Req_cant_be_changed_after_approved</fullName>
+        <active>false</active>
+        <description>DEPRECATED FOR NOW Don&apos;t allow Quantity Requested to be modified after the IR has been approved</description>
+        <errorConditionFormula>IF(  AND( ISCHANGED( Quantity__c ), !(TEXT( Inventory_Request__r.Status__c ) = &apos;Open&apos;)) , true, false)</errorConditionFormula>
+        <errorDisplayField>Quantity__c</errorDisplayField>
+        <errorMessage>The Quantity Requested cannot be modified after the request has been approved</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Qty_Requested_is_Greater_then_Zero</fullName>
+        <active>true</active>
+        <description>Quantity must be greater then zero on the inventory request line item.</description>
+        <errorConditionFormula>/*===============================================================================
+ * Ensures the following:
+ * 
+ *
+ * When an Inventory Request Line Item is being created / updated...
+ *
+ *  1. The Qty is not blank
+ *  2. The Qty is &gt; 0.
+ *  3. AND the Parent Bypass_Validation_Rules__c is not = TRUE
+ *
+ *================================================================================
+ * 
+ */
+AND(Inventory_Request__r.Bypass_Validation_Rules__c != TRUE,OR(ISBLANK(Quantity__c), Quantity__c &lt;= 0))</errorConditionFormula>
+        <errorDisplayField>Quantity__c</errorDisplayField>
+        <errorMessage>Quantity must be &gt; 0.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

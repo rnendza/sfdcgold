@@ -1,0 +1,196 @@
+<!-- Cl Field Audit -->
+<template>
+    <div if:true={showProgressBar}
+         class="progress-center slds-p-bottom_small slds-text-align_center">
+        <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+    </div>
+    <lightning-card>
+        <lightning-button-menu
+                icon-name="utility:settings"
+                icon-size="medium"  menu-alignment="right"
+                class="accel-icon-blue"
+                onselect={handleCardMenuSelect}
+                slot="actions" variant="border-filled">
+            <template for:each={cardActions} for:item="option">
+                <lightning-menu-item
+                        prefix-icon-name={option.prefixIconName}
+                        key={option.id}
+                        label={option.label}
+                        value={option.id}>
+                </lightning-menu-item>
+            </template>
+        </lightning-button-menu>
+
+        <h1 slot="title" class="no-wrap">
+            <div class="slds-grid slds-wrap accel-test-borders">
+                <c-ui-card-title
+                        card-title="CL Field History (BETA)"
+                        card-subtitle="Fields Modified"
+                        icon-name="standard:change_request"
+                        icon-size="medium">
+                </c-ui-card-title>
+            </div>
+        </h1>
+        <div style="min-height: 400px">
+
+            <div if:true={showInfoAssistant}
+                 class="slds-p-horizontal_small">
+                <c-cl-security-audit-assistant
+                        if:true={showAssistance}
+                        title="Field History Assistant"
+                        assistance-type="exportFilePerms"
+                        bullet-points={infoAssistantBulletPoints}>
+                </c-cl-security-audit-assistant>
+            </div>
+            <div
+                    class="slds-m-top_small slds-m-bottom_small slds-p-horizontal_small slds-m-horizontal_small slds-p-vertical_small slds-box_border slds-box_small"
+                    style="background-color: rgb(250,250,249);">
+                <div class="slds-p-horizontal_small slds-p-bottom_small">
+                    <div class="slds-grid">
+                        <div class="slds-col slds-size_1-of-2">
+                            <div id="variants"
+                                 class="slds-p-vertical_x-small slds-grid slds-grid_vertical-align-center">
+                                <lightning-icon icon-name="standard:search" size="small"
+                                                alternative-text="Search" title="Field History Search"></lightning-icon>
+                                <lightning-formatted-text
+                                        class="slds-card__header-title slds-col slds-p-left_x-small slds-text-title_bold"
+                                        value="Field History Search"></lightning-formatted-text>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                            <div class="slds-p-top_xx-small">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-p-top_x-small">
+                        <c-accel-field-history-filters
+                                if:true={mdtFieldHistory}
+                                default-selections={defaultSelections}
+                                onfieldselect={handleFieldSelect}
+                                onfieldremove={handleFieldRemove}
+                                onhistobjselect={handleHistObjSelect}
+                                onstartdatechange={handleStartDateChange}
+                                onenddatechange={handleEndDateChange}>
+                        </c-accel-field-history-filters>
+                    </div>
+                    <div class="slds-p-top_small">
+                        <lightning-button
+                                variant="brand"
+                                style="display: grid; width: 100%"
+                                name="runsearch"
+                                data-id="runsearch"
+                                disabled={disableSearchButton}
+                                onclick={handleButtonClick}
+                                icon-name="utility:search"
+                                label="Search Field History"
+                                title="Click here to rerun the data query">
+                        </lightning-button>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-p-top_small">
+                <div if:true={showStencil}>
+                    <c-ui-custom-stencil
+                            iterations="16"
+                            child-class="slds-var-m-around_xxx-small"
+                            type="list" columns="4">
+                    </c-ui-custom-stencil>
+                </div>
+
+                <div if:true={showNoData}>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_small"
+                            header-text="No Field History data found"
+                            body-text="Please expand your search using the search filters.">
+                    </c-ui-empty-state>
+                </div>
+
+                <template if:true={showDatatable}>
+                    <div class="slds-p-horizontal_small">
+                        <div class="slds-p-bottom_small slds-box_small slds-box_border">
+                        <div class="slds-grid slds-wrap slds-p-around_x-small">
+                            <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_x-small">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="">
+                                            <lightning-input type="toggle"
+                                                             value={toggleValue}
+                                                             checked={toggleValue}
+                                                             class="rtl"
+                                                             onchange={handleCheckboxToggle}
+                                                             message-toggle-active="Show New Records"
+                                                             message-toggle-inactive="Hide New Records"
+                                                             name="newRecordToggle">
+                                            </lightning-input>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-2">
+                                        <div class="slds-text-align_right">
+                                        <span class="slds-text-color_weak slds-text-body_small">
+                                            Showing {totalFilteredRows} of {totalServerRows} rows.
+                                        </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+
+
+                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-large-size_1-of-6 slds-medium-size_1-of-6 slds-small-size_1-of-1">
+                                        <lightning-icon
+                                                data-id="export"
+                                                onclick={handleButtonClick}
+                                                icon-name="doctype:csv" alternative-text="csv" size="medium"
+                                                title="csv"
+                                                class="slds-p-right_xx-small">
+                                        </lightning-icon>
+                                    </div>
+                                    <div class="slds-col slds-large-size_5-of-6 slds-medium-size_5-of-6 slds-small-size_1-of-1">
+                                        <lightning-input
+                                                onchange={handleDtSearchKeyChange}
+                                                name="enter-search"
+                                                placeholder="Search.."
+                                                variant="label-hidden"
+                                                type="search"
+                                        ></lightning-input>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-text-align_right">
+                                <lightning-button
+                                        variant="brand"
+                                        name="export"
+                                        data-id="export"
+                                        icon-name="utility:download" class="slds-m-left_x-small"
+                                        label="Export to csv file"
+                                        title="Click here to export the details to a csv file."
+                                        onclick={handleButtonClick}>
+                                </lightning-button>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+
+                    <div class="slds-p-horizontal_small">
+                        <lightning-datatable
+                                key-field="dtKey"
+                                data={dtDataRecords}
+                                columns={colHeaders}
+                                onsort={handleDtSort}
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                hide-checkbox-column="true"
+                                class="slds-table_header-fixed_container
+                           slds-border_top
+                           slds-max-medium-table_stacked
+                           slds-table_bordered
+                           slds-table_col-bordered">
+                        </lightning-datatable>
+                    </div>
+                </template>
+            </div>
+        </div>
+    </lightning-card>
+</template>

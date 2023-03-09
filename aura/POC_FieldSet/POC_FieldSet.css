@@ -1,0 +1,57 @@
+.THIS .accel-section-header {font-weight: bold;font-size:1.10em}
+.THIS .accel_align-right {text-align: right;}
+.THIS .slds-required {font-size:1.25em;font-weight: bold}
+.THIS .accel-action-buttons {margin-top: 20px;} /* @todo fix this **/
+.THIS .accel-fieldset-title {font-size:.9em}
+.THIS .accel-header-edit {font-size :.92em;margin-right:5px}
+.THIS .accel-fieldset-container {width:100%}
+
+
+/* Override the slds large css to increase the min width so that this looks better on tablets / flipped monitors.*/
+@media (min-width: 84em) {
+    .THIS .slds-large-size_1-of-2,  .THIS .slds-large-size--1-of-2 {width: 50%;}
+}
+/* Mobile */
+@media only screen and (max-width: 480px) {
+    .THIS .accel-mobile-buttons {margin-right: 0px;font-size: .70em;padding: .20rem .50rem .20rem .25rem;}
+    .THIS .accel-mobile-update-buttons {line-height: 2.25em!important;}
+    .THIS .slds-media_center, .THIS .slds-media--center80 {align-items: inherit;}
+    .THIS .slds-button {line-height: 1.80em;}
+    .THIS .accel-hide-on-mobile {display:none}
+    .THIS .slds-media__figure {margin-right: 0.25rem;}
+    .THIS .slds-form-element__label {font-weight: bold;}
+    .THIS .accel-bottom-edit {font-size :.80em;}
+    .THIS .slds-spinner {position:relative;  top:44em; right:20em;}
+    .THIS .slds-spinner_medium {position:relative; top:50em; }
+    .THIS .HighlightField {box-shadow: 10px 10px 5px red;}
+    .THIS .ErrorText {color:red;}
+    .THIS .Hide {display:none;}
+    .THIS .Border {border-style:solid; border-color:red; padding-top:-50px;} /*style="border-style:solid; border-color:red;  padding-top:-50px;"*/
+
+    /* Remove bottom edit form field padding */
+    .THIS .slds-form-element_horizontal:not(.slds-is-editing), .THIS .slds-form_horizontal .slds-form-element:not(.slds-is-editing),
+            .THIS .slds-form_stacked .slds-form-element_horizontal:not(.slds-is-editing) {
+            padding-bottom:0;
+    }
+    .THIS .scrollerSize {height:450px;}
+}
+/* Anything but mobile */
+@media only screen and (min-width: 481px) {
+    .THIS .accel-hide-on-desktop {display:none}
+    .THIS .slds-form-element__label {font-weight: bold;font-size:.75em}
+}
+@media (min-width: 48em) {
+  /*  .THIS  .slds-form-element_horizontal:not(.EditMode)  .slds-form-element__label:not(.EditMode), .THIS .slds-form_horizontal:not(.EditMode) .slds-form-element:not(.EditMode) .slds-form-element__label:not(.EditMode),
+    .THIS .slds-form_stacked .slds-form-element_horizontal .slds-form-element__label */  .THIS .slds-form-element_horizontal {
+        margin-bottom: 2.5em;
+    }
+}
+@media (min-width: 48em) {
+    .THIS  .accel-record-form-view-row  {
+        margin-bottom: -2.5em;
+        /*border-bottom: 1px solid rgb(243, 242, 242);*/
+    }
+
+
+
+}

@@ -1,0 +1,78 @@
+<aura:component description="Accel Revenue Statement"
+                                controller="Accel_RevenueStatementController"
+                                implements="forceCommunity:availableForAllPageTypes">
+
+    <aura:attribute name="selectedAccountId"    type="Id"/>
+
+    <aura:attribute name="userAccounts"         type="List"/>
+    <aura:attribute name="holdPerDayWrappers"   type="List"/>
+    <aura:attribute name="hpdDebug"   type="String"/>
+    <aura:attribute name="hpdTotals"   type="Object"/>
+    <aura:attribute name="revenueStatementColumns"   type="List"/>
+    <aura:attribute name="hpdTotalsDebug"   type="String"/>
+
+    <aura:attribute name="debugConsole"         type="Boolean" default="true"/>
+
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="pickListSelectOneText" type="string" default="-- Please Select a Location --"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <lightning:spinner variant="brand" size="large" aura:id="homeLocationPerfSpinner"
+                       class="{!((v.showSpinner)? '': 'slds-hide')}"
+                       alternativeText="{!v.spinnerAltText}"/>
+    <div style="border:1px dotted red">
+        @TODO Some way to select which revenue statement to view (time range) going back for a year?
+        === DEVELOPMENT HALTED FOR NOW.===
+        <br/>
+        <!--
+        DEBUG JSON <br/>
+        {!v.hpdDebug}
+        <br/>
+        totals={!v.hpdTotalsDebug}
+        -->
+    </div>
+    <div style="width:25%">
+    <lightning:select name="accountSelect" label=""
+                      onchange="{!c.onChangeAccount}"
+                      required="true"
+                      aura:id="accountSelect" value="{!v.selectedAccountId}">
+        <option value=""  text="{!v.pickListSelectOneText}"></option>
+        <aura:iteration items="{!v.userAccounts}" var="account">
+            <option text="{!account.Name + ' - ' + account.ShippingStreet }" value="{!account.Id}"></option>
+        </aura:iteration>
+    </lightning:select>
+        <br/>
+    </div>
+
+    <aura:if isTrue="{!!empty(v.holdPerDayWrappers) }">
+        <div style="text-align: center;margin-top:10px;margin-bottom:10px">
+            <span style="font-size: 1.3em;font-weight: 600">
+                Statement of Revenue and Commissions Paid
+            </span>
+        </div>
+        <div style="margin-bottom:10px">
+            <span style="font-size: 1.1em;font-weight: 600">
+                Revenue Statement for Period of 1/1/2019 - 1/6/2019
+            </span>
+        </div>
+
+        <div class="revTableWrapper last-row-bold" style="border:0px dotted red;font-size:.95em!important">
+            <lightning:datatable data="{! v.holdPerDayWrappers }"
+                                 columns="{! v.revenueStatementColumns }"
+                                 class="slds-max-medium-table_stacked"
+                                 keyField="id"
+                                 showRowNumberColumn="false"
+                                 hideCheckboxColumn="true"/>
+        </div>
+        <div style="width:400px;heigh:300px;margin-top:15px;border:1px dotted red" >
+            ACH deposit stuff..?
+        </div>
+    </aura:if>
+
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+</aura:component>

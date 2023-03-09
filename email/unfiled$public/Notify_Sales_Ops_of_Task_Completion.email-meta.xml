@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notify Task Creator of Task Completion when the creator of the task is inactive</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Notify Sales Ops of Task Completion</name>
+    <style>none</style>
+    <subject>{!Task.LastModifiedBy} Completed a Task</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

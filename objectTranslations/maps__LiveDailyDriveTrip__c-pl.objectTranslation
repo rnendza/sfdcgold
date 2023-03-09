@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Dzienny przejazd Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Dzienne przejazdy Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Dzienny przejazd Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Dzienne przejazdy Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Dziennego przejazdu Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Dziennych przejazdów Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Dziennemu przejazdowi Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Dziennym przejazdom Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Dziennym przejazdem Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Dziennymi przejazdami Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Dziennym przejeździe Maps Live</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Dziennych przejazdach Maps Live</value>
+    </caseValues>
+    <fields>
+        <help>Rano/Po południu zależy od strefy czasowej urządzenia</help>
+        <label><!-- AM or PM Drive Trip --></label>
+        <name>maps__AMorPMDriveTrip__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>Rano</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>Rano/Po południu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>Po południu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Miasto, w którym rozpoczyna się podróż</help>
+        <label><!-- Begin Trip City --></label>
+        <name>maps__BeginTripCity__c</name>
+    </fields>
+    <fields>
+        <help>Kraj, w którym rozpoczyna się podróż</help>
+        <label><!-- Begin Trip Country --></label>
+        <name>maps__BeginTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>Kiedy rozpoczęła się podróż</help>
+        <label><!-- Begin Trip Date/Time --></label>
+        <name>maps__BeginTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Adres, pod którym rozpoczyna się podróż</help>
+        <label><!-- Begin Trip Full Address --></label>
+        <name>maps__BeginTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>Kod pocztowy, w którym rozpoczyna się podróż</help>
+        <label><!-- Begin Trip Postal Code --></label>
+        <name>maps__BeginTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Stan, w którym rozpoczyna się podróż</help>
+        <label><!-- Begin Trip State --></label>
+        <name>maps__BeginTripState__c</name>
+    </fields>
+    <fields>
+        <help>Wyszukiwanie rekordu zdarzenia, którym jest rozpoczęcie tej podróży</help>
+        <label><!-- Begin Trip Stop --></label>
+        <name>maps__BeginTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (Begin Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ulica, na której rozpoczyna się podróż</help>
+        <label><!-- Begin Trip Street --></label>
+        <name>maps__BeginTripStreet__c</name>
+    </fields>
+    <fields>
+        <help>Data podróży</help>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>Wskazuje, czy podróż miała miejsce w ciągu wyznaczonego dnia świątecznego</help>
+        <label><!-- Driving During Holiday --></label>
+        <name>maps__DrivingDuringHoliday__c</name>
+    </fields>
+    <fields>
+        <help>Wskazuje, czy podróż miała miejsce poza wyznaczonymi godzinami pracy</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>Miasto, w którym kończy się podróż</help>
+        <label><!-- End Trip City --></label>
+        <name>maps__EndTripCity__c</name>
+    </fields>
+    <fields>
+        <help>Kraj, w którym kończy się podróż</help>
+        <label><!-- End Trip Country --></label>
+        <name>maps__EndTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>Kiedy kończy się podróż</help>
+        <label><!-- End Trip Date/Time --></label>
+        <name>maps__EndTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>Adres, pod którym kończy się podróż</help>
+        <label><!-- End Trip Full Address --></label>
+        <name>maps__EndTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>Kod pocztowy, w którym kończy się podróż</help>
+        <label><!-- End Trip Postal Code --></label>
+        <name>maps__EndTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Stan, w którym kończy się podróż</help>
+        <label><!-- End Trip State --></label>
+        <name>maps__EndTripState__c</name>
+    </fields>
+    <fields>
+        <help>Wyszukiwanie rekordu zdarzenia, którym jest zakończenie tej podróży</help>
+        <label><!-- End Trip Stop --></label>
+        <name>maps__EndTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (End Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Ulica, na której kończy się podróż</help>
+        <label><!-- End Trip Street --></label>
+        <name>maps__EndTripStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Rekord dziennego podsumowania środka na żywo, z którym powiązana jest pokonana odległość</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Wyznaczony kierowca dla tej podróży</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Suma zdarzeń znacznego przyspieszenia w czasie podróży</help>
+        <label><!-- Total # of Hard Accel Events In Trip --></label>
+        <name>maps__TotalNumOfHardAccelEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Suma zdarzeń znacznego hamowania w czasie podróży</help>
+        <label><!-- Total # of Hard Braking Events this Trip --></label>
+        <name>maps__TotalNumOfHardBrakeEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Suma zdarzeń maksymalnego progu prędkości w czasie podróży</help>
+        <label><!-- Total # of Speed Thresh Events in Trip --></label>
+        <name>maps__TotalNumOfSpeedThresholdEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help>Suma zdarzeń przekroczenia dozwolonej prędkości w czasie podróży</help>
+        <label><!-- Total # of Speeding Events within Trip --></label>
+        <name>maps__TotalNumOfSpeedingEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>To jest całkowita pokonana odległość podróży w milach.</help>
+        <label><!-- Trip Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>Czas trwania tej podróży w godzinach</help>
+        <label><!-- Trip Drive Time (Hours) --></label>
+        <name>maps__TripDriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Czas trwania tej podróży w minutach</help>
+        <label><!-- Trip Drive Time (Minutes) --></label>
+        <name>maps__TripDriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Kolejność podróży w ciągu dnia</help>
+        <label><!-- Trip Order --></label>
+        <name>maps__TripOrder__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nazwa dziennej podróży Maps na żywo</nameFieldLabel>
+</CustomObjectTranslation>

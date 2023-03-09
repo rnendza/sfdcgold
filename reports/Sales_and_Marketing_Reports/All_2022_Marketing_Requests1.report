@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request__c$Name</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Assigned_Marketing_Coordinator__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$My_Project_Name__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Marketing_Project_Status__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Project_Completed_Date__c</field>
+    </columns>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Marketing_Request__c$RecordType</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>All 2022 Marketing Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Requests_with_Marketingg_Request_Product__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-01-01</startDate>
+    </timeFrameFilter>
+</Report>

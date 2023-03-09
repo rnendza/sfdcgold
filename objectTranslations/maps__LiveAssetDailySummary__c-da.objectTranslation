@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs dagligt sammendrag</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs daglige sammendrag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs daglige sammendrag</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendrag</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendrag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendrag</value>
+    </caseValues>
+    <fields>
+        <help>Gennemsnitlig varighed af brugerdefinerede stopbegivenheder i timer.</help>
+        <label><!-- Average Stop Time (Hours) --></label>
+        <name>maps__AverageStopTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Gennemsnitlig varighed af brugerdefinerede stopbegivenheder i minutter.</help>
+        <label><!-- Average Stop Time (Minutes) --></label>
+        <name>maps__AverageStopTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Antal af enhedsbatteri på begivenheder, der blev registreret denne dag, som defineret i den daglige sammmendragskonfiguration</help>
+        <label><!-- Count of Events - Device Battery On --></label>
+        <name>maps__CountOfEventsDeviceBatteryOn__c</name>
+    </fields>
+    <fields>
+        <help>Antal af hastighedstærskelbegivenheder, der blev registreret denne dag, som defineret i den daglige sammmendragskonfiguration</help>
+        <label><!-- Count of Events - Speed Threshold --></label>
+        <name>maps__CountOfEventsSpeedThreshold__c</name>
+    </fields>
+    <fields>
+        <help>Antal hastighedsoverskridelsesbegivenheder registreret denne dag, som defineret i den daglige sammendragkonfiguration</help>
+        <label><!-- Count of Events - Speeding --></label>
+        <name>maps__CountOfSummaryEventsSpeeding__c</name>
+    </fields>
+    <fields>
+        <help>Antal stopbegivenheder registreret denne dag, som defineret i den daglige sammendragkonfiguration</help>
+        <label><!-- Count of Events - Stops --></label>
+        <name>maps__CountOfSummaryEventsStops__c</name>
+    </fields>
+    <fields>
+        <help>Dato, som dette sammendrag gælder for</help>
+        <label><!-- Summary Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>Enhedsleverandør sammenkædet med enheds-id</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Samlet tid brugt i timer på at køre med systemet aktiveret</help>
+        <label><!-- Drive Time (Hours) --></label>
+        <name>maps__DriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Samlet tid brugt i minutter på at køre med systemet aktiveret</help>
+        <label><!-- Drive Time (Minutes) --></label>
+        <name>maps__DriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Angivelse af, om en tur fandt sted under angivet helligdagsfravær</help>
+        <label><!-- Driving During Holiday Off --></label>
+        <name>maps__DrivingDuringHolidayOff__c</name>
+    </fields>
+    <fields>
+        <help>Angivelse af, om en tur fandt sted uden for angivne arbejdstimer</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt repræsenterer det fulde dataindhold i det første punkt modtaget af aws i dag.</help>
+        <label><!-- First Message Content --></label>
+        <name>maps__FirstMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt repræsenterer dato og tid for det første punkt modtaget af aws i dag.</help>
+        <label><!-- First Message Timestamp --></label>
+        <name>maps__FirstMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af enhedsmeddelelser, der angiver en hurtig accelerationsbegivenhed denne dag (når det er tilgængeligt)</help>
+        <label><!-- Number of Hard Acceleration Events --></label>
+        <name>maps__HardAccelerationCount__c</name>
+    </fields>
+    <fields>
+        <help>Antallet af enhedsmeddelelser, der angiver en hård opbremsning denne dag (når det er tilgængeligt)</help>
+        <label><!-- Number of Hard Braking Events --></label>
+        <name>maps__HardBrakingCount__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt repræsenterer det fulde dataindhold i det første punkt modtaget af aws i dag.</help>
+        <label><!-- Last Message Content --></label>
+        <name>maps__LastMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt repræsenterer dato og tid for det første punkt modtaget af aws i dag.</help>
+        <label><!-- Last Message Timestamp --></label>
+        <name>maps__LastMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Reference til den sammendragskonfiguration, som dette sammendrag er baseret på</help>
+        <label><!-- Live Daily Summary Configuration --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Maksimal enkelt hastighedsværdi modtaget denne dag (i KPH)</help>
+        <label><!-- Maximum Speed (KPH) --></label>
+        <name>maps__MaximumSpeedKPH__c</name>
+    </fields>
+    <fields>
+        <help>Maksimal enkelt hastighedsværdi modtaget denne dag (i MPH)</help>
+        <label><!-- Maximum Speed (MPH) --></label>
+        <name>maps__MaximumSpeedMPH__c</name>
+    </fields>
+    <fields>
+        <help>Seneste tilgængelige odometeraflæsning i kilometer for dagen</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Seneste tilgængelige odometeraflæsning i mil for dagen</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>Samlet afstand rejst i kilometer i alt</help>
+        <label><!-- Total Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>Samlet afstand rejst i mil</help>
+        <label><!-- Total Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>Den bruger, der er tildelt til den tilknyttede enhed på samme tid, som sammendraget blev oprettet</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Navn på Maps Live-aktivs - dagligt samme</nameFieldLabel>
+</CustomObjectTranslation>

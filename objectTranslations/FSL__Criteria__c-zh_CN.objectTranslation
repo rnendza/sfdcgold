@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>条件</value>
+    </caseValues>
+    <fields>
+        <label><!-- Criteria Items --></label>
+        <name>FSL__Criteria_Items__c</name>
+    </fields>
+    <fields>
+        <label><!-- Logic --></label>
+        <name>FSL__Logic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Type --></label>
+        <name>FSL__Object_Type__c</name>
+        <picklistValues>
+            <masterLabel>Service Appointment</masterLabel>
+            <translation>服务预约</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territories --></label>
+        <name>FSL__Territories__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Type --></label>
+        <name>FSL__User_Type__c</name>
+        <picklistValues>
+            <masterLabel>Admin</masterLabel>
+            <translation>管理员</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent</masterLabel>
+            <translation>客服人员</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Community</masterLabel>
+            <translation>社区</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dispatcher</masterLabel>
+            <translation>派遣人</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource</masterLabel>
+            <translation>资源</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Types --></label>
+        <name>FSL__Work_Types__c</name>
+    </fields>
+    <nameFieldLabel>条件名称</nameFieldLabel>
+</CustomObjectTranslation>

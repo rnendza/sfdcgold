@@ -1,0 +1,12 @@
+<!-- Ac Loc Type Pl -->
+<template>
+    <label for="locType" class="slds-form-element__label accel-form-element__label slds-no-flex  accel-mobile-form-p-bottom_small">
+        Location Type
+    </label>
+    <select class="slds-select accel-select"  name="locType"
+            onchange={handleChange}>
+        <template for:each={locationLocTypeOptions} for:item="item">
+            <option key={item.value}  value={item.value}> {item.label}</option>
+        </template>
+    </select>
+</template>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Notifications Sent</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Notifications Sent</value>
+    </caseValues>
+    <fields>
+        <label><!-- Accel VGT Live Date --></label>
+        <name>Accel_VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of alert.. this allows us to branch off. .say in a flow and send multiple types of alerts to the same entity. --></help>
+        <label><!-- Alert Type --></label>
+        <name>Alert_Type__c</name>
+        <picklistValues>
+            <masterLabel>DISPATCHED</masterLabel>
+            <translation><!-- DISPATCHED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOT_DISPATCHED</masterLabel>
+            <translation><!-- NOT_DISPATCHED --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NO_ASSIGNED_RESOURCE</masterLabel>
+            <translation><!-- NO_ASSIGNED_RESOURCE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Visit in 30 Days</masterLabel>
+            <translation><!-- No Visit in 30 Days --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Visit in 45 Days</masterLabel>
+            <translation><!-- No Visit in 45 Days --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The Api name of the SFDC CustomNotification Record used for delivery. --></help>
+        <label><!-- Custom Notification Api Name --></label>
+        <name>Custom_Notification_Api_Name__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TEST_SERVICE_WATCHDOG_NOTIFICATION</masterLabel>
+            <translation><!-- TEST_SERVICE_WATCHDOG_NOTIFICATION --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DBA Name --></label>
+        <name>DBA_Name__c</name>
+        <relationshipLabel><!-- Custom Notifications Sent --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DBA State --></label>
+        <name>DBA_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Notification Was Sent --></label>
+        <name>Days_Since_Notification_Was_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD --></label>
+        <name>HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB # --></label>
+        <name>IGB__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Body of the custom notification. --></help>
+        <label><!-- Msg Body` --></label>
+        <name>Msg_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Title of the custom notification --></help>
+        <label><!-- Msg Title --></label>
+        <name>Msg_Title__c</name>
+    </fields>
+    <fields>
+        <help><!-- The type of notification, either Manual (user clicked the send icon) or Automated.The type of notification, either Manual (user clicked the send icon) or Automated. --></help>
+        <label><!-- Notification Type --></label>
+        <name>Notification_Type__c</name>
+        <picklistValues>
+            <masterLabel>Automated</masterLabel>
+            <translation><!-- Automated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Event</masterLabel>
+            <translation><!-- Event --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Manual</masterLabel>
+            <translation><!-- Manual --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- If the parent record  (ie target id) is a Service Appointment, this will be populated. --></help>
+        <label><!-- Service Appointment --></label>
+        <name>Service_Appointment__c</name>
+        <relationshipLabel><!-- Custom Notifications Sent --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- If the recipient Id is a User.. This will be populated. --></help>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Custom Notifications Sent --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

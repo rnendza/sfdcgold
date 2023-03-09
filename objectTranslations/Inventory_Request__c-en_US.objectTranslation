@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Inventory Request</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Inventory Requests</value>
+    </caseValues>
+    <fields>
+        <help><!-- The location associated with the inventory request --></help>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Inventory Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Generally this shouldn&apos;t be used but if there is a mass import / upsert. It might come in handy. --></help>
+        <label><!-- Bypass Validation Rules --></label>
+        <name>Bypass_Validation_Rules__c</name>
+    </fields>
+    <fields>
+        <label><!-- Final Approved Indicator --></label>
+        <name>Final_Approved_Indicator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Compliance has approved the IR. Only required before Assets can be generated. --></help>
+        <label><!-- IR Approved Date --></label>
+        <name>IR_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of Child Line Items --></help>
+        <label><!-- Total # of Line Items --></label>
+        <name>Number_of_Items__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date Finance has approved the PO. Only required before Assets can be generated. --></help>
+        <label><!-- PO Approved Date --></label>
+        <name>PO_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Great Plains purchase order number. --></help>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date the PO has been submitted to Finance. Only required before Assets can be generated. --></help>
+        <label><!-- PO Submitted Date --></label>
+        <name>PO_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The asset the software will be assigned to. --></help>
+        <label><!-- Parent Asset --></label>
+        <name>Parent_Asset__c</name>
+        <relationshipLabel><!-- Inventory Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The status of the Inventory Request. This status will change based on various fields populated as well as state of approval. --></help>
+        <label><!-- Request Status --></label>
+        <name>Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved for PO</masterLabel>
+            <translation><!-- Approved for PO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation><!-- Open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Fulfilled</masterLabel>
+            <translation><!-- PO Fulfilled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Partially Fulfilled</masterLabel>
+            <translation><!-- PO Partially Fulfilled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PO Submitted</masterLabel>
+            <translation><!-- PO Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Approval</masterLabel>
+            <translation><!-- Pending Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Date the request was submitted for approval. --></help>
+        <label><!-- IR Submitted Date --></label>
+        <name>Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Total # of Assets Created for ALL Line Items. --></help>
+        <label><!-- Total # of Assets Created --></label>
+        <name>Total_Nbr_of_Assets_Created__c</name>
+    </fields>
+    <fields>
+        <help><!-- The summation of quantity requested from all the line items. --></help>
+        <label><!-- Total Qty Requested --></label>
+        <name>Total_Qty_Requested__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- OBSOLETE probably have to remove from profiles! --></description>
+        <label><!-- Everything Else --></label>
+        <name>Everything_Else</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Please select this record type for Inventory Requests related to Gaming Software. --></description>
+        <label><!-- Gaming Software --></label>
+        <name>Gaming_Software</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Please select this record type for Inventory Requests related to Machines or Parts. --></description>
+        <label><!-- Machines / Parts --></label>
+        <name>Machine_Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- OBSOLETE probably have to remove from profiles! --></description>
+        <label><!-- Software --></label>
+        <name>Software</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- The Inventory Request Must be Approved before entering the PO Submitted date. --></errorMessage>
+        <name>Ensure_Approved_Before_Entering_PO_Date</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Inventory Request Must be Approved before entering the PO Number --></errorMessage>
+        <name>Ensure_Approved_Before_Entering_PO_Nbr</name>
+    </validationRules>
+</CustomObjectTranslation>

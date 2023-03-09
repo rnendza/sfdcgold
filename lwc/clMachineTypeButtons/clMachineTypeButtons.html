@@ -1,0 +1,18 @@
+<!-- Cl Machine Type Buttons -->
+<template>
+    <div class="slds-form-element">
+        <div class="slds-form-element__control">
+            <lightning-button-group>
+                <template for:each={machineTypeOptions} for:item="option">
+                    <lightning-button
+                            key={option.value}
+                            variant={option.variant}
+                            label={option.label}
+                            data-id={option.value}
+                            onclick={handleClick}>
+                    </lightning-button>
+                </template>
+            </lightning-button-group>
+        </div>
+    </div>
+</template>

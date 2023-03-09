@@ -1,0 +1,12 @@
+A request has been submitted and approved to pay the Municipality fees for {!Reimbursement__c.Account__c}.  Please issue a check to the Payee listed below, and make a deduction from the Account's revenue statement if required. 
+
+Please click the following link to view the Reimbursement:
+{!Reimbursement__c.Link}
+
+The amount of the check is: {!Reimbursement__c.Accels_Portion_of_Fees__c}
+The amount to be deducted is: {!Reimbursement__c.Deduction_Amount__c}
+Please make the check payable to: {!Reimbursement__c.Pay_to_the_Order_Of__c}
+
+Comments: {!Reimbursement__c.Compliance_Comments__c}
+
+Thank you.

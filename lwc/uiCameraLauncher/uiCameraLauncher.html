@@ -1,0 +1,42 @@
+<!-- Ui Camera Launcher -->
+<template>
+
+    <div style={accelCamStyle}>
+        <div class="slds-m-vertical_xx-small container container-class" style={containerStyle}>
+            <div class="loading crossed" style={loadingBackgroundColor}>
+                <div class="accel-icon-container slds-align_absolute-center">
+                    <i class={iconClass}
+                       title="Click to take a picture"
+                       style={iconStyle}>
+                    </i>
+                    <input onclick={handleCamClick}
+                           onchange={handleFilesChange}
+                           oncancel={handleCancel}
+                           onfocus={handleFileInputFocus}
+                           class="accel-file-capture-input"
+                           type="file"
+                           accept="image/*"
+                           capture="environment">
+                </div>
+            </div>
+        </div>
+        <div class="slds-text-body_small slds-text-color_weak"
+             style="border:0px dotted blue;font-size:.85em">
+        </div>
+    </div>
+
+    <div if:true={isLoading} style={progressStyle}>
+        <div class="progress-center">
+            <div style="font-size:.70rem">
+                {progressLabel}
+            </div>
+            <c-ui-indeterminate-progress-bar ></c-ui-indeterminate-progress-bar>
+<!--            <lightning-progress-bar-->
+<!--                    label={progressLabel}-->
+<!--                    value={progressPercent}-->
+<!--                    size="large"-->
+<!--                    variant="circular">-->
+<!--            </lightning-progress-bar>-->
+        </div>
+    </div>
+</template>

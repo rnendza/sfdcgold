@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Navigate to the record detail page in view mode. for Inventory_Request__c</description>
+        <name>Navigate_to_View_Inventory_Request</name>
+        <label>Navigate to View Inventory Request</label>
+        <locationX>1033</locationX>
+        <locationY>221</locationY>
+        <actionName>c:navigateEverywhereLFA</actionName>
+        <actionType>component</actionType>
+        <inputParameters>
+            <name>destinationType</name>
+            <value>
+                <stringValue>Record</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationRecordId</name>
+            <value>
+                <elementReference>varInventoryRequest.Id</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>destinationAction</name>
+            <value>
+                <stringValue>view</stringValue>
+            </value>
+        </inputParameters>
+        <outputParameters>
+            <assignToReference>varInventoryRequest.Id</assignToReference>
+            <name>destinationRecordId</name>
+        </outputParameters>
+    </actionCalls>
+    <apiVersion>49.0</apiVersion>
+    <assignments>
+        <description>Build Inventory_Request__c sObject to be inserted.
+Account__c
+Parent_Asset__c
+Name
+RecordTypeId</description>
+        <name>Assign_Inventory_Request</name>
+        <label>Assign Inventory Request</label>
+        <locationX>605</locationX>
+        <locationY>52</locationY>
+        <assignmentItems>
+            <assignToReference>varInventoryRequest.Account__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varSelectedAccountId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varInventoryRequest.Name</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>screen_Inventory_Request_Name</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varInventoryRequest.Parent_Asset__c</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varSelectedAssetId</elementReference>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varInventoryRequest.RecordTypeId</assignToReference>
+            <operator>Assign</operator>
+            <value>
+                <elementReference>varPrivateIrRecordTypeSObject.Id</elementReference>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>Create_Inventory_Request</targetReference>
+        </connector>
+    </assignments>
+    <description>OutputVariables:
+1. VarInventoryRequest - A newly created Inventory_Request__c sObject.
+This flow will create minimal required information to insert an Inventory_Request__c. It is launched via an aura component on a new action override. It also utilizes a custom aura component footer. It masks the lookups (Account__c and Asset__c) as picklists so that we can set defaults and allow for easier selection (assuming there will be less then 100 values in each of these). Finally it will utilize a general navigation core action to redirect to the record detail after the record is inserted.</description>
+    <interviewLabel>flow_screen_Inventory_Request_New_Action_Override {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>screenFlow_New Inventory Request Header Record Only</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>Flow</processType>
+    <recordCreates>
+        <description>Insert Inventory_Request__c</description>
+        <name>Create_Inventory_Request</name>
+        <label>Create Inventory Request</label>
+        <locationX>605</locationX>
+        <locationY>221</locationY>
+        <connector>
+            <targetReference>Navigate_to_View_Inventory_Request</targetReference>
+        </connector>
+        <inputReference>varInventoryRequest</inputReference>
+    </recordCreates>
+    <screens>
+        <description>Uses 3 aura components for easier use (auraIrAccountSelect, auraIrParentAssetSelect, and Accel_FlowFooter)</description>
+        <name>Inventory_Request_Header_Screen</name>
+        <label>Inputs for Inventory Request</label>
+        <locationX>425</locationX>
+        <locationY>52</locationY>
+        <allowBack>false</allowBack>
+        <allowFinish>true</allowFinish>
+        <allowPause>false</allowPause>
+        <connector>
+            <targetReference>Assign_Inventory_Request</targetReference>
+        </connector>
+        <fields>
+            <name>screenHelp</name>
+            <fieldText>&lt;p&gt;&lt;b style=&quot;font-size: 18px;&quot;&gt;&lt;i&gt;(1) Create a {!varPrivateIrRecordTypeSObject.Name} Inventory Request.&lt;/i&gt;&lt;/b&gt;&lt;/p&gt;</fieldText>
+            <fieldType>DisplayText</fieldType>
+        </fields>
+        <fields>
+            <name>screen_Inventory_Request_Name</name>
+            <dataType>String</dataType>
+            <fieldText>Inventory Request Name</fieldText>
+            <fieldType>InputField</fieldType>
+            <helpText>&lt;p&gt;Enter a descriptive name that is easy to search on later.&lt;/p&gt;</helpText>
+            <isRequired>true</isRequired>
+        </fields>
+        <fields>
+            <name>ui_account_select</name>
+            <extensionName>c:auraIrAccountSelect</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldLabel</name>
+                <value>
+                    <stringValue>Select an account:</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>accountWhereCriteria</name>
+                <value>
+                    <stringValue>RecordType.DeveloperName = &apos;Warehouse&apos;</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>fieldHelpText</name>
+                <value>
+                    <stringValue>The Account that your asset will be assigned to.</stringValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>varSelectedAccountId</assignToReference>
+                <name>selectedValue</name>
+            </outputParameters>
+        </fields>
+        <fields>
+            <name>ui_parentasset_select</name>
+            <extensionName>c:auraIrParentAssetSelect</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>fieldLabel</name>
+                <value>
+                    <stringValue>Select a Parent Asset:</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>debugConsole</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>required</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+            <outputParameters>
+                <assignToReference>varSelectedAssetId</assignToReference>
+                <name>selectedValue</name>
+            </outputParameters>
+        </fields>
+        <fields>
+            <name>accel_flow_footer</name>
+            <extensionName>c:Accel_FlowFooter</extensionName>
+            <fieldType>ComponentInstance</fieldType>
+            <inputParameters>
+                <name>overrideNextLabel</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>nextLabel</name>
+                <value>
+                    <stringValue>Create Inventory Request</stringValue>
+                </value>
+            </inputParameters>
+            <inputParameters>
+                <name>showCancelButton</name>
+                <value>
+                    <booleanValue>true</booleanValue>
+                </value>
+            </inputParameters>
+            <isRequired>true</isRequired>
+        </fields>
+        <helpText>&lt;p&gt;Click Finish To Generate your Request&lt;/p&gt;</helpText>
+        <showFooter>false</showFooter>
+        <showHeader>false</showHeader>
+    </screens>
+    <start>
+        <locationX>25</locationX>
+        <locationY>52</locationY>
+        <connector>
+            <targetReference>Get_IR_Record_Type_Id</targetReference>
+        </connector>
+    </start>
+    <status>Active</status>
+    <subflows>
+        <description>Retrieves the record type id for the input variable providing the developer_name for Inventory_Request__c</description>
+        <name>Get_IR_Record_Type_Id</name>
+        <label>Get IR Record Type Id</label>
+        <locationX>226</locationX>
+        <locationY>52</locationY>
+        <connector>
+            <targetReference>Inventory_Request_Header_Screen</targetReference>
+        </connector>
+        <flowName>flow_RecordType_CommonRecordTypeIdRetrieval</flowName>
+        <inputAssignments>
+            <name>varInputRecordTypeDevName</name>
+            <value>
+                <elementReference>varInputIrRecordTypeDevName</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <name>varInputRecordTypeSObjectName</name>
+            <value>
+                <stringValue>Inventory_Request__c</stringValue>
+            </value>
+        </inputAssignments>
+        <outputAssignments>
+            <assignToReference>varPrivateIrRecordTypeSObject</assignToReference>
+            <name>varOutputRecordTypeSObject</name>
+        </outputAssignments>
+    </subflows>
+    <variables>
+        <description>Use this as the default account in the account lookup (@TODO make this a custom setting)</description>
+        <name>varDefaultAccountIdSelection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>0017A00000VBG7tQAH</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>Use this as the default account in the account lookup (@TODO make this a custom setting)</description>
+        <name>varDefaultAccountNameSelection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Accel Entertainment - HQ</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varDefaultAssetIdSelection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>02i7A000004vmbzQAA</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varDefaultAssetNameSelection</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <stringValue>Inventory - Accel Entertainment HQ</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <description>The recordtype developername (underscores) for the Inventory_Request__c to be created</description>
+        <name>varInputIrRecordTypeDevName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+        <value>
+            <stringValue>Gaming_Software</stringValue>
+        </value>
+    </variables>
+    <variables>
+        <name>varInventoryRequest</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+        <objectType>Inventory_Request__c</objectType>
+    </variables>
+    <variables>
+        <description>The record type id to be used in creating the Inventory_Request__c</description>
+        <name>varOutputrRecordTypeId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varPrivateIrRecordTypeSObject</name>
+        <dataType>SObject</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>false</isOutput>
+        <objectType>RecordType</objectType>
+    </variables>
+    <variables>
+        <name>varSelectedAccountId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+    <variables>
+        <name>varSelectedAssetId</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>false</isInput>
+        <isOutput>true</isOutput>
+    </variables>
+</Flow>

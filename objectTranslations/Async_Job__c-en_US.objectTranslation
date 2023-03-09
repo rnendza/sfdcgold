@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Async Job</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Async Jobs</value>
+    </caseValues>
+    <fields>
+        <help><!-- The class name that created this job. --></help>
+        <label><!-- Apex Class Name --></label>
+        <name>Apex_Class_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- the status of the entire batch (mainly used for chaining) --></help>
+        <label><!-- Batch Group Status --></label>
+        <name>Batch_Group_Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparing</masterLabel>
+            <translation><!-- Preparing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Is this job the initiator in a chain of related jobs? --></help>
+        <label><!-- Is Initiator --></label>
+        <name>Is_Initiator__c</name>
+    </fields>
+    <fields>
+        <help><!-- Overall job details.. running stats. stack traces etc. This is stored in JSON @see  AsyncSvc --></help>
+        <label><!-- Overall Job Details --></label>
+        <name>Overall_Job_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- The overall status of the job (mainly used for chaining) --></help>
+        <label><!-- Overall Job Status --></label>
+        <name>Overall_Job_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Textual rep of an 18 char SFDC ID. FK to AsyncApexJob.Id --></help>
+        <label><!-- Parent Job Id --></label>
+        <name>Parent_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Job Status --></label>
+        <name>Parent_Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preparing</masterLabel>
+            <translation><!-- Preparing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

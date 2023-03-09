@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Was created for John C (approved by Bruce L) to modify the &quot;Add/Swap/Reconfigure Status&quot; field specifically.
+Bruce requested Steven Claypool be added 12/22/22</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Add_Swap_Reconfigure_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Project_Stage__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Project_Status__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Project: Edit &quot;Add/Swap/Reconfigure Status&quot; field</label>
+</PermissionSet>

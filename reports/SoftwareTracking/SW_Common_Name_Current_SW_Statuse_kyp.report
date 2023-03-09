@@ -1,0 +1,231 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_86482346</developerName>
+        <masterLabel>Max Bet</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <otherBucketLabel>Other</otherBucketLabel>
+        <sourceColumnName>Asset$Common_Name__c</sourceColumnName>
+        <useOther>true</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>BB2 GameSet 5 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Blade GameSet 7 Max Bet</sourceValue>
+            </sourceValues>
+            <value>WMS Max Bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>ARI GameSet 1</sourceValue>
+            </sourceValues>
+            <value>ARI Max Bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Crystal GameSet 108.1 C Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Crystal GameSet 108.1 D Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT GameSet 1.4 BarTop Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT GameSet 1.4 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT GameSet 1.5 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT GameSet BLB</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT Premium A Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT Premium B Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Crystal GameSet 108.1 D Max Bet Premium</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>IGT Gameset 1.6 AVGGS Max Bet</sourceValue>
+            </sourceValues>
+            <value>IGT Max bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>J43 Game Set 1.1 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Twinstar GameSet 1.1 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>V27 to TwinStar Slant Conversion Max Bet</sourceValue>
+            </sourceValues>
+            <value>SG Max Bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>SPI GameSet A2 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI GameSet B2 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI Premium C1 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI Premium C2 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI GameSet A4 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI GameSet B4 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SPI Premium C3 Max Bet</sourceValue>
+            </sourceValues>
+            <value>SPI Max Bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Bally V32 / Wave Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Bally V22 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>V22 Suite 5 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Wave Suite 6 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>V27 Suite 5 Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>V32 Suite 6 Max Bet</sourceValue>
+            </sourceValues>
+            <value>Bally Max Bet</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>NOV GameSet 2 - Removed Titles</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Magic Games Premium HD Max Bet</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NOV GameSet 5</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NOV GameSet 2</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>NOV GameSet 1</sourceValue>
+            </sourceValues>
+            <value>NOV Max Bet</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>VerticalColumnStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>Asset$GP_Manufacturer__c</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>BucketField_86482346</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Asset$Name</field>
+    </columns>
+    <columns>
+        <field>Asset$Common_Name__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Status</field>
+    </columns>
+    <columns>
+        <field>Asset$Model__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Asset$Account.Three_Month_Average_HPD__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Account</field>
+    </columns>
+    <columns>
+        <field>Asset$Relationship_Manager_Region__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Asset$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asset.VGT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$Account</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>warehouse</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$Common_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>ARI GameSet 1,BB2 GameSet 3,BB2 GameSet 5,BB2 GameSet 5 Max Bet,Blade GameSet 4,Blade GameSet 6,Blade GameSet 6 Non-Premium,Blade GameSet 6 Penn Premium,Blade GameSet 6 Premium,Blade GameSet 7,Blade GameSet 7 Max Bet,Crystal GameSet 108.1,Crystal GameSet 108.1 C Max Bet,Crystal GameSet 108.1 D Max Bet,IGT GameSet 1.2,IGT GameSet 1.3,IGT GameSet 1.4,IGT GameSet 1.4 BarTop Max Bet,IGT GameSet 1.4 Max Bet,IGT GameSet 1.5 Max Bet,IGT GameSet B1,IGT GameSet BLA,IGT GameSet BLB,IGT Premium A Max Bet,IGT Premium B Max Bet,J43 Game Set 1.1,J43 Game Set 1.1 Max Bet,NOV GameSet 1,NOV GameSet 2,NOV GameSet 5,SPI GameSet A2,SPI GameSet A2 Max Bet,SPI GameSet B2,SPI GameSet B2 Max Bet,SPI Premium C1 Max Bet,SPI Premium C2 Max Bet,Twinstar GameSet 1,Twinstar GameSet 1.1,Twinstar GameSet 1.1 Max Bet,V22 Suite 4,V22 Suite 5,V27 to TwinStar Slant Conversion,V27 to TwinStar Slant Conversion Max Bet,V32 Suite 4,V32 Suite 5,V32 Suite 5 Premium,V32 Suite 6,Bally V32 / Wave Max Bet,Bally V22 Max Bet,SPI GameSet A3,SPI GameSet B3,SPI GameSet A4 Max Bet,SPI GameSet B4 Max Bet,Magic Games Premium HD Max Bet,V22 Suite 5 Max Bet,Wave Suite 6 Max Bet,NOV GameSet 2 - Removed Titles,Crystal GameSet 108.1 D Max Bet Premium,IGT Gameset 1.6 AVGGS Max Bet,SPI Premium C3 Max Bet,V27 Suite 5 Max Bet,V32 Suite 6 Max Bet</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Asset$GP_Manufacturer__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_86482346</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SW Common Name - Current SW Status</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Assets_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Asset$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

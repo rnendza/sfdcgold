@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>false</doesSendEmailToMembers>
+    <name>Compliance for Reimbursement</name>
+    <queueMembers>
+        <roles>
+            <role>Compliance</role>
+        </roles>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Reimbursement__c</sobjectType>
+    </queueSobject>
+</Queue>

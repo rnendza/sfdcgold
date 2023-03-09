@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefinierte Aktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierte Aktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefinierte Aktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierte Aktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefinierter Aktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierter Aktionen</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Benutzerdefinierter Aktion</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Benutzerdefinierten Aktionen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Value --></label>
+        <name>maps__ActionValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>maps__Action__c</name>
+        <picklistValues>
+            <masterLabel>Iframe</masterLabel>
+            <translation>Iframe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Javascript</masterLabel>
+            <translation>JavaScript</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BaseObjects --></label>
+        <name>maps__BaseObjects__c</name>
+        <picklistValues>
+            <masterLabel>-- None --</masterLabel>
+            <translation>-- Keine --</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Layouts --></label>
+        <name>maps__Layouts__c</name>
+        <picklistValues>
+            <masterLabel>Mass Action</masterLabel>
+            <translation>Massenaktion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tooltip</masterLabel>
+            <translation>QuickInfo</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Modes --></label>
+        <name>maps__Modes__c</name>
+        <picklistValues>
+            <masterLabel>BaseObject</masterLabel>
+            <translation>BaseObject</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation>Desktop</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Mobil</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirements --></label>
+        <name>maps__Requirements__c</name>
+        <picklistValues>
+            <masterLabel>Activity Support</masterLabel>
+            <translation>Aktivitätsunterstützung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Or Lead</masterLabel>
+            <translation>Kontakt oder Lead</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified Location Support</masterLabel>
+            <translation>Unterstützung für überprüfte Standorte</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Blank</masterLabel>
+            <translation>Leer</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Action</masterLabel>
+            <translation>Benutzerdefinierte Aktion</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section</masterLabel>
+            <translation>Abschnitt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Action</masterLabel>
+            <translation>Standardaktion</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Bezeichnung</nameFieldLabel>
+</CustomObjectTranslation>

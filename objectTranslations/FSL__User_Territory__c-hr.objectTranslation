@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Korisnički teritorij</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Korisnički teritoriji</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Korisnički teritorij</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Korisničke teritorije</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Korisničkog teritorija</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Korisničkih teritorija</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Korisničkom teritoriju</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Korisničkim teritorijima</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Korisničkim teritorijem</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Korisničkim teritorijima</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Korisničkom teritoriju</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Korisničkim teritorijima</value>
+    </caseValues>
+    <fields>
+        <help><!-- Currently used to determine what territories a FSL user (manager)  can edit time slots for --></help>
+        <label><!-- Accel Role --></label>
+        <name>Accel_Role__c</name>
+        <picklistValues>
+            <masterLabel>Regional Manager</masterLabel>
+            <translation><!-- Regional Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Supervisor</masterLabel>
+            <translation><!-- Supervisor --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>FSL__ServiceTerritory__c</name>
+        <relationshipLabel><!-- User Territories --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Territory Name --></label>
+        <name>FSL__Territory_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>FSL__User__c</name>
+        <relationshipLabel><!-- User Territories --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Broj područja korisnika</nameFieldLabel>
+</CustomObjectTranslation>

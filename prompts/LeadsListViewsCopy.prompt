@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Leads List Views Copy</masterLabel>
+    <promptVersions>
+        <body>Near the top left side of your screen, use the bold drop down menu to view different lists. Don&apos;t forget to Pin your favorite!</body>
+        <customApplication>Relationship_Management</customApplication>
+        <delayDays>1</delayDays>
+        <description>Calling attention to the list views</description>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopLeft</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-01-31</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Leads List Views Copy</masterLabel>
+        <publishedDate>2020-12-31</publishedDate>
+        <shouldDisplayActionButton>false</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2020-12-29</startDate>
+        <targetPageKey1>Lead</targetPageKey1>
+        <targetPageKey2>list</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <timesToDisplay>5</timesToDisplay>
+        <title>Check out  the List Views</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

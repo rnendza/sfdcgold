@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>ADDRESS2_CITY</field>
+    </columns>
+    <columns>
+        <field>Account.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Account.Accel_VGT_Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account.Partner_Operator__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>TYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accel Account,Temp Closure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Relationship_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>mark hagel,Paul McCaffrey,Andrew Clark,Brenda Hug,Dayna Munday,Gary Kostrubala,Geno Perry,Gia Donofrio,Jamie Deuser,Jennie Rudisill,Jonathan Stachewicz,Margaret Guira,Margaret Westlove,Mario Tayupanta,Mike Pappas,Rick Riggio,Steve Gradman,Test BDM,Tony Spear,Casey Gibson,Geanna Napolitano,Ange Yangas,Mike Lee,Samantha Rohrer,Tony Curtale,Kristy Kicklighter,Morgan Seiler,Brad Grenoble</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Account.Relationship_Manager__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Live Accounts- Reassignments</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountList</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

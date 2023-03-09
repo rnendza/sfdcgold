@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Serie di dati pianificazione dei territori</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Serie di dati pianificazione dei territori</value>
+    </caseValues>
+    <fields>
+        <label><!-- Config --></label>
+        <name>maps__Config__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Error --></label>
+        <name>maps__LastError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sharing Access Level --></label>
+        <name>maps__SharingAccessLevel__c</name>
+        <picklistValues>
+            <masterLabel>Commenter</masterLabel>
+            <translation>Commentatore</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor</masterLabel>
+            <translation>Editor</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Nessuno</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation>Attivo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Archived</masterLabel>
+            <translation>Archiviato</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

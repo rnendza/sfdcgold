@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <assignedApprover>
+            <approver>
+                <name>Accounting_Approval</name>
+                <type>queue</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Opt Out Approval</label>
+        <name>Opt_Out_Approval</name>
+    </approvalStep>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <criteriaItems>
+            <field>Marketing_Request__c.RecordType</field>
+            <operation>equals</operation>
+            <value>AE Player TV</value>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Marketing_Request__c.Date_Location_Opts_Out__c</field>
+            <operation>notEqual</operation>
+        </criteriaItems>
+        <criteriaItems>
+            <field>Marketing_Request__c.Location_Content_Split__c</field>
+            <operation>equals</operation>
+            <value>50/50 Content Split</value>
+        </criteriaItems>
+    </entryCriteria>
+    <finalApprovalActions>
+        <action>
+            <name>Date_Accounting_Approves_Opt_Out</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Project_Stage_Opt_Out</name>
+            <type>FieldUpdate</type>
+        </action>
+    </finalApprovalActions>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <initialSubmissionActions>
+        <action>
+            <name>date_submit_opt_out_to_acctg</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Project_Stage_Approval</name>
+            <type>FieldUpdate</type>
+        </action>
+        <action>
+            <name>Send_Email_to_Finance_AE_TV_Opt_Out</name>
+            <type>Alert</type>
+        </action>
+    </initialSubmissionActions>
+    <label>AE Player TV Opt Out Approval</label>
+    <processOrder>3</processOrder>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

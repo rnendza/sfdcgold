@@ -1,0 +1,157 @@
+<apex:page controller="GenDataTables"  renderAs="pdf" applyBodyTag="false">
+<head>
+    <style>@page
+        {
+            size:landscape;
+        }
+    </style>
+    <style type="text/css">
+       .summaryTable{
+           margin: auto;
+           border-collapse: collapse;
+           font-size: 14px;
+       }
+       .summaryTable th {
+           border: 1px solid black;
+           text-align: center;
+           width: 170px;
+       }
+       .summaryTable th#total {
+           background-color: red;
+           padding: 10px;
+       }
+       .summaryTable th#tech {
+           background-color: #32CD32;
+           padding: 10px;
+       }
+       .summaryTable th#call {
+           background-color: #32CD32;
+           padding: 10px;
+       }
+       .summaryTable th#incomplete {
+           background-color: yellow;
+           padding: 10px;
+       }
+       .summaryTable th#unresolved {
+           background-color: yellow;
+           padding: 10px;
+       }
+       .techBreak {
+           display: inline-block; 
+           width: 200px; 
+           margin: 40px 15px 40px 15px;
+           vertical-align: top;
+           float: left;
+       }
+       .breakWidth {
+           width: 100%;
+       }
+       .breakWidth th {
+           text-align: center;
+       }
+       .logDiv {
+           width: 950px;
+           margin-top: 30px;     
+       }
+       .logTable {
+           width: 950px;
+           font-size: 10px;
+           float: left;
+       }
+       .column-small {
+           margin-left: 4px;
+           margin-right: 4px;
+           width: 65px;
+           border: .5px solid #808080;
+           border-collapse: collapse;
+           text-align: center;
+       }
+        .column-medium {
+           margin-left: 4px;
+           margin-right: 4px;
+           width: 85px;
+           border: .5px solid #808080;
+           border-collapse: collapse;
+           text-align: center;
+       }
+        .column-large {
+           margin-left: 4px;
+           margin-right: 4px;
+           width: 110px;
+           border: .5px solid #808080;
+           border-collapse: collapse;
+           text-align: left;
+           word-wrap: break-word;
+       }
+       .heading {
+           text-align: center;
+       }
+  </style>
+</head>
+    <apex:variable var="yesterdayDate" value="{!reportDate}" />
+    <apex:variable var="totalcalls" value="{!totalcalls}" />
+    <apex:variable var="techcomplete" value="{!techcomplete}" />
+    <apex:variable var="callcentercomplete" value="{!callcentercomplete}" />
+    <apex:variable var="inprogresscalls" value="{!inprogresscalls}" />
+    <apex:variable var="unresolvedcalls" value="{!unresolvedcalls}" />
+    <center><h1>Pending Issues</h1></center>
+    <center><h4>{!yesterdayDate}</h4></center>
+    <body style="font-size: 12px;">
+       <table class="summaryTable">
+            <tbody>
+            <tr>
+                <th id="total">Total Calls</th>
+                <th id="tech">Completed by Technicians</th>
+                <th id="call">Call Center Completed</th>
+                <th id="incomplete">Incomplete Calls</th>
+                <th id="unresolved">Unresolved Calls</th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black; text-align: center;">{!totalcalls}</th>
+                <th style="border: 1px solid black; text-align: center;">{!techcomplete}</th>
+                <th style="border: 1px solid black; text-align: center;">{!callcentercomplete}</th>
+                <th style="border: 1px solid black; text-align: center;">{!inprogresscalls}</th>
+                <th style="border: 1px solid black; text-align: center;">{!unresolvedcalls}</th>
+            </tr>
+            </tbody>
+        </table>
+          
+           <div class="logDiv">
+               <apex:pageBlock >
+                <apex:pageBlockTable value="{!pendingLogAgg}" var="logtable"  styleClass="logTable" headerClass="heading">                 
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Location</apex:facet> 
+                        <apex:outputText >{!logtable['Account.Name']}</apex:outputText>
+                    </apex:column>
+                    
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Region</apex:facet> 
+                        <apex:outputText >{!logtable['Service_Region__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Technician</apex:facet> 
+                        <apex:outputText >{!logtable['Assigned_Resource__r.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Date Received</apex:facet> 
+                        <apex:outputText value="{0,date,MM/dd/yy hh:mm:ss a}"> <apex:param value="{!logtable['CreatedDate']-(6/24)}" /></apex:outputText>
+                    </apex:column>
+                   
+                    <apex:column styleClass="column-small">
+                        <apex:facet name="header">Machine</apex:facet> 
+                        <apex:outputText >{!logtable['Model__c']}</apex:outputText>
+                    </apex:column>
+                    
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Work Type</apex:facet> 
+                        <apex:outputText >{!logtable['Work_Type__r.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Description</apex:facet> 
+                        <apex:outputText >{!logtable['Description']}</apex:outputText>
+                    </apex:column>         
+                 </apex:pageBlockTable>
+                </apex:pageBlock>
+            </div>
+    </body>
+</apex:page>

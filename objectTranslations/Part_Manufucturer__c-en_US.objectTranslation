@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Part Manufacturer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Part Manufucturer</value>
+    </caseValues>
+    <fields>
+        <label><!-- Average Lead Time --></label>
+        <name>Average_Lead_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Invoice Cost --></label>
+        <name>Last_Invoice_Cost__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer Description --></label>
+        <name>Manufacturer_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer Type --></label>
+        <name>Manufacturer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Primary</masterLabel>
+            <translation><!-- Primary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secondary</masterLabel>
+            <translation><!-- Secondary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Manufacturer__c</name>
+        <relationshipLabel><!-- Part Manufucturer --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Product --></label>
+        <name>Part__c</name>
+        <relationshipLabel><!-- Part Manufucturer --></relationshipLabel>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

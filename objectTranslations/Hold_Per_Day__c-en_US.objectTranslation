@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hold Per Day</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Holds Per Day</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Holds Per Day --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amount Played --></label>
+        <name>Amount_Played__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount Won --></label>
+        <name>Amount_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Holds Per Day --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Credits --></label>
+        <name>Current_Credits__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cycle --></label>
+        <name>Cycle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Bt Most Recent HPD and 12 Mths --></label>
+        <name>Date_Bt_Most_Recent_HPD_and_12_Mths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Bt Most Recent HPD and 1 Mth --></label>
+        <name>Date_Bt_Most_Recent_HPD_and_1_Mth__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Bt Most Recent HPD and 2 Mths --></label>
+        <name>Date_Bt_Most_Recent_HPD_and_2_Mths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Bt Most Recent HPD and 3 Mths --></label>
+        <name>Date_Bt_Most_Recent_HPD_and_3_Mths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Bt Most Recent HPD and 6 Mths --></label>
+        <name>Date_Bt_Most_Recent_HPD_and_6_Mths__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date on this HPD record is less then or equal to the date on the accounts most recent HPD. --></help>
+        <label><!-- Date LTE Acct Most Recent HPD --></label>
+        <name>Date_LTE_Acct_Most_Recent_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date --></label>
+        <name>Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day of Week --></label>
+        <name>Day_of_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Month --></label>
+        <name>Days_in_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds In --></label>
+        <name>Funds_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Out --></label>
+        <name>Funds_Out__c</name>
+    </fields>
+    <fields>
+        <label><!-- Games Played --></label>
+        <name>Games_Played__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD --></label>
+        <name>HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include in YOY --></label>
+        <name>Include_in_YOY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Share --></label>
+        <name>Location_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine Location Type --></label>
+        <name>Machine_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine Model --></label>
+        <name>Machine_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Metric Type --></label>
+        <name>Metric_Type__c</name>
+        <picklistValues>
+            <masterLabel>Statewide90DAverage</masterLabel>
+            <translation><!-- Statewide90DAverage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Statewide90DAveragePrevYear</masterLabel>
+            <translation><!-- Statewide90DAveragePrevYear --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Month --></label>
+        <name>Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Month(n) --></label>
+        <name>Month_n__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Share --></label>
+        <name>Municipality_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- NTI Tax Rate (30%) --></label>
+        <name>NTI_Tax_Rate_30__c</name>
+    </fields>
+    <fields>
+        <label><!-- NTI --></label>
+        <name>NTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Funds --></label>
+        <name>Net_Funds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Revenue --></label>
+        <name>Net_Revenue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Net Wager --></label>
+        <name>Net_Wager__c</name>
+    </fields>
+    <fields>
+        <help><!-- A demo account. --></help>
+        <label><!-- Portal Dummy Account --></label>
+        <name>Portal_Dummy_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Share --></label>
+        <name>State_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Count --></label>
+        <name>VGT_Count__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Rollup of machine raw values into single record per account --></description>
+        <label><!-- Daily Aggregate --></label>
+        <name>Daily_Aggregate</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Daily HPD --></label>
+        <name>Daily_HPD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Rollup Information about a specific cabinet --></description>
+        <label><!-- Model Metric --></label>
+        <name>Model_Metric</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Monthly HPD --></label>
+        <name>Monthly_HPD</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

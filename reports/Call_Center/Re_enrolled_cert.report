@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Asset</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$VGT_Asset__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Work_Type__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Description</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Solution__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Solution_Notes__c</field>
+    </columns>
+    <description>Base Template for all Service reports.</description>
+    <filter>
+        <criteriaItems>
+            <column>Account.Cases$Solution__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Re-Enrolled Certificate</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$ClosedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>3/6/2019 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Re-enrolled cert</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments_with_Work_Orders_and_Cases2__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Cases$ClosedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

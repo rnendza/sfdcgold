@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Mktg_Reimbursements_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Mktg Reimbursements RW</label>
+        <sharedTo>
+            <group>Marketing_Request_R_W</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>RecordTypeId</field>
+            <operation>equals</operation>
+            <value>Marketing</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>true</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Read_Write_All_Reimbursements</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Read/Write All Reimbursements</label>
+        <sharedTo>
+            <group>Accounting</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Reimbursement_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Reimbursement Read/Write</label>
+        <sharedTo>
+            <group>Reimbursements_R_W</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Teresa_R_Corp_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Teresa R Corp Sharing</label>
+        <sharedTo>
+            <group>Temp_Teresa_Radtke_Corporate</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Temp_Teresa_Radtke_Corporate</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

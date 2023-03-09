@@ -1,0 +1,24 @@
+<!--
+This is the parent component for the opportunity location assessment fieldsets.
+-->
+<aura:component
+        implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName"
+        description="Location Assessment Fieldsets">
+
+    <aura:attribute type="String" name="selectedPath" default="location_assessment"/>
+    <!-- the below are set in init of the component -->
+    <aura:attribute type="String" name="selectedSObjectName"/>
+    <aura:attribute type="String" name="selectedRecordId"/>
+    <aura:attribute type="String" name="displayMode"/>
+    <!-- @TODO deprecate the below since we switched to the standard path -->
+    <aura:handler event="c:appStepSelectedEvent" action="{!c.handleApplicationEvent}"/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:if isTrue="{!and(v.selectedRecordId!=null,v.selectedSObjectName!=null,v.displayMode != null)}">
+            <c:POC_FieldSet
+                    aura:id="childEditCmp"
+                    selectedSObjectApiName="{!v.selectedSObjectName}"
+                    selectedSObjectRecordId="{!v.selectedRecordId}"/>
+    </aura:if>
+
+</aura:component>

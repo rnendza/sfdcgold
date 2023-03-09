@@ -1,0 +1,1366 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Schedule_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Route_Schedule_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>CL_Processor</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>CL_Processor</fullName>
+        <fields>Name</fields>
+        <fields>Schedule_Status__c</fields>
+        <fields>Collection_Status__c</fields>
+        <fields>Processing_Status__c</fields>
+        <label>CL Processor</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Assignment information of a physical route&apos;s locations, collectors, vehicles, and questions for a specific day</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Assigned_Driver__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Assigned Driver</label>
+        <lookupFilter>
+            <active>true</active>
+            <booleanFilter>1 OR 2 OR 3</booleanFilter>
+            <filterItems>
+                <field>User.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Collector_1__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>User.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.User__c</valueField>
+            </filterItems>
+            <filterItems>
+                <field>User.Id</field>
+                <operation>equals</operation>
+                <valueField>$Source.Collector_3__c</valueField>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules2</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The User that last modified the collection status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The User that last modified the collection status.</inlineHelpText>
+        <label>Collection Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules3</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Status_Last_Modified_Date__c</fullName>
+        <description>The Date/Time the collection status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the collection status was last modified.</inlineHelpText>
+        <label>Collection Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Collection_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Collection Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Collection Incomplete</fullName>
+                    <default>true</default>
+                    <label>Collection Incomplete</label>
+                </value>
+                <value>
+                    <fullName>COMPLETED COLLECTION</fullName>
+                    <default>false</default>
+                    <label>COMPLETED COLLECTION</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Collector_1__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Collector #1</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Collector_3__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Admin only usage</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Admin only usage</inlineHelpText>
+        <label>Collector #3</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules6</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>CountRoom__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>(Obsolete) Count Room</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Route Schedules</relationshipLabel>
+        <relationshipName>Route_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Current_Geolocation__c</fullName>
+        <displayLocationInDecimal>false</displayLocationInDecimal>
+        <externalId>false</externalId>
+        <label>Current Geolocation</label>
+        <required>false</required>
+        <scale>5</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Location</type>
+    </fields>
+    <fields>
+        <fullName>ETA__c</fullName>
+        <description>Estimated time in minutes to arrive back to base</description>
+        <externalId>false</externalId>
+        <inlineHelpText># of minutes to arrive back to base</inlineHelpText>
+        <label>ETA</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Ending_Vehicle_Milage__c</fullName>
+        <externalId>false</externalId>
+        <label>Ending Vehicle Milage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Record_Link__c</fullName>
+        <description>Used as a helper for things like lightning email templates.</description>
+        <externalId>false</externalId>
+        <formula>/*
+ * Used as a help for things like lightning email templates.
+ */
+LEFT($Api.Partner_Server_URL_500, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_500)) + Id</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Used as a helper for things like lightning email templates.</inlineHelpText>
+        <label>External Record Link</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fill_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the fill status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the fill status.</inlineHelpText>
+        <label>Fill Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules4</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Fill_Status_Last_Modified_Date__c</fullName>
+        <description>The Date/Time the fill status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the fill status was last modified.</inlineHelpText>
+        <label>Fill Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Missing_Vehicle_Start_Info_Display__c</fullName>
+        <description>Yes if missing any vehicle info, otherwise No Meant to be used with CMT Related Lists (contains Unescaped Html as it&apos;s output to display a badge)</description>
+        <externalId>false</externalId>
+        <formula>IF( Missing_Vehicle_Start_Info__c 
+    ,&apos;&lt;span class=&quot;slds-badge slds-theme_error&quot;&gt;Yes&lt;/span&gt;&apos;
+    ,&apos;&lt;span class=&quot;slds-badge slds-theme_success&quot;&gt;No&lt;/span&gt;&apos;
+)</formula>
+        <inlineHelpText>Yes  (in an error badge) if missing any vehicle info, otherwise No (in a success badge).</inlineHelpText>
+        <label>Missing Vehicle Start Info Display</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Missing_Vehicle_Start_Info__c</fullName>
+        <description>Used primarily for ui help to determine if vehicle data has been entered</description>
+        <externalId>false</externalId>
+        <formula>/* =====================================
+ * Checks to see of all vehicle data is entered.
+ *
+ * pseudo:
+ *  If no value for one the below below the box.
+ *   1. Vehicle Make (Vehicle__c)
+ *   2. Assigned Driver
+ *   3. Vehicle License
+ *   4. Vehicle Mileage
+ * =====================================
+ */
+OR( ISBLANK( TEXT(Vehicle__c) )
+    ,ISBLANK( Assigned_Driver__c )
+    ,ISBLANK( Starting_Vehicle_Milage__c )
+    ,Starting_Vehicle_Milage__c == 0
+    ,ISBLANK( Vehicle_License__c ))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Is any Vehicle information populated?</inlineHelpText>
+        <label>Missing Vehicle / Start Info</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Location__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Location</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>Processing_Location</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the processing status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the processing status.</inlineHelpText>
+        <label>Processing Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules5</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Last_Modified_Date__c</fullName>
+        <description>The Date/Time the processing status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the processing status was last modified.</inlineHelpText>
+        <label>Processing Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Processing Incomplete</fullName>
+                    <color>#FF6666</color>
+                    <default>true</default>
+                    <label>Processing Incomplete</label>
+                </value>
+                <value>
+                    <fullName>COMPLETED PROCESSING</fullName>
+                    <default>false</default>
+                    <label>COMPLETED PROCESSING</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Route_Collection_Date__c</fullName>
+        <description>Day Collection will take place</description>
+        <externalId>false</externalId>
+        <label>Route Collection Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Route_Cycle_Number__c</fullName>
+        <description>FF to Route__c.Cycle_Number__c</description>
+        <externalId>false</externalId>
+        <formula>Route__r.Cycle_Number__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The Cycle Number of the associated route.</inlineHelpText>
+        <label>(Rick obsolete??)Route Cycle Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Route_End_Email_Sent_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Route End Email Sent By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules7</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Route_End_Email_Sent_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Route End Email Sent Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Route_End_Timestamp__c</fullName>
+        <description>The Date/Time the collector clicked the end route button</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the collector clicked the end route button, When this is set an email will be sent.</inlineHelpText>
+        <label>Route End Timestamp</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Route_Fill_Date__c</fullName>
+        <description>Not sure how this is used yet?</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Note sure how this is used yet?</inlineHelpText>
+        <label>Route Fill Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Route_Start_Timestamp__c</fullName>
+        <description>The Date/Time the collector clicked the start route button</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date/Time the collector clicked the start route button</inlineHelpText>
+        <label>Route Start Timestamp</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Route__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Route to collect</description>
+        <externalId>false</externalId>
+        <label>Route</label>
+        <referenceTo>Route__c</referenceTo>
+        <relationshipLabel>Route Schedules</relationshipLabel>
+        <relationshipName>Route_Schedules</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Schedule_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Fill Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Fill Incomplete</fullName>
+                    <default>true</default>
+                    <label>Fill Incomplete</label>
+                </value>
+                <value>
+                    <fullName>COMPLETED FILL</fullName>
+                    <default>false</default>
+                    <label>COMPLETED FILL</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Starting_Vehicle_Milage__c</fullName>
+        <externalId>false</externalId>
+        <label>Starting Vehicle Milage</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Accounts__c</fullName>
+        <description>Total Accounts Associated with this Route_Schedule_c record. (Rollup Summary or Route_Schedule_Account__c_)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Accounts Associated with this Route_Schedule_c record. (RS)</inlineHelpText>
+        <label>Total Accounts</label>
+        <summaryForeignKey>Route_Schedule_Account__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Completed_Collections__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Completed Collections</label>
+        <summaryFilterItems>
+            <field>Route_Processing_Sheet__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Complete</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Completed_Fill_Processing_Sheets__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Completed Fill Processing Sheets</label>
+        <summaryFilterItems>
+            <field>Route_Processing_Sheet__c.Processing_Status__c</field>
+            <operation>equals</operation>
+            <value>COMPLETED FILL</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Meter_Readings__c</fullName>
+        <description>The total # of meter readings for all route processing sheets associated with this route schedule.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total # of meter readings for all route processing sheets associated with this route schedule.</inlineHelpText>
+        <label>Total Meter Readings</label>
+        <summarizedField>Route_Processing_Sheet__c.Total_Meter_Readings__c</summarizedField>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Miles_Driven__c</fullName>
+        <externalId>false</externalId>
+        <formula>Ending_Vehicle_Milage__c - Starting_Vehicle_Milage__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Miles Driven</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Not_Yet_Filled_Processing_Sheets__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Not Yet Filled Processing Sheets</label>
+        <summaryFilterItems>
+            <field>Route_Processing_Sheet__c.Processing_Status__c</field>
+            <operation>equals</operation>
+            <value>Not Yet Filled</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Processing_Incomplete_RPS__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Processing Incomplete RPS</label>
+        <summaryFilterItems>
+            <field>Route_Processing_Sheet__c.Processing_Process_Status__c</field>
+            <operation>equals</operation>
+            <value>Processing Incomplete</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Processing_Sheets__c</fullName>
+        <description>Total Processing Sheets generated by this schedule record. Rollup Summary of Route_Processing_Sheet__c</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Total Processing Sheets generated by this schedule record. (RS)</inlineHelpText>
+        <label>Total Processing Sheets</label>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Route_Time_USE_FOR_REPORT_ONLY__c</fullName>
+        <externalId>false</externalId>
+        <formula>(( Route_End_Timestamp__c -  Route_Start_Timestamp__c )*24*60)/60</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Route Time(USE FOR REPORT ONLY)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Route_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+
+ OR( ISBLANK(Route_End_Timestamp__c) ,ISBLANK(Route_Start_Timestamp__c) )
+
+, &quot;Start Time, End Time, or both are missing for this route&quot;, 
+
+TEXT(
+ ROUND((Route_End_Timestamp__c - Route_Start_Timestamp__c)*24,2)) &amp; &quot; hours&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Route Time</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Skipped_Collections__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Skipped Collections</label>
+        <summaryFilterItems>
+            <field>Route_Processing_Sheet__c.Status__c</field>
+            <operation>equals</operation>
+            <value>Skipped</value>
+        </summaryFilterItems>
+        <summaryForeignKey>Route_Processing_Sheet__c.Route_Schedule__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Collector #2</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Route_Schedules1</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Vehicle_License__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle License</label>
+        <length>50</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Vehicle__c</fullName>
+        <externalId>false</externalId>
+        <label>Vehicle Make</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Nissan</fullName>
+                    <default>false</default>
+                    <label>Nissan</label>
+                </value>
+                <value>
+                    <fullName>Ford</fullName>
+                    <default>false</default>
+                    <label>Ford</label>
+                </value>
+                <value>
+                    <fullName>Chevy</fullName>
+                    <default>false</default>
+                    <label>Chevy</label>
+                </value>
+                <value>
+                    <fullName>Hyundai</fullName>
+                    <default>false</default>
+                    <label>Hyundai</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Route Schedule</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>Collections_Tomorrow_Springfield</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>Collections Tomorrow Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>My Collections Today Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Collinsvilles</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>My Collections Today Collinsvilles</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>My Collections Today Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Rockford</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>My Collections Today Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Springfield</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>My Collections Today Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Today_Tinley_Park</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>My Collections Today Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Tomorrow_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>My Collections Tomorrow Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Tomorrow_Collinsville</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>My Collections Tomorrow Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Tomorrow_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>My Collections Tomorrow Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Tomorrow_Rockford</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Rockford</value>
+        </filters>
+        <label>My Collections Tomorrow Rockford</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Tomorrow_Tinley_Park</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Tinley Park</value>
+        </filters>
+        <label>My Collections Tomorrow Tinley Park</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Yesterday</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <label>My Collections Yesterday</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Yesterday_Burr_Ridge</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Burr Ridge</value>
+        </filters>
+        <label>My Collections Yesterday Burr Ridge</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Yesterday_Collinsville</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Collinsville</value>
+        </filters>
+        <label>My Collections Yesterday Collinsville</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Yesterday_Peoria</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Peoria</value>
+        </filters>
+        <label>My Collections Yesterday Peoria</label>
+    </listViews>
+    <listViews>
+        <fullName>My_Collections_Yesterday_Springfield</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>YESTERDAY</value>
+        </filters>
+        <filters>
+            <field>Processing_Location__c</field>
+            <operation>equals</operation>
+            <value>Springfield</value>
+        </filters>
+        <label>My Collections Yesterday Springfield</label>
+    </listViews>
+    <listViews>
+        <fullName>Today_s_Route_Schedules_Locked</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>My Collections Today</label>
+    </listViews>
+    <listViews>
+        <fullName>Tomorrow_s_Route_Schedules</fullName>
+        <columns>NAME</columns>
+        <columns>Processing_Location__c</columns>
+        <columns>Total_Accounts__c</columns>
+        <columns>Total_Processing_Sheets__c</columns>
+        <columns>Total_Meter_Readings__c</columns>
+        <columns>Route_Fill_Date__c</columns>
+        <columns>Route_Collection_Date__c</columns>
+        <columns>Collection_Status__c</columns>
+        <columns>Collector_1__c</columns>
+        <columns>User__c</columns>
+        <columns>Assigned_Driver__c</columns>
+        <columns>Vehicle__c</columns>
+        <columns>Vehicle_License__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Route_Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TOMORROW</value>
+        </filters>
+        <label>My Collections Tomorrow</label>
+    </listViews>
+    <nameField>
+        <label>Route Schedule Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Route Schedules</pluralLabel>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Processing_Location__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Route_Collection_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Collector_1__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>User__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

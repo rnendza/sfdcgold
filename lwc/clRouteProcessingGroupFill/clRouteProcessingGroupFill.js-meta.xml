@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Cl Route Processing Group Fill</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Cl Route Processing Group Fill</masterLabel>
+    <targets>
+        <target>lightningCommunity__Page</target>
+        <target>lightningCommunity__Default</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightningCommunity__Default">
+            <property name="numOfDaysBackForRouteSchedules"
+                      label="# of Days Back to show Route Schedules"
+                      description="The # of days back to show incomplete route schedules. "
+                      required="true"
+                      default="14"
+                      type="integer"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

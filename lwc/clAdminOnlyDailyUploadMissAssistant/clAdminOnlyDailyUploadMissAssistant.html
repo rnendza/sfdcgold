@@ -1,0 +1,56 @@
+<!-- Cl Admin Only Daily Upload Miss Assistant -->
+<template>
+    <div class="xxxslds-theme__shade accel-square-box__info">
+        <div class="slds-scoped-notification slds-media slds-media_top accel-scoped-notification__small" role="status">
+            <div class="slds-media__figure">
+                <lightning-icon icon-name="utility:info"
+                                class={assistanceIconClass}
+                                size={helpIconSize}
+                                alternative-text={title}>
+                </lightning-icon>
+            </div>
+            <div class="slds-media__body">
+                <div class="slds-grid"
+                     onclick={handleSectionClick}
+                     data-index="idx"
+                     data-sectiontitleid="assistDetail">
+                    <div class="slds-col slds-size_7-of-12">
+                        <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                            <b>{title}</b>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_5-of-12">
+                        <div
+                                class="slds-float_right" data-sectionarrowid="assistDetail">
+                            <div class="summary-chevron-right section-arrow">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                     viewBox="0 0 24 24" fill="none" stroke="rgb(0,95,178)"
+                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                     class="feather feather-chevron-right">
+                                    <polyline points="9 18 15 12 9 6"></polyline>
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-hide"
+                     data-sectioncontentid="assistDetail">
+                    <div class="accel-detailed-body-text slds-p-top_xxx-small">
+                        <div if:true={showBulletPoints}
+                             class="accel-hard-wrap-text">
+                            <ul class="slds-list_dotted">
+                                <template for:each={bulletPoints} for:item="item">
+                                    <li key={item.text} class="c3llc-li-container">
+                                        <lightning-formatted-rich-text
+                                                value={item.text}>
+                                        </lightning-formatted-rich-text>
+                                    </li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

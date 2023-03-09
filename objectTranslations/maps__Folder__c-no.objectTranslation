@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Mappen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Mappe</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Mappe</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Mappene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Mapper</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Mapper</value>
+    </caseValues>
+    <fields>
+        <label><!-- Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Folder --></label>
+        <name>maps__ParentFolder__c</name>
+        <relationshipLabel><!-- Maps Folders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Profile Ids --></label>
+        <name>maps__ProfileIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- RoleId --></label>
+        <name>maps__RoleId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Folders --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Mappenavn</nameFieldLabel>
+</CustomObjectTranslation>

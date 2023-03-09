@@ -1,0 +1,577 @@
+<!-- Cl Route Optimizer Sample -->
+<template>
+<!--    <div lwc:dom="manual" class="create-fake-overrides-class"></div>-->
+
+<!--    <div class="slds-p-bottom_large" onclick={handleOuterContainerClick}>-->
+
+<!--        <div style={formStyle}-->
+<!--             if:true={showForm}-->
+<!--             class="slds-box_border">-->
+<!--            <lightning-card-->
+<!--                    icon-name="standard:location"-->
+<!--                    title={cardTitle} class="accel-card__header">-->
+
+<!--                <div slot="actions">-->
+<!--                </div>-->
+<!--                <div class="slds-grid slds-wrap slds-gutters_direct-medium">-->
+<!--                    <div class="slds-col slds-large-size_7-of-12 slds-medium-size_7-of-12 slds-small-size_1-of-1">-->
+<!--                        <div class="slds-grid slds-wrap">-->
+<!--                            <div class="slds-col slds-size_1-of-1 slds-p-bottom_medium">-->
+<!--                                <div if:true={showTerritorySelector}>-->
+<!--&lt;!&ndash;                                    <div class="slds-form-element">&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <label class="slds-form-element__label" for="select-colregion">Collection&ndash;&gt;-->
+<!--&lt;!&ndash;                                            Region</label>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        <div class="slds-form-element__control">&ndash;&gt;-->
+<!--&lt;!&ndash;                                            <div class="slds-select_container">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                <select class="slds-select" id="select-colregion"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        onchange={handleCollectionRegionSelected}>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    <template for:each={collectionRegionOptions} for:item="option">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        <option key={option.label} class="uiInputSelectOption"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                selected={option.selected}&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                value={option.value}>{option.label}&ndash;&gt;-->
+<!--&lt;!&ndash;                                                        </option>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                    </template>&ndash;&gt;-->
+<!--&lt;!&ndash;                                                </select>&ndash;&gt;-->
+<!--&lt;!&ndash;                                            </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                        </div>&ndash;&gt;-->
+<!--&lt;!&ndash;                                    </div>&ndash;&gt;-->
+<!--                                    <div if:true={showRouteSelector}>d-->
+<!--                                        &lt;!&ndash;  Routes &ndash;&gt;-->
+<!--                                        <div class="slds-form-element">-->
+<!--                                            <label class="slds-form-element__label" for="select-route">Route</label>-->
+<!--                                            <div class="slds-form-element__control">-->
+<!--                                                <div class="slds-select_container">-->
+<!--                                                    <select class="slds-select" id="select-route"-->
+<!--                                                            onchange={handleRouteSelected}>-->
+<!--                                                        <template for:each={routeOptions} for:item="option">-->
+<!--                                                            <option key={option.label} class="uiInputSelectOption"-->
+<!--                                                                    selected={option.selected}-->
+<!--                                                                    value={option.value}>{option.label}-->
+<!--                                                            </option>-->
+<!--                                                        </template>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="slds-col slds-size_1-of-1 slds-p-bottom_medium">-->
+<!--                                <div if:true={showProcessingSheetCollectionDateSelector}>-->
+<!--                                    <div class="slds-form-element">-->
+<!--                                        <label class="slds-form-element__label" for="select-coldate">Processing Sheet Collection Date</label>-->
+<!--                                        <div class="slds-form-element__control">-->
+<!--                                            <div class="slds-select_container">-->
+<!--                                                <select class="slds-select" id="select-coldate"-->
+<!--                                                onchange={handleRouteDateSelected}>-->
+<!--                                                    <template for:each={routeDateOptions} for:item="option">-->
+<!--                                                        <option key={option.label} class="uiInputSelectOption"-->
+<!--                                                                selected={option.selected}-->
+<!--                                                                value={option.value}>{option.label}-->
+<!--                                                        </option>-->
+<!--                                                    </template>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="slds-col slds-size_1-of-1">-->
+<!--                                <div if:true={showLocationSelector}>-->
+<!--                                    &lt;!&ndash;  Location Start Selector &ndash;&gt;-->
+<!--                                    <div-->
+<!--                                            class="slds-form-element">-->
+<!--                                        <label class="slds-form-element__label" for="start-location">Start Location-->
+<!--                                            Type</label>-->
+<!--                                        <div class="slds-form-element__control">-->
+<!--                                            <div class="slds-select_container">-->
+<!--                                                <select class="slds-select" id="start-location"-->
+<!--                                                        onchange={handleLocStartSelected}>-->
+<!--                                                    <template for:each={locStartOptions} for:item="option">-->
+<!--                                                        <option key={option.label} class="uiInputSelectOption"-->
+<!--                                                                selected={option.selected}-->
+<!--                                                                value={option.value}>{option.label}-->
+<!--                                                        </option>-->
+<!--                                                    </template>-->
+<!--                                                </select>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+
+
+<!--                                    <div if:true={showAccountLocStart}-->
+<!--                                         class="slds-form-element slds-p-top_medium">-->
+<!--                                        <div class="slds-form-element__control">-->
+<!--                                            <div class="slds-select_container">-->
+<!--                                                <c-record-autocomplete-->
+<!--                                                        data-id="accountstartinput"-->
+<!--                                                        s-object-api-name='Account'-->
+<!--                                                        option-icon-name="standard:account"-->
+<!--                                                        primary-display-field='Name'-->
+<!--                                                        secondary-display-field='ShippingAddress'-->
+<!--                                                        search-label="Start location"-->
+<!--                                                        secondary-display-field-is-address-field="true"-->
+<!--                                                        secondary-display-field-address-property-1="street"-->
+<!--                                                        secondary-display-field-address-property-2="city"-->
+<!--                                                        secondary-display-field-address-property-3="state"-->
+<!--                                                        primary-filter-field='Name'-->
+<!--                                                        secondary-filter-field="ShippingStreet"-->
+<!--                                                        additional-where-criteria={accountWhereCriteria}-->
+<!--                                                        onrecordselected={handleStartAccountSelected}-->
+<!--                                                        min-characters="2"-->
+<!--                                                        customautofocus="true"-->
+<!--                                                        customrequired="true"-->
+<!--                                                        manually-reload-autocomplete={refreshAllAutocompletes}-->
+<!--                                                        preload-results="true"-->
+<!--                                                        max-rows="50"-->
+<!--                                                        place-holder='Select or search for a starting location name (2 or more chars)..'>-->
+<!--                                                </c-record-autocomplete>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div if:true={showTotalStops}-->
+<!--                                 class="slds-col slds-size_1-of-1 slds-p-top_medium">-->
+<!--                                <div class="slds-form-element">-->
+<!--                                    <div class="slds-form-element__control">-->
+<!--                                        <lightning-input-->
+<!--                                                onchange={handleTotalNumberOfWaypointsChanged}-->
+<!--                                                type="number"-->
+<!--                                                value={totalNumberOfWaypoints}-->
+<!--                                                label="Total # of stops (excluding starting point)"-->
+<!--                                                max={maxWayPoints}-->
+<!--                                                min=1>-->
+<!--                                        </lightning-input>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class="slds-col slds-size_1-of-1 slds-p-top_medium">-->
+<!--                                <template for:each={rpsData} for:item="rps" for:index="loopIdx">-->
+<!--                                    <div key={rps.Id}>-->
+<!--                                        <div class="slds-grid slds-wrap slds-p-bottom_large">-->
+<!--                                            <div class="slds-col slds-size_1-of-1">-->
+<!--                                                <span style="font-weight: bold;">-->
+<!--                                                {rps.Stop_Number__c} -  {rps.Account__r.Name}-->
+<!--                                                </span>-->
+<!--                                            </div>-->
+<!--                                            <div class="slds-col slds-size_1-of-1">-->
+<!--                                                <div class="slds-grid slds-wrap slds-gutters">-->
+<!--                                                    <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">-->
+<!--                                                        <lightning-input-->
+<!--                                                                placeholder="(Not yet used)"-->
+<!--                                                                label="Job Start Time"-->
+<!--                                                                type="time">-->
+<!--                                                        </lightning-input>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">-->
+<!--                                                        <lightning-input-->
+<!--                                                                label="Job End Time"-->
+<!--                                                                placeholder="(Not yet used)"-->
+<!--                                                                type="time">-->
+<!--                                                        </lightning-input>-->
+<!--                                                    </div>-->
+<!--                                                    <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+<!--                                                        <lightning-input-->
+<!--                                                                label="Location Priority"-->
+<!--                                                                placeholder="0-100 (Not yet used)"-->
+<!--                                                                max=100-->
+<!--                                                                min=0-->
+<!--                                                                type="number">-->
+<!--                                                        </lightning-input>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                </template>-->
+<!--                            </div>-->
+<!--                            <div class="slds-col slds-size_1-of-1 slds-p-top_medium">-->
+<!--                                <div if:true={showWaypoints}>-->
+<!--                                    <template for:each={wayPointRows} for:item="wayPointRow" for:index="loopIdx">-->
+<!--                                        <div key={wayPointRow.idx} class="slds-p-bottom_medium">-->
+
+<!--                                            <c-record-autocomplete-->
+<!--                                                    custom-id={wayPointRow.idx}-->
+<!--                                                    s-object-api-name='Account'-->
+<!--                                                    option-icon-name="standard:account"-->
+<!--                                                    primary-display-field='Name'-->
+<!--                                                    secondary-display-field='ShippingAddress'-->
+<!--                                                    search-label={wayPointRow.label}-->
+<!--                                                    secondary-display-field-is-address-field="true"-->
+<!--                                                    secondary-display-field-address-property-1="street"-->
+<!--                                                    secondary-display-field-address-property-2="city"-->
+<!--                                                    secondary-display-field-address-property-3="state"-->
+<!--                                                    primary-filter-field='Name'-->
+<!--                                                    secondary-filter-field="ShippingStreet"-->
+<!--                                                    additional-where-criteria={accountWhereCriteria}-->
+<!--                                                    onrecordselected={handleWaypointRowSelected}-->
+<!--                                                    min-characters="2"-->
+<!--                                                    customautofocus="true"-->
+<!--                                                    customrequired="true"-->
+<!--                                                    preload-results="true"-->
+<!--                                                    max-rows="25"-->
+<!--                                                    place-holder='Select or search for a stop location name (2 or more chars)..'>-->
+<!--                                            </c-record-autocomplete>-->
+<!--                                            <div    if:true={wayPointRow.showExtraFields}-->
+<!--                                                    class="slds-grid slds-wrap slds-gutters">-->
+<!--                                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">-->
+<!--                                                    <lightning-input-->
+<!--                                                            placeholder="(Not yet used)"-->
+<!--                                                            label="Job Start Time"-->
+<!--                                                            type="time">-->
+<!--                                                    </lightning-input>-->
+<!--                                                </div>-->
+<!--                                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">-->
+<!--                                                    <lightning-input-->
+<!--                                                            label="Job End Time"-->
+<!--                                                            placeholder="(Not yet used)"-->
+<!--                                                            type="time">-->
+<!--                                                    </lightning-input>-->
+<!--                                                </div>-->
+<!--                                                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+<!--                                                    <lightning-input-->
+<!--                                                            label="Location Priority"-->
+<!--                                                            placeholder="0-100 (Not yet used)"-->
+<!--                                                            max=100-->
+<!--                                                            min=0-->
+<!--                                                            type="number">-->
+<!--                                                    </lightning-input>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+
+<!--                                        </div>-->
+<!--                                    </template>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                            <div class={toggleAdvancedContainerClass}>-->
+<!--                                <div class="slds-grid slds-wrap slds-gutters">-->
+<!--                                    <div class="slds-col slds-size_1-of-2">-->
+<!--                                        <div class="slds-form-element">-->
+<!--                                            <label class="slds-form-element__label" for="select-vehicle">-->
+<!--                                                Select your vehicle-->
+<!--                                            </label>-->
+<!--                                            <div class="slds-form-element__control">-->
+<!--                                                <div class="slds-select_container">-->
+<!--                                                    <select class="slds-select" id="select-vehicle"-->
+<!--                                                            onchange={handleVehicleSelected}>-->
+<!--                                                        <template for:each={vehicleOptions} for:item="option">-->
+<!--                                                            <option key={option.label} class="uiInputSelectOption"-->
+<!--                                                                    selected={option.selected}-->
+<!--                                                                    value={option.value}>{option.label}-->
+<!--                                                            </option>-->
+<!--                                                        </template>-->
+<!--                                                    </select>-->
+<!--                                                </div>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+<!--                                    </div>-->
+<!--                                    <div class="slds-col slds-size_1-of-2">-->
+<!--                                        <lightning-input-->
+<!--                                                onchange={handleVehicleStartTimeChange}-->
+<!--                                                label="Vehicle Start Time (Not yet used)"-->
+<!--                                                value={vehicleStartTime}-->
+<!--                                                type="time">-->
+<!--                                        </lightning-input>-->
+<!--                                    </div>-->
+<!--                                    <div class="slds-col slds-size_1-of-2">-->
+
+<!--                                    </div>-->
+<!--                                    <div class="slds-col slds-size_1-of-2">-->
+<!--                                        <lightning-input-->
+<!--                                                label="Vehicle End Time (Not yet used)"-->
+<!--                                                value={vehicleEndTime}-->
+<!--                                                type="time">-->
+<!--                                        </lightning-input>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+
+<!--                            <div class="slds-col slds-size_1-of-1 slds-p-top_medium slds-p-bottom_medium"-->
+<!--                                 style="width:100%">-->
+<!--                                <div class="slds-grid slds-wrap slds-gutters_direct-small">-->
+<!--                                    <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-bottom_medium">-->
+<!--                                        <button if:true={showDisabledSubmit}-->
+<!--                                                name="submitOptimize"-->
+<!--                                                disabled-->
+<!--                                                onclick={handleDisabledClick}-->
+<!--                                                data-id="submitOptimize"-->
+<!--                                                title="Optimize It!"-->
+<!--                                                class="slds-button slds-button_success slds-button_stretch ">-->
+<!--                                                <span class="slds-p-right_xx-small">-->
+<!--                                                <lightning-icon-->
+<!--                                                       icon-name="utility:calculated_insights"-->
+<!--                                                       variant="inverse"-->
+<!--                                                       alternative-text=""-->
+<!--                                                       size="small"-->
+<!--                                                       title="">-->
+<!--                                                </lightning-icon>-->
+<!--                                                </span>-->
+<!--                                                <b>Optimize Route</b>-->
+<!--                                        </button>-->
+<!--                                        <button if:true={showEnabledSubmit}-->
+<!--                                                name="submitOptimize"-->
+<!--                                                data-id="submitOptimize"-->
+<!--                                                title="Optimize It!"-->
+<!--                                                class="slds-button slds-button_success slds-button_stretch "-->
+<!--                                                onclick={handleOptimizeButtonClick}>-->
+<!--                                               <span class="slds-p-right_xx-small">-->
+<!--                                                <lightning-icon-->
+<!--                                                        icon-name="utility:calculated_insights"-->
+<!--                                                        alternative-text=""-->
+<!--                                                        size="small"-->
+<!--                                                        class="accel-optimize-icon"-->
+<!--                                                        title="Click to run optimizer">-->
+<!--                                                </lightning-icon>-->
+<!--                                                </span>-->
+<!--                                                <b>Optimize Route</b>-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                    <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">-->
+<!--                                        <button name="resetForm"-->
+<!--                                                data-id="reetOptimize"-->
+<!--                                                title="Reset query"-->
+<!--                                                class="slds-button slds-button_neutral slds-button_stretch "-->
+<!--                                                onclick={handleResetButtonClick}>-->
+<!--                                            <b>Clear Form</b>-->
+<!--                                        </button>-->
+<!--                                    </div>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                    <div class="slds-col slds-large-size_5-of-12 slds-medium-size_7-of-12 slds-small-size_1-of-1 slds-p-bottom_large">-->
+<!--                        <div style="min-height: 300px">-->
+<!--                            <c-cl-route-optimize-assistance-->
+<!--                                    selected-territory-pl-option={_selectedTerritoryPlOption}-->
+<!--                                    selected-collection-region-pl-option={_selectedCollectionRegionPlOption}-->
+<!--                                    selected-loc-start-type={selectedLocStartType}-->
+<!--                                    selected-start-account={selectedStartAccount}-->
+<!--                                    total-num-stops-selected={totalNumberOfWaypoints}-->
+<!--                                    show-optimize-button={showEnabledSubmit}-->
+<!--                                    max-way-points={maxWayPoints}-->
+<!--                                    way-point-rows={wayPointRows}-->
+<!--                                    ontoggleadvancedform={handleToggleAdvancedForm}>-->
+<!--                            </c-cl-route-optimize-assistance>-->
+<!--                        </div>-->
+<!--                    </div>-->
+<!--                </div>-->
+
+<!--            </lightning-card>-->
+<!--        </div>-->
+<!--        <div style={optimizingStyle}>-->
+<!--            <c-ui-custom-stencil-->
+<!--                    iterations="6"-->
+<!--                    type="list" columns="1">-->
+<!--            </c-ui-custom-stencil>-->
+<!--        </div>-->
+<!--        &lt;!&ndash;-  OPTIMIZATION SUMMARY -&ndash;&gt;-->
+<!--        <div if:true={showSummaryCard}-->
+<!--             class="slds-box_border">-->
+
+<!--            <lightning-card-->
+<!--                    icon-name="standard:location"-->
+<!--                    title={summaryCardTitle} class="accel-card__header">-->
+<!--                <div slot="actions">-->
+<!--                    <lightning-button-->
+<!--                            icon-name="utility:back" class="slds-p-right_x-small"-->
+<!--                            label="Run another query"-->
+<!--                            onclick={handleBackToForm}>-->
+<!--                    </lightning-button>-->
+<!--                </div>-->
+<!--                <div>-->
+<!--                    <lightning-tabset class="accel-tab-set"-->
+
+<!--                                      active-tab-value={activeTabValue}>-->
+<!--                        <lightning-tab label="Route Overview" class="c3llc-autocomplete-tab"-->
+<!--                                       value="route_overview"-->
+<!--                                       icon-name="standard:proposition"-->
+<!--                                       onactive={handleTabSelect}>-->
+
+<!--                            <div>-->
+<!--                                <div class="slds-box slds-box_xx-small">-->
+<!--                                    <lightning-card>-->
+<!--                                        <h3 slot="title">-->
+<!--                                            <lightning-icon icon-name="standard:service_report"-->
+<!--                                                            size="small"></lightning-icon>-->
+<!--                                            <span-->
+<!--                                                    class="slds-p-left_x-small"-->
+<!--                                                    style="font-size:.80em">Route summary</span>-->
+<!--                                        </h3>-->
+<!--                                        <div class="slds-grid slds-wrap slds-p-left_medium slds-p-right_small">-->
+<!--                                            <div class="slds-col slds-size_1-of-2 accel-test-borders">-->
+<!--                                                <lightning-tile type="media" class="slds-p-bottom_medium">-->
+<!--                                                    <div class="slds-truncate slds-p-top_small" title="Summary">-->
+<!--                                                        <dl class="slds-dl_horizontal">-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Collection-->
+<!--                                                                    Region:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {_selectedCollectionRegionPlOption.label}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Type:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.journeyType}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total Locations:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalLocations}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total unassigned-->
+<!--                                                                    tasks:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalTasksUnassigned}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                        </dl>-->
+<!--                                                    </div>-->
+<!--                                                </lightning-tile>-->
+<!--                                            </div>-->
+<!--                                            <div class="slds-col slds-size_1-of-2 accel-test-borders">-->
+<!--                                                <lightning-tile type="media" class="slds-p-bottom_medium">-->
+<!--                                                    <div class="slds-truncate slds-p-top_small" title="Summary">-->
+<!--                                                        <dl class="slds-dl_horizontal">-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total steps:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalSteps}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total distance-->
+<!--                                                                    (miles):</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalDistanceMiles}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total travel-->
+<!--                                                                    time:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalTravelTimeFormatted}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                            <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">-->
+<!--                                                                <p class="slds-truncate" title="A">Total service-->
+<!--                                                                    time:</p>-->
+<!--                                                            </dt>-->
+<!--                                                            <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">-->
+<!--                                                                <p class="slds-truncate" title="AvB">-->
+<!--                                                                    {optimizationResults.summary.totalServiceTimeFormatted}-->
+<!--                                                                </p>-->
+<!--                                                            </dd>-->
+<!--                                                        </dl>-->
+<!--                                                    </div>-->
+<!--                                                </lightning-tile>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+
+<!--                                    </lightning-card>-->
+<!--                                </div>-->
+<!--                                <div class="slds-box slds-box_xx-small slds-m-top_large">-->
+<!--                                    <lightning-card>-->
+<!--                                        <h3 slot="title">-->
+<!--                                            <lightning-icon icon-name="standard:outcome"-->
+<!--                                                            size="small"></lightning-icon>-->
+<!--                                            <span-->
+<!--                                                    class="slds-p-left_x-small"-->
+<!--                                                    style="font-size:.80em">Route details</span>-->
+<!--                                        </h3>-->
+<!--                                        <div class="slds-p-left_medium slds-p-right_small accel-test-borders slds-p-top_medium">-->
+<!--                                            <div class="eighty-percent">-->
+<!--                                                            <span style="font-size:.85em">-->
+<!--                                                            * Note still trying to figure out what time of arrival is!-->
+<!--                                                            </span>-->
+<!--                                                <div class="slds-p-bottom_medium"></div>-->
+<!--                                                <h2><b><span class="slds-text-color_success">Assigned Stops</span></b>-->
+<!--                                                </h2>-->
+<!--                                                <lightning-datatable-->
+<!--                                                        key-field="accountId"-->
+<!--                                                        data={steps}-->
+<!--                                                        row-number-offset={rowOffset}-->
+<!--                                                        hide-checkbox-column-->
+<!--                                                        columns={columns}-->
+<!--                                                        class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">-->
+<!--                                                </lightning-datatable>-->
+<!--                                                <div if:true={showUnassignedData}>-->
+<!--                                                    <div class="slds-p-bottom_large"></div>-->
+<!--                                                    <h2><b><span-->
+<!--                                                            class="slds-text-color_error">UnAssigned Stops</span></b>-->
+<!--                                                    </h2>-->
+<!--                                                    <lightning-datatable-->
+<!--                                                            key-field="accountId"-->
+<!--                                                            data={unassigned}-->
+<!--                                                            row-number-offset={rowOffset}-->
+<!--                                                            hide-checkbox-column-->
+<!--                                                            columns={columnsUnassigned}-->
+<!--                                                            class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered">-->
+<!--                                                    </lightning-datatable>-->
+<!--                                                </div>-->
+<!--                                                <div class="slds-p-bottom_large"></div>-->
+<!--                                            </div>-->
+<!--                                            <div class="slds-p-top_large">-->
+<!--                                                <span style="font-size:.80em">* work in progress</span>-->
+<!--                                                <c-cl-google-map-launcher-->
+<!--                                                        selected-origin-geo={originGeo}-->
+<!--                                                        selected-destination-geo={destinationGeo}-->
+<!--                                                        selected-way-points={wayPointGeos}-->
+<!--                                                        onclick={handleGoogleMapsOptClick}>-->
+<!--                                                </c-cl-google-map-launcher>-->
+<!--                                            </div>-->
+<!--                                        </div>-->
+
+<!--                                    </lightning-card>-->
+<!--                                </div>-->
+<!--                            </div>-->
+<!--                        </lightning-tab>-->
+<!--                        <lightning-tab label="Route Directions" class="c3llc-autocomplete-tab"-->
+<!--                                       value="route_directions"-->
+<!--                                       icon-name="standard:activations"-->
+<!--                                       onactive={handleTabSelect}>-->
+
+
+<!--                            Directions @todo<br/>-->
+<!--                            <span class="slds-text-color_success">@todo.. show google maps button with origin / multiple waypoints / dest</span><br/>-->
+<!--                            @todo maybe use this plugin to show directions on map?-->
+<!--                            https://framagit.org/gegeweb/leaflet-routing-machine-openroute<br/>-->
+<!--                            RAW JSON<br/></br>-->
+<!--                            {directionsData}-->
+<!--                            &lt;!&ndash;                                        <iframe style='border:none' width='100%' height='100%'  src="https://maps.openrouteservice.org/#/directions/Ladenburg,Germany/Heidelberg,Germany/data/55,130,32,198,15,97,4,224,38,9,96,59,2,24,5,192,166,6,113,0,184,64,14,0,232,3,96,1,128,86,82,6,103,32,26,0,88,4,228,62,227,24,184,129,184,142,63,1,24,1,51,208,14,192,217,189,65,85,243,225,11,68,4,0,14,169,224,68,77,135,40,5,208,32,3,55,128,6,221,46,112,1,60,195,234,64,28,192,45,52,116,150,2,187,238,77,22,72,45,232,119,163,184,140,17,188,58,200,152,24,193,110,200,250,24,208,40,202,0,110,232,0,250,218,14,33,184,160,168,46,150,232,168,241,144,14,136,168,184,2,114,152,0,22,46,9,129,96,168,48,184,164,36,114,0,238,232,240,150,37,217,149,213,174,56,124,44,0,190,114,0,94,80,0,182,184,124,248,189,189,64,0/embed/en-us"></iframe>&ndash;&gt;-->
+<!--                        </lightning-tab>-->
+<!--                        <lightning-tab label="Distance Matrix" class="c3llc-autocomplete-tab"-->
+<!--                                       value="distance_matrix"-->
+<!--                                       icon-name="standard:data_mapping"-->
+<!--                                       onactive={handleTabSelect}>-->
+<!--                            <c-cl-distance-matrix-->
+<!--                                    collection-region-id={selectedCollectionRegion}-->
+<!--                                    use-accounts-as-origins="true"-->
+<!--                                    origin-coordinate={originCoordinate}-->
+<!--                                    account-ids={destinationAccountIds}>-->
+<!--                            </c-cl-distance-matrix>-->
+<!--                        </lightning-tab>-->
+<!--                    </lightning-tabset>-->
+<!--                </div>-->
+<!--            </lightning-card>-->
+<!--        </div>-->
+<!--    </div>-->
+</template>

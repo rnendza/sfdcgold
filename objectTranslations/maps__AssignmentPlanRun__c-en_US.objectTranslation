@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Iteration Count --></label>
+        <name>maps__BatchIterationCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Job Id --></label>
+        <name>maps__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache End Time --></label>
+        <name>maps__CacheEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache Start Time --></label>
+        <name>maps__CacheStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing End Time --></label>
+        <name>maps__ProcessingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Start Time --></label>
+        <name>maps__ProcessingStartTime__c</name>
+    </fields>
+    <fields>
+        <help><!-- Query Limit Reached --></help>
+        <label><!-- Query Limit Hit --></label>
+        <name>maps__QueryLimitHit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>maps__QueryLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Assigned Count --></label>
+        <name>maps__RecordsAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Error Count --></label>
+        <name>maps__RecordsErrorCount__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of Records Not Assigned --></help>
+        <label><!-- Records Not Assigned Count --></label>
+        <name>maps__RecordsNotAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Total --></label>
+        <name>maps__RecordsTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation><!-- Aborted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caching</masterLabel>
+            <translation><!-- Caching --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation><!-- Queued --></translation>
+        </picklistValues>
+    </fields>
+</CustomObjectTranslation>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Region</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Regions</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is gaming shut down as defined by the associated State Governor? --></help>
+        <label><!-- Gaming Shut Down --></label>
+        <name>Gaming_Shut_Down__c</name>
+    </fields>
+    <fields>
+        <help><!-- The polygon coordinates of the region. --></help>
+        <label><!-- Geo Shape Boundary --></label>
+        <name>Geo_Shape_Boundary__c</name>
+    </fields>
+    <fields>
+        <help><!-- General Description of the Covid Region ie. SOUTHERN --></help>
+        <label><!-- Region Description --></label>
+        <name>Region_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please refer to https://coronavirus.illinois.gov/s/restore-illinois-mitigation-plan for the latest news --></help>
+        <label><!-- Tier --></label>
+        <name>Tier__c</name>
+        <picklistValues>
+            <masterLabel>Phase 1</masterLabel>
+            <translation><!-- Phase 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase 2</masterLabel>
+            <translation><!-- Phase 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase 3</masterLabel>
+            <translation><!-- Phase 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase 4</masterLabel>
+            <translation><!-- Phase 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phase 5</masterLabel>
+            <translation><!-- Phase 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 1</masterLabel>
+            <translation><!-- Tier 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 2</masterLabel>
+            <translation><!-- Tier 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tier 3</masterLabel>
+            <translation><!-- Tier 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Accounts within this region Automatically populated. --></help>
+        <label><!-- Total Accounts --></label>
+        <name>Total_Accounts__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Number of Counties within this region. Automatically populated. --></help>
+        <label><!-- Total Counties --></label>
+        <name>Total_Counties__c</name>
+    </fields>
+    <recordTypes>
+        <description><!-- Covid Region --></description>
+        <label><!-- Covid --></label>
+        <name>Covid</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Key Region --></label>
+        <name>Key_Region</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

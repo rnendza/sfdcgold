@@ -1,0 +1,774 @@
+<!-- Cl Redemption Readings ( RT Tab)  -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+    <div if:true={showRpsForm} class="slds-p-horizontal_none slds-p-top_xx-small">
+        <div if:true={showRtEndReplenishmentMsg} class="slds-p-bottom_large slds-p-top_large">
+            <c-cl-timestamper
+                    button-label={_lblEndRtReplenishmentBtn}
+                    title={_lblEndRtReplenishmentTitle}
+                    button-icon-name="utility:stop"
+                    help-icon-name="utility:date_time"
+                    ondateclickaction={handleDateEndClickAction}
+                    button-help-text={endButtonHelpText}>
+            </c-cl-timestamper>
+        </div>
+        <div if:true={showRtStartReplenishmentMsg} class="slds-p-bottom_xx-large">
+            <c-cl-timestamper
+                    button-label={_lblStartRtReplenishmentBtn}
+                    title={_lblStartRtReplenishmentTitle}
+                    button-icon-name="utility:play"
+                    help-icon-name="utility:date_time"
+                    ondateclickaction={handleDateStartClickAction}
+                    button-help-text={startButtonHelpText}>
+            </c-cl-timestamper>
+        </div>
+        <div if:false={showRtStartReplenishmentMsg}>
+            <div class="accel-glassmorphism_tile  slds-m-bottom_xxx-small slds-p-bottom_small  slds-var-p-horizontal_xxx-small slds-p-top_none">
+            <div class="slds-p-bottom_xx-small ">
+                <!-- Top Save button added per https://accel-entertainment.monday.com/boards/1300348967/pulses/1779294094 -->
+                <div class="slds-p-top_small slds-p-bottom_xx-small">
+                    <button
+                            name="submitFormTop"
+                            type="submit"
+                            onclick={handleSaveSubmit}
+                            data-id="submitButtonTop"
+                            title={saveButtonLabel}
+                            style="padding:.25em"
+                            class="slds-button slds-button_brand slds-button_stretch ">
+                                                <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                        <span style="font-size: 1.25em">{saveButtonLabel}</span>
+                    </button>
+                </div>
+
+                <div class="slds-border_bottom slds-color__border_gray-4 slds-p-bottom_xx-small"
+                     onclick={handleRedemptionSectionClick}
+                     data-sectiontitleid="currentcassette">
+                    <div class="slds-grid slds-p-top_xx-small">
+                        <div class="slds-col slds-size_5-of-6">
+                            <h1>
+                                <lightning-icon
+                                        size="small"
+                                        class="accel-redemption-section-current_icon" icon-name="utility:notebook"></lightning-icon>
+                                <span class="slds-p-left_xx-small accel-redemption-section_title">Current Fill Levels</span>
+                            </h1>
+                        </div>
+                        <div class="slds-col slds-size_1-of-6">
+                            <div class="slds-float_right" data-id="header-current"
+                                 title={_chevronTitle}>
+                                <div class="summary-chevron-down" data-sectionarrowid="currentcassette">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                         class="feather feather-chevron-down">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-show" data-sectioncontentid="currentcassette">
+                <div    if:true={showLastModDate}
+                        class="slds-p-bottom_xxx-small">
+                    <div class="slds-text-align_right">
+                <span>
+                    <lightning-icon icon-name="utility:save"
+                                    class={rpsWrapper.lastModDateIconClass}
+                                    title="Route Processing Sheet Last Modified Date"
+                                    size="xx-small">
+                    </lightning-icon>
+                    <span class={rpsWrapper.lastModDateTextClass}>
+                        <lightning-formatted-date-time
+                                value={rpsWrapper.lastModifiedDate} year="numeric"
+                                month="numeric" day="numeric"
+                                hour="2-digit"
+                                minute="2-digit" hour12="true"
+                                second="2-digit">
+                        </lightning-formatted-date-time>
+                    </span>
+                      <span style="position:relative; top: -4px">
+                                                    <lightning-helptext
+                                                            class="slds-m-left_xx-small"
+                                                            content="Last modified date of the route processing sheet">
+                                                    </lightning-helptext>
+                      </span>
+                </span>
+                    </div>
+                </div>
+                <div class="accel-form-theme_shade slds-p-vertical_x-small
+                slds-m-bottom_small  slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    <div class="slds-grid slds-gutters_direct-xxx-small slds-wrap">
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-bottom_none">
+                            <lightning-tile type="media"
+                                            label="Cassette Fill Levels"
+                                            href="javascript:void(0)"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+<!--                                <lightning-icon-->
+<!--                                        size="small"-->
+<!--                                        slot="media" icon-name="custom:custom41"></lightning-icon>-->
+                                <div>    
+                                    <c-cl-cassette-inbound-form
+                                            rps-id={rpsId}
+                                            redemption-type={redemptionType}
+                                            show-overflow-fields={showOverflowFields}
+                                            onredemptioninboundcassetteformsubmitted={handleFormSubmit}
+                                            onformcloseclicked={handleFormCloseClicked}>
+                                    </c-cl-cassette-inbound-form>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-bottom_small">
+                            <lightning-tile type="media"
+                                            href="javascript:void(0)"
+                                            label="Cassette Image"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+                                <div class="slds-p-top_xxx-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_none">
+                                            <div if:true={rpsWrapper}>
+                                                <div if:true={rpsWrapper.currentCassetteImg.showCamLauncher}>
+                                                    <div data-id="currentcassette"
+                                                         onclick={handleRtCamLauncherClick}>
+                                                        <c-ui-camera-launcher
+                                                                allow-cam-launch="true"
+                                                                onfileuploaded={handleFileUploaded}
+                                                                onfilereplacecanceled={handleFileReplaceCanceled}
+                                                                height="175" width="175"
+                                                                icon-style="color:rgb(37,116,180)"
+                                                                icon-zoom={_cameraIconZoom}
+                                                                img-title={rpsWrapper.currentCassetteImg.title}
+                                                                img-compression-ratio={imageCompressionRatio}
+                                                                parent-record-id={rpsWrapper.rpsId}
+                                                                redemption-image-type={rpsWrapper.currentCassetteImg.rtImageType}
+                                                                content-version-id={rpsWrapper.currentCassetteImg.contentVersionId}
+                                                                data-id="currentcassette"
+                                                                data-rpsid={rpsWrapper.rpsId}>
+                                                        </c-ui-camera-launcher>
+                                                    </div>
+                                                </div>
+                                                <div if:true={rpsWrapper.currentCassetteImg.showThumb}>
+                                                    <div
+                                                            onclick={handleUiImgClick}
+                                                            title="Click to retake the picture"
+                                                            class="accel-pic-icon-container-class"
+                                                            data-rpsimagetype="currentcassette"
+                                                            data-rpsid={rpsWrapper.rpsId}>
+                                                        <div class="slds-p-around_xx-small">
+                                                            <div>
+                                                                <lightning-icon
+                                                                        size="large"
+                                                                        style="zoom: 160%"
+                                                                        icon-name="doctype:image">
+                                                                </lightning-icon>
+                                                            </div>
+                                                            <div style="font-size: .80em;">
+                                                                <span style="color:green">Image Uploaded</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+<!--                                                <div if:true={rpsWrapper.currentCassetteImg.showThumb}>-->
+<!--                                                    <div class="slds-grid" style="padding:0">-->
+<!--                                                        <div class="slds-col" style="padding:0">-->
+<!--                                                            <div class="slds-grid slds-wrap" style="padding:0">-->
+<!--                                                                <div class="slds-col"-->
+<!--                                                                     style="padding:0;font-size: .65em!important">-->
+<!--                                                                    <a style="display: none"-->
+<!--                                                                       data-rpsid={rpsWrapper.rpsId}-->
+<!--                                                                       href={rpsWrapper.currentCassetteImg.downloadUrl}-->
+<!--                                                                       download={rpsWrapper.currentCassetteImg.downloadUrl}></a>-->
+<!--                                                                    <div class="slds-text-align_left">-->
+<!--                                                                        <lightning-button-menu-->
+<!--                                                                                alternative-text="Show menu"-->
+<!--                                                                                variant="border"-->
+<!--                                                                                nubbin-->
+<!--                                                                                menu-alignment="bottom-right"-->
+<!--                                                                                class="accel-button-menu_override"-->
+<!--                                                                                size="small"-->
+<!--                                                                                title="Click for image options"-->
+<!--                                                                                onselect={handleImageOptionClick}-->
+<!--                                                                                data-docid={rpsWrapper.currentCassetteImg.contentDocumentId}-->
+<!--                                                                                data-rpsid={rpsWrapper.rpsId}-->
+<!--                                                                                data-imgdownloadurl={rpsWrapper.currentCassetteImg.downloadUrl}-->
+<!--                                                                                data-imgpreviewurl={rpsWrapper.currentCassetteImg.previewUrl}-->
+<!--                                                                                icon-size="small"-->
+<!--                                                                                icon-name="utility:threedots">-->
+<!--&lt;!&ndash;                                                                            <lightning-menu-item&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    value="preview"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    class="accel-icon-green"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    prefix-icon-name="utility:preview"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    label="Preview">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                            </lightning-menu-item>&ndash;&gt;-->
+<!--                                                                            <lightning-menu-item-->
+<!--                                                                                    value="download"-->
+<!--                                                                                    class="accel-icon-blue"-->
+<!--                                                                                    prefix-icon-name="utility:download"-->
+<!--                                                                                    label="Download">-->
+<!--                                                                            </lightning-menu-item>-->
+<!--                                                                            <lightning-menu-divider-->
+<!--                                                                                    variant="compact"></lightning-menu-divider>-->
+<!--                                                                            <lightning-menu-item-->
+<!--                                                                                    value="delete"-->
+<!--                                                                                    class="accel-icon-red"-->
+<!--                                                                                    prefix-icon-name="utility:delete"-->
+<!--                                                                                    label="Delete">-->
+<!--                                                                            </lightning-menu-item>-->
+<!--                                                                        </lightning-button-menu>-->
+<!--                                                                    </div>-->
+<!--                                                                    <div class="" style="padding:0">-->
+<!--                                                                        <c-ui-image-thumb-->
+<!--                                                                                onuiimageclick={handleUiImgClick}-->
+<!--                                                                                rps-id={rpsWrapper.rpsId}-->
+<!--                                                                                rps-image-type="currentcassette"-->
+<!--                                                                                content-version-id={rpsWrapper.currentCassetteImg.contentVersionId}-->
+<!--                                                                                content-document-id={rpsWrapper.currentCassetteImg.contentDocumentId}-->
+<!--                                                                                img-download-url={rpsWrapper.currentCassetteImg.downloadUrl}-->
+<!--                                                                                height=175-->
+<!--                                                                                width=175>-->
+<!--                                                                        </c-ui-image-thumb>-->
+<!--                                                                    </div>-->
+<!--                                                                </div>-->
+
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                            <div if:true={rpsWrapper.currentCassetteImg.showThumb}>
+                                            <c-ui-image-info
+                                                    if:true={showImageMetadata}
+                                                    img-title-display={rpsWrapper.currentCassetteImg.displayTitle}
+                                                    img-title-full={rpsWrapper.currentCassetteImg.title}
+                                                    img-size={rpsWrapper.currentCassetteImg.size}
+                                                    img-user-name={rpsWrapper.currentCassetteImg.userName}
+                                                    img-date={rpsWrapper.currentCassetteImg.lastModifiedDate} >
+                                            </c-ui-image-info>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        <template if:true={showRtCoinImages}>
+                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1
+                        slds-m-bottom_x-small slds-border_bottom slds-color__border_gray-5">
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-max-small-hide">
+                            <div if:false={showStencil}>
+                                <c-cl-coin-image-tile
+                                        label="Coin Fill Levels">
+                                </c-cl-coin-image-tile>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                            <lightning-tile type="media"
+                                            href="javascript:void(0)"
+                                            label="Coin Image"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+                                <div class="slds-p-top_xxx-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_none">
+                                            <div if:true={rpsWrapper.currentCoinImg.showCamLauncher}>
+                                                <div data-id="currentcoin"
+                                                     onclick={handleRtCamLauncherClick}>
+                                                    <c-ui-camera-launcher
+                                                            allow-cam-launch="true"
+                                                            onfileuploaded={handleFileUploaded}
+                                                            onfilereplacecanceled={handleFileReplaceCanceled}
+                                                            height="175" width="175"
+                                                            icon-style="color:rgb(37,116,180)"
+                                                            icon-zoom={_cameraIconZoom}
+                                                            img-title={rpsWrapper.currentCoinImg.title}
+                                                            img-compression-ratio={imageCompressionRatio}
+                                                            parent-record-id={rpsWrapper.rpsId}
+                                                            redemption-image-type={rpsWrapper.currentCoinImg.rtImageType}
+                                                            content-version-id={rpsWrapper.currentCoinImg.contentVersionId}
+                                                            data-id="currentcoin"
+                                                            data-rpsid={rpsWrapper.rpsId}>
+                                                    </c-ui-camera-launcher>
+                                                </div>
+                                            </div>
+                                            <div if:true={rpsWrapper.currentCoinImg.showThumb}>
+                                                <div class="slds-grid" style="padding:0">
+                                                    <div class="slds-col" style="padding:0">
+                                                        <div class="slds-grid slds-wrap" style="padding:0">
+                                                            <div class="slds-col"
+                                                                 style="padding:0;font-size: .65em!important">
+                                                                <a style="display: none"
+                                                                   data-rpsid={rpsWrapper.rpsId}
+                                                                   href={rpsWrapper.currentCoinImg.downloadUrl}
+                                                                   download={rpsWrapper.currentCoinImg.downloadUrl}></a>
+                                                                <div class="slds-text-align_left">
+                                                                    <lightning-button-menu
+                                                                            alternative-text="Show menu"
+                                                                            variant="border"
+                                                                            nubbin
+                                                                            menu-alignment="bottom-right"
+                                                                            class="accel-button-menu_override"
+                                                                            size="small"
+                                                                            title="Click for image options"
+                                                                            onselect={handleImageOptionClick}
+                                                                            data-docid={rpsWrapper.currentCoinImg.contentDocumentId}
+                                                                            data-rpsid={rpsWrapper.rpsId}
+                                                                            data-imgdownloadurl={rpsWrapper.currentCoinImg.downloadUrl}
+                                                                            data-imgpreviewurl={rpsWrapper.currentCoinImg.previewUrl}
+                                                                            icon-size="small"
+                                                                            icon-name="utility:threedots">
+<!--                                                                        <lightning-menu-item-->
+<!--                                                                                value="preview"-->
+<!--                                                                                class="accel-icon-green"-->
+<!--                                                                                prefix-icon-name="utility:preview"-->
+<!--                                                                                label="Preview">-->
+<!--                                                                        </lightning-menu-item>-->
+                                                                        <lightning-menu-item
+                                                                                value="download"
+                                                                                class="accel-icon-blue"
+                                                                                prefix-icon-name="utility:download"
+                                                                                label="Download">
+                                                                        </lightning-menu-item>
+                                                                        <lightning-menu-divider
+                                                                                variant="compact"></lightning-menu-divider>
+                                                                        <lightning-menu-item
+                                                                                value="delete"
+                                                                                class="accel-icon-red"
+                                                                                prefix-icon-name="utility:delete"
+                                                                                label="Delete">
+                                                                        </lightning-menu-item>
+                                                                    </lightning-button-menu>
+                                                                </div>
+                                                                <div class="" style="padding:0">
+                                                                    <c-ui-image-thumb
+                                                                            onuiimageclick={handleUiImgClick}
+                                                                            rps-id={rpsWrapper.rpsId}
+                                                                            rps-image-type="currentcoin"
+                                                                            content-version-id={rpsWrapper.currentCoinImg.contentVersionId}
+                                                                            content-document-id={rpsWrapper.currentCoinImg.contentDocumentId}
+                                                                            img-download-url={rpsWrapper.currentCoinImg.downloadUrl}
+                                                                            height=175
+                                                                            width=175>
+                                                                    </c-ui-image-thumb>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                            <div if:true={rpsWrapper.currentCoinImg.showThumb}>
+                                                <c-ui-image-info
+                                                        if:true={showImageMetadata}
+                                                        img-title-display={rpsWrapper.currentCoinImg.displayTitle}
+                                                        img-title-full={rpsWrapper.currentCoinImg.title}
+                                                        img-size={rpsWrapper.currentCoinImg.size}
+                                                        img-user-name={rpsWrapper.currentCoinImg.userName}
+                                                        img-date={rpsWrapper.currentCoinImg.lastModifiedDate}
+                                                        >
+                                                </c-ui-image-info>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <div class="slds-p-top_medium">
+        </div>
+            <div class="accel-glassmorphism_tile  slds-m-bottom_large slds-p-vertical_small  slds-p-bottom_large
+            slds-p-top_none">
+
+            <div style="border:0px dotted black"
+                 class="slds-p-bottom_none ">
+                <div class="slds-border_bottom slds-color__border_gray-4 slds-p-bottom_xx-small"
+                     onclick={handleRedemptionSectionClick}
+                     data-sectiontitleid="newcassette">
+                    <div class="slds-grid slds-p-top_xx-small">
+                        <div class="slds-col slds-size_5-of-6">
+                            <h1>
+                                <lightning-icon
+                                        size="small"
+                                        class="accel-redemption-section-new_icon" icon-name="utility:notebook"></lightning-icon>
+                                <span class="slds-p-left_xx-small accel-redemption-section_title">New Fill Levels</span>
+                            </h1>
+                        </div>
+                        <div class="slds-col slds-size_1-of-6">
+                            <div class="slds-float_right" data-id="header-current"
+                                 title={_chevronTitle}>
+                                <div class="summary-chevron-down" data-sectionarrowid="newcassette">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                         class="feather feather-chevron-down">
+                                        <polyline points="6 9 12 15 18 9"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-grid slds-wrap slds-show" data-sectioncontentid="newcassette">
+                <div class="accel-outbound-form-theme_shade
+                slds-p-around_xx-small slds-p-bottom_large
+                slds-m-bottom_small  slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    <div class="slds-grid slds-gutters_direct-xx-small slds-wrap">
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-bottom_none">
+                            <lightning-tile type="media"
+                                            label="New Cassette Fill Levels"
+                                            href="javascript:void(0)"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+<!--                                <lightning-icon-->
+<!--                                        size="small"-->
+<!--                                        slot="media" icon-name="custom:custom41"></lightning-icon>-->
+                                <div class="">
+                                    <c-cl-cassette-outbound-form
+                                            rps-id={rpsId}>
+                                    </c-cl-cassette-outbound-form>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-bottom_large">
+                            <lightning-tile type="media"
+                                            href="javascript:void(0)"
+                                            label="New Cassette Image"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+                                <div class="slds-p-top_xxx-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_medium">
+                                            <div if:true={rpsWrapper}>
+                                                <div if:true={rpsWrapper.newCassetteImg.showCamLauncher}>
+                                                    <div data-id="newcassette"
+                                                         onclick={handleRtCamLauncherClick}>
+                                                        <c-ui-camera-launcher
+                                                                allow-cam-launch="true"
+                                                                onfileuploaded={handleFileUploaded}
+                                                                onfilereplacecanceled={handleFileReplaceCanceled}
+                                                                height="175" width="175"
+                                                                icon-style="color:rgb(37,116,180)"
+                                                                icon-zoom={_cameraIconZoom}
+                                                                img-title={rpsWrapper.newCassetteImg.title}
+                                                                img-compression-ratio={imageCompressionRatio}
+                                                                parent-record-id={rpsWrapper.rpsId}
+                                                                redemption-image-type={rpsWrapper.newCassetteImg.rtImageType}
+                                                                content-version-id={rpsWrapper.newCassetteImg.contentVersionId}
+                                                                data-id="newcassette"
+                                                                data-rpsid={rpsWrapper.rpsId}>
+                                                        </c-ui-camera-launcher>
+                                                    </div>
+                                                </div>
+                                                <div if:true={rpsWrapper.newCassetteImg.showThumb}>
+                                                    <div
+                                                         onclick={handleUiImgClick}
+                                                         title="Click to retake the picture"
+                                                         class="accel-pic-icon-container-class"
+                                                         data-rpsimagetype="newcassette"
+                                                         data-rpsid={rpsWrapper.rpsId}>
+                                                        <div class="slds-p-around_xx-small">
+                                                            <div>
+                                                                <lightning-icon
+                                                                        size="large"
+                                                                        style="zoom: 160%"
+                                                                        icon-name="doctype:image">
+                                                                </lightning-icon>
+                                                            </div>
+                                                            <div style="font-size: .80em;">
+                                                                <span style="color:green">Image Uploaded</span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+<!--                                                <div if:true={rpsWrapper.newCassetteImg.showThumb}>-->
+<!--                                                    <div class="slds-grid" style="padding:0">-->
+<!--                                                        <div class="slds-col" style="padding:0">-->
+<!--                                                            <div class="slds-grid slds-wrap" style="padding:0">-->
+<!--                                                                <div class="slds-col"-->
+<!--                                                                     style="padding:0;font-size: .65em!important">-->
+<!--                                                                    <a style="display: none"-->
+<!--                                                                       data-rpsid={rpsWrapper.rpsId}-->
+<!--                                                                       href={rpsWrapper.imgCassetteDownloadUrl}-->
+<!--                                                                       download={rpsWrapper.cassetteDownload}></a>-->
+<!--                                                                    <div class="slds-text-align_left">-->
+<!--                                                                        <lightning-button-menu-->
+<!--                                                                                alternative-text="Show menu"-->
+<!--                                                                                variant="border"-->
+<!--                                                                                nubbin-->
+<!--                                                                                menu-alignment="bottom-right"-->
+<!--                                                                                class="accel-button-menu_override"-->
+<!--                                                                                size="small"-->
+<!--                                                                                title="Click for image options"-->
+<!--                                                                                onselect={handleImageOptionClick}-->
+<!--                                                                                data-docid={rpsWrapper.newCassetteImg.contentDocumentId}-->
+<!--                                                                                data-rpsid={rpsWrapper.rpsId}-->
+<!--                                                                                data-imgdownloadurl={rpsWrapper.newCassetteImg.downloadUrl}-->
+<!--                                                                                data-imgpreviewurl={rpsWrapper.newCassetteImg.previewUrl}-->
+<!--                                                                                icon-size="small"-->
+<!--                                                                                icon-name="utility:threedots">-->
+<!--&lt;!&ndash;                                                                            <lightning-menu-item&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    value="preview"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    class="accel-icon-green"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    prefix-icon-name="utility:preview"&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                                    label="Preview">&ndash;&gt;-->
+<!--&lt;!&ndash;                                                                            </lightning-menu-item>&ndash;&gt;-->
+<!--                                                                            <lightning-menu-item-->
+<!--                                                                                    value="download"-->
+<!--                                                                                    class="accel-icon-blue"-->
+<!--                                                                                    prefix-icon-name="utility:download"-->
+<!--                                                                                    label="Download">-->
+<!--                                                                            </lightning-menu-item>-->
+<!--                                                                            <lightning-menu-divider-->
+<!--                                                                                    variant="compact"></lightning-menu-divider>-->
+<!--                                                                            <lightning-menu-item-->
+<!--                                                                                    value="delete"-->
+<!--                                                                                    class="accel-icon-red"-->
+<!--                                                                                    prefix-icon-name="utility:delete"-->
+<!--                                                                                    label="Delete">-->
+<!--                                                                            </lightning-menu-item>-->
+<!--                                                                        </lightning-button-menu>-->
+<!--                                                                    </div>-->
+<!--                                                                    <div class="" style="padding:0">-->
+<!--                                                                        <c-ui-image-thumb-->
+<!--                                                                                onuiimageclick={handleUiImgClick}-->
+<!--                                                                                rps-id={rpsWrapper.rpsId}-->
+<!--                                                                                rps-image-type="newcassette"-->
+<!--                                                                                content-version-id={rpsWrapper.newCassetteImg.contentVersionId}-->
+<!--                                                                                content-document-id={rpsWrapper.newCassetteImg.contentDocumentId}-->
+<!--                                                                                img-download-url={rpsWrapper.newCassetteImg.downloadUrl}-->
+<!--                                                                                height=175-->
+<!--                                                                                width=175>-->
+<!--                                                                        </c-ui-image-thumb>-->
+<!--                                                                    </div>-->
+<!--                                                                </div>-->
+
+<!--                                                            </div>-->
+<!--                                                        </div>-->
+<!--                                                    </div>-->
+<!--                                                </div>-->
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                            <div if:true={rpsWrapper.newCassetteImg.showThumb}>
+                                                <c-ui-image-info
+                                                        if:true={showImageMetadata}
+                                                        img-title-display={rpsWrapper.newCassetteImg.displayTitle}
+                                                        img-title-full={rpsWrapper.newCassetteImg.title}
+                                                        img-size={rpsWrapper.newCassetteImg.size}
+                                                        img-user-name={rpsWrapper.newCassetteImg.userName}
+                                                        img-date={rpsWrapper.newCassetteImg.lastModifiedDate}
+                                                        >
+                                                </c-ui-image-info>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1
+                        slds-m-bottom_xx-small slds-border_bottom slds-color__border_gray-5">
+                        </div>
+                        <template if:true={showRtCoinImages}>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-max-small-hide">
+                            <div if:false={showStencil}>
+                                <c-cl-coin-image-tile
+                                        tile-label="New Coin Fill Levels">
+                                </c-cl-coin-image-tile>
+                            </div>
+                        </div>
+
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                            <lightning-tile type="media"
+                                            href="javascript:void(0)"
+                                            label="New Coin Image"
+                                            class=""
+                                            if:false={showStencil}
+                                            onactiontriggered={handleAction}>
+                                <div class="slds-p-top_xx-small">
+                                    <div class="slds-grid slds-wrap">
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_medium">
+                                            <div if:true={rpsWrapper.newCoinImg.showCamLauncher}>
+                                                <div data-id="newcoin"
+                                                     onclick={handleRtCamLauncherClick}>
+                                                    <c-ui-camera-launcher
+                                                            allow-cam-launch="true"
+                                                            onfileuploaded={handleFileUploaded}
+                                                            onfilereplacecanceled={handleFileReplaceCanceled}
+                                                            height="175" width="175"
+                                                            icon-style="color:rgb(37,116,180)"
+                                                            icon-zoom={_cameraIconZoom}
+                                                            img-title={rpsWrapper.newCoinImg.title}
+                                                            img-compression-ratio=".5"
+                                                            parent-record-id={rpsWrapper.rpsId}
+                                                            redemption-image-type={rpsWrapper.newCoinImg.rtImageType}
+                                                            content-version-id={rpsWrapper.newCoinImg.contentVersionId}
+                                                            data-id="newcoin"
+                                                            data-rpsid={rpsWrapper.rpsId}>
+                                                    </c-ui-camera-launcher>
+                                                </div>
+                                            </div>
+                                            <div if:true={rpsWrapper.newCoinImg.showThumb}>
+                                                <div class="slds-grid" style="padding:0">
+                                                    <div class="slds-col" style="padding:0">
+                                                        <div class="slds-grid slds-wrap" style="padding:0">
+                                                            <div class="slds-col"
+                                                                 style="padding:0;font-size: .65em!important">
+                                                                <a style="display: none"
+                                                                   data-rpsid={rpsWrapper.rpsId}
+                                                                   href={rpsWrapper.newCoinImg.downloadUrl}
+                                                                   download={rpsWrapper.newCoinImg.downloadUrl}></a>
+                                                                <div class="slds-text-align_left">
+                                                                    <lightning-button-menu
+                                                                            alternative-text="Show menu"
+                                                                            variant="border"
+                                                                            nubbin
+                                                                            menu-alignment="bottom-right"
+                                                                            class="accel-button-menu_override"
+                                                                            size="small"
+                                                                            title="Click for image options"
+                                                                            onselect={handleImageOptionClick}
+                                                                            data-docid={rpsWrapper.newCoinImg.contentDocumentId}
+                                                                            data-rpsid={rpsWrapper.rpsId}
+                                                                            data-imgdownloadurl={rpsWrapper.newCoinImg.downloadUrl}
+                                                                            data-imgpreviewurl={rpsWrapper.newCoinImg.previewUrl}
+                                                                            icon-size="small"
+                                                                            icon-name="utility:threedots">
+<!--                                                                        <lightning-menu-item-->
+<!--                                                                                value="preview"-->
+<!--                                                                                class="accel-icon-green"-->
+<!--                                                                                prefix-icon-name="utility:preview"-->
+<!--                                                                                label="Preview">-->
+<!--                                                                        </lightning-menu-item>-->
+                                                                        <lightning-menu-item
+                                                                                value="download"
+                                                                                class="accel-icon-blue"
+                                                                                prefix-icon-name="utility:download"
+                                                                                label="Download">
+                                                                        </lightning-menu-item>
+                                                                        <lightning-menu-divider
+                                                                                variant="compact"></lightning-menu-divider>
+                                                                        <lightning-menu-item
+                                                                                value="delete"
+                                                                                class="accel-icon-red"
+                                                                                prefix-icon-name="utility:delete"
+                                                                                label="Delete">
+                                                                        </lightning-menu-item>
+                                                                    </lightning-button-menu>
+                                                                </div>
+                                                                <div class="" style="padding:0">
+                                                                    <c-ui-image-thumb
+                                                                            onuiimageclick={handleUiImgClick}
+                                                                            rps-id={rpsWrapper.rpsId}
+                                                                            rps-image-type="newcoin"
+                                                                            content-version-id={rpsWrapper.newCoinImg.contentVersionId}
+                                                                            content-document-id={rpsWrapper.newCoinImg.contentDocumentId}
+                                                                            img-download-url={rpsWrapper.newCoinImg.downloadUrl}
+                                                                            height=175
+                                                                            width=175>
+                                                                    </c-ui-image-thumb>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                            <div if:true={rpsWrapper.newCoinImg.showThumb}>
+                                                <c-ui-image-info
+                                                        if:true={showImageMetadata}
+                                                        img-title-display={rpsWrapper.newCoinImg.displayTitle}
+                                                        img-title-full={rpsWrapper.newCoinImg.title}
+                                                        img-size={rpsWrapper.newCoinImg.size}
+                                                        img-user-name={rpsWrapper.newCoinImg.userName}
+                                                        img-date={rpsWrapper.newCoinImg.lastModifiedDate}
+                                                        >
+                                                </c-ui-image-info>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </lightning-tile>
+                        </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+            <div>
+                <template if:true={showSurvey}>
+                    <div class="slds-p-horizontal_x-small">
+                        <c-cl-rps-survey
+                                rps-id={rpsId}
+                                object-api-name={_surveySObjectApiName}
+                                fields={surveyFields}
+                                field-rte-min-height={_fieldRteMinHeight}
+                                form-title={labels.lblSurveyFormTitle}
+                                onrpssurveyformsubmitted={handleSurveyFormSubmitted}
+                                show-last-modified-date="true">
+                        </c-cl-rps-survey>
+                    </div>
+                </template>
+            </div>
+
+
+            <div class="slds-p-top_medium slds-p-bottom_large">
+                <button
+                        name="submitForm"
+                        type="submit"
+                        onclick={handleSaveSubmit}
+                        data-id="submitButton"
+                        title={saveButtonLabel}
+                        style="padding:.25em"
+                        class="slds-button slds-button_brand slds-button_stretch ">
+                                                <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                    <span style="font-size: 1.25em">{saveButtonLabel}</span>
+                </button>
+            </div>
+            &nbsp;
+        </div>
+        </div>
+    </div>
+    <div if:true={showNoData}>
+        <c-ui-empty-state
+                container-class="slds-illustration slds-illustration_large accel-no-data_container"
+                header-text={noDataHeaderText}
+                body-text={noDataBodyText}>
+        </c-ui-empty-state>
+    </div>
+
+</template>

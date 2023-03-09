@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<FieldServiceSettings xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesAllowEditSaForCrew>false</doesAllowEditSaForCrew>
+    <doesShareSaParentWoWithAr>false</doesShareSaParentWoWithAr>
+    <doesShareSaWithAr>false</doesShareSaWithAr>
+    <enableWorkOrders>false</enableWorkOrders>
+    <enableWorkPlansAutoGeneration>false</enableWorkPlansAutoGeneration>
+    <enableWorkStepManualStatusUpdate>false</enableWorkStepManualStatusUpdate>
+    <fieldServiceNotificationsOrgPref>false</fieldServiceNotificationsOrgPref>
+    <fieldServiceOrgPref>true</fieldServiceOrgPref>
+    <isGeoCodeSyncEnabled>false</isGeoCodeSyncEnabled>
+    <isLocationHistoryEnabled>false</isLocationHistoryEnabled>
+    <o2EngineEnabled>false</o2EngineEnabled>
+    <optimizationServiceAccess>false</optimizationServiceAccess>
+    <serviceAppointmentsDueDateOffsetOrgValue>1</serviceAppointmentsDueDateOffsetOrgValue>
+    <workOrderLineItemSearchFields>Status</workOrderLineItemSearchFields>
+    <workOrderSearchFields>Solution__c</workOrderSearchFields>
+</FieldServiceSettings>

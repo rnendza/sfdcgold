@@ -1,0 +1,92 @@
+/* styles for desktop */
+@media screen and (min-width:768px) {
+    .THIS {
+        background-color: white;
+        font-family: "Work Sans";
+        left: 0;
+        box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+        overflow: auto;
+        width: 200px;
+        padding-top: 2rem;
+        min-height: calc(100vh - 52px);
+        font-size: 14px;
+    }
+    .THIS .accel-mobile-logout{
+        display:none;
+    }
+    .THIS .accel-mobile-menu ul {
+        text-decoration: none;
+    }
+    .THIS .accel-mobile-menu li{
+        height: 2.5rem;
+        line-height: 2.5rem;
+        color: black;
+        padding-left: 14px;
+    }
+
+    .THIS .accel-mobile-menu .li.span{
+        padding-left: 14px;
+    }
+
+    .THIS .accel-mobile-menu li:hover{
+        background-color: #dadada;
+        cursor: pointer;
+        color: black;
+    }
+    .THIS .accel-mobile-menu .accel-nav-active {
+        background-color: #CE0000;
+        color: white;
+    }
+}
+
+/* styles for mobile */
+@media screen and (max-width:767px){
+    .THIS {
+        background-color: white;
+        font-family: "Work Sans";
+        /* box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2); */
+        overflow: auto;
+        width: 100%;
+        font-size: 24px;
+
+    }
+    .THIS .accel-mobile-logout{
+        display:list-item;
+    }
+    .THIS .accel-mobile-menu {
+        text-decoration: none;
+        margin:0;
+        padding:0;
+        list-style: none;
+        overflow: hidden;
+        background-color: white;
+        border-bottom: 2px solid grey;
+        max-height: 0;
+        transition: none;
+    }
+
+    .THIS .accel-mobile-menu li{
+        height: 3.5rem;
+        line-height: 3.5rem;
+        color: black;
+        padding-left: 14px;
+        border-bottom: 1px solid lightgrey;
+    }
+    .THIS .accel-mobile-menu li a{
+        display:block;
+        padding: 20px 20px;
+        border-right: 1px solid #f4f4f4;
+        text-decoration:none;
+    }
+
+    .THIS .accel-mobile-menu .li.span{
+        padding-left: 14px;
+    }
+
+    .THIS .accel-mobile-menu li:hover{
+        background-color: #dadada;
+        cursor: pointer;
+        color: black;
+    }
+
+}

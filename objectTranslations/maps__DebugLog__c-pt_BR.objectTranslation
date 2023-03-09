@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Registro de depuração de mapas</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Registros de depuração de mapas</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>maps__Account__c</name>
+        <relationshipLabel><!-- Maps Auto-Assignment Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route Template User --></label>
+        <name>maps__AdvRouteTemplateUser__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Debugs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route Template --></label>
+        <name>maps__AdvRouteTemplate__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Debugs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Body --></label>
+        <name>maps__Body__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Details --></label>
+        <name>maps__Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Body --></label>
+        <name>maps__ErrorBody__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error Messages --></label>
+        <name>maps__ErrorMessages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Geocode Successful --></label>
+        <name>maps__GeocodeSuccessful__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>maps__Lead__c</name>
+        <relationshipLabel><!-- Maps Auto-Assignment Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Plan --></label>
+        <name>maps__Plan__c</name>
+        <relationshipLabel><!-- Maps Auto-Assignment Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Processing Date --></label>
+        <name>maps__ProcessingDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Id --></label>
+        <name>maps__RecordId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Parameters --></label>
+        <name>maps__RequestParameters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Job Id --></label>
+        <name>maps__RoutingJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Assignment Rule --></label>
+        <name>maps__Rule__c</name>
+        <relationshipLabel><!-- Maps Auto-Assignment Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Severity --></label>
+        <name>maps__Severity__c</name>
+        <picklistValues>
+            <masterLabel>FATAL</masterLabel>
+            <translation>FATAL</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MESSAGE</masterLabel>
+            <translation>MENSAGEM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WARNING</masterLabel>
+            <translation>AVISO</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Geocode</masterLabel>
+            <translation>Código geográfico</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Debug Logs --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome</nameFieldLabel>
+</CustomObjectTranslation>

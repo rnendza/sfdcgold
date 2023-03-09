@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Event_Type_Reports__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$ActivityDate</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Owner</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Activities$Description</field>
+    </columns>
+    <columns>
+        <field>Opportunity$Account.IGB_License__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity$Account</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,LUCKY POKER,ROCKFORD BREWING COMPANY,UNION QUICK MART,LOGAN AVENUE SLOTS &amp; LOUNGE,INC,HARI GURU GAS AND FOOD,LUCKY DOG&apos;S,CRAZY CAMARON,BLUE LINE SPORTS PUB,lucky dogs bar</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Compliance: Opportunities and Activities</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opps_and_activities__c</reportType>
+    <roleHierarchyFilter>Accel_Super_User</roleHierarchyFilter>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Activities$ActivityDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Buildout_Expected_Completion_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,64 @@
+<aura:component description="Accel_Community_Bottom_navBar"
+                controller="Accel_CommunityInfoController">
+
+    <aura:attribute name="currentUserId" type="String" default="{!$SObjectType.CurrentUser.Id}"/>
+    <aura:attribute name="communityTermsAccepted" type="Boolean" default="false"/>
+    <aura:attribute name="communityMdt" type="Community_Setting__mdt"/>
+    <aura:attribute name="displayBottomNavOptions" type="Boolean" default="false"/>
+    <aura:attribute name="displayPrivacyLink" type="Boolean" default="false"/>
+    <aura:attribute name="disableLicenseExpirationMessaging" type="Boolean" default="false"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <lightning:overlayLibrary aura:id="bottomNavOverlayLib"/>
+
+    <div class="accel-bottom-nav-bar">
+
+        <aura:if isTrue="{!!v.disableLicenseExpirationMessaging}">
+            <div style="padding-top:10px;padding-left:10px">
+                <c:AcPostLoginProcessorContainer/>  <!--invisible component for now-->
+            </div>
+        </aura:if>
+
+        <lightning:layout horizontalAlign="spread" multipleRows="false">
+            <lightning:layoutItem class="accel-sw-version-container">
+                <c:Accel_SoftwareVersion/>
+            </lightning:layoutItem>
+            <lightning:layoutItem>
+                <aura:if isTrue="{!v.displayBottomNavOptions}">
+                    <lightning:layout horizontalAlign="space" multipleRows="false">
+                        <aura:if isTrue="{!v.displayPrivacyLink}">
+                            <lightning:layoutItem class="accel-bottom-nav-bar slds-p-horizontal_small">
+                                <div class="accel-bottom-nav-option-container">
+                                    <a onclick="{!c.handlePrivacyClick}" class="accel-bottom-nav-link">
+                                        {!$Label.c.Privacy_Link_Text}
+                                    </a>
+                                </div>
+                            </lightning:layoutItem>
+                        </aura:if>
+                        <lightning:layoutItem class="accel-bottom-nav-bar slds-p-horizontal_small">
+                            <div class="accel-bottom-nav-option-container">
+                                <a onclick="{!c.handleTermsClick}" class="accel-bottom-nav-link">
+                                    {!$Label.c.Term_of_Service_Link_Text}
+                                </a>
+                            </div>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem class="accel-bottom-nav-bar slds-p-horizontal_small">
+                            <div class="accel-bottom-nav-option-container">
+                                <a onclick="{!c.handleWhatsNewClick}" class="accel-bottom-nav-link">
+                                    {!$Label.c.Whats_New_Link_Text}
+                                </a>
+                            </div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:if>
+            </lightning:layoutItem>
+        </lightning:layout>
+    </div>
+</aura:component>

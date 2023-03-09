@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contract$Account</field>
+    </columns>
+    <columns>
+        <field>Contract$ContractNumber</field>
+    </columns>
+    <columns>
+        <field>Contract$Account.Relationship_Manager__c</field>
+    </columns>
+    <columns>
+        <field>Contract$Person_Procuring_TUA2__c.Name</field>
+    </columns>
+    <columns>
+        <field>Contract$CompanySigned</field>
+    </columns>
+    <columns>
+        <field>Contract$Person_Procuring_TUA2__c</field>
+    </columns>
+    <columns>
+        <field>Contract$Account.Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Contract$Account.Purchased_From__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 OR 2 OR 3</booleanFilter>
+        <criteriaItems>
+            <column>Contract$Person_Procuring_TUA2__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$CustomerSigned</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Contract$CompanySigned</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Donnie Gorbett</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Contact Audit: Agreements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Agreement_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contract$CompanySigned</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contract$Accel_Termination_Amendment_Signed_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

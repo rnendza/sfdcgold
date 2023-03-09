@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Communication to requestor if compliance approves, denies, need more info, etc.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Compliance Email Response</name>
+    <style>none</style>
+    <subject>{!Campaign.Name} Marketing Request {!Campaign.Compliance_Approval__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,44 @@
+<!-- Accel Security Audit Filters -->
+<template>
+    <div if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="3"
+                child-class="slds-var-m-around_xxx-small"
+                type="list" columns="1">
+        </c-ui-custom-stencil>
+    </div>
+    <template if:false={isLoading}>
+
+        <span class="example"></span>
+        <div class="slds-p-vertical_xx-small">
+            <c-ui-multiselect
+                    if:true={profileOptions}
+                    options={profileOptions}
+                    name="profileSelect"
+                    data-id="profileSelect"
+                    pill-icon={profilePillIcon}
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Profile(s)"
+                    selected-values={defaultProfileSelections}
+                    multi-select="true"
+                    label="Select Profiles">
+            </c-ui-multiselect>
+        </div>
+        <div class="slds-p-vertical_xx-small">
+            <c-ui-multiselect
+                    if:true={permSetOptions}
+                    options={permSetOptions}
+                    pill-icon={permSetPillIcon}
+                    name="permsetSelect"
+                    data-id="permsetSelect"
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Perm Set(s)"
+                    selected-values={defaultPermSetSelections}
+                    multi-select="true"
+                    label="Select Permission Sets">
+            </c-ui-multiselect>
+        </div>
+    </template>
+</template>

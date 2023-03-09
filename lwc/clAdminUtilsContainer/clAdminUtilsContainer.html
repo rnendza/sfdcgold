@@ -1,0 +1,196 @@
+<!-- Cl Admin Utils Container -->
+<template>
+    <lightning-tabset variant="scoped"
+                      active-tab-value={_activeTabValue}
+                      class="accel-tab-set accel-scoped-tab-set">
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:guidance_center"
+                value="tab_utils_home"
+                label="Welcome">
+                <c-cl-admin-home >
+                </c-cl-admin-home>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:settings"
+                value="tab_utils_cyclenumber"
+                label="Settings">
+
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    <c-cl-admin-route-cycle-number-update>
+                    </c-cl-admin-route-cycle-number-update>
+                </div>
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    &nbsp;
+                </div>
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-top_medium">
+                    <c-cl-admin-route-search
+                      search-key="TEST">
+                    </c-cl-admin-route-search   >
+                </div>
+            </div>
+
+        </lightning-tab>
+
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="custom:custom31"
+                class='accel-scoped-tab'
+                value="tab_utils_route"
+                label="Route">
+
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+
+                    <c-cl-admin-route-clone>
+                    </c-cl-admin-route-clone>
+                </div>
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                </div>
+            </div>
+
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="custom:custom25"
+                class='accel-scoped-tab'
+                value="tab_utils_routeschedule"
+                label="Schedule">
+            <div>
+                <span class="slds-text-color_destructive" style="font-size:.87em">
+                    <b>Note:</b> currently after some data mods. this page may need to be manually refreshed until proper server to client push is fully implemented.
+                </span>
+            </div>
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    <c-cl-admin-route-schedule>
+                    </c-cl-admin-route-schedule>
+                </div>
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+<!--                    <c-cl-admin-rps >-->
+<!--                    </c-cl-admin-rps>-->
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                    <c-cl-admin-route-schedule-search
+                    search-key="TEST">
+                    </c-cl-admin-route-schedule-search>
+                </div>
+            </div>
+
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="standard:data_integration_hub"
+                class='accel-scoped-tab'
+                value="tab_utils_import_fix"
+                label="Upload Miss">
+
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                    <c-cl-admin-only-daily-upload-miss
+                            main-card-title="Daily Upload Miss"
+                            debug-console="true">
+                    </c-cl-admin-only-daily-upload-miss>
+                </div>
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                </div>
+            </div>
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="custom:custom34"
+                class='accel-scoped-tab'
+                value="tab_utils_test"
+                label="Test Field Security">
+
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+<!--                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+<!--                    <c-cl-admin-route-schedule>-->
+<!--                    </c-cl-admin-route-schedule>-->
+<!--                </div>-->
+<!--                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+<!--                    <c-cl-admin-rps >-->
+<!--                    </c-cl-admin-rps>-->
+<!--                </div>-->
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                    <c-cl-security-audit ></c-cl-security-audit>
+<!--                    <c-cl-admin-route-schedule-search >-->
+<!--                    </c-cl-admin-route-schedule-search>-->
+<!--                    <c-cl-account-search >-->
+<!--                    </c-cl-account-search>-->
+                </div>
+            </div>
+
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="custom:custom34"
+                class='accel-scoped-tab'
+                value="tab_utils_testusersecurity"
+                label="Test User Perm">
+
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <!--                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+                <!--                    <c-cl-admin-route-schedule>-->
+                <!--                    </c-cl-admin-route-schedule>-->
+                <!--                </div>-->
+                <!--                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">-->
+                <!--                    <c-cl-admin-rps >-->
+                <!--                    </c-cl-admin-rps>-->
+                <!--                </div>-->
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                <c-cl-security-audit-user-perms ></c-cl-security-audit-user-perms>
+                </div>
+            </div>
+
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="custom:custom34"
+                class='accel-scoped-tab'
+                value="tab_utils_devfieldaudit"
+                label="DEV Field Audit">
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                    <c-cl-field-audit ></c-cl-field-audit>
+                </div>
+            </div>
+
+        </lightning-tab>
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="standard:omni_supervisor"
+                class='accel-scoped-tab'
+                value="tab_utils_authsession"
+                label="User Sessions">
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                   <c-accel-auth-session
+                        debug-console="true"
+                        show-assistance="true">
+                   </c-accel-auth-session>
+                </div>
+            </div>
+        </lightning-tab>
+
+        <lightning-tab
+                onactive={handleTabClick}
+                icon-name="standard:asset_audit"
+                class='accel-scoped-tab'
+                value="tab_utils_auditTrail"
+                label="Audit Trail">
+            <div class="slds-grid slds-wrap slds-gutters_direct-small">
+                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                    <c-accel-audit-trails
+                            debug-console="true"
+                            show-assistance="true">
+                    </c-accel-audit-trails>
+                </div>
+            </div>
+        </lightning-tab>
+    </lightning-tabset>
+</template>

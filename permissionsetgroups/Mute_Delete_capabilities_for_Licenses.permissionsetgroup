@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Mutes &quot;Delete&quot; capabilities for License records when the &quot;License Record Deletion&quot; permission set is assigned to users.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Mute Delete capabilities for Licenses</label>
+    <mutingPermissionSets>Mute_Delete_capabilities_for_Licenses_Muted</mutingPermissionSets>
+    <permissionSets>License_record_deletion</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

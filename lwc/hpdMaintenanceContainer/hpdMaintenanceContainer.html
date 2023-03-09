@@ -1,0 +1,39 @@
+<template>
+    <c-lightning-app-style-overrides></c-lightning-app-style-overrides>
+    <div data-id="widthMeasurement"></div>
+    <template if:true={isProcessing}>
+        <!--        <div class="slds-is-relative">-->
+        <lightning-spinner
+                size="large"
+                variant="brand"
+                alternative-text="processing"></lightning-spinner>
+        <!--        </div>-->
+    </template>
+    <div class="c3llc-content" onclick={handleOuterContainerClick}>
+        <div data-id="outer-div-id"
+             style="background-color:white;min-height: 550px"
+             class="slds-p-vertical--medium slds-p-horizontal--medium">
+            <div style={tabContainerStyle} >
+                <lightning-tabset class="accel-tab-set"
+                                  active-tab-value={activeTabValue}
+                                  variant="scoped">
+                    <lightning-tab label="Monthly Xfer" class="c3llc-autocomplete-tab"
+                                   value="MonthlyXfer"
+                                   icon-name="standard:sales_cadence"
+                                   onactive={handleTabSelect}>
+                        <c-hpd-monthly-transfer onkillcontainerspinner={handleKillContainerSpinner}>
+                        </c-hpd-monthly-transfer>
+                    </lightning-tab>
+                    <lightning-tab  if:true={hasCustomPermMonthlyImport}
+                                    label="Monthly Import" class="c3llc-autocomplete-tab"
+                                    icon-name="standard:number_input"
+                                   value="MonthlyImport"
+                                   onactive={handleTabSelect} >
+                        <c-hpd-monthly-import onkillcontainerspinner={handleKillContainerSpinner}>
+                        </c-hpd-monthly-import>
+                    </lightning-tab>
+                </lightning-tabset>
+            </div>
+        </div>
+    </div>
+</template>

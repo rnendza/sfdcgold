@@ -1,0 +1,73 @@
+<!-- Pa Advisory Filters -->
+<template>
+    <div class="slds-p-bottom_small slds-box_small slds-box_border">
+        <div class={filterContainerClass}>
+            <div class="slds-grid slds-wrap slds-p-around_x-small">
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_x-small">
+                    <!--- HEADER  --->
+                    <div>
+                        <div class="accel-inline-div">
+                            <lightning-icon
+                                    icon-name="standard:filter_criteria"
+                                    class="slds-m-right_x-small"
+                                    size="small">
+                            </lightning-icon>
+                        </div>
+                        <div class="slds-text-color_weak slds-text-body_small accel-inline-div">
+                            <template if:true={filtersApplied}>
+                                <div class="accel-inline-div accel-filters-applied-text">
+                                    {filtersAppliedLabel}
+                                </div>
+                            </template>
+                            <template if:false={filtersApplied}>
+                                <div class="accel-inline-div accel-filters-text">
+                                    {filtersLabel}
+                                </div>
+                            </template>
+                        </div>
+                        <div class="slds-float_right">
+                            <div class="slds-p-right_xx-small">
+                                <lightning-button-icon
+                                    icon-name="utility:close"
+                                    onclick={handleClose}
+                                    size="small">
+                                </lightning-button-icon>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                    <!--- FILTERS --->
+                    <div class="slds-grid slds-wrap slds-gutters slds-p-bottom_small">
+                        <div class="slds-col slds-large-size_1-of-3 slds-medium-size_1-of-3 slds-small-size_1-of-1">
+                            <lightning-input
+                                    onchange={handleFilterKeyChange}
+                                    data-filtertype="userfilter"
+                                    name="enter-search"
+                                    value={_userFilter}
+                                    placeholder={userPlaceHolder}
+                                    label="Name"
+                                    type="search">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-3 slds-medium-size_1-of-3 slds-small-size_1-of-1">
+                            <lightning-input
+                                    onchange={handleFilterKeyChange}
+                                    data-filtertype="cityfilter"
+                                    name="enter-search"
+                                    value={_cityFilter}
+                                    placeholder={cityPlaceHolder}
+                                    label="City"
+                                    type="search">
+                            </lightning-input>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-3 slds-small-size_1-of-1">
+                            <div class="slds-text-align_right slds-p-left_medium slds-p-right_x-small">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Batch Job Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Batch Job Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The Batch Size for Database.execute --></help>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test) --></help>
+        <label><!-- Commit Updates --></label>
+        <name>Commit_Updates__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on. --></help>
+        <label><!-- Email Template Dev Name --></label>
+        <name>Email_Template_Dev_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- General Date field to be used as a end date in a filter. --></help>
+        <label><!-- End Date To Query --></label>
+        <name>End_Date_To_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- If true. it will write logs of the execute method to Accel_Application_Error__c.Execution_Details__c otherwise it will only write job completion logs.Be careful here as if the batch size is small or there are a large number of records the field length may --></help>
+        <label><!-- Log Execute Method --></label>
+        <name>Log_Execute_Method__c</name>
+    </fields>
+    <fields>
+        <help><!-- List all records in the log that field on a DML Update. If you plan on thousands of records failing you should turn this off but then you have other problems! --></help>
+        <label><!-- Log Failed Record Ids --></label>
+        <name>Log_Failed_Record_Ids__c</name>
+    </fields>
+    <fields>
+        <help><!-- Log the record Ids of all successful updates. If you are updating 10s of thousands of records, you should probably turn this off. --></help>
+        <label><!-- Log Successful Record Ids --></label>
+        <name>Log_Successful_Record_Ids__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma delimited string of record type developer names to use in the start method query. --></help>
+        <label><!-- Product Names To Query --></label>
+        <name>Product_Names_To_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- Comma delimited string of record type developer names to use in the start method query. --></help>
+        <label><!-- Record Types to Query --></label>
+        <name>Record_Types_to_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- Always send an email when the job completes regardless of the status. --></help>
+        <label><!-- Send Email On Job Completion --></label>
+        <name>Send_Email_On_Job_Completion__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check to send an email (in addition to logging) on Status = failed. You must populate usernames to email if you check this --></help>
+        <label><!-- Send Email on Status Failed --></label>
+        <name>Send_Email_on_Status_Failed__c</name>
+    </fields>
+    <fields>
+        <help><!-- General Date field to be used as a start date in a filter. --></help>
+        <label><!-- Start Date To Query --></label>
+        <name>Start_Date_To_Query__c</name>
+    </fields>
+    <fields>
+        <help><!-- If any send email value is checked, this must be populated with a comma delim string of sfdc usernames. --></help>
+        <label><!-- Usernames to email --></label>
+        <name>Usernames_to_email__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

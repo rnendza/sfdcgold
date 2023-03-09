@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>User assignment is determined by Sales Ops leadership based on user position within Sales Ops team</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sales Ops - Level 3</label>
+    <permissionSets>ACH_Object_Create_Edit_Delete_View_All</permissionSets>
+    <permissionSets>Account_Edit_Estimated_HPD</permissionSets>
+    <permissionSets>Activity_Lead_Gen_Appointment_Type_editing_permission</permissionSets>
+    <permissionSets>Agreements_Expiration_Start_Termination_Date</permissionSets>
+    <permissionSets>Agreements_Permission_to_edit_Days_Live_Agreement_Version</permissionSets>
+    <permissionSets>Allow_Access_to_HPD_Maintenance_App</permissionSets>
+    <permissionSets>Commissions_Team_Create_Delete_records</permissionSets>
+    <permissionSets>Competitor_TUA_Exp_Date_Validated</permissionSets>
+    <permissionSets>Create_Report_Folders_Permissions</permissionSets>
+    <permissionSets>Edit_Opportunity_Probability_Percent</permissionSets>
+    <permissionSets>Lead_Conversion_Permissions</permissionSets>
+    <permissionSets>Manage_Dynamic_Dashboards</permissionSets>
+    <permissionSets>Maps_App_Access</permissionSets>
+    <permissionSets>Modify_All_Reports</permissionSets>
+    <permissionSets>New_Salesforce_Mobile_App</permissionSets>
+    <permissionSets>Opportunity_Edit_After_Closed_Lost</permissionSets>
+    <permissionSets>Opportunity_Edit_After_Closed_Won</permissionSets>
+    <permissionSets>Opportunity_Fields_Commission_information</permissionSets>
+    <permissionSets>Opportunity_Modify_All</permissionSets>
+    <permissionSets>Opportunity_Non_Video_Gaming_Opportunity_Management</permissionSets>
+    <permissionSets>Opportunity_Sales_Status_Sales_Priority</permissionSets>
+    <permissionSets>Opportunity_Video_Gaming_Opportunity_Management</permissionSets>
+    <permissionSets>Partner_Op_field</permissionSets>
+    <permissionSets>Permission_to_edit_checkbox_for_designating_HQ_Account</permissionSets>
+    <permissionSets>Resources_Create_records</permissionSets>
+    <permissionSets>View_All_Custom_Settings_And_CRM_Specific_Metadata</permissionSets>
+    <permissionSets>View_User_Login_Information</permissionSets>
+    <permissionSets>maps__MapsAdmin</permissionSets>
+    <permissionSets>maps__MapsUser</permissionSets>
+    <permissionSets>maps__SFMaps</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

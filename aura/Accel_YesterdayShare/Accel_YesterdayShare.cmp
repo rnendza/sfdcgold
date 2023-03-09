@@ -1,0 +1,312 @@
+<aura:component description="Accel_YesterdayShare"
+                implements="forceCommunity:availableForAllPageTypes,flexipage:availableForAllPageTypes"
+                controller="Accel_CommunityYesterdayShareController">
+
+    <ltng:require
+            scripts="{!$Resource.echart4}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="numAccounts" type="Decimal" default="1"/>
+    <aura:attribute name="holdPerDayWrappers" type="List"/>
+    <aura:attribute name="hpdDateLocShareMap" type="Map"/>
+    <aura:attribute name="yesterdayLocShare" type="String"/>
+    <aura:attribute name="yesterdayFundsIn" type="String"/>
+    <aura:attribute name="yesterdayLocShareVal" type="String"/>
+    <aura:attribute name="currWeekTotalShare" type="String"/>
+    <aura:attribute name="currWeekTotalShareVal" type="String"/>
+    <aura:attribute name="currWeekTotalFunds" type="String"/>
+    <aura:attribute name="currWeekTotalFundsVal" type="String"/>
+    <aura:attribute name="lastWeekTotalShare" type="String"/>
+    <aura:attribute name="lastWeekTotalShareVal" type="String"/>
+    <aura:attribute name="lastWeekTotalFunds" type="String"/>
+    <aura:attribute name="lastWeekTotalFundsVal" type="String"/>
+    <aura:attribute name="averageFundsIn" type="String"/>
+    <aura:attribute name="weekday" type="String" />
+    <aura:attribute name="weekrank" type="String"/>
+    <aura:attribute name="month" type="String" default="March"/>
+    <aura:attribute name="year" type="String" default="2019"/>
+    <aura:attribute name="yesterdayDate" type="Date"/>
+    <aura:attribute name="yesterdayDateString" type="String"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="showYesterdayShareSpinner" type="boolean"  default="false" access="private" />
+    <aura:attribute name="yesterdayShareSpinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="showWeekSpinner" type="boolean"  default="false" access="private" />
+    <aura:attribute name="weekSpinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="ytdRevenue" type="String" />
+    <aura:attribute name="ytdRevenueDiffString" type="String" default ="--" />
+    <aura:attribute name="ytdRevenueDiff" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenue" type="String" />
+    <aura:attribute name="mtdRevenueDiffMOM" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenueDiffMOMString" type="String" default="--" />
+    <aura:attribute name="mtdRevenueDiffYOY" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenueDiffYOYString" type="String" default="--" />
+    <aura:attribute name="currFiscalPeriod" type="String" />
+    <aura:attribute name="lastFiscalPeriod" type="String" />
+
+
+    <aura:attribute name="ariaCurrSelected" type="boolean" default="true" />
+    <aura:attribute name="ariaLastSelected" type="boolean" default="true" />
+
+
+
+    <aura:attribute name="communityUserSettings" type="Object"
+                    description="Contains Community User Settings"/>
+    <aura:attribute name="communityUserSettingsNotFound"  type="Boolean" default="false" />
+
+    <aura:attribute name="revenueMtdMonthName" type="String" default="" />
+
+    <aura:attribute name="yesterdaysHpds" type="List" access="private" />
+    <aura:attribute name="currWeekHpds" type="List" access="private" />
+    <aura:attribute name="lastWeekHpds" type="List" access="private" />
+    <aura:attribute name="fundsInAverages" type="List" access="private" />
+
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+
+    <div>
+        <!-- top 4 boxes -->
+        <div class="slds-grid slds-gutters slds-grid_align-space slds-p-bottom_large accel-mobile-flex">
+            <!-- Show Yesterday Share & Rank if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+            <aura:if
+                    isTrue="{!or(v.communityUserSettings.Display_Yesterday_Location_Share__c,v.communityUserSettingsNotFound)}">
+                <div class="slds-col slds-size_2-of-12 msgbox">
+                    <aura:if isTrue="{!and(not(empty(v.yesterdayLocShare)),not(empty(v.yesterdayDate)) )}">
+                        <div class="accel-greeting-box-top"><span class="dayofweek">{!v.weekday}</span> Total Location Share</div>
+                        <div class="{! v.yesterdayLocShare >= 0 ? 'pos-profit accel-greeting-total' :'neg-profit accel-greeting-total'}">
+                            ${!v.yesterdayLocShareVal} </div>
+                        <div class="accel-greeting-box-bottom">({!v.yesterdayDate})</div>
+                    </aura:if>
+                    <aura:if isTrue="{!and(empty(v.yesterdayLocShare),v.scriptsWereLoaded==true ) }">
+                        <div class="accel-missing-data">
+                            Previous day data not available at this time
+                        </div>
+                    </aura:if>
+                </div>
+                <div class="slds-col slds-size_2-of-12 msgbox">
+                    <aura:if isTrue="{!and(not(empty(v.yesterdayFundsIn)),not(empty(v.yesterdayDate)) )}">
+                        <div class="accel-weekrank-box-top">Funds In yesterday was the</div>
+                        <div class="accel-weekrank-middle"><span class="rankofweek">{!v.weekrank}</span></div>
+                        <div class="accel-weekrank-middle">best <span class="dayofweek">{!v.weekday}</span></div>
+                        <div class="accel-greeting-box-bottom">(last 90 days)</div>
+                    </aura:if>
+                    <aura:if isTrue="{!and(empty(v.yesterdayFundsIn),v.scriptsWereLoaded==true ) }">
+                        <div class="accel-missing-data">
+                            Previous day week day rank not available at this time
+                        </div>
+                    </aura:if>
+                </div>
+            </aura:if>
+            <!-- Show Yesterday Funds In Metrics if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+            <aura:if
+                    isTrue="{!or(v.communityUserSettings.Display_Yesterday_Share_Funds_In_Metrics__c,v.communityUserSettingsNotFound)}">
+                <div class="slds-col slds-size_2-of-12 msgbox">
+                    <aura:if isTrue="{!and(not(empty(v.yesterdayFundsIn)),not(empty(v.yesterdayDate)) )}">
+                        <div class="accel-greeting-box-top"><span class="dayofweek">{!v.weekday}</span> Total Funds In</div>
+                        <div class="funds-in-text accel-greeting-total"> ${!v.yesterdayFundsIn} </div>
+                        <div class="accel-greeting-box-bottom">({!v.yesterdayDate})</div>
+                    </aura:if>
+                    <aura:if isTrue="{!and(empty(v.yesterdayFundsIn),v.scriptsWereLoaded==true ) }">
+                        <div class="accel-missing-data">
+                            Previous day funds in data not available at this time
+                        </div>
+                    </aura:if>
+                </div>
+
+                <div class="slds-col slds-size_2-of-12 msgbox">
+                    <aura:if isTrue="{!and(not(empty(v.yesterdayFundsIn)),not(empty(v.yesterdayDate)) )}">
+                        <div class="accel-greeting-box-top">Average Funds In on <span class="dayofweek">{!v.weekday}s</span>
+                        </div>
+                        <div class="funds-in-text accel-greeting-total"> ${!v.averageFundsIn} </div>
+                        <div class="accel-greeting-box-bottom">(last 90 days)</div>
+                    </aura:if>
+                    <aura:if isTrue="{!and(empty(v.yesterdayFundsIn),v.scriptsWereLoaded==true ) }">
+                        <div class="accel-missing-data">
+                            Average Funds In data not available at this time
+                        </div>
+                    </aura:if>
+                </div>
+            </aura:if>
+        </div>
+
+        <div class="slds-grid accel-mobile-yesterday-chart">
+            <!-- Show Bar Chart if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+            <!-- left bar chart boxx -->
+            <aura:if
+                    isTrue="{!or(v.communityUserSettings.Display_Yesterday_Bar_Chart__c,v.communityUserSettingsNotFound)}">
+                <div class="{!(v.communityUserSettings.Display_Week_Chart__c)==true? 'special-left-margin slds-col accel-chart-shadow-drag' : 'slds-col accel-chart-shadow-drag special-margin-both'}">
+                    <div class="slds-grid slds-grid_vertical ">
+                        <div class="slds-col size_1-of-5 accel-mobile-centered" style="padding-top: 10px; padding-left: 10px;">
+                            <lightning:buttonGroup>
+                                <lightning:button label="Location Share"
+                                                  class="accel-btn-is-selected"
+                                                  name="LocationShare"
+                                                  aura:id="LocationShare"
+                                                  onclick="{!c.changeGraph}"/>
+                                <lightning:button label="Funds In"
+                                                  name="FundsIn"
+                                                  aura:id="FundsIn"
+                                                  onclick="{!c.changeGraph}"/>
+                            </lightning:buttonGroup>
+                        </div>
+                        <div class="slds-col slds-size_1-of-1 yesterday-chart-padding">
+                            <div class= "{!((v.numAccounts)>1? 'chart-270':'chart-200')}" aura:id="echarts-yesterday-area">
+                                <div  style="position:relative; padding-top: 50px;">
+                                    <lightning:spinner aura:id="yesterdayShareSpinner" variant="brand" size="large"
+                                                       alternativeText="{!v.yesterdayShareSpinnerAltText}"
+                                                       class="{!((v.showYesterdayShareSpinner)? '': 'slds-hide')}"/>
+                                </div>
+                                <aura:if isTrue="{!and(empty(v.yesterdayLocShare),v.scriptsWereLoaded==true ) }">
+                                    <div class="accel-missing-data" style="padding-top: 60px">
+                                        Data not available at this time
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aura:if>
+            <!--right box area -->
+            <!--
+            <div class="slds-col slds-size_1-of-2 accel-mobile-1-of-1">
+                <div class="slds-grid slds-grid_vertical slds-grid_vertical-align-center slds-m-bottom_large">
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Revenue_Year_to_Date__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-size_9-of-12 msgbox-medium" style="margin-bottom:20px; padding:10px;">
+                        <div class="accel-mtd-box-top"><span class="month">{!v.year} </span> Revenue Year-to-Date</div>
+
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="mtd-value">${!v.ytdRevenue}</div>
+                            </div>
+                            <div class="slds-col slds-size_1-of-2 desk-left mtd-value">
+                                <aura:renderIf isTrue="{!v.ytdRevenueDiff >= 0}">
+                                    <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small" />
+                                    <aura:set attribute="else">
+                                        <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small" />
+                                    </aura:set>
+                                </aura:renderIf>
+                                <span class="{!v.ytdRevenueDiff > 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.ytdRevenueDiffString}% </span><span class="accel-metric">Y/Y</span>
+                            </div>
+                        </div>
+                    </div>
+                    </aura:if>
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Revenue_Month_to_Date__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-size_9-of-12 msgbox-large">
+                        <div class="accel-mtd-box-top" ><span class="month">{!v.revenueMtdMonthName}</span> Revenue Month-to-Date</div>
+                        <div class="slds-grid">
+                            <div class="slds-col slds-size_1-of-2 mtd-value-large pos-profit">${!v.mtdRevenue}</div>
+                            <div class="slds-col slds-size_1-of-2">
+                                <div class="slds-grid_vertical" style="height:184px;">
+                                    <div class="slds-col slds-size_1-of-1 msgbox-percent">
+                                        <aura:renderIf isTrue="{!v.mtdRevenueDiffYOY >= 0}">
+                                            <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small" />
+                                            <aura:set attribute="else">
+                                                <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small" />
+                                            </aura:set>
+                                        </aura:renderIf>
+                                        <span class="{!v.mtdRevenueDiffYOY > 0 ? 'pos-profit percentDiff-large' :'neg-profit percentDiff-large'}"> {!v.mtdRevenueDiffYOYString}%  </span><span class="accel-metric">Y/Y</span>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-1 msgbox-percent">
+                                        <aura:renderIf isTrue="{!v.mtdRevenueDiffMOM >= 0}">
+                                            <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small" />
+                                            <aura:set attribute="else">
+                                                <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small" />
+                                            </aura:set>
+                                        </aura:renderIf>
+                                        <span class="{!v.mtdRevenueDiffMOM > 0 ? 'pos-profit percentDiff-large' :'neg-profit percentDiff-large'}"> {!v.mtdRevenueDiffMOMString}%  </span><span class="accel-metric">M/M</span>
+                                    </div>
+                                </div>
+                            </div>
+                         </div>
+                    </div>
+                    </aura:if>
+                </div>
+            </div>
+            -->
+
+            <aura:if isTrue="{!or(v.communityUserSettings.Display_Week_Chart__c,v.communityUserSettingsNotFound)}">
+                <div class="{!(v.communityUserSettings.Display_Yesterday_Bar_Chart__c)==true? 'special-right-margin slds-col accel-chart-shadow-drag' : 'slds-col accel-chart-shadow-drag special-margin-both'}">
+                    <div class="slds-tabs_scoped">
+                        <ul class="slds-tabs_scoped__nav" role="tablist">
+                            <li class="slds-tabs_scoped__item slds-active" title="Current Week" role="presentation" onclick="{!c.changeTab}" aura:id="cfw">
+                                <a class="slds-tabs_scoped__link" href="javascript:void(0);" role="tab" tabindex="0" aria-selected="{!v.ariaCurrSelected}" aria-controls="tab-scoped-1" id="tab-scoped-1__item">
+                                    <span class="slds-tabs__left-icon">
+                                         <span class="slds-icon_container slds-icon-standard-event" title="Current Week">
+                                            <lightning:icon iconName="standard:event" size="small"/>
+                                         </span>
+                                    </span> Current Week</a>
+                            </li>
+                            <li class="slds-tabs_scoped__item" title="Last Week" role="presentation" onclick="{!c.changeTab}" aura:id="lfw">
+                                <a class="slds-tabs_scoped__link" href="javascript:void(0);" role="tab" tabindex="-1" aria-selected="{!v.ariaLastSelected}" aria-controls="tab-scoped-2" id="tab-scoped-2__item">
+                                    <span class="slds-tabs__left-icon">
+                                         <span class="slds-icon_container slds-icon-standard-event" title="Last Week">
+                                              <lightning:icon iconName="standard:event" size="small"/>
+                                         </span>
+                                    </span> Last Week</a>
+                            </li>
+                        </ul>
+                        <div id="tab-scoped-1" class="slds-tabs_scoped__content slds-show" role="tabpanel" aria-labelledby="tab-scoped-1__item" aura:id="cfwdiv">
+                            <div class="week-info-box">
+                                <div class="accel-fiscal-period">{!v.currFiscalPeriod}</div>
+                                <div class="week-grouped-container">
+                                    <div class="week-heading-container">
+                                        <div class="accel-fiscal-heading">Total Location Share </div>
+                                        <div class="accel-curr-week-total">{!v.currWeekTotalShareVal}</div>
+                                    </div>
+                                    <div class="week-heading-container" style="margin-right: 0!important">
+                                        <div class="accel-fiscal-heading">Total Funds In </div>
+                                        <div class="accel-curr-week-total-funds">{!v.currWeekTotalFundsVal}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class= "{!((v.numAccounts)>1? 'chart-230 tab-week-div':'chart-160 tab-week-div')}" aura:id="echarts-curr-week">
+                                <div  style="position:relative; padding-top:40px">
+                                    <lightning:spinner aura:id="weekSpinner" variant="brand" size="large"
+                                                       alternativeText="{!v.weekSpinnerAltText}"
+                                                       class="{!((v.showWeekSpinner)? '': 'slds-hide')}"/>
+                                </div>
+                                <aura:if isTrue="{!and(empty(v.currWeekTotalShare),v.scriptsWereLoaded==true ) }">
+                                    <div class="accel-missing-data" style="padding-top: 60px;">
+                                        Current week data not available at this time
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </div>
+                        <div id="tab-scoped-2" class="slds-tabs_scoped__content slds-hide" role="tabpanel" aria-labelledby="tab-scoped-2__item" aura:id="lfwdiv">
+                            <div class="week-info-box">
+                                <div class="accel-fiscal-period">{!v.lastFiscalPeriod}</div>
+                                <div class="week-grouped-container">
+                                    <div class="week-heading-container">
+                                        <div class="accel-fiscal-heading">Total Location Share </div>
+                                        <div class="accel-curr-week-total">{!v.lastWeekTotalShareVal}</div>
+                                    </div>
+                                    <div class="week-heading-container" style="margin-right: 0!important">
+                                        <div class="accel-fiscal-heading">Total Funds In </div>
+                                        <div class="accel-curr-week-total-funds">{!v.lastWeekTotalFundsVal}</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class= "{!((v.numAccounts)>1? 'chart-230 tab-week-div':'chart-160 tab-week-div')}" aura:id="echarts-last-week">
+                                <aura:if isTrue="{!and(empty(v.lastWeekTotalShare),v.scriptsWereLoaded==true ) }">
+                                    <div class="accel-missing-data" style="padding-top:60px">
+                                        Last week data not available at this time
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aura:if>
+
+        </div>
+    </div>
+</aura:component>

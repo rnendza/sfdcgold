@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Cl Linked Rps - Replaces the OOTB Parent records related list.</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Cl Linked Rps</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <property name="cardTitle"
+                      label="Card Title"
+                      description="The title of the card."
+                      default="Linked Processing Sheets"
+                      type="string"/>
+            <property name="cardIconName"
+                      label="Card Icon Name"
+                      description="The icon in top left of the card (google LDS Icons)."
+                      default="custom:custom18"
+                      type="string"/>
+            <property name="iRowLimit"
+                      label="Row Limit"
+                      description="The number of rps records to display in the component (enter one of 5,10,20,50 if allowing user selectable number of rows).."
+                      required="true"
+                      default="5"
+                      type="integer"/>
+            <property name="allowFilterMenuAction"
+                      label="Allow Variance Filters"
+                      description="Displays the Filter button icon in the card actions allow the user to filter by variances."
+                      required="false"
+                      default="false"
+                      type="boolean"/>
+            <property name="vgtVariancesLabel"
+                      label="VGT Variances Label"
+                      description="The checkbox value label for the VGT Variance option ( Filters card if filters allowed )."
+                      default="With VGT Variances"
+                      type="string"/>
+            <property name="rtVariancesLabel"
+                      label="RT Variances Label"
+                      description="The checkbox value label for the RT Variance option ( Filters card if filters allowed )."
+                      default="With RT Variances"
+                      type="string"/>
+            <property name="allowCollectionDateFilter"
+                      label="Allow Collection Date Filter"
+                      description="Displays A picklist with collection date filters (ie Last 30 days etc)."
+                      required="false"
+                      default="false"
+                      type="boolean"/>
+            <property name="allowRowLimitOptions"
+                      label="Allow User Selectable # of rows"
+                      description="Displays A picklist with number of rows to display (defaults to the row limit value)."
+                      required="false"
+                      default="false"
+                      type="boolean"/>
+            <property name="debugConsole"
+                      label="Debug Console"
+                      description="Check this to send logs to the browser console."
+                      default="true"
+                      type="Boolean"/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Name</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Account__c.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.FeedItems$Body</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$RecordType</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Marketing_Request__c$Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,LUCKY POKER,ROCKFORD BREWING COMPANY,UNION QUICK MART,LOGAN AVENUE SLOTS &amp; LOUNGE,INC,HARI GURU GAS AND FOOD,LUCKY DOG&apos;S,CRAZY CAMARON,BLUE LINE SPORTS PUB,lucky dogs bar</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Marketing &amp; Chatter</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Requests_and_Chatter__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Marketing_Request__c$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c$Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

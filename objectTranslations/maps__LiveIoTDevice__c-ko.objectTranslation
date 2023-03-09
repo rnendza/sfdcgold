@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 IoT 장치</value>
+    </caseValues>
+    <fields>
+        <label><!-- Device ID --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>장치가 다음에서 마지막으로 보고한 실제 주소</help>
+        <label><!-- Last Position Address --></label>
+        <name>maps__LastPositionAddress__c</name>
+    </fields>
+    <fields>
+        <help>최종 수신 지리학적 위치 메시지의 타임스탬프입니다.</help>
+        <label><!-- Last Position Date/Time --></label>
+        <name>maps__LastPositionDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Position Event (Raw) --></label>
+        <name>maps__LastPositionEventRaw__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Position Raw --></label>
+        <name>maps__LastPositionRaw__c</name>
+    </fields>
+    <fields>
+        <help>배치별로 업데이트된 이 마지막 위치 레코드의 타임스탬프.</help>
+        <label><!-- Batch Date/Time of Last Position --></label>
+        <name>maps__LastPositionUpdateDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Reported Time Zone --></label>
+        <name>maps__LastReportedTimeZone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest Daily Summary --></label>
+        <name>maps__LatestDailySummary__c</name>
+        <relationshipLabel><!-- Maps Live IoT Devices --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>수신한 마지막 위치의 지리적 위치입니다.</help>
+        <label><!-- Last Position --></label>
+        <name>maps__Location__c</name>
+    </fields>
+    <fields>
+        <help>마지막으로 사용 가능한 자동차 마일리지, 킬로미터 단위</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>마지막으로 사용 가능한 자동차 마일리지, 마일 단위</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live IoT Devices --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- VIN Last Updated --></label>
+        <name>maps__VINLastUpdated__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>maps__VIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Vendor --></label>
+        <name>maps__Vendor__c</name>
+        <picklistValues>
+            <masterLabel>CalAmp</masterLabel>
+            <translation>CalAmp</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ford</masterLabel>
+            <translation>Ford</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GM</masterLabel>
+            <translation>GM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geometris</masterLabel>
+            <translation>기하학적 구조</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geotab</masterLabel>
+            <translation>Geotab</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Maps Live Tracking: Mobile</masterLabel>
+            <translation>Maps 실시간 추적: 모바일</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Maps 실시간 IoT 장치 이름</nameFieldLabel>
+</CustomObjectTranslation>

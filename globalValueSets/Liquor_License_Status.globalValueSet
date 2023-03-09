@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>On Premise</fullName>
+        <default>false</default>
+        <label>On Premise</label>
+    </customValue>
+    <customValue>
+        <fullName>Off Premise</fullName>
+        <default>false</default>
+        <label>Off Premise</label>
+    </customValue>
+    <customValue>
+        <fullName>Combination</fullName>
+        <default>false</default>
+        <label>Combination</label>
+    </customValue>
+    <customValue>
+        <fullName>No Liquor License</fullName>
+        <default>false</default>
+        <label>No Liquor License</label>
+    </customValue>
+    <customValue>
+        <fullName>Received</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Received</label>
+    </customValue>
+    <masterLabel>Liquor License Status</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

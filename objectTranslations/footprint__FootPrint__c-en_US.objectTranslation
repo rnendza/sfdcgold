@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Analysis Date --></label>
+        <name>footprint__Analysis_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- EmailMe --></label>
+        <name>footprint__EmailMe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom --></label>
+        <name>footprint__FootPrint_Custom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fields --></label>
+        <name>footprint__FootPrint_Fields__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter --></label>
+        <name>footprint__FootPrint_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Label --></label>
+        <name>footprint__FootPrint_Object_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object Name --></label>
+        <name>footprint__FootPrint_Object_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Types --></label>
+        <name>footprint__FootPrint_Record_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records --></label>
+        <name>footprint__FootPrint_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batches --></label>
+        <name>footprint__Footprint_Tech_Batches__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive RT --></label>
+        <name>footprint__Inactive_RT__c</name>
+    </fields>
+    <fields>
+        <label><!-- MaxRange --></label>
+        <name>footprint__MaxRange__c</name>
+    </fields>
+    <fields>
+        <label><!-- MinRange --></label>
+        <name>footprint__MinRange__c</name>
+    </fields>
+    <fields>
+        <label><!-- RangeSelected --></label>
+        <name>footprint__RangeSelected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Validation rules --></label>
+        <name>footprint__VR__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Workflows --></label>
+        <name>footprint__WF__c</name>
+    </fields>
+    <fields>
+        <label><!-- isAnalysed --></label>
+        <name>footprint__isAnalysed__c</name>
+    </fields>
+    <fields>
+        <label><!-- isEditable --></label>
+        <name>footprint__isEditable__c</name>
+    </fields>
+    <fields>
+        <label><!-- reports --></label>
+        <name>footprint__reports__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot edit This field --></errorMessage>
+        <name>footprint__FP_BlockEdit</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Footprint_report --></label>
+        <name>footprint__Footprint_report</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Launch_Metadata_analysis --></label>
+        <name>footprint__Launch_Metadata_analysis</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Launch_analysis --></label>
+        <name>footprint__Launch_analysis</name>
+    </webLinks>
+</CustomObjectTranslation>

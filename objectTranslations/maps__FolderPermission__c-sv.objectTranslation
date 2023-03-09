@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Mappbehörigheten</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En mappbehörighet</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Mappbehörighet</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Mapp behörigheterna</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Mappbehörigheter</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Mappbehörigheter</value>
+    </caseValues>
+    <fields>
+        <label><!-- Create --></label>
+        <name>maps__Create__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete --></label>
+        <name>maps__Delete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export --></label>
+        <name>maps__Export__c</name>
+    </fields>
+    <fields>
+        <label><!-- Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Folder Permissions --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Modify --></label>
+        <name>maps__Modify__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Id --></label>
+        <name>maps__ProfileId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Read --></label>
+        <name>maps__Read__c</name>
+    </fields>
+    <fields>
+        <label><!-- Set Permissions --></label>
+        <name>maps__SetPermissions__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Folder Permissions --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Namn på mappbehörighet</nameFieldLabel>
+</CustomObjectTranslation>

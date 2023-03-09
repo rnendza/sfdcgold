@@ -1,0 +1,42 @@
+<!-- Accel Compact Layout On Hover -->
+<template>
+    <div>
+        <template if:true={showOnHover} >
+            <div style={boxClass}>
+                <section class="slds-popover slds-popover_panel slds-nubbin_top-left" role="dialog">
+                    <div class="slds-popover__header">
+                        <header class="slds-media slds-media_center slds-m-bottom_small">
+                            <div class="slds-media__body">
+                                <h2 class="slds-text-heading_medium slds-hyphenate">{hoverTitle}</h2>
+                            </div>
+                        </header>
+                    </div>
+                    <div class="slds-popover__body">
+                        <lightning-record-form record-id={recordId}
+                                               object-api-name={sObjectName} layout-type="Compact" columns="1" mode="readonly">
+                        </lightning-record-form>
+                    </div>
+                </section>
+            </div>
+        </template>
+    </div>
+</template>
+
+<!--<div style="display:none; opacity:0" class="ModelTooltip">-->
+<!--    <section class="slds-popover slds-popover_panel slds-nubbin_left-top" role="dialog">-->
+<!--        <div class="slds-popover__header">-->
+<!--            <header class="slds-media slds-media_center slds-m-bottom_small">-->
+<!--                <div class="slds-media__body">-->
+<!--                    <h2 class="slds-text-heading_medium slds-hyphenate">-->
+<!--                        Title-->
+<!--                    </h2>-->
+<!--                </div>-->
+<!--            </header>-->
+<!--        </div>-->
+<!--        <div class="slds-popover__body">-->
+<!--            <lightning-record-form record-id={objRecordId} object-api-name={objectapiName}-->
+<!--                                   layout-type="Compact" columns="1" mode="readonly">-->
+<!--            </lightning-record-form>-->
+<!--        </div>-->
+<!--    </section>-->
+<!--</div>-->

@@ -1,0 +1,296 @@
+/* padding: 10px 10px;
+
+
+
+/* === Prevent auto truncate . ie ellipses... ie clip text === */
+.THIS .accel-prevent-data-truncate .slds-truncate {
+    text-overflow: inherit;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+}
+.THIS .accel-slds-button-pagination {
+    line-height: 1.175rem!important;
+}
+.THIS .accel-hidden-scroller-size {
+    height:1px;
+}
+.THIS .accel-btn-is-selected {
+    background-color: #DCE2EB;
+    font-weight:700;
+}
+/* @TODO the below is bad figure a better way!*/
+.THIS .accel-card {
+}
+
+.THIS .slds-table td {
+    /*font-size:.80rem!important;*/
+    /*font-size:.9rem!important;*/
+}
+.THIS .accel-wip {
+    border:1px dotted red;
+}
+.THIS .slds-text-title_caps {
+    /*font-size:.80rem!important;*/
+    font-size:.85rem!important;
+    font-weight:550!important;;
+    color:black!important;
+}
+
+.THIS .accel-treegrid td {
+    border-top: 1px solid silver;
+}
+.THIS .accel-treegrid tbody tr th {
+    border-top: 1px solid silver;
+}
+.THIS .accel-treegrid thead th span {
+    background-color: #16325c;
+    color: white}
+.THIS .accel-location-list-card-body {
+    padding-left:0px;
+}
+/* @TODO the below is bad figure a better way!*/
+.THIS .slds-card__header {
+    background-color: #E8E8E8;
+    padding: .75rem 1rem .75rem;
+    padding-right: 1rem;
+    padding-bottom: 0.75rem;
+    padding-left: 1rem;
+    margin: 0 0 .75rem;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    margin-left: 0px;
+}
+.THIS .axis {
+    font: 10px sans-serif;
+}
+
+.THIS .slds-tabs_default__link {
+    font-size: 1.10em!important;
+}
+.THIS .accel-tabset-dark .slds-tabs_default__item.slds-active .slds-tabs_default__item.slds-is-active .slds-tabs--default__item.slds-active .slds-tabs--default__item.slds-is-active {
+    color: rgb(255, 255, 255) !important;
+    animation: shadow 300ms;
+}
+.THIS .accel-tabset-default .slds-tabs_default__item.slds-is-active svg {
+    fill:rgb(44, 134, 194);
+}
+.THIS .accel-tabset-default  {
+    /*font-size:.9em*/
+}
+.THIS .accel-tabset-dark .slds-tabs_default__nav {
+    /*background-color: black;*/
+}
+.THIS .accel-tabset-dark .slds-tabs_default__item.slds-active  {
+    /*color: #FFFFFF;*/
+    animation: shadow 300ms;
+}
+
+.THIS .accel-tabset-dark .slds-tabs_default__item.slds-is-active .slds-tabs_default__link {
+    font-weight: 600!important;
+}
+.THIS .accel-accordion lds-accordion__list-item:first-child {
+    border-top: 0;
+}
+.THIS .accel-accordion .slds-accordion__summary-heading {
+     
+}
+
+
+.THIS .accel-accordion .slds-accordion__summary-heading {
+  color:rgb(0, 109, 204)!important; 
+   font-size:1em;
+ /* color:#db0033;*/
+    
+    
+}
+.THIS .accel-accordion .slds-is-open > .slds-accordion__summary {
+ 
+    margin-bottom: .25rem;
+}
+.THIS .accel-accordion-list-item .slds-accordion__list-item {
+    
+    border: 0!important;
+}
+.THIS .accel-shadow-drag {
+    box-shadow: t(shadowDrag);
+}
+.THIS .accel-chart-shadow-drag {
+    /* override sfdc shadowDrag */
+    box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+}
+.THIS .accel-chart-container {
+    background-color: white;
+}
+.THIS .apexcharts-yaxis-label {
+    font-weight:600;
+    font-size:10px;
+    color:white;
+}
+.THIS .apexcharts-xaxis-label {
+    font-weight:500;
+    font-size:11px;
+    color:white!important;
+}
+.THIS .accel-chart-button-group {
+    line-height:.8rem!important;
+}
+.THIS .accel-chart-toolbar {
+    /*background-color: rgb(236, 235, 234);*/
+    padding-left:0px;
+    padding-right:0px;
+    padding-top:5px;
+    border-top:1px solid silver;
+    padding-bottom:5px;
+    /*
+    border-radius: 10px 10px 0px 0px;
+    -moz-border-radius: 10px 10px 0px 0px;
+    -webkit-border-radius: 10px 10px 0px 0px;
+    border: 1px solid #DBDBDB;
+    */
+
+    /*
+    text-align: right;
+    width: 100%;
+    margin-bottom:5px;
+    */
+}
+.THIS .accel-prevent-datatable-wrap-icon thead th button {
+    visibility: hidden;
+    display: none;
+}
+.THIS .accel-button-brand {
+    color: rgb(255, 255, 255);
+}
+.THIS .accel-location-summary-datatable thead th span {
+    background-color: #F3F2F2;
+    min-height:1rem!important;
+    font-size:.9em;
+}
+.THIS .accel-location-summary-datatable tr {
+    color: black !important;
+    font-weight: 500!important;
+}
+.THIS .btn-small {
+    height: 24px;font-size:.9em;line-height:1.1em;
+    padding-left:.7rem!important;padding-right:.7rem!important;
+    font-weight:600!important;
+    /*width: 150px;*/
+}
+.THIS .apexcharts-zoom-in-icon, .THIS .apexcharts-zoom-out-icon, .THIS .apexcharts-zoom-icon, .THIS .apexcharts-reset-zoom-icon,
+.THIS .apexcharts-menu-icon, .THIS .apexcharts-menu {
+    transform: scale(0.95)!important;
+}
+.THIS .accel-select-small select {
+    height: calc(1.475rem + (1px * 2))!important;
+    font-weight: 500;
+}
+.THIS .slds-tabs_scoped__link, .THIS .slds-tabs--scoped__link {
+    font-weight:700;
+}
+.THIS .accel-location-share-tab, .THIS.slds-is-active svg {
+    fill:red;
+}
+.THIS .apexcharts-canvas {
+    background-image: linear-gradient(to left bottom, #140a83, #001169, #00124e, #060d32, #040418);
+}
+.THIS .accel-layout-expiration-hpd-dates {
+    margin-top:10px;margin-left:10px;margin-right:10px;margin-bottom:10px;
+}
+.THIS .accel-exp-date-icon svg {
+    fill:rgb(22, 50, 92);
+}
+.THIS .accel-hpd-date-icon svg {
+    fill:rgb(0, 74, 41);
+}
+.THIS .accel-exp-date-header-container {
+    margin-top:10px;margin-bottom: 10px;
+    color:rgb(22, 50, 92);font-weight:600;
+}
+.THIS .accel-hpd-date-header-container {
+    margin-top:10px;margin-bottom: 10px;
+    color:rgb(0, 74, 41);font-weight:600;
+}
+.THIS .accel-expiration-hpd-dates-labels {
+    /*width:60%;*/font-weight:500;
+}
+.THIS .accel-location-detail-tab svg {
+   
+    /*fill:red;*/
+}
+.THIS .slds-accordion__summary-action svg {
+   
+    fill:rgb(0, 109, 204) !important; 
+    /*font-size: 1.5em!important;*/
+}
+
+.THIS .slds-tabs_scoped__item slds-is-active slds-tabs__left-icon svg {
+    fill:red!important;
+}
+.THIS .accel-error-icon svg {
+    fill:#c23934;
+}
+.THIS .accel-warn-icon svg {
+    fill:orange;
+}
+/*styles for desktop */
+@media only screen and (min-width:897px) {
+    .THIS .accel-echart-location-area {
+        width: 100%;
+        min-height: 320px;
+        padding: 5px;
+        background-color: white;
+    }
+    .THIS .accel-chart-toolbar{
+        background-color: white;
+        height:38px;
+        padding-bottom: 6px;
+    }
+    .THIS .accel_mobile_center_align{
+        justify-content:center;
+        margin:0;
+    }
+    .THIS .accel_e_mobile {
+        padding-bottom: 20px;
+    }
+}
+/*styles for mobile */
+@media only screen and (max-width: 896px){
+    .THIS .accel-echart-location-area {
+        width: 100%;
+        /*min width 290 for chart, 5 + 5 padding, then 10 + 10 div padding = 320 for iphone 5 */
+        min-width: 290px;
+        min-height:300px;
+        height:300px;
+        padding: 5px;
+        background-color: white;
+
+    }
+    .THIS .accel-chart-toolbar{
+        background-color: white;
+    }
+    .THIS .accel_e_mobile {
+        padding-left: 8px;
+        padding-right: 8px;
+        padding-bottom: 16px;
+    }
+    .THIS .accel_blank_mobile{
+        display: none;
+    }
+    .THIS .accel_mobile_center_align{
+        justify-content:center;
+        margin:0;
+    }
+    .THIS .accel-chart-toolbar{
+        padding-bottom: 6px;
+    }
+    /*
+    Attempt at Override padding on parent theme.
+    content margins are too large and not needed and make mobile display more difficult doesn't appear to be working
+    one should change the parent as these margins are just too large.
+    */
+    .THIS .cAccel_CommunityServiceMobileThemeLayout  .accel-content {
+            padding:0!important;
+    }
+}

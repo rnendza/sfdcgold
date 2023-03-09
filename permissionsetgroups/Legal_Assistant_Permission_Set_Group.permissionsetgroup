@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>This permission set group is intended for all users with the Legal Assistant title. The permission sets in this group were identified by Alyssa as the baseline permissions needed for this job position.</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Legal Assistant Permission Set Group</label>
+    <permissionSets>ACH_Approved_Account_Field_Permissions</permissionSets>
+    <permissionSets>ACH_Object_Create_Edit_Delete_View_All</permissionSets>
+    <permissionSets>Agreement_Location_Revenue_Share_Percentage_Requested_Amusement_Equipments</permissionSets>
+    <permissionSets>Agreements_Expiration_Start_Termination_Date</permissionSets>
+    <permissionSets>Agreements_Permission_to_edit_Days_Live_Agreement_Version</permissionSets>
+    <permissionSets>Application_Create_Modify_All</permissionSets>
+    <permissionSets>Contact_Fields_Permissions</permissionSets>
+    <permissionSets>Mass_File_Download</permissionSets>
+    <permissionSets>Modify_Account_Municipality</permissionSets>
+    <permissionSets>New_Salesforce_Mobile_App</permissionSets>
+    <permissionSets>Project_Compliance_Notes</permissionSets>
+    <permissionSets>Project_Municipality_Go_Live_Access</permissionSets>
+    <permissionSets>Reimbursement</permissionSets>
+    <permissionSets>Temporary_Permission_to_Modify_All_Reimbursements</permissionSets>
+    <permissionSets>View_All_Custom_Settings_And_CRM_Specific_Metadata</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

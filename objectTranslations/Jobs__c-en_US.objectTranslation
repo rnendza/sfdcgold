@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Jobs</value>
+    </caseValues>
+    <fields>
+        <label><!-- ADP File Number --></label>
+        <name>ADP_File_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please use this section to provide information about allocation splits if this person will be working in more than one department. --></help>
+        <label><!-- Department Allocation Split --></label>
+        <name>Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Source --></label>
+        <name>Applicant_Source__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Confirmed --></label>
+        <name>Approval_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approval Submission Comments (optional) --></label>
+        <name>Approval_Submission_Comments__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter how many hours per week on average you expect this role to work. (1 through 40) --></help>
+        <label><!-- Average Hours/Week --></label>
+        <name>Average_Hours_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus (Accepted Offer) --></label>
+        <name>Bonus_Accepted_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Email --></label>
+        <name>Candidate_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Name (Accepted Offer) --></label>
+        <name>Candidate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Phone --></label>
+        <name>Candidate_Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the appropriate Class this employee should be coded to. If the employee is coded to the Amusements department, please select &quot;Amusements&quot;.  If an employee primarily works for our Gaming operations, please select &quot;Gaming&quot;.  If the employee primarily works on ATMs, please select &quot;ATM &amp; Other&quot;.  For SG&amp;A employees, please select Gaming. --></help>
+        <label><!-- Class --></label>
+        <name>Class__c</name>
+        <picklistValues>
+            <masterLabel>Amusement</masterLabel>
+            <translation><!-- Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming</masterLabel>
+            <translation><!-- Gaming --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Company Credit Card Needed --></label>
+        <name>Company_Credit_Card_Needed__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compensation (Accepted Offer) --></label>
+        <name>Compensation_Accepted_Offer__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the appropriate cost center (region) this employee will primarily work out of.  
+Note: &quot;Illinois&quot; is reserved for SG&amp;A (non - operations) employees as well as Operations leadership employees that can&apos;t be coded to a specific region.  
+&quot;Allocate Across All&quot; is reserved for relationship managers.
+Relationship Management Positions must be allocated to the Illinois Cost Center. --></help>
+        <label><!-- Cost Center --></label>
+        <name>Cost_Center__c</name>
+        <picklistValues>
+            <masterLabel>Burr Ridge</masterLabel>
+            <translation><!-- Burr Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champ/Wats</masterLabel>
+            <translation><!-- Champ/Wats --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Georgia</masterLabel>
+            <translation><!-- Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Illinois</masterLabel>
+            <translation><!-- Illinois --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Iowa</masterLabel>
+            <translation><!-- Iowa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebraska</masterLabel>
+            <translation><!-- Nebraska --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pennsylvania</masterLabel>
+            <translation><!-- Pennsylvania --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Filled --></label>
+        <name>Date_Filled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Job Was Posted --></label>
+        <name>Date_Job_Was_Posted__c</name>
+    </fields>
+    <fields>
+        <label><!-- DepartmentId --></label>
+        <name>DepartmentId__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please select the Department this employee should be coded to.  If the employee will support more than one department, please select the primary department this employee should be coded to and add additional applicable departments and applicable percentage split in the description box. --></help>
+        <label><!-- Department --></label>
+        <name>Department_Lookup__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- IL employees - please select Accel Entertainment, Inc. 
+GA employees, please select 	Bulldog Gaming LLC - Georgia
+IA employees, please select Hawkeye Gaming LLC – Iowa
+NE employees, please select Husker Gaming LLC – Nebraska --></help>
+        <label><!-- Entity/Location --></label>
+        <name>Entity_Location__c</name>
+        <picklistValues>
+            <masterLabel>Accel Entertainment, Inc.</masterLabel>
+            <translation><!-- Accel Entertainment, Inc. --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bulldog Gaming LLC - Georgia</masterLabel>
+            <translation><!-- Bulldog Gaming LLC - Georgia --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hawkeye Gaming LLC – Iowa</masterLabel>
+            <translation><!-- Hawkeye Gaming LLC – Iowa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Husker Gaming LLC – Nebraska</masterLabel>
+            <translation><!-- Husker Gaming LLC – Nebraska --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Executive Approver --></label>
+        <name>Executive_Approver__c</name>
+        <relationshipLabel><!-- Jobs (Executive Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Exemption Status --></label>
+        <name>Exemption_Status__c</name>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Salary</masterLabel>
+            <translation><!-- Salary --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Existing Job Title? --></label>
+        <name>Existing_Job_Title__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Explanation of Hiring Need --></label>
+        <name>Explanation_of_Hiring_Need__c</name>
+    </fields>
+    <fields>
+        <help><!-- Provide a reason for why the job is no longer needed. --></help>
+        <label><!-- Explanation of Inactive Requisition --></label>
+        <name>Explanation_of_Inactive_Requisition__c</name>
+    </fields>
+    <fields>
+        <help><!-- Full Time Equivalent; take average number of hours/week and divide by 40 --></help>
+        <label><!-- FTE Count --></label>
+        <name>FTE_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fill By Date --></label>
+        <name>Fill_By_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finance Approver --></label>
+        <name>Finance_Approver__c</name>
+        <relationshipLabel><!-- Jobs (Finance Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Hiring Reason --></label>
+        <name>Hiring_Reason__c</name>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Promotion</masterLabel>
+            <translation><!-- Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement</masterLabel>
+            <translation><!-- Replacement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Transfer</masterLabel>
+            <translation><!-- Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Human Resources Approval --></label>
+        <name>Human_Resources_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Human Resources Approver --></label>
+        <name>Human_Resources_Approver__c</name>
+        <relationshipLabel><!-- Jobs (Human Resources Approver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- In Budget --></label>
+        <name>In_Budget__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instructions for Approval --></label>
+        <name>Instructions_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Essentials Filled Count --></label>
+        <name>Job_Essentials_Filled_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Essentials Rollup Count --></label>
+        <name>Job_Essentials_Rollup_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Essentials Status --></label>
+        <name>Job_Essentials_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job No Longer Needed --></label>
+        <name>Job_No_Longer_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Status --></label>
+        <name>Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approved: Pending Posting</masterLabel>
+            <translation><!-- Approved: Pending Posting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Filled</masterLabel>
+            <translation><!-- Filled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Approval</masterLabel>
+            <translation><!-- In Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Posted</masterLabel>
+            <translation><!-- Posted --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Title --></label>
+        <name>Job_Title__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Candidate&apos;s Name --></label>
+        <name>Last_Candidate_s_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Need to register as employee sales agent --></label>
+        <name>Need_to_register_as_employee_sales_agent__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Please provide supporting information as needed in the Explanation of Hiring Need field. --></help>
+        <label><!-- New Headcount Reason --></label>
+        <name>New_Headcount_Reason__c</name>
+        <picklistValues>
+            <masterLabel>A cost savings project (ex. reduce the need for service techs), and if so, what is the timing and monthly savings that each new hire should provide?</masterLabel>
+            <translation><!-- A cost savings project (ex. reduce the need for service techs), and if so, what is the timing and monthly savings that each new hire should provide? --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>A new initiative that is underway that should increase bottom line</masterLabel>
+            <translation><!-- A new initiative that is underway that should increase bottom line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incremental growth assumptions; if so, provide a benchmark measurement tool (ex. 1 new hire every 500 new locations)</masterLabel>
+            <translation><!-- Incremental growth assumptions; if so, provide a benchmark measurement tool (ex. 1 new hire every 500 new locations) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- New Hire Will Report To: --></label>
+        <name>New_Hire_Will_Report_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Office --></label>
+        <name>Office__c</name>
+        <picklistValues>
+            <masterLabel>Blue Ridge</masterLabel>
+            <translation><!-- Blue Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burr Ridge</masterLabel>
+            <translation><!-- Burr Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burr Ridge Amusements</masterLabel>
+            <translation><!-- Burr Ridge Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign</masterLabel>
+            <translation><!-- Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dubuque</masterLabel>
+            <translation><!-- Dubuque --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lincoln</masterLabel>
+            <translation><!-- Lincoln --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marietta</masterLabel>
+            <translation><!-- Marietta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Platte</masterLabel>
+            <translation><!-- North Platte --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Omaha</masterLabel>
+            <translation><!-- Omaha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford Amusements</masterLabel>
+            <translation><!-- Rockford Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford West</masterLabel>
+            <translation><!-- Rockford West --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Savannah</masterLabel>
+            <translation><!-- Savannah --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sioux City</masterLabel>
+            <translation><!-- Sioux City --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield Amusements</masterLabel>
+            <translation><!-- Springfield Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka</masterLabel>
+            <translation><!-- Watseka --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Record Link --></label>
+        <name>Record_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Recruiter --></label>
+        <name>Recruiter__c</name>
+        <relationshipLabel><!-- Jobs (Recruiter) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Recruiting Pool --></label>
+        <name>Recruiting_Pool__c</name>
+        <picklistValues>
+            <masterLabel>External only</masterLabel>
+            <translation><!-- External only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal AND external</masterLabel>
+            <translation><!-- Internal AND external --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal THEN external</masterLabel>
+            <translation><!-- Internal THEN external --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Region &amp; City --></label>
+        <name>Region_City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Why is the previous employee being replaced? --></help>
+        <label><!-- Replacement Reason --></label>
+        <name>Replacement_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Replacement - Promotion</masterLabel>
+            <translation><!-- Replacement - Promotion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement - Separation</masterLabel>
+            <translation><!-- Replacement - Separation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replacement - Transfer</masterLabel>
+            <translation><!-- Replacement - Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Replacing (name of person) --></label>
+        <name>Replacing_name_of_person__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requesting Manager --></label>
+        <name>Requesting_Manager__c</name>
+        <relationshipLabel><!-- Jobs (Requesting Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Requisition Approved Date --></label>
+        <name>Requisition_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Incentive Plan Sent On --></label>
+        <name>Sales_Incentive_Plan_Sent_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Incentive Plan (if applicable) --></label>
+        <name>Sales_Incentive_Plan__c</name>
+        <picklistValues>
+            <masterLabel>BDM Commissions Agreement GA</masterLabel>
+            <translation><!-- BDM Commissions Agreement GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BDM Commissions Agreement IL</masterLabel>
+            <translation><!-- BDM Commissions Agreement IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA AM Incentive</masterLabel>
+            <translation><!-- GA AM Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC BDM Incentive</masterLabel>
+            <translation><!-- NC BDM Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE AM Incentive</masterLabel>
+            <translation><!-- NE AM Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE BDM Incentive</masterLabel>
+            <translation><!-- NE BDM Incentive --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other Commission Agreement</masterLabel>
+            <translation><!-- Other Commission Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM Commissions Agreements</masterLabel>
+            <translation><!-- RM Commissions Agreements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SDR Incentives</masterLabel>
+            <translation><!-- SDR Incentives --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Shift Hours --></label>
+        <name>Shift_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shift --></label>
+        <name>Shift__c</name>
+        <relationshipLabel><!-- Jobs --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <picklistValues>
+            <masterLabel>External</masterLabel>
+            <translation><!-- External --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Internal</masterLabel>
+            <translation><!-- Internal --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Start Date (Accepted Offer) --></label>
+        <name>Start_Date_Accepted_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submit for Approval Trigger --></label>
+        <name>Submit_for_Approval_Trigger__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submitted Date --></label>
+        <name>Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Why/where is the employee being transferred? --></help>
+        <label><!-- Transfer Reason --></label>
+        <name>Transfer_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Department Transfer</masterLabel>
+            <translation><!-- Department Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Transfer</masterLabel>
+            <translation><!-- Regional Transfer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Same Department – New Position</masterLabel>
+            <translation><!-- Same Department – New Position --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>State Transfer</masterLabel>
+            <translation><!-- State Transfer --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Contractor</masterLabel>
+            <translation><!-- Contractor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full-Time</masterLabel>
+            <translation><!-- Full-Time --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Part-Time</masterLabel>
+            <translation><!-- Part-Time --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Work Schedule --></label>
+        <name>Work_Schedule__c</name>
+        <picklistValues>
+            <masterLabel>1st shift</masterLabel>
+            <translation><!-- 1st shift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd shift</masterLabel>
+            <translation><!-- 2nd shift --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd shift</masterLabel>
+            <translation><!-- 3rd shift --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Approved - Ready to Post --></label>
+        <name>Job_Posting</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Get Position Approval --></label>
+        <name>Position_Requisition</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- Please fill out the FTE Count field. --></errorMessage>
+        <name>Fill_out_FTE_Count</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- If your hiring reason is New, please fill out the Explanation of Hiring Need --></errorMessage>
+        <name>Hiring_Reason_New</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your Hiring Reason is &quot;Replacement&quot;.
+Please fill out the name of the &quot;Replacing (name of person)&quot;. --></errorMessage>
+        <name>Hiring_Reason_Replacement</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- When choosing N/A for a Sales Incentive Plan, you cannot choose additional values. --></errorMessage>
+        <name>Job_Bad_Values_for_Sales_Incentive_Plan</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A reason for inactivating a job is required. --></errorMessage>
+        <name>Job_No_Longer_Needed_requires_a_reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Your Hiring Reason is &quot;Replacement&quot;.
+Please select a value for the &quot;Replacement Reason&quot;. --></errorMessage>
+        <name>Replacement_Reason_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please fill out the following field: &quot;Need to register as employee sales agent.&quot; --></errorMessage>
+        <name>Sales_Agent_field_must_be_populated</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please, select a Transfer Reason. --></errorMessage>
+        <name>Transfer_Reason_is_required</name>
+    </validationRules>
+</CustomObjectTranslation>

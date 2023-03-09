@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- AllReportName --></label>
+        <name>footprint__AllReportName__c</name>
+    </fields>
+    <fields>
+        <label><!-- IDReport --></label>
+        <name>footprint__IDReport__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- This is a message --></errorMessage>
+        <name>footprint__ReportValidationRule</name>
+    </validationRules>
+</CustomObjectTranslation>

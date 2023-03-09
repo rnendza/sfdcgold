@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Chính Sách Lên Lịch</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value><!-- Chính Sách Lên Lịch --></value>
+    </caseValues>
+    <fields>
+        <label><!-- Commit Mode --></label>
+        <name>FSL__Commit_Mode__c</name>
+        <picklistValues>
+            <masterLabel>AlwaysCommit</masterLabel>
+            <translation>AlwaysCommit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rollback</masterLabel>
+            <translation>Hủy</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- In-Day Optimization --></label>
+        <name>FSL__Daily_Optimization__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>FSL__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fix Overlaps --></label>
+        <name>FSL__Fix_Overlaps__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Clustering Weight (Closed Pilot) --></label>
+        <name>FSL__Service_Clustering_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Priority Weight (Closed Pilot) --></label>
+        <name>FSL__Service_Priority_Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Mode (Closed Pilot) --></label>
+        <name>FSL__Travel_Mode__c</name>
+    </fields>
+    <nameFieldLabel>Tên Chính Sách Lên Lịch</nameFieldLabel>
+    <validationRules>
+        <errorMessage><!-- Policy objectives weight can not be negative --></errorMessage>
+        <name>FSL__Deny_Objectives_Negative_Weight</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- Deep_Clone --></label>
+        <name>FSL__Deep_Clone</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- test2 --></label>
+        <name>FSL__test2</name>
+    </webLinks>
+</CustomObjectTranslation>

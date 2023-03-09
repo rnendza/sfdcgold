@@ -1,0 +1,41 @@
+<aura:component description="Accel_InventoryRequestCreateAssetsHelp">
+
+    <aura:attribute name="inventoryRequestLineItem" type="Inventory_Request_Line_Item__c" />
+    <aura:attribute name="messageTitle" type="String" default="Help" />
+    <aura:attribute name="showCreateMsg" type="Boolean" default="false" />
+    <aura:attribute name="showAllCreatedMsg" type="Boolean" default="false" />
+    <aura:attribute name="allCreatedMsg" type="String" default="" />
+    <aura:attribute name="boxClass" type="String" default="accel-square-box__info" />
+    <aura:attribute name="boxIconName" type="String" default="utility:info" />
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <div class="accel-admin-help-outer-container">
+        <div class="{!'slds-theme--shade ' +v.boxClass}">
+            <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                <div class="slds-media__figure">
+                    <lightning:icon iconName="{!v.boxIconName}"
+                                    size="small"
+                                    alternativeText="Create Assets Assistance"/>
+                </div>
+                <div class="slds-media__body">
+                    <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                        <b>{!v.messageTitle}</b>
+                    </div>
+                    <div class="accel-detailed-body-text">
+                        <div class="accel-hard-wrap-text">
+                            <aura:if isTrue="{!v.showCreateMsg}">
+                                Click<span class="accel-create-assets-text"> Create Assets </span>
+                                to generate {!v.inventoryRequestLineItem.Qty_of_assets_to_create__c} assets for
+                                {!v.inventoryRequestLineItem.Product__r.Name}.
+                            </aura:if>
+                            <aura:if isTrue="{!v.showAllCreatedMsg}">
+                                {!v.allCreatedMsg}
+                            </aura:if>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>ทริปการขับรถจริงประจำวันใน Maps</value>
+    </caseValues>
+    <fields>
+        <help>AM/PM ถูกกำหนดตามเขตเวลาของอุปกรณ์</help>
+        <label><!-- AM or PM Drive Trip --></label>
+        <name>maps__AMorPMDriveTrip__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>AM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>AM/PM</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>PM</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>เมืองที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip City --></label>
+        <name>maps__BeginTripCity__c</name>
+    </fields>
+    <fields>
+        <help>ประเทศที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip Country --></label>
+        <name>maps__BeginTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>เวลาที่การเดินทางนี้เริ่มต้น</help>
+        <label><!-- Begin Trip Date/Time --></label>
+        <name>maps__BeginTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>ที่อยู่ที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip Full Address --></label>
+        <name>maps__BeginTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>รหัสไปรษณีย์ที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip Postal Code --></label>
+        <name>maps__BeginTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>รัฐที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip State --></label>
+        <name>maps__BeginTripState__c</name>
+    </fields>
+    <fields>
+        <help>ค้นหาในเร็กคอร์ดของเหตุการณ์ที่เป็นจุดเริ่มต้นของการเดินทางนี้</help>
+        <label><!-- Begin Trip Stop --></label>
+        <name>maps__BeginTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (Begin Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ถนนที่จุดเริ่มต้นของการเดินทางเกิดขึ้น</help>
+        <label><!-- Begin Trip Street --></label>
+        <name>maps__BeginTripStreet__c</name>
+    </fields>
+    <fields>
+        <help>วันเดินทาง</help>
+        <label><!-- Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>บ่งชี้ว่าการเดินทางเกิดขึ้นภายในวันหยุดที่ระบุว่าหยุดงานหรือไม่</help>
+        <label><!-- Driving During Holiday --></label>
+        <name>maps__DrivingDuringHoliday__c</name>
+    </fields>
+    <fields>
+        <help>บ่งชี้ว่าการเดินทางเกิดขึ้นภายนอกเวลาทำงานที่ระบุหรือไม่</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>เมืองที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip City --></label>
+        <name>maps__EndTripCity__c</name>
+    </fields>
+    <fields>
+        <help>ประเทศที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip Country --></label>
+        <name>maps__EndTripCountry__c</name>
+    </fields>
+    <fields>
+        <help>เวลาที่การเดินทางนี้สิ้นสุด</help>
+        <label><!-- End Trip Date/Time --></label>
+        <name>maps__EndTripDateTime__c</name>
+    </fields>
+    <fields>
+        <help>ที่อยู่ที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip Full Address --></label>
+        <name>maps__EndTripFullAddress__c</name>
+    </fields>
+    <fields>
+        <help>รหัสไปรษณีย์ที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip Postal Code --></label>
+        <name>maps__EndTripPostalCode__c</name>
+    </fields>
+    <fields>
+        <help>รัฐที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip State --></label>
+        <name>maps__EndTripState__c</name>
+    </fields>
+    <fields>
+        <help>ค้นหาในเร็กคอร์ดของเหตุการณ์ที่เป็นจุดสิ้นสุดของการเดินทางนี้</help>
+        <label><!-- End Trip Stop --></label>
+        <name>maps__EndTripStop__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips (End Trip Stop) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ถนนที่จุดสิ้นสุดของการเดินทางเกิดขึ้น</help>
+        <label><!-- End Trip Street --></label>
+        <name>maps__EndTripStreet__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>เร็กคอร์ดการสรุปรายวันของแอสเซทการถ่ายทอดสดที่ระยะทางสะสมนี้เกี่ยวข้อง</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Summary Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>ผู้ขับขี่ที่ระบุของการเดินทางนี้</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Daily Drive Trips --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help># รวมของเหตุการณ์การเร่งความเร็วในการเดินทาง</help>
+        <label><!-- Total # of Hard Accel Events In Trip --></label>
+        <name>maps__TotalNumOfHardAccelEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help># รวมของเหตุการณ์การเบรคอย่างรุนแรงภายในการเดินทางนี้</help>
+        <label><!-- Total # of Hard Braking Events this Trip --></label>
+        <name>maps__TotalNumOfHardBrakeEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help># รวมของเหตุการณ์เกณฑ์ความเร็วสูงสุดภายในการเดินทางนี้</help>
+        <label><!-- Total # of Speed Thresh Events in Trip --></label>
+        <name>maps__TotalNumOfSpeedThresholdEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <help># รวมของเหตุการณ์การเร่งความเร็วภายในการเดินทางนี้</help>
+        <label><!-- Total # of Speeding Events within Trip --></label>
+        <name>maps__TotalNumOfSpeedingEventsInTrip__c</name>
+    </fields>
+    <fields>
+        <label><!-- Trip Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>นี่คือระยะทางในการเดินทางทั้งหมดเป็นไมล์</help>
+        <label><!-- Trip Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>ระยะเวลาเป็นชั่วโมงของทริปนี้</help>
+        <label><!-- Trip Drive Time (Hours) --></label>
+        <name>maps__TripDriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>ระยะเวลาเป็นนาทีของทริปนี้</help>
+        <label><!-- Trip Drive Time (Minutes) --></label>
+        <name>maps__TripDriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>ลำดับของการเดินทางตลอดทั้งวัน</help>
+        <label><!-- Trip Order --></label>
+        <name>maps__TripOrder__c</name>
+    </fields>
+    <nameFieldLabel>ชื่อทริปการขับรถจริงประจำวันใน Maps</nameFieldLabel>
+</CustomObjectTranslation>

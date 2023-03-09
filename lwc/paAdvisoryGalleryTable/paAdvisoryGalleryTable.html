@@ -1,0 +1,85 @@
+<template>
+
+    <template if:true={showDataTable}>
+
+        <template if:true={showTotals}>
+            <div class="slds-grid slds-wrap slds-p-horizontal_xx-small">
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-text-body_small">
+                        Showing {_totalRecordsDisplayed} of {totalSearchRecordCount} items
+                    </div>
+                </div>
+                <div class="slds-col slds-size_1-of-2">
+                    <div class="slds-text-color_weak slds-text-body_small slds-text-align_right">
+                        <template if:true={_loadMoreStatus}>
+                            <div class="slds-text-color_success">
+                                {_loadMoreStatus}
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </template>
+        <div class="slds-p-bottom_small">
+            <div style={dtDynaContainerStyle}>
+                <lightning-datatable
+                        key-field={dtKeyField}
+                        data={shapedRecords}
+                        hide-checkbox-column="true"
+                        show-row-number-column={showTableRowNumColumn}
+                        columns={columns}
+                        onrowaction={handleRowAction}
+                        sorted-direction={sortDirection}
+                        sorted-by={sortBy}
+                        onsort={handleSort}
+                        enable-infinite-loading="true"
+                        onloadmore={handleLoadMore}
+                        load-more-offset={infiniteScrollMaxItems}
+                        class={dtClasses}>
+                </lightning-datatable>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showNoRecords}>
+        <c-ui-empty-state
+                container-class="slds-illustration slds-illustration_x_small"
+                header-text="No Advisory records found."
+                body-text="Please expand your search using the search filters.">
+        </c-ui-empty-state>
+    </template>
+
+    <div if:true={showProgressBar}
+         class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+        <template if:true={_isExporting}>
+            <div>
+                {exportStatusLabel}
+            </div>
+        </template>
+        <c-ui-indeterminate-progress-bar>
+        </c-ui-indeterminate-progress-bar>
+    </div>
+
+    <template if:true={showExportButton}>
+        <div class="slds-p-top_medium">
+            <div class="slds-text-align_right slds-p-right_xx-small">
+                <c-pa-advisory-export
+                        onexport={handleExport}
+                        btn-icon-name={exportBtnIconName}
+                        btn-variant={exportBtnVariant}
+                        btn-label={exportBtnLabel}
+                        btn-title={exportBtnTitle}>
+                </c-pa-advisory-export>
+            </div>
+        </div>
+    </template>
+
+    <template if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="9"
+                child-class="slds-var-m-around-small"
+                type="list" columns="3">
+        </c-ui-custom-stencil>
+    </template>
+
+</template>

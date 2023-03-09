@@ -1,0 +1,27 @@
+<apex:page docType="html-5.0" standardController="Marketing_Request__c">
+   
+
+    <style>
+        .mypage  {
+            margin: 12px 0;            
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            }
+    </style>
+    
+  
+    
+    
+    
+    <div class="mypage">
+    <h style="text-align: center;font-family: Tahoma;color:black;font-size: 16px;font-weight: bold; ">
+                    INSTRUCTIONS 
+</h>
+        <p style="font-family: Helvetica;">
+        <ul> Upon saving your request, select from the related Marketing Products. Search for the item, then enter the quantity and Save (you may choose to add more than 1 product). </ul>
+        Then click Submit for Approval. <span style="font-weight:900">If you do not click this button, your request will not be sent to the warehouse for fulfillment.</span></p>
+       
+    </div>
+    
+</apex:page>

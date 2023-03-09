@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Accel Application Log</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Accel Application Logs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Accel Application Logs --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The batch size that this job was requested to run with. --></help>
+        <label><!-- Batch Size --></label>
+        <name>Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Covid Region --></label>
+        <name>Covid_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- Logging for the individual job. --></help>
+        <label><!-- Execution Details --></label>
+        <name>Execution_Details__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used as a help for things like lightning email templates. --></help>
+        <label><!-- External Record Link --></label>
+        <name>External_Record_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- The id of the job initial job. ie. if there was a batch job that fired a queueable job or other batch jobs. used the initial batch job id. --></help>
+        <label><!-- Initiating Job Id --></label>
+        <name>Initiating_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- JobType --></label>
+        <name>JobType__c</name>
+        <picklistValues>
+            <masterLabel>ApexToken</masterLabel>
+            <translation><!-- ApexToken --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BatchApex</masterLabel>
+            <translation><!-- BatchApex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BatchApexWorker</masterLabel>
+            <translation><!-- BatchApexWorker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Future</masterLabel>
+            <translation><!-- Future --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MethodName</masterLabel>
+            <translation><!-- MethodName --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queueable</masterLabel>
+            <translation><!-- Queueable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ScheduledApex</masterLabel>
+            <translation><!-- ScheduledApex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SharingRecalculation</masterLabel>
+            <translation><!-- SharingRecalculation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestRequest</masterLabel>
+            <translation><!-- TestRequest --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TestWorker</masterLabel>
+            <translation><!-- TestWorker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Trigger</masterLabel>
+            <translation><!-- Trigger --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Type</masterLabel>
+            <translation><!-- Type --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Name --></label>
+        <name>Job_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+    </fields>
+    <fields>
+        <label><!-- Overall Job Status --></label>
+        <name>Overall_Job_Status__c</name>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation><!-- Failed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partial Success</masterLabel>
+            <translation><!-- Partial Success --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation><!-- Processing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rolled Back</masterLabel>
+            <translation><!-- Rolled Back --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Success</masterLabel>
+            <translation><!-- Success --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Process End Date --></label>
+        <name>Process_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Start Date --></label>
+        <name>Process_Start_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Id of the job that was scheduled that fired this batch. --></help>
+        <label><!-- Scheduled Job Id --></label>
+        <name>Scheduled_Job_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stack Trace --></label>
+        <name>Stack_Trace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Count of Clean Records --></label>
+        <name>Total_Count_of_Clean_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Count of Dirty Records --></label>
+        <name>Total_County_of_Dirty_Records__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Executions --></label>
+        <name>Total_Executions__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of records we are trying to update. --></help>
+        <label><!-- Total Records Processed --></label>
+        <name>Total_Records_Processed__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of records selected. ie. accumulative value of start query records. --></help>
+        <label><!-- Total Records Selected --></label>
+        <name>Total_Records_Selected__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total total number of records for which an update succeeded --></help>
+        <label><!-- Total Records Updated --></label>
+        <name>Total_Records_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Records Upserted --></label>
+        <name>Total_Records_Upserted__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total number of records for which an update was attempted, but failed with a DML Error. --></help>
+        <label><!-- Total Updates Failed --></label>
+        <name>Total_Updates_Failed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Upserts Failed --></label>
+        <name>Total_Upserts_Failed__c</name>
+    </fields>
+    <fields>
+        <help><!-- User that Triggered the Error --></help>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Accel Application Logs --></relationshipLabel>
+    </fields>
+    <recordTypes>
+        <description><!-- Any Salesforce Community --></description>
+        <label><!-- Community --></label>
+        <name>Community</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- PA Advisory Loader --></description>
+        <label><!-- PA Advisory --></label>
+        <name>PA_Advisory</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Backend Core Salesforce CRM Custom Cmp Logging --></description>
+        <label><!-- Salesforce CRM --></label>
+        <name>Salesforce_CRM</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Queueable And Apex jobs --></description>
+        <label><!-- Salesforce Jobs --></label>
+        <name>Salesforce_Jobs</name>
+    </recordTypes>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

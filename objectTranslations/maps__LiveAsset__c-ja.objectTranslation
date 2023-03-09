@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps ライブ納入商品</value>
+    </caseValues>
+    <fields>
+        <help>納入商品は現在有効な在庫ですか?</help>
+        <label><!-- Active --></label>
+        <name>maps__Active__c</name>
+    </fields>
+    <fields>
+        <help>会社内の納入商品を識別するための所有物 ID</help>
+        <label><!-- Asset Id --></label>
+        <name>maps__AssetId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>車両または非車両のメーカー</help>
+        <label><!-- Make --></label>
+        <name>maps__Make__c</name>
+    </fields>
+    <fields>
+        <help>車両または非車両のモデル</help>
+        <label><!-- Model --></label>
+        <name>maps__Model__c</name>
+    </fields>
+    <fields>
+        <help>使用可能な最新の走行距離計のキロメートル単位の目盛り</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>使用可能な最新の走行距離計のマイル単位の目盛り</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>非電動およびオフロードの納入商品の一意の識別子</help>
+        <label><!-- Serial Number --></label>
+        <name>maps__SerialNumber__c</name>
+    </fields>
+    <fields>
+        <help>納入商品の種別、車両または非車両など</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other Equipment</masterLabel>
+            <translation>その他の機器</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation>車両</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>車両種別の納入商品の車両識別番号</help>
+        <label><!-- VIN --></label>
+        <name>maps__VIN__c</name>
+    </fields>
+    <fields>
+        <help>納入商品のメーカー/モデルの年。</help>
+        <label><!-- Year --></label>
+        <name>maps__Year__c</name>
+    </fields>
+    <nameFieldLabel>Maps ライブ納入商品名</nameFieldLabel>
+</CustomObjectTranslation>

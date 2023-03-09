@@ -1,0 +1,89 @@
+<!-- Cl Rps Survey -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+
+    <div if:true={showForm}>
+        <div class="accel-form_container slds-p-bottom_large slds-p-top_medium">
+
+            <lightning-record-edit-form record-id={rpsId}
+                                        object-api-name={objectApiName}
+                                        density={formDensity}
+                                        form-class={formClass}
+                                        onload={handleLoad}
+                                        onsubmit={handleSubmit}
+                                        onerror={handleError}
+                                        onsuccess={handleSuccess}>
+
+                <lightning-messages></lightning-messages>
+
+                <div class="slds-p-around_small accel-form-theme_shade">
+                    <div if:true={showStencil}>
+                        <div class="slds-p-around_small">
+                            <c-ui-custom-stencil
+                                    iterations="1"
+                                    type="list" columns="1">
+                            </c-ui-custom-stencil>
+                        </div>
+                    </div>
+                    <div if:true={showFormContents}>
+                        <div class="slds-p-bottom_small">
+                            <c-ui-form-title
+                                    form-title={formTitle}
+                                    icon-size="small"
+                                    icon-name={formIcon}>
+                            </c-ui-form-title>
+                        </div>
+                        <template if:true={formFields} for:each={formFields} for:item="field">
+                            <div    key={field.name}
+                                    if:true={field.label}>
+                                <label class="slds-form-element__label">
+                                    {field.label}
+                                </label>
+                            </div>
+                            <div key={field.name}
+                                 class="slds-p-bottom_small accel-input_override">
+                                <lightning-input-field if:false={field.readOnly}
+                                        key={field.name}
+                                        tabindex={field.tabIndex}
+                                        variant={field.variant}
+                                        field-name={field.name}
+                                        required={field.required}
+                                        disabled={field.disabled}
+                                        read-only={field.readOnly}
+                                        data-fieldname={field.name}
+                                        onchange={handleFieldChange}
+                                        value={field.value}
+                                        class={field.className}>
+                                </lightning-input-field>
+                                <lightning-output-field if:true={field.readOnly}
+                                                       key={field.name}
+                                                       variant={field.variant}
+                                                       field-name={field.name}
+                                                       data-fieldname={field.name}
+                                                       value={field.value}
+                                                       class={field.className}>
+                                </lightning-output-field>
+                            </div>
+                        </template>
+
+                        <div if:true={showLastModifiedDate} class="slds-p-left_x-small">
+                            <div class="slds-text-align_right">
+                                <c-cl-time-stamp
+                                        icon-name={dateIconName}
+                                        icon-class={_iconClass}
+                                        icon-title={_lastModDateText}
+                                        date-value={_questionsLastModDate}
+                                        date-text-class={_dateTextClass}
+                                        help-text={_lastModDateText}
+                                        help-text-icon-class="accel-text-green">
+                                </c-cl-time-stamp>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <input type="submit" class="accel-hidden-submit-button" />
+            </lightning-record-edit-form>
+        </div>
+    </div>
+</template>

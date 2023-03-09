@@ -1,0 +1,99 @@
+<aura:component implements="lightning:actionOverride,lightning:hasPageReference,lightning:isUrlAddressable,lightning:availableForFlowScreens"
+                controller="InventoryRequestController"
+                description="Accel_CreateInventoryRequest_ScreenFlow">
+
+    <aura:attribute name="selectedRecordTypeId" type="Id"/>
+    <aura:attribute name="cardTitle" type="String" default="New Inventory Request"/>
+    <aura:attribute name="flowName" type="String" default="flow_screen_Inventory_Request_New_Action_Override"/>
+    <aura:attribute name="irRecordType" type="Object" default="The record type to create the IR with"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+
+    <aura:attribute name="contentDocumentRecordId" type="String" default="0697A000000I6qI"
+                    description="@TODO retrieve this dynamically based on file name!"/>
+    <aura:attribute name="currentTabId" type="String"
+                    description="Console Application - Current Tab Id"/>
+    <aura:attribute name="auxilaryHelp" type="String"
+                    default="After this form is complete, a tab will open
+                    displaying your saved Inventory Request Information. You can then continue to enter product information."/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <lightning:workspaceAPI aura:id="workspace"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="lightning:openFiles" action="{! c.handleOpenFiles }" />
+
+    <aura:html tag="style">
+        .flowruntime-input { max-width: inherit!important; }
+        .slds-form-element__label { font-size:.85rem; }
+        .slds-input { line-height:2.5rem }
+        .slds-select { height:2.5rem }
+        .slds-form-element_stacked:not(.slds-is-editing), .slds-form_stacked .slds-form-element:not(.slds-is-editing),
+        .slds-form_horizontal .slds-form-element_stacked:not(.slds-is-editing) {
+            padding: 0;
+        }
+    </aura:html>
+    <aura:attribute name="headerTitle" type="Aura.Component[]">
+        <div class="slds-grid accel-test-borders">
+            <div class="slds-col slds-size--1-of-1 slds-large-size--5-of-6">
+                <div class="accel-card-title">
+                    <div class="slds-grid accel-test-borders">
+                        <div class="slds-p-right_small accel-test-borders" style="align-items: center;display: flex">
+                            <lightning:icon iconName="custom:custom17"/>
+                        </div>
+                        <div>
+                            <h2 class="inlineTitle slds-p-top--medium slds-p-bottom--small slds-text-heading--medium
+                                accel-text-card-heading">
+                                {!v.cardTitle}
+                            </h2>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-col slds-size--1-of-1 slds-large-size--1-of-6">
+                <div style="text-align: right">
+                    <div style="display:inline-block;" onclick="{!c.handleViewCreateIrHelp}">
+                        <lightning:icon iconName="utility:help" size="small" class="accel-comp-header-icon"/>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </aura:attribute>
+
+
+    <div class="accel-new-record-screen-flow accel-test-borders">
+
+        <div class="slds-brand-band slds-brand-band_cover slds-brand-band_narrow_view_two accel-test-borders
+                    slds-template_default accel-template_default forceBrandBand accel-brand-band">
+
+            <div class="slds-template__container accel-test-borders">
+                <lightning:card title="{!v.headerTitle}">
+                    <div class="inlinePanel oneRecordActionWrapper accel-test-borders">
+                        <div class="slds-grid slds-wrap">
+                            <div class="slds-col slds-size--1-of-1 slds-large-size--4-of-8 accel-test-borders">
+                                <lightning:flow aura:id="flowData" onstatuschange="{!c.onFlowStatusChange}"/>
+                            </div>
+                            <div class="slds-col slds-size--1-of-1 slds-large-size--4-of-8"
+                            style="background-color: rgb(244,246,249)">
+                                <div class="slds-p-left--large">
+                                    <div class="slds-m-bottom_medium slds-m-top_small slds-p-left--medium slds-p-right_medium" >
+                                    <span style="font-size:14px">
+                                        {!v.auxilaryHelp}
+                                    </span>
+                                    </div>
+                                    <div class="slds-p-around--medium">
+                                        <c:crmDisplayImage imageName="person-using-forklift-1267338"
+                                                           imageFolder="images" imageType="jpg"/>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </lightning:card>
+            </div>
+        </div>
+    </div>
+</aura:component>

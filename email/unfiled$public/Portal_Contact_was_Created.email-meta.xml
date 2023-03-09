@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <available>true</available>
+    <description>When a portal user is created, notify the account RM</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Portal Contact was Created</name>
+    <style>none</style>
+    <subject>Portal Contact</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

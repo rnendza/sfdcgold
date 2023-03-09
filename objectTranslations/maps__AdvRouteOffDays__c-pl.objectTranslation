@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Dzień wolny Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Dni wolne Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Dzień wolny Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Dni wolne Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Dnia wolnego Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Dni wolnych Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Wolnemu Dniu Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Wolnym dniom Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Dniem wolnym Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Dniami wolnymi Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Wolnym dniu Zaawansowanych tras Maps</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Wolnych dniach Zaawansowanych tras Maps</value>
+    </caseValues>
+    <fields>
+        <label><!-- Day(s) of Week --></label>
+        <name>maps__DaysOfWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>maps__Default__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Date --></label>
+        <name>maps__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Time --></label>
+        <name>maps__EndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch Break End --></label>
+        <name>maps__LunchBreakEnd__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lunch Break Start --></label>
+        <name>maps__LunchBreakStart__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Date --></label>
+        <name>maps__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Time --></label>
+        <name>maps__StartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation>Wyjątek</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Working Day</masterLabel>
+            <translation>Dzień wolny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Weekly</masterLabel>
+            <translation>Co tydzień</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Off Days --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nazwa dni wolnych tras Maps Advanced</nameFieldLabel>
+</CustomObjectTranslation>

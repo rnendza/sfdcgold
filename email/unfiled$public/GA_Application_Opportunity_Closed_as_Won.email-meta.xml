@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Accel_Entertainment</letterhead>
+    <name>GA Application -Opportunity Closed as Won</name>
+    <style>freeForm</style>
+    <subject>IGB Video Gaming Application : Close Opportunity As Won</subject>
+    <textOnly>Hello,
+
+The GLC COAM Class B Application: {!LicenseApplication__c.Name},
+has data entered for the following fields:
+
+Cleared Date: {!LicenseApplication__c.Cleared_Date__c}
+
+Submitted Date: {!LicenseApplication__c.Submitted_Date__c},
+
+
+The  field, Commissioned As, has also been completed on the related Opportunity record.
+
+Please review the related Opportunity of this Application record to change its status to &quot;Close as Won&quot;.
+
+
+Link to Applicaiton Record:
+{!LicenseApplication__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

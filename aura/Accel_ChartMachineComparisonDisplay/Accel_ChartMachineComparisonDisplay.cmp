@@ -1,0 +1,17 @@
+<!--
+========================================================================================================================
+Allows us to abstract the building of chart options.
+@TODO maybe have a general interface for all common options. then implement that with bar / line / pie. etc. then extend
+that with custom app one.
+========================================================================================================================
+-->
+<aura:component description="Accel_ChartMachineComparisonDisplay">
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    <aura:method name="buildChartOptions" action="{!c.buildChartOptions}" access="global">
+        <!-- other inbound params go here-->
+        <aura:attribute name="chartData" type="Object" required="true"/>
+        <!-- outbound stuff to return to calling component -->
+        <aura:attribute name="callback" type="function" required="true"/>
+    </aura:method>
+</aura:component>

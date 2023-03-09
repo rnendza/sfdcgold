@@ -1,0 +1,27 @@
+<!-- LWC_Test_Community -->
+<template>
+    
+        <div class="slds-m-around_medium">
+            <div class="accel-chart-shadow-drag" style="min-width: 200px;max-width: 500px;height:405px;">
+                <div lwc:dom="manual" id="highcharts-container" class="highcharts-container" style="min-width: 200px;max-width: 500px;">
+                </div>
+            </div>
+            <template if:false={loaded}>
+            <div class="spinnerContainer">
+                <lightning-spinner alternative-text="Loading" size="medium"></lightning-spinner>
+            </div>
+            </template>
+            <template if:true={yoyData}>
+                <lightning-datatable
+                        data={yoyData}
+                        columns={columns}
+                        key-field="hpdDate"
+                        is-loading={tableLoadingState}
+                        hide-checkbox-column>
+                </lightning-datatable>
+            </template>
+            <template if:true={error}>
+                {error}
+            </template>
+        </div>
+</template>

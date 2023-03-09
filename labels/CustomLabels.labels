@@ -1,0 +1,863 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>CL_Account_Prevent_Delete</fullName>
+        <categories>cash logistics,automation,rps</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Account Prevent Delete</shortDescription>
+        <value>Your attempt to delete {0} failed because there are Route Processing Sheets associated with this account.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Dialog_Button_Cancel</fullName>
+        <categories>cash logistics,collector,home,actions,dialog,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Action_Send_Email_Dialog_Button_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Dialog_Button_Confirm</fullName>
+        <categories>cash logistics,collector,home,actions,dialog,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Action_Send_Email_Dialog_Button_Confirm</shortDescription>
+        <value>Send Email</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Dialog_Icon</fullName>
+        <categories>cash logistics,collector,home,actions,dialog,icon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Action_Send_Email_Dialog_Icon</shortDescription>
+        <value>standard:question_feed</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Dialog_Msg</fullName>
+        <categories>cash logistics,collector,home,actions,dialog</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Home Action Send Email Dialog Msg</shortDescription>
+        <value>Are you sure you wish to send the Route End Email? An email containing route information will be sent shortly after clicking the Send Email button.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Dialog_Title</fullName>
+        <categories>cash logistics,collector,home,actions,dialog</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Home Action Send Email Dialog Title</shortDescription>
+        <value>Email Confirmation</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Link_Desc</fullName>
+        <categories>cash logistics,collector,home,actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Home Action Send Email Link Desc</shortDescription>
+        <value>Send Route End Email</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Action_Send_Email_Success_Toast</fullName>
+        <categories>cash logistics,collector,home,actions,toast</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Action_Send_Email_Success_Toast</shortDescription>
+        <value>Sending email to {0} for route {1}.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Card_Title</fullName>
+        <categories>cash logistics,collector,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Card_Title</shortDescription>
+        <value>Today&apos;s Collections</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Missing_Vehicle_Ending</fullName>
+        <categories>cash logistics,collector,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Missing_Vehicle_Ending</shortDescription>
+        <value>Missing Vehicle Ending Mileage!</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Home_Missing_Vehicle_Info</fullName>
+        <categories>cash logistics,collector,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Home_Missing_Vehicle_Info</shortDescription>
+        <value>Missing Vehicle Info!</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Label_RT_Model</fullName>
+        <categories>cash logistics,collector,home,label</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Label_RT_Model</shortDescription>
+        <value>RT Model:</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meter_Readings_RPS_Survey_Form_Title</fullName>
+        <categories>cash logistics,collector,meterreadings,survey</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Meter Readings RPS Survey Form Title</shortDescription>
+        <value>Route Questions</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Dialog_Button_Cancel</fullName>
+        <categories>cash logistics,collector,meters,actions,dialog,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Meters_Action_Skip_Dialog_Button_Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Dialog_Button_Confirm</fullName>
+        <categories>cash logistics,collector,meters,actions,dialog,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Meters_Action_Skip_Dialog_Button_Confirm</shortDescription>
+        <value>Skip Location</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Dialog_Icon</fullName>
+        <categories>cash logistics,collector,meters,actions,dialog,icon</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Meters_Action_Skip_Dialog_Icon</shortDescription>
+        <value>standard:question_feed</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Dialog_Msg</fullName>
+        <categories>cash logistics,collector,meters,actions,dialog</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Meters Action Skip Dialog Msg</shortDescription>
+        <value>Are you sure you wish to Skip {0}?</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Dialog_Title</fullName>
+        <categories>cash logistics,collector,meters,actions,dialog</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Meters Action Skip Dialog Title</shortDescription>
+        <value>Skip Location</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Link_Desc</fullName>
+        <categories>cash logistics,meters,home,actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Meters Action Skip Link Desc</shortDescription>
+        <value>Skip Location</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Action_Skip_Success_Toast</fullName>
+        <categories>cash logistics,collector,home,actions,toast</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Collector_Meters_Action_Skip_Success_Toast</shortDescription>
+        <value>Location {0} skipped successfully.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Collector_Meters_Labels_Cannot_Collect</fullName>
+        <categories>cash logistics,collector,meters,labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Collector Meters Labels Cannot Collect</shortDescription>
+        <value>No Meter Reading</value>
+    </labels>
+    <labels>
+        <fullName>CL_Meter_Readings_Prevent_Delete</fullName>
+        <categories>cash logistics,automation,meterreadings</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Meter Readings Prevent Delete</shortDescription>
+        <value>Your attempt to delete {0} failed because deletion of Meter Readings is not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Collections_Card_Title</fullName>
+        <categories>cash logistics,processor,fill,collections</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Collections Card Title</shortDescription>
+        <value>Tomorrows Collections</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Outbound_Fill_Action_Button_Fill_Completed</fullName>
+        <categories>cash logistics,processor,fill,outbound,buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Outbound Fill Action Button Fill Completed</shortDescription>
+        <value>Fill Complete</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Outbound_Fill_Card_Title_Collection</fullName>
+        <categories>cash logistics,processor,fill,outbound</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Outbound Fill Card Title Collection</shortDescription>
+        <value>Collection</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Outbound_Fill_Card_Title_Fill</fullName>
+        <categories>cash logistics,processor,fill,outbound</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Outbound Fill Card Title Fill</shortDescription>
+        <value>Fill</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Outbound_Fill_Card_Title_Redemption</fullName>
+        <categories>cash logistics,processor,fill,outbound</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Outbound Fill Card Title Redemption</shortDescription>
+        <value>Redemption</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Outbound_Fill_Form_Title</fullName>
+        <categories>cash logistics,processor,fill,outbound,form</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Outbound Fill Form Title</shortDescription>
+        <value>Actual Outbound Fill</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Fill_Routes_Card_Title</fullName>
+        <categories>cash logistics,processor,fill,routes</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Fill Routes Card Title</shortDescription>
+        <value>Todays Fills</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Home_App_Fill</fullName>
+        <categories>cash logistics,processor,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Home App Fill</shortDescription>
+        <value>Fill</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Home_App_Process</fullName>
+        <categories>cash logistics,processor,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Home App Process</shortDescription>
+        <value>Process</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Home_Card_Title</fullName>
+        <categories>cash logistics,processor,home</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Home Card Title</shortDescription>
+        <value>Processor Apps</value>
+    </labels>
+    <labels>
+        <fullName>CL_Process_Process_Collections_Card_Title</fullName>
+        <categories>cash logistics,processor,process,collections</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Process Process Collections Card Title</shortDescription>
+        <value>Todays Collections</value>
+    </labels>
+    <labels>
+        <fullName>CL_RPS_Prevent_Delete</fullName>
+        <categories>cash logistics,automation,rps</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL RPS Prevent Delete</shortDescription>
+        <value>Your attempt to delete {0} failed because deletion of Route Processing Sheets is not allowed.</value>
+    </labels>
+    <labels>
+        <fullName>CL_Route_Selection_Welcome_Message</fullName>
+        <categories>cash logistics,route selection</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Route Selection Welcome Message</shortDescription>
+        <value>Welcome to Cash Logistics. Please begin by selecting your route for today!</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_Field_Audit_Card_Subtitle</fullName>
+        <categories>cash logistics,security,audit,fieldaudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security Field Audit Card Subtitle</shortDescription>
+        <value>Field Security</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_Field_Audit_Card_Title</fullName>
+        <categories>cash logistics,security,audit,fieldaudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security Field Audit Card Title</shortDescription>
+        <value>Security Audit</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_Field_Audit_Datatable_FieldDesc_ColHeader</fullName>
+        <categories>cash logistics,security,audit,fieldaudit,datatable</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL_Security_Field_Audit_Datatable_FieldDesc_ColHeader</shortDescription>
+        <value>Field Use</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_Field_Audit_Export_Button_Title</fullName>
+        <categories>cash logistics,security,audit,fieldaudit,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security Field Audit Export Button Title</shortDescription>
+        <value>Export details to csv file</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_Field_Audit_Info_Assistant_Title</fullName>
+        <categories>cash logistics,security,audit,fieldaudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security Field Audit Info Assistant Title</shortDescription>
+        <value>Field Audit Assistant</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_User_Audit_Card_Subtitle</fullName>
+        <categories>cash logistics,security,audit,useraudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security User Audit Card Subtitle</shortDescription>
+        <value>User Permissions</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_User_Audit_Card_Title</fullName>
+        <categories>cash logistics,security,audit,useraudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security User Audit Card Title</shortDescription>
+        <value>Security Audit</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_User_Audit_Export_Button_Title</fullName>
+        <categories>cash logistics,security,audit,useraudit,button</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security User Audit Export Button Title</shortDescription>
+        <value>Export details to csv file</value>
+    </labels>
+    <labels>
+        <fullName>CL_Security_User_Audit_Info_Assistant_Title</fullName>
+        <categories>cash logistics,security,audit,useraudit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>CL Security User Audit Info Assistant Title</shortDescription>
+        <value>User Audit Assistant</value>
+    </labels>
+    <labels>
+        <fullName>Community_Disabled_Radar_Chart_Title</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Disabled Radar Chart Title</shortDescription>
+        <value>Unavailable: Select lifetime or choose a month.</value>
+    </labels>
+    <labels>
+        <fullName>Community_Friendly_Error</fullName>
+        <categories>community,error</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Friendly Error</shortDescription>
+        <value>An error has occurred. We have been notified and are looking into it. Thank you for your patience!</value>
+    </labels>
+    <labels>
+        <fullName>Community_Help_Growth_Metrics_Datatable</fullName>
+        <categories>Community,Help,Growth Metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Help Growth Metrics Datatable</shortDescription>
+        <value>Help for the datatable. Enter none here if you don&apos;t want the help icon to display</value>
+    </labels>
+    <labels>
+        <fullName>Community_Help_Growth_Metrics_Loc_Share_Chart</fullName>
+        <categories>Community,Help,Growth Metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Help Growth Metrics Loc Share Chart</shortDescription>
+        <value>Help for the growth metrics chart.. Type none here to make this go away</value>
+    </labels>
+    <labels>
+        <fullName>Community_Help_Growth_Metrics_Search_Form</fullName>
+        <categories>Community,Help,Growth Metrics</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Help Growth Metrics Search Form</shortDescription>
+        <value>Enter any custom help text you want via the community custom labels. Enter none if you do not want the help icon to display.</value>
+    </labels>
+    <labels>
+        <fullName>Community_License_Expired_Message</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community License Expired Message</shortDescription>
+        <value>You have {0} expired {1}.</value>
+    </labels>
+    <labels>
+        <fullName>Community_License_Expiring_Message</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community License Expiring Message</shortDescription>
+        <value>You have {0} expiring {1}.</value>
+    </labels>
+    <labels>
+        <fullName>Community_Location_License_Warning</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Location License Warning</shortDescription>
+        <value>Please review your location license information and contact your relationship manager.</value>
+    </labels>
+    <labels>
+        <fullName>Community_Software_Version</fullName>
+        <categories>community,Accel</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community Software Version</shortDescription>
+        <value>2.0.0</value>
+    </labels>
+    <labels>
+        <fullName>Community_View_Machine_Perf_Link</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Community View Machine Perf Link</shortDescription>
+        <value>View machine performance detail</value>
+    </labels>
+    <labels>
+        <fullName>GPSlabel</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GPSlabel</shortDescription>
+        <value>Accelgps39!</value>
+    </labels>
+    <labels>
+        <fullName>GPSusername</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>GPSusername</shortDescription>
+        <value>MAGGIOZ1</value>
+    </labels>
+    <labels>
+        <fullName>No_Assigned_Resource_Title</fullName>
+        <categories>service,watchdog</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>No Assigned Resource Title</shortDescription>
+        <value>Cases Missing Assigned Resource</value>
+    </labels>
+    <labels>
+        <fullName>Privacy_Link_Text</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Privacy Link Text</shortDescription>
+        <value>Privacy</value>
+    </labels>
+    <labels>
+        <fullName>Privacy_Modal_Header</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Privacy Modal Header</shortDescription>
+        <value>Privacy</value>
+    </labels>
+    <labels>
+        <fullName>Service_Members</fullName>
+        <categories>timeedit</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Service Members</shortDescription>
+        <value>Service Members</value>
+    </labels>
+    <labels>
+        <fullName>Term_of_Service_Link_Text</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Term of Service Link Text</shortDescription>
+        <value>Terms of Service</value>
+    </labels>
+    <labels>
+        <fullName>Terms_of_Service_Modal_Header</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Terms of Service Modal Header</shortDescription>
+        <value>Terms of Service</value>
+    </labels>
+    <labels>
+        <fullName>Whats_New_Link_Text</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Whats New Link Text</shortDescription>
+        <value>What&apos;s New?</value>
+    </labels>
+    <labels>
+        <fullName>Whats_New_Modal_Header</fullName>
+        <categories>Community</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Whats New Modal Header</shortDescription>
+        <value>Whats New?</value>
+    </labels>
+    <labels>
+        <fullName>ers_CancelButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Cancel</shortDescription>
+        <value>Cancel</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Filter</shortDescription>
+        <value>Clear Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_ClearSelectionButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Clear Selection</shortDescription>
+        <value>Clear Selection</value>
+    </labels>
+    <labels>
+        <fullName>ers_ColumnHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Column</shortDescription>
+        <value>Column</value>
+    </labels>
+    <labels>
+        <fullName>ers_EmptyTableMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Empty</shortDescription>
+        <value>This table currently has no data to display</value>
+    </labels>
+    <labels>
+        <fullName>ers_ErrorRequiredEntry</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Required</shortDescription>
+        <value>This is a required entry.  At least 1 row must be selected.</value>
+    </labels>
+    <labels>
+        <fullName>ers_FilterHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Filter</shortDescription>
+        <value>Filter</value>
+    </labels>
+    <labels>
+        <fullName>ers_LabelHeader</fullName>
+        <categories>headers</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Label</shortDescription>
+        <value>Label</value>
+    </labels>
+    <labels>
+        <fullName>ers_SaveButton</fullName>
+        <categories>buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Save</shortDescription>
+        <value>Save</value>
+    </labels>
+    <labels>
+        <fullName>ers_SetFilterAction</fullName>
+        <categories>actions</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Set Filter</shortDescription>
+        <value>Set Filter</value>
+    </labels>
+    <labels>
+        <fullName>fsc_AccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>AccessLevel</shortDescription>
+        <value>Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Back</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Back</shortDescription>
+        <value>Back</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ButtonIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ButtonIsNotSupportedMessage</shortDescription>
+        <value>Following buttons are note supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ConditionLogicHelpText</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ConditionLogicHelpText</shortDescription>
+        <value>Use parentheses, AND, OR, and NOT to customize the logic. For example, if you enter “(1 AND 2 AND 3) OR 4”, the flow evaluates whether the first three conditions are true or only the fourth condition is true.</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Delete</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Delete</shortDescription>
+        <value>Delete</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldIsNotSupportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>FieldIsNotSupportedMessage</shortDescription>
+        <value>Following fields are not supported:</value>
+    </labels>
+    <labels>
+        <fullName>fsc_FieldTypeNotSuportedMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>fsc_FieldTypeNotSuportedMessage</shortDescription>
+        <value>You provided an unsupported value for the DataTypeFilter input on Object and Field Picker. Currently the only supported value is ’picklist’</value>
+    </labels>
+    <labels>
+        <fullName>fsc_For</fullName>
+        <categories>Buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>For</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Key_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Key Label</shortDescription>
+        <value>Key</value>
+    </labels>
+    <labels>
+        <fullName>fsc_LackingPermissions</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>LackingPermissions</shortDescription>
+        <value>You don\&apos;t have the proper permissions for ths action</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ManagerEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ManagerEmptyMessage</shortDescription>
+        <value>&quot;Manager APEX Class&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_MultipleGroupsForRole</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>MultipleGroupsForRole</shortDescription>
+        <value>There are multiple groups for that role</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Name</fullName>
+        <categories>quicklinks, Labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Name</shortDescription>
+        <value>Name</value>
+    </labels>
+    <labels>
+        <fullName>fsc_NonePicklistValueLabel</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>NonePicklistValueLabel</shortDescription>
+        <value>-- None --</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OWDReadWrite</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OWDReadWrite</shortDescription>
+        <value>Sharing Settings must be private or public read/write to enable manual sharing</value>
+    </labels>
+    <labels>
+        <fullName>fsc_OwnerAdminModify</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>OwnerAdminModify</shortDescription>
+        <value>Only the record owner or administrators can modify permissions</value>
+    </labels>
+    <labels>
+        <fullName>fsc_PublicGroups</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>PublicGroups</shortDescription>
+        <value>Public Groups</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Queues</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Queues</shortDescription>
+        <value>Queues</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Read</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Read</shortDescription>
+        <value>Read</value>
+    </labels>
+    <labels>
+        <fullName>fsc_ReadWrite</fullName>
+        <categories>labels, buttons</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>ReadWrite</shortDescription>
+        <value>Read / Write</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Reason</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Reason</shortDescription>
+        <value>Reason</value>
+    </labels>
+    <labels>
+        <fullName>fsc_RelatedUsers</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>RelatedUsers</shortDescription>
+        <value>Related Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Roles</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Roles</shortDescription>
+        <value>Roles</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Search</fullName>
+        <categories>Actions,Buttons,quicklinks</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Search in</shortDescription>
+        <value>Search in</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SearchFor</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SearchFor</shortDescription>
+        <value>For</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SetAccessLevel</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SetAccessLevel</shortDescription>
+        <value>Set Access Level</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedAddCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedAddCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Add Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedButtonsEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedButtonsEmptyMessage</shortDescription>
+        <value>&quot;Supported Buttons&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_SupportedEditCapabilitiesEmptyMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>SupportedEditCapabilitiesEmptyMessage</shortDescription>
+        <value>&quot;Edit Capabilities&quot; can not be empty</value>
+    </labels>
+    <labels>
+        <fullName>fsc_TooManyResultsMessage</fullName>
+        <categories>messages</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>TooManyResultsMessage</shortDescription>
+        <value>Your search found more than 200 results.  Keep typing to make it more specific</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Type</fullName>
+        <categories>Buttons,Filters,Title</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Type</shortDescription>
+        <value>Type</value>
+    </labels>
+    <labels>
+        <fullName>fsc_UserOrGroup</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>UserOrGroup</shortDescription>
+        <value>User Or Group</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Users</fullName>
+        <categories>labels</categories>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>Users</shortDescription>
+        <value>Users</value>
+    </labels>
+    <labels>
+        <fullName>fsc_Value_Label</fullName>
+        <language>en_US</language>
+        <protected>true</protected>
+        <shortDescription>Value Label</shortDescription>
+        <value>Value</value>
+    </labels>
+</CustomLabels>

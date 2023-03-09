@@ -1,0 +1,747 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Meter_Reading_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Meter_Reading_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Example object to capture electronic meters</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account_DBA_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Route_Processing_Sheet__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account DBA Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_100_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual $100 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_1_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual $1 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_20_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual $20 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_50_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual $50 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_5_Note_Count__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual $5 Note Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Actual_Drop__c</fullName>
+        <description>Should be the total cash amount that was counted for this VGT</description>
+        <externalId>false</externalId>
+        <label>Actual Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Asset_Moved_Date__c</fullName>
+        <description>Experimental - Indicates that the associated asset had its account id changed. (Currently only flagged for those meters that were created from 12:01 am to the time of the account id change on the associated asset for current day. ( WHERE  CreatedDate = TODAY AND    CreatedDate &lt;= :System.now())</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Experimental - Indicates that the associated asset had its account id changed. (Currently only flagged for those meters that were created from 12:01 am to the time of the account id change on the associated asset for current day.</inlineHelpText>
+        <label>Asset Moved Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Meter Readings</relationshipLabel>
+        <relationshipName>Meter_Readings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>BV_Type__c</fullName>
+        <description>Asset.BV_Type__c Since the picklist on Asset was not global this must be synchronized with those values for now. Written upon creation of meter_reading__c and used by DLRS to rollup to RPS</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Asset.BV_Type__c Since the picklist on Asset was not global this must be synchronized with those values for now. Written upon creation of meter_reading__c and used by DLRS to rollup to RPS</inlineHelpText>
+        <label>BV Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>JCM</fullName>
+                    <default>false</default>
+                    <label>JCM</label>
+                </value>
+                <value>
+                    <fullName>MEI</fullName>
+                    <default>false</default>
+                    <label>MEI</label>
+                </value>
+                <value>
+                    <fullName>Small MEI</fullName>
+                    <default>false</default>
+                    <label>Small MEI</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cannot_Collect__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Indicates that for, multiple reasons, the collector cannot complete the required fields for the particular meter reading.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Indicates that for, multiple reasons, the collector cannot complete the required fields for the particular meter reading.</inlineHelpText>
+        <label>Cannot Collect</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Change_in_Meters__c</fullName>
+        <description>(Current - Prior)</description>
+        <externalId>false</externalId>
+        <label>Change in Meters</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Collection_Date__c</fullName>
+        <description>FF to the Route_Processing_Sheet__c.Collection_Date__c</description>
+        <externalId>false</externalId>
+        <formula>Route_Processing_Sheet__r.Collection_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>The collection date of the route processing sheet.</inlineHelpText>
+        <label>Collection Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Current_Lifetime_Cash_In__c</fullName>
+        <externalId>false</externalId>
+        <label>Current Lifetime Cash In</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Expected_Drop__c</fullName>
+        <externalId>false</externalId>
+        <formula>Current_Lifetime_Cash_In__c -  Previous_Meter_Reading__r.Current_Lifetime_Cash_In__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Expected Drop</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Model__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.Model__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Model</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Previous_Meter_Reading__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Previous Meter Reading</label>
+        <referenceTo>Meter_Reading__c</referenceTo>
+        <relationshipLabel>Meter Readings</relationshipLabel>
+        <relationshipName>Meter_Readings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Previous_Meter__c</fullName>
+        <externalId>false</externalId>
+        <label>(Depreciated) Prior Lifetime Cash In</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Prior_Lifetime_Cash_in__c</fullName>
+        <externalId>false</externalId>
+        <formula>Previous_Meter_Reading__r.Current_Lifetime_Cash_In__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Prior Lifetime Cash in</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the processing status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the processing status.</inlineHelpText>
+        <label>Processing Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Meter_Readings1</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status_Last_Modified_Date__c</fullName>
+        <description>The date/time the processing status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The date/time the processing status was last modified.</inlineHelpText>
+        <label>Processing Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Processing_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Processing Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>true</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Reading_Status_Last_Modified_By__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The user that last modified the reading status.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The user that last modified the reading status.</inlineHelpText>
+        <label>Reading Status Last Modified By</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Meter_Readings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Reading_Status_Last_Modified_Date__c</fullName>
+        <description>The Datetime / the reading status was last modified.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Datetime / the reading status was last modified.</inlineHelpText>
+        <label>Reading Status Last Modified Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Reading_Status__c</fullName>
+        <defaultValue>&quot;New&quot;</defaultValue>
+        <description>That status of the meter reading.. Generally this will start in In Progress unless we are inserting this meter records outside of the ui... Completion is currently when there is shapshot count &gt; 0 (image uploaded) and current lifetime case in value added. @see  MeterReadingTriggerHandler.cls</description>
+        <externalId>false</externalId>
+        <inlineHelpText>That status of the meter reading.. Generally this will start in In Progress unless we are inserting this meter records outside of the ui... Completion is currently when there is shapshot count &gt; 0 (image uploaded) and current lifetime case in value added.</inlineHelpText>
+        <label>Reading Status</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>New</fullName>
+                    <default>false</default>
+                    <label>New</label>
+                </value>
+                <value>
+                    <fullName>In Progress</fullName>
+                    <default>false</default>
+                    <label>In Progress</label>
+                </value>
+                <value>
+                    <fullName>Completed</fullName>
+                    <default>false</default>
+                    <label>Completed</label>
+                </value>
+                <value>
+                    <fullName>Cannot Collect</fullName>
+                    <default>false</default>
+                    <label>Cannot Collect</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Required_Data_Entered__c</fullName>
+        <description>Checks to see if the collector entered enough data for the meter record to be completed ( Current Lifetime Cash In and associated an image )</description>
+        <externalId>false</externalId>
+        <formula>AND( !ISBLANK(Current_Lifetime_Cash_In__c),Current_Lifetime_Cash_In__c &gt; 0,!ISBLANK(Snapshot__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Determines if the collector entered enough data on the meter record.</inlineHelpText>
+        <label>Required Data Entered</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Route_Processing_Sheet__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Route Processing Sheet</label>
+        <referenceTo>Route_Processing_Sheet__c</referenceTo>
+        <relationshipLabel>Meter Readings</relationshipLabel>
+        <relationshipName>Meter_Readings</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>SAS__c</fullName>
+        <externalId>false</externalId>
+        <formula>Asset__r.SAS__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>SAS</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Schedule_Name__c</fullName>
+        <description>FF jumping out to Route Schedule for the name</description>
+        <externalId>false</externalId>
+        <formula>Route_Processing_Sheet__r.Route_Schedule__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Schedule Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Snapshot_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Intended to count the number of files that are shapshots (meter readings images) associated to this record for purposes of determining a status. (should be 1 if done) DLRS Maintained</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Intended to count the number of files that are shapshots (meter readings images) associated to this record for purposes of determining a status. (should be 1 if done)  DLRS Maintained</inlineHelpText>
+        <label>Snapshot Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Snapshot__c</fullName>
+        <externalId>false</externalId>
+        <label>Snapshot</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <fields>
+        <fullName>Variance__c</fullName>
+        <externalId>false</externalId>
+        <formula>Actual_Drop__c -  Expected_Drop__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Variance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Voucher_Changed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Per requirement CL-34 https://accel-entertainment.monday.com/boards/1300348967/pulses/1767565372</description>
+        <externalId>false</externalId>
+        <label>Voucher Changed</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Meter Reading</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>Route_Processing_Sheet__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Account_DBA_Name__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Current_Lifetime_Cash_In__c</columns>
+        <columns>Prior_Lifetime_Cash_in__c</columns>
+        <columns>Previous_Meter_Reading__c</columns>
+        <columns>Expected_Drop__c</columns>
+        <columns>Cannot_Collect__c</columns>
+        <columns>Actual_Drop__c</columns>
+        <columns>UPDATEDBY_USER</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>Reading_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>CREATED_DATE</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_RJN</fullName>
+        <columns>NAME</columns>
+        <columns>Actual_Drop__c</columns>
+        <columns>Schedule_Name__c</columns>
+        <columns>Route_Processing_Sheet__c</columns>
+        <columns>Account_DBA_Name__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Current_Lifetime_Cash_In__c</columns>
+        <columns>Previous_Meter_Reading__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Reading_Status__c</columns>
+        <columns>Processing_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Asset_Moved_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All RJN</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Todays_Meter_Readings</fullName>
+        <columns>NAME</columns>
+        <columns>Route_Processing_Sheet__c</columns>
+        <columns>Account_DBA_Name__c</columns>
+        <columns>Collection_Date__c</columns>
+        <columns>Current_Lifetime_Cash_In__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Reading_Status__c</columns>
+        <columns>Snapshot_Count__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Collection_Date__c</field>
+            <operation>equals</operation>
+            <value>TODAY</value>
+        </filters>
+        <label>All Todays Meter Readings</label>
+    </listViews>
+    <listViews>
+        <fullName>All_With_Prev_Meters</fullName>
+        <columns>NAME</columns>
+        <columns>Actual_Drop__c</columns>
+        <columns>Schedule_Name__c</columns>
+        <columns>Route_Processing_Sheet__c</columns>
+        <columns>Account_DBA_Name__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Current_Lifetime_Cash_In__c</columns>
+        <columns>Previous_Meter_Reading__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Reading_Status__c</columns>
+        <columns>Processing_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Previous_Meter_Reading__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>All With Prev Meters</label>
+    </listViews>
+    <listViews>
+        <fullName>Collection_Id_000010004_prev_meters</fullName>
+        <columns>NAME</columns>
+        <columns>Actual_Drop__c</columns>
+        <columns>Schedule_Name__c</columns>
+        <columns>Route_Processing_Sheet__c</columns>
+        <columns>Account_DBA_Name__c</columns>
+        <columns>Asset__c</columns>
+        <columns>Current_Lifetime_Cash_In__c</columns>
+        <columns>Previous_Meter_Reading__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>Reading_Status__c</columns>
+        <columns>Processing_Status__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Previous_Meter_Reading__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Route_Processing_Sheet__c</field>
+            <operation>equals</operation>
+            <value>Collection-Id-000010004</value>
+        </filters>
+        <label>Collection-Id-000010004 prev meters</label>
+    </listViews>
+    <nameField>
+        <displayFormat>MTR-{000000000}</displayFormat>
+        <label>Meter Reading ID</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Meter Readings</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

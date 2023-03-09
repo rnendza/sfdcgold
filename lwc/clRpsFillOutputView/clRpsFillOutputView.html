@@ -1,0 +1,57 @@
+<!-- Cl Rps Fill Output View -->
+<template>
+
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div if:true={showForm} class="accel-test-borders">
+        <div class="accel-form_container">
+            <lightning-record-view-form record-id={rpsId}
+                                        object-api-name={objectApiName}
+                                        onload={handleLoad}
+                                        density={formDensity}
+                                        form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+
+                <div class="accel-form-theme_shade slds-p-bottom_small">
+                    <div if:true={showStencil}>
+                        <div class="slds-p-around_small">
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </div>
+                    </div>
+                    <div if:true={showFormContents}>
+                        <div class="slds-p-horizontal_medium slds-p-top_medium slds-p-bottom_x-small">
+                            <c-ui-form-title
+                                    form-title={formTitle}
+                                    icon-size="small"
+                                    icon-name="custom:custom17">
+                            </c-ui-form-title>
+                        </div>
+                        <div class="slds-p-horizontal_medium">
+                            <lightning-output-field
+                                    field-name={_oneObNoteCountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name={_fiveObNoteCountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name={_twentyObNoteCountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name={_fiftyObNoteCountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name={_hundredObNoteCountField}>
+                            </lightning-output-field>
+                            <lightning-output-field
+                                    field-name={_outboundField}>
+                            </lightning-output-field>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-view-form>
+        </div>
+    </div>
+</template>

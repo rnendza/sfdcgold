@@ -1,0 +1,3701 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Reimbursement_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Reimbursement_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>reimbursement</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>reimbursement</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <label>reimbursement</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Accel_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Accel Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accels_Portion_of_Fees__c</fullName>
+        <externalId>false</externalId>
+        <formula>case(
+RecordType.Name,
+&quot;Municipality Fee&quot;,
+
+(if( and(Check_Request__c = FALSE, DATEVALUE(CreatedDate)&lt; DATE(2021,04,09) ),((Per_VGT_Fee__c * Number_of_VGTs_Installed__c)/2) + (( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c )/2) + Terminal_Operator_Fee__c + (Establishment_License_Fee__c/2) + ( Redemption_Terminal_Fee__c/2 ),
+
+(if( and(Check_Request__c = FALSE, DATEVALUE(CreatedDate)&gt;= DATE(2021,04,09) ),((Per_VGT_Fee__c * Number_of_VGTs_Installed__c)/2) + (( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c )/2) + Terminal_Operator_Fee__c  + ( Redemption_Terminal_Fee__c/2 )+ Establishment_License_Fee__c * BLANKVALUE(VALUE(TEXT(Establishment_License_Fee_Split__c))/100,0) ,
+
+if(and(Check_Request__c = TRUE, Deduction_Amount__c = 0, DATEVALUE(CreatedDate)&lt; DATE(2021,04,09)),((Per_VGT_Fee__c * Number_of_VGTs_Installed__c)/2) + (( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c )/2) + Terminal_Operator_Fee__c + (Establishment_License_Fee__c/2) + ( Redemption_Terminal_Fee__c/2 ),
+
+if(and(Check_Request__c = TRUE, Deduction_Amount__c = 0, DATEVALUE(CreatedDate)&gt;= DATE(2021,04,09)),((Per_VGT_Fee__c * Number_of_VGTs_Installed__c)/2) + (( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c )/2) + Terminal_Operator_Fee__c  + ( Redemption_Terminal_Fee__c/2 )+Establishment_License_Fee__c * BLANKVALUE(VALUE(TEXT(Establishment_License_Fee_Split__c))/100,0)  ,
+
+if(and(Check_Request__c = TRUE, Deduction_Amount__c &gt; 0), Total_Fees_Paid_by_Location__c,
+0))))))),
+
+&quot;Amusement Fee&quot;,
+( Amount_Requested_For_Reimbursement__c ),
+
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Accel&apos;s Portion of Fees</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Accepted_As__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Borderline&quot;),&quot;Borderline&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Company Generated&quot;),&quot;Company Generated&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Organic&quot;),&quot;Organic&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Competitor&quot;),&quot;Competitor&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Turnover&quot;),&quot;Turnover&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Referral&quot;),&quot;Referral&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Competitor Borderline&quot;),&quot;Competitor Borderline&quot;, NULL)+ BR()+
+IF(INCLUDES(Opportunity_RelatedList__r.Accepted_As__c, &quot;Organic Borderline&quot;),&quot;Organic Borderline&quot;, NULL)+ BR()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Accepted As</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_RelatedList__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Updated label from &quot;Account&quot; to &quot;Account - Related List&quot; to differentiate from &quot;Account&quot; field</description>
+        <externalId>false</externalId>
+        <label>Account - Related List</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Reimbursement</relationshipLabel>
+        <relationshipName>Reimbursements1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Status__c</fullName>
+        <description>Changes the Account Status to NOT Live if Accel VGT Date is Null</description>
+        <externalId>false</externalId>
+        <formula>IF (ISNULL( Account__r.Accel_VGT_Live_Date__c ), &quot;NOT LIVE&quot;, &quot;LIVE&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Reimbursements</relationshipLabel>
+        <relationshipName>Reimbursements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Run_End_Date_Invoice__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Run End Date (Invoice)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Actual_Run_Start_Date_Invoice__c</fullName>
+        <externalId>false</externalId>
+        <label>Actual Run Start Date (Invoice)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Additional_Information__c</fullName>
+        <externalId>false</externalId>
+        <label>Additional Information</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Age_of_Request__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()- DATEVALUE( CreatedDate )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Age of Request</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Amount_Paid__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Amount Paid</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Amount_Requested_For_Reimbursement__c</fullName>
+        <externalId>false</externalId>
+        <label>Amount Requested For Reimbursement</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Approval_Method__c</fullName>
+        <externalId>false</externalId>
+        <label>Approval Method</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>SF Approval Process</fullName>
+                    <default>false</default>
+                    <label>SF Approval Process</label>
+                </value>
+                <value>
+                    <fullName>Pre-Approval Compliance &amp; Accounting</fullName>
+                    <default>false</default>
+                    <label>Pre-Approval Compliance &amp; Accounting</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approved_Alarm_Equipment_Costs__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved % Alarm Equipment Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Alarm_Monthly_Monitoring__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Monthly Monitoring</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Monitoring_Fees__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved Monitoring Fees</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alarm</fullName>
+                    <default>false</default>
+                    <label>Alarm</label>
+                </value>
+                <value>
+                    <fullName>Video</fullName>
+                    <default>false</default>
+                    <label>Video</label>
+                </value>
+                <value>
+                    <fullName>Both Alarm &amp; Video</fullName>
+                    <default>false</default>
+                    <label>Both Alarm &amp; Video</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Approved_Video_Camera_Installation__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved % Video Camera Installation</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Approved_Video_System_Equi__c</fullName>
+        <externalId>false</externalId>
+        <label>Approved % Video System Equipment Costs</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Azure_External_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>Azure External Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_Number__c</fullName>
+        <externalId>false</externalId>
+        <label>Check Number</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Check_Request__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Check Request</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Compliance_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Compliance Comments</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Current_VGT_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(  Account__r.Current_VGT_Count__c  )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Current VGT Count</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Date__c</fullName>
+        <defaultValue>TODAY()</defaultValue>
+        <externalId>false</externalId>
+        <label>Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Date_of_Last_Status_Change__c</fullName>
+        <description>When Status was last changed. Used to calculate the number of days in current Status. Populated by automation</description>
+        <externalId>false</externalId>
+        <label>Date of Last Status Change</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Days_in_Current_Status__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()- Date_of_Last_Status_Change__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Days in Current Status</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deduction_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Deduction Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Deduction_Countdown__c</fullName>
+        <externalId>false</externalId>
+        <formula>TODAY()-Payment_Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Deduction Days Elapsed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Deduction_End_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Deduction End Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Deduction_Needed__c</fullName>
+        <externalId>false</externalId>
+        <label>Deduction Needed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Yes</fullName>
+                    <default>false</default>
+                    <label>Yes</label>
+                </value>
+                <value>
+                    <fullName>No</fullName>
+                    <default>false</default>
+                    <label>No</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Deduction_Start_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Deduction Start Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Derek_Harmer_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Derek Harmer Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Description__c</fullName>
+        <externalId>false</externalId>
+        <label>Notes</label>
+        <length>1000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Divider_Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Divider Material</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Plexiglass</fullName>
+                    <default>false</default>
+                    <label>Plexiglass</label>
+                </value>
+                <value>
+                    <fullName>Glass</fullName>
+                    <default>false</default>
+                    <label>Glass</label>
+                </value>
+                <value>
+                    <fullName>Plastic</fullName>
+                    <default>false</default>
+                    <label>Plastic</label>
+                </value>
+                <value>
+                    <fullName>Other (Please add in Notes section)</fullName>
+                    <default>false</default>
+                    <label>Other (Please add in Notes section)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Establishment_License_Fee_Split__c</fullName>
+        <description>If new values are added, the API Name should be a NUMERICAL value
+This field is referenced in a the formula field 	Accels_Portion_of_Fees__c</description>
+        <externalId>false</externalId>
+        <label>Establishment License Fee Split</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>0</fullName>
+                    <default>true</default>
+                    <label>0%</label>
+                </value>
+                <value>
+                    <fullName>50</fullName>
+                    <default>false</default>
+                    <label>50%</label>
+                </value>
+                <value>
+                    <fullName>100</fullName>
+                    <default>false</default>
+                    <label>100%</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Establishment_License_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Establishment License Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Alarm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Existing Alarm</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Existing_Video_System__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Existing Video System</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>File_Submitted__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>A file needs to be uploaded with the reimbursement request</inlineHelpText>
+        <label>File Submitted?</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Final_Approval_rcvd__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Final Approval rcvd</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Force_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Force Update</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Frame_Material__c</fullName>
+        <externalId>false</externalId>
+        <label>Frame Material</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>No Frame</fullName>
+                    <default>false</default>
+                    <label>No Frame</label>
+                </value>
+                <value>
+                    <fullName>Steel Frame</fullName>
+                    <default>false</default>
+                    <label>Steel Frame</label>
+                </value>
+                <value>
+                    <fullName>Wood Frame</fullName>
+                    <default>false</default>
+                    <label>Wood Frame</label>
+                </value>
+                <value>
+                    <fullName>Aluminum Frame</fullName>
+                    <default>false</default>
+                    <label>Aluminum Frame</label>
+                </value>
+                <value>
+                    <fullName>Plastic Frame</fullName>
+                    <default>false</default>
+                    <label>Plastic Frame</label>
+                </value>
+                <value>
+                    <fullName>Other (please add in Notes section)</fullName>
+                    <default>false</default>
+                    <label>Other (please add in Notes section)</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Invoice__c</fullName>
+        <externalId>false</externalId>
+        <label>Invoice #</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Legal_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.Legal_Name__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Legal Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>License_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>License Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Location_Address__c</fullName>
+        <externalId>false</externalId>
+        <formula>Account__r.ShippingStreet &amp; BR() &amp; 
+Account__r.ShippingCity &amp; BR() &amp;
+Account__r.ShippingState &amp; BR() &amp;
+Account__r.ShippingPostalCode  &amp; BR()</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Physical Address</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Requesting_to_Split_Video_Alarm__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Location Requesting to Split Video/Alarm</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Location_Spend__c</fullName>
+        <externalId>false</externalId>
+        <label>Location Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Expense_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>&quot;Co-Op - Field Controlled&quot;</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Expense Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Marketing Product</label>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Reimbursements</relationshipLabel>
+        <relationshipName>Reimbursements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Reimbursement_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Reimbursement Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Request__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Marketing Request</label>
+        <referenceTo>Marketing_Request__c</referenceTo>
+        <relationshipLabel>Reimbursements</relationshipLabel>
+        <relationshipName>Reimbursements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Municipality__c</fullName>
+        <externalId>false</externalId>
+        <formula>HYPERLINK(&quot;/&quot; &amp; Account__r.MunicipalityLookup__c, Account__r.MunicipalityLookup__r.Name)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Municipality</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>NRT_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Per NRT Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>New_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>New Account</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Redemption_Terminals_Installed__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Redemption Terminals Installed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_VGTs_Installed__c</fullName>
+        <externalId>false</externalId>
+        <label>Number of Machines Installed</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>On_Hold_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>On Hold Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>On_Hold_Notes__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Reason to put the request on hold.</inlineHelpText>
+        <label>On Hold Notes</label>
+        <length>32768</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Opportunity_RelatedList__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Opportunity</label>
+        <referenceTo>Opportunity</referenceTo>
+        <relationshipLabel>Reimbursements</relationshipLabel>
+        <relationshipName>Reimbursements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Pay_to_the_Order_Of__c</fullName>
+        <externalId>false</externalId>
+        <label>Pay to the Order Of</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payee_Contractor_Name__c</fullName>
+        <externalId>false</externalId>
+        <label>Payee Contractor Name</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Payee_Info__c</fullName>
+        <externalId>false</externalId>
+        <label>Payee Info</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Location</fullName>
+                    <default>false</default>
+                    <label>Location</label>
+                </value>
+                <value>
+                    <fullName>Contractor</fullName>
+                    <default>false</default>
+                    <label>Contractor</label>
+                </value>
+                <value>
+                    <fullName>Municipality</fullName>
+                    <default>false</default>
+                    <label>Municipality</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Payment_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Payment_Memo__c</fullName>
+        <description>per monday.com request, this field is visible only to RMs
+https://accel-entertainment.monday.com/boards/942883797/pulses/1448470905</description>
+        <externalId>false</externalId>
+        <inlineHelpText>This information will be shown in locations&apos; bank statements.</inlineHelpText>
+        <label>Payment Memo</label>
+        <length>45</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Payment_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Payment Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>ACH</fullName>
+                    <default>true</default>
+                    <label>ACH</label>
+                </value>
+                <value>
+                    <fullName>Check</fullName>
+                    <default>false</default>
+                    <label>Check</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Per_VGT_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Per VGT Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Project_Manager_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Project Manager Comments</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>Project__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Project</label>
+        <referenceTo>Project__c</referenceTo>
+        <relationshipLabel>Reimbursements</relationshipLabel>
+        <relationshipName>Reimbursements</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Terminal_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption Terminal Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Reimbursement_Request_For__c</fullName>
+        <externalId>false</externalId>
+        <label>Reimbursement Request For</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Alarm</fullName>
+                    <default>false</default>
+                    <label>Alarm</label>
+                </value>
+                <value>
+                    <fullName>Both</fullName>
+                    <default>false</default>
+                    <label>Both</label>
+                </value>
+                <value>
+                    <fullName>Monitoring Fees</fullName>
+                    <default>false</default>
+                    <label>Monitoring Fees</label>
+                </value>
+                <value>
+                    <fullName>Surveillance</fullName>
+                    <default>false</default>
+                    <label>Surveillance</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Requestor_Email__c</fullName>
+        <externalId>false</externalId>
+        <label>Requestor Email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Security_Comments__c</fullName>
+        <externalId>false</externalId>
+        <label>Security Comments</label>
+        <length>2000</length>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Security_Reviewed_Quote_Invoice__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Security Reviewed Quote/Invoice</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <externalId>false</externalId>
+        <label>Status</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Created</fullName>
+                    <default>true</default>
+                    <label>Created</label>
+                </value>
+                <value>
+                    <fullName>In Amusement Approval</fullName>
+                    <default>false</default>
+                    <label>In Amusement Approval</label>
+                </value>
+                <value>
+                    <fullName>In Gaming Approval</fullName>
+                    <default>false</default>
+                    <label>In Gaming Approval</label>
+                </value>
+                <value>
+                    <fullName>In Security Approval</fullName>
+                    <default>false</default>
+                    <label>In Security Approval</label>
+                </value>
+                <value>
+                    <fullName>In Compliance Approval</fullName>
+                    <default>false</default>
+                    <label>In Compliance Approval</label>
+                </value>
+                <value>
+                    <fullName>In Accounting Approval</fullName>
+                    <default>false</default>
+                    <label>In Accounting Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved - Pending Go Live</fullName>
+                    <default>false</default>
+                    <label>Approved - Pending Go Live</label>
+                </value>
+                <value>
+                    <fullName>Approved - Payment Pending</fullName>
+                    <default>false</default>
+                    <label>Approved - Payment Pending</label>
+                </value>
+                <value>
+                    <fullName>Paid</fullName>
+                    <default>false</default>
+                    <label>Paid</label>
+                </value>
+                <value>
+                    <fullName>Denied</fullName>
+                    <default>false</default>
+                    <label>Denied</label>
+                </value>
+                <value>
+                    <fullName>On Hold</fullName>
+                    <default>false</default>
+                    <label>On Hold</label>
+                </value>
+                <value>
+                    <fullName>Approved</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Approved</label>
+                </value>
+                <value>
+                    <fullName>Pending</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Pending</label>
+                </value>
+                <value>
+                    <fullName>Requested</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Requested</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submitted_for_Approval__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Submitted for Approval</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Terminal_Operator_Fee__c</fullName>
+        <externalId>false</externalId>
+        <label>Terminal Operator Fee</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Amount_Accel_will_reimburs_locatio__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(Datevalue(CreatedDate)&lt;Date(2021,04,09),(Amount_Paid__c +  Establishment_License_Fee__c +( Number_of_VGTs_Installed__c * Per_VGT_Fee__c)+( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c ))/2 + Terminal_Operator_Fee__c,
+(Amount_Paid__c  +( Number_of_VGTs_Installed__c * Per_VGT_Fee__c)+( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c ))/2 + Terminal_Operator_Fee__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Accel Will Reimburse Location</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Authorized_Reimbursement_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Authorized Reimbursement Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Fees_Paid_By_Accel__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Fees Paid By Accel</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Fees_Paid_by_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>if( RecordType.Name = &quot;Municipality Fee&quot;,
+(Per_VGT_Fee__c * Number_of_VGTs_Installed__c) + ( Number_of_Redemption_Terminals_Installed__c * NRT_Fee__c ) + Terminal_Operator_Fee__c + (Establishment_License_Fee__c) + ( Redemption_Terminal_Fee__c ),
+if( RecordType.Name = &quot;Amusement Fee&quot;,
+( Amount_Requested_For_Reimbursement__c * 2),
+0))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Fees Paid by Location</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Number_of_Cameras_in_System__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Number of Cameras in System</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Vendor_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Marketing_Request__r.Total_Quote_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Vendor Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_of_Cameras_Monitoring_Gaming_Area__c</fullName>
+        <externalId>false</externalId>
+        <label># Cameras on VG Area/Entrances/Exits</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Electrical Work</fullName>
+                    <default>false</default>
+                    <label>Electrical Work</label>
+                </value>
+                <value>
+                    <fullName>Municipality Fees</fullName>
+                    <default>false</default>
+                    <label>Municipality Fees</label>
+                </value>
+                <value>
+                    <fullName>License Fee</fullName>
+                    <default>false</default>
+                    <label>License Fee</label>
+                </value>
+                <value>
+                    <fullName>Annual IGB VGT License Fee</fullName>
+                    <default>false</default>
+                    <label>Annual IGB VGT License Fee</label>
+                </value>
+                <value>
+                    <fullName>Month End Variance</fullName>
+                    <default>false</default>
+                    <label>Month End Variance</label>
+                </value>
+                <value>
+                    <fullName>Negative Carryforward</fullName>
+                    <default>false</default>
+                    <label>Negative Carryforward</label>
+                </value>
+                <value>
+                    <fullName>Half of Sci Games Admin Share</fullName>
+                    <default>false</default>
+                    <label>Half of Sci Games Admin Share</label>
+                </value>
+                <value>
+                    <fullName>Video Alarm System</fullName>
+                    <default>false</default>
+                    <label>Alarm System</label>
+                </value>
+                <value>
+                    <fullName>Buildout</fullName>
+                    <default>false</default>
+                    <label>Buildout</label>
+                </value>
+                <value>
+                    <fullName>Marketing</fullName>
+                    <default>false</default>
+                    <label>Marketing</label>
+                </value>
+                <value>
+                    <fullName>Access Control</fullName>
+                    <default>false</default>
+                    <label>Access Control</label>
+                </value>
+                <value>
+                    <fullName>Monthly Monitoring</fullName>
+                    <default>false</default>
+                    <label>Monthly Monitoring</label>
+                </value>
+                <value>
+                    <fullName>Miscellaneous Deductions/Reimbursement</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Miscellaneous Deductions/Reimbursement</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>VGT_Live_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Account__r.Accel_VGT_Live_Date__c )</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VGT Live Date</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Witholding_Periods__c</fullName>
+        <externalId>false</externalId>
+        <label>Witholding Periods (in weeks)</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>true</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <label>Reimbursement</label>
+    <listViews>
+        <fullName>Accounting_Approval_Queue_Reimbursement</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Accounting Approval Queue</label>
+        <queue>Accounting_Approval_Queue</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>All_Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Reimbursements</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Video_Alarm_Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Reimbursement__c.Video_Alarm_System</value>
+        </filters>
+        <label>All Video Alarm Reimbursements</label>
+    </listViews>
+    <listViews>
+        <fullName>Compliance_Reimbursement</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Compliance</label>
+        <queue>Compliance</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Compliance_for_Reimbursement_Reimbursement</fullName>
+        <filterScope>Queue</filterScope>
+        <label>Compliance for Reimbursement</label>
+        <queue>Compliance_for_Reimbursement</queue>
+        <sharedTo>
+            <allInternalUsers></allInternalUsers>
+        </sharedTo>
+    </listViews>
+    <listViews>
+        <fullName>Denied_Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Denied</value>
+        </filters>
+        <label>Denied Reimbursements</label>
+    </listViews>
+    <listViews>
+        <fullName>Eric_View</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Type__c</columns>
+        <columns>Total_Authorized_Reimbursement_Cost__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Requested</value>
+        </filters>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Reimbursement__c.Buildout,Reimbursement__c.Electrical_Work</value>
+        </filters>
+        <label>Eric View</label>
+    </listViews>
+    <listViews>
+        <fullName>Paid_Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Paid</value>
+        </filters>
+        <filters>
+            <field>Payment_Date__c</field>
+            <operation>equals</operation>
+            <value>THIS_YEAR</value>
+        </filters>
+        <label>Paid Reimbursements</label>
+    </listViews>
+    <listViews>
+        <fullName>Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Legal_Name__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Approved - Pending Go Live,Approved - Payment Pending,Paid</value>
+        </filters>
+        <label>Approved Reimbursements</label>
+    </listViews>
+    <listViews>
+        <fullName>Requested_Reimbursements</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Status__c</columns>
+        <columns>OWNER.ALIAS</columns>
+        <columns>Total_Amount_Accel_will_reimburs_locatio__c</columns>
+        <columns>Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Status__c</field>
+            <operation>equals</operation>
+            <value>Requested</value>
+        </filters>
+        <label>Requested Reimbursements</label>
+    </listViews>
+    <nameField>
+        <displayFormat>R-{00000}</displayFormat>
+        <label>Reimbursement Number</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Reimbursements</pluralLabel>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>true</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Amusement_Fee</fullName>
+        <active>true</active>
+        <label>Amusement Fee</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Amusement Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Annual_IGB_VGT_License_Fee</fullName>
+        <active>true</active>
+        <label>Annual IGB VGT License Fee</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitoring Fees</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Buildout</fullName>
+        <active>true</active>
+        <label>Buildout</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Compliance Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Gaming Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>COVID_Location_Expense</fullName>
+        <active>true</active>
+        <label>COVID Location Expense</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Compliance Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Gaming Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Access Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Electrical_Work</fullName>
+        <active>true</active>
+        <label>Electrical Work</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Gaming Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Marketing</fullName>
+        <active>true</active>
+        <label>Marketing</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Marketing</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Municipality_Fee</fullName>
+        <active>true</active>
+        <label>Municipality Fee</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Compliance Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Annual IGB VGT License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Buildout</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Electrical Work</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Half of Sci Games Admin Share</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Fee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Month End Variance</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Municipality Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Negative Carryforward</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Video_Alarm_System</fullName>
+        <active>true</active>
+        <label>Alarm/Surveillance/Access Control</label>
+        <picklistValues>
+            <picklist>Approval_Method__c</picklist>
+            <values>
+                <fullName>Pre-Approval Compliance %26 Accounting</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SF Approval Process</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Approved_Monitoring_Fees__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both Alarm %26 Video</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Deduction_Needed__c</picklist>
+            <values>
+                <fullName>No</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Yes</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Divider_Material__c</picklist>
+            <values>
+                <fullName>Glass</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28Please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plexiglass</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Establishment_License_Fee_Split__c</picklist>
+            <values>
+                <fullName>0</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>100</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>50</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Frame_Material__c</picklist>
+            <values>
+                <fullName>Aluminum Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>No Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other %28please add in Notes section%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Plastic Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Steel Frame</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Wood Frame</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payee_Info__c</picklist>
+            <values>
+                <fullName>Contractor</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Location</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Payment_Type__c</picklist>
+            <values>
+                <fullName>ACH</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Check</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Reimbursement_Request_For__c</picklist>
+            <values>
+                <fullName>Alarm</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Both</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monitoring Fees</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Surveillance</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved - Payment Pending</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Approved - Pending Go Live</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Created</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>Denied</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Accounting Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Compliance Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>In Security Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>On Hold</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Paid</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Access Control</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly Monitoring</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Alarm System</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Witholding_Periods__c</picklist>
+            <values>
+                <fullName>1</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>2</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>3</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>4</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>Account__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Status__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>OWNER.ALIAS</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Amount_Accel_will_reimburs_locatio__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Private</sharingModel>
+    <validationRules>
+        <fullName>COVID_Payments_Must_Be_Paid_to_Vendor_On</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND(RecordTypeId = &quot;0121I000000enRa&quot;,ISPICKVAL(Payee_Info__c,&quot;Location&quot;))</errorConditionFormula>
+        <errorDisplayField>Payee_Info__c</errorDisplayField>
+        <errorMessage>Only &quot;Contractor&quot; can be chosen under Payee Info.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Deduction_Needed_must_be_filled_out</fullName>
+        <active>true</active>
+        <errorConditionFormula>AND( ISBLANK(TEXT(Deduction_Needed__c )), Final_Approval_rcvd__c =TRUE,RecordTypeId &lt;&gt; &apos;0121I000000WOQh&apos;,RecordTypeId &lt;&gt; &apos;0121I000000enRa&apos;)</errorConditionFormula>
+        <errorDisplayField>Deduction_Needed__c</errorDisplayField>
+        <errorMessage>Please fill out the Deduction Needed picklist in order to advance your approval action.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>If_Request_is_for_surveillance_or_Both_1</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(OR(ISPICKVAL( Reimbursement_Request_For__c,&quot;Surveillance&quot;),ispickval(Reimbursement_Request_For__c,&quot;Both&quot;)),ISBLANK( Total_of_Cameras_Monitoring_Gaming_Area__c ))</errorConditionFormula>
+        <errorDisplayField>Total_of_Cameras_Monitoring_Gaming_Area__c</errorDisplayField>
+        <errorMessage>You must fill out the # of Cameras on VGT Area.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>If_Request_is_for_surveillance_or_Both_2</fullName>
+        <active>false</active>
+        <errorConditionFormula>AND(OR(ISPICKVAL( Reimbursement_Request_For__c,&quot;Surveillance&quot;),ispickval(Reimbursement_Request_For__c,&quot;Both&quot;)),ISBLANK( Total_Number_of_Cameras_in_System__c ))</errorConditionFormula>
+        <errorDisplayField>Total_Number_of_Cameras_in_System__c</errorDisplayField>
+        <errorMessage>You must fill out the Total Number of Cameras in System.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Municipality_Contractor_Name</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(isblank( Payee_Contractor_Name__c ),ispickval( Payee_Info__c , &quot;Municipality&quot;))</errorConditionFormula>
+        <errorDisplayField>Payee_Contractor_Name__c</errorDisplayField>
+        <errorMessage>You must fill out the Payee Contractor Name.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Date_Blank</fullName>
+        <active>true</active>
+        <description>Enter the date when the reimbursement request is put on hold</description>
+        <errorConditionFormula>AND(ISPICKVAL ( Status__c , &quot;On Hold&quot;),
+ISBLANK ( On_Hold_Date__c ))</errorConditionFormula>
+        <errorMessage>Please enter the On Hold Date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>On_Hold_Note_Blank</fullName>
+        <active>true</active>
+        <description>Enter the reason why the reimbursement request is on hold</description>
+        <errorConditionFormula>AND(ISPICKVAL ( Status__c , &quot;On Hold&quot;),
+ISBLANK (   On_Hold_Notes__c   ))</errorConditionFormula>
+        <errorMessage>Please update the On Hold Reason.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Paid_details_missing</fullName>
+        <active>true</active>
+        <description>asks for Payment details in order to update the status to PAID</description>
+        <errorConditionFormula>AND( ISPICKVAL (Status__c, &quot;Paid&quot;),
+ISBLANK( Check_Number__c ))</errorConditionFormula>
+        <errorMessage>Please add the Check Number, the Date and Amount Paid.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Payee_Contractor_Name_Must_Be_Populated</fullName>
+        <active>true</active>
+        <errorConditionFormula>and(Isblank( Payee_Contractor_Name__c ),ISPICKVAL(Payee_Info__c, &quot;Contractor&quot;))</errorConditionFormula>
+        <errorDisplayField>Payee_Contractor_Name__c</errorDisplayField>
+        <errorMessage>You must enter the Payee Contractor Name.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

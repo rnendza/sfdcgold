@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Arbeidsregeloppføringen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Arbeidsregeloppføring</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Arbeidsregeloppføring</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Arbeidsregeloppføringene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Arbeidsregeloppføringer</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Arbeidsregeloppføringer</value>
+    </caseValues>
+    <fields>
+        <help>Lengden på pausen i minutter.</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>Antall minutter fra starten på tjenesteressursens tilgjengelighet til tidligste tillatte starttid for pause. Oppgi for eksempel 120 for å planlegge en pause minst to timer etter at dagen har startet.</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>Antall minutter fra starten på tjenesteressursens tilgjengelighet til seneste tillatte sluttid for pause. Oppgi for eksempel 300 for å planlegge at en lunsjpause skal slutte ikke mer enn fem timer etter at dagen har startet.</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Navn på arbeidsregeloppføring</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+</CustomObjectTranslation>

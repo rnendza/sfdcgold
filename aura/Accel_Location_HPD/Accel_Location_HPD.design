@@ -1,0 +1,10 @@
+<design:component>
+
+    <design:attribute name="useCollapsedTable" label="Use Collapsed Hpd Table (beta)"
+                      description="On a mobile device, check this to use a collapsed (horizontal touch scroll table. Otherwise it defaults to a transformed (vertical flipped table)" />
+
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Large"/> <!-- desktop -->
+        <design:supportedFormFactor type="Small"/> <!-- mobile -->
+    </design:supportedFormFactors>
+</design:component>

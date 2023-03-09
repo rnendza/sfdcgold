@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Contact$Name</field>
+    </columns>
+    <columns>
+        <field>Contact$Email</field>
+    </columns>
+    <columns>
+        <field>Contact$Account</field>
+    </columns>
+    <columns>
+        <field>Contact$Primary_Sales_Agent_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$Secondary_Sales_Agent_Type__c</field>
+    </columns>
+    <columns>
+        <field>Contact$SA_Registered__c</field>
+    </columns>
+    <columns>
+        <field>Contact$SA_Agreement_Signed__c</field>
+    </columns>
+    <columns>
+        <field>Contact$SA_Delisted__c</field>
+    </columns>
+    <description>Sales Agents Email Addresses</description>
+    <filter>
+        <criteriaItems>
+            <column>Contact$Sales_Agent__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Sales Agents Email Addresses</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Contacts_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Contact$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Contact$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

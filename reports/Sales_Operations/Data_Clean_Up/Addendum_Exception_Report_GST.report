@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Type</field>
+    </columns>
+    <columns>
+        <field>Account$Addendum_Exists__c</field>
+    </columns>
+    <columns>
+        <field>Account.Contracts$RecordType</field>
+    </columns>
+    <columns>
+        <field>Account.Contracts$Status</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Current_Signed_Date__c</field>
+    </columns>
+    <description>Addendum Exists=Yes, but no Addendum in agreement</description>
+    <filter>
+        <criteriaItems>
+            <column>Account$Addendum_Exists__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>True</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Contracts$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Contract.Addendum</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Addendum Exception Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Contracts__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account.Contracts$Status</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

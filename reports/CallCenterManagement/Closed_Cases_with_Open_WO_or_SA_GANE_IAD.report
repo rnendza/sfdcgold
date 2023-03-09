@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_42287262</developerName>
+        <masterLabel>Open Object</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Cases.WorkOrders.ServiceAppointments$Status</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Completed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Location Closed</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Agent Appointment</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Parts On Order</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rejected</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Additional Help Required</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>SGI Tech Needed</sourceValue>
+            </sourceValues>
+            <value>Open Work Order</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>None</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Accepted</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Scheduled</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>En Route</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>In Progress</sourceValue>
+            </sourceValues>
+            <value>Open Service Appointment (CANCEL TECHNICIAN!)</value>
+        </values>
+    </buckets>
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_65750355</developerName>
+        <masterLabel>Open Work Orders</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Account.Cases.WorkOrders$Status</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>New</sourceValue>
+            </sourceValues>
+            <value>Open Work Orders</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Cases$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$Account_State__c</field>
+    </columns>
+    <description>IF YOU SEE AN OPEN SERVICE APPOINTMENT RELATED TO A CLOSED CASE, THEN WE NEED TO REJECT THE SERVICE APPOINTMENT IMMEDIATELY! CALL THE TECH IF THEY ARE MARKED AS EN ROUTE TO ENSURE THAT THEY ARE AWARE!</description>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>None,Scheduled,Accepted,En Route,In Progress</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>New</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$ShippingState</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>GA,NE</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_42287262</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Closed Cases with Open WO or SA - GA/NE</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments_with_Work_Orders_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>false</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <aggregates>
+        <calculatedFormula>Route_Processing_Sheet__c.Redemption_Asset__c.BV_Type__c:UNIQUE</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA1</developerName>
+        <isActive>false</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>BV Cash Can</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <aggregates>
+        <calculatedFormula>Route_Processing_Sheet__c.Total_JCM_BV_Type__c:SUM+Route_Processing_Sheet__c.Total_MEI_BV_Type__c:SUM</calculatedFormula>
+        <datatype>number</datatype>
+        <developerName>FORMULA2</developerName>
+        <isActive>true</isActive>
+        <isCrossBlock>false</isCrossBlock>
+        <masterLabel>Total Cash Cans</masterLabel>
+        <scale>0</scale>
+    </aggregates>
+    <columns>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$Account__c.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$Collection_Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$X1_Note_Value_Outbound__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$X5_Note_Value_Outbound__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$X20_Note_Value_Outbound__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$X100_Note_Value_Outbound__c</field>
+    </columns>
+    <columns>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$Redemption_Asset__c.BV_Type__c</field>
+    </columns>
+    <description>Cover Sheet for Requested Fills</description>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Route_Schedule__c$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Route_Schedule__c.Route_Processing_Sheets__r$Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Cover Sheet for Requested Fills Today</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Route_Schedule_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Route_Schedule__c$Route_Fill_Date__c</dateColumn>
+        <interval>INTERVAL_TODAY</interval>
+    </timeFrameFilter>
+</Report>

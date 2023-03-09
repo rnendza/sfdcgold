@@ -1,0 +1,60 @@
+<template>
+    <template if:true={showAnything}>
+        <div class="accel-loc-detail-help-outer-container">
+            <div class={helpBorderCssClass}>
+                <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                    <div class="slds-media__figure">
+                        <lightning-icon icon-name="utility:alert"
+                                        size="small"
+                                        class={helpInfoIconCssClass}
+                                        alternative-text="License Alert">
+                        </lightning-icon>
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                            {label.locLicenseWarning}
+                        </div>
+                        <div class="accel-detailed-body-text">
+                            <!-- Note this grid is intentionally a bit non standard in order to try to best
+                            fit dynamic content next to the icon in case it wraps on a mobile device -->
+                            <div class="slds-grid slds-wrap">
+                                <template if:true={showExpiredLicenseWarning}>
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <div style="text-align: right">
+                                            <lightning-icon icon-name="utility:error"
+                                                            title={label.locLicenseExpiredMessage}
+                                                            size="x-small"
+                                                            class="accel-error-icon">
+                                            </lightning-icon>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        <div class="slds-p-left_xx-small accel-hard-wrap-text">
+                                            {label.locLicenseExpiredMessage}
+                                        </div>
+                                    </div>
+                                </template>
+                                <template if:true={showExpiringLicenseWarning}>
+                                    <div class="slds-col slds-size_1-of-12">
+                                        <div style="text-align: right">
+                                            <lightning-icon icon-name="utility:warning"
+                                                            title={label.locLicenseExpiringMessage}
+                                                            size="x-small"
+                                                            class="accel-warn-icon">
+                                            </lightning-icon>
+                                        </div>
+                                    </div>
+                                    <div class="slds-col slds-size_11-of-12">
+                                        <div class="slds-p-left_xx-small accel-hard-wrap-text">
+                                            {label.locLicenseExpiringMessage}
+                                        </div>
+                                    </div>
+                                </template>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

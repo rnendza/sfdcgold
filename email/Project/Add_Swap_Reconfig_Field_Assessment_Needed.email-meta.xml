@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Add Swap Reconfig Field Assessment Needed</name>
+    <style>none</style>
+    <subject>Field Assessment Needed for Add/Swap/Reconfigure {!Project__c.Account__c}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

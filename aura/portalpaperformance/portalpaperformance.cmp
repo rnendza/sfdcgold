@@ -1,0 +1,8 @@
+<aura:component description="Performance"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+
+                <div style="padding-bottom:54%; position:relative; display:block; width:100%; background-color: white; overflow:hidden">
+                <iframe title="PA_Daily Funds Flow - Funds Flow Summary" width="100%" height="100%" src="https://app.powerbi.com/reportEmbed?reportId=cfe8f516-b7b2-453c-a412-280e94ba5d6b&amp;groupId=13064ecb-dde8-46e1-9aa7-182b1add519e&amp;autoAuth=true&amp;ctid=201746df-108c-4f4c-8e44-e814f9857eff&amp;config=eyJjbHVzdGVyVXJsIjoiaHR0cHM6Ly93YWJpLXVzLW5vcnRoLWNlbnRyYWwtYi1yZWRpcmVjdC5hbmFseXNpcy53aW5kb3dzLm5ldC8ifQ%3D%3D" frameborder="0" allowFullScreen="true" style="position:absolute; top:0; left:0; background-color: white"></iframe>
+                 </div>
+</aura:component>

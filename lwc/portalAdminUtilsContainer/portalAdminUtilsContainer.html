@@ -1,0 +1,66 @@
+<!-- Portal Admin Utils Container -->
+<template>
+    <lightning-tabset variant="scoped"
+                      active-tab-value={_activeTabValue}
+                      class="accel-tab-set accel-scoped-tab-set">
+
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:guidance_center"
+                value="tab_utils_home"
+                label="Welcome">
+            <c-portal-admin-utils-home>
+            </c-portal-admin-utils-home>
+        </lightning-tab>
+
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name="standard:data_integration_hub"
+                value="tab_utils_pa_advisories_loader"
+                label="PA Loader">
+
+            <c-portal-admin-utils-advisory-loader
+                    debug-console={paDebugConsole}
+                    created-records-list-view-filter-name={paAdvisoryCreatedRecordsListViewFilterName}
+                    custom-mdt-dev-name={paAdvisoryCustomMdtDevName}>
+            </c-portal-admin-utils-advisory-loader>
+        </lightning-tab>
+
+        <lightning-tab
+                onactive={handleTabClick}
+                class='accel-scoped-tab'
+                icon-name={paGalleryCardIcon}
+                value="tab_utils_pa_advisories_gallery"
+                label={paGalleryCardTitle}>
+
+            <div class="slds-p-top_small"></div>
+
+            <c-pa-advisory-gallery
+                    allow-filters={paGalleryAllowFilters}
+                    allow-csv-export={paGalleryTableAllowCsvExport}
+                    use-infinite-scroll={paGalleryUseInfiniteScroll}
+                    infinite-scroll-max-image-items={paGalleryInfiniteScrollMaxImageItems}
+                    infinite-scroll-max-table-items={paGalleryInfiniteScrollMaxTableItems}
+                    show-table-row-num-column={paGalleryShowTableRowNumColumn}
+                    scroll-container-style={paGalleryScrollContainerStyle}
+                    dt-container-style={paGalleryDtContainerStyle}
+                    card-title={paGalleryCardTitle}
+                    card-icon={paGalleryCardIcon}
+                    allow-mouse-over-highlight={paGalleryAllowMouseOverHighlight}
+                    allow-list-vs-image-toggle={paGalleryAllowListVsImageToggle}
+                    allow-sort-icon={paGalleryAllowSortIcon}
+                    user-place-holder={paGalleryFiltersUserPlaceHolder}
+                    city-place-holder={paGalleryFiltersCityPlaceHolder}
+                    filters-label={paGalleryFiltersFiltersLabel}
+                    filters-applied-label={paGalleryFiltersFiltersAppliedLabel}
+                    photo-style={paGalleryPhotoStyle}
+                    photo-cls={paGalleryPhotoCls}
+                    min-filter-chars={paGalleryFiltersMinFilterChars}
+                    debug-console={paDebugConsole}>
+            </c-pa-advisory-gallery>
+        </lightning-tab>
+
+    </lightning-tabset>
+</template>

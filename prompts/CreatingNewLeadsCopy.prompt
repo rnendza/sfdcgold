@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>Creating New Leads Copy</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Help</actionButtonLabel>
+        <actionButtonLink>https://accelentertainment.my.salesforce.com/sfc/p/1I000001dLpo/a/1I000000Q9tF/dVH9pVOvo4oLmZqBdI0H3.m_zRvKi2QeKpc0MemKpGM</actionButtonLink>
+        <body>You should only create a new lead if the Customer Account does not already exist. Check out the Help button for more info.</body>
+        <customApplication>Relationship_Management</customApplication>
+        <delayDays>1</delayDays>
+        <description>Only create a new lead if the account doesn&apos;t exist.</description>
+        <dismissButtonLabel>Dismiss</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-01-31</endDate>
+        <isPublished>true</isPublished>
+        <masterLabel>Creating New Leads Copy</masterLabel>
+        <publishedDate>2020-12-31</publishedDate>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>false</shouldIgnoreGlobalDelay>
+        <startDate>2020-12-29</startDate>
+        <targetPageKey1>Lead</targetPageKey1>
+        <targetPageKey2>new</targetPageKey2>
+        <targetPageType>standard__objectPage</targetPageType>
+        <timesToDisplay>5</timesToDisplay>
+        <title>Hold Up! We&apos;ve made some updates.</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

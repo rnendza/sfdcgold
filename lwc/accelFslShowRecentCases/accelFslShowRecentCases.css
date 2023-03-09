@@ -1,0 +1,11 @@
+:host {
+    --sds-c-card-color-background: rgb(250,250,249);
+}
+.accel-datatable-vertical_borders {
+    border-left: 1px solid rgb(221,219,218);
+    border-right: 1px solid rgb(221,219,218);
+}
+.refresh-container { cursor: pointer;}
+.accel-datatable_class { /*zoom: 87%;*/}
+.accel-green-icon{ --lwc-colorTextIconDefault: rgb(18, 196, 10);}
+.accel-success_text{ color: rgb(1, 131, 0);}

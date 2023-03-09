@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Gives editing capabilities to :
+&apos;IGB Equip/Layout Change Form Submit
+Relocate IGB Approved&apos; fields</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Field_Assessment__c.Relocate_IGB_Approved__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Field_Assessment__c.Relocate_Request_Submitted__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Field Assessment - Edit</label>
+</PermissionSet>

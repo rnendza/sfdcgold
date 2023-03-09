@@ -1,0 +1,41 @@
+<!-- Cl Route Schedule Selection Rps Records -->
+<template>
+    <div lwc:dom="manual" class="sfdc-datatable-overrides"></div>
+
+    <div if:true={showDataTable}
+         class="accel-datatable-overrides slds-box slds-box_small slds-m-horizontal_small">
+        <div class="slds-p-bottom_small">
+            <lightning-icon
+                size="small"
+                class="slds-m-right_xx-small"
+                icon-name="custom:custom18">
+            </lightning-icon>Processing Sheets
+        </div>
+        <lightning-datatable
+                key-field={tableKeyField}
+                columns={tableColumns}
+                data={routeProcessingSheets}
+                row-number-offset={rowOffset}
+                hide-checkbox-column={hideCheckboxColumn}
+                column-widths-mode={columnWidthsMode}
+                default-sort-direction={defaultSortDirection}
+                sorted-direction={sortDirection}
+                sorted-by={sortedBy}
+                onsort={handleSort}
+                class="accel-chrome-hardware-acceleration accel-condense-dt-wrapper slds-max-medium-table_stacked"
+                aria-label={tableAriaLabel}>
+        </lightning-datatable>
+    </div>
+    <template if:false={showDataTable}>
+        <div class="slds-p-top_large slds-p-horizontal_small">
+            <c-ui-scoped-notification
+                    icon-name="utility:error"
+                    icon-variant="inverse"
+                    custom-class="accel-notification-error_theme slds-theme_alert-texture"
+                    custom-icon-size="x-small"
+                    theme="error"
+                    message={noRpsMsg}>
+            </c-ui-scoped-notification>
+        </div>
+    </template>
+</template>

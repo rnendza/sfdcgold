@@ -1,0 +1,100 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:hasSObjectName"
+                access="global"
+                controller="AccountController">
+
+    <aura:attribute name="data" type="Object"/>
+    <aura:attribute name="hpdTotalId" type="Id"/>
+    <aura:attribute name="rawData" type="Object" access="PRIVATE"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="sortedBy" type="String"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+    <aura:attribute name="hpdAccountMdt" type = "HPD_Total_Setting__mdt"/>
+    <aura:attribute name="hpdHelp4Wk"   type="String" default=""/>
+    <aura:attribute name="hpdHelp8Wk"   type="String" default=""/>
+    <aura:attribute name="hpdHelp12Wk"  type="String" default=""/>
+    <aura:attribute name="datatableClasses"  type="String" />
+    <aura:attribute name="processingComplete" type="boolean" default="false"/>
+    <aura:attribute name="useCollapsedTable" type="Boolean" default="false" />
+    <aura:attribute name="isMobile" type="Boolean" default="false" />
+
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }"/>
+    <aura:if isTrue="{!v.processingComplete }">
+            <lightning:accordion activeSectionName="A" allowMultipleSectionsOpen="true">
+                <lightning:accordionSection label="Hold Per Day" name="A">
+                    <aura:set attribute="body">
+                        <aura:if
+                                isTrue="{! and(not( empty( v.hpdTotalId ) ),v.hpdAccountMdt.Display_HPD_Total_Avg_on_Account__c) }">
+                            <lightning:recordViewForm recordId="{!v.hpdTotalId}" objectApiName="Hold_Per_Day_Total__c">
+                                <div class="slds-grid slds-p-horizontal_large accel-grid-background-override accel-no-top-padding">
+                                    <div class="slds-col slds-size_1-of-3">
+                                        <label class="slds-form-element__label">
+                                            4 Wk
+                                            <lightning:helptext content="{!v.hpdHelp4Wk}"/>
+                                        </label>
+                                        <lightning:outputField class="accel-hpd-summary-values" variant="label-hidden"
+                                                               fieldName="Four_Week_HPD__c"/>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3">
+                                        <label class="slds-form-element__label">
+                                            8 Wk
+                                            <lightning:helptext content="{!v.hpdHelp8Wk}"/>
+                                        </label>
+                                        <lightning:outputField class="accel-hpd-summary-values" variant="label-hidden"
+                                                               fieldName="Eight_Week_HPD__c"/>
+                                    </div>
+                                    <div class="slds-col slds-size_1-of-3">
+                                        <label class="slds-form-element__label">
+                                            12 Wk
+                                            <lightning:helptext content="{!v.hpdHelp12Wk}"/>
+                                        </label>
+                                        <lightning:outputField class="accel-hpd-summary-values" variant="label-hidden"
+                                                               fieldName="Twelve_Week_HPD__c"/>
+                                    </div>
+                                </div>
+                            </lightning:recordViewForm>
+                        </aura:if>
+                        <lightning:spinner variant="brand" size="large" aura:id="mainSpinner"
+                                           class="{!((v.showSpinner)? '': 'slds-hide')}"
+                                           alternativeText="{!v.spinnerAltText}"/>
+
+                        <aura:if isTrue="{! not( empty( v.data ) ) }">
+                            <aura:if isTrue="{!or(!v.useCollapsedTable,!v.isMobile)}">
+                                <!-- USE the DESKTOP DATATABLE OR TRANSFORMED MOBILE DATATABLE
+                                ( slds-max-medium-table_stacked-horizontal ) added if if mobile.
+                                -->
+                                <div class="slds-p-around_medium">
+                                    <lightning:datatable data="{! v.data }"
+                                                         columns="{! v.columns }"
+                                                         class="{!v.datatableClasses}"
+                                                         sortedBy="{!v.sortedBy}"
+                                                         sortedDirection="{!v.sortedDirection}"
+                                                         onsort="{!c.updateColumnSorting}"
+                                                         keyField="Id"
+                                                         showRowNumberColumn="false"
+                                                         hideCheckboxColumn="true"/>
+                                </div>
+                            </aura:if>
+                            <aura:if isTrue="{!and(v.useCollapsedTable,v.isMobile)}">
+                                <!-- USE the Collapsed Datatable on mobile  -->
+                                <div class="slds-p-around_small">
+                                    <c:Accel_Location_HPD_Collapsed data="{!v.data}"
+                                                                    tableClasses="slds-table slds-table--bordered "/>
+                                </div>
+                            </aura:if>
+                            <aura:set attribute="else">
+                                <div class="slds-p-around_medium">
+                                    <span style="font-size: .85em">No Hold Per Day Data is available.</span>
+                                </div>
+                            </aura:set>
+                        </aura:if>
+                    </aura:set>
+                </lightning:accordionSection>
+            </lightning:accordion>
+    </aura:if>
+</aura:component>

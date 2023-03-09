@@ -1,0 +1,81 @@
+<template>
+    <div lwc:dom="manual" class="fake-input-overrides-class"></div>
+    <!-- onclick={handleBackdropclick} -->
+    <div class=" c3llc-backdropxxxxxxxx" ></div>
+    <div class="slds-combobox_container c3llc-autocomplete-container"
+         tabindex="0" contenteditable="true"
+         onfocusout={handleAutocompleteMenuFocusOut} >
+        <div class={comboboxCssClass}
+             style="background-color:white"
+             aria-expanded={isExpanded}
+             aria-haspopup="listbox"
+             role="combobox">
+            <label class={labelClass}>
+                <template if:true={customrequired}>
+                    <abbr title="required" class="slds-required" style="font-weight:bold;font-size:1.2em;margin:0">*</abbr>
+                </template>
+                <lightning-formatted-rich-text value={searchLabel}></lightning-formatted-rich-text>
+            </label>
+            <span
+                    onkeydown= {handleInputKeyDown}>
+                <lightning-input
+                    data-custom-id={customId}
+                    onclick={handleAutocompleteClicked}
+                    data-id="terminput"
+                    label="" variant="label-hidden"
+                    value={term}
+                    aria-autocomplete="list"
+                    aria-controls="listbox"
+                    required={valueRequired}
+                    onblur={handleBlur}
+                    onfocus={handleInputFocus}
+                    type="search" onchange={handleSearchInputChange}
+                    class="slds-input slds-combobox__input c3llc-search-input"
+                    html-autocomplete="nope"
+                    autocomplete="off" role="textbox"
+                    placeholder={placeHolder}>
+                </lightning-input>
+            </span>
+            <template if:true={processing}>
+                <div class="slds-is-relative">
+                    <lightning-spinner
+                            size="small"
+                            variant="brand"
+                            alternative-text="processing"></lightning-spinner>
+                </div>
+            </template>
+            <div class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid c3llc-dropdown-container"
+                 role="listbox">
+                <ul class="slds-listbox slds-listbox_vertical" role="listbox">
+                    <template for:each={sObjectResults} for:item="result">
+                        <li key={result.id}
+                            data-id={result.id}
+                            role="presentation" class="slds-listbox__item c3llc-search-item">
+                            <div aria-selected="false"
+                                 data-id={result.id}
+                                 onkeydown={handleRecordKeyDown}
+                                 onclick={handleRecordClicked}
+                                 class="slds-media slds-listbox__option slds-listbox__option_entity
+                                    slds-listbox__option_has-meta" role="option" tabindex="0">
+                                <div class="slds-icon_container  slds-align--absolute-center">
+                                    <span class="slds-media__figure slds-listbox__option-icon">
+                                         <lightning-icon icon-name={optionIconName} size="small"></lightning-icon>
+                                    </span>
+                                </div>
+                                <span class="slds-media__body c3llc-record-data">
+                                    <span class="slds-listbox__option-text slds-listbox__option-text_entity accel-listbox-entry">
+                                        {result.primaryDisplayValue}
+                                    </span>
+                                    <span if:true={displaySecondaryField}
+                                          class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                                        {result.secondaryDisplayValue}
+                                    </span>
+                                </span>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+        </div>
+    </div>
+</template>

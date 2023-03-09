@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routenwegpunkt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routenwegpunkte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routenwegpunkt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routenwegpunkte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routenwegpunkts</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routenwegpunkte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routenwegpunkt</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routenwegpunkten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address --></label>
+        <name>maps__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advanced Route Data Set --></label>
+        <name>maps__AdvRouteDataSet__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Advanced Route --></label>
+        <name>maps__AdvRoute__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Associated Output Types --></label>
+        <name>maps__AssociatedOutputTypes__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Keine</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Base Object Address Misconfigured --></label>
+        <name>maps__BaseObjectAddressMisconfigured__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Object Api --></label>
+        <name>maps__BaseObjectApi__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Object Id --></label>
+        <name>maps__BaseObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>maps__City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created for Future Visit --></label>
+        <name>maps__CreatedForFutureVisit__c</name>
+    </fields>
+    <fields>
+        <label><!-- End DateTime --></label>
+        <name>maps__EndDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Location --></label>
+        <name>maps__IsEndLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Modified from Core --></label>
+        <name>maps__IsModified__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Location --></label>
+        <name>maps__IsStartLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lat/Long --></label>
+        <name>maps__LatLong__c</name>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>maps__PostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>maps__RW_Account__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>maps__RW_Case__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>maps__RW_Contact__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>maps__RW_Lead__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>maps__RW_Opportunity__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Related Advanced Route Template --></label>
+        <name>maps__RelatedAdvRouteTemplate__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Route Job Id --></label>
+        <name>maps__RouteJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routed Object Id --></label>
+        <name>maps__RoutedObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saved Query Id --></label>
+        <name>maps__SavedQueryId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sequence --></label>
+        <name>maps__Sequence__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start DateTime --></label>
+        <name>maps__StartDateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- State/Province --></label>
+        <name>maps__StateProvince__c</name>
+    </fields>
+    <fields>
+        <label><!-- Street --></label>
+        <name>maps__Street__c</name>
+    </fields>
+    <fields>
+        <label><!-- Template User Id --></label>
+        <name>maps__TemplateUserId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Number in Frequency --></label>
+        <name>maps__VisitNumberInFrequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Locked --></label>
+        <name>maps__isLocked__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Maps Advanced-Routenwegpunktname</nameFieldLabel>
+</CustomObjectTranslation>

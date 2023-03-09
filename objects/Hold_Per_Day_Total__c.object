@@ -1,0 +1,1973 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Hold_Per_Day_Total_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Hold_Per_Day_Total_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Contains calculated information for HPD (currently only monthly)
+Rolls up info for both Account(Location) and Municipality Levels (Separated by Record Type).
+Fields such as TTM indicate 12 month roll-ups. all other fiels noted appropriated (4 weeks 8 weeks 12 weeks) etc.
+
+Additional record type for future use of Machine exists as well.</description>
+    <enableActivities>false</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Read</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>Populated by script upon initial object creation. then populated upon creation of each account via trigger moving forward.</description>
+        <externalId>false</externalId>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Hold Per Day Totals</relationshipLabel>
+        <relationshipName>Hold_Per_Day_Summaries</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>For future use for Machines.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>For future use for Machines.</inlineHelpText>
+        <label>Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Hold Per Day Totals</relationshipLabel>
+        <relationshipName>Hold_Per_Day_Totals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Eight_Week_HPD_Avg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 2 Months.. (Revenue Total /  # of Vgts) / 2. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>8 Week HPD Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Eight_Week_HPD__c</fullName>
+        <description>Aggregates HPD data for the last 12 weeks.  
+For Machines....(Revenue Total / 60)  
+For Locations.....(Revenue Total /  # of Vgts) / 2</description>
+        <externalId>false</externalId>
+        <formula>/**
+ * If Machine (ie Asset)
+ *   Make sure we have enough HPD Data to eval ie. at least 8 weeks or 60 days.. if so
+ *   calc rev / # of days... if not return null.
+ *
+ * If Location (ie Account)
+ *   We are using monthlys so only need to look for 2 in this case.
+ *   Also adding Total Vgt Count into the calc. 
+ */
+CASE( 
+RecordType.Name, 
+&quot;Machine&quot;, 
+IF( HPD_Nbr_of_Records_8_Weeks__c&gt;=60, HPD_Revenue_Total_8_Weeks__c/60,null), 
+&quot;Location&quot;, 
+IF( HPD_Nbr_of_Records_8_Weeks__c&gt;=2, Eight_Week_HPD_Avg__c ,null) 
+,null 
+) 
+/*
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,
+      IF( HPD_Nbr_of_Records_8_Weeks__c &gt;= 60,
+          HPD_Revenue_Total_8_Weeks__c / 60,   
+              null),
+   &quot;Location&quot;,
+       IF( AND(  HPD_Nbr_of_Records_8_Weeks__c &gt;= 2,HPD_Total_VGT_Count__c &gt; 0) , ( 
+          HPD_Revenue_Total_8_Weeks__c / HPD_Total_VGT_Count__c ) / Total_Nbr_of_Days_in_Months_8_Weeks__c, null)
+   ,null
+)
+*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 2 Months.. (Revenue Total /  # of Vgts) / 2. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>8 Week HPD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Estimated_Annual_Revenue__c</fullName>
+        <externalId>false</externalId>
+        <formula>Twelve_Week_HPD_Avg__c * 365 * 5 * 0.34</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Estimated Annual Revenue</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Four_Week_HPD_Avg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 1 Month.. (Revenue Total /  # of Vgts) / 1. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>4 Week HPD Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Four_Week_HPD__c</fullName>
+        <description>Aggregates HPD data for the last 4 weeks.  
+For Machines....(Revenue Total / 30)  
+For Locations.....(Revenue Total /  # of Vgts) / 30</description>
+        <externalId>false</externalId>
+        <formula>/**
+ * If Machine (ie Asset)
+ *   Make sure we have enough HPD Data to eval ie. at least 4 weeks or 30 days.. if so
+ *   calc rev / # of days... if not return null.
+ *
+ * If Location (ie Account)
+ *   We are using monthlys so only need to look for 1 in this case.
+ *   Also adding Total Vgt Count into the calc. 
+ */
+CASE( 
+RecordType.Name, 
+&quot;Machine&quot;, 
+IF( HPD_Nbr_of_Records_4_Weeks__c&gt;=30, HPD_Revenue_Total_4_Weeks__c / 30 ,null), 
+&quot;Location&quot;, 
+IF( HPD_Nbr_of_Records_4_Weeks__c&gt;=1, Four_Week_HPD_Avg__c ,null) 
+,null 
+) 
+
+
+/*===========
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,
+      IF( HPD_Nbr_of_Records_4_Weeks__c &gt;= 30,
+          HPD_Revenue_Total_4_Weeks__c / 30,   
+              null),
+   &quot;Location&quot;,
+       IF( AND( HPD_Nbr_of_Records_4_Weeks__c &gt;= 1,HPD_Total_VGT_Count__c &gt; 0) , ( 
+          HPD_Revenue_Total_4_Weeks__c / HPD_Total_VGT_Count__c ) / Total_Nbr_of_Days_in_Months_4_Weeks__c, null)
+   ,null
+)*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 1 Month.. (Revenue Total /  # of Vgts) / 1. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>4 Week HPD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Frequency__c</fullName>
+        <externalId>false</externalId>
+        <label>Frequency</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Monthly</fullName>
+                    <default>true</default>
+                    <label>Monthly</label>
+                </value>
+                <value>
+                    <fullName>Daily</fullName>
+                    <default>false</default>
+                    <label>Daily</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>HPD_Accel_Revenue_Total_12_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Account__r.Type) = &apos;Accel Account&apos;, 
+       HPD_Revenue_Total_12_Weeks__c ,
+         0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Accel Revenue Total (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Accel_Revenue_Total_4_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Account__r.Type) = &apos;Accel Account&apos;, 
+HPD_Revenue_Total_4_Weeks__c , 
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Accel Revenue Total (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Accel_Revenue_Total_8_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>/**
+ * If Machine (ie Asset)
+ *   Make sure we have enough HPD Data to eval ie. at least 8 weeks or 56 days.. if so
+ *   calc rev / # of days... if not return null.
+ *
+ * If Location (ie Account) @TODO
+ *
+ */
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,
+      IF( HPD_Nbr_of_Records_12_Weeks__c &gt;= 56,
+          HPD_Revenue_Total_12_Weeks__c / 56,   
+              null),
+   &quot;Location&quot;,
+       IF( AND( HPD_Revenue_Total_8_Weeks__c &gt; 0,HPD_Total_VGT_Count__c &gt; 0) , ( 
+          HPD_Revenue_Total_8_Weeks__c / HPD_Total_VGT_Count__c ) / 56, 0)
+   ,null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Aggregates HPD data for the last 8 weeks.&lt;br/&gt;
+For Machines....(Revenue Total / 56)&lt;br/&gt;
+For Locations.....(Revenue Total /  # of Vgts) / 56&lt;br/&gt;
+If not enough data to calculate.. the value will be empty.</inlineHelpText>
+        <label>HPD Accel Revenue Total (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Accel_Revenue_Total__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Account__r.Type) = &apos;Accel Account&apos;, 
+       HPD_Revenue_Total__c ,
+         0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Accel Revenue Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Accel_Total_VGT_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( TEXT(Account__r.Type) = &apos;Accel Account&apos;, 
+HPD_Total_VGT_Count__c , 
+0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Accel Total VGT Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Played_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount Played (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Played_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount Played (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Played_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount Played (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Won_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount  Won (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Won_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount Won (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Amount_Won_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Amount  Won (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_In_Total_12_weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>12 weeks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Sum of Hold Per Day Funds In for 12 Weeks</inlineHelpText>
+        <label>HPD Funds In Total (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_In_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Funds In Total (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_In_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The SUM of HPD net funds for LAST N Months (2 months + 1)</inlineHelpText>
+        <label>HPD Funds In Total (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_In_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>3 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>3 months</inlineHelpText>
+        <label>HPD Funds In Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_Out_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Funds Out Total (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_Out_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Funds Out Total (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_Out_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Funds Out Total (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Funds_in_Avg__c</fullName>
+        <description>Based on Last 3 months funds in total for the account.</description>
+        <externalId>false</externalId>
+        <formula>/*
+IF( RecordType.Name == &apos;Location&apos;, 
+IF(  AND(HPD_Total_VGT_Count__c &gt; 0,HPD_Funds_In_Total_12_weeks__c &gt; 0) , 
+HPD_Funds_In_Total_12_weeks__c / HPD_Total_VGT_Count__c / 90,0), 0)
+*/
+IF(  AND(HPD_Total_VGT_Count__c &gt; 0,HPD_Funds_In_Total_12_weeks__c &gt; 0), 
+        HPD_Funds_In_Total_12_weeks__c / HPD_Total_VGT_Count__c / 90
+,0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Last 3 months funds in total for the account.</inlineHelpText>
+        <label>HPD Funds in Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Location_Share_12_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_NTI_12_Weeks__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Location Share (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Location_Share_4_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_NTI_4_Weeks__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Location Share (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Location_Share_8_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_NTI_8_Weeks__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Location Share (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Muni_Accel_Revenue_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Muni Accel Revenue Total (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Accel_Avg__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF( RecordType.Name == &apos;Municipality&apos;, 
+IF(  HPD_Municipality_Accel_Total_VGT_Count__c  &gt; 0, 
+HPD_Municipality_Accel_Revenue_Total_12__c /  HPD_Municipality_Accel_Total_VGT_Count__c  / 90,0), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality Accel Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Accel_Revenue_Total_12__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>3 months / 12 weeks</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Hold per day revenue aggregated up to Municipality for 12 weeks.</inlineHelpText>
+        <label>HPD Municipality Accel Rev Tot(12 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Accel_Revenue_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>3 months</description>
+        <externalId>false</externalId>
+        <inlineHelpText>3 months</inlineHelpText>
+        <label>HPD Municipality Accel Revenue Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Accel_Total_VGT_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Accel Total VGT Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Played_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Played (12 Week)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Played_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Played (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Played_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Played (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Won_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Won (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Won_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Won (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Amount_Won_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Amount Won (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_In_Avg__c</fullName>
+        <externalId>false</externalId>
+        <formula>/*
+IF( RecordType.Name == &apos;Municipality&apos;, 
+IF( HPD_Total_VGT_Count__c &gt; 0, 
+HPD_Municipality_Funds_In_Total__c / HPD_Total_VGT_Count__c / 90,0), 0)
+*/
+
+
+IF( RecordType.Name == &apos;Municipality&apos;, 
+     ( HPD_Municipality_Funds_In_Total_12_Weeks__c /  HPD_Municipality_VGT_Total__c) / 90,
+     0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>(12 Week Funds in Total / Total Vgts) / 90</inlineHelpText>
+        <label>HPD Municipality Funds In Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_In_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds In Total (12 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_In_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds In Total (4 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_In_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds In Total (8 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_In_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds In Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_Out_Total_12weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds Out Total (12Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_Out_Total_4_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds Out Total (4 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Funds_Out_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Funds Out Total (8 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Location_Share_12_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_Municipality_NTI_Total_12_Weeks__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality Location Share (12 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Location_Share_4_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_Municipality_NTI_Total_4_Weeks__c*0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality Location Share (4 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Location_Share_8_Weeks__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_Municipality_NTI_Total_8_Weeks__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality Location Share (8 Wks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_NTI_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality NTI Total 12 Weeks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_NTI_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality NTI Total (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_NTI_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality NTI Total (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Revenue_Avg__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* 
+RJN Changed HPD_Total_VGT_Count__c to  HPD_Municipality_VGT_Total__c 6/4/2019 this was throwing a lot of stuff off~
+Also changed HPD_Revenue_Total_12_Weeks__c to  HPD_Municipality_Revenue_Total_12_Weeks__c 
+
+*/
+IF( RecordType.Name == &apos;Municipality&apos;, 
+     IF( HPD_Municipality_VGT_Total__c &gt; 0,
+          HPD_Municipality_Revenue_Total_12_Weeks__c  /   HPD_Municipality_VGT_Total__c / 90,0), 0)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality Revenue Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Revenue_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Revenue Total(12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Revenue_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Revenue Total(4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_Revenue_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality Revenue Total(8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_Amount_Played__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality TTM Amount Played</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_Amount_Won__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality TTM Amount Won</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_Funds_In_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality TTM Funds In Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_Funds_Out_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality TTM Funds Out Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_Location_Share__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_Municipality_TTM_NTI__c  * 0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD Municipality TTM Location Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_TTM_NTI__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality TTM NTI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Municipality_VGT_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Municipality VGT Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_NTI_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD NTI (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_NTI_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD NTI (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_NTI_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD NTI (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Nbr_of_Records_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Nbr of Records 12 Weeks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_Nbr_of_Records_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Nbr of Records 4 Weeks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_Nbr_of_Records_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Nbr of Records 8 Weeks</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_Revenue_Total_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The SUM of HPD net funds for LAST N Months (3 months + 1)</inlineHelpText>
+        <label>HPD Revenue Total (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Revenue_Total_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Revenue Total (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Revenue_Total_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>The SUM of HPD net funds for LAST N Months (2 months + 1)</inlineHelpText>
+        <label>HPD Revenue Total (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Revenue_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD Revenue Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Amount_Played__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM Amount Played</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Amount_Won__c</fullName>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM Amount Won</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Avg__c</fullName>
+        <externalId>false</externalId>
+        <formula>/**
+* If Machine (ie Asset)
+* Make sure we have enough HPD Data to eval ie. at least 6 months or 180 days.. if so
+* calc rev / # of days... if not return null.
+* If Location (ie Account)
+* Make sure we have enough HPD Data to eval ie. at least 6 months or 180 days.. if so
+* calc rev / total vgt count / # of days... if not return null.
+*
+*/
+CASE( 
+RecordType.Name,
+&quot;Machine&quot;, 
+IF(HPD_TSM_Nbr_of_Records_Found__c &gt;=180,
+HPD_TSM_Revenue_Total__c / 180
+,null),
+&quot;Location&quot;,
+IF(HPD_TSM_Nbr_of_Records_Found__c&gt;=6,TSM_Avg__c,null)
+,null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD TSM Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Daily_Total__c</fullName>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM Daily Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Funds_In_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM Funds In Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Funds_Out_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM Funds Out Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Location_Share__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_TSM_NTI__c  *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD TSM Location Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_NTI__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TSM NTI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Nbr_of_Records_Found__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Trailing 6 Month.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Trailing 6 Month.</inlineHelpText>
+        <label>HPD TSM # of Records Found</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_TSM_Revenue_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TSM Revenue Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Amount_Played__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount played the last 12 months</inlineHelpText>
+        <label>HPD TTM Amount Played</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Amount_Won__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Amount won the last 12 months.</inlineHelpText>
+        <label>HPD TTM Amount Won</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Avg__c</fullName>
+        <description>Aggregates the Hold Per Day object for the last 12 months if 365 days of data exists.
+For Asset=(Revenue Total / 365)
+For Account=(Revenue Total /  # of Vgts) / 12
+If not enough data.. value is empty.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ * If Machine (ie Asset)
+ *   Make sure we have enough HPD Data to eval ie. at least 12 months or 365 days.. if so
+ *   calc rev / # of days... if not return null.
+ * If Location (ie Account)
+ *   Make sure we have enough HPD Data to eval ie. at least 12 months or 365 days.. if so
+ *   calc rev / total vgt count / # of days... if not return null.
+ *
+ */
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,  
+      IF(HPD_TTM_Nbr_of_Records_Found__c &gt;=365,
+       HPD_TTM_Revenue_Total__c / 365
+      ,null),
+   &quot;Location&quot;,
+       IF(HPD_TTM_Nbr_of_Records_Found__c&gt;=12,TTM_Avg__c,null)
+   ,null
+)
+
+/*===========
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,
+      IF(  HPD_TTM_Nbr_of_Records_Found__c &gt;= 365,
+          HPD_TTM_Revenue_Total__c / 365,   
+              null),
+   &quot;Location&quot;,
+       IF( AND(HPD_TTM_Nbr_of_Records_Found__c &gt;= 12,HPD_Total_VGT_Count__c &gt; 0) , 
+           (HPD_TTM_Revenue_Total__c /HPD_Total_VGT_Count__c ) / 365, 
+               null)
+   ,null
+)
+==============*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>@TODO</inlineHelpText>
+        <label>HPD TTM Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Daily_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM Daily Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Funds_In_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM Funds In Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Funds_Out_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM Funds Out Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Location_Share__c</fullName>
+        <externalId>false</externalId>
+        <formula>HPD_TTM_NTI__c *0.3464</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>HPD TTM Location Share</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_NTI__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM NTI</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Nbr_of_Records_Found__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM # of Records Found</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>HPD_TTM_Revenue_Total__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>HPD TTM Revenue Total</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>HPD_Total_VGT_Count__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Uses Avg VGT Count from the HPD for the location for the last 12 months</inlineHelpText>
+        <label>HPD Total VGT Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(  !ISBLANK(Account__c) , 
+          TEXT(Account__r.Type) , &apos;&apos;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Most_Recent_HPD_Date__c</fullName>
+        <externalId>false</externalId>
+        <formula>Most_Recent_HPD__r.Date__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Most Recent HPD Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Most_Recent_HPD__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Most Recent HPD</label>
+        <referenceTo>Hold_Per_Day__c</referenceTo>
+        <relationshipLabel>Hold Per Day Totals</relationshipLabel>
+        <relationshipName>Hold_Per_Day_Totals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Municipality__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Municipality</label>
+        <referenceTo>Municipality__c</referenceTo>
+        <relationshipLabel>Hold Per Day Totals</relationshipLabel>
+        <relationshipName>Hold_Per_Day_Totals</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Name_Field_Store__c</fullName>
+        <description>Field Exists merely for tech reasons so that we can dynamically create an sObject in code and store the name field.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Field Exists merely for tech reasons so that we can dynamically create an sObject in code and store the name field.</inlineHelpText>
+        <label>Name Field Store</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Portal_Dummy_Account__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>A demo account.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A demo account.</inlineHelpText>
+        <label>Portal Dummy Account</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Position__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Position</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TSM_Avg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>TSM Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TSM_Total_Nbr_of_Days_in_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>TSM Total # of Days in Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>TTM_Avg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>USed for Montly Hpd Records (ie Locations) ie (Accounts) since there is no hold_per_day__c.hpd__c  value. for dailys we can only use this for monthlies.</description>
+        <externalId>false</externalId>
+        <label>TTM Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>TTM_Total_Nbr_of_Days_in_Months__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>TTM Total # of Days in Months</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Nbr_of_Days_in_Months_12_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total # of Days in Months (12 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Nbr_of_Days_in_Months_4_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total # of Days in Months (4 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Nbr_of_Days_in_Months_8_Weeks__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total # of Days in Months (8 Weeks)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Nbr_of_HPD_Records__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>Total # of HPD Records</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Twelve_Week_HPD_Avg__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 3 Months.. (Revenue Total /  # of Vgts) / 3. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>12 Week HPD Avg</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Twelve_Week_HPD__c</fullName>
+        <description>Aggregates HPD data for the last 12 weeks.  
+For Machines....(Revenue Total / 90)  
+For Locations.....(Revenue Total /  # of Vgts) / 3
+If not enough data to calculate.. the value will be empty.</description>
+        <externalId>false</externalId>
+        <formula>/**
+ * If Machine (ie Asset)
+ *   Make sure we have enough HPD Data to eval ie. at least 12 weeks or 90 days.. if so
+ *   calc rev / # of days... if not return null.
+ *
+ * If Location (ie Account)
+ *   We are using monthlys so only need to look for 3 in this case.
+ *   Also adding Total Vgt Count into the calc. 
+ */
+CASE( 
+   RecordType.Name,
+   &quot;Machine&quot;,
+      IF( HPD_Nbr_of_Records_12_Weeks__c&gt;=90, HPD_Revenue_Total_12_Weeks__c / 90 ,null),
+   &quot;Location&quot;,
+       IF( HPD_Nbr_of_Records_12_Weeks__c&gt;=3, Twelve_Week_HPD_Avg__c ,null)
+   ,null
+)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <inlineHelpText>Based on Monthly HPD Records. Aggregates HPD data for 3 Months.. (Revenue Total /  # of Vgts) / 3. If Not enough data available, will display a blank value.</inlineHelpText>
+        <label>12 Week HPD</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <label>Hold Per Day Total</label>
+    <listViews>
+        <fullName>ALL_Locations</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>Municipality__c</columns>
+        <columns>Most_Recent_HPD_Date__c</columns>
+        <columns>HPD_Amount_Won_12_Weeks__c</columns>
+        <columns>HPD_Amount_Played_12_Weeks__c</columns>
+        <columns>Total_Nbr_of_HPD_Records__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>HPD_TSM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Location</value>
+        </filters>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <filters>
+            <field>Most_Recent_HPD_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>ALL Locations</label>
+    </listViews>
+    <listViews>
+        <fullName>ALL_Machines</fullName>
+        <columns>NAME</columns>
+        <columns>Asset__c</columns>
+        <columns>Municipality__c</columns>
+        <columns>Account__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>HPD_Nbr_of_Records_8_Weeks__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Machine</value>
+        </filters>
+        <label>ALL Machines</label>
+    </listViews>
+    <listViews>
+        <fullName>All</fullName>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Municipalities</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Municipality__c</columns>
+        <columns>Frequency__c</columns>
+        <columns>HPD_Municipality_Funds_In_Avg__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <columns>HPD_Municipality_Funds_Out_Total_12weeks__c</columns>
+        <columns>HPD_Municipality_Funds_Out_Total_8_Weeks__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Municipality</value>
+        </filters>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <label>All Municipalities</label>
+    </listViews>
+    <listViews>
+        <fullName>HPD_Total_The_Walnut_SpeakEasy</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>Municipality__c</columns>
+        <columns>Most_Recent_HPD_Date__c</columns>
+        <columns>Total_Nbr_of_HPD_Records__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>HPD_TSM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Location</value>
+        </filters>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>The Walnut SpeakEasy</value>
+        </filters>
+        <label>HPD Total The Walnut SpeakEasy</label>
+    </listViews>
+    <listViews>
+        <fullName>Hold_Per_Day_Total_Doghouse_on_the_bea</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>Municipality__c</columns>
+        <columns>Most_Recent_HPD_Date__c</columns>
+        <columns>Total_Nbr_of_HPD_Records__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>HPD_TSM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Location</value>
+        </filters>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>Doghouse On Beach</value>
+        </filters>
+        <label>Hold Per Day Total (Doghouse on the bea)</label>
+    </listViews>
+    <listViews>
+        <fullName>JAKESHPDT</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>Municipality__c</columns>
+        <columns>Most_Recent_HPD_Date__c</columns>
+        <columns>Total_Nbr_of_HPD_Records__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>HPD_TSM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Location</value>
+        </filters>
+        <filters>
+            <field>Frequency__c</field>
+            <operation>equals</operation>
+            <value>Monthly</value>
+        </filters>
+        <filters>
+            <field>Most_Recent_HPD_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <filters>
+            <field>Account__c</field>
+            <operation>contains</operation>
+            <value>JAKES</value>
+        </filters>
+        <label>Hold Per Day Total (JAKES)</label>
+    </listViews>
+    <listViews>
+        <fullName>Walsh_s_Bar_and_Grill</fullName>
+        <columns>NAME</columns>
+        <columns>Account__c</columns>
+        <columns>Location_Type__c</columns>
+        <columns>HPD_Total_VGT_Count__c</columns>
+        <columns>HPD_TTM_Avg__c</columns>
+        <columns>Twelve_Week_HPD__c</columns>
+        <columns>Eight_Week_HPD__c</columns>
+        <columns>Four_Week_HPD__c</columns>
+        <columns>HPD_Municipality_Accel_Avg__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Hold_Per_Day_Total__c.Location</value>
+        </filters>
+        <filters>
+            <field>Portal_Dummy_Account__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Demo Hold Per Day Totals</label>
+    </listViews>
+    <nameField>
+        <displayFormat>HPDT-{000000000}</displayFormat>
+        <label>HPD Total #</label>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Hold Per Day Totals</pluralLabel>
+    <recordTypes>
+        <fullName>Location</fullName>
+        <active>true</active>
+        <label>Location</label>
+        <picklistValues>
+            <picklist>Frequency__c</picklist>
+            <values>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Machine</fullName>
+        <active>true</active>
+        <label>Machine</label>
+        <picklistValues>
+            <picklist>Frequency__c</picklist>
+            <values>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Municipality</fullName>
+        <active>true</active>
+        <label>Municipality</label>
+        <picklistValues>
+            <picklist>Frequency__c</picklist>
+            <values>
+                <fullName>Daily</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Monthly</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts/>
+    <sharingModel>Read</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

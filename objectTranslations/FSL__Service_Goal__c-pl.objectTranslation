@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Cel usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Cele usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Cel usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Cele usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Celu usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Celów usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Celowi usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Celom usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Celem usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Celami usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Celu usługi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Celach usługi</value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Logic Data --></label>
+        <name>FSL__Custom_Logic_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Objective Type --></label>
+        <name>FSL__Custom_Type__c</name>
+        <picklistValues>
+            <masterLabel>ASAP</masterLabel>
+            <translation>Jak najszybciej</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Engineer Idle Time</masterLabel>
+            <translation>Minimalizuj czas bezczynności inżyniera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Overtime</masterLabel>
+            <translation>Minimalizuj nadgodziny</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Travel</masterLabel>
+            <translation>Minimalizuj podróż</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Use Of Elasticity</masterLabel>
+            <translation>Minimalizuj korzystanie z elastyczności</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Resource</masterLabel>
+            <translation>Preferowany zasób</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority By Distance To Engineer</masterLabel>
+            <translation>Priorytet związany z odległością od inżyniera</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Priority</masterLabel>
+            <translation>Priorytet zasobu</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skill Level</masterLabel>
+            <translation>Poziom umiejętności</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Priority</masterLabel>
+            <translation>Priorytet zadania</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel From Home Base</masterLabel>
+            <translation>Podstawa podróży z domu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Uwzględnia lub nie harmonogramowanie w minimalizacji czasu pierwszej i ostatniej podróży w ciągu dnia do / z siedziby macierzystej zasobu usługi</help>
+        <label><!-- Exclude Home Base Travel --></label>
+        <name>FSL__Ignore_Home_Base_Coordinates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object_Group_Field --></label>
+        <name>FSL__Object_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prioritize Resource --></label>
+        <name>FSL__Prioritize_Resource__c</name>
+        <picklistValues>
+            <masterLabel>Least Qualified</masterLabel>
+            <translation>Najmniej wykwalifikowany</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Most Qualified</masterLabel>
+            <translation>Najbardziej wykwalifikowany</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource_Group_Field --></label>
+        <name>FSL__Resource_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Priority Field --></label>
+        <name>FSL__Resource_Priority_Field__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nazwa celu usługi</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Schedule as soon as possible --></description>
+        <label><!-- ASAP --></label>
+        <name>FSL__Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Custom Objective --></description>
+        <label><!-- Custom Objective --></label>
+        <name>FSL__Objective_Custom_Logic</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize the use of overtime --></description>
+        <label><!-- Minimize Overtime --></label>
+        <name>FSL__Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize travel time --></description>
+        <label><!-- Minimize Travel --></label>
+        <name>FSL__Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prioritize scheduling according to preferred resource --></description>
+        <label><!-- Preferred Resource --></label>
+        <name>FSL__Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer a resource based on a field value on the resource --></description>
+        <label><!-- Resource Priority --></label>
+        <name>FSL__Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer the least/most qualified candidate --></description>
+        <label><!-- Skill Level --></label>
+        <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Resource Priority Field should not be empty --></errorMessage>
+        <name>FSL__Resource_Priority_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

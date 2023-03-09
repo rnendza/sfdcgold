@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>A field Assessment has been submitted to PM for approval</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Field Assessment Approval Requested</name>
+    <style>none</style>
+    <subject>{!Field_Assessment__c.RecordType} Field Assessment Approval Requested: {!Field_Assessment__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 운전자</value>
+    </caseValues>
+    <fields>
+        <label><!-- Driver Id --></label>
+        <name>maps__DriverId__c</name>
+    </fields>
+    <fields>
+        <help>Telematics 경고 수신을 위해 사용되는 이메일</help>
+        <label><!-- Email Used for Telematics Alerts --></label>
+        <name>maps__EmailUsedForTelematicsAlerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>maps__FirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home City --></label>
+        <name>maps__HomeCity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Country --></label>
+        <name>maps__HomeCountry__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Full Address --></label>
+        <name>maps__HomeFullAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Postal Code --></label>
+        <name>maps__HomePostalCode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home State --></label>
+        <name>maps__HomeState__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Street Address --></label>
+        <name>maps__HomeStreetAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>maps__LastName__c</name>
+    </fields>
+    <fields>
+        <help>운전자의 특정 근무 시간 조회</help>
+        <label><!-- Live Working Hours --></label>
+        <name>maps__LiveWorkingHours__c</name>
+        <relationshipLabel><!-- Live Drivers --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>이 운전자 집 주소에 대한 위도/경도 값</help>
+        <label><!-- Location --></label>
+        <name>maps__Location__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 장치 연결 해제 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Device Disconnect Alerts? --></label>
+        <name>maps__ReceiveDeviceDisconnectAlerts__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 과도한 액셀 사용 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Hard Accel Alerts? --></label>
+        <name>maps__ReceiveHardAccelAlerts__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 과도한 브레이크 사용 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Hard Braking Alerts? --></label>
+        <name>maps__ReceiveHardBrakingAlerts__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 최대 속도 임계값 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Max Speed Threshold Alerts --></label>
+        <name>maps__ReceiveMaxSpeedThresholdAlerts__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 게시된 속도 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Posted Speed Alerts? --></label>
+        <name>maps__ReceivePostedSpeedAlerts__c</name>
+    </fields>
+    <fields>
+        <help>운전자가 정지 경고를 수신해야 할지를 표시합니다</help>
+        <label><!-- Receive Stop Alerts? --></label>
+        <name>maps__ReceiveStopAlerts__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live Drivers --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Maps 실시간 운전자 이름</nameFieldLabel>
+</CustomObjectTranslation>

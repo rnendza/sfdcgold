@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>number</bucketType>
+        <developerName>BucketField_62501049</developerName>
+        <masterLabel>Bucket: Age of Request</masterLabel>
+        <nullTreatment>z</nullTreatment>
+        <sourceColumnName>Account.Reimbursements__r$Age_of_Request__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <to>14</to>
+            </sourceValues>
+            <value>14 Days or Under</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>14</from>
+                <to>21</to>
+            </sourceValues>
+            <value>15-21 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>21</from>
+                <to>28</to>
+            </sourceValues>
+            <value>22-28 Days</value>
+        </values>
+        <values>
+            <sourceValues>
+                <from>28</from>
+            </sourceValues>
+            <value>29+ Days</value>
+        </values>
+    </buckets>
+    <columns>
+        <field>Account.Reimbursements__r$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Reimbursements__r$Payment_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Reimbursements__r$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Reimbursements__r$Type__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Reimbursements__r$Amount_Paid__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Relationship_Manager__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Reimbursements__r$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>4/1/2022 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Reimbursements__r$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Paid</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Reimbursement Requests - Time to Paid</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_with_Reimbursements__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <sortColumn>Account.Reimbursements__r$CreatedDate</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

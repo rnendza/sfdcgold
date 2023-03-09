@@ -1,0 +1,4 @@
+Account DBA Name: {!Account.Name}
+Physical City: {!Account.BillingCity}
+Previous Lock Region: {!Account.Prior_Value_Lock_Region__c}
+New Lock Region: {!Account.Lock_Region__c}

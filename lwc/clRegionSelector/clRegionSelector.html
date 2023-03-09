@@ -1,0 +1,28 @@
+<!-- Cl Region Selector -->
+<template>
+    <div class="slds-form-element__control">
+        <label class="slds-form-element__label" for="region_pl">
+            {selectLabel}
+        </label>
+        <div>
+            <template if:true={showPlValues}>
+                <select class="slds-select" id="region_pl" name="region_pl" onchange={handlePlChange}>
+                    <template for:each={regionPlOptions} for:item="option">
+                        <option key={option.label}
+                                class="uiInputSelectOption"
+                                selected={option.selected}
+                                value={option.value}>
+                            {option.label}
+                        </option>
+                    </template>
+                </select>
+            </template>
+            <template if:true={showStencil}>
+                <c-ui-custom-stencil
+                        iterations="1"
+                        type="list" columns="1">
+                </c-ui-custom-stencil>
+            </template>
+        </div>
+    </div>
+</template>

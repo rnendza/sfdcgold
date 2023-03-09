@@ -1,0 +1,93 @@
+<!-- Ac Growth Metrics -->
+<template>
+    <!-- DIV below is so we can inject css into the DOM as workaround to LWC Shadow DOM Limitations. -->
+    <div lwc:dom="manual" class="fake-theme-overrides-class"></div>
+    <template if:false={dataLoaded}>
+        <lightning-spinner alternative-text="processing"></lightning-spinner>
+    </template>
+    <template if:true={dataLoaded}>
+        <div if:true={displayNothing}>
+            <div class="slds-box">
+                <div class="slds-inline_icon_text slds-grid slds-inline_icon_text--warning">
+                    <lightning-icon icon-name="utility:warning" variant="warning" size="small">
+                    </lightning-icon>
+                    <div class="slds-col slds-align-middle slds-p-left--medium">
+                        <p>You've chosen to display nothing on this page. Please go to your Setting page.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div if:false={customSecurityOverride}>
+            <div if:false={displayNothing}
+             class="slds-box accel-shadow-drop accel-mobile-box-margins accel-box-header accel-form">
+            <h3 class="accel-hide-on-mobile">
+                <lightning-icon icon-name="standard:search"
+                                size="small"
+                                class="slds-m-right_xx-small">
+                </lightning-icon>
+                Location Search
+            </h3>
+            <div class="slds-grid slds-wrap">
+                <template if:true={displaySearchFormHelp}>
+                    <div class="accel-help-icon-container">
+                        <lightning-helptext content={label.searchFormHelp}></lightning-helptext>
+                    </div>
+                </template>
+
+                <div class="slds-col slds-size_1-of-1 slds-large-size--1-of-4 accel-desktop-form-p-right_medium">
+                    <fieldset class="slds-form--compound">
+                        <legend class="slds-form-element__label slds-text-title--caps accel-hide-on-mobile">&nbsp;
+                        </legend>
+                        <div class="slds-form-element__group">
+                            <div class="slds-form-element__row">
+                                <div class="slds-form-element slds-size--1-of-1">
+                                    <lightning-icon icon-name="standard:search"
+                                                    size="x-small"
+                                                    class="slds-m-right_xx-small accel-hide-768-up ">
+                                    </lightning-icon>
+                                    <c-ac-loc-type-pl onselected={selectedLocTypeHandler}></c-ac-loc-type-pl>
+                                </div>
+                            </div>
+                        </div>
+                    </fieldset>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-large-size--3-of-4">
+                    <c-ac-start-end-date
+                            hpd-dates={hpdDates}
+                            date-suggestions={dateSuggestions}
+                            onselectedstartdate={selectedStartDateHandler}
+                            onselectedenddate={selectedEndDateHandler}>
+                    </c-ac-start-end-date>
+                </div>
+            </div>
+        </div>
+        </div>
+        <div if:false={customSecurityOverride}>
+        <template if:true={communityUserSettings.Display_Location_Growth_Chart__c}>
+            <div class="slds-box accel-shadow-drop accel-mobile-box-margins slds-m-top_x-large accel-mobile-container-padding">
+                <template if:true={displayLocShareChartHelp}>
+                    <div class="accel-help-icon-container">
+                        <lightning-helptext content={label.locShareChartHelp}></lightning-helptext>
+                    </div>
+                </template>
+                <c-ac-growth-chart-loc-revenue
+                        hpd-compare-data={hpdCompareData} loc-type={selectedLocType} start-month={startMonth}
+                        end-month={endMonth} community-user-settings={communityUserSettings}>
+                </c-ac-growth-chart-loc-revenue>
+            </div>
+        </template>
+        </div>
+        <template if:true={communityUserSettings.Display_Location_Growth_Datatable__c}>
+            <div class="slds-box accel-shadow-drop accel-mobile-box-margins slds-m-top_x-large accel-mobile-container-padding">
+                <template if:true={displayMetricsDatatableHelp}>
+                    <div class="accel-help-icon-container">
+                        <lightning-helptext content={label.growthMetricsDatatableHelp}></lightning-helptext>
+                    </div>
+                </template>
+                <c-ac-revenue-compare-table hpd-compare-data={hpdCompareData} month-1={startMonth}
+                                            month-2={endMonth}></c-ac-revenue-compare-table>
+            </div>
+        </template>
+    </template>
+    <div class="accel-mobile-xxxxxbottom-padding-due-to-template-absolute-positioning"></div>
+</template>

@@ -1,0 +1,9 @@
+<design:component>
+    <design:attribute name="debugConsole" label="Debug logs to console for this component"
+                      description="Toggling this will turn on / off logging to the browser console."
+                      default="false" required="false"/>
+    <design:attribute name="useParentChartData" label="User the hpd data from the parent component."
+                      description="If toggled off. will requery the db with accountId, start date and end date.
+                      If On. will not run a query and user parent cmp data."
+                      default="false" required="false"/>
+</design:component>

@@ -1,0 +1,77 @@
+<!-- Portal Advisory Loader Search -->
+<template>
+    <template if:true={_isSearching}>
+        <div class="progress-center slds-p-bottom_x-small slds-p-top_small slds-p-horizontal_x-small">
+            <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+        </div>
+    </template>
+    <div
+            class="slds-m-top_small slds-m-bottom_small slds-p-horizontal_small slds-p-vertical_small slds-box_border slds-box_small"
+            style="background-color: rgb(250,250,249);">
+        <template if:true={showStencil}>
+            <c-ui-custom-stencil
+                    iterations="6"
+                    child-class="slds-var-m-around-small"
+                    type="list" columns="3">
+            </c-ui-custom-stencil>
+        </template>
+        <template if:true={showSearchInputs}>
+            <div class="slds-p-horizontal_small slds-p-bottom_small">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-2">
+                        <div id="variants"
+                             class="slds-p-vertical_x-small slds-grid slds-grid_vertical-align-center">
+                            <lightning-icon icon-name="standard:search" size="Small"
+                                            alternative-text="Search" title="Search"></lightning-icon>
+                            <lightning-formatted-text
+                                    class="slds-card__header-title slds-col slds-p-left_x-small"
+                                    value={cardTitle}></lightning-formatted-text>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                        <div class="slds-p-top_xx-small">
+                            <lightning-button-icon
+                                    icon-name="utility:close"
+                                    size="small"
+                                    onclick={handleSearchFiltersClose}
+                                    alternative-text="Close">
+                            </lightning-button-icon>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <lightning-input type="date" name="startDate" label="Advisory Start Date"
+                                         value={_startDate}
+                                         data-id="startDate"
+                                         onchange={handleChange}
+                                         max={_startDateMax}>
+                        </lightning-input>
+                    </div>
+                    <div>
+                        <lightning-input type="date" name="endDate" label="Advisory End Date"
+                                         value={_endDate}
+                                         data-id="endDate"
+                                         onchange={handleChange}
+                                         min={_startDate}
+                                         max={_endDateMax}>
+                        </lightning-input>
+                    </div>
+                </div>
+                <div class="slds-p-top_small">
+                    <lightning-button
+                            variant={searchButtonVariant}
+                            disabled={disableRerunButton}
+                            style="display: grid; width: 100%"
+                            name="runQuery"
+                            data-id="search"
+                            icon-name="utility:search"
+                            label={searchButtonLabel}
+                            title="Click here to rerun the data query"
+                            onclick={handleButtonClick}>
+                    </lightning-button>
+                </div>
+            </div>
+        </template>
+    </div>
+</template>

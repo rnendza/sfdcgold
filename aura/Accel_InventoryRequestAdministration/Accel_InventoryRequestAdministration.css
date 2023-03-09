@@ -1,0 +1,10 @@
+.THIS .accel-admin-component{ background-color: white;padding-bottom: 20px;}
+.THIS .accel-admin-card-header {background-color: black; border-left:3px solid black;border-right:3px solid black}
+.THIS .accel-admin-card-header > header {color:white;background-color: black}
+.THIS .slds-card__header {border-bottom:0;padding-bottom: 0}
+.THIS .accel-danger-text {color:red;font-weight: bold;text-transform: uppercase;}
+.THIS .slds-checkbox_off {color:red;font-weight: bold;}
+.THIS .slds-checkbox_on {color:blue;font-weight: bold;}
+.THIS lightning-icon.accel-comp-header-icon > lightning-primitive-icon > svg > use{
+    fill: white;
+}

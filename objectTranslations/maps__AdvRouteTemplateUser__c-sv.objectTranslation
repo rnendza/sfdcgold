@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Mallanvändaren i Maps Advanced-rutt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>En mallanvändare i Maps Advanced-rutt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Mallanvändare i Maps Advanced-rutt</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Mallanvändarna i Maps Advanced-rutt</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Mallanvändare i Maps Advanced-rutt</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Mallanvändare i Maps Advanced-rutt</value>
+    </caseValues>
+    <fields>
+        <label><!-- Maps Advanced Route Template --></label>
+        <name>maps__AdvRouteTemplate__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Template Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Async Apex Job Id --></label>
+        <name>maps__AsyncApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatic Op Starts On --></label>
+        <name>maps__AutomaticOpStartsOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Url --></label>
+        <name>maps__BaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Job Attempts --></label>
+        <name>maps__CurrentJobAttempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Processing Status Bulk --></label>
+        <name>maps__CurrentProcessingStatusBulk__c</name>
+        <picklistValues>
+            <masterLabel>Available For Submission</masterLabel>
+            <translation>Tillgängligt för inskick</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Route Request</masterLabel>
+            <translation>Byggruttbegäran</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Route Request Needs Processing</masterLabel>
+            <translation>Byggruttbegäran behöver bearbetas</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Not Submitted</masterLabel>
+            <translation>Nästa arbetsdag ej inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Submitted</masterLabel>
+            <translation>Nästa arbetsdag inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Submitted</masterLabel>
+            <translation>Dirigeringspoll inskickad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Processing Status --></label>
+        <name>maps__CurrentProcessingStatus__c</name>
+        <picklistValues>
+            <masterLabel>Available For Submission</masterLabel>
+            <translation>Tillgängligt för inskick</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geocoding Not Submitted</masterLabel>
+            <translation>Geokodning ej inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geocoding Submitted</masterLabel>
+            <translation>Geokodning inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Not Submitted</masterLabel>
+            <translation>Nästa arbetsdag ej inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Submitted</masterLabel>
+            <translation>Nästa arbetsdag inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Priorities Not Submitted</masterLabel>
+            <translation>Objektprioriteter ej inskickade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Priorities Submitted</masterLabel>
+            <translation>Objektprioriteter inskickade</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Not Submitted</masterLabel>
+            <translation>Dirigering ej inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Not Submitted</masterLabel>
+            <translation>Dirigeringspoll ej inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Submitted</masterLabel>
+            <translation>Dirigeringspoll inskickad</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Submitted</masterLabel>
+            <translation>Dirigering inskickad</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Template Range Start Date --></label>
+        <name>maps__CurrentTemplateRangeStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Processing --></label>
+        <name>maps__DateProcessing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Previous Route Data --></label>
+        <name>maps__DeletePreviousRouteData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Submitted At --></label>
+        <name>maps__JobSubmittedAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kill Route Generation --></label>
+        <name>maps__KillRouteGeneration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Auto Optimization Run At --></label>
+        <name>maps__LastAutoOptimizationRunAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Failed Job Error --></label>
+        <name>maps__LastFailedJobError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Job Stopped Status --></label>
+        <name>maps__LastJobStoppedStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Location --></label>
+        <name>maps__LastLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Optimization Run At --></label>
+        <name>maps__LastOptimizationRunAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Optimization Succeeded At --></label>
+        <name>maps__LastOptimizationSucceededAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Deleting --></label>
+        <name>maps__NeedsDeleting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Email Id --></label>
+        <name>maps__NextEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimize From Current Time --></label>
+        <name>maps__OptimizeFromCurrentTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Routing Needed --></label>
+        <name>maps__ProcessRoutingNeeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Id --></label>
+        <name>maps__ProfileId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for Use --></label>
+        <name>maps__ReadyForUse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Job Id --></label>
+        <name>maps__RoutingJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Started On --></label>
+        <name>maps__RoutingStartedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Completion Email --></label>
+        <name>maps__SendCompletionEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Next Email --></label>
+        <name>maps__SendNextEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Routing on Date --></label>
+        <name>maps__StopRoutingOnDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>maps__UserEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- User First Name --></label>
+        <name>maps__UserFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Last Name --></label>
+        <name>maps__UserLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Time Zone Key --></label>
+        <name>maps__UserTimeZoneKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Template Users --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Namn på användare av ruttmall i Maps Adv</nameFieldLabel>
+</CustomObjectTranslation>

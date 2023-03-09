@@ -1,0 +1,49 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global"
+                controller="InventoryRequestController"
+                description="Flow_LaunchInventoryRequest_Container">
+
+    <aura:attribute name="flowName" type="String" default="InventoryRequest_Processor"/>
+    <aura:attribute name="selectedRecordId" type="String" />
+    <aura:attribute name="fireFlow" type="Boolean" default="false"/>
+    <aura:attribute name="showFireButton" type="Boolean" default="true"/>
+    <aura:attribute name="isRunningFlow" type="Boolean" default="false"/>
+    <aura:attribute name="alreadyCreated" type="Boolean" default="false"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="qtyToCreate" type="Integer"/>
+    <aura:attribute name="inventoryRequest" type="Inventory_Request__c"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <div style="border:2px dotted red">
+        <aura:if isTrue="{!v.selectedRecordId != null}">
+        <lightning:flow aura:id="flowData" onstatuschange="{!c.statusChange}"/>
+            <lightning:card title="Asset Creation">
+                    <aura:set attribute="actions">
+                        <aura:if isTrue="{!and(!v.isRunningFlow,v.showFireButton)}">
+                            <lightning:button
+                                    onclick="{!c.handleCreateAssets}"
+                                    variant="success" label="Create Assets"/>
+                        </aura:if>
+                    </aura:set>
+                <p class="slds-p-horizontal_small">
+                    WIP<br/>
+                    <aura:if isTrue="{!!v.isRunningFlow}">
+                        Click create assets to blah blah blah blah blah @TODO fire flow on button click. show status
+                        refresh assets..etc.
+                    </aura:if>
+                    <aura:if isTrue="{!v.isRunningFlow}">
+                        <div>
+                                <div style="text-align: center;font-size:1.2em;font-weight: bold">
+                                    Creating Assets..........
+                                </div>
+                        </div>
+                    </aura:if>
+                </p>
+            </lightning:card>
+    </aura:if>
+    </div>
+</aura:component>

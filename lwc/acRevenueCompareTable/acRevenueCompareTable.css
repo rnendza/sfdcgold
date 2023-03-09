@@ -1,0 +1,72 @@
+.accel-test-borders{border:1px dotted red}
+.accel-csv-download-button{
+    margin-right:10px;
+    font-weight: normal;
+    font-size:.75em;
+}
+
+.table-test thead th span {
+    background-color: #16325c;
+    color: white
+}
+.accel-grid-styled  table thead th > span {
+    background-color: red!important;
+}
+.accel-grid-styled .slds-th__action {
+    background-color: silver!important;
+}
+.accel-box-header {font-size:1.25em}
+@media only screen and (max-width: 896px) {
+    .accel-box-header {font-size:.95em}
+}
+
+
+    /*
+    Certainly this is a hack but it's worth a shot to speed up when doing from desktop to mobile and visa-versa
+    */
+.accel-chrome-hardware-acceleration {transform: rotateX(0deg);}
+
+@media only screen and (max-width: 767px) {  .accel-hide-0-to-767 {display: none;}  }
+@media only screen and (min-width: 768px) {  .accel-hide-768-up {display: none;}  }
+/* Experimental below */
+.accel-table__wrapper {width: 100%;}
+.accel-table__wrapper .table { width: 100%; max-width: 100%;}
+.accel-table__wrapper {padding-bottom: 20px;}
+
+/* ------- Presentational Formatting --------- */
+h1 {text-align: center;}
+.table { border: 1px solid #f0f0f0;border-collapse: collapse;}
+.table tr {border-bottom: 1px solid #f0f0f0;}
+.table thead tr {border-bottom: 2px solid #f0f0f0;}
+.table td, .table th {padding: .3em;}
+.table th {text-align: left;}
+.table {margin: 0 auto;width: 100%;border-spacing: 0;}
+.table thead { position: absolute; clip: rect(1px, 1px, 1px, 1px);padding: 0;border: 0;height: 1px;
+    width: 1px;overflow: hidden;
+}
+.table tbody, .table tr, .table th, .table td { display: block;padding: 0; text-align: left;white-space: normal;}
+.accel-positive-number {color:green;font-weight:bold}
+.accel-negative-number {color:red;font-weight: bold}
+.table tr td, .table tr th { padding: .30em .13em; vertical-align: middle;overflow: hidden;position: relative;
+    border: 1px solid #EDF0F1;border-top: none;width: 100%;white-space: normal;
+}
+.table tr td, .table tr td { padding: .2em .11em}
+
+.table th[scope="row"] { width: 100%; text-align: center;display: block;background-color: #F3F2F2;
+    margin: 0 auto;
+    border-top: 2px solid #EDF0F1!important;
+    border-bottom: 2px solid #EDF0F1!important;
+    font-size:.9em;
+}
+.table td[data-header]:before {content: attr(data-header);display: block;float: left;width: 50%;color: #000000;
+    font-weight:600;text-align: left;
+}
+.table td[data-header] > * { display: block;width: 50%;float: right;clear: right;padding-left: 1em;margin-top: 0;}
+
+.table td[data-header]:after {content: "";position: absolute;left: 0;top: 0;width: 50%;border-right: 1px solid #EDF0F1;
+    padding-bottom: 200%;
+    display: block;
+}
+.table td[data-header] {
+    font-size:.85em;
+}

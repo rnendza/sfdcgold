@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>If recipient needs to change, please update &quot;Task: Notify Sales Ops of Task Completion&quot; email alert</description>
+        <name>Notify_Sales_Ops_of_Task_Completion</name>
+        <label>Notify Sales Ops of Task Completion</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>Task.Task_Notify_Sales_Ops_of_Task_Completion</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Task_Creator_of_Completion</name>
+        <label>Notify Task Creator of Completion</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <actionName>Task.Task_Notify_Creator_of_Task_Completion</actionName>
+        <actionType>emailAlert</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Is_Creator_of_Task_Active</name>
+        <label>Is Creator of Task Active?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>Notify_Sales_Ops_of_Task_Completion</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Creator is Inactive</defaultConnectorLabel>
+        <rules>
+            <name>Creator_is_Active</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.CreatedBy.IsActive</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Task_Creator_of_Completion</targetReference>
+            </connector>
+            <label>Creator is Active</label>
+        </rules>
+    </decisions>
+    <description>When the task assignee is different than the creator and the task is completed, email the creator of the task
+2/6/2023 - modified flow to send email to creator if they are active, and to send it to Shane if they are inactive</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>the email address of the assignee of the task</description>
+        <name>Assigned_to_Email_fx</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Owner:User.Email}</expression>
+    </formulas>
+    <interviewLabel>Task Modified Only {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Task Modified Only</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Is_Creator_of_Task_Active</targetReference>
+        </connector>
+        <filterFormula>and(
+ispickval({!$Record.Status},&quot;Completed&quot;),
+{!$Record.CreatedById}&lt;&gt;{!$Record.OwnerId})</filterFormula>
+        <object>Task</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Obsolete</status>
+</Flow>

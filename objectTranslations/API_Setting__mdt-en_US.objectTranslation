@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>API Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>API Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- API Method --></label>
+        <name>API_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Content-Type --></label>
+        <name>Content_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Database --></label>
+        <name>Database__c</name>
+    </fields>
+    <fields>
+        <label><!-- Endpoint --></label>
+        <name>Endpoint__c</name>
+    </fields>
+    <fields>
+        <label><!-- Http Method --></label>
+        <name>Http_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Http Request Timeout --></label>
+        <name>Http_Request_Timeout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Named Credential --></label>
+        <name>Named_Credential__c</name>
+    </fields>
+    <fields>
+        <label><!-- Password --></label>
+        <name>Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Username --></label>
+        <name>Username__c</name>
+    </fields>
+    <fields>
+        <label><!-- cache-control --></label>
+        <name>cache_control__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

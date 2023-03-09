@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>地图标记层相关列表</value>
+    </caseValues>
+    <fields>
+        <label><!-- Column 1 --></label>
+        <name>maps__Column1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Column 2 --></label>
+        <name>maps__Column2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Column 3 --></label>
+        <name>maps__Column3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Column 4 --></label>
+        <name>maps__Column4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Column 5 --></label>
+        <name>maps__Column5__c</name>
+    </fields>
+    <fields>
+        <label><!-- List Label --></label>
+        <name>maps__ListLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Num To Display --></label>
+        <name>maps__NumToDisplay__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reference Field --></label>
+        <name>maps__ReferenceField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sort Related List --></label>
+        <name>maps__RelatedSort__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saved Query --></label>
+        <name>maps__SavedQuery__c</name>
+        <relationshipLabel><!-- Maps Related Lists --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>对象</nameFieldLabel>
+</CustomObjectTranslation>

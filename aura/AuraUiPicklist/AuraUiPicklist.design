@@ -1,0 +1,24 @@
+<design:component label="Custom UI Picklist">
+
+    <design:attribute name="picklistFieldApiName" label="Picklist Field" required="true"
+                      description="Picklist field's API name used (from this object). This field does not need to be included in page layouts. This must be specified correctly or the wrath of Thor shall come down upon you!" />
+    <design:attribute name="picklistRequired" label="Picklist Value is Required"
+                      description="Requires an option to be selected." />
+    <design:attribute name="picklistLabelOverride" label="Picklist Label"
+                      description="Allows one to customize the label of the picklist. (if not specified this will default to the label for the picklist field" />
+    <design:attribute name="picklistDefaultOverride" label="Picklist Default Override"
+                      description="Overrides the value on the sObject.fieldApiName and the record type default" />
+    <design:attribute name="picklistCssClass" label="Picklist Css Class"
+                      dataSource="accel-bold-field-label"
+                      description="Allows one to apply additional styling to the picklist. (These options are provided by the component developer. Please contact the developer if further customization is needed." />
+    <design:attribute name="debugConsole" label="Turn logging on"
+                      description="Will allow browser console logging." />
+    <design:attribute name="fireOptionSelectedEvent" label="Fire Option Selected Event"
+                      description="Will fire an event upon a picklist option selected that can be consumed by other components (appEvent)." />
+
+    <design:supportedFormFactors>
+        <design:supportedFormFactor type="Large"/>
+        <design:supportedFormFactor type="Small"/>
+    </design:supportedFormFactors>
+
+</design:component>

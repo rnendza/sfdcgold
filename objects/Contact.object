@@ -1,0 +1,2449 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>AddToCampaign</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CallHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EmailHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableCustomerPortal</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnablePartnerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>EnableSelfService</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ListClean</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Merge</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>NewContact</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>RequestUpdate</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SmsHighlightAction</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <content>Contact_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Contact_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewCustomerPortal</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewPartnerPortalUser</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>ViewSelfService</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>Contact_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>Contact_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>Community_Contact__c</fields>
+        <fields>Title</fields>
+        <fields>AccountId</fields>
+        <fields>Phone</fields>
+        <fields>Email</fields>
+        <fields>MobilePhone</fields>
+        <fields>OwnerId</fields>
+        <label>Contact Compact Layout</label>
+    </compactLayouts>
+    <enableEnhancedLookup>true</enableEnhancedLookup>
+    <enableFeeds>true</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>AC_Home_Display_Yesterday_Location_Share__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates that yesterdays location share will display on the home page. Unchecked indicates that it will be hidden.</inlineHelpText>
+        <label>(DEPRECATE) Yesterday Location Share</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AC_Home_Location_Address_Display__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Checked indicates that an address will show as opposed to the location name. Unchecked indicates that only the address will show (on the community home page / yesterday share component) 
+https://accel-entertainment.monday.com/boards/286658657/pulses/294459025</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Checked indicates that an address will display for your location on the Home page / Previous day for location share chart. Unchecked indicates a DBA Name will display</inlineHelpText>
+        <label>(DEPRECATE) Display Location Address</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AccountId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Account_Name_Text__c</fullName>
+        <description>text field for account name</description>
+        <externalId>false</externalId>
+        <formula>Account.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Account Name (Text)</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Account_RM__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>not on any layouts
+updated via a flow
+used for the email alert that goes out to RM&apos;s when a community contact is created</description>
+        <externalId>false</externalId>
+        <label>Account RM</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts1</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Acquisition__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Acquisition</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Amusement_Operator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Amusement Operator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>AssistantName</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>AssistantPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Background_Check_Completed__c</fullName>
+        <externalId>false</externalId>
+        <label>Background Check Completed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Birthdate</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>CaseSafeId__c</fullName>
+        <externalId>false</externalId>
+        <formula>CASESAFEID(Id)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>CaseSafeId</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Community_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Community Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Community_Terms_Accepted_Date__c</fullName>
+        <description>The Date the user clicked accept after reading the Terms of Service in communities.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Date the user clicked accept after reading the Terms of Service in communities.</inlineHelpText>
+        <label>Community Terms Accepted Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>DateTime</type>
+    </fields>
+    <fields>
+        <fullName>Contact_PO_Designation__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>PO Designation is based on the Contact Type and Primary Sales Agent Type</inlineHelpText>
+        <label>Contact PO Designation</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Contact_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>xContact Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Partner Operator</fullName>
+                    <default>false</default>
+                    <label>Partner Operator</label>
+                </value>
+                <value>
+                    <fullName>Amusement Operator</fullName>
+                    <default>false</default>
+                    <label>Amusement Operator</label>
+                </value>
+                <value>
+                    <fullName>User</fullName>
+                    <default>false</default>
+                    <label>User</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Contact_UType__c</fullName>
+        <description>Type of the Contact</description>
+        <externalId>false</externalId>
+        <label>Contact Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Acquisition</fullName>
+                    <default>false</default>
+                    <label>Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Partner Operator</fullName>
+                    <default>false</default>
+                    <label>Partner Operator</label>
+                </value>
+                <value>
+                    <fullName>Amusement Operator</fullName>
+                    <default>false</default>
+                    <label>Amusement Operator</label>
+                </value>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>false</default>
+                    <label>Employee</label>
+                </value>
+                <value>
+                    <fullName>Terminal Operator</fullName>
+                    <default>false</default>
+                    <label>Terminal Operator</label>
+                </value>
+                <value>
+                    <fullName>Delisted</fullName>
+                    <default>false</default>
+                    <label>Delisted</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Department</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>DoNotCall</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Email</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Do_Not_Mail__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Do Not Mail</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Employee_Role__c</fullName>
+        <externalId>false</externalId>
+        <label>Employee Role</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>BDM</fullName>
+                    <default>false</default>
+                    <label>BDM</label>
+                </value>
+                <value>
+                    <fullName>RM</fullName>
+                    <default>false</default>
+                    <label>RM</label>
+                </value>
+                <value>
+                    <fullName>Executive</fullName>
+                    <default>false</default>
+                    <label>Executive</label>
+                </value>
+                <value>
+                    <fullName>Other</fullName>
+                    <default>false</default>
+                    <label>Other</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>External_Id__c</fullName>
+        <caseSensitive>true</caseSensitive>
+        <externalId>true</externalId>
+        <label>External Id</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>true</unique>
+    </fields>
+    <fields>
+        <fullName>Fax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>GenderIdentity</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfEmail</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HasOptedOutOfFax</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>HomePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>IGB_Email_Address__c</fullName>
+        <externalId>false</externalId>
+        <label>IGB Email Address</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>IGB_Email_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>IGB Email Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Inactive__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Inactive</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IndividualId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Jigsaw</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Key_Contact__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Used for Trade Association account record types only. Accessibility provided only via the Trade Associations Access permission set.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Key Contact for Trade Association accounts.</inlineHelpText>
+        <label>Key Contact</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>LastCURequestDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LastCUUpdateDate</fullName>
+    </fields>
+    <fields>
+        <fullName>LeadSource</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>License_Expiration_Date__c</fullName>
+        <externalId>false</externalId>
+        <label>License Expiration Date</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Mail_Merge_Recipient__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Mail Merge Recipient</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>MailingAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>MobilePhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Name</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Non_Soliciting_Sales_Agent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Non-Soliciting Sales Agent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>OtherAddress</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OtherPhone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Other_Professional_Roles__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>(lawyer, accountant, bar owner, town mayor, etc.)</inlineHelpText>
+        <label>Other Professional Roles</label>
+        <length>255</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackFeedHistory>true</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>PO_Designation__c</fullName>
+        <description>Partner Operator Designation value based on the Partner Operator Type</description>
+        <externalId>false</externalId>
+        <label>PO Designation</label>
+        <length>40</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Partner_Operator_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Partner Operator Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Partner Operator</fullName>
+                    <default>false</default>
+                    <label>Partner Operator</label>
+                </value>
+                <value>
+                    <fullName>Terminal Operator</fullName>
+                    <default>false</default>
+                    <label>Terminal Operator</label>
+                </value>
+                <value>
+                    <fullName>Acquisition</fullName>
+                    <default>false</default>
+                    <label>Acquisition</label>
+                </value>
+                <value>
+                    <fullName>Employee</fullName>
+                    <default>false</default>
+                    <label>Employee</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Partner_Operator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Partner Operator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Phone</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Portal_Contact_Request__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>This field is updated via a FLOW when the contact record is created as the result of an approved PCR
+Not editable by users who have visibility rights to it.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If this field is populated, it was created as a the result of the Portal Contact Request record that populates it.</inlineHelpText>
+        <label>Portal Contact Request</label>
+        <referenceTo>Portal_Contact_Request__c</referenceTo>
+        <relationshipLabel>Contacts</relationshipLabel>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Preferred_Primary_Language__c</fullName>
+        <externalId>false</externalId>
+        <label>Preferred/Primary Language</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>English</fullName>
+                    <default>false</default>
+                    <label>English</label>
+                </value>
+                <value>
+                    <fullName>Spanish</fullName>
+                    <default>false</default>
+                    <label>Spanish</label>
+                </value>
+                <value>
+                    <fullName>Polish</fullName>
+                    <default>false</default>
+                    <label>Polish</label>
+                </value>
+                <value>
+                    <fullName>Hindi</fullName>
+                    <default>false</default>
+                    <label>Hindi</label>
+                </value>
+                <value>
+                    <fullName>Chinese (Mandarin)</fullName>
+                    <default>false</default>
+                    <label>Chinese (Mandarin)</label>
+                </value>
+                <value>
+                    <fullName>Chinese (Cantonese)</fullName>
+                    <default>false</default>
+                    <label>Chinese (Cantonese)</label>
+                </value>
+                <value>
+                    <fullName>Arabic</fullName>
+                    <default>false</default>
+                    <label>Arabic</label>
+                </value>
+                <value>
+                    <fullName>Armenian</fullName>
+                    <default>false</default>
+                    <label>Armenian</label>
+                </value>
+                <value>
+                    <fullName>Bengali</fullName>
+                    <default>false</default>
+                    <label>Bengali</label>
+                </value>
+                <value>
+                    <fullName>French</fullName>
+                    <default>false</default>
+                    <label>French</label>
+                </value>
+                <value>
+                    <fullName>German</fullName>
+                    <default>false</default>
+                    <label>German</label>
+                </value>
+                <value>
+                    <fullName>Greek</fullName>
+                    <default>false</default>
+                    <label>Greek</label>
+                </value>
+                <value>
+                    <fullName>Hebrew</fullName>
+                    <default>false</default>
+                    <label>Hebrew</label>
+                </value>
+                <value>
+                    <fullName>Hmong</fullName>
+                    <default>false</default>
+                    <label>Hmong</label>
+                </value>
+                <value>
+                    <fullName>Italian</fullName>
+                    <default>false</default>
+                    <label>Italian</label>
+                </value>
+                <value>
+                    <fullName>Japanese</fullName>
+                    <default>false</default>
+                    <label>Japanese</label>
+                </value>
+                <value>
+                    <fullName>Korean</fullName>
+                    <default>false</default>
+                    <label>Korean</label>
+                </value>
+                <value>
+                    <fullName>Panjabi</fullName>
+                    <default>false</default>
+                    <label>Panjabi</label>
+                </value>
+                <value>
+                    <fullName>Persian</fullName>
+                    <default>false</default>
+                    <label>Persian</label>
+                </value>
+                <value>
+                    <fullName>Portuguese</fullName>
+                    <default>false</default>
+                    <label>Portuguese</label>
+                </value>
+                <value>
+                    <fullName>Russian</fullName>
+                    <default>false</default>
+                    <label>Russian</label>
+                </value>
+                <value>
+                    <fullName>Tagalog</fullName>
+                    <default>false</default>
+                    <label>Tagalog</label>
+                </value>
+                <value>
+                    <fullName>Urdu</fullName>
+                    <default>false</default>
+                    <label>Urdu</label>
+                </value>
+                <value>
+                    <fullName>Vietnamese</fullName>
+                    <default>false</default>
+                    <label>Vietnamese</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Primary_Sales_Agent_Type__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>Please select type of Sales Agent</inlineHelpText>
+        <label>Primary Sales Agent Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Third Party Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Third Party Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Independent Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Independent Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Non Soliciting Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Non Soliciting Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Employee Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Employee Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Independent Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Independent Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Third Party Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Third Party Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Non-Soliciting Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Non-Soliciting Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Employee Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Employee Sales Agent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Pronouns</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+    </fields>
+    <fields>
+        <fullName>RM_s_email__c</fullName>
+        <description>This field is meant to house the account&apos;s RM&apos;s email address in order to send them an alert when a portal contact/user is created as a result of the approval of a PCR (see flow: PCR Process)</description>
+        <externalId>false</externalId>
+        <label>RM&apos;s email</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Email</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>ReportsToId</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Roles__c</fullName>
+        <externalId>false</externalId>
+        <label>Roles</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Amusement Service</fullName>
+                    <default>false</default>
+                    <label>Amusement Service</label>
+                </value>
+                <value>
+                    <fullName>Bar Manager</fullName>
+                    <default>false</default>
+                    <label>Bar Manager</label>
+                </value>
+                <value>
+                    <fullName>Bartender</fullName>
+                    <default>false</default>
+                    <label>Bartender</label>
+                </value>
+                <value>
+                    <fullName>Key Decision Maker</fullName>
+                    <default>false</default>
+                    <label>Key Decision Maker</label>
+                </value>
+                <value>
+                    <fullName>Landlord</fullName>
+                    <default>false</default>
+                    <label>Landlord</label>
+                </value>
+                <value>
+                    <fullName>License Holder</fullName>
+                    <default>false</default>
+                    <label>License Holder</label>
+                </value>
+                <value>
+                    <fullName>Manager</fullName>
+                    <default>false</default>
+                    <label>Manager</label>
+                </value>
+                <value>
+                    <fullName>Old Owner</fullName>
+                    <default>false</default>
+                    <label>Old Owner</label>
+                </value>
+                <value>
+                    <fullName>Owner/Fraternal Signatory</fullName>
+                    <default>false</default>
+                    <label>Owner/Fraternal Signatory</label>
+                </value>
+                <value>
+                    <fullName>President</fullName>
+                    <default>false</default>
+                    <label>President</label>
+                </value>
+                <value>
+                    <fullName>PSIC</fullName>
+                    <default>false</default>
+                    <label>PSIC</label>
+                </value>
+                <value>
+                    <fullName>Staff</fullName>
+                    <default>false</default>
+                    <label>Staff</label>
+                </value>
+                <value>
+                    <fullName>Treasurer</fullName>
+                    <default>false</default>
+                    <label>Treasurer</label>
+                </value>
+                <value>
+                    <fullName>Video Gaming Manager</fullName>
+                    <default>false</default>
+                    <label>Video Gaming Manager</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>6</visibleLines>
+    </fields>
+    <fields>
+        <fullName>SA_Agreement_Sent_Review__c</fullName>
+        <externalId>false</externalId>
+        <label>SA Agreement Sent for Review</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SA_Agreement_Signed__c</fullName>
+        <externalId>false</externalId>
+        <label>SA Agreement Signed</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SA_Background_Check_Initiated__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>This denotes individuals who are going through the Sales Agent Registration Process, but are not officially Third Party/Independent Sales Agents yet.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Mark if individual is not an official Third Party / Independent Sales Agent yet.</inlineHelpText>
+        <label>SA Background Check Initiated</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>SA_Delisted__c</fullName>
+        <externalId>false</externalId>
+        <label>SA Delisted</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SA_Onboarding_Complete__c</fullName>
+        <externalId>false</externalId>
+        <label>SA Onboarding Complete</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SA_Registered__c</fullName>
+        <externalId>false</externalId>
+        <label>SA Registered</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>SF_User_Role__c</fullName>
+        <externalId>false</externalId>
+        <formula>SF_User__r.UserRole.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Salesforce User Role</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SF_User__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Salesforce User</label>
+        <referenceTo>User</referenceTo>
+        <relationshipName>Contacts</relationshipName>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent_Documentation__c</fullName>
+        <externalId>false</externalId>
+        <label>Sales Agent Documentation</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Background Check Disclosure and Authorization Form</fullName>
+                    <default>false</default>
+                    <label>Background Check Disclosure and Authorization Form</label>
+                </value>
+                <value>
+                    <fullName>Commission Split Form</fullName>
+                    <default>false</default>
+                    <label>Commission Split Form</label>
+                </value>
+                <value>
+                    <fullName>ISA Registration Form</fullName>
+                    <default>false</default>
+                    <label>ISA Registration Form</label>
+                </value>
+                <value>
+                    <fullName>SA Packet</fullName>
+                    <default>false</default>
+                    <label>SA Packet</label>
+                </value>
+                <value>
+                    <fullName>Driver&apos;s License</fullName>
+                    <default>false</default>
+                    <label>Driver&apos;s License</label>
+                </value>
+                <value>
+                    <fullName>Recent Photo of Individual</fullName>
+                    <default>false</default>
+                    <label>Recent Photo of Individual</label>
+                </value>
+                <value>
+                    <fullName>Fingerprint Receipt</fullName>
+                    <default>false</default>
+                    <label>Fingerprint Receipt</label>
+                </value>
+                <value>
+                    <fullName>Original Release of Info</fullName>
+                    <default>false</default>
+                    <label>Original Release of Info</label>
+                </value>
+                <value>
+                    <fullName>TPSA Agreement</fullName>
+                    <default>false</default>
+                    <label>TPSA Agreement</label>
+                </value>
+                <value>
+                    <fullName>ISA Agreement</fullName>
+                    <default>false</default>
+                    <label>ISA Agreement</label>
+                </value>
+                <value>
+                    <fullName>Addendum to ASA</fullName>
+                    <default>false</default>
+                    <label>Addendum to ASA</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Sales_Agent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Sales Agent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Secondary_Sales_Agent_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Secondary Sales Agent Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>true</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Third Party Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Third Party Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Independent Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Independent Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Non Soliciting Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Non Soliciting Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Employee Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Employee Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Independent Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Independent Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Non Soliciting Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Non Soliciting Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Third Party Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Third Party Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Delisted Employee Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Delisted Employee Sales Agent</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Terminal_Operator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Terminal Operator</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Third_Party_Sales_Agent__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Third Party Sales Agent</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Type</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Accel Employee</fullName>
+                    <default>false</default>
+                    <label>Accel Employee</label>
+                </value>
+                <value>
+                    <fullName>Accounting Contact</fullName>
+                    <default>false</default>
+                    <label>Accounting Contact</label>
+                </value>
+                <value>
+                    <fullName>Amusement Contact</fullName>
+                    <default>false</default>
+                    <label>Amusement Contact</label>
+                </value>
+                <value>
+                    <fullName>Competitor Contact</fullName>
+                    <default>false</default>
+                    <label>Competitor Contact</label>
+                </value>
+                <value>
+                    <fullName>Corporate Contact</fullName>
+                    <default>false</default>
+                    <label>Corporate Contact</label>
+                </value>
+                <value>
+                    <fullName>Customer</fullName>
+                    <default>false</default>
+                    <label>Customer</label>
+                </value>
+                <value>
+                    <fullName>IGB Contact</fullName>
+                    <default>false</default>
+                    <label>IGB Contact</label>
+                </value>
+                <value>
+                    <fullName>Partner Operator</fullName>
+                    <default>false</default>
+                    <label>Partner Operator</label>
+                </value>
+                <value>
+                    <fullName>Prospect</fullName>
+                    <default>false</default>
+                    <label>Prospect</label>
+                </value>
+                <value>
+                    <fullName>Sales Agent</fullName>
+                    <default>false</default>
+                    <label>Sales Agent</label>
+                </value>
+                <value>
+                    <fullName>Store Contact</fullName>
+                    <default>false</default>
+                    <label>Store Contact</label>
+                </value>
+                <value>
+                    <fullName>TO Competitor Contact</fullName>
+                    <default>false</default>
+                    <label>TO Competitor Contact</label>
+                </value>
+                <value>
+                    <fullName>Vendor</fullName>
+                    <default>false</default>
+                    <label>Vendor</label>
+                </value>
+                <value>
+                    <fullName>Competitor</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Competitor</label>
+                </value>
+                <value>
+                    <fullName>Location</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>Location</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>User__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Employee</label>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>VP_Sales_Commission_Split_Approval__c</fullName>
+        <externalId>false</externalId>
+        <inlineHelpText>VP of Sales Approval for Commission Split</inlineHelpText>
+        <label>VP Sales Commission Split Approval</label>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>WFTrigger__c</fullName>
+        <externalId>false</externalId>
+        <label>WFTrigger</label>
+        <length>50</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>license_number__c</fullName>
+        <externalId>false</externalId>
+        <label>License #</label>
+        <length>18</length>
+        <required>false</required>
+        <trackFeedHistory>false</trackFeedHistory>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <listViews>
+        <fullName>Accel_Employees</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>Partner_Operator__c</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>User__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Accel Employees</label>
+    </listViews>
+    <listViews>
+        <fullName>Accel_Employees_Cleanup</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>SF_User__c</columns>
+        <columns>SF_User_Role__c</columns>
+        <columns>User__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>User__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>ACCOUNT.NAME</field>
+            <operation>equals</operation>
+            <value>Accel Entertainment (Contacts)</value>
+        </filters>
+        <filters>
+            <field>SF_User__c</field>
+            <operation>equals</operation>
+        </filters>
+        <filters>
+            <field>CONTACT.RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Contact.General</value>
+        </filters>
+        <label>Accel Employees Cleanup</label>
+    </listViews>
+    <listViews>
+        <fullName>Accepted_Community_Terms</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>Community_Terms_Accepted_Date__c</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Community_Terms_Accepted_Date__c</field>
+            <operation>notEqual</operation>
+        </filters>
+        <label>Accepted Community Terms</label>
+    </listViews>
+    <listViews>
+        <fullName>AllContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>Mail_Merge_Recipient__c</columns>
+        <columns>Sales_Agent__c</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>IGB_Email_Contact__c</columns>
+        <columns>Do_Not_Email__c</columns>
+        <columns>CONTACT.CREATED_DATE</columns>
+        <columns>Account.DBA_Account_Name__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>Community_Portal_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>Community_Terms_Accepted_Date__c</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CONTACT.LAST_UPDATE</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Community_Contact__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>contains</operation>
+            <value>Portal</value>
+        </filters>
+        <label>Community Portal Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Copy_of_Community_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTACT.CREATED_DATE</columns>
+        <columns>Community_Terms_Accepted_Date__c</columns>
+        <columns>Community_Contact__c</columns>
+        <columns>CONTACT.LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Community_Contact__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>notContain</operation>
+            <value>DEMO</value>
+        </filters>
+        <label>AE Accelerator Users</label>
+    </listViews>
+    <listViews>
+        <fullName>Corporate_Community_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTACT.CREATED_DATE</columns>
+        <columns>Community_Terms_Accepted_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Community_Contact__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>notContain</operation>
+            <value>Demo</value>
+        </filters>
+        <filters>
+            <field>FULL_NAME</field>
+            <operation>notContain</operation>
+            <value>Portal</value>
+        </filters>
+        <label>Corporate Community Users</label>
+    </listViews>
+    <listViews>
+        <fullName>MyContacts</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <filterScope>Mine</filterScope>
+        <label>My Contacts</label>
+    </listViews>
+    <listViews>
+        <fullName>Partner_Operators_List</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>External_Id__c</columns>
+        <columns>Contact_UType__c</columns>
+        <columns>Primary_Sales_Agent_Type__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Partner_Operator__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Partner Operators</label>
+    </listViews>
+    <listViews>
+        <fullName>Sales_Agents_List</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.TITLE</columns>
+        <columns>Contact_UType__c</columns>
+        <columns>Primary_Sales_Agent_Type__c</columns>
+        <columns>CONTACT.PHONE1</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.FIRST_NAME</columns>
+        <columns>CORE.USERS.LAST_NAME</columns>
+        <columns>External_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Sales_Agent__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Sales Agents</label>
+    </listViews>
+    <listViews>
+        <fullName>the_Copy_of_Community_Users</fullName>
+        <columns>FULL_NAME</columns>
+        <columns>ACCOUNT.NAME</columns>
+        <columns>CONTACT.EMAIL</columns>
+        <columns>CORE.USERS.ALIAS</columns>
+        <columns>CONTACT.CREATED_DATE</columns>
+        <columns>Community_Terms_Accepted_Date__c</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>Community_Contact__c</field>
+            <operation>equals</operation>
+            <value>1</value>
+        </filters>
+        <label>Community Users</label>
+    </listViews>
+    <recordTypeTrackFeedHistory>false</recordTypeTrackFeedHistory>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>General</fullName>
+        <active>true</active>
+        <label>General</label>
+        <picklistValues>
+            <picklist>Contact_Type__c</picklist>
+            <values>
+                <fullName>Amusement Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>User</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Contact_UType__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amusement Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Operator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Employee_Role__c</picklist>
+            <values>
+                <fullName>BDM</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Executive</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>RM</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>LeadSource</picklist>
+            <values>
+                <fullName>Campaign</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Digital</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Other</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Phone Inquiry</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Referral</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Trade Show</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Web</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Name</picklist>
+            <values>
+                <fullName>Dr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mr%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Mrs%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Ms%2E</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prof%2E</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Partner_Operator_Type__c</picklist>
+            <values>
+                <fullName>Acquisition</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Terminal Operator</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Preferred_Primary_Language__c</picklist>
+            <values>
+                <fullName>Arabic</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Armenian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bengali</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese %28Cantonese%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Chinese %28Mandarin%29</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>English</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>French</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>German</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Greek</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hebrew</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hindi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Hmong</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Italian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Japanese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Korean</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Panjabi</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Persian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Polish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Portuguese</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Russian</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Spanish</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Tagalog</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Urdu</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Vietnamese</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Primary_Sales_Agent_Type__c</picklist>
+            <values>
+                <fullName>Delisted Employee Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Independent Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Non-Soliciting Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Third Party Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Soliciting Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Sales Agent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Roles__c</picklist>
+            <values>
+                <fullName>Amusement Service</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bar Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Bartender</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Key Decision Maker</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Landlord</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>License Holder</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Manager</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Old Owner</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Owner%2FFraternal Signatory</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PSIC</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>President</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Staff</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Treasurer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Video Gaming Manager</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Sales_Agent_Documentation__c</picklist>
+            <values>
+                <fullName>Addendum to ASA</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Background Check Disclosure and Authorization Form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Commission Split Form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Driver%27s License</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Fingerprint Receipt</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Agreement</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>ISA Registration Form</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Original Release of Info</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Recent Photo of Individual</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>SA Packet</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TPSA Agreement</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Secondary_Sales_Agent_Type__c</picklist>
+            <values>
+                <fullName>Delisted Employee Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Independent Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Non Soliciting Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Delisted Third Party Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Employee Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Independent Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Non Soliciting Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Third Party Sales Agent</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Type__c</picklist>
+            <values>
+                <fullName>Accel Employee</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Accounting Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Amusement Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Competitor Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Corporate Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Customer</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IGB Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Partner Operator</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Prospect</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Sales Agent</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Store Contact</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>TO Competitor Contact</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <customTabListAdditionalFields>FULL_NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>ACCOUNT.NAME</customTabListAdditionalFields>
+        <customTabListAdditionalFields>CONTACT.PHONE1</customTabListAdditionalFields>
+        <lookupDialogsAdditionalFields>FULL_NAME</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>ACCOUNT.NAME</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>FULL_NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>ACCOUNT.NAME</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE1</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE3</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE4</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE5</lookupPhoneDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>CONTACT.PHONE6</lookupPhoneDialogsAdditionalFields>
+        <searchResultsAdditionalFields>FULL_NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Community_Contact__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>ACCOUNT.NAME</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_STREET</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_CITY</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.ADDRESS2_ZIP</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.PHONE1</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CONTACT.EMAIL</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>CORE.USERS.ALIAS</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>Cannot_Check_Inactive_if_Community_Conta</fullName>
+        <active>true</active>
+        <description>Except sys admins, users are not allowed to edit Inactive field if Community Contact = TRUE</description>
+        <errorConditionFormula>AND(
+$User.ProfileId &lt;&gt; &quot;00e1I000001NG0z&quot;,
+Community_Contact__c = TRUE,
+ISCHANGED( Inactive__c ))</errorConditionFormula>
+        <errorMessage>Please reach out to @PortalSupport if this contact&apos;s portal access needs to be revoked.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Primary_Sales_Agent</fullName>
+        <active>true</active>
+        <description>If the Contact User Type is Sales Agent, Please select the Primary Sales Agent Type</description>
+        <errorConditionFormula>AND (
+ISPICKVAL ( Contact_UType__c, &quot;Sales Agent&quot;),
+ISPICKVAL (Primary_Sales_Agent_Type__c, &quot;&quot;)
+)</errorConditionFormula>
+        <errorMessage>Please select the Primary Sales Agent Type.</errorMessage>
+    </validationRules>
+    <webLinks>
+        <fullName>Form_Builder__FT_Generate_Documents_Lightning</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>FT Generate Documents Lightning</masterLabel>
+        <openType>sidebar</openType>
+        <page>Form_Builder__FTGenerateMutiplePDFContact</page>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+    </webLinks>
+    <webLinks>
+        <fullName>Form_Builder__FT_Generate_Multiple_PDF</fullName>
+        <availability>online</availability>
+        <displayType>massActionButton</displayType>
+        <linkType>javascript</linkType>
+        <masterLabel>FT Generate Documents</masterLabel>
+        <openType>onClickJavaScript</openType>
+        <protected>false</protected>
+        <requireRowSelection>true</requireRowSelection>
+        <url>{!requireScript(&quot;/soap/ajax/38.0/connection.js&quot;)}
+{!requireScript(&quot;/soap/ajax/38.0/apex.js&quot;)}
+var list = {!GETRECORDIDS($ObjectType.Contact)};
+if(list.length &gt; 0) {
+	try{
+		var url = sforce.apex.execute(&quot;Form_Builder.FormTitanUtils&quot;,&quot;getUrl&quot;,{recids : list.toString()});
+		if(url!=undefined){
+			var ftPopup = window.open(url, &quot;Generate PDF&quot;, &quot;width=950, height=700&quot;);
+			try{
+				if(!ftPopup || ftPopup.outerHeight === 0){
+					alert(&apos;{! $Label.form_builder__popup_error}&apos;);
+				}
+			}catch (err){
+				console.log(&apos;error&gt;&gt; &apos; + err);
+			}
+		}
+		else{
+			alert(&apos;{! $Label.form_builder__popup_error}&apos;);
+			console.log(&apos;&gt;&gt;&gt; &apos; + url);
+		}
+	}catch(err){
+		console.log(&apos;&gt;&gt;&gt; &apos; + err);
+		if(err!=null &amp;&amp; err.faultstring!=null){
+			alert(&apos;{! $Label.form_builder__error_has_occurred}&apos; +&apos;\n&apos; + err.faultstring);
+			if(err.faultstring.includes(&apos;NoUrlSettingException&apos;)){
+				var ftPopupSupport = window.open(&quot;https://support.formtitan.com/topics/Salesforce/Integration/Configure_your_custom_settings_URL_in_Salesforce&quot;, &quot;Generate PDF&quot;, &quot;width=950, height=700&quot;);
+				try{
+					if(!ftPopupSupport || ftPopupSupport.outerHeight === 0){
+						alert(&apos;{! $Label.form_builder__popup_error}&apos;);
+					}
+				}catch(e){
+					console.log(&apos;error&gt;&gt; &apos; + e);
+				}
+			}
+		}else{
+			
+		}
+		
+	}
+} else {
+	alert(&apos;{! $Label.form_builder__please_choose_at_least_1_record}&apos;);
+}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>Form_Builder__FT_Generate_PDF</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>700</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>FT Generate Document</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>/apex/Form_Builder__GenerateDocument?recId={!Contact.Id}</url>
+        <width>950</width>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleMaps</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Maps</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://maps.google.com/maps?f=q&amp;hl=en&amp;q={!Contact_MailingStreet}+{!Contact_MailingCity}+{!Contact_MailingState}&amp;om=1</url>
+    </webLinks>
+    <webLinks>
+        <fullName>GoogleSearch</fullName>
+        <availability>online</availability>
+        <displayType>link</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <hasMenubar>false</hasMenubar>
+        <hasScrollbars>true</hasScrollbars>
+        <hasToolbar>false</hasToolbar>
+        <height>600</height>
+        <isResizable>true</isResizable>
+        <linkType>url</linkType>
+        <masterLabel>Google Search</masterLabel>
+        <openType>newWindow</openType>
+        <position>none</position>
+        <protected>false</protected>
+        <showsLocation>false</showsLocation>
+        <showsStatus>false</showsStatus>
+        <url>http://www.google.com/search?q={!Contact_FirstName} {!Contact_LastName}</url>
+    </webLinks>
+    <webLinks>
+        <fullName>dsfs__Send_with_DocuSign</fullName>
+        <availability>online</availability>
+        <description>This button will initiate a DocuSign Envelope that is linked to the Contact</description>
+        <displayType>button</displayType>
+        <height>600</height>
+        <linkType>page</linkType>
+        <masterLabel>Send with DocuSign</masterLabel>
+        <openType>noSidebar</openType>
+        <page>dsfs__CreateEnvelopeFromContact</page>
+        <protected>false</protected>
+    </webLinks>
+    <webLinks>
+        <fullName>spanning__SpanningContactRestore</fullName>
+        <availability>online</availability>
+        <displayType>button</displayType>
+        <encodingKey>UTF-8</encodingKey>
+        <height>600</height>
+        <linkType>url</linkType>
+        <masterLabel>Restore</masterLabel>
+        <openType>noSidebar</openType>
+        <protected>false</protected>
+        <url>/apex/spanning__SpanningRestore?objectId={!Contact.Id}&amp;objectType=Contact&amp;page=restore&amp;auth=user</url>
+    </webLinks>
+</CustomObject>

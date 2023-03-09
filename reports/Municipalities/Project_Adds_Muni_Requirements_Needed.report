@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>Project__c.Install_Approved__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Compliance_Go_Live__c</field>
+    </columns>
+    <description>Project Adds - Muni Requirements Needed</description>
+    <filter>
+        <criteriaItems>
+            <column>Project__c.Project_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Addition,Reconfigure &amp; Addition,Swap &amp; Addition</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Compliance_Go_Live__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IGB Approval,Install Scheduled,SGI Project Scheduled</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Project Adds - Muni Requirements Needed</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Project__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c.Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

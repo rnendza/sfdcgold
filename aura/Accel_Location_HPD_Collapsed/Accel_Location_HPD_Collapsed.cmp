@@ -1,0 +1,105 @@
+<!--
+========================================================================================================================
+
+Beta - highly Experimental..
+All structural  formatting in .css file.
+
+@TODO make generic. .ie not bound to HPD Data. pass in columns in array.
+@TODO if we do this how do we format data (expect it predefined maybe)?
+@TODO pass in additional formatting classes?
+@TODO is it worth it to try to wrap and lwc lightning-datatable and manipulate it with dynamic classes?
+@TODO simulate scroll left / right / .... map if user turns on attribute to show it.
+========================================================================================================================
+-->
+<aura:component access="global">
+
+    <aura:attribute name="data" type="Object" required="true"
+                    description="formatted as typical aura lightning:datatable data."/>
+    <aura:attribute name="tableClasses"  type="String"
+                    description="bases classes of the datatable."/>
+
+    <!-- provide a visual guide to the user of ability to scroll datatable WIP -->
+    <aura:attribute name="useCollapsedTableNavMap" type="Boolean" default="false" />
+    <aura:attribute name="showScrollRight" type="Boolean" default="true" />
+    <aura:attribute name="showScrollLeft" type="Boolean" default="true" />
+
+    <aura:handler name="init" value="{! this }" action="{! c.init }" />
+
+    <div class="slds-grid">
+        <div class="slds-col slds-size_1-of-1">
+            <div style="font-size:.65em;color:red"> <!-- @TODO remove this eventually -->
+                This is BETA only.. modify parent comp property useCollapsedTable to false to return to transformed table
+            </div>
+
+            <!-- experimental show collapsed datatable buttons and visual queues -->
+            <aura:if isTrue="{!v.useCollapsedTableNavMap}" >
+                <div class="slds-p-bottom--medium">
+                    <c:Accel_CollapsedTableNavMap showScrollLeft="{!v.showScrollLeft}" showScrollRight="{!v.showScrollRight}" />
+                </div>
+            </aura:if>
+
+            <div class="accel-table-scroll-container">
+                <!-- Markup modeled off https://www.lightningdesignsystem.com/components/data-tables/#Accessibility -->
+                <table class="{!'accel-datatable-collapsed ' + v.tableClasses}">
+                    <thead>
+                        <tr class="slds-line-height_reset accel-table-header">
+                            <th scope="col">
+                                <div class="slds-truncate" title="Hold per day - Month Recorded">Date</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Average Hold per day">Avg Hpd</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Number of Video Gaming Terminals"># VGTs</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="NTI">NTI</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Funds In">Funds In</div>
+                            </th>
+                            <th scope="col">
+                                <div class="slds-truncate" title="Location Share">Location Share</div>
+                            </th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                    <!-- @TODO fix maximumFactionDigits.. it doesn't seem to be working as expected. wrap data in divs as well -->
+                    <aura:iteration items="{!v.data}" var="row">
+                        <tr class="slds-hint-parent">
+                            <th data-label="Hpd Date" scope="row">
+                                <lightning:formattedDateTime value="{!row.Date__c}"
+                                                             year="numeric" month="short"
+                                                             timeZone="UTC"/>
+                            </th>
+                            <td data-label="Avg Hpd">
+                                <lightning:formattedNumber value="{!row.HPD__c}"
+                                                           style="currency"
+                                                           maximumFractionDigits="1"/>
+                            </td>
+                            <td data-label="# VGTs">
+                                {!row.VGT_Count__c}
+                            </td>
+                            <td data-label="NTI">
+                                <lightning:formattedNumber value="{!row.NTI__c}"
+                                                           style="currency"
+                                                           maximumFractionDigits="1"/>
+                            </td>
+                            <td data-label="Funds In">
+                                <lightning:formattedNumber value="{!row.Funds_In__c}"
+                                                           style="currency"
+                                                           maximumFractionDigits="1"/>
+                            </td>
+                            <td data-label="Location Share">
+                                <lightning:formattedNumber value="{!row.Location_Share__c}"
+                                                           style="currency"
+                                                           maximumFractionDigits="1"/>
+                            </td>
+                        </tr>
+                    </aura:iteration>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</aura:component>

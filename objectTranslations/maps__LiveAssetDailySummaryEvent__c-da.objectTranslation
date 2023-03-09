@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenhed</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenhed</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenhed</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenheder</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenheder</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Live-aktivs daglige sammendragsbegivenheder</value>
+    </caseValues>
+    <fields>
+        <help>Angiver, om denne begivenhed er inkluderet i en tidligere mailadvarsel</help>
+        <label><!-- Alert Sent --></label>
+        <name>maps__AlertSent__c</name>
+    </fields>
+    <fields>
+        <help>Gennemsnitshastighed i løbet af begivenheden i kilometer pr. time</help>
+        <label><!-- Average Speed (kph) --></label>
+        <name>maps__AverageSpeed_kph__c</name>
+    </fields>
+    <fields>
+        <help>Gennemsnitshastighed i løbet af begivenheden i mil pr. time</help>
+        <label><!-- Average Speed (mph) --></label>
+        <name>maps__AverageSpeed_mph__c</name>
+    </fields>
+    <fields>
+        <help>By for begivenhedsplacering (når den er tilgængelig)</help>
+        <label><!-- City --></label>
+        <name>maps__City__c</name>
+    </fields>
+    <fields>
+        <help>Land for begivenhedsplacering (når det er tilgængeligt)</help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Tidsstempel for begivenhedsafslutning</help>
+        <label><!-- Event Ended --></label>
+        <name>maps__EventEnded__c</name>
+    </fields>
+    <fields>
+        <help>Før middag/efter middag er fastsat baseret på enhedens tidszone.</help>
+        <label><!-- Event Occurred in AM or PM --></label>
+        <name>maps__EventOccuredAMorPM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation>Før middag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation>Før middag/efter middag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation>Efter middag</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Tidsstempel for begivenhedsstart</help>
+        <label><!-- Event Started --></label>
+        <name>maps__EventStarted__c</name>
+    </fields>
+    <fields>
+        <help>Type sammendragsbegivenhed, der repræsenteres af denne registrering</help>
+        <label><!-- Event Type --></label>
+        <name>maps__EventType__c</name>
+        <picklistValues>
+            <masterLabel>Device Battery On</masterLabel>
+            <translation>Enhedsbatteri til</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Message of Day</masterLabel>
+            <translation>Dagens første meddelelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Motion</masterLabel>
+            <translation>Første bevægelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard Acceleration</masterLabel>
+            <translation>Hård acceleration</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard Braking</masterLabel>
+            <translation>Hård opbremsning</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Message of Day</masterLabel>
+            <translation>Dagens sidste meddelelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Motion</masterLabel>
+            <translation>Sidste bevægelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live App Toggle Off</masterLabel>
+            <translation>Live-app slået fra</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live App Toggle On</masterLabel>
+            <translation>Live-app slået til</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed Threshold</masterLabel>
+            <translation>Hastighedstærskel</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speeding</masterLabel>
+            <translation>Hastighedsoverskridelse</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stop</masterLabel>
+            <translation>Stop</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Dette er den fulde adresse for, hvor begivenheden fandt sted</help>
+        <label><!-- Full Address --></label>
+        <name>maps__Full_Address__c</name>
+    </fields>
+    <fields>
+        <help>Live-aktivs daglige sammendragsregistrering, som denne begivenhed relateres til</help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Asset Daily Summary Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live Daily Drive Trip --></label>
+        <name>maps__LiveDailyDriveTrip__c</name>
+        <relationshipLabel><!-- Live Asset Daily Summary Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Associations --></label>
+        <name>maps__Number_of_Associations__c</name>
+    </fields>
+    <fields>
+        <help>Odometerværdi (km) registreret på tidspunktet for begivenheden</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Odometerværdi (mi) registreret på tidspunktet for begivenheden</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <help>Aktivplacering ved start af begivenhed</help>
+        <label><!-- Position --></label>
+        <name>maps__Position__c</name>
+    </fields>
+    <fields>
+        <help>Postnummer for begivenhedens placering (når tilgængeligt)</help>
+        <label><!-- Postal Code --></label>
+        <name>maps__PostalCode__c</name>
+    </fields>
+    <fields>
+        <help>Angivet hastighedsgrænse, hvor begivenheden forekommer i kilometer pr. time</help>
+        <label><!-- Posted Speed Limit (kph) --></label>
+        <name>maps__PostedSpeedLimit_KPH__c</name>
+    </fields>
+    <fields>
+        <help>Angivet hastighedsgrænse, hvor begivenheden forekommer i mil pr. time</help>
+        <label><!-- Posted Speed Limit (mph) --></label>
+        <name>maps__PostedSpeedLimit_MPH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help>Stat for begivenheden (når tilgængelig)</help>
+        <label><!-- State --></label>
+        <name>maps__State__c</name>
+    </fields>
+    <fields>
+        <help>Gadenavn for begivenhedens placering (når tilgængeligt)</help>
+        <label><!-- Street Address --></label>
+        <name>maps__Street_Address__c</name>
+    </fields>
+    <fields>
+        <help>Varigheden af en stopbegivenhed i timer (kun tilgængelig for stopbegivenheder)</help>
+        <label><!-- Event Duration (Hours) --></label>
+        <name>maps__TotalEventTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Varigheden af en stopbegivenhed i minutter (kun tilgængelig for stopbegivenheder)</help>
+        <label><!-- Event Duration (Minutes) --></label>
+        <name>maps__TotalEventTimeMinutes__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Maps Live-aktiv - dagligt sammendragsnav</nameFieldLabel>
+</CustomObjectTranslation>

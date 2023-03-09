@@ -1,0 +1,6 @@
+<table border="0" cellpadding="5" width="550" cellspacing="5" height="400" >
+<tr valign="top" height="400" >
+<td tEditID="c1r1" style=" background-color:#FFFFFF; bEditID:r3st1; color:#000000; bLabel:main; font-size:12pt; font-family:arial;" aEditID="c1r1" locked="0" >
+<![CDATA[Hello&nbsp;{!LicenseApplication__c.Application_Submitted_By__c},<div><br></div><div><br></div><div>The License Application :&nbsp;{!LicenseApplication__c.Name}, has been denied on&nbsp;{!LicenseApplication__c.Denied_Date__c}. The application denial can be appealed within 30 days.&nbsp;</div><div><br></div><div><br></div><div>Link to the Application record:&nbsp;{!LicenseApplication__c.Link}</div><div><div><br></div><div><br></div><div><br></div></div>]]></td>
+</tr>
+</table>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Edit Access to Meter_Reading__c.Cannot_Collect__c checkbox</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Meter_Reading__c.Cannot_Collect__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Cash Logistics - Meters - Cannot Collect Edit</label>
+</PermissionSet>

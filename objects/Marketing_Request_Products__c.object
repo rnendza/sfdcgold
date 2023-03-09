@@ -1,0 +1,768 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>ControlledByParent</externalSharingModel>
+    <fields>
+        <fullName>Accel_Proposed_Payment_Amount__c</fullName>
+        <externalId>false</externalId>
+        <label>Accel Proposed Payment Amount</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Account_Marketing__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Account (Marketing)</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Marketing Request Products</relationshipLabel>
+        <relationshipName>Marketing_Request_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Average_Turnaround_Time__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Average_Turnaround_Time__c *  Quantity__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Average Graphic Design Turnaround Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Calc_Error__c</fullName>
+        <externalId>false</externalId>
+        <formula>if(or
+(and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;February&quot;), (Quantity__c = 10)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;March&quot;),(Quantity__c = 10)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;April&quot;),(Quantity__c = 9)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;May&quot;),(Quantity__c = 8)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;June&quot;),(Quantity__c = 7)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;July&quot;),(Quantity__c = 6)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;August&quot;),(Quantity__c = 5)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;September&quot;),(Quantity__c = 4)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;October&quot;),(Quantity__c = 3)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;November&quot;),(Quantity__c = 2)),
+and(ispickval( Marketing_Request__r.Billing_Start_Month__c ,&quot;December&quot;),(Quantity__c = 1))),
+&quot;Ok&quot;,&quot;Error&quot;)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Calc Error</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Cost_Per_Unit__c</fullName>
+        <externalId>false</externalId>
+        <label>Cost Per Unit</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Custom_Price__c</fullName>
+        <externalId>false</externalId>
+        <label>Custom Price (Promotions Only)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Location_Cost_Share_Amount__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Location_Cost_Share_Amount__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Cost Share Amount(from Product)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Location_Name__c</fullName>
+        <externalId>false</externalId>
+        <formula>Marketing_Request__r.Account__r.Name</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Name</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Location_Spend__c</fullName>
+        <description>Do not put on layout - this is to be written to by Process Builder to capture the rollup of location cost share on the Marketing Request.</description>
+        <externalId>false</externalId>
+        <label>Location Cost Share Amount (PB)</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Marketing_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.Marketing_Request_Type__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Coordinator__c</fullName>
+        <externalId>false</externalId>
+        <formula>Marketing_Request__r.Assigned_Marketing_Coordinator__r.Username</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Coordinator</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>TEXT(Product__r.Marketing_Product_Type__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Request_Prod_Count__c</fullName>
+        <externalId>false</externalId>
+        <formula>1</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Marketing Request Prod Count</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Marketing_Request_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Request Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Standard</fullName>
+                    <default>false</default>
+                    <label>Standard</label>
+                </value>
+                <value>
+                    <fullName>Standard Custom Size</fullName>
+                    <default>false</default>
+                    <label>Standard Custom Size</label>
+                </value>
+                <value>
+                    <fullName>VIP</fullName>
+                    <default>false</default>
+                    <label>VIP</label>
+                </value>
+                <value>
+                    <fullName>Co-Op</fullName>
+                    <default>false</default>
+                    <label>Co-Op</label>
+                </value>
+                <value>
+                    <fullName>Promotions</fullName>
+                    <default>false</default>
+                    <label>Promotions</label>
+                </value>
+                <value>
+                    <fullName>Digital Marketing</fullName>
+                    <default>false</default>
+                    <label>Digital Marketing</label>
+                </value>
+                <value>
+                    <fullName>Sweepstakes</fullName>
+                    <default>false</default>
+                    <label>Sweepstakes</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Marketing_Request__c</fullName>
+        <externalId>false</externalId>
+        <label>Marketing Request</label>
+        <referenceTo>Marketing_Request__c</referenceTo>
+        <relationshipLabel>Marketing Request Products</relationshipLabel>
+        <relationshipName>Marketing_Request_Products</relationshipName>
+        <relationshipOrder>0</relationshipOrder>
+        <reparentableMasterDetail>false</reparentableMasterDetail>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>MasterDetail</type>
+        <writeRequiresMasterRead>false</writeRequiresMasterRead>
+    </fields>
+    <fields>
+        <fullName>Outdoor_Sign_Chosen__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Outdoor Sign Chosen</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Outdoor_Sign_Cost__c</fullName>
+        <externalId>false</externalId>
+        <label>Outdoor Sign Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Over_Max_Quantity__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+AND(
+Quantity__c &gt; Product__r.Marketing_Request_Maximum__c,
+Product__r.Marketing_Request_Maximum__c&lt;&gt;0),
+TRUE,FALSE)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Over Max Quantity</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Over_Max__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Over Max</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Price_Change_Edit_Trigger__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Price Change Edit Trigger</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Price__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR 
+(Marketing_Request__r.RecordType.Name =&apos;Standard&apos;,Marketing_Request__r.RecordType.Name = &apos;Brand Ambassador Events&apos;,Marketing_Request__r.RecordType.Name =&apos;AE Player TV&apos;,Marketing_Request__r.RecordType.Name =&apos;Sweepstakes&apos;), Product__r.Price__c, 
+IF(OR 
+(Marketing_Request__r.RecordType.Name =&apos;Customized&apos;,Marketing_Request__r.RecordType.Name =&apos;Standard Custom Size&apos;),(Marketing_Request__r.Winning_Bid_Amount__c /Marketing_Request__r.MRP_Rollup_Count__c), 
+IF 
+(Marketing_Request__r.RecordType.Name =&apos;Accel Entertainment (Office Use Only)&apos;,(Marketing_Request__r.Winning_Bid_Amount__c/Marketing_Request__r.MRP_Rollup_Count__c), 
+IF 
+(Marketing_Request__r.RecordType.Name =&apos;Co-Op&apos;, Marketing_Request__r.Total_Quote_Amount__c/Marketing_Request__r.MRP_Rollup_Count__c,
+IF(CONTAINS( Product__r.Name, &quot;Pre-Made&quot;), Product__r.Price__c ,  
+
+ 
+0)))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Price</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Product_Type__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(
+OR(
+Marketing_Product_Type__c=&apos;Standard&apos;,
+Marketing_Product_Type__c=&apos;VIP&apos;),&apos;Standard&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Co-Op&apos;,&apos;Co-Op&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Standard Custom Size&apos;,&apos;Standard Custom Size&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Promotions&apos;,&apos;Promotions&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Sweepstakes&apos;,&apos;Sweepstakes&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Digital Marketing&apos;,&apos;Digital Marketing&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Accel Entertainment (Office Use Only)&apos;,&apos;Accel Entertainment (Office Use Only)&apos;,
+IF(
+Marketing_Product_Type__c=&apos;Customized&apos;,&apos;Customized&apos;,
+IF(
+Marketing_Product_Type__c=&apos;TouchTunes&apos;,&apos;TouchTunes&apos;,
+&apos;N/A&apos;)
+))))))))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Product Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Product__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <externalId>false</externalId>
+        <label>Product</label>
+        <lookupFilter>
+            <active>true</active>
+            <filterItems>
+                <field>Product2.IsActive</field>
+                <operation>equals</operation>
+                <value>True</value>
+            </filterItems>
+            <isOptional>false</isOptional>
+        </lookupFilter>
+        <referenceTo>Product2</referenceTo>
+        <relationshipLabel>Marketing Request Products</relationshipLabel>
+        <relationshipName>Marketing_Request_Products</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Projected_Budget_Spend__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(AND(Marketing_Request__r.Approvals_Complete__c = TRUE, Marketing_Request__r.RecordTypeId &lt;&gt;&quot;0121I000000W9xV&quot;, Marketing_Request__r.RecordTypeId&lt;&gt;&quot;0121I000000W9xX&quot;, Marketing_Request__r.RecordTypeId&lt;&gt;&quot;0121I000000ecyt&quot;,Marketing_Request__r.RecordTypeId&lt;&gt;&quot;0121I000000BQPQ&quot;,DATEVALUE(  Marketing_Request__r.CreatedDate ) &gt;= DATE(2020,01,01),
+DATEVALUE( CreatedDate ) &gt;= DATE(2020,01,01)),
+ (Marketing_Request__r.Total_Approved_Amount__c /Marketing_Request__r.MRP_Rollup_Count__c),0)
+
+
+/*If Co-Op, then use actual Reimbursed By Accounting Amount only.
+If Promo, if approvals complete, then use Accel Portion of Cost Share plus actual Reimbursed By Accounting Amount.
+If Brand Ambassador or Standard, and approvals complete, then Price * Quantity.
+If Standard Custom Size or Customized, and approvals complete, then MR.Project Total Cost to Accel/MRP Rollup Count.*/
+
+
+
+/*Original formula before 7/15/2020 meeting with Amber:
+
+CASE( Marketing_Product_Type__c,
+&quot;Co-Op&quot;,
+ (Marketing_Request__r.Amount_Paid_By_Accel__c/Marketing_Request__r.MRP_Rollup_Count__c),
+
+&quot;Promotions&quot;,
+IF( Marketing_Request__r.Approvals_Complete__c = TRUE, 
+( Marketing_Request__r.Accel_Portion_of_Cost_Share__c + Marketing_Request__r.Total_Reimbursed_By_Accounting__c)/
+Marketing_Request__r.MRP_Rollup_Count__c,0),
+
+&quot;Brand Ambassador Events&quot;,
+IF(Marketing_Request__r.Approvals_Complete__c = TRUE,
+(Price__c * Quantity__c),0),
+
+&quot;Standard&quot;,
+IF(Marketing_Request__r.Approvals_Complete__c = TRUE,
+(Price__c * Quantity__c),0),
+
+&quot;Standard Custom Size&quot;,
+IF(Marketing_Request__r.Approvals_Complete__c = TRUE,
+ (  Marketing_Request__r.Amount_Paid_By_Accel__c   /Marketing_Request__r.MRP_Rollup_Count__c),0),
+
+&quot;Customized&quot;,
+IF(Marketing_Request__r.Approvals_Complete__c = TRUE,
+ ( Marketing_Request__r.Amount_Paid_By_Accel__c  /Marketing_Request__r.MRP_Rollup_Count__c),0),
+
+0)*/</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Projected Budget Spend MRP</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Promo_Category__c</fullName>
+        <externalId>false</externalId>
+        <formula>text(Product__r.Promo_Category__c)</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Promo Category</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Promo_Cost_Split__c</fullName>
+        <externalId>false</externalId>
+        <label>Promo Cost Split %</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Percent</type>
+    </fields>
+    <fields>
+        <fullName>Promo_Item_Cost_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Promo Item Cost Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Co-Op Reimbursement</fullName>
+                    <default>false</default>
+                    <label>Co-Op Reimbursement</label>
+                </value>
+                <value>
+                    <fullName>Cost Share</fullName>
+                    <default>false</default>
+                    <label>Cost Share</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Quantity__c</fullName>
+        <externalId>false</externalId>
+        <label>Quantity</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Total_Cost__c</fullName>
+        <externalId>false</externalId>
+        <formula>IF(OR
+(Marketing_Request__r.RecordType.Name =&apos;Standard&apos;,Marketing_Request__r.RecordType.Name =&apos;AE Player TV&apos;,Marketing_Request__r.RecordType.Name=&apos;Sweepstakes&apos;,Marketing_Request__r.RecordType.Name=&apos;Brand Ambassador Events&apos;),(Price__c *  Quantity__c),
+IF
+(Marketing_Request__r.RecordType.Name =&apos;Promotions&apos;, Custom_Price__c,
+Price__c))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Total Cost</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cost_of_Items__c</fullName>
+        <externalId>false</externalId>
+        <label>Total Cost of Items</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cost_to_Accel__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* For Standard Custom Size, Customized, Co-Op, and Accel Entertainment (Office Use Only) record types. Takes the Project Total Cost to Accel (on the Marketing Request) and divides it by however many product requests were added*/ 
+IF(OR 
+(Marketing_Request__r.RecordType.Name =&apos;Standard Custom Size&apos;,Marketing_Request__r.RecordType.Name =&apos;Customized&apos;,Marketing_Request__r.RecordType.Name=&apos;Co-Op&apos;,Marketing_Request__r.RecordType.Name=&apos;Accel Entertainment (Office Use Only)&apos;),Marketing_Request__r.Project_Total_Cost_to_Accel__c / Marketing_Request__r.MRP_Rollup_Count__c,
+
+/* For Promotions, where the Approvals are complete. It takes the Custom Price on the Marketing Request Product and multiplies it by the Promo Cost Split, which is a percentage. Both of these fields are manually updated by a Marketing Coordinator. */ 
+IF(AND 
+(Marketing_Request__r.RecordType.Name =&apos;Promotions&apos;,Marketing_Request__r.Approvals_Complete__c = TRUE),( Custom_Price__c * Promo_Cost_Split__c ), 
+
+/* &quot;Date sent to Accounting&quot; essentially denotes that the Sweepstakes has been approved by Accounting. When it is filled out and the record type is Sweepstakes, the Location Spend (in this case listed directly on the Sweepstakes Product) is subtracted from the Price X the Quantity on the Marketing Request Product. */
+IF(AND((NOT(ISBLANK 
+(Marketing_Request__r.Date_Sent_to_Accounting__c))), 
+Marketing_Request__r.RecordType.Name =&apos;Sweepstakes&apos;), ((Price__c * Quantity__c)- Location_Spend__c   ),
+
+/*If Standard, TouchTunes, or Brand Ambassador with all approvals complete*/
+IF(Marketing_Request__r.Approvals_Complete__c = TRUE,( Quantity__c * Price__c ),
+0))))</formula>
+        <label>Accel Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>Total_Cost_to_Location__c</fullName>
+        <externalId>false</externalId>
+        <formula>/* For Standard Custom Size, Customized and Co-Op record types.  Takes the Project Total Cost to Location and divides it by the number of marketing request products added*/
+IF(OR 
+(Marketing_Request__r.RecordType.Name =&apos;Standard Custom Size&apos;,Marketing_Request__r.RecordType.Name =&apos;Customized&apos;,Marketing_Request__r.RecordType.Name=&apos;Co-Op&apos;),(Marketing_Request__r.Project_Total_Cost_To_Location__c / Marketing_Request__r.MRP_Rollup_Count__c),
+
+/* If record type is Promotions and Approvals are complete. Takes the custom price multiplied by the Promo Cost Split. */ 
+IF(AND 
+(Marketing_Request__r.RecordType.Name =&apos;Promotions&apos;,Marketing_Request__r.Approvals_Complete__c = TRUE),(((1- Promo_Cost_Split__c )* Custom_Price__c )), 
+
+/* &quot;Date Sent to Accounting&quot; denotes that Accounting has approved the Sweepstakes. Takes the Location Cost Share Amount and multiplies it by the Quantity on the Marketing Request Product */
+IF(AND((NOT(ISBLANK
+(Marketing_Request__r.Date_Sent_to_Accounting__c))),
+Marketing_Request__r.RecordType.Name =&apos;Sweepstakes&apos;), (Location_Cost_Share_Amount__c * Quantity__c ) , 
+0)))</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>Location Spend</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Currency</type>
+    </fields>
+    <fields>
+        <fullName>VIP__c</fullName>
+        <externalId>false</externalId>
+        <formula>Product__r.VIP__c</formula>
+        <formulaTreatBlanksAs>BlankAsZero</formulaTreatBlanksAs>
+        <label>VIP</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>forceupdate__c</fullName>
+        <externalId>false</externalId>
+        <label>forceupdate</label>
+        <length>200</length>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Marketing Request Products</label>
+    <nameField>
+        <displayFormat>MRP-{00000}</displayFormat>
+        <label>Marketing Request Products Name</label>
+        <trackHistory>false</trackHistory>
+        <type>AutoNumber</type>
+    </nameField>
+    <pluralLabel>Marketing Request Products</pluralLabel>
+    <searchLayouts>
+        <lookupDialogsAdditionalFields>Marketing_Product_Type__c</lookupDialogsAdditionalFields>
+        <lookupDialogsAdditionalFields>Price__c</lookupDialogsAdditionalFields>
+        <lookupPhoneDialogsAdditionalFields>Marketing_Product_Type__c</lookupPhoneDialogsAdditionalFields>
+        <searchFilterFields>Marketing_Product_Type__c</searchFilterFields>
+    </searchLayouts>
+    <sharingModel>ControlledByParent</sharingModel>
+    <validationRules>
+        <fullName>MarketingRequestAndProductStateMustMatch</fullName>
+        <active>true</active>
+        <description>Products of the record type &quot;Marketing&quot;, some of these have states listed on them (though some are blank). On the Marketing Request there is a state field. If this state field does not say Nebraska (NE), then people should not be able to choose Marketing</description>
+        <errorConditionFormula>AND(
+TEXT(Marketing_Request__r.State__c) &lt;&gt; TEXT(Product__r.State__c), NOT(ISBLANK(TEXT(Product__r.State__c))),
+Marketing_Request__r.RecordType.Name = &quot;Standard&quot;
+)</errorConditionFormula>
+        <errorDisplayField>Product__c</errorDisplayField>
+        <errorMessage>The state of the Product must match the state of the Marketing Request, or the Product cannot be associated with a state.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Product_Type_Needs_To_Match_Request_Type</fullName>
+        <active>true</active>
+        <errorConditionFormula>Marketing_Request__r.RecordType.Name &lt;&gt; Marketing_Product_Type__c</errorConditionFormula>
+        <errorMessage>Marketing Request Products must match the Request type.</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

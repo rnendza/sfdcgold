@@ -1,0 +1,32 @@
+<aura:component implements="forceCommunity:themeLayout" access="global"
+                 description="PortalPA Login Theme">
+
+    <aura:attribute name="LoginContent" type="Aura.Component[]" required="false"/>
+    <aura:attribute name="Loginbackground" type="String" default=""/>
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+
+    <!--component div wrapper start -->
+    <div>
+
+        <!--header -->
+        <div class="slds-grid   slds-grid_align-spread accel-community-header">
+            <div class="slds-col slds-size_2-of-6">
+                <div class="accel-logo-container">
+                    <img class="accel-logo-img" src="{!$Resource.Accel_Community_Logo}"/>
+                </div>
+            </div>
+        </div>
+        <!-- end header -->
+
+        <!--content -->
+        <div class="accel-login-content" style="{!'background-image:url('+v.Loginbackground+')'}">
+            <div class="accel-centered-content">
+            	<div class="portal-text">Portal Login</div>
+                <div class="login-box-style">{!v.LoginContent}</div>
+            </div>    
+        </div>
+
+    </div>
+    <!--end of component div wrapper -->
+</aura:component>

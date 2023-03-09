@@ -1,0 +1,34 @@
+<!-- Accel Admin Welcome -->
+<template>
+    <div class="slds-grid slds-p-top_medium">
+        <div class="slds-col slds-size_1-of-6">
+        </div>
+        <div class="slds-col slds-size_4-of-6">
+            <lightning-card
+                    icon-name="standard:apps"
+                    title="Modules">
+                <div slot="actions">
+                </div>
+                <div class="slds-p-horizontal_small slds-text-heading_small" style="background-color: rgb(250,250,249);">
+                    <div class="slds-p-horizontal_xx-large">
+                       {helpText}
+                    </div>
+                    <div class="xxxslds-p-top_xx-small">
+                        <c-accel-utils-module-picker
+                            onmoduleselected={handleModuleOptionSelected}>
+                        </c-accel-utils-module-picker>
+                    </div>
+                </div>
+                <div slot="footer">
+                    <div class="slds-text-align_right slds-text-color_weak ">
+                        <span style="font-size:.775em">
+                        v 1.6.1
+                        </span>
+                    </div>
+                </div>
+            </lightning-card>
+        </div>
+        <div class="slds-col slds-size_1-of-6">
+        </div>
+    </div>
+</template>

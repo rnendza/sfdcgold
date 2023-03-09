@@ -1,0 +1,34 @@
+<aura:component description="Accel_CollapsedTableNavMap">
+
+    <aura:attribute name="showScrollRight" type="Boolean" default="true" />
+    <aura:attribute name="showScrollLeft" type="Boolean" default="true" />
+
+    <div class="slds-grid slds-grid_align-end accel-datatable-collapsed-controls">
+        <div class="slds-col">
+            <span>.....</span>
+        </div>
+        <div class="slds-col">
+            <div class="slds-grid">
+                <aura:if isTrue="{!v.showScrollLeft}">
+                    <div class="slds-col">
+                        <lightning:buttonIcon iconName="utility:left" size="small"
+                                              onclick="{!c.handleScrollLeft}"
+                                              alternativeText="Scroll Left" />
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!and(v.showScrollLeft,v.showScrollRight)}">
+                    <div class="slds-col">
+                        <div style="margin-left:5px"></div>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!v.showScrollRight}">
+                    <div class="slds-col">
+                        <lightning:buttonIcon iconName="utility:right"  size="small"
+                                              onclick="{!c.handleScrollRight}"
+                                              alternativeText="Scroll Right" />
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+    </div>
+</aura:component>

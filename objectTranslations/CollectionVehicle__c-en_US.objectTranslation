@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>CollectionVehicle</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>CollectionVehicles</value>
+    </caseValues>
+    <fields>
+        <label><!-- ActivityStatus --></label>
+        <name>ActivityStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Color --></label>
+        <name>Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- DVN --></label>
+        <name>DVN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+        <picklistValues>
+            <masterLabel>Route Management</masterLabel>
+            <translation><!-- Route Management --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security</masterLabel>
+            <translation><!-- Security --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>Make__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Plate --></label>
+        <name>Plate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region --></label>
+        <name>Region__c</name>
+        <picklistValues>
+            <masterLabel>Burr Ridge</masterLabel>
+            <translation><!-- Burr Ridge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Champaign</masterLabel>
+            <translation><!-- Champaign --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peoria</masterLabel>
+            <translation><!-- Peoria --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Watseka</masterLabel>
+            <translation><!-- Watseka --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- Year --></label>
+        <name>Year__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <description>was replaced by Account: Field Changes flow.</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AccountOwnerChangeDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.LastModifiedDate})</expression>
+    </formulas>
+    <formulas>
+        <name>AccountOwnerChanges</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LastModifiedBy.FirstName} + &quot; &quot; + {!$Record.LastModifiedBy.LastName}+ &quot; changed the account owner from &quot; + {!$Record__Prior.Owner.FirstName}+ &quot; &quot; + {!$Record__Prior.Owner.LastName} +&quot; to &quot; + {!$Record.Owner.FirstName}+ &quot; &quot;+{!$Record.Owner.LastName}+&quot; on &quot; + LEFT(TEXT({!$Record.LastModifiedDate}),10)</expression>
+    </formulas>
+    <interviewLabel>Account: Owner Changes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Owner Changes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Account_Owner_Change_Date</name>
+        <label>Update Account Owner Change Date</label>
+        <locationX>176</locationX>
+        <locationY>431</locationY>
+        <connector>
+            <targetReference>Update_VG_Sales_Status</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Most_Recent_Account_Owner_Change_Date__c</field>
+            <value>
+                <elementReference>AccountOwnerChangeDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Most_Recent_Account_Owner_Change_field</name>
+        <label>Update Most Recent Account Owner Change field</label>
+        <locationX>176</locationX>
+        <locationY>311</locationY>
+        <connector>
+            <targetReference>Update_Account_Owner_Change_Date</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Most_Recent_Account_Owner_Change__c</field>
+            <value>
+                <elementReference>AccountOwnerChanges</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If the current VGT Sales Status is Unassigned and the account owner changes, the new status should equal assigned.</description>
+        <name>Update_VG_Sales_Status</name>
+        <label>Update VG Sales Status</label>
+        <locationX>176</locationX>
+        <locationY>551</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Video_Gaming_Sales_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Unassigned</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Video_Gaming_Sales_Status__c</field>
+            <value>
+                <stringValue>Assigned</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Most_Recent_Account_Owner_Change_field</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>OwnerId</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordBeforeSave</triggerType>
+    </start>
+    <status>Draft</status>
+</Flow>

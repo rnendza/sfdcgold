@@ -1,0 +1,470 @@
+<template>
+    <!-- DIV below overrides OOTB Classe on the entire page. -->
+    <div lwc:dom="manual" class="fake-overrides-class"></div>
+
+    <lightning-card title="" icon-name="standard:service_crew_member">
+        <!-- DIV below is so we can inject css into the DOM as workaround to LWC Shadow DOM Limitations. -->
+        <div lwc:dom="manual" class="fake-lightning-card-class"></div>
+
+        <h1 slot="title">
+            <template if:true={showAlerts}>
+                <span class="accel-title-text">
+                    Service Alerts (<b><span class="accel-danger-text">{numAlerts}</span></b>)
+                </span>
+            </template>
+            <template if:false={showAlerts}>
+                <span class="accel-title-text">
+                    Service Alerts (<b><span class="accel-success-text">{numAlerts}</span></b>)
+                </span>
+            </template>
+        </h1>
+        <div slot="actions">
+
+            <template if:true={showFilterPicklist}>
+                <!--
+                https://accel-entertainment.monday.com/boards/286657232/pulses/314982925
+                Attribute sent from parent Aura component to assist with core sfdc comp
+                focus but fix.dd
+                -->
+                <template if:false={forceCloseFilterMenu}>
+                    <div tabindex="0">
+                    <span>
+                        <lightning-button-menu alternative-text="Show menu"
+                                               menu-alignment="right"
+                                               onselect={handleMenuSelect}
+                                               class={filterIconClass}
+                                               title=""
+                                               tooltip="Click here to filter the alerts by notification reason."
+                                               icon-name="utility:filterList">
+
+                        <template for:each={menuFilterItems} for:item="action">
+                            <lightning-menu-item
+                                    id={action.id}
+                                    label={action.label}
+                                    value={action.value}
+                                    checked={action.checked}
+                                    icon-name={action.iconName}
+                                    key={action.label}>
+                            </lightning-menu-item>
+                        </template>
+                    </lightning-button-menu>
+                    </span>
+                    </div>
+                </template>
+            </template>
+        </div>
+        <div class="slds-m-around--x-small">
+            <template if:true={showAlerts}>
+                <div>
+                    <div class="accel-alert-inner-container">
+                        <template iterator:alertwrap={displayedSvcAlert}>
+                            <template if:true={alertwrap.value.showWrap}>
+                                <article class="slds-tile slds-media" key={alertwrap.value.iteratorKey}>
+                                    <div class="slds-media__figure">
+                                        <span class="slds-icon_container" title="Service Alerts">
+                                            <lightning-icon icon-name={alertwrap.value.iconName}
+                                                            class="accel-danger-icon"
+                                                            alternative-text="Service Alerts"
+                                                            variant="error"
+                                                            size="x-small">
+                                            </lightning-icon>
+                                        </span>
+                                    </div>
+                                    <div class="slds-media__body">
+                                        <template if:true={alertwrap.value.isNoAssignedResource}>
+                                            <h3 class="slds-tile__title slds-truncate" title="View Case">
+                                                <span class="accel-record-link">
+                                                    <a href="javascript:void(0);" class="accel-case-number-link"
+                                                       onclick={handleRecordClick}
+                                                       data-id={alertwrap.value.caseId}>
+                                                            {alertwrap.value.caseNumber}
+                                                    </a>
+                                                </span>
+                                            </h3>
+                                        </template>
+                                        <template if:true={alertwrap.value.showServiceAppointmentNumber}>
+                                            <div class="slds-grid">
+                                                <div class="slds-col slds-size--2-of-3 accel-test-borders">
+                                                    <h3 class="slds-tile__title slds-truncate"
+                                                        title="View Service Appointment">
+                                                        <span class="accel-record-link">
+                                                            <a href="javascript:void(0);" class="accel-case-number-link"
+                                                                onclick={handleRecordClick} data-id={alertwrap.value.serviceAptId}>
+                                                                {alertwrap.value.serviceAptNbr}
+                                                            </a>
+                                                        </span>
+                                                    </h3>
+                                                </div>
+                                                <div class="slds-col slds-size--1-of-3 accel-test-borders" >
+                                                    <!-- only if parent component allows the send of custom notifications -->
+                                                    <div if:true={showNotDispatchedCustomNotifications} >
+                                                        <!--- only show if unaccepted / not dispatched -->
+                                                        <div if:true={alertwrap.value.isNotDispatched} style="text-align: right" >
+
+                                                        <span if:true={showAlertSendUnacceptedButton} >
+                                                            <span>
+                                                                <a href="javascript:void(0);"
+                                                                   onclick={handleSendSingleAlertClick}
+                                                                   data-svcaptassignedresourceid={alertwrap.value.assignedResourceId}
+                                                                   data-svcaptid={alertwrap.value.serviceAptId}>
+                                                                    <template if:false={alertwrap.value.disableDueToProfiles}>
+                                                                        <span if:false={alertwrap.value.disableNotDispatchedNotification} >
+                                                                            <lightning-icon icon-name="utility:push" title="Send Notification to assigned resource."
+                                                                                            alternative-text="Send Notification!" variant="success"
+                                                                                            size="small">
+                                                                            </lightning-icon>
+                                                                        </span>
+                                                                        <span if:true={alertwrap.value.disableNotDispatchedNotification} >
+                                                                            <lightning-icon icon-name="utility:push" title="Notification already sent (click for more details)."
+                                                                                            alternative-text="Notification already sent"
+                                                                                            size="small">
+                                                                            </lightning-icon>
+                                                                        </span>
+                                                                    </template>
+                                                                    <template if:true={alertwrap.value.disableDueToProfiles}>
+                                                                         <span >
+                                                                            <lightning-icon icon-name="utility:push" title="Notifications Disabled."
+                                                                                            alternative-text="Send Notification!"
+                                                                                            size="small">
+                                                                            </lightning-icon>
+                                                                        </span>
+                                                                    </template>
+                                                                </a>
+                                                            </span>
+                                                        </span>
+                                                    </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <div class="slds-tile__detail accel-tile-detail">
+                                            <div if:true={alertwrap.value.showSendingCustomNotificationSpinner}
+                                                 class="slds-is-relative">
+                                                <lightning-spinner alternative-text="Loading" variant="brand" size="large">
+
+                                                </lightning-spinner>
+                                            </div>
+                                            <dl class="slds-list_horizontal slds-wrap">
+                                                <template if:false={alertwrap.value.isNotDispatched}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Case Age (Minutes)">
+                                                        Case Age:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncat accel-alert-data-col"
+                                                        title="Case Age (Minutes)">
+                                                    <span class={alertwrap.value.timeDisplayClass}>
+                                                        {alertwrap.value.caseFormatedMSS}
+                                                    </span>
+                                                    </dd>
+                                                </template>
+                                                <template if:true={alertwrap.value.isNotDispatched}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Pending Acceptance Time (Minutes)">
+                                                        Pending Acc Time: <lightning-helptext icon-name="utility:info" size="small"
+                                                                            content="The pending acceptance time of the Service Appointment. (The amount of time since the service appointment was created)"></lightning-helptext>
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncat accel-alert-data-col"
+                                                        title="Pending Acceptance Time (Minutes)">
+                                                    <span class={alertwrap.value.timeDisplayClass}>
+                                                        {alertwrap.value.servicePendingAcceptanceTimeFormatedMSS}
+                                                    </span>
+                                                    </dd>
+                                                </template>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                    title="Account DBA Name">
+                                                    Account:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                    title={alertwrap.value.accountUniqueName}>
+                                                    <a href="javascript:void(0);" class="xxxxaccel-case-number-link"
+                                                       onclick={handleRecordClick}
+                                                       data-id={alertwrap.value.accountId}>
+                                                        {alertwrap.value.accountDbaName}
+                                                    </a>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                    title="Alert Reason - Based on Status of Service Appointment or Case and Case Age or Pending acceptance time.">
+                                                    Alert Reason:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                    title={alertwrap.value.notificationReason}>
+                                                    {alertwrap.value.notificationReason}
+                                                </dd>
+                                                <template if:true={alertwrap.value.isNotDispatched}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Assigned Resource">
+                                                        Resource:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                        title={alertwrap.value.assignedResourceName}>
+                                                        {alertwrap.value.assignedResourceName}
+                                                    </dd>
+                                                    <template if:true={alertwrap.value.showAssignedResourceMobilePhone}>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                            title="Assigned Resource Phone">
+                                                            Mobile Phone:
+                                                        </dt>
+                                                        <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                            title={alertwrap.value.assignedResourceMobile}>
+                                                            <lightning-formatted-phone
+                                                                    value={alertwrap.value.assignedResourceMobile}></lightning-formatted-phone>
+                                                        </dd>
+                                                    </template>
+                                                    <template if:true={alertwrap.value.showNotDispatchedNotificationSent}>
+                                                        <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                            title="Notification Sent:">
+                                                            <template if:true={alertwrap.value.isAutomated}>
+                                                                Auto Notification Sent:
+                                                            </template>
+                                                            <template if:false={alertwrap.value.isAutomated}>
+                                                                Notification Sent:
+                                                            </template>
+                                                        </dt>
+                                                        <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                            title="">
+                                                            <p class="slds-truncate"
+                                                               title={alertwrap.value.disabledDueToNotification.CreatedDate}>
+                                                                <lightning-formatted-date-time
+                                                                        value={alertwrap.value.disabledDueToNotification.CreatedDate}
+                                                                        year="numeric" month="numeric" day="numeric"
+                                                                        hour="2-digit"
+                                                                        class={alertwrap.value.notificationSentClass}
+                                                                        minute="2-digit" time-zone-name="short"
+                                                                        hour12="true">
+                                                                </lightning-formatted-date-time>
+                                                            </p>
+                                                        </dd>
+                                                    </template>
+                                                </template>
+                                                <template if:true={alertwrap.value.showCaseServiceZone}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Service Zone">
+                                                        Service Zone:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                        title="">
+                                                        <div class="slds-size_2-of-2">
+                                                            <p class="slds-truncate"
+                                                               title={alertwrap.value.caseServiceZone}>
+                                                                {alertwrap.value.caseServiceZone}
+                                                            </p>
+                                                        </div>
+                                                    </dd>
+                                                </template>
+                                                <template if:true={alertwrap.value.showCaseTechNotes}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Technician notes">
+                                                        Tech Notes:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                        title="">
+                                                        <div class="slds-size_2-of-2">
+                                                            <p class="slds-truncate"
+                                                               title={alertwrap.value.caseTechNotes}>
+                                                                {alertwrap.value.caseTechNotes}
+                                                            </p>
+                                                        </div>
+                                                    </dd>
+                                                </template>
+                                                <template if:true={alertwrap.value.showServiceAppointmentNumber}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Service Appointment Last Modified date time">
+                                                        Last Modified:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                        title="">
+                                                        <div class="slds-size_2-of-2">
+                                                            <p class="slds-truncate"
+                                                               title={alertwrap.value.serviceAptLastModDatetime}>
+                                                                <lightning-formatted-date-time
+                                                                        value={alertwrap.value.serviceAptLastModDatetime}
+                                                                        year="numeric" month="numeric" day="numeric"
+                                                                        hour="2-digit"
+                                                                        minute="2-digit" time-zone-name="short"
+                                                                        hour12="true">
+                                                                </lightning-formatted-date-time>
+                                                            </p>
+                                                        </div>
+                                                    </dd>
+                                                </template>
+                                                <template if:false={alertwrap.value.showServiceAppointmentNumber}>
+                                                    <dt class="slds-item_label slds-text-color_weak slds-truncate accel-alert-label-col"
+                                                        title="Case Last Modified date time">
+                                                        Last Modified:
+                                                    </dt>
+                                                    <dd class="slds-item_detail slds-truncate accel-alert-data-col"
+                                                        title="">
+                                                        <div class="slds-size_2-of-2">
+                                                            <p class="slds-truncate"
+                                                               title={alertwrap.value.caseLastModDatetime}>
+                                                                <lightning-formatted-date-time
+                                                                        value={alertwrap.value.caseLastModDatetime}
+                                                                        year="numeric" month="numeric" day="numeric"
+                                                                        hour="2-digit"
+                                                                        minute="2-digit" time-zone-name="short"
+                                                                        hour12="true">
+                                                                </lightning-formatted-date-time>
+                                                            </p>
+                                                        </div>
+                                                    </dd>
+                                                </template>
+                                            </dl>
+                                            <template if:false={alertwrap.last}>
+                                                <div class="slds-border_top" style="margin-top: 5px"></div>
+                                            </template>
+                                        </div>
+
+
+                                    </div>
+
+                                </article>
+                            </template>
+                        </template>
+                        <template if:false={isAnyDisplayedSvcAlerts}>
+                            <div>
+                                Please check your filters. There are no alerts to display.
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+            <template if:true={showSchedulerData}>
+                <div class="slds-grid slds-p-top_large">
+                    <div class="slds-col slds-grow-none">
+                        <span class="slds-icon_container" title="Scheduled job is running!">
+                            <lightning-icon icon-name="utility:clock"
+                                            alternative-text="Click" size="xx-small"
+                                            class="accel-success-icon"
+                                            variant='success'>
+                            </lightning-icon>
+                        </span>
+                    </div>
+                    <div class="slds-col slds-p-left_small slds-text-color_weak" style="font-size:.60rem">
+                        <template if:true={firstScheduledJob}>
+                            <div>
+                                Custom Notifications scheduler is running and was started as:
+                                <br/>{firstScheduledJob.CronJobDetail.Name}
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </template>
+            <template if:false={showAlerts}>
+                <lightning-layout horizontal-align="center">
+                    <lightning-layout-item>
+                        <div>
+                            <span class="slds-icon_container" title="No Alerts!">
+                               <lightning-icon icon-name="utility:emoji"
+                                               class="accel-success-icon"
+                                               alternative-text="No Alerts"
+                                               variant="success"
+                                               size="large">
+                               </lightning-icon>
+                            </span>
+                            <br/>
+                        </div>
+                    </lightning-layout-item>
+                </lightning-layout>
+                <div style="text-align: center;margin-top:10px">
+                    There are no Alerts to display at this time!
+                </div>
+
+                <template if:true={showObserveData}>
+                    <hr>
+                    <b>Observation data</b> displayed for sys admins only! this is for <b>debugging only</b><br/>
+                    <div class="accel-success-border" style="width:100%">
+                        <div style=" padding:8px;">
+                            <template if:true={showObserveData}
+                                      for:each={svcObserve} for:item="observeWrap">
+                                <article class="slds-tile slds-media" key={observeWrap.iteratorKey}>
+                                    <div class="slds-media__figure">
+                            <span class="slds-icon_container" title="description of icon when needed">
+                               <lightning-icon icon-name="standard:case" alternative-text="Case"
+                                               size="small"></lightning-icon>
+                            </span>
+                                    </div>
+                                    <div class="slds-media__body" style="font-size:.88em">
+                                        <h3 class="slds-tile__title slds-truncate" title="TEST">
+                                            Case....... {observeWrap.caseNumber}
+                                        </h3>
+                                        <h3 class="slds-tile__title slds-truncate" title="TEST">
+                                            SA #...... {observeWrap.serviceAptNbr}
+                                        </h3>
+                                        <h3 class="slds-tile__title slds-truncate" title="TEST">
+                                            WO #...... {observeWrap.workOrderNbr}
+                                        </h3>
+                                        <div class="slds-tile__detail">
+                                            <dl class="slds-list_horizontal slds-wrap">
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    Case Status:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span>
+                                                        {observeWrap.caseStatus}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    WO Status:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span>
+                                                        {observeWrap.workOrderStatus}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    SA Status:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span>
+                                                        {observeWrap.serviceAptStatus}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    Case Age:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span class={observeWrap.timeDisplayClass}>
+                                                        {observeWrap.caseFormatedMSS}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    SA Time Accepted
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span>
+                                                        {observeWrap.serviceAptTimeAccepted}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    Pending Acceptance Time:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    <span class={observeWrap.timeDisplayClass}>
+                                                        {observeWrap.servicePendingAcceptanceTimeFormatedMSS}
+                                                    </span>
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    Account dba:
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate">
+                                                    {observeWrap.accountDbaName}
+                                                </dd>
+                                                <dt class="slds-item_label slds-text-color_weak slds-truncate">
+                                                    Observe Reason
+                                                </dt>
+                                                <dd class="slds-item_detail slds-truncate"
+                                                    title="Description for second label">
+                                                    {observeWrap.notificationReason}
+                                                </dd>
+                                            </dl>
+                                        </div>
+                                    </div>
+                                </article>
+                            </template>
+                        </div>
+                    </div>
+                </template>
+            </template>
+        </div>
+    </lightning-card>
+</template>

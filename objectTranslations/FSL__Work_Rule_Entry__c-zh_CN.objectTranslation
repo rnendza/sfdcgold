@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>工作规则条目</value>
+    </caseValues>
+    <fields>
+        <help>休息时长（以分钟为单位）。</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>从服务资源的可用性开始到最早允许的休息开始时间的分钟数。例如，输入 120，计划在一天开始后休息至少 2 小时。</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>从服务资源的可用性开始到最后允许的休息结束时间的分钟数。例如，输入 300，计划午休时间在一天开始后不超过 5 个小时内结束。</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>工作规则条目名称</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+</CustomObjectTranslation>

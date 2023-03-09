@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>資料層設定</value>
+    </caseValues>
+    <fields>
+        <label><!-- Settings --></label>
+        <name>maps__Settings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>business</masterLabel>
+            <translation>商業</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dbusa-v1</masterLabel>
+            <translation>dbusa-v1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>dmp-v1</masterLabel>
+            <translation>dmp-v1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>navport-v1</masterLabel>
+            <translation>navport-v1</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>property</masterLabel>
+            <translation>財產</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>資料層設定</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Errore asincrono live di Maps</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Errori asincroni live di Maps</value>
+    </caseValues>
+    <fields>
+        <help>Nome della classe e, facoltativamente del metodo, originato dall&apos;errore.</help>
+        <label><!-- Class Name --></label>
+        <name>maps__ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>maps__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Tipo di errore ricevuto.</help>
+        <label><!-- Error Type --></label>
+        <name>maps__ErrorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>maps__LineNumber__c</name>
+    </fields>
+    <fields>
+        <help>Riferimento al riepilogo con errori</help>
+        <label><!-- Live Daily Summary Config --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Live Async Errors --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Valore del messaggio ricevuto.</help>
+        <label><!-- Message --></label>
+        <name>maps__Message__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;intero sObject in formato JSON, se disponibile.</help>
+        <label><!-- Object Field Values --></label>
+        <name>maps__ObjectFieldValues__c</name>
+    </fields>
+    <fields>
+        <help>L&apos;ID dell&apos;sObject in cui si è verificato l&apos;errore.</help>
+        <label><!-- Object Id --></label>
+        <name>maps__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sobject Type --></label>
+        <name>maps__SobjectType__c</name>
+    </fields>
+    <fields>
+        <help>Valore della traccia dello stack ricevuta.</help>
+        <label><!-- Stack Trace --></label>
+        <name>maps__StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>maps__Subject__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome errore asincrono live di Maps</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

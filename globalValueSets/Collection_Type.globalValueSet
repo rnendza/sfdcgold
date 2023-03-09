@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Regular - RT &amp; VGT</fullName>
+        <default>true</default>
+        <label>Regular - RT &amp; VGT</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional Fill – RT &amp; VGT</fullName>
+        <default>false</default>
+        <label>Additional Fill – RT &amp; VGT</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional Fill – RT Only</fullName>
+        <default>false</default>
+        <label>Additional Fill – RT Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Additional Fill – VGT Only</fullName>
+        <default>false</default>
+        <label>Additional Fill – VGT Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular - 2nd RT</fullName>
+        <default>false</default>
+        <label>Regular - 2nd RT</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular - RT Only</fullName>
+        <default>false</default>
+        <label>Regular - RT Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular - VGT Only</fullName>
+        <default>false</default>
+        <label>Regular - VGT Only</label>
+    </customValue>
+    <customValue>
+        <fullName>Regular - RT Only (Go Lives/RT swaps)</fullName>
+        <default>false</default>
+        <isActive>false</isActive>
+        <label>Regular - RT Only (Go Lives/RT swaps)</label>
+    </customValue>
+    <description>* Regular – RT &amp; VGT (typical collection involves changing VGT cans and swapping RT Cassettes)﻿
+* Additional Fill – RT Only (this collection involves just changing RT Cassettes)﻿
+* Additional Fill – VGT Only (this collection involves just swapping VGT cans)﻿
+* Additional Fill – RT &amp; VGT (this collection involves changing VGT cans and swapping RT cassettes)
+* Regular - 2nd RT (OLD.. not sure?)
+* Regular - RT Only (NEW... not sure?)
+* Regular - VGT Only (NEW.. not sure?)</description>
+    <masterLabel>Collection Type</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,20 @@
+button {
+    color: black;
+    background-color: aqua;
+    text-align: center;
+    border: none;
+    font-size: 14px;
+    border-radius: 10px;
+    padding: 5px 50px 5px 50px;
+}
+.spinnerContainer{
+    position: relative;
+    display: inline-block;
+    width: 50%;
+    height: 20%;
+}
+.accel-chart-shadow-drag {
+    box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+    background-color: white;
+    border-radius: 4px;
+}

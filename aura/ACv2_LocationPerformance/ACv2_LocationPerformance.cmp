@@ -1,0 +1,248 @@
+<aura:component description="Accel Location Performance"
+                controller="Accel_LocationPerformanceV2"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+
+    <ltng:require
+            scripts="{!$Resource.echart4}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="startDate" type="String" />
+    <aura:attribute name="endDate" type="String" />
+    <aura:attribute name="selectedDate" type="String" />
+    <aura:attribute name="oldestDate" type="String" default="2017-01-01"/>
+    <aura:attribute name="yesterday" type="String"/>
+    <aura:attribute name="locationSelected" type="String" default="All Locations"/>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/293968275 -->
+    <aura:attribute name="locationIdSelected" type="String" />
+    <aura:attribute name="displayMachinePerformanceLink" type="Boolean" default="false" />
+    <!-- ======================================================================== -->
+
+    <aura:attribute name="locationSelectedRevenue" type="String" />
+    <aura:attribute name="locationSelectedLocShare" type="String" />
+    <aura:attribute name="locationSelectedFundsIn" type="String" />
+    <aura:attribute name="locationSelectedFundsOut" type="String" />
+    <aura:attribute name="locationSelectedAmtPlayed" type="String" />
+    <aura:attribute name="locationSelectedAmtWon" type="String" />
+    <aura:attribute name="walkAway" type="String" />
+    <aura:attribute name="payoutPercent" type="String" />
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <aura:attribute name="dateSelectOptions" type="List"/>
+    <aura:attribute name="aggregateLifetimeHpds" type="List"/>
+    <aura:attribute name="aggregateMonthlyHpds" type="List" />
+    <aura:attribute name="aggregateCustomHpds" type="List" />
+    <aura:attribute name="monthlyHpdDates" type="List"/>
+    <aura:attribute name="pieType" type="String" default="All" />
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="dataTable" type="List"/>
+    <aura:attribute name="sortedBy" type="String" default="netRevenue"/>
+    <aura:attribute name="sortedDirection" type="String" default="desc"/>
+    <aura:attribute name="averageAllMonthlyHpds" type="List" />
+    <aura:attribute name="averageSingleAccountMonthlyHpds" type="List" />
+    <aura:attribute name="ytdRevenue" type="String" default="1,265,684"/>
+    <aura:attribute name="ytdRevenueDiffString" type="String" default ="13.89" />
+    <aura:attribute name="ytdRevenueDiff" type="Decimal" default="13"/>
+    <aura:attribute name="mtdRevenue" type="String" default="32,647"/>
+    <aura:attribute name="mtdRevenueDiffMOM" type="Decimal" default="0"/>
+    <aura:attribute name="mtdRevenueDiffMOMString" type="String" default="--" />
+    <aura:attribute name="mtdRevenueDiffYOY" type="Decimal" default="132"/>
+    <aura:attribute name="mtdRevenueDiffYOYString" type="String" default="132.74" />
+    <aura:attribute name="month" type="String" default="December"/>
+    <aura:attribute name="year" type="String" default="2019"/>
+
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/293964783 -->
+    <aura:attribute name="debugConsole" type="Boolean" default="true"
+                    description="Allows the turning on and off of console logging as opposed to commenting out / removing" />
+    <aura:attribute name="locShareDateClicked"      type="String"
+                    description="The date of the blue volume bar on the home page / my location share trend chart"/>
+    <aura:attribute name="locShareChartStyle"       type="String"
+                    description="The type of chart (Daily or Monthly) on the home page / my location share trend chart "/>
+    <!-- ========================================================================= -->
+
+    <aura:attribute name="communityUserSettings" type="Object"
+                    description="Contains Community User Settings"/>
+    <aura:attribute name="communityUserSettingsNotFound"    type="boolean" default="false"/>
+    <aura:attribute name="displayPctOfNetRevChart"          type="boolean" default="false"/>
+    <aura:attribute name="displayAverageChart"              type="boolean" default="false"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_SimpleCsvExporter aura:id="csvExporter"/>
+
+
+    <div>
+        <div class="slds-grid slds-grid_vertical accel-cmp-wrap">
+
+            <div class="slds-col slds-size_12-of-12 accel-value-container">
+                <div class="slds-grid accel-mobile-block">
+
+                    <!--new 2 boxs -->
+                    <div class="slds-p-around_medium accel-mobile-block accel-center accel-ytd-container">
+                        <aura:if
+                                isTrue="{!or(v.communityUserSettings.Display_Revenue_Year_to_Date__c,v.communityUserSettingsNotFound)}">
+                            <div class="slds-col slds-m-horizontal_medium msgbox-medium accel-mobile-margin-bottom accel-mobile-margin-sides">
+                                <div class="accel-mtd-box-top"><span class="month">{!v.year} </span> Revenue Year-to-Date</div>
+                                <div style="display:inline-block">
+                                    <div class="mtd-value">${!v.ytdRevenue}&nbsp;</div>
+                                </div>
+                                <div class="mtd-value" style="display:inline-block;">
+                                    <aura:renderIf isTrue="{!v.ytdRevenueDiff >= 0}">
+                                        <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small"/>
+                                        <aura:set attribute="else">
+                                            <lightning:icon class="iconRed" iconName="utility:arrowdown" size="small"/>
+                                        </aura:set>
+                                    </aura:renderIf>
+                                    <span class="{!v.ytdRevenueDiff >= 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.ytdRevenueDiffString}
+                                        % </span><span class="accel-metric">Y/Y</span>
+                                </div>
+
+                            </div>
+                        </aura:if>
+                        <!-- Show if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+                        <aura:if
+                                isTrue="{!or(v.communityUserSettings.Display_Revenue_Month_to_Date__c,v.communityUserSettingsNotFound)}">
+                            <div class="slds-col slds-m-horizontal_medium msgbox-medium accel-mobile-margin-bottom accel-mobile-margin-sides">
+                                <div class="accel-mtd-box-top"><span class="month">{!v.month}</span> Revenue
+                                    Month-to-Date
+                                </div>
+                                <div style="display:inline-block">
+                                    <div class="mtd-value">${!v.mtdRevenue}&nbsp;</div>
+                                </div>
+                                <div class="mtd-value" style="display:inline-block;">
+                                    <aura:renderIf isTrue="{!v.mtdRevenueDiffYOY >= 0}">
+                                        <lightning:icon class="iconGreen" iconName="utility:arrowup" size="small"/>
+                                        <aura:set attribute="else">
+                                            <lightning:icon class="iconRed" iconName="utility:arrowdown"
+                                                            size="small"/>
+                                        </aura:set>
+                                    </aura:renderIf>
+                                    <span class="{!v.mtdRevenueDiffYOY >= 0 ? 'pos-profit percentDiff' :'neg-profit percentDiff'}"> {!v.mtdRevenueDiffYOYString}
+                                    %  </span><span class="accel-metric">Y/Y</span>
+                                </div>
+                            </div>
+                        </aura:if>
+                    </div>
+
+                    <!--
+                        Show Percent of Net Revenue Chart if Display flag set to TRUE or we simply could not find a
+                        Community_User_Setting__c for this user.
+                    -->
+                    <aura:if
+                            isTrue="{!or(v.displayPctOfNetRevChart,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-size_1-of-3 accel-mobile-full-width">
+                        <div class="accel-mobile-block" >
+                            <div class="slds-p-horizontal_small accel-mobile-full-width accel-desktop-date-select accel-mobile-date-select">
+                                <lightning:select aura:id="monthSelect" name="monthSelect" label="blah"
+                                                  variant="label-hidden"
+                                                  class="accel-select-small"
+                                                  onchange="{!c.onChangeMonthSelect}"
+                                                  value="{!v.selectedDate}">
+                                    <option value="Lifetime" label="Lifetime IGB">Lifetime</option>
+                                    <option value="Cust" label="Custom Range">Custom Range</option>
+                                    <aura:iteration items="{!v.dateSelectOptions}" var="item">
+                                        <option label="{!item.label}" value="{!item.value}">{!item.label}</option>
+                                    </aura:iteration>
+                                </lightning:select>
+                            </div>
+                        </div>
+                            <aura:if isTrue="{!v.selectedDate == 'Cust'}">
+                                <div style="display:block; padding-left: .75rem">
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_1-of-5 slds-p-right_x-small accel-desktop-date-select accel-mobile-date-select" style="min-width: 160px;">
+                                            <lightning:input type="date" name="startDate" label="Start Date" placeholder="Start Date" value="{!v.startDate}" onchange="{!c.onDateUpdated}" min="{!v.oldestDate}" max="{!v.yesterday}"/>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-5 accel-desktop-date-select accel-mobile-date-select" style="min-width: 160px;">
+                                            <lightning:input type="date" name="endDate" label="End Date" placeholder="End Date" value="{!v.endDate}" onchange="{!c.onDateUpdated}"  min="{!v.oldestDate}" max="{!v.yesterday}"/>
+                                        </div>
+                                    </div>
+                                </div>
+                            </aura:if>
+
+                        <div class="accel-pi" aura:id="accel-piechart" style="width: 100%; height: 358px;">
+                        </div>
+
+                    </div>
+                    </aura:if>
+                    <!-- Show Data Metrics if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+                    <aura:if
+                            isTrue="{!or(v.communityUserSettings.Display_Data_Metrics__c,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-size_1-of-3 locationSelectedTitle accel-mobile-full-width">
+                        <p style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap"><ui:outputText value="{!v.locationSelected}" class="locationSelected"/></p>
+                        <p><label class="locationSelectedLabel" for="sRevenue">Net Revenue: &nbsp; &nbsp;</label> <ui:outputText aura:id="sRevenue" value="{!v.locationSelectedRevenue}" class="locationSelectedValue dataGreen"/></p>
+                        <p><label class="locationSelectedLabel" for="sLocShare">Location Share: &nbsp; &nbsp;</label> <ui:outputText aura:id="sLocShare" value="{!v.locationSelectedLocShare}" class="locationSelectedValue dataGreen"/></p>
+                        <p><label class="locationSelectedLabel" for="sFundsIn">Funds In: &nbsp; &nbsp;</label> <ui:outputText aura:id="sFundsIn" value="{!v.locationSelectedFundsIn}" class="locationSelectedValue dataBlue"/></p>
+                        <p><label class="locationSelectedLabel" for="sFundsOut">Funds Out: &nbsp; &nbsp;</label> <ui:outputText aura:id="sFundsOut" value="{!v.locationSelectedFundsOut}" class="locationSelectedValue dataBlue"/></p>
+                        <!-- <p><label class="locationSelectedLabel" for="walkAway">Walkaway %: &nbsp; &nbsp;</label> <ui:outputText aura:id="walkAway" value="{! v.walkAway }" class="locationSelectedValue dataBlue"/></p> -->
+                        <p><label class="locationSelectedLabel" for="sAmtPlayed">Amount Played: &nbsp; &nbsp;</label> <ui:outputText aura:id="sAmtPlayed" value="{!v.locationSelectedAmtPlayed}" class="locationSelectedValue dataOrange"/></p>
+                        <p><label class="locationSelectedLabel" for="sAmtWon">Amount Won: &nbsp; &nbsp;</label> <ui:outputText aura:id="sAmtWon" value="{!v.locationSelectedAmtWon}" class="locationSelectedValue dataOrange"/></p>
+                        <p><label class="locationSelectedLabel" for="payoutPercent">Payout %: &nbsp; &nbsp;</label> <ui:outputText aura:id="payoutPercent" value="{!v.payoutPercent}" class="locationSelectedValue dataOrange"/></p>
+                        <br />
+                        <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/293968275 -->
+                        <aura:if isTrue="{!v.displayMachinePerformanceLink}">
+                            <!-- created as grid in case we add more content / cols slds-grid_align-center -->
+                            <div class="slds-grid slds-wrap">
+                                <div class="slds-col accel-mobile-nav-link">
+                                    <a href="javascript:void(0)" onclick="{!c.doViewMachinePerformance}"
+                                       title="{!$Label.c.Community_View_Machine_Perf_Link +' for ' +v.locationSelected}"
+                                       class="accel-navpage-link">
+                                        <lightning:icon iconName="utility:link" size="xx-small"
+                                                        class="accel-navpage-icon"
+                                                        alternativeText="{!$Label.c.Community_View_Machine_Perf_Link}"/>
+                                         &nbsp;{!$Label.c.Community_View_Machine_Perf_Link}
+                                    </a>
+                                </div>
+                            </div>
+                        </aura:if>
+                        <!-- ========================================================================== -->
+                    </div>
+                    </aura:if>
+                    <!--
+                       Show Average Chart if Display flag set to TRUE or we simply could not find a
+                       Community_User_Setting__c for this user.
+                     -->
+                    <!-- disabling radar for now
+                    <aura:if
+                            isTrue="{!or(v.displayAverageChart,v.communityUserSettingsNotFound)}">
+                        <div class="slds-col slds-size_1-of-3 accel-mobile-full-width">
+                            <div class="accel-radar" aura:id="accel-radar" style="width: 100%; height: 400px;">
+                            </div>
+                        </div>
+                    </aura:if>
+                    -->
+                </div>
+            </div>
+            <!-- Show Data Table if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+            <aura:if
+                    isTrue="{!or(v.communityUserSettings.Display_Data_Table__c,v.communityUserSettingsNotFound)}">
+                <div class="downloadDiv">
+                    <lightning:buttonIcon iconName="utility:download"
+                                          aura:id="btnCsvDownload"
+                                          onclick="{!c.downloadData}"
+                                          class="downloadBtn"
+                                          alternativeText="Download to csv"/>
+                </div>
+                <div class="slds-col slds-size_12-of-12 slds-m-bottom_large accel-value-grid">
+                    hello
+                    <lightning:datatable data="{!v.dataTable}"
+                                         columns="{! v.columns }"
+                                         sortedBy="{!v.sortedBy}"
+                                         sortedDirection="{!v.sortedDirection}"
+                                         onsort="{!c.updateColumnSorting}"
+                                         class="accel-grid-styled slds-table_striped slds-table_bordered slds-no-row-hover slds-table_bordered"
+                                         keyField="accountPhysicalStreet"
+                                         showRowNumberColumn="false"
+                                         resizeColumnDisabled="true"
+                                         hideCheckboxColumn="true"/>
+
+                </div>
+            </aura:if>
+        </div>
+    </div>
+</aura:component>

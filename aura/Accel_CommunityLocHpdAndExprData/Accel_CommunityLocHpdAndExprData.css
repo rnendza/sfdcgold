@@ -1,0 +1,77 @@
+/**
+ * There seems to be no good way to break accordion section labels  as these links are e actually spans
+ * using slds-truncate (aura bug?) which doesn't seem to work anyway at even worse causes these to exceed their container.
+ * Normally I would strip the salesforce generated slds-truncate tags via walking the DOM but locker service no likey.
+ * Our last resort is simply to give enough specificity to override slds-truncate within th
+ */
+.THIS .accel-accordion .slds-accordion__summary-action .slds-truncate {
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-wrap: break-word;
+    -webkit-hyphens: manual;
+    -moz-hyphens: manual;
+    -ms-hyphens: manual;
+    hyphens: manual;
+    word-break:break-all;
+}
+/* Remove the theme underline after clicking a 'link' */
+.THIS .accel-accordion .slds-accordion__summary-action{
+    text-decoration: none;
+}
+.THIS .accel-accordion .slds-accordion__section {
+   
+    padding-left: 0.1rem;padding-right: .3rem;
+}
+.THIS .accel-expiration-hpd-dates-labels {
+    font-size:1.05em;
+    width:45%;
+}
+.THIS .accel-expiration-hpd-dates-values {
+    font-size:1.05em;
+    width:55%;
+}
+.THIS .slds-accordion__summary-heading {
+     
+    display: flex;
+    flex-grow: 1;
+    font-size: .90rem;
+    line-height: 1.0;
+}
+/* Override shadow drag.. make it a bit less thick */
+.THIS .accel-shadow-drag {
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.20)!important;
+}
+.THIS .accel-expiration-date-title {
+      font-size:1.05em;
+    font-size:.95em;
+}
+.THIS .accel-license-data {
+    font-size:.95em;
+}
+@media only screen and (min-width:768px) {
+    .THIS .accel-license-data {
+        font-size:.95em;
+    }
+    .THIS .accel-expiration-date-title {
+        font-size:1em;
+    }
+}
+/* Override fill on calendar icon */
+.THIS .accel-exp-date-icon svg {
+    fill:#16325C;
+}
+.THIS .accel-location-detail-outer-container {
+    margin-top:5px;
+}
+/* Provides styling for each accordion section */
+.THIS .accel-accordion-section-outer-container {
+   background-color: #FAFAF9;
+   /* background-color:#302a2c; */
+    padding: 2px 4px 2px 4px;
+    margin-bottom: 20px;border-radius: 15px;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.25);
+}
+/* Provides background color and margins for card that holds dates. */
+.THIS .accel-location-dates-outer-container {
+    background-color:white;margin-left:5px;margin-right:0;
+}

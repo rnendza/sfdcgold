@@ -1,0 +1,863 @@
+/* styles for desktop */
+@media only screen and (min-width:768px) {
+    .THIS .accel-performance-wrapper {
+        /*box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        //border-radius: 4px; */
+    }
+    .THIS .mainTabset{}
+    .THIS .accel-top-container{
+        height: 675px;
+        background-color: white;
+    }
+    .THIS .machinePie{
+        height: 470px;
+    }
+    .THIS .msgbox {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 10px;
+    }
+
+    .THIS .accel-greeting-box-top {
+        font-weight: bold;
+        font-size: .9rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 15px;
+        height: 30px;
+    }
+
+
+    .THIS .msgbox-medium {
+        padding-bottom:10px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: 	#F8F8F8;
+        border-radius: 6px;
+        padding-top: 5px;
+        text-align: center;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .THIS .accel-mtd-box-top {
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 26px;
+    }
+
+    .THIS .accel-greeting-total {
+        height: 60px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 1.35rem;
+        text-align: center;
+        vertical-align: middle;
+        color: goldenrod;
+    }
+
+    .THIS .mtd-value {
+        font-weight: bold;
+        font-size: 1.8rem;
+        text-align: center;
+        color: #6fb696;
+    }
+
+    .THIS .msgbox-percent {
+        height: 42px;
+        text-align: left;
+        line-height: 42px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+    .THIS .pos-profit-funds {
+        color: deepskyblue !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .month {
+        font-style: italic;
+        color: blue;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.4rem !important;
+    }
+
+    .THIS .accel-select label {
+       /*  display: none !important; */
+    }
+
+    .THIS .accel-select select {
+        font-weight: 500;
+    }
+
+    .THIS label.slds-form-element__label {
+       /* display: none !important; */
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .THIS .iconBlue svg {
+        fill: #00BFFF !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+    .THIS .accel-mobile-full{
+    }
+    .THIS .accel-mobile-account-select{
+    }
+    .THIS .accel-mobile-block{
+    }
+    .THIS .accel-mobile-date-select {
+    }
+    .THIS .accel-desktop-date-select{
+        height: 50px;
+    }
+    .THIS .accel-desktop-height{
+        height: 750px;
+    }
+    .THIS .accel-mobile-margin-bottom{
+    }
+    .THIS .accel-mobile-margin-sides{
+        max-width: 420px;
+    }
+    .THIS .accel-center{
+        justify-content: center;
+    }
+    .THIS .desk-left{
+        text-align: left;
+    }
+    .THIS .accel-mobile-neg-magin{
+
+    }
+    .THIS .accel-mobile-no-margin {
+    }
+    .THIS .accel-account-selector {
+        margin: 20px;
+        padding: 5px;
+        border: 2px dotted green;
+        background-color: white;
+    }
+    .THIS .accselect {
+        padding-right: 1.5rem;
+        padding-left: 1.5rem;
+        margin-left: -1.5rem;
+        margin-right: -1.5rem;
+        padding-bottom: 20px;
+    }
+    .THIS .slds-tabs_scoped__link {
+        font-weight: bold !important;
+    }
+
+    .THIS .slds-form-element__label {
+        font-weight: bold !important;
+    }
+    .THIS .mainTabset .slds-dropdown-trigger{
+    }
+
+    .THIS .machineTabset .slds-dropdown-trigger{
+        display: inline-block;
+    }
+    .THIS .accel-metric{
+        font-size: 1.4rem !important;
+        color: black;
+    }
+    .THIS .pieTitle{
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+        margin:auto;
+    }
+    .THIS .accel-mobile-btn {
+    }
+    .THIS .accel-date-range{
+        margin-top: -10px;
+    }
+    .THIS .mobile-none{
+    }
+    .THIS .accel-btn-group{
+        padding-top: 12px;
+        text-align: center;
+        min-width: 230px;
+    }
+    .THIS .accel-fiscal-period {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        margin-right: 45px;
+        color: #105ede;
+    }
+    .THIS .accel-curr-week-total{
+        display: block;
+        font-weight: bold;
+        color: #6fb696;
+    }
+    .THIS .accel-curr-week-total-funds{
+        display: block;
+        font-weight: bold;
+        color: deepskyblue;
+    }
+    .THIS .accel-fiscal-heading{
+        display: block;
+        vertical-align:top;
+        font-weight: bold;
+    }
+    .THIS .mobile-total-amt-pad{
+    }
+    .THIS .tab-week-div{
+        height: 360px;
+        width: 100%;
+    }
+    .THIS .accel-mobile-centered{
+    }
+    .THIS .week-info-box{
+    }
+    .THIS .week-heading-container{
+        text-align: center;
+        font-size: 18px;
+    }
+    .THIS .week-grouped-container{
+        padding-top: 25px;
+        padding-bottom:10px;
+    }
+    .THIS .machineTabs {
+    }
+    .THIS .machineTabTitle{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1.3rem;
+        padding-bottom: 5px;
+    }
+    .THIS .machineHeader{
+        padding-top: 40px;
+        padding-left: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        line-height:20px;
+        padding-bottom: 4px;
+    }
+    .THIS .machineHeaderValue{
+        padding-left: 25px;
+        font-size: 20px;
+        font-weight: bold;
+        text-decoration: none;
+        padding-right:9px;
+    }
+    .THIS .machineHeaderPadRight{
+        padding-right: 20px;
+    }
+    .THIS .mobileYY{
+        font-weight: bold;
+        font-size: 20px;
+        padding-left: 15px;
+    }
+    .THIS .machineDetailsContainer{
+        min-width: 100px !important;
+        flex: 0 0 auto;
+        width: 50%;
+    }
+    .THIS .machineHeaderIcon{
+        padding-left: 5px;
+    }
+    .THIS.slds-popover{
+        color: white !important;
+    }
+    .THIS .historicalContainer{
+        margin: auto;
+        padding-top: 20px;
+        width: 80%;
+        min-width:800px;
+    }
+    .THIS .historicalSelect{
+        justify-content: center;
+        background-color: #f0f3f5;
+        padding-bottom: 15px;
+    }
+    .THIS .mobile-frequency .slds-form-element__label{
+    }
+    .THIS .historicalSelect .slds-dropdown-trigger{
+        display:inline-block ;
+    }
+    .THIS .freqPicker{
+        flex: 0 0 auto;
+        width: 20%;
+        padding-right: .5rem;
+    }
+    .THIS .freqDatePicker{
+        display: flex;
+        flex: 0 0 auto;
+        width: 40%;
+    }
+    .THIS .histTable .slds-th__action, .THIS .histTable .slds-has-focus .slds-th__action, .THIS .histTable .slds-th__action:hover, .THIS .histTable .slds-th__action:focus, .THIS .histTable .slds-has-focus .slds-th__action:hover, .THIS .histTable .slds-has-focus .slds-th__action:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table .slds-has-focus .slds-th__action,.THIS .histTable .slds-table .slds-th__action:focus,.THIS .histTable .slds-table .slds-th__action:hover{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table th:focus, .THIS .histTable .slds-table th, .THIS .histTable .slds-table,.THIS .histTable .slds-table th.slds-has-focus, .THIS .histTable .slds-table th.slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table td:focus, .THIS .histTable .slds-table td, .THIS .histTable .slds-table td.slds-has-focus, .THIS .histTable .slds-table td.slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table tr, .THIS .histTable .slds-table tr:hover, .THIS .histTable .slds-table tr:hover th, .THIS .histTable .slds-table tr:hover td,.THIS .histTable .slds-table tr:focus, .THIS .histTable .slds-table tr:focus th, .THIS .histTable .slds-table tr:focus td{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table [role=gridcell]:focus, .THIS .histTable .slds-table [role=gridcell].slds-has-focus, .THIS .histTable .slds-table [role=gridcell].slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable lightning-button-menu {
+        display: none !important;
+    }
+    .THIS .mobileDownload {
+    }
+    .THIS .histTable tr:first-child th{
+        font-size: 11px;
+        font-weight: 400;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: #5b636a;
+    }
+    .THIS .histTable tr th:first-child{
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 1;
+        left: 0;
+        background: white;
+        width: 102px;
+        border-top: 1px solid #e0e4e9;
+        padding: 10px;
+    }
+    .THIS .histTable tr th{
+        padding: 10px;
+    }
+    .THIS .histHeader{
+    }
+    .THIS .histTable tr td{
+        width: 92px;
+        border-top: 1px solid #e0e4e9;
+        padding: .5rem;
+    }
+    .THIS .histTableDiv{
+        padding-top: 10px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    .THIS .histTable{
+        border-collapse: separate;
+    }
+
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px) {
+    .THIS {
+        margin-left: -.85rem;
+        margin-right: -.85rem;
+        padding: 0;
+    }
+    .THIS .accel-performance-wrapper {
+        /*box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        //border-radius: 4px; */
+    }
+    .THIS .mainTabset{}
+    .THIS .accel-top-container{
+        background-color: white;
+    }
+    .THIS .machinePie{
+        height: 300px;
+        margin-bottom:35px;
+        margin-left: -10px;
+        margin-right: -10px;
+        transform: translateZ(0);
+    }
+    .THIS .msgbox {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 10px;
+    }
+
+    .THIS .accel-greeting-box-top {
+        font-weight: bold;
+        font-size: .9rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 15px;
+        height: 30px;
+    }
+
+
+    .THIS .msgbox-medium {
+        padding-bottom:10px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: 	#F8F8F8;
+        border-radius: 6px;
+        padding-top: 5px;
+        text-align: center;
+        padding-left: 2px;
+        padding-right: 2px;
+    }
+
+    .THIS .accel-mtd-box-top {
+        padding-bottom: 5px;
+        font-weight: bold;
+        font-size: .85rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 26px;
+    }
+
+    .THIS .accel-greeting-total {
+        height: 60px;
+        line-height: 30px;
+        font-weight: bold;
+        font-size: 1.35rem;
+        text-align: center;
+        vertical-align: middle;
+        color: goldenrod;
+    }
+
+    .THIS .mtd-value {
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: center;
+        color: #6fb696;
+    }
+
+    .THIS .msgbox-percent {
+        height: 42px;
+        text-align: left;
+        line-height: 42px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+    .THIS .pos-profit-funds {
+        color: deepskyblue !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .month {
+        font-style: italic;
+        color: blue;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1rem !important;
+    }
+    .THIS .slds-icon_small{
+        height: 1.2rem;
+    }
+    .THIS .accel-select label {
+        /*  display: none !important; */
+    }
+
+    .THIS .accel-select select {
+        font-weight: 500;
+    }
+
+    .THIS label.slds-form-element__label {
+        /* display: none !important; */
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .THIS .iconBlue svg {
+        fill: #00BFFF !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+    .THIS .accel-mobile-full{
+        margin: 0;
+        padding: 0px 10px 0px 10px;
+        width: 100%;
+    }
+    .THIS .accel-mobile-account-select{
+    }
+    .THIS .accel-mobile-block{
+        display: block !important;
+        padding: 0;
+        padding-top: 15px;
+    }
+    .THIS .accel-mobile-date-select {
+    }
+    .THIS .accel-desktop-date-select{
+        height: 50px;
+    }
+    .THIS .accel-desktop-height{
+        height: 750px;
+    }
+    .THIS .accel-mobile-margin-bottom{
+        margin-bottom: 18px;
+    }
+    .THIS .accel-mobile-margin-sides{
+        max-width: 280px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .THIS .accel-center{
+    }
+    .THIS .desk-left{
+        text-align: left;
+    }
+    .THIS .accel-mobile-neg-magin{
+
+    }
+    .THIS .accel-mobile-no-margin {
+    }
+    .THIS .accel-account-selector {
+        margin: 20px;
+        padding: 5px;
+        border: 2px dotted green;
+        background-color: white;
+    }
+    .THIS .accselect {
+        margin: 0;
+        padding-left: 0;
+        padding-right: 0;
+        padding-bottom: 20px;
+    }
+    .THIS .slds-tabs_scoped__content{
+        padding:0;
+    }
+    .THIS .slds-tabs_scoped__link {
+        font-weight: bold !important;
+        font-size: 12px;
+    }
+    .THIS .slds-form-element__label {
+        font-weight: bold !important;
+    }
+    .THIS .mainTabset .slds-dropdown-trigger{
+        display: none;
+    }
+    .THIS .machineTabset .slds-dropdown-trigger{
+        display: inline-block;
+    }
+    .THIS .accel-select .slds-form-element__label {
+        display:none !important;
+    }
+    .THIS .machineTabset .slds-tabs_scoped__nav{
+    }
+    .THIS .machineTabset .slds-tabs_scoped__link {
+        font-size: 9px;
+        padding-left: 8px;
+        padding-right: 8px;
+    }
+    .THIS .machineTabset .slds-dropdown-trigger {
+        font-size: 9px;
+        font-weight: bold;
+    }
+    .THIS .accel-metric{
+        font-size: 1rem !important;
+        color: black;
+    }
+    .THIS .pieTitle{
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        margin:auto;
+    }
+    .THIS .accel-mobile-btn{
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 13px;
+    }
+    .THIS .accel-date-range{
+        margin-top: 10px;
+        min-width: 148px;
+    }
+    .THIS .accel-select .slds-select {
+        font-size: 13px;
+    }
+    .THIS .mobile-none{
+        display:none;
+    }
+    .THIS .accel-btn-group{
+        flex: 1;
+        margin-top: 10px;
+        text-align: right;
+        min-width: 150px;
+    }
+    .THIS .accel-fiscal-period {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        margin-right: 45px;
+        color: #105ede;
+    }
+    .THIS .accel-curr-week-total{
+        display: block;
+        font-weight: bold;
+        color: #6fb696;
+        font-size: 1.1rem;
+    }
+    .THIS .accel-curr-week-total-funds{
+        display: block;
+        font-weight: bold;
+        color: deepskyblue;
+        font-size: 1.1rem;
+    }
+
+    .THIS .mobile-total-amt-pad{
+        padding-left: 4px !important;
+        padding-right: 5px !important;
+    }
+    .THIS .accel-fiscal-heading{
+        display: block;
+        vertical-align:top;
+        font-weight: bold;
+        font-size: .85rem;
+        padding-left: 19px;
+        padding-right: 19px;
+    }
+    .THIS .tab-week-div{
+        height: 360px;
+        width: 100%;
+    }
+    .THIS .accel-mobile-centered{
+    }
+    .THIS .week-info-box{
+    }
+    .THIS .week-heading-container{
+        text-align: center;
+        font-size: 18px;
+    }
+    .THIS .week-grouped-container{
+        padding-top: 25px;
+        padding-bottom:10px;
+    }
+    .THIS .machineTabs {
+        padding-bottom: 10px;
+    }
+    .THIS .machineTabTitle{
+        text-align: center;
+        font-weight: bold;
+        font-size: 1rem;
+        padding-bottom: 5px;
+    }
+    .THIS .machineHeader{
+        padding-top: 30px;
+        padding-left: 15px;
+        font-size: 13px;
+        font-weight: bold;
+        padding-bottom: 4px;
+        padding-right: 2px;
+    }
+    .THIS .machineHeaderValue{
+        padding-left: 15px;
+        font-size: 16px;
+        font-weight: bold;
+        text-decoration: none;
+    }
+    .THIS .machineHeaderPadRight{
+
+    }
+    .THIS .mobileYY{
+        font-weight: bold;
+        font-size: 12px;
+        margin-right: -16px;
+        padding-left: 0;
+    }
+    .THIS .machineDetailsContainer{
+        min-width: 110px !important;
+
+    }
+    .THIS .machineHeaderIcon{
+        padding-left: 5px;
+    }
+    .THIS.slds-popover{
+        color: white !important;
+    }
+    .THIS .historicalContainer{
+        margin: auto;
+        padding-top: 20px;
+        width: 100%;
+    }
+    .THIS .historicalSelect{
+        background-color: #f0f3f5;
+        padding-bottom: 20px;
+        display:block;
+    }
+    .THIS .mobile-frequency select{
+        font-weight: 500;
+    }
+    .THIS .mobile-frequency .slds-select{
+        font-size: 13px;
+    }
+    .THIS .mobile-frequency .slds-form-element__label{
+        display:inline-block;
+    }
+    .THIS .historicalSelect .slds-dropdown-trigger{
+        display:inline-block;
+    }
+    .THIS .freqPicker{
+        margin: auto;
+        width: 100%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        max-width: 360px;
+    }
+    .THIS .freqDatePicker{
+        margin:auto;
+        width: 100%;
+        padding-left: .5rem;
+        padding-right: .5rem;
+        max-width: 360px;
+        display:flex;
+    }
+    .THIS .histTableDiv{
+        font-size: 13px;
+        font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+        color: black;
+        -webkit-font-smoothing: antialiased;
+        text-rendering: optimizeLegibility;
+    }
+    /* look at all this junk you need to override to get just a basic datatable if you use lightning datatable..
+
+    .THIS .histTableDiv .slds-truncate{
+        white-space: normal;
+    }
+    .THIS .histTable .slds-th__action, .THIS .histTable .slds-has-focus .slds-th__action, .THIS .histTable .slds-th__action:hover, .THIS .histTable .slds-th__action:focus, .THIS .histTable .slds-has-focus .slds-th__action:hover, .THIS .histTable .slds-has-focus .slds-th__action:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table .slds-has-focus .slds-th__action,.THIS .histTable .slds-table .slds-th__action:focus,.THIS .histTable .slds-table .slds-th__action:hover{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table th:focus, .THIS .histTable .slds-table th, .THIS .histTable .slds-table,.THIS .histTable .slds-table th.slds-has-focus, .THIS .histTable .slds-table th.slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table td:focus, .THIS .histTable .slds-table td, .THIS .histTable .slds-table td.slds-has-focus, .THIS .histTable .slds-table td.slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table tr, .THIS .histTable .slds-table tr:hover, .THIS .histTable .slds-table tr:hover th, .THIS .histTable .slds-table tr:hover td,.THIS .histTable .slds-table tr:focus, .THIS .histTable .slds-table tr:focus th, .THIS .histTable .slds-table tr:focus td{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    .THIS .histTable .slds-table [role=gridcell]:focus, .THIS .histTable .slds-table [role=gridcell].slds-has-focus, .THIS .histTable .slds-table [role=gridcell].slds-has-focus:focus{
+        box-shadow: none !important;
+        background-color: white !important;
+    }
+    */
+
+    .THIS .histTable tr:first-child th{
+        font-size: 11px;
+        font-weight: 400;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        color: #5b636a;
+    }
+    .THIS .histTable tr th:first-child{
+        position: sticky;
+        position: -webkit-sticky;
+        z-index: 1;
+        left: 0;
+        background: white;
+        width: 102px;
+        border-top: 1px solid #e0e4e9;
+        padding: 10px;
+        border-right: 1px solid #e0e4e9;
+    }
+    .THIS .histTable tr th{
+        padding: 10px;
+    }
+    .THIS .histHeader{
+    }
+    .THIS .histTable tr td{
+        width: 93px;
+        border-top: 1px solid #e0e4e9;
+        padding: 10px;
+    }
+    .THIS .histTableDiv{
+        overflow-x: scroll;
+        padding-top: 30px;
+    }
+    .THIS .histTable{
+        width: 660px;
+        border-collapse: separate;
+    }
+    .THIS .histTable lightning-button-menu {
+        display: none !important;
+    }
+    .THIS .mobileDownload{
+        display: none;
+    }
+}

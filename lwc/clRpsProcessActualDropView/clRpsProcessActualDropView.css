@@ -1,0 +1,29 @@
+.accel-test-borders {
+    border:0px dotted red;
+}
+.accel-form-submit-hide {
+    display:none;
+}
+.accel-form-theme_shade {
+    /*background-color: rgb(244,246,249)*/
+    /*background-color:orange;*/
+    background: rgba( 244, 246, 249, 0.75 );
+    box-shadow: 0 2px 6px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+    border-radius: 10px;
+}
+.accel-form-container {
+
+}
+.menu--expanded {
+    animation-name: menuAnimation;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}
+
+.menu__contents--expanded {
+    animation-name: menuContentsAnimation;
+    animation-duration: 0.2s;
+    animation-timing-function: linear;
+}

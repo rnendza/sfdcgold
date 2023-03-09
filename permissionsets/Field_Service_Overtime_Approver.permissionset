@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>Field_Service_Overtime_Approver</name>
+    </customPermissions>
+    <description>Permission Set to allow a user to create and assign Shifts for Overtime</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Shift.Overtime_Approver__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Shift.Overtime_Reason__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Field Service Overtime Approver</label>
+</PermissionSet>

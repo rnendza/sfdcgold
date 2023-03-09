@@ -1,0 +1,20 @@
+<design:component label="Parent Asset Select for Inventory Request">
+    <design:attribute name="selectedValue"
+                      label="Value selected in dropdown" />
+    <design:attribute name="defaultSelectedValue"
+                      label="(DEPRECATED) Value (Id value) the dropdown should be set to upon load" />
+    <design:attribute name="defaultSelectedAssetName"
+                      label="Value (Label value) the dropdown should be set to upon load (USE This but make sure it's unique)" />
+    <design:attribute name="fieldLabel"
+                      label="The label above the dropdown." />
+    <design:attribute name="required"
+                      label="Is the account selection required?" />
+    <design:attribute name="disabled"
+                      label="Is the account selection disabled? If so please set defaultSelectedValue!"  />
+    <design:attribute name="debugConsole"
+                      label="Display logs in the browser developer console for this component?" />
+    <design:attribute name="fieldHelpText"
+                      label="Enter the field help text here." />
+    <design:attribute name="showFieldHelp"
+                      label="Check if field help should be displayed (BETA)." />
+</design:component>

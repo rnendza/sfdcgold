@@ -1,0 +1,31 @@
+TIME TRACKING FIELDS:
+
+Enroute: {!WorkOrder.EnRoute__c}
+
+Arrival: {!WorkOrder.Arrival__c}
+
+Submission Time: {!WorkOrder.Submission_Time__c}
+
+
+Service Fields----
+WorkOrder Number: {!WorkOrder.WorkOrderNumber}
+
+Account: {!WorkOrder.Account}
+
+Site Notes: {!WorkOrder.Site_Notes__c}
+
+Spoke to Manager: {!WorkOrder.Spoke_to_Mgr_Owner_employee__c}
+
+Location Contact: {!WorkOrder.Location_Contact__c}
+
+All Accel Equipment: {!WorkOrder.All_Accel_Equipment_Working__c}
+
+BV Ligjts: {!WorkOrder.BV_Lights__c}
+
+Bill test the VGT: {!WorkOrder.Did_you_bill_test_the_VGT__c}
+
+Visit documented in RT Notebook: {!WorkOrder.wellnessvisit_documented__c}
+
+All Buttons Working: {!WorkOrder.All_Buttons_working__c}
+
+Touch Screen Calibrated: {!WorkOrder.Is_the_touch_screen_calibrated__c}

@@ -1,0 +1,66 @@
+<!-- Ui Datatable Filters Header -->
+<template>
+    <div class="slds-grid slds-wrap">
+
+
+        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_5-of-12 slds-align-bottom">
+            <template if:true={showTableTotalRows}>
+                <div class="slds-text-body_small slds-text-color_weak">
+                    <template if:false={showFiltersActions}>
+                        <b>{totalNumberOfResults}</b> {dtEntityLabel}
+                    </template>
+                    <template if:true={showFiltersActions}>
+                        Showing <b>{filteredNumberOfResults}</b> of {dtRefreshTime}
+                    </template>
+                </div>
+            </template>
+        </div>
+        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_7-of-12 accel-test-borders">
+            <div onclick={handleRefresh}
+                 title="Click here to refresh your data"
+                 class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text refresh-container">
+                <lightning-icon
+                        icon-name="utility:refresh"
+                        size="xx-small"
+                        class="slds-m-right_xx-small accel-green-icon">
+                </lightning-icon>
+                {refreshedLabel}&nbsp;
+                <lightning-formatted-date-time
+                        if:true={dtRefreshTime}
+                        value={dtRefreshTime}
+                        hour="2-digit"
+                        minute="2-digit" hour12="true"
+                        second="2-digit">
+                </lightning-formatted-date-time>
+            </div>
+        </div>
+    </div>
+
+    <template if:true={showFiltersActions}>
+        <div class="slds-col slds-size_1-of-1 slds-p-top_xxx-small">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_5-of-12 slds-align-bottom">
+                    <template if:true={showNumberOfFiltersApplied}>
+                        <lightning-icon
+                                icon-name="standard:filter_criteria"
+                                size="x-small"
+                                class="slds-m-right_xx-small">
+                        </lightning-icon>
+                        Filters&nbsp;({numberOfFiltersApplied}&nbsp;applied)
+                    </template>
+                </div>
+                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_7-of-12 ">
+                    <div class="slds-text-align_right">
+                        <lightning-button-icon
+                                icon-name="utility:filter"
+                                onclick={handleIconButtonClick}
+                                data-iconbuttonid="btnDisplayFilters"
+                                size="x-small"
+                                tooltip={clientSideFiltersIconTooltip}
+                        ></lightning-button-icon>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </template>
+</template>

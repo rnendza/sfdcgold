@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>picklist</bucketType>
+        <developerName>BucketField_64774116</developerName>
+        <masterLabel>Payment Status</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>Reimbursement__c$Status__c</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>On Hold</sourceValue>
+            </sourceValues>
+            <value>On Hold - Action Required</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Approved - Payment Pending</sourceValue>
+            </sourceValues>
+            <value>Account Not Live</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>Donut</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_64774116</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>true</showTotal>
+        <showValues>true</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>Reimbursement__c$Date__c</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$Status__c</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$RecordType</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$Name</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$On_Hold_Date__c</field>
+    </columns>
+    <columns>
+        <field>Reimbursement__c$On_Hold_Notes__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>(1 OR (2 AND 3)) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Reimbursement__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>On Hold</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Reimbursement__c$Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Approved - Payment Pending</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Reimbursement__c$Account_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Not Live</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Reimbursement__c$Account_RelatedList__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Reimbursement__c$Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Test</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_64774116</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Action Required vs Pending Go live</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Reimbursements_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Reimbursement__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

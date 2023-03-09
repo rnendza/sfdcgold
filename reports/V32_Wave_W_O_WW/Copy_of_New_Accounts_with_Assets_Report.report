@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>SERIAL_NUMBER</field>
+    </columns>
+    <columns>
+        <field>ASSET.DESCRIPTION</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Asset.Remote_G2S_Updated__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Model__c</field>
+    </columns>
+    <columns>
+        <field>TYPE</field>
+    </columns>
+    <columns>
+        <field>Asset.Software__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Software_Upgraded_Date__c</field>
+    </columns>
+    <description>Elvis / SE7B  Remote Pushes</description>
+    <filter>
+        <criteriaItems>
+            <column>Asset.Remote_G2S_Updated__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset.Model__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>WMS BLADE,WMS S32 Slant,WMS Blue BirdXD Slant,WMS Blue Bird2,WMS S23 Slant</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>New Accounts with Assets Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AccountAsset</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>DUE_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

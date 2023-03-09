@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Approximate Travel Distance From --></label>
+        <name>FSL__EstimatedTravelDistanceFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approximate Travel Distance To --></label>
+        <name>FSL__EstimatedTravelDistanceTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approximate Travel Time From (Minutes) --></label>
+        <name>FSL__EstimatedTravelTimeFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time From Source --></label>
+        <name>FSL__Estimated_Travel_Time_From_Source__c</name>
+        <picklistValues>
+            <masterLabel>Aerial</masterLabel>
+            <translation>Въздушен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Няма</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predictive</masterLabel>
+            <translation>Прогнозно</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLR</masterLabel>
+            <translation>SLR</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time To Source --></label>
+        <name>FSL__Estimated_Travel_Time_To_Source__c</name>
+        <picklistValues>
+            <masterLabel>Aerial</masterLabel>
+            <translation>Въздушен</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Няма</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predictive</masterLabel>
+            <translation>Прогнозно</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLR</masterLabel>
+            <translation>SLR</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Epoch --></label>
+        <name>FSL__Last_Updated_Epoch__c</name>
+    </fields>
+    <fields>
+        <label><!-- UpdatedByOptimization --></label>
+        <name>FSL__UpdatedByOptimization__c</name>
+    </fields>
+    <fields>
+        <label><!-- calculated duration (Minutes) --></label>
+        <name>FSL__calculated_duration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Scheduled Start Time from the Service Appointment. --></help>
+        <label><!-- Scheduled Start --></label>
+        <name>SchedStart__c</name>
+    </fields>
+    <fields>
+        <help><!-- Boolean field determining if the Service Appointment Status is set to Scheduled. --></help>
+        <label><!-- Scheduled Status --></label>
+        <name>Scheduled_Status__c</name>
+    </fields>
+</CustomObjectTranslation>

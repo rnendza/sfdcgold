@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <buckets>
+        <bucketType>text</bucketType>
+        <developerName>BucketField_23771397</developerName>
+        <masterLabel>Service Region</masterLabel>
+        <nullTreatment>n</nullTreatment>
+        <sourceColumnName>ServiceAppointment$ServiceTerritory</sourceColumnName>
+        <useOther>false</useOther>
+        <values>
+            <sourceValues>
+                <sourceValue>Chicagoland - Lakeshore</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chicagoland North</sourceValue>
+            </sourceValues>
+            <value>Chicagoland North</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chicagoland - Advanced</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chicagoland - AVG</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chicagoland - Shamrock</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chicagoland South</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Chicagoland - Vinnie</sourceValue>
+            </sourceValues>
+            <value>Chicagoland South</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Chicagoland - Tinley Park</sourceValue>
+            </sourceValues>
+            <value>Tinley Park</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Champaign</sourceValue>
+            </sourceValues>
+            <value>Champaign</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Watseka</sourceValue>
+            </sourceValues>
+            <value>Watseka</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Rockford</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Rockford - Rich &amp; Junnies</sourceValue>
+            </sourceValues>
+            <value>Rockford</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Peoria</sourceValue>
+            </sourceValues>
+            <value>Peoria</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Springfield</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Grand River Jackpot</sourceValue>
+            </sourceValues>
+            <value>Springfield</value>
+        </values>
+        <values>
+            <sourceValues>
+                <sourceValue>Collinsville</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collinsville - D &amp; S Vending</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collinsville - EQS Amusement</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collinsville - GMS</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collinsville - Olney / Oblong</sourceValue>
+            </sourceValues>
+            <sourceValues>
+                <sourceValue>Collinsville - Randy&apos;s Vending</sourceValue>
+            </sourceValues>
+            <value>Collinsville</value>
+        </values>
+    </buckets>
+    <chart>
+        <backgroundColor1>#FFFFFF</backgroundColor1>
+        <backgroundColor2>#FFFFFF</backgroundColor2>
+        <backgroundFadeDir>Diagonal</backgroundFadeDir>
+        <chartSummaries>
+            <axisBinding>y</axisBinding>
+            <column>RowCount</column>
+        </chartSummaries>
+        <chartType>HorizontalBarStacked</chartType>
+        <enableHoverLabels>false</enableHoverLabels>
+        <expandOthers>true</expandOthers>
+        <groupingColumn>BucketField_23771397</groupingColumn>
+        <legendPosition>Right</legendPosition>
+        <location>CHART_BOTTOM</location>
+        <secondaryGroupingColumn>ServiceAppointment$Work_Order__c.Case.Asset.GP_Manufacturer__c</secondaryGroupingColumn>
+        <showAxisLabels>true</showAxisLabels>
+        <showPercentage>false</showPercentage>
+        <showTotal>false</showTotal>
+        <showValues>false</showValues>
+        <size>Medium</size>
+        <summaryAxisRange>Auto</summaryAxisRange>
+        <textColor>#000000</textColor>
+        <textSize>12</textSize>
+        <titleColor>#000000</titleColor>
+        <titleSize>18</titleSize>
+    </chart>
+    <columns>
+        <field>ServiceAppointment$Work_Order__c.Case.CaseNumber</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Work_Order__c.Case.Assigned_Resource__c</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Work_Order__c.Case.CreatedDate</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Name</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$LastModifiedBy</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Account</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$City</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$ServiceTerritory</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Work_Order__c.Case.Asset.Model__c</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$WorkType</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Description</field>
+    </columns>
+    <columns>
+        <field>ServiceAppointment$Solution_Notes__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ServiceAppointment$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Parts On Order</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceAppointment$Work_Order__c.Case.Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Closed</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceAppointment$Work_Order__c.Case.Asset.GP_Manufacturer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Safe Cash,NRT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceAppointment$Work_Order__c.Case.CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/1/2021 12:00 AM</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>BucketField_23771397</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ServiceAppointment$Work_Order__c.Case.Asset.GP_Manufacturer__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Open RT Parts On Order Request</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointment_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ServiceAppointment$ActualEndTime</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

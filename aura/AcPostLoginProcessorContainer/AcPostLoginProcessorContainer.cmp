@@ -1,0 +1,14 @@
+<!--
+========================================================================================================================
+This Component is used for processing user specific information post login in the community
+This is merely a container for the lwc component to handle alerts and toasting within community seems to work
+better in aura currently. This will listen for the showexpirednotification custom event and fire a toast
+with the payload.
+
+@see acPostLoginProcessor web component. (lwc)
+========================================================================================================================
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+                description="AcPostLoginProcessorContainer">
+    <c:acPostLoginProcessor onshowexpirednotification  ="{!c.handleShowNotification}"/>
+</aura:component>

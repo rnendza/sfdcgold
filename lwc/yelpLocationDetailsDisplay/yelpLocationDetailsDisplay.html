@@ -1,0 +1,124 @@
+<template>
+    <!-- if:true={anyDetailsToDisplay-->
+    <div >
+        <lightning-card class="accel-search-results-card">
+            <span slot="title">
+                <span if:true={businessDetails}>
+                    <i class="fas fa-glass-martini-alt fa-1x" style="color:purple"></i>
+                </span>
+                <span style="font-weight: bold" class="slds-p-left--medium">
+                    <lightning-formatted-rich-text value={cardTitle}></lightning-formatted-rich-text>
+                </span>
+            </span>
+            <span slot="actions">
+                <button class="slds-button slds-button--brand" onclick={handleSearchAgain}>
+                   <i class="fas fa-search slds-p-right--medium"></i>Search Again
+                </button>
+            </span>
+            <div if:true={isSearching} class="slds-is-relative">
+                <lightning-spinner size="large" variant="brand"
+                                   alternative-text="Searching"></lightning-spinner>
+            </div>
+            <div class="slds-p-horizontal--small">
+                <c-image-carousel if:true={showPhotoCarousel}
+                                  disable-auto-scroll="true"
+                                  image-urls={businessDetails.photos}>
+                </c-image-carousel>
+            </div>
+            <div class="slds-p-horizontal--medium" if:true={showBusinessDetails}>
+                <div class="slds-grid slds-p-bottom--medium">
+                    <div class="slds-col slds-size--5-of-5" style="font-size: 1.15rem;padding-top:30px">
+                        <div class="slds-text-heading_small">
+                            <span style="font-size: 1.75rem">
+                                <b>{businessDetails.name}</b>
+                            </span>
+                        </div>
+                        <div>
+                            <div class="star-rating" title="3">
+                                <div>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i class="fa fa-star" aria-hidden="true"></i>
+                                    <i style="font-size: .875rem" class="slds-p-left--medium">
+                                        {businessDetails.review_count}</i>
+                                </div>
+                            </div>
+                        </div>
+                        <div>
+                            <ul class="slds-list_horizontal slds-has-dividers_right">
+                                <template for:each={businessDetails.categories} for:item='category' for:index="index">
+                                    <li key={category.title} class="slds-item">{category.title}</li>
+                                </template>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-border_top slds-p-bottom--medium"></div>
+                <b>Review Highlights (Showing {reviews.totalDisplayedCount} of {reviews.total})</b><br/><br/>
+                <template for:each={reviews.reviews} for:item="review">
+                    <div key={review.id} class="slds-p-around--medium slds-border--bottom slds-color__border_gray-7">
+                        <div class="slds-grid slds-gutters" key={review.id}>
+                            <div class="slds-col slds-size--1-of-5">
+                                <img src={review.user.image_url} alt=""/>
+                            </div>
+                            <div class="slds-col slds-size--4-of-5">
+                                <div class="slds-p-horizontal--medium">
+                                        <span>
+                                            {review.text}
+                                        </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </template>
+                <div class="slds-p-top--large"></div>
+                <div class="slds-border_top slds-p-bottom--medium"></div>
+                <b>Location And Hours</b><br/><br/>
+                <div class="slds-grid slds-gutters">
+                    <div class="slds-col slds-size--4-of-6">
+                        <div class="slds-grid" style="border: 1px dotted red">
+                            <div class="slds-col slds-size--1-of-1">
+                                Mini Map here
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size--2-of-6">
+                        <template for:each={businessDetails.hours} for:item="hour">
+                            <div key={hour.hours_type}>
+                                <div>
+                                    <div if:true={hour.is_open_now} class="slds-text-align--left">
+                                        <span class="slds-text-color_success">
+                                            <b> Open Now!</b>
+                                        </span>
+                                    </div>
+                                    <div if:false={hour.is_open_now} class="slds-text-align--left">
+                                        <span class="slds-text-color_destructive">
+                                            <b> Closed Now!</b>
+                                        </span>
+                                    </div>
+                                </div>
+                                <div key={hour.hours_type} class="slds-text-align--right"
+                                     for:each={hour.open} for:item="open">
+                                    <div key={open.day} class="slds-grid">
+                                        <div class="slds-col slds-size--2-of-5">
+                                            <div class="slds-text-align--left">
+                                                <c-day-number-to-name day-number={open.day}></c-day-number-to-name>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size--3-of-5">
+                                            <div class="slds-text-align--left">
+                                                {open.start} - {open.end}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+</template>

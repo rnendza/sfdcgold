@@ -1,0 +1,16 @@
+<aura:component description="Accel_CommunityVerticalNav"
+                extends="forceCommunity:navigationMenuBase" access="global">
+
+    <aura:registerEvent name="customLogout" type="c:Accel_CustomLogoutEvent"/>
+
+    <div class="slds-grid slds-grid--vertical slds-navigation-list--vertical">
+        <ul onclick="{!c.onClick}" class="accel-mobile-menu" id="accel-mobile-menu-toggle">
+            <aura:iteration items="{!v.menuItems}" var="item">
+                <li class="{!item.active ? 'accel-nav-active' : ''}" data-menu-item-id="{!item.id}">{!item.label}
+                </li>
+            </aura:iteration>
+            <li class="accel-mobile-logout" data-menu-item-id="Settings">Settings</li>
+            <li class="accel-mobile-logout" data-menu-item-id="Logout">Logout</li>
+        </ul>
+    </div>
+</aura:component>

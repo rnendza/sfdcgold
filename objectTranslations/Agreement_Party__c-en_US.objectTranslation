@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Agreement Party</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Agreement Parties</value>
+    </caseValues>
+    <fields>
+        <label><!-- Agreement Party Name --></label>
+        <name>Agreement_Party_Name__c</name>
+        <relationshipLabel><!-- Agreement Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Agreement --></label>
+        <name>Agreement__c</name>
+        <relationshipLabel><!-- Agreement Parties --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Role --></label>
+        <name>Role__c</name>
+        <picklistValues>
+            <masterLabel>Person Procuring Agreement</masterLabel>
+            <translation><!-- Person Procuring Agreement --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

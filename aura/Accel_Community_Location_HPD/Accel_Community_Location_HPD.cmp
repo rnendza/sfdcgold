@@ -1,0 +1,60 @@
+<!--
+ - @TODO we should maybe thing about using web components instead but it might be too early to adopt those!
+ -->
+<aura:component implements="forceCommunity:availableForAllPageTypes"
+                description="Accel Community Location HPD Component"
+                controller="Accel_CommunityHpdController">
+
+    <aura:attribute name="debugConsole" access="private"    type="Boolean"      default="true" description="blah blah desc" />
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="pickListSelectOneText" type="String" default="--- Choose One ---"/>
+
+    <aura:attribute name="holdPerDayColumns"    type="List"/>
+    <aura:attribute name="holdPerDayData"       type="Object"/>
+    <aura:attribute name="numberOfHpdRecords"  type="Integer" default="0"/>
+    <aura:attribute name="selectedAccountId"    type="String"/>
+    <aura:attribute name="userAccounts"         type="List"/>
+    <aura:attribute name="searchExecuted"  type="Boolean" default="false"/>
+
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <aura:if isTrue="{!v.showSpinner}">
+        <lightning:spinner variant="brand" size="large" aura:id="assetSearchSpinner"
+                           alternativeText="{!v.spinnerAltText}"/>
+    </aura:if>
+    <lightning:select name="accountSelect" label="Select a location:"
+                      onchange="{!c.onChangeAccount}"
+                      aura:id="accountSelect" value="{!v.selectedAccountId}">
+        <option value=""  text="{!v.pickListSelectOneText}"></option>
+        <aura:iteration items="{!v.userAccounts}" var="account">
+            <option text="{!account.Name + ' - ' + account.ShippingCity }" value="{!account.Id}"></option>
+        </aura:iteration>
+    </lightning:select>
+    <aura:if isTrue="{!not(empty(v.holdPerDayData))}">
+        <br/>
+        # of rows retrieved = {!v.numberOfHpdRecords}
+        <!-- phase I only would should probably roll out own html using iteration for a better mobile experience! -->
+        <lightning:datatable data="{! v.holdPerDayData }"
+                             columns="{! v.holdPerDayColumns}"
+                             class="slds-max-medium-table_stacked"
+                             sortedBy="{!v.sortedBy}"
+                             keyField="Id"
+                             showRowNumberColumn="false"
+                             hideCheckboxColumn="true"/>
+        <aura:set attribute="else">
+            <aura:if isTrue="{!v.searchExecuted}">
+                No hold per day record found for selected account.
+            </aura:if>
+        </aura:set>
+    </aura:if>
+
+    <!--
+    -  General util methods so we don't have to copy this to every helper.
+    -  @TODO see if Spring 19 provides a better way to do this!
+    -->
+    <c:Accel_UiMessagingUtils   aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils    aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils       aura:id="loggingUtils"/>
+</aura:component>

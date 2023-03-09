@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Job Offer</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Job Offers</value>
+    </caseValues>
+    <fields>
+        <label><!-- Additional Offer Details --></label>
+        <name>Additional_Offer_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Applicant Name --></label>
+        <name>Applicant_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Job Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Background Authorization Returned --></label>
+        <name>Background_Authorization_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Completed --></label>
+        <name>Background_Check_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Background Check Started --></label>
+        <name>Background_Check_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Compensation --></label>
+        <name>Base_Compensation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bonus --></label>
+        <name>Bonus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Name --></label>
+        <name>Candidate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate --></label>
+        <name>Candidate__c</name>
+        <relationshipLabel><!-- Job Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Compensation Type --></label>
+        <name>Compensation_Type__c</name>
+        <picklistValues>
+            <masterLabel>Annual Salary</masterLabel>
+            <translation><!-- Annual Salary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hourly</masterLabel>
+            <translation><!-- Hourly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date Offer Extended --></label>
+        <name>Date_of_Formal_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Verbal Offer --></label>
+        <name>Date_of_Verbal_Offer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drug/Physical Completed --></label>
+        <name>Drug_Physical_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employee Agreement/Covenants Sent On --></label>
+        <name>Employee_Agreement_Covenants_Sent_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Employment Agreement --></label>
+        <name>Employment_Agreement__c</name>
+        <picklistValues>
+            <masterLabel>Amendment to EA</masterLabel>
+            <translation><!-- Amendment to EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA ECA</masterLabel>
+            <translation><!-- GA ECA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebraska 12 Months EA</masterLabel>
+            <translation><!-- Nebraska 12 Months EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nebraska 18 Months EA</masterLabel>
+            <translation><!-- Nebraska 18 Months EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No EA</masterLabel>
+            <translation><!-- No EA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-solicit 1 yr</masterLabel>
+            <translation><!-- Non-solicit 1 yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-solicit 2 yr</masterLabel>
+            <translation><!-- Non-solicit 2 yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-solicit/non-compete 1 yr</masterLabel>
+            <translation><!-- Non-solicit/non-compete 1 yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-solicit/non-compete 2 yr</masterLabel>
+            <translation><!-- Non-solicit/non-compete 2 yr --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>North Carolina EA</masterLabel>
+            <translation><!-- North Carolina EA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Executed Offer Letter Returned --></label>
+        <name>Executed_Offer_Letter_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hired in ADP-Elec Onboarding Created --></label>
+        <name>Hired_in_ADP_Elec_Onboarding_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Offer Status --></label>
+        <name>Job_Offer_Status__c</name>
+        <picklistValues>
+            <masterLabel>Accepted</masterLabel>
+            <translation><!-- Accepted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Longer Onboarding</masterLabel>
+            <translation><!-- No Longer Onboarding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Extended</masterLabel>
+            <translation><!-- Offer Extended --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Offer Rejected</masterLabel>
+            <translation><!-- Offer Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Job Title --></label>
+        <name>Job_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jobs --></label>
+        <name>Jobs__c</name>
+        <relationshipLabel><!-- Job Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Supervisor --></label>
+        <name>Proposed_Hiring_Manager__c</name>
+        <relationshipLabel><!-- Job Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Proposed Start Date --></label>
+        <name>Proposed_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reports To --></label>
+        <name>Reports_To__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Incentive Plan --></label>
+        <name>Sales_Incentive_Plan__c</name>
+        <picklistValues>
+            <masterLabel>Value 1</masterLabel>
+            <translation><!-- Value 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 2</masterLabel>
+            <translation><!-- Value 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Value 3</masterLabel>
+            <translation><!-- Value 3 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Source --></label>
+        <name>Source__c</name>
+        <relationshipLabel><!-- Job Offers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wants and Warrants Returned --></label>
+        <name>Wants_and_Warrants_Returned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Welcome Email Sent --></label>
+        <name>Welcome_Email_Sent__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- When Job Offer Status is Offer Extended, an Employment Agreement value is required.
+Please, enter an Employment Agreement value. --></errorMessage>
+        <name>Employment_Agreement_is_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- In order to mark this Job Offer as Accepted, please fill out a Proposed Start Date. This date can be changed later if needed. --></errorMessage>
+        <name>Proposed_Start_Date_must_be_filled_out</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Tägliche Zusammenfassung für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Tägliche Zusammenfassungen für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Tägliche Zusammenfassung für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Tägliche Zusammenfassungen für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Täglicher Zusammenfassung für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Täglicher Zusammenfassungen für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Täglicher Zusammenfassung für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Täglichen Zusammenfassungen für Maps-Live-Vermögenswerte</value>
+    </caseValues>
+    <fields>
+        <help>Durchschnittliche Dauer benutzerdefinierter Haltepunktereignisse in Stunden.</help>
+        <label><!-- Average Stop Time (Hours) --></label>
+        <name>maps__AverageStopTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Durchschnittliche Dauer benutzerdefinierter Haltepunktereignisse in Minuten.</help>
+        <label><!-- Average Stop Time (Minutes) --></label>
+        <name>maps__AverageStopTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der an diesem Tag aufgezeichneten Batterieeinschaltungen, wie in der Konfiguration für die tägliche Zusammenfassung definiert.</help>
+        <label><!-- Count of Events - Device Battery On --></label>
+        <name>maps__CountOfEventsDeviceBatteryOn__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der an diesem Tag aufgezeichneten Geschwindigkeitsschwellenwerte, wie in der Konfiguration für die tägliche Zusammenfassung definiert.</help>
+        <label><!-- Count of Events - Speed Threshold --></label>
+        <name>maps__CountOfEventsSpeedThreshold__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der an diesem Tag aufgezeichneten Geschwindigkeitsüberschreitungen, wie in der Konfiguration für die tägliche Zusammenfassung definiert.</help>
+        <label><!-- Count of Events - Speeding --></label>
+        <name>maps__CountOfSummaryEventsSpeeding__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der an diesem Tag aufgezeichneten Haltepunkte, wie in der Konfiguration für die tägliche Zusammenfassung definiert.</help>
+        <label><!-- Count of Events - Stops --></label>
+        <name>maps__CountOfSummaryEventsStops__c</name>
+    </fields>
+    <fields>
+        <help>Datum dieser Zusammenfassung</help>
+        <label><!-- Summary Date --></label>
+        <name>maps__Date__c</name>
+    </fields>
+    <fields>
+        <help>Der mit der Geräte-ID verbundene Geräteanbieter</help>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbewegungszeit mit eingeschaltetem Motor in Stunden</help>
+        <label><!-- Drive Time (Hours) --></label>
+        <name>maps__DriveTimeHours__c</name>
+    </fields>
+    <fields>
+        <help>Gesamtbewegungszeit mit eingeschaltetem Motor in Minuten</help>
+        <label><!-- Drive Time (Minutes) --></label>
+        <name>maps__DriveTimeMinutes__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob in der angegebenen Feiertagsruhe eine Fahrt stattfand.</help>
+        <label><!-- Driving During Holiday Off --></label>
+        <name>maps__DrivingDuringHolidayOff__c</name>
+    </fields>
+    <fields>
+        <help>Gibt an, ob außerhalb der angegebenen Arbeitszeit eine Fahrt stattfand.</help>
+        <label><!-- Driving Outside Working Hours --></label>
+        <name>maps__DrivingOutsideWorkingHours__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld stellt den vollständigen Dateninhalt des ersten von AWS für den Tag empfangenen Punkts dar.</help>
+        <label><!-- First Message Content --></label>
+        <name>maps__FirstMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld stellt die Datums- und Uhrzeitangaben des ersten von AWS für den Tag empfangenen Punkts dar.</help>
+        <label><!-- First Message Timestamp --></label>
+        <name>maps__FirstMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Gerätemeldungen, die an diesem Tag auf eine schnelle Beschleunigung hindeuten (sofern verfügbar).</help>
+        <label><!-- Number of Hard Acceleration Events --></label>
+        <name>maps__HardAccelerationCount__c</name>
+    </fields>
+    <fields>
+        <help>Anzahl der Gerätemeldungen, die an diesem Tag auf einen scharfen Bremsvorgang hindeuten (sofern verfügbar).</help>
+        <label><!-- Number of Hard Braking Events --></label>
+        <name>maps__HardBrakingCount__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld stellt den vollständigen Dateninhalt des letzten von AWS für den Tag empfangenen Punkts dar.</help>
+        <label><!-- Last Message Content --></label>
+        <name>maps__LastMessageContent__c</name>
+    </fields>
+    <fields>
+        <help>Dieses Feld stellt die Datums- und Uhrzeitangaben des letzten von AWS für den Tag empfangenen Punkts dar.</help>
+        <label><!-- Last Message Timestamp --></label>
+        <name>maps__LastMessageTimestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Asset --></label>
+        <name>maps__LiveAsset__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>Verweis auf die Zusammenfassungskonfiguration, auf der diese Zusammenfassung basiert</help>
+        <label><!-- Live Daily Summary Configuration --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>An diesem Tag empfangener Höchstgeschwindigkeitswert (in km/h)</help>
+        <label><!-- Maximum Speed (KPH) --></label>
+        <name>maps__MaximumSpeedKPH__c</name>
+    </fields>
+    <fields>
+        <help>An diesem Tag empfangener Höchstgeschwindigkeitswert (in mph)</help>
+        <label><!-- Maximum Speed (MPH) --></label>
+        <name>maps__MaximumSpeedMPH__c</name>
+    </fields>
+    <fields>
+        <help>Letzter verfügbarer Tachostand des Tages in Kilometer.</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>Letzter verfügbarer Tachostand des Tages in Meilen.</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>Zurückgelegte Gesamtentfernung in Kilometer</help>
+        <label><!-- Total Distance (km) --></label>
+        <name>maps__TripDistanceKm__c</name>
+    </fields>
+    <fields>
+        <help>Zurückgelegte Gesamtentfernung in Meilen</help>
+        <label><!-- Total Distance (mi) --></label>
+        <name>maps__TripDistanceMiles__c</name>
+    </fields>
+    <fields>
+        <help>Der bei Erstellung der Zusammenfassung dem Gerät zugewiesene Benutzer</help>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Live Asset Daily Summaries --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Name der täglichen Zusammenfassung für M</nameFieldLabel>
+</CustomObjectTranslation>

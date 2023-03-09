@@ -1,0 +1,59 @@
+<!--
+ = This component is used to the launch a flow to create assets based on the PO Id that is in context.
+ -->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader" access="global"
+                controller="AssetController">
+
+    <aura:attribute name="po" type="Purchase_Order__c"/>
+    <aura:attribute name="qtyToCreate" type="Integer"/>
+    <aura:attribute name="remainingQtyToCreate" type="Integer" default="0"/>
+    <aura:attribute name="inputVars" type="String"/>
+    <aura:attribute name="totalNbrOfAssetsCreated" type="Integer" default="0"/>
+    <aura:attribute name="flowName" type="String" default="Create_Software_Assets_From_PO"/>
+    <aura:attribute name="isRunningFlow" type="Boolean" default="false"/>
+    <aura:attribute name="alreadyCreated" type="Boolean" default="false"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <!-- Simply a way to resize / style the modal -->
+    <aura:html tag="style">
+        .cuf-content { padding: 0 0rem !important; }
+        .slds-p-around--medium { padding: 0rem !important; }
+        .slds-modal__content{ overflow-y:hidden !important; height:unset !important; max-height:unset !important; }
+    </aura:html>
+
+    <div class="slds-col modal-header slds-modal__header">
+        <div class="slds-clearfix">
+            <div class="slds-float_left">
+                <span><lightning:icon iconName="custom:custom27" alternativeText="Create Software"/></span>
+            </div>
+            <div>
+                <span><h2 class="title slds-text-heading--medium">Create Software</h2></span>
+            </div>
+        </div>
+    </div>
+    <div class="slds-col modal-body scrollable slds-p-around--medium"
+         style="height: 200px; max-height: 200px; overflow-y: auto !important">
+        <div>
+            <lightning:flow aura:id="flowData" onstatuschange="{!c.statusChange}"/>
+            <aura:if isTrue="{!v.isRunningFlow}">
+                <div style="text-align: center;font-size:1.2em;font-weight: bold">
+                    Creating {!v.qtyToCreate} Software Assets..............
+                </div>
+            </aura:if>
+        </div>
+    </div>
+    <!-- here in case the modal doesn't auto close but assets were already created  -->
+    <aura:if isTrue="{!v.alreadyCreated}">
+        <div class="slds-col modal-footer slds-modal__footer">
+            <lightning:button variant="neutral" label="Cancel" onclick="{! c.cancelClick }"/>
+        </div>
+    </aura:if>
+
+</aura:component>

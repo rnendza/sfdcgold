@@ -1,0 +1,233 @@
+<!-- Fsl Poc Lwc Quick Action -->
+<template>
+
+        <div class="accel-card-theme">
+        <!--- ===== Static Header area ===== -->
+        <template if:true={showStaticHeader}>
+            <div class="slds-p-around_x-small accel-tile-header-container slds-border_bottom slds-m-bottom_small">
+                <div class="slds-grid">
+                    <div class="slds-col slds-size_1-of-1">
+                        <lightning-icon
+                                if:false={showSaveBtn}
+                                class="slds-m-right_xx-small"
+                                icon-name={headerIcon}>
+                        </lightning-icon>
+                        <span if:true={showBackBtn} class="slds-m-right_xx-small">
+                            <a href="" title="Cancel / Go Back" onclick={handleBackClick}>
+                                <lightning-icon
+                                        title="Cancel Save"
+                                        size="x-small"
+                                        icon-name="action:back">
+                                </lightning-icon>
+                            </a>
+                        </span>
+                        <span class="slds-truncate">
+                            <b>{headerDynaTitle}</b>
+                        </span>
+                        <template if:true={showCreateNewBtn}>
+                            <div class="slds-float_right">
+                                <lightning-icon
+                                        size="x-small"
+                                        onclick={handlePageAction}
+                                        data-id="btnCreateNew"
+                                        icon-name="action:new">
+                                </lightning-icon>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </template>
+
+        <!--- ===== Stencil ===== -->
+        <template if:true={showStencil}>
+            <div style="background-color: white">
+            <c-ui-custom-stencil
+                    iterations="4"
+                    child-class="slds-var-m-around-small"
+                    type="list" columns="2">
+            </c-ui-custom-stencil>
+            </div>
+        </template>
+
+        <!--- ==== Datatable / Tile view ===== -->
+        <template if:true={showRecords}>
+            <template if:true={showDatatable}>
+                <template for:each={dtRecords} for:item="rec">
+                    <div class="slds-has-divider_bottom slds-m-bottom_xx-small slds-p-bottom_xx-small"
+                         key={rec.recordId}>
+                        <lightning-tile type="media" label="" class='accel-tile-container'>
+                            <span class="accel-dotted-link" data-recordid={rec.recordId}>
+                                <a  href="javascript:void(0);"
+                                    data-recordid={rec.recordId}
+                                    title="Click to view record."
+                                    onclick={handleTileRowAction}>
+                                    <b>{rec.recordName}</b>
+                                </a>
+                            </span>
+                            <!-- RECORD FIELDS -->
+                            <dl class="slds-dl_horizontal">
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        Sent Date
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        <lightning-formatted-date-time
+                                                value={rec.sentDate}>
+                                        </lightning-formatted-date-time>
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        Sent To
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate xslds-text-body_smallx">
+                                        {rec.recipientName}
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        Alert Type
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        {rec.alertType}
+                                    </p>
+                                </dd>
+                                <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        Title
+                                    </p>
+                                </dt>
+                                <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                    <p class="slds-truncate xslds-text-body_small">
+                                        {rec.msgTitle}
+                                    </p>
+                                </dd>
+                            </dl>
+                        </lightning-tile>
+                    </div>
+                </template>
+            </template>
+        </template>
+
+        <!--- ==== Form to create a new custom_notifications_sent__c record ===== -->
+
+        <template if:true={showForm}>
+            <div class="accel-form-tile-container">
+                <lightning-record-edit-form
+                        object-api-name="Custom_Notifications_Sent__c"
+                        onload={handleFormLoad}
+                        onsuccess={handleFormSuccess}
+                        onerror={handleFormError}
+                        onsubmit={handleFormSubmit}>
+
+                    <lightning-messages></lightning-messages>
+                    <div class={saLookupCssClass}>
+                        <c-fsl-record-lookup-search
+                                data-id="saLookup"
+                                custom-id="saLookup"
+                                s-object-api-name='ServiceAppointment'
+                                s-object-label='ServiceAppointments'
+                                option-icon-name="standard:service_appointment"
+                                primary-display-field='AppointmentNumber'
+                                secondary-display-field='CreatedDate'
+                                order-by-clause=' AppointmentNumber DESC '
+                                search-label="Service Appointment"
+                                primary-filter-field='AppointmentNumber'
+                                onrecordselected={handleRecordSelected}
+                                oninputfocused={handleInputFocused}
+                                oninputfocusedout={handleInputFocusedOut}
+                                default-selected={_saIdSelected}
+                                min-characters="2"
+                                customrequired="true"
+                                value-required="true"
+                                preload-results="true"
+                                max-rows="50"
+                                read-only-place-holder='Select a Service Appointment'
+                                search-place-holder='Search for Service Appointment'>
+                        </c-fsl-record-lookup-search>
+                    </div>
+                    <div class={userLookupCssClass}>
+                        <c-fsl-record-lookup-search
+                                data-id="userLookup"
+                                custom-id="userLookup"
+                                s-object-api-name='User'
+                                s-object-label='Users'
+                                option-icon-name="standard:user"
+                                primary-display-field='Name'
+                                order-by-clause=' Name ASC '
+                                secondary-display-field='Email'
+                                search-label="User"
+                                primary-filter-field='Name'
+                                secondary-filter-field='Firstname'
+                                onrecordselected={handleRecordSelected}
+                                oninputfocused={handleInputFocused}
+                                oninputfocusedout={handleInputFocusedOut}
+                                default-selected={_runningUserId}
+                                min-characters="2"
+                                customrequired="true"
+                                value-required="true"
+                                preload-results="true"
+                                max-rows="50"
+                                read-only-place-holder='Select a User'
+                                field-level-help={_userFieldLevelHelp}
+                                search-place-holder='Search for User'>
+                        </c-fsl-record-lookup-search>
+                    </div>
+
+                    <div class={otherFormFieldsCssClass} >
+                        <div class="slds-p-vertical_x-small">
+                            <lightning-input-field
+                                    required="true"
+                                    field-name="Alert_Type__c">
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-p-vertical_x-small">
+                            <lightning-input-field
+                                    required="true"
+                                    field-name="Msg_Title__c">
+                            </lightning-input-field>
+                        </div>
+                        <div class="slds-p-vertical_x-small">
+                            <lightning-input-field
+                                    field-name="Msg_Body__c">
+                            </lightning-input-field>
+                        </div>
+
+                        <div class="slds-m-top_medium slds-p-around_x-small slds-border_top accel-tile-header-container">
+                            <lightning-button
+                                    icon-name="utility:record_create"
+                                    type="submit"
+                                    title="Save"
+                                    label="Create New"
+                                    variant="brand"
+                                    style="display: grid; width: 100%">
+                            </lightning-button>
+                        </div>
+                    </div>
+                </lightning-record-edit-form>
+            </div>
+        </template>
+
+        <!-- ==========   NO DATA FOUND  ============ -->
+        <template if:true={showNoData}>
+            <div class="accel-no-data-container">
+            <div class="slds-p-top_x-small">
+                <c-ui-empty-state
+                        container-class="slds-illustration slds-illustration_small"
+                        header-text={noRecordsHeaderText}
+                        body-text={noRecordsBodyText}>
+                </c-ui-empty-state>
+            </div>
+            </div>
+        </template>
+    </div>
+    <div class="slds-p-bottom_xx-large"></div>
+
+</template>

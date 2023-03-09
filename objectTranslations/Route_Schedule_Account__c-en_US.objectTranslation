@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Schedule Account</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Schedule Accounts</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Route Schedule Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- $100 Fill Level --></label>
+        <name>Cassette_100_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Fill Level --></label>
+        <name>Cassette_1_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Fill Level --></label>
+        <name>Cassette_20_Fill_level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $50 Fill Level --></label>
+        <name>Cassette_50_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Fill Level --></label>
+        <name>Cassette_5_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for additional fills. --></help>
+        <label><!-- Collection Type --></label>
+        <name>Collection_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- Signifies that all the fill levels have a value. --></help>
+        <label><!-- Fill Levels Completed --></label>
+        <name>Fill_Levels_Completed__c</name>
+    </fields>
+    <fields>
+        <help><!-- Bypasses any update logic of attempted automatic set of Redemption_Type_From_Asset__c and Redemption_Asset__c in preference of allow an admin to manually set it. (BEFORE UPDATE EVENT ONLY) --></help>
+        <label><!-- Redemption Asset Manual Override --></label>
+        <name>Redemption_Asset_Manual_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- The application redemption terminal. --></help>
+        <label><!-- Redemption Asset --></label>
+        <name>Redemption_Asset__c</name>
+        <relationshipLabel><!-- Route Schedule Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Use this to select which Redemption Terminal is desired. Defaults to RT1 --></help>
+        <label><!-- Redemption Terminal --></label>
+        <name>Redemption_Terminal__c</name>
+        <picklistValues>
+            <masterLabel>RT1</masterLabel>
+            <translation><!-- RT1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RT2</masterLabel>
+            <translation><!-- RT2 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The redemption type pulled via analyzing the assets associated with the account (as opposed to the FF that goes from Account and looks at GP Mfgr ) --></help>
+        <label><!-- Redemption Type --></label>
+        <name>Redemption_Type_From_Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption Type (Obsolete) --></label>
+        <name>Redemption_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Replenishment Type --></label>
+        <name>Replenishment_Type__c</name>
+        <picklistValues>
+            <masterLabel>Cash Fill</masterLabel>
+            <translation><!-- Cash Fill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Audit</masterLabel>
+            <translation><!-- Full Audit --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Route Schedule --></label>
+        <name>Route_Schedule__c</name>
+        <relationshipLabel><!-- Route Schedule Accounts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Stop Number --></label>
+        <name>Stop_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total # of Redemption Terminals. (Set on Creation of RSA) --></help>
+        <label><!-- Total # of RTs --></label>
+        <name>Total_RTs__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of $100 notes to fill a redemption at this location with. Used for Cash Logistics. --></help>
+        <label><!-- $100 Fill Level --></label>
+        <name>X100_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of $1 notes to fill a redemption at this location with. Used for Cash Logistics. --></help>
+        <label><!-- $1 Fill Level --></label>
+        <name>X1_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of $20 notes to fill a redemption at this location with. Used for Cash Logistics. --></help>
+        <label><!-- $20 Fill Level --></label>
+        <name>X20_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of $5 notes to fill a redemption at this location with. Used for Cash Logistics. --></help>
+        <label><!-- $5 Fill Level --></label>
+        <name>X5_Fill_Level__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

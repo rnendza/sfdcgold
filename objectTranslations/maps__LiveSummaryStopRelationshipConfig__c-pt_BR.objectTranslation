@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Ajuste de resumo de parada de mapas ativos</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Ajustes de resumo de parada de mapas ativos</value>
+    </caseValues>
+    <fields>
+        <label><!-- Distance Units --></label>
+        <name>maps__DistanceUnits__c</name>
+        <picklistValues>
+            <masterLabel>feet</masterLabel>
+            <translation>pés</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>kilometers</masterLabel>
+            <translation>quilômetros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>metros</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>miles</masterLabel>
+            <translation>milhas</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Distance --></label>
+        <name>maps__Distance__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live Daily Summary Configuration --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Live Summary Stop Relationship Config --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lookup Field Name --></label>
+        <name>maps__LookupFieldName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marker Layer --></label>
+        <name>maps__MarkerLayer__c</name>
+        <relationshipLabel><!-- Live Summary Stop Relationship Config --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Configuração de parada do resumo do Maps</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request__c$Name</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Account__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Marketing_Request_Products__r$Product__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Marketing_Request__c$Accel_Payment_Percentage__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Marketing_Request__c$Total_Quote_Amount__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Marketing_Request__c$Requested_Reimbursement_Amount__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Marketing_Project_Status__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7)</booleanFilter>
+        <criteriaItems>
+            <column>Marketing_Request__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Marketing_Request__c.Co_Op</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c$Marketing_Project_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Pending Co-Op Invoice</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c$Accel_Payment_Percentage__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessThan</operator>
+            <value>50</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c.Marketing_Request_Products__r$Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>FiveStar (Co-Op)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c.Marketing_Request_Products__r$Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>MD Dynamic Solutions (Co-Op)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c.Marketing_Request_Products__r$Product__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Preferred Patron Loyalty Program (Co-Op)</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request__c.Marketing_Request_Products__r$Marketing_Product_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>React Right Now (Co-Op)</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Pending Invoice: Loyalty &amp; &lt; 50%</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Requests_with_Marketingg_Request_Product__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

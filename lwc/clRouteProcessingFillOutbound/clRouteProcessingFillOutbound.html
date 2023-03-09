@@ -1,0 +1,113 @@
+<!-- Cl Route Processing Fill Outbound -->
+<template>
+
+        <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+        <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+        <div>
+            <div class="slds-p-around_xxx-small">
+                <lightning-card>
+                    <h1 slot="title" class="no-wrap">
+                        <div class="slds-grid slds-wrap accel-test-borders">
+                            <c-ui-card-title
+                                    if:true={rpsWrapper}
+                                    card-title={rpsWrapper.accountName}
+                                    card-subtitle={fillDateFormatted}
+                                    card-second-subtitle={collectionDateFormatted}
+                                    card-third-subtitle={cardThirdSubTitle}
+                                    onbackclicked={handleBackClicked}
+                                    back-button-label="Back"
+                                    show-back-button={showBackButton}
+                                    icon-name="standard:account"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </h1>
+                    <!-- ===   TOP CONTROLS   === -->
+                    <div    if:true={rpsWrapper}
+                            class="slds-grid slds-wrap accel-test-borders slds-p-left_small slds-p-top_x-small accel-card-subheader-row
+                                slds-p-bottom_x-small slds-m-horizontal_small">
+                        <div class="slds-col accel-test-borders slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-2 slds-align-middle">
+                            <div class="slds-grid">
+                                <div class="slds-col slds-grow-none">
+                                    <div if:true={rpsWrapper}>
+                                        {rpsWrapper.rps.Name}
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col accel-test-borders slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-2 accel-test-borders">
+                            <div class="slds-text-align_right slds-p-right_small">
+                                <lightning-formatted-address
+                                        if:true={rpsWrapper}
+                                        street={rpsWrapper.rps.Account__r.ShippingStreet}
+                                        city={rpsWrapper.rps.Account__r.ShippingCity}
+                                        province={rpsWrapper.rps.Account__r.ShippingState}
+                                        postal-code={rpsWrapper.rps.Account__r.ShippingPostalCode}
+                                        disabled={disableAddressClick}
+                                        class="accel-cardtitle_address">
+                                </lightning-formatted-address>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- ===   END TOP CONTROLS   === -->
+
+                    <div
+                         class="accel-test-borders slds-p-top_large slds-m-horizontal_small">
+                        <div style="min-height: 200px;">
+                            <c-cl-rps-fill-output-view
+                                    if:true={rpsId}
+                                    rps-id={rpsId}
+                                    form-title={labels.lblFormCardTitle}>
+                            </c-cl-rps-fill-output-view>
+                        </div>
+                        <div    if:true={rpsId}
+                                class="slds-m-top_medium slds-p-bottom_medium">
+                            <button if:true={showFillButton}
+                                    name="submitFillComplete"
+                                    onclick={handleSubmitFillComplete}
+                                    data-id="submitFillCompleteButton"
+                                    title={labels.lblButtonFillComplete}
+                                    style="padding:.30em"
+                                    class="slds-button slds-button_brand slds-button_stretch ">
+                                            <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                            </span>
+                                <span style="font-size: 1.25em">{labels.lblButtonFillComplete}</span>
+                            </button>
+
+                            <div if:true={isAlreadyCompleted}>
+                                <c-ui-scoped-notification
+                                        icon-name="utility:success"
+                                        icon-variant="inverse"
+                                        theme="success"
+                                        message={completedMsg}>
+                                </c-ui-scoped-notification>
+                            </div>
+                            <div if:true={_isRunningUpdate}>
+                                <c-ui-custom-stencil
+                                        iterations="1"
+                                        type="list" columns="1">
+                                </c-ui-custom-stencil>
+                            </div>
+                        </div>
+
+                    </div>
+                    <!-- ==========   NO DATA FOUND  ============ -->
+                    <div if:true={showNoData}>
+                        <c-ui-empty-state
+                                container-class="slds-illustration slds-illustration_large"
+                                header-text="Blah no outbound"
+                                body-text={emptyBodyText}>
+                        </c-ui-empty-state>
+                    </div>
+                </lightning-card>
+            </div>
+        </div>
+</template>

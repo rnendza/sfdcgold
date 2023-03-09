@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Prompt xmlns="http://soap.sforce.com/2006/04/metadata">
+    <masterLabel>System Update - RM</masterLabel>
+    <promptVersions>
+        <actionButtonLabel>Click Here for More Info</actionButtonLabel>
+        <actionButtonLink>https://status.salesforce.com/instances/NA207/maintenances</actionButtonLink>
+        <body>Our system will go through maintenance on October 9, 12:00AM-12:05AM. You will not have access to our salesforce org during that time.</body>
+        <customApplication>Relationship_Management</customApplication>
+        <delayDays>1</delayDays>
+        <dismissButtonLabel>Ok</dismissButtonLabel>
+        <displayPosition>TopCenter</displayPosition>
+        <displayType>FloatingPanel</displayType>
+        <endDate>2021-10-09</endDate>
+        <isPublished>false</isPublished>
+        <masterLabel>System Update - RM</masterLabel>
+        <shouldDisplayActionButton>true</shouldDisplayActionButton>
+        <shouldIgnoreGlobalDelay>true</shouldIgnoreGlobalDelay>
+        <startDate>2021-10-05</startDate>
+        <targetPageKey1>home</targetPageKey1>
+        <targetPageType>standard__namedPage</targetPageType>
+        <themeColor>Theme1</themeColor>
+        <themeSaturation>Dark</themeSaturation>
+        <timesToDisplay>1</timesToDisplay>
+        <title>System Down Notification</title>
+        <userAccess>Everyone</userAccess>
+        <userProfileAccess>Everyone</userProfileAccess>
+        <versionNumber>1</versionNumber>
+    </promptVersions>
+</Prompt>

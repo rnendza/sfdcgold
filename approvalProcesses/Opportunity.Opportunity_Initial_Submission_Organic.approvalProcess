@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ApprovalProcess xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>false</active>
+    <allowRecall>false</allowRecall>
+    <allowedSubmitters>
+        <type>allInternalUsers</type>
+    </allowedSubmitters>
+    <allowedSubmitters>
+        <type>owner</type>
+    </allowedSubmitters>
+    <approvalPageFields>
+        <field>Name</field>
+        <field>Owner</field>
+    </approvalPageFields>
+    <approvalStep>
+        <allowDelegate>false</allowDelegate>
+        <approvalActions>
+            <action>
+                <name>Initial_Opportunity_Submission_Approved</name>
+                <type>Alert</type>
+            </action>
+        </approvalActions>
+        <assignedApprover>
+            <approver>
+                <name>pennys@accelentertainment.com</name>
+                <type>user</type>
+            </approver>
+            <whenMultipleApprovers>FirstResponse</whenMultipleApprovers>
+        </assignedApprover>
+        <label>Initial Approval - Organic</label>
+        <name>InitialApprovalOrganic</name>
+        <rejectionActions>
+            <action>
+                <name>Opportunity_Initial_Rejection_Email</name>
+                <type>Alert</type>
+            </action>
+            <action>
+                <name>Uncheck_Initial_submission</name>
+                <type>FieldUpdate</type>
+            </action>
+        </rejectionActions>
+    </approvalStep>
+    <emailTemplate>Opportunity_Email_Templates/Opportunity_Initial_Submission</emailTemplate>
+    <enableMobileDeviceAccess>false</enableMobileDeviceAccess>
+    <entryCriteria>
+        <formula>AND(NOT(ISBLANK( TUA_Submitted_By2__c )), Submit_Machine_Request__c = FALSE, Submit_Exec_Approval__c = FALSE,RecordTypeId =&quot;0121I000000W9xc&quot;, Sales_Ops_Initial_Approval__c = TRUE)</formula>
+    </entryCriteria>
+    <finalApprovalRecordLock>true</finalApprovalRecordLock>
+    <finalRejectionRecordLock>false</finalRejectionRecordLock>
+    <label>Opportunity Initial Submission - Organic</label>
+    <processOrder>5</processOrder>
+    <recallActions>
+        <action>
+            <name>Uncheck_Initial_submission</name>
+            <type>FieldUpdate</type>
+        </action>
+    </recallActions>
+    <recordEditability>AdminOnly</recordEditability>
+    <showApprovalHistory>true</showApprovalHistory>
+</ApprovalProcess>

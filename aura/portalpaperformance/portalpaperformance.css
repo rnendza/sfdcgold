@@ -1,0 +1,33 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+
+    .THIS .slds-form-element__label {
+        color: black;
+        font-weight: 600;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }  
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px){
+   
+    .THIS .slds-form-element__label {
+        color: black;
+        font-weight: 600;
+        display:none;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+}

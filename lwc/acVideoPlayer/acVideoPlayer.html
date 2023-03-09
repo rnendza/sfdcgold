@@ -1,0 +1,24 @@
+<template>
+    <div class="slds-grid slds-wrap accel-video-outer-container accel-test-borders">
+        <div class="slds-col slds-size--1-of-1">
+            <template if:true={processing}>
+                <lightning-spinner alternative-text="processing"></lightning-spinner>
+            </template>
+            <div class="accel-video-selector">
+                <c-ac-video-selector  onvideoselected={handleVideoSelected}></c-ac-video-selector>
+            </div>
+            <div if:true={showVideo}  class="slds-grid slds-wrap">
+                <div class="slds-col slds-size--1-of-1">
+                    <div class="accel-vimeo-embed-container">
+                        <iframe src={iFrameSource}
+                                class="accel-video-iframe"
+                                width={iFrameInitialWidth} height={iFrameInitialHeight}
+                                allow={iFrameAllowSettings}
+                                allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

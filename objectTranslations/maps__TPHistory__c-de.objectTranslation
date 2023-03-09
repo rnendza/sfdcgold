@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Ausrichtungsverlaufs-Datensatz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Ausrichtungsverlaufs-Datensätze</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Ausrichtungsverlaufs-Datensatz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Ausrichtungsverlaufs-Datensätze</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Ausrichtungsverlaufs-Datensatzes</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Ausrichtungsverlaufs-Datensätze</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Ausrichtungsverlaufs-Datensatz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Ausrichtungsverlaufs-Datensätzen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alignment --></label>
+        <name>maps__Alignment__c</name>
+        <relationshipLabel><!-- History Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Off-Platform Snapshot Id --></label>
+        <name>maps__SnapshotId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of History Record --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Optimization</masterLabel>
+            <translation>Optimierung</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot</masterLabel>
+            <translation>Snapshot</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Modification</masterLabel>
+            <translation>Regionsänderung</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Name</nameFieldLabel>
+</CustomObjectTranslation>

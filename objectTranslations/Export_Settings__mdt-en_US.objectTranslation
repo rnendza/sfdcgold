@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Export Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Export Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- If populated runs the timeslot export for this day(s) of week as opposed to the current date..
+ie. Comma delimted ie. Tuesday,Friday --></help>
+        <label><!-- Day of Week Override --></label>
+        <name>Day_of_Week_Override__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Service Member Territory Type --></label>
+        <name>Default_Service_Member_Territory_Type__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Email Address(es) the output of the job will be sent to. --></help>
+        <label><!-- Distribution Email Addys --></label>
+        <name>Distribution_Email_Addys__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Subject --></label>
+        <name>Email_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Export File Prefix --></label>
+        <name>Export_File_Prefix__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

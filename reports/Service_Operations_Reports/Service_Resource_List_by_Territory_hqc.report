@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ServiceTerritory.ServiceResources$ServiceResource.Accel_User__c</field>
+    </columns>
+    <columns>
+        <field>ServiceTerritory.ServiceResources$ServiceResource.Accel_User__c.Profile</field>
+    </columns>
+    <columns>
+        <field>ServiceTerritory.ServiceResources$ServiceResource</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ServiceTerritory.ServiceResources$ServiceResource.IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceTerritory$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>All Regions</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceTerritory$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Service Solution Center</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ServiceTerritory$Name</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Service Resource List by Territory</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>ServiceTerritoriesWResources__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ServiceTerritory$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

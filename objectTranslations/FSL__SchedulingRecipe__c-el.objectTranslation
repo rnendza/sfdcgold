@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Συνταγή προγραμματισμού</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Συνταγές προγραμματισμού</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Συνταγή προγραμματισμού</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Συνταγές προγραμματισμού</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Συνταγής προγραμματισμού</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Συνταγών προγραμματισμού</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>FSL__Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Criteria --></label>
+        <name>FSL__Criteria__c</name>
+        <relationshipLabel><!-- Scheduling Recipes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>FSL__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Expected Behavior --></label>
+        <name>FSL__Expected_Behavior__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Known Location Threshold --></label>
+        <name>FSL__LKL_Threshold__c</name>
+    </fields>
+    <fields>
+        <label><!-- Post Actions --></label>
+        <name>FSL__Post_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>FSL__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Specific --></label>
+        <name>FSL__Scenario_Specific__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scenario Type --></label>
+        <name>FSL__Scenario_Type__c</name>
+        <picklistValues>
+            <masterLabel>Overlap (Post-Emergency Scheduling)</masterLabel>
+            <translation>Επικάλυψη (Προγραμματισμός μετά από έκτακτη ανάγκη)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Overlap (SA Lengthened)</masterLabel>
+            <translation>Επικάλυψη (Επιμήκυνση SA)</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Canceled</masterLabel>
+            <translation>Ακύρωση SA</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Shortened</masterLabel>
+            <translation>Συντόμευση SA</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Scheduling Recipes --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Semi Automated --></label>
+        <name>FSL__Semi_Automated__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Όνομα συνταγής προγραμματισμού</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>CL_Number_of_CSV_Rows__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <label>CL # of CSV Rows</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackHistory>false</trackHistory>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>CL_Upload_Status__c</fullName>
+        <externalId>false</externalId>
+        <label>CL Upload Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Uploaded</fullName>
+                    <default>true</default>
+                    <label>Uploaded</label>
+                </value>
+                <value>
+                    <fullName>Published</fullName>
+                    <default>false</default>
+                    <label>Published</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Cash_Logistics_Meter_Reading__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked indicates this is a meter reading image.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>if checked indicates this is a meter reading image</inlineHelpText>
+        <label>Cash Logistics Meter Reading</label>
+        <trackHistory>false</trackHistory>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Cash_Logistics_Upload_Type_fileupload__c</fullName>
+        <description>The type of upload ie. import.. regular file etc (import used for cash logistics to eval in a trigger on insert)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The type of upload ie. import..</inlineHelpText>
+        <label>Upload Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Route Import</fullName>
+                    <default>false</default>
+                    <label>Route Import</label>
+                </value>
+                <value>
+                    <fullName>Accel File</fullName>
+                    <default>true</default>
+                    <label>Accel File</label>
+                </value>
+                <value>
+                    <fullName>Route Import Success Log</fullName>
+                    <default>false</default>
+                    <label>Route Import Success Log</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>ContentSize</fullName>
+    </fields>
+    <fields>
+        <fullName>Description</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>FileExtension</fullName>
+    </fields>
+    <fields>
+        <fullName>FileType</fullName>
+    </fields>
+    <fields>
+        <fullName>IsAssetEnabled</fullName>
+    </fields>
+    <fields>
+        <fullName>Language</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <fields>
+        <fullName>OwnerId</fullName>
+        <trackHistory>false</trackHistory>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Redemption_Image_Type__c</fullName>
+        <externalId>false</externalId>
+        <label>Redemption Image Type</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Current Cassette</fullName>
+                    <default>false</default>
+                    <label>Current Cassette</label>
+                </value>
+                <value>
+                    <fullName>Current Coin</fullName>
+                    <default>false</default>
+                    <label>Current Coin</label>
+                </value>
+                <value>
+                    <fullName>New Cassette</fullName>
+                    <default>false</default>
+                    <label>New Cassette</label>
+                </value>
+                <value>
+                    <fullName>New Coin</fullName>
+                    <default>false</default>
+                    <label>New Coin</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>SharingOption</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>SharingPrivacy</fullName>
+        <trackHistory>true</trackHistory>
+    </fields>
+    <fields>
+        <fullName>TagCsv</fullName>
+    </fields>
+    <fields>
+        <fullName>Title</fullName>
+        <trackHistory>false</trackHistory>
+    </fields>
+    <recordTypes>
+        <fullName>Accel_Internal_File</fullName>
+        <active>true</active>
+        <label>Accel Internal File</label>
+        <picklistValues>
+            <picklist>CL_Upload_Status__c</picklist>
+            <values>
+                <fullName>Published</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Uploaded</fullName>
+                <default>true</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Cash_Logistics_Upload_Type_fileupload__c</picklist>
+            <values>
+                <fullName>Accel File</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route Import</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Route Import Success Log</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+        <picklistValues>
+            <picklist>Redemption_Image_Type__c</picklist>
+            <values>
+                <fullName>Current Cassette</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Current Coin</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Cassette</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>New Coin</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>VERSION.TITLE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.CONTENT_SIZE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.FILE_EXTENSION</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>VERSION.OWNER</searchResultsAdditionalFields>
+    </searchLayouts>
+</CustomObject>

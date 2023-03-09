@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>What_State_Is_the_Licensed_Location_In</name>
+        <label>What State Is the Licensed Location In?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IL</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Location__r.ShippingState</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Create_a_Task_0</targetReference>
+            </connector>
+            <label>IL</label>
+        </rules>
+    </decisions>
+    <description>Create Automatic Tasks for Nicole Jozefowicz (Era updated 10/28/2022, per email from Pam)
+create tasks for Laine Lopez for each location that is licensed at each IGB Meeting? It would be based of the license record type “IGB Gaming License” when a date is entered into the field “License
+
+Original Issue Date” for Prospect Accounts. See criteria below.
+Account Type: Prospect Account
+License Object Record Type: IGB Gaming License
+Field Name: License Original Issue Date
+Subject: Create Go Live Binder
+Due Date: 30 days from date created</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>fx_Task_Due_Date</name>
+        <dataType>Date</dataType>
+        <expression>{!$Record.CreatedDate} + 30</expression>
+    </formulas>
+    <interviewLabel>License: Create a Task for Laine Lopes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>License: Create a Task for Nicole Jozefowicz</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>the task created will be assigned to Laine Lopez</description>
+        <name>Create_a_Task_0</name>
+        <label>Create a Task</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>ActivityDate</field>
+            <value>
+                <elementReference>fx_Task_Due_Date</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>OwnerId</field>
+            <value>
+                <stringValue>0058W000009o1U6QAI</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Subject</field>
+            <value>
+                <stringValue>Create Go Live Binder</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Follow-up</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>WhatId</field>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Task</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>What_State_Is_the_Licensed_Location_In</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xQQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Account_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Prospect Account</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>License_Original_Issue_Date__c</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </filters>
+        <object>License__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

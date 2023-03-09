@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$ClosedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Account.Collection_Frequency__c</field>
+    </columns>
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$VGT_Asset__c</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Tech_Notes__c</field>
+    </columns>
+    <columns>
+        <field>Case$Solution__c</field>
+    </columns>
+    <columns>
+        <field>Case$Assigned_Resource__c.Profile</field>
+    </columns>
+    <columns>
+        <field>Case$Account.Collection_Office__c</field>
+    </columns>
+    <description>Tech Discrepancy Notes
+Swapped Cash Can Report
+(Tech Notes) 30 Days</description>
+    <filter>
+        <booleanFilter>15 OR (1 AND 2 AND (3 OR 4 OR 5 OR 6 OR 7 OR 8 OR 9 OR 10 OR 11) AND 12 AND 13 AND 14)</booleanFilter>
+        <criteriaItems>
+            <column>Case$Solution__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>See Notes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Service_Category__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Customer,Maintenance,RT,SGI,Upgrade Appointment,VGT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Full cash can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>swapped cash can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>replaced cash can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>cash can full</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>swapped the stacker</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>exchanged cash can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>swapped</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Tech_Notes__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>cash can</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$ClosedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>LAST_N_DAYS:30</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Assigned_Resource__c.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Accel Regional Route Management</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Assigned_Resource__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Jose Pizano,Bill Pappas,Joseph Anderson</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Solution__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>replaced cash can</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Case$Assigned_Resource__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Swapped Cash Can Report w/ See Notes</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseBase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Case$ClosedDate</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Case$Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

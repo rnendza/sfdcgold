@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Schedule Change PE</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Schedule Change PEs</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Ids --></label>
+        <name>Account_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object JSON --></label>
+        <name>Object_JSON__c</name>
+    </fields>
+    <fields>
+        <label><!-- Operation Type --></label>
+        <name>Operation_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Publishing Process Name --></label>
+        <name>Publishing_Process_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route_Processing_Sheet_Ids --></label>
+        <name>Route_Processing_Sheet_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route Schedule Ids --></label>
+        <name>Route_Schedule_Ids__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ui Message --></label>
+        <name>Ui_Message__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

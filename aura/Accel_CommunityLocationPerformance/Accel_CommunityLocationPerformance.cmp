@@ -1,0 +1,42 @@
+<aura:component description="Performance"
+                implements="forceCommunity:availableForAllPageTypes">
+    <!--
+    echarts (and dependency zrender) used for easier abstraction over d3 as d3 is a pita to hand code.
+    https://ecomfe.github.io/echarts-doc/public/en/index.html
+    -->
+    <ltng:require
+            scripts="{!join(',', $Resource.accelcommunity_alpha + '/src/lib/d3.min.js',
+                                 $Resource.accelcommunity_alpha + '/src/lib/zrender.min.js',
+                                 $Resource.accelcommunity_alpha + '/src/lib/echarts.min.js')}"/>
+
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="startDate" type="Date"/>
+    <aura:attribute name="endDate" type="Date"/>
+    <div>
+        <div style="text-align: center">
+        <span style="color:green">
+        ===== debug.. this will contain location and machine data. ========
+        </span>
+        </div>
+        <div class="slds-grid slds-wrap" style="max-width: 400px;">
+            <div class="slds-col accel-slds-col-debug-borders">
+        <div style="width:150px">
+            <lightning:input type="date" name="inputDateStart" label="Start Date" required="true" value="{!v.startDate}" />
+        </div>
+            </div>
+            <div class="slds-col accel-slds-col-debug-borders">
+        <div style="width:150px">
+            <lightning:input type="date" name="inputDateEnd" label="End Date" required="true" value="{!v.endDate}" />
+        </div>
+            </div>
+        </div>
+
+    </div>
+
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+</aura:component>

@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Routepunt</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Routepunten</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>maps__Account__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Data --></label>
+        <name>maps__AdditionalData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>maps__Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Object Lookup --></label>
+        <name>maps__BaseObjectId__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Base Object --></label>
+        <name>maps__BaseObject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>maps__Case__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>maps__Contact__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- EventId --></label>
+        <name>maps__EventId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Address --></label>
+        <name>maps__HasAddress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Flexible --></label>
+        <name>maps__IsFlexible__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latitude --></label>
+        <name>maps__Latitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>maps__Lead__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Link Id --></label>
+        <name>maps__LinkId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longitude --></label>
+        <name>maps__Longitude__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Marker Layer --></label>
+        <name>maps__MarkerLayer__c</name>
+        <relationshipLabel><!-- Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>maps__Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>maps__Opportunity__c</name>
+        <relationshipLabel><!-- Maps Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route --></label>
+        <name>maps__Route__c</name>
+        <relationshipLabel><!-- Waypoints --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sort Order --></label>
+        <name>maps__SortOrder__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Naam routepunt</nameFieldLabel>
+</CustomObjectTranslation>

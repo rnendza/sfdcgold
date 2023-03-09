@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Key_Set__c$Name</field>
+    </columns>
+    <columns>
+        <field>Key_Set__c.Keys__r$Name</field>
+    </columns>
+    <columns>
+        <field>Key_Set__c.Keys__r$Key_Code__c</field>
+    </columns>
+    <columns>
+        <field>Key_Set__c.Keys__r$Safe_Name__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Key_Set__c$Key_Set_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Unassigned</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Unassigned Key Sets</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Key_Sets_with_Keys_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Key_Set__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

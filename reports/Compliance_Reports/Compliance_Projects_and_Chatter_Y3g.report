@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c$Account__c.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.FeedItems$CreatedBy</field>
+    </columns>
+    <columns>
+        <field>Project__c.FeedItems$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Project__c.FeedItems$LinkUrl</field>
+    </columns>
+    <columns>
+        <field>Project__c.FeedItems$Body</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Project__c$Account__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,LUCKY POKER,ROCKFORD BREWING COMPANY,UNION QUICK MART,LOGAN AVENUE SLOTS &amp; LOUNGE,INC,HARI GURU GAS AND FOOD,LUCKY DOG&apos;S,CRAZY CAMARON,BLUE LINE SPORTS PUB</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Compliance: Projects and Chatter</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Projects_and_Chatter__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c$Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Activities$Subject</field>
+    </columns>
+    <columns>
+        <field>Account$Competitor_TO__c</field>
+    </columns>
+    <columns>
+        <field>Account$Owner</field>
+    </columns>
+    <columns>
+        <field>Account$Video_Gaming_Sales_Status__c</field>
+    </columns>
+    <columns>
+        <field>Account$Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Original_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Current_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Type</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Competitor_TO__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Gaming &amp; Entertainment Management,Illinois Gold Rush</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Accel Account,Discontinued Account</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Activities$Subject</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>do not solicit</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Do Not Solicit TO&apos;s (Accounts and Act)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_and_Activities__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Activities$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

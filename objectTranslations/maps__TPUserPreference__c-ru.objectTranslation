@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Предпочтение пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Предпочтения пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Предпочтение пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Предпочтения пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Предпочтения пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Предпочтений пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Предпочтению пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Предпочтениям пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Предпочтением пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Предпочтениями пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>false</plural>
+        <value>Предпочтении пользователя планирования территории</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Prepositional</caseType>
+        <plural>true</plural>
+        <value>Предпочтениях пользователя планирования территории</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access --></label>
+        <name>maps__Access__c</name>
+        <picklistValues>
+            <masterLabel>Commenter</masterLabel>
+            <translation>Комментатор</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor</masterLabel>
+            <translation>Редактор</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alignment --></label>
+        <name>maps__Alignment__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>maps__Area__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Set --></label>
+        <name>maps__DataSet__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferences --></label>
+        <name>maps__Preferences__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Preferences --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>AutoId</nameFieldLabel>
+</CustomObjectTranslation>

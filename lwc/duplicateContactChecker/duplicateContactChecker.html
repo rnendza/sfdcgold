@@ -1,0 +1,29 @@
+<!--
+ - Created by CedricN on 2/3/2022.
+ -->
+
+<!-- Duplicate Contact Checker -->
+<template>
+
+    <lightning-card  class="slds-text-align_center">
+        <slot style="top:5px;" name="title" class="widthExpanded" >
+            <div style="font-size: 1.07rem; color:darkslategrey; border-bottom: .5px solid lightgrey; margin-bottom:15px; margin-top:5px; border-spacing:10px;"><B>Duplicate Contact Checker</B></div>
+        </slot>
+
+
+        <template if:true={ShowTable}>
+
+
+            <lightning-datatable  data={contacts} columns={columns} key-field="Id">
+            </lightning-datatable>
+        </template>
+
+        <template if:false={ShowTable}>
+            <div class="slds-align_absolute-center" style="height:.5rem">
+
+                <div style="font-size: 1.1rem; color:darkslategrey"><b>  NO DUPLICATES FOUND </b> </div>
+            </div>
+
+        </template>
+    </lightning-card>
+</template>

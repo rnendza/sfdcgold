@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cartella</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cartelle</value>
+    </caseValues>
+    <fields>
+        <label><!-- Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parent Folder --></label>
+        <name>maps__ParentFolder__c</name>
+        <relationshipLabel><!-- Maps Folders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Profile Ids --></label>
+        <name>maps__ProfileIds__c</name>
+    </fields>
+    <fields>
+        <label><!-- RoleId --></label>
+        <name>maps__RoleId__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Folders --></relationshipLabel>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nome cartella</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

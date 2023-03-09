@@ -1,0 +1,270 @@
+<!-- Accel Auth Session -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <template if:true={showProgressBar}>
+                    <div class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                        <c-ui-indeterminate-progress-bar>
+                        </c-ui-indeterminate-progress-bar>
+                    </div>
+                </template>
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    if:false={hideCardTitle}
+                                    card-title={cardTitle}
+                                    icon-name={cardIcon}
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                            <template if:true={hideCardTitle}>
+                                <div class="slds-text-heading_small">
+                                    Current Session Info
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </h1>
+                <!--- ===== Card Button Menu ===== -->
+                <div slot="actions">
+                    <lightning-button-icon
+                            icon-name="utility:search"
+                            onclick={handleIconButtonClick}
+                            data-iconbuttonid="btnDisplaySearch"
+                            class={searchIconClass}
+                            tooltip={searchIconLabel}
+                    ></lightning-button-icon>
+                    <lightning-button-icon
+                            icon-name="utility:refresh"
+                            class="slds-m-left_x-small"
+                            onclick={handleRefresh}
+                            tooltip="Force a refresh of all login data."
+                    ></lightning-button-icon>
+                </div>
+                <!--- ===== Card Body ===== -->
+                <div class="slds-p-horizontal_small">
+                    <!--- ===== Assistant / Help ===== -->
+                    <template if:true={showAssistance}>
+                        <div class="slds-p-bottom_x-small">
+                            <c-accel-auth-session-assistant
+                                    title="User Session Assistant"
+                                    bullet-points={helpBulletPoints}>
+                            </c-accel-auth-session-assistant>
+                        </div>
+                    </template>
+                    <!--- ===== Server Side Search ===== -->
+                    <template if:true={_displayServerSideSearch}>
+                        <div>
+                            <div
+                                    class="slds-m-bottom_small slds-p-horizontal_small slds-p-vertical_small slds-box_border slds-box_small"
+                                    style="background-color: rgb(250,250,249);">
+                                <div class="slds-p-horizontal_small slds-p-bottom_small">
+                                    <div class="slds-grid">
+                                        <div class="slds-col slds-size_1-of-2">
+                                            <!--- ===== Search Header ===== -->
+                                            <div id="variants"
+                                                 class="slds-p-vertical_x-small slds-grid slds-grid_vertical-align-center">
+                                                <lightning-icon icon-name="standard:search" size="small"
+                                                                alternative-text={cardTitleSearch} title={cardTitleSearch}>
+                                                </lightning-icon>
+                                                <lightning-formatted-text
+                                                        class="slds-card__header-title slds-col slds-p-left_x-small"
+                                                        value={cardTitleSearch}></lightning-formatted-text>
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2 slds-text-align_right">
+                                            <!--- ===== Search Close ===== -->
+                                            <div class="slds-p-top_xx-small">
+                                                <lightning-button-icon
+                                                        icon-name="utility:close"
+                                                        size="small"
+                                                        onclick={handleSearchClose}
+                                                        alternative-text="Close">
+                                                </lightning-button-icon>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <!--- ===== Search Child Cmp ===== -->
+                                    <c-accel-auth-session-filters
+                                            default-selections={defaultSelections}
+                                            onselect={handleFilterSelect}
+                                            onremove={handleFilterRemove}
+                                            debug-console={_debugConsole}>
+                                    </c-accel-auth-session-filters>
+                                    <!--- ===== Search Button ===== -->
+                                    <div class="slds-p-top_small">
+                                        <lightning-button
+                                                variant="brand"
+                                                disabled={disableSearchButton}
+                                                style="display: grid; width: 100%"
+                                                name="runQuery"
+                                                data-id="rerunquery"
+                                                icon-name="utility:search"
+                                                label={btnSearchLabel}
+                                                title="Click here to rerun the data query"
+                                                onclick={handleButtonClick}>
+                                        </lightning-button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </template>
+
+                    <!--- ===== Stencil ===== -->
+                    <template if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="12"
+                                child-class="slds-var-m-around-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </template>
+
+                    <!---  ===== Datatable Container ===== -->
+                    <template if:true={showDataTable}>
+                        <div class="slds-box slds-box_border slds-m-bottom_xxx-small">
+                            <div class={filtersTheme}>
+                                <div class="slds-p-around_x-small">
+                                    <div class="slds-p-bottom_x-small">
+                                        <div class="slds-grid slds-wrap">
+                                            <!--- ===== Client Side Filters Section Header  ==== -->
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <template if:true={showFiltersHeader}>
+                                                    <lightning-icon
+                                                            size="small"
+                                                            class="slds-m-right_xx-small"
+                                                            icon-name="standard:filter_criteria">
+                                                    </lightning-icon>
+                                                    <span class="slds-text-title_bold slds-p-left_xx-small">
+                                                    Table Filters
+                                                </span>
+                                                </template>
+                                                <template if:true={filtersApplied}>
+                                                    &nbsp;({numberOfFiltersApplied}&nbsp;applied)
+                                                </template>
+                                            </div>
+                                            <!--- ===== Client Side Filters Btn Icons ==== -->
+                                            <div class="slds-col slds-size_1-of-2">
+                                                <div class="slds-text-align_right">
+                                                    <lightning-button-icon
+                                                            icon-name="utility:filter"
+                                                            onclick={handleIconButtonClick}
+                                                            data-iconbuttonid="btnDisplayFilters"
+                                                            size="small"
+                                                            tooltip={clientSideFiltersIconTooltip}
+                                                    ></lightning-button-icon>
+                                                    <template if:true={showExportIcon}>
+                                                        <c-accel-auth-session-exporter
+                                                            export-data={dtRecords}
+                                                            onexport={handleDatatableExport}
+                                                            debug-console={_debugConsole}>
+                                                        </c-accel-auth-session-exporter>
+                                                    </template>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <template if:true={showFilters}>
+                                            <!--- ===== Client Side Filter Inputs ==== -->
+                                            <div class="slds-grid slds-wrap slds-p-top_xx-small">
+                                                <div class="slds-col slds-large-size_1-of-3 slds-medium-size_1-of-1
+                                                            slds-small-size_1-of-1 slds-col_padded">
+                                                    <lightning-input
+                                                            if:true={showFilters}
+                                                            onchange={handleDtSearchKeyChange}
+                                                            oncommit={handleClear}
+                                                            name="filterUsers"
+                                                            value={_usersFilterApplied}
+                                                            data-filterid="filterUsers"
+                                                            label="Users"
+                                                            placeholder="User Name.."
+                                                            type="search"
+                                                    ></lightning-input>
+                                                </div>
+                                                <div class="slds-col slds-large-size_1-of-3 slds-medium-size_1-of-1
+                                                            slds-small-size_1-of-1 slds-col_padded">
+                                                    <lightning-input
+                                                            if:true={showFilters}
+                                                            onchange={handleDtSearchKeyChange}
+                                                            oncommit={handleClear}
+                                                            name="filterLoginTypes"
+                                                            value={_loginTypesFilterApplied}
+                                                            data-filterid="filterLoginTypes"
+                                                            label="Login Types"
+                                                            placeholder="Login Types.."
+                                                            type="search"
+                                                    ></lightning-input>
+                                                </div>
+                                                <div class="slds-col slds-large-size_1-of-3 slds-medium-size_1-of-1
+                                                            slds-small-size_1-of-1 slds-col_padded">
+                                                    <lightning-input
+                                                            if:true={showFilters}
+                                                            onchange={handleDtSearchKeyChange}
+                                                            oncommit={handleClear}
+                                                            name="filterSessionTypes"
+                                                            value={_sessionTypesFilterApplied}
+                                                            data-filterid="filterSessionTypes"
+                                                            label="Session Types"
+                                                            placeholder="Session Types.."
+                                                            type="search"
+                                                    ></lightning-input>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <!--- ===== Client Side Filters Totals ==== -->
+                                    <div class="slds-grid slds-wrap accel-test-borders">
+                                        <div class="slds-col slds-size_1-of-2 slds-align-bottom accel-test-borders">
+                                            <div class="slds-text-body_small slds-text-color_weak">
+                                                <b>{numberOfFilteredResults}</b> of {numberOfResults} items.
+                                            </div>
+                                        </div>
+                                        <div class="slds-col slds-size_1-of-2 accel-test-borders">
+                                            <div class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text">
+                                                Refreshed:&nbsp;
+                                                <lightning-formatted-date-time
+                                                        value={_dataRefreshTime}
+                                                        hour="2-digit"
+                                                        minute="2-digit" hour12="true"
+                                                        second="2-digit">
+                                                </lightning-formatted-date-time>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <!--- ===== Remove Auth Sessions Btn  ==== -->
+                        <template if:true={showRemoveAuthSessionsBtn}>
+                            <div class="slds-m-bottom_small slds-m-top_small">
+                                <lightning-button
+                                        variant="destructive"
+                                        style="display: grid; width: 100%"
+                                        name="runQuery"
+                                        data-id="deletesessions"
+                                        icon-name="utility:record_delete"
+                                        label={selectedSessionsButtonLabel}
+                                        title="Click here to rerun the data query"
+                                        onclick={handleButtonClick}>
+                                </lightning-button>
+                            </div>
+                        </template>
+                        <!--- ===== Datatable  ====-->
+                        <lightning-datatable
+                                key-field={dtKeyField}
+                                data={dtRecordsFiltered}
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                default-sort-direction="asc"
+                                onrowselection={handleDtRowSelections}
+                                onsort={handleSort}
+                                columns={columns}
+                                class={dtClasses}>
+                        </lightning-datatable>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

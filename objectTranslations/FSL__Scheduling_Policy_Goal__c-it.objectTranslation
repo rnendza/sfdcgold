@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Obiettivo policy di pianificazione</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Obiettivi policy di pianificazione</value>
+    </caseValues>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Scheduling Policy Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Goal --></label>
+        <name>FSL__Service_Goal__c</name>
+        <relationshipLabel><!-- Scheduling Policy Objectives --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>FSL__Weight__c</name>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nome obiettivo policy di pianificazione</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <errorMessage><!-- Weight can&apos;t have zero value --></errorMessage>
+        <name>FSL__Not_Zero</name>
+    </validationRules>
+</CustomObjectTranslation>

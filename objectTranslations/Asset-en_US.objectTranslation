@@ -1,0 +1,1926 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Date Delivered to Accel</value>
+        </caseValues>
+        <name>install_date_asset</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Accel Serial Number</value>
+        </caseValues>
+        <name>serial_number_asset</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Expiration Date</value>
+        </caseValues>
+        <name>usage_end_date_asset</name>
+        <startsWith>Vowel</startsWith>
+    </fields>
+    <fields>
+        <label><!-- ASR Project Lookup --></label>
+        <name>ASR_Project_Lookup__c</name>
+        <relationshipLabel><!-- Assets (ASR Project Lookup) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ATM Functionality Enabled --></label>
+        <name>ATM_Functionality_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- ATM Manufacturer Type --></label>
+        <name>ATM_Manufacturer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Genmega</masterLabel>
+            <translation><!-- Genmega --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyosung</masterLabel>
+            <translation><!-- Hyosung --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ATM Type --></label>
+        <name>ATM_Type__c</name>
+        <picklistValues>
+            <masterLabel>G2500</masterLabel>
+            <translation><!-- G2500 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MX2600SE</masterLabel>
+            <translation><!-- MX2600SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MX2800SE</masterLabel>
+            <translation><!-- MX2800SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH1800CE</masterLabel>
+            <translation><!-- NH1800CE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH1800SE</masterLabel>
+            <translation><!-- NH1800SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH2600SE</masterLabel>
+            <translation><!-- NH2600SE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH2700SE</masterLabel>
+            <translation><!-- NH2700SE --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Class --></label>
+        <name>Amusement_Class__c</name>
+        <picklistValues>
+            <masterLabel>Arcade</masterLabel>
+            <translation><!-- Arcade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changer</masterLabel>
+            <translation><!-- Changer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crane</masterLabel>
+            <translation><!-- Crane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dart</masterLabel>
+            <translation><!-- Dart --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GoldenTee</masterLabel>
+            <translation><!-- GoldenTee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JukeBox</masterLabel>
+            <translation><!-- JukeBox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pinball</masterLabel>
+            <translation><!-- Pinball --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PoolTable</masterLabel>
+            <translation><!-- PoolTable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shuffleboard</masterLabel>
+            <translation><!-- Shuffleboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TableTop</masterLabel>
+            <translation><!-- TableTop --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket Redemption</masterLabel>
+            <translation><!-- Ticket Redemption --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Count --></label>
+        <name>Asset_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset G2S Updated --></label>
+        <name>Asset_G2S_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Grade --></label>
+        <name>Asset_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset Id Fx --></label>
+        <name>Asset_Id_Fx__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Name + Account Name --></label>
+        <name>Asset_Name_Account_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Naming Convention --></label>
+        <name>Asset_Naming_Convention__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Notes --></label>
+        <name>Asset_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Playable Image --></label>
+        <name>Asset_Playable_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Playable Status --></label>
+        <name>Asset_Playable_Status__c</name>
+        <picklistValues>
+            <masterLabel>Nonplayable</masterLabel>
+            <translation><!-- Nonplayable --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Playable</masterLabel>
+            <translation><!-- Playable --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Assigned --></label>
+        <name>Assigned__c</name>
+        <picklistValues>
+            <masterLabel>As Is</masterLabel>
+            <translation><!-- As Is --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Ram Clear</masterLabel>
+            <translation><!-- Needs Ram Clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Service</masterLabel>
+            <translation><!-- Needs Service --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Azure External Id --></label>
+        <name>Azure_External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- BV Type --></label>
+        <name>BV_Type__c</name>
+        <picklistValues>
+            <masterLabel>ICT PA7</masterLabel>
+            <translation><!-- ICT PA7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ICT TAO-A</masterLabel>
+            <translation><!-- ICT TAO-A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JCM</masterLabel>
+            <translation><!-- JCM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>JCM UBA10</masterLabel>
+            <translation><!-- JCM UBA10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEI</masterLabel>
+            <translation><!-- MEI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEI SC Advance</masterLabel>
+            <translation><!-- MEI SC Advance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEI2831U</masterLabel>
+            <translation><!-- MEI2831U --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV-200</masterLabel>
+            <translation><!-- NV-200 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Small MEI</masterLabel>
+            <translation><!-- Small MEI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Bally Button Panel Type --></label>
+        <name>Bally_Panel_Update__c</name>
+        <picklistValues>
+            <masterLabel>Analog</masterLabel>
+            <translation><!-- Analog --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analog 7 Segment Buttons Panel</masterLabel>
+            <translation><!-- Analog 7 Segment Buttons Panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ideck</masterLabel>
+            <translation><!-- Ideck --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Board Serial Number --></label>
+        <name>Board_Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- COAM Position --></label>
+        <name>COAM_Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM ID --></label>
+        <name>CRM_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cabinet Type --></label>
+        <name>Cabinet_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cabinet --></label>
+        <name>Cabinets__c</name>
+        <picklistValues>
+            <masterLabel>Bally</masterLabel>
+            <translation><!-- Bally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT</masterLabel>
+            <translation><!-- IGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spielo</masterLabel>
+            <translation><!-- Spielo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS</masterLabel>
+            <translation><!-- WMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cases In Last Month --></label>
+        <name>Cases_In_Last_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases in Last 24 Hours --></label>
+        <name>Cases_in_Last_24_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cases in the Last 7 Days --></label>
+        <name>Cases_in_the_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cassette Type --></label>
+        <name>Cassette_Type__c</name>
+        <picklistValues>
+            <masterLabel>1K</masterLabel>
+            <translation><!-- 1K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2K</masterLabel>
+            <translation><!-- 2K --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GENMEGA</masterLabel>
+            <translation><!-- GENMEGA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Change In Lifetime Meter --></label>
+        <name>Change_In_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Region --></label>
+        <name>Collection_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Commission Rate --></label>
+        <name>Commission_Rate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Common Name --></label>
+        <name>Common_Name__c</name>
+        <picklistValues>
+            <masterLabel>ARI GameSet 1</masterLabel>
+            <translation><!-- ARI GameSet 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARI GameSet 2</masterLabel>
+            <translation><!-- ARI GameSet 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ARI Gameset 2.1</masterLabel>
+            <translation><!-- ARI Gameset 2.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BAD DOG GAMES, HOLLYWOOD</masterLabel>
+            <translation><!-- BAD DOG GAMES, HOLLYWOOD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB2 GameSet 1</masterLabel>
+            <translation><!-- BB2 GameSet 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB2 GameSet 2</masterLabel>
+            <translation><!-- BB2 GameSet 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB2 GameSet 3</masterLabel>
+            <translation><!-- BB2 GameSet 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB2 GameSet 5</masterLabel>
+            <translation><!-- BB2 GameSet 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BB2 GameSet 5 Max Bet</masterLabel>
+            <translation><!-- BB2 GameSet 5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Baddog Games Hollywood</masterLabel>
+            <translation><!-- Baddog Games Hollywood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally V22 Max Bet</masterLabel>
+            <translation><!-- Bally V22 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally V32 / Wave Max Bet</masterLabel>
+            <translation><!-- Bally V32 / Wave Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Diamond Skill</masterLabel>
+            <translation><!-- Banilla Diamond Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Diamond Skill 6</masterLabel>
+            <translation><!-- Banilla Diamond Skill 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Diamond Skill 7</masterLabel>
+            <translation><!-- Banilla Diamond Skill 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Diamond Skill 8</masterLabel>
+            <translation><!-- Banilla Diamond Skill 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Diamond Skill 9</masterLabel>
+            <translation><!-- Banilla Diamond Skill 9 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion 1</masterLabel>
+            <translation><!-- Banilla Fusion 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion 2</masterLabel>
+            <translation><!-- Banilla Fusion 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion 3</masterLabel>
+            <translation><!-- Banilla Fusion 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion 4</masterLabel>
+            <translation><!-- Banilla Fusion 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion 5</masterLabel>
+            <translation><!-- Banilla Fusion 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Fusion Link</masterLabel>
+            <translation><!-- Banilla Fusion Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Platinum 1</masterLabel>
+            <translation><!-- Banilla Platinum 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Platinum 2</masterLabel>
+            <translation><!-- Banilla Platinum 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Platinum 3</masterLabel>
+            <translation><!-- Banilla Platinum 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Banilla Skyriser</masterLabel>
+            <translation><!-- Banilla Skyriser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 4</masterLabel>
+            <translation><!-- Blade GameSet 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 6</masterLabel>
+            <translation><!-- Blade GameSet 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 6 Max Bet</masterLabel>
+            <translation><!-- Blade GameSet 6 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 6 Non-Premium</masterLabel>
+            <translation><!-- Blade GameSet 6 Non-Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 6 Penn Premium</masterLabel>
+            <translation><!-- Blade GameSet 6 Penn Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 6 Premium</masterLabel>
+            <translation><!-- Blade GameSet 6 Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 7</masterLabel>
+            <translation><!-- Blade GameSet 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 7 Max Bet</masterLabel>
+            <translation><!-- Blade GameSet 7 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 8.0 Max Bet</masterLabel>
+            <translation><!-- Blade GameSet 8.0 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blade GameSet 8.1 Max Bet</masterLabel>
+            <translation><!-- Blade GameSet 8.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CGC</masterLabel>
+            <translation><!-- CGC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COBALT 27 PIR</masterLabel>
+            <translation><!-- COBALT 27 PIR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cadillac 2</masterLabel>
+            <translation><!-- Cadillac 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cardinal Express Phoenix Skill</masterLabel>
+            <translation><!-- Cardinal Express Phoenix Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cobalt</masterLabel>
+            <translation><!-- Cobalt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal / Axxis 10863 F Max Bet</masterLabel>
+            <translation><!-- Crystal / Axxis 10863 F Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal GameSet 108.1</masterLabel>
+            <translation><!-- Crystal GameSet 108.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal GameSet 108.1 C Max Bet</masterLabel>
+            <translation><!-- Crystal GameSet 108.1 C Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal GameSet 108.1 D Max Bet</masterLabel>
+            <translation><!-- Crystal GameSet 108.1 D Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal GameSet 108.1 D Max Bet Premium</masterLabel>
+            <translation><!-- Crystal GameSet 108.1 D Max Bet Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal GameSet 108.1 E Max Bet Premium</masterLabel>
+            <translation><!-- Crystal GameSet 108.1 E Max Bet Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DIAMOND SKILL 8</masterLabel>
+            <translation><!-- DIAMOND SKILL 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Diamond Skill</masterLabel>
+            <translation><!-- Diamond Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Eclipse</masterLabel>
+            <translation><!-- Eclipse --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FUNNY TOWN</masterLabel>
+            <translation><!-- FUNNY TOWN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT 1.6 A Max Bet</masterLabel>
+            <translation><!-- IGT 1.6 A Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT 1.6 B Max Bet</masterLabel>
+            <translation><!-- IGT 1.6 B Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT 1.7 Max Bet</masterLabel>
+            <translation><!-- IGT 1.7 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Black</masterLabel>
+            <translation><!-- IGT Black --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Blue</masterLabel>
+            <translation><!-- IGT Blue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.2</masterLabel>
+            <translation><!-- IGT GameSet 1.2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.3</masterLabel>
+            <translation><!-- IGT GameSet 1.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.4</masterLabel>
+            <translation><!-- IGT GameSet 1.4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.4 BarTop Max Bet</masterLabel>
+            <translation><!-- IGT GameSet 1.4 BarTop Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.4 Max Bet</masterLabel>
+            <translation><!-- IGT GameSet 1.4 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet 1.5 Max Bet</masterLabel>
+            <translation><!-- IGT GameSet 1.5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet B1</masterLabel>
+            <translation><!-- IGT GameSet B1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet BLA</masterLabel>
+            <translation><!-- IGT GameSet BLA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT GameSet BLB</masterLabel>
+            <translation><!-- IGT GameSet BLB --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Gameset 1.6 AVGGS Max Bet</masterLabel>
+            <translation><!-- IGT Gameset 1.6 AVGGS Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Green</masterLabel>
+            <translation><!-- IGT Green --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Orange</masterLabel>
+            <translation><!-- IGT Orange --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Premium A Max Bet</masterLabel>
+            <translation><!-- IGT Premium A Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Premium B Max Bet</masterLabel>
+            <translation><!-- IGT Premium B Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Purple</masterLabel>
+            <translation><!-- IGT Purple --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT Red</masterLabel>
+            <translation><!-- IGT Red --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inspired Valor</masterLabel>
+            <translation><!-- Inspired Valor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inspired Valor - 1.5 Santa</masterLabel>
+            <translation><!-- Inspired Valor - 1.5 Santa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J43 Game Set 1.1</masterLabel>
+            <translation><!-- J43 Game Set 1.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J43 Game Set 1.1 Max Bet</masterLabel>
+            <translation><!-- J43 Game Set 1.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J43 Game Set 2 Max Bet</masterLabel>
+            <translation><!-- J43 Game Set 2 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>J43 Game Set 2.1 Max Bet</masterLabel>
+            <translation><!-- J43 Game Set 2.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenka Lab Aurora 1</masterLabel>
+            <translation><!-- Jenka Lab Aurora 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenka Lab Aurora 3</masterLabel>
+            <translation><!-- Jenka Lab Aurora 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenka Lab Aurora 5</masterLabel>
+            <translation><!-- Jenka Lab Aurora 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenka Lab Aurora Link</masterLabel>
+            <translation><!-- Jenka Lab Aurora Link --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jenka Lab Favorite Skill 2</masterLabel>
+            <translation><!-- Jenka Lab Favorite Skill 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Kascada GameSet 1</masterLabel>
+            <translation><!-- Kascada GameSet 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Magic Games Premium HD Max Bet</masterLabel>
+            <translation><!-- Magic Games Premium HD Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MarsX Gameset 1</masterLabel>
+            <translation><!-- MarsX Gameset 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOV GameSet 1</masterLabel>
+            <translation><!-- NOV GameSet 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOV GameSet 2</masterLabel>
+            <translation><!-- NOV GameSet 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOV GameSet 2 - Removed Titles</masterLabel>
+            <translation><!-- NOV GameSet 2 - Removed Titles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOV GameSet 3 - Removed Titles</masterLabel>
+            <translation><!-- NOV GameSet 3 - Removed Titles --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NOV GameSet 5</masterLabel>
+            <translation><!-- NOV GameSet 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novomatic Funmaster</masterLabel>
+            <translation><!-- Novomatic Funmaster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novomatic Magic HD</masterLabel>
+            <translation><!-- Novomatic Magic HD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Old Spielo</masterLabel>
+            <translation><!-- Old Spielo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PLATINUM 1</masterLabel>
+            <translation><!-- PLATINUM 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PRIMERO THE BEST OF NUDGE</masterLabel>
+            <translation><!-- PRIMERO THE BEST OF NUDGE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pace-O-Matic Spinner</masterLabel>
+            <translation><!-- Pace-O-Matic Spinner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peak Gameset 1</masterLabel>
+            <translation><!-- Peak Gameset 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero 7S &amp; Skill</masterLabel>
+            <translation><!-- Primero 7S &amp; Skill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero American Dream</masterLabel>
+            <translation><!-- Primero American Dream --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Bar X</masterLabel>
+            <translation><!-- Primero Bar X --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Best Classics</masterLabel>
+            <translation><!-- Primero Best Classics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Best of Nudge</masterLabel>
+            <translation><!-- Primero Best of Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Best of Nudge Classic</masterLabel>
+            <translation><!-- Primero Best of Nudge Classic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Cadillac 1</masterLabel>
+            <translation><!-- Primero Cadillac 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Cash City Nudge</masterLabel>
+            <translation><!-- Primero Cash City Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Fantasy Lane</masterLabel>
+            <translation><!-- Primero Fantasy Lane --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Funny Town</masterLabel>
+            <translation><!-- Primero Funny Town --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Golden Nudge</masterLabel>
+            <translation><!-- Primero Golden Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Southern Classic</masterLabel>
+            <translation><!-- Primero Southern Classic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Super Mix Nudge</masterLabel>
+            <translation><!-- Primero Super Mix Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Sweet Road to Freedom</masterLabel>
+            <translation><!-- Primero Sweet Road to Freedom --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Tip Top Classics</masterLabel>
+            <translation><!-- Primero Tip Top Classics --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Ultimate Multigame</masterLabel>
+            <translation><!-- Primero Ultimate Multigame --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Primero Vegas Legends Nudge</masterLabel>
+            <translation><!-- Primero Vegas Legends Nudge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet A2</masterLabel>
+            <translation><!-- SPI GameSet A2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet A2 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet A2 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet A3</masterLabel>
+            <translation><!-- SPI GameSet A3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet A4 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet A4 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet A5 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet A5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet B2</masterLabel>
+            <translation><!-- SPI GameSet B2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet B2 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet B2 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet B3</masterLabel>
+            <translation><!-- SPI GameSet B3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet B4 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet B4 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI GameSet B5 Max Bet</masterLabel>
+            <translation><!-- SPI GameSet B5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI Premium C1 Max Bet</masterLabel>
+            <translation><!-- SPI Premium C1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI Premium C2 Max Bet</masterLabel>
+            <translation><!-- SPI Premium C2 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI Premium C3 Max Bet</masterLabel>
+            <translation><!-- SPI Premium C3 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SPI Premium D1 Max Bet</masterLabel>
+            <translation><!-- SPI Premium D1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TIP TOP CLASSICS</masterLabel>
+            <translation><!-- TIP TOP CLASSICS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TwinStar – Matrix</masterLabel>
+            <translation><!-- TwinStar – Matrix --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar GameSet 1</masterLabel>
+            <translation><!-- Twinstar GameSet 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar GameSet 1.1</masterLabel>
+            <translation><!-- Twinstar GameSet 1.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar GameSet 1.1 Max Bet</masterLabel>
+            <translation><!-- Twinstar GameSet 1.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar GameSet 2 Max Bet</masterLabel>
+            <translation><!-- Twinstar GameSet 2 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar Slant Gameset 2</masterLabel>
+            <translation><!-- Twinstar Slant Gameset 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Twinstar/Blade Gameset 1</masterLabel>
+            <translation><!-- Twinstar/Blade Gameset 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V22 Suite 3</masterLabel>
+            <translation><!-- V22 Suite 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V22 Suite 4</masterLabel>
+            <translation><!-- V22 Suite 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V22 Suite 5</masterLabel>
+            <translation><!-- V22 Suite 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V22 Suite 5 Max Bet</masterLabel>
+            <translation><!-- V22 Suite 5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V27 Suite 5 Max Bet</masterLabel>
+            <translation><!-- V27 Suite 5 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V27 to TwinStar Slant Conversion</masterLabel>
+            <translation><!-- V27 to TwinStar Slant Conversion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V27 to TwinStar Slant Conversion Max Bet</masterLabel>
+            <translation><!-- V27 to TwinStar Slant Conversion Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 3</masterLabel>
+            <translation><!-- V32 Suite 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 4</masterLabel>
+            <translation><!-- V32 Suite 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 5</masterLabel>
+            <translation><!-- V32 Suite 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 5 Premium</masterLabel>
+            <translation><!-- V32 Suite 5 Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 6</masterLabel>
+            <translation><!-- V32 Suite 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 6 Max Bet</masterLabel>
+            <translation><!-- V32 Suite 6 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V32 Suite 6.1 Max Bet</masterLabel>
+            <translation><!-- V32 Suite 6.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT</masterLabel>
+            <translation><!-- VGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Suite 6 Max Bet</masterLabel>
+            <translation><!-- Wave Suite 6 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Suite 6.1 Max Bet</masterLabel>
+            <translation><!-- Wave Suite 6.1 Max Bet --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave Suite 7 Max Bet</masterLabel>
+            <translation><!-- Wave Suite 7 Max Bet --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Connection Type --></label>
+        <name>Connection_Type__c</name>
+        <picklistValues>
+            <masterLabel>Broadband</masterLabel>
+            <translation><!-- Broadband --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadband WIFI</masterLabel>
+            <translation><!-- Broadband WIFI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broadband w/ RT</masterLabel>
+            <translation><!-- Broadband w/ RT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CradlePoint</masterLabel>
+            <translation><!-- CradlePoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OptConnect</masterLabel>
+            <translation><!-- OptConnect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Phone Line</masterLabel>
+            <translation><!-- Phone Line --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TCP/IP</masterLabel>
+            <translation><!-- TCP/IP --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Cook County Sticker Number --></label>
+        <name>Cook_County_Sticker_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cook County Sticker --></label>
+        <name>Cook_County_Sticker__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cook County Stickers Received --></label>
+        <name>Cook_County_Stickers_Received__c</name>
+    </fields>
+    <fields>
+        <help><!-- Created by a process to remove the software pl field off assets. --></help>
+        <label><!-- Created by VGT Software Transfer --></label>
+        <name>Created_by_VGT_Software_Transfer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Info --></label>
+        <name>Current_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Lifetime Meter --></label>
+        <name>Current_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Open Case --></label>
+        <name>Current_Open_Case__c</name>
+        <relationshipLabel><!-- Assets (Current Open Case) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- DBA Text --></label>
+        <name>DBA_Text__c</name>
+    </fields>
+    <fields>
+        <label><!-- Data Fee --></label>
+        <name>Data_Fee__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Delivered --></label>
+        <name>Date_Delivered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Decommissioned --></label>
+        <name>Decommissioned__c</name>
+    </fields>
+    <fields>
+        <help><!-- Identifies the particular product as defective. --></help>
+        <label><!-- Defective --></label>
+        <name>Defective__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Approval Number --></label>
+        <name>Device_Approval_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Type --></label>
+        <name>Device_Type__c</name>
+        <picklistValues>
+            <masterLabel>23 Slant</masterLabel>
+            <translation><!-- 23 Slant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AXXIS</masterLabel>
+            <translation><!-- AXXIS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Aristocrat</masterLabel>
+            <translation><!-- Aristocrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally 22</masterLabel>
+            <translation><!-- Bally 22 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally 32</masterLabel>
+            <translation><!-- Bally 32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bar Top</masterLabel>
+            <translation><!-- Bar Top --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CGC</masterLabel>
+            <translation><!-- CGC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Crystal</masterLabel>
+            <translation><!-- Crystal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>E 20</masterLabel>
+            <translation><!-- E 20 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>G 23</masterLabel>
+            <translation><!-- G 23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M3T</masterLabel>
+            <translation><!-- M3T --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NRT</masterLabel>
+            <translation><!-- NRT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Safe Cash</masterLabel>
+            <translation><!-- Safe Cash --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spielo</masterLabel>
+            <translation><!-- Spielo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>V27</masterLabel>
+            <translation><!-- V27 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP II</masterLabel>
+            <translation><!-- VIP II --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VIP Lounge</masterLabel>
+            <translation><!-- VIP Lounge --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VU Slant</masterLabel>
+            <translation><!-- VU Slant --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS BB2</masterLabel>
+            <translation><!-- WMS BB2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Blade</masterLabel>
+            <translation><!-- WMS Blade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Meta</masterLabel>
+            <translation><!-- WMS Meta --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS S23</masterLabel>
+            <translation><!-- WMS S23 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS S32</masterLabel>
+            <translation><!-- WMS S32 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wave</masterLabel>
+            <translation><!-- Wave --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Equipment --></label>
+        <name>Equipment__c</name>
+        <relationshipLabel><!-- Assets (Equipment) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Estimated Drained Date --></label>
+        <name>Estimated_Drained_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- 4 Week HPD Average pulled from Aggregated HPD Total Record. --></help>
+        <label><!-- 4 Week HPD --></label>
+        <name>Four_Week_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remote G2S Push Date --></label>
+        <name>G2S_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- GP_Manufacturer --></label>
+        <name>GP_Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Game Set --></label>
+        <name>Game_Set__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field replaces the old Common Name field. --></help>
+        <label><!-- Gameset Common Name --></label>
+        <name>Gameset_Common_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gameset Verified --></label>
+        <name>Gameset_Verified__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field replaces the old Gameset picklist field. --></help>
+        <label><!-- Gameset (New) --></label>
+        <name>Gameset__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- HPD - 12-Week --></label>
+        <name>HPD_12_Week__c</name>
+    </fields>
+    <fields>
+        <help><!-- Contains All Aggregated information for HPD Records for this Machine. --></help>
+        <label><!-- Hold Per Day Total --></label>
+        <name>Hold_Per_Day_Total__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Has the IGB lock been changed on the CPU --></help>
+        <label><!-- IGB Lock Change --></label>
+        <name>IGB_Lock_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGT_PE BIOS --></label>
+        <name>IGT_PE_BIOS__c</name>
+        <picklistValues>
+            <masterLabel>Apr00003</masterLabel>
+            <translation><!-- Apr00003 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Apr00004</masterLabel>
+            <translation><!-- Apr00004 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Intralot Confirmation Date --></label>
+        <name>Intralot_Confirmation_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Intralot Reference Number --></label>
+        <name>Intralot_Reference_Number__c</name>
+    </fields>
+    <fields>
+        <help><!-- The inventory request line item that generated this asset. --></help>
+        <label><!-- Inventory Request Line Item --></label>
+        <name>Inventory_Request_Line_Item__c</name>
+        <relationshipLabel><!-- Line Item Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Inventory Request --></label>
+        <name>Inventory_Request__c</name>
+        <relationshipLabel><!-- All Line Item Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The description of the software item. --></help>
+        <label><!-- Item Content --></label>
+        <name>Item_Content__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Number --></label>
+        <name>Item_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Activity Date --></label>
+        <name>Last_Activity_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Upgrade Date --></label>
+        <name>Last_Upgrade_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Serial Number delivered via the Available SW as of XYZ Spreadsheet from parts prior to ETL to transform into the SW Serial Number --></help>
+        <label><!-- Legacy SW Serial # --></label>
+        <name>Legacy_SW_Serial__c</name>
+    </fields>
+    <fields>
+        <label><!-- M3T Security Bar Installed --></label>
+        <name>M3T_Security_Bar_Installed__c</name>
+        <picklistValues>
+            <masterLabel>AVS Side Bar</masterLabel>
+            <translation><!-- AVS Side Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS Side Bar &amp; AVS Top Bar</masterLabel>
+            <translation><!-- AVS Side Bar &amp; AVS Top Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS Side Bar &amp; AVS Top Bar &amp; Bully Bar</masterLabel>
+            <translation><!-- AVS Side Bar &amp; AVS Top Bar &amp; Bully Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS Side Bar &amp; Bully Bar</masterLabel>
+            <translation><!-- AVS Side Bar &amp; Bully Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS Top Bar</masterLabel>
+            <translation><!-- AVS Top Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AVS Top Bar &amp; Bully Bar</masterLabel>
+            <translation><!-- AVS Top Bar &amp; Bully Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bully Bar</masterLabel>
+            <translation><!-- Bully Bar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation><!-- None --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Mac Address --></label>
+        <name>Mac_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine Class --></label>
+        <name>Machine_Class__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine Id --></label>
+        <name>Machine_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Machine --></label>
+        <name>Machine__c</name>
+        <relationshipLabel><!-- Software --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Make --></label>
+        <name>Make__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maunfacturer --></label>
+        <name>Maunfacturer__c</name>
+        <relationshipLabel><!-- Assets (Maunfacturer) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Network --></label>
+        <name>Network__c</name>
+        <picklistValues>
+            <masterLabel>Columbus Data</masterLabel>
+            <translation><!-- Columbus Data --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Switch Commerce</masterLabel>
+            <translation><!-- Switch Commerce --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Next Scheduled Fill Date --></label>
+        <name>Next_Scheduled_Fill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- # of Cassettes --></label>
+        <name>Number_of_Cassettes__c</name>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Original Live Date --></label>
+        <name>Original_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- PO Number --></label>
+        <name>PO_Number__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Parts --></label>
+        <name>Parts__c</name>
+        <relationshipLabel><!-- Parts --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Previous Lifetime Meter --></label>
+        <name>Previous_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Printer Type --></label>
+        <name>Printer_Type__c</name>
+        <picklistValues>
+            <masterLabel>Axes</masterLabel>
+            <translation><!-- Axes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Futurelogic Gen 5 Printer</masterLabel>
+            <translation><!-- Futurelogic Gen 5 Printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gen2 Future Logic Universal</masterLabel>
+            <translation><!-- Gen2 Future Logic Universal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gen3 Future Logic Universal</masterLabel>
+            <translation><!-- Gen3 Future Logic Universal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Icage</masterLabel>
+            <translation><!-- Icage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ithica Epic 950</masterLabel>
+            <translation><!-- Ithica Epic 950 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Muthagoose</masterLabel>
+            <translation><!-- Muthagoose --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nanoptix Paycheck</masterLabel>
+            <translation><!-- Nanoptix Paycheck --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TruePoint</masterLabel>
+            <translation><!-- TruePoint --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TruePoint Card</masterLabel>
+            <translation><!-- TruePoint Card --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TruePoint TiTo</masterLabel>
+            <translation><!-- TruePoint TiTo --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Prior Cash In --></label>
+        <name>Prior_Cash_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Should Match the Microsoft Dynamics GP (Great Plains) Number. --></help>
+        <label><!-- Purchase Order Number --></label>
+        <name>Purchase_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA # --></label>
+        <name>RMA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT Count --></label>
+        <name>RT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT SAS/IP Address --></label>
+        <name>RT_SAS_IP_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- The number of cases in the last 10 days on this asset. Populated by a record triggered flow. --></help>
+        <label><!-- Recent Cases --></label>
+        <name>Recent_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Link --></label>
+        <name>Record_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Name --></label>
+        <name>Record_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption ID --></label>
+        <name>Redemption_ID__c</name>
+        <relationshipLabel><!-- Assets (Redemption ID (COAM)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Redemption Model --></label>
+        <name>Redemption_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Redemption Serial --></label>
+        <name>Redemption_Serial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refurbished Date --></label>
+        <name>Refurbished_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Region Lock Set Installed --></label>
+        <name>Region_Lock_Set_Installed__c</name>
+        <picklistValues>
+            <masterLabel>Central</masterLabel>
+            <translation><!-- Central --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Chicagoland</masterLabel>
+            <translation><!-- Chicagoland --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collinsville</masterLabel>
+            <translation><!-- Collinsville --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rockford</masterLabel>
+            <translation><!-- Rockford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Springfield</masterLabel>
+            <translation><!-- Springfield --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tinley Park</masterLabel>
+            <translation><!-- Tinley Park --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager Region --></label>
+        <name>Relationship_Manager_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relaunch Count --></label>
+        <name>Relaunch_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relaunch Date --></label>
+        <name>Relaunch_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remote G2S Updated --></label>
+        <name>Remote_G2S_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Returned Date --></label>
+        <name>Returned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAS --></label>
+        <name>SAS__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment --></label>
+        <name>Service_Appointment__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Type --></label>
+        <name>Service_Type__c</name>
+        <picklistValues>
+            <masterLabel>Insurance</masterLabel>
+            <translation><!-- Insurance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Needs Parts</masterLabel>
+            <translation><!-- Needs Parts --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Repair</masterLabel>
+            <translation><!-- Pending Repair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Waiting for IGB Agent</masterLabel>
+            <translation><!-- Waiting for IGB Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- The date the asset will be shipped. --></help>
+        <label><!-- Ship Date --></label>
+        <name>Ship_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ship Method --></label>
+        <name>Ship_Method__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Record --></label>
+        <name>Show_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software( with Filters) --></label>
+        <name>SoftwareV1__c</name>
+        <relationshipLabel><!-- Assets (Software( with Filters)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Software Lookup - Dayna --></label>
+        <name>Software_Lookup_Dayna__c</name>
+        <relationshipLabel><!-- Assets (Software Lookup - Dayna) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Software PriorValue --></label>
+        <name>Software_PriorValue__c</name>
+        <relationshipLabel><!-- Assets (Software PriorValue) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Not sure if this yet.. per the IR project. --></help>
+        <label><!-- Software Type --></label>
+        <name>Software_Type__c</name>
+        <picklistValues>
+            <masterLabel>Parent Asset</masterLabel>
+            <translation><!-- Parent Asset --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Software Upgraded Date --></label>
+        <name>Software_Upgraded_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Version --></label>
+        <name>Software_Version__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gameset --></label>
+        <name>Software__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned ATM TID --></label>
+        <name>TID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Teletonika --></label>
+        <name>Teletonika__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempOrigAccount --></label>
+        <name>TempOrigAccount__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempOrigAcctId --></label>
+        <name>TempOrigAcctId__c</name>
+    </fields>
+    <fields>
+        <label><!-- TempOrigSerial --></label>
+        <name>TempOrigSerial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unit ID --></label>
+        <name>Unit_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Connection Status --></label>
+        <name>VGT_Connection_Status__c</name>
+        <picklistValues>
+            <masterLabel>Connected</masterLabel>
+            <translation><!-- Connected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disconnected</masterLabel>
+            <translation><!-- Disconnected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Initializing</masterLabel>
+            <translation><!-- Initializing --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- VGT Live Date --></label>
+        <name>VGT_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Upload a picture of the VGT machine for reference. --></help>
+        <label><!-- VGT Machine --></label>
+        <name>VGT_Machine__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Or Redemption --></label>
+        <name>VGT_Or_Redemption__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Status Last Updated --></label>
+        <name>VGT_Status_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vault Levels Last Updated --></label>
+        <name>Vault_Levels_Last_Updated__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field reflects Vendor Accounts. Any values that display immediately are recently viewed Vendors. To search, type at least the first 2 characters of the Vendor Name and hit enter or the search icon. --></help>
+        <label><!-- Vendor --></label>
+        <lookupFilter>
+            <errorMessage><!-- Vendor must be an Account with a record type of &apos;Vendors. --></errorMessage>
+            <informationalMessage><!-- Vendor much be an Account of Recordtype &apos;Vendors&apos; . --></informationalMessage>
+        </lookupFilter>
+        <name>Vendor__c</name>
+        <relationshipLabel><!-- Assets (Vendor) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Version Number --></label>
+        <name>Version_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Version --></label>
+        <name>Version__c</name>
+        <picklistValues>
+            <masterLabel>Bally Suite 4</masterLabel>
+            <translation><!-- Bally Suite 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally Suite 4*</masterLabel>
+            <translation><!-- Bally Suite 4* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally Suite 5 - Non Premium</masterLabel>
+            <translation><!-- Bally Suite 5 - Non Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally Suite 5 - Non-Premium</masterLabel>
+            <translation><!-- Bally Suite 5 - Non-Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally Suite 5 - Premium</masterLabel>
+            <translation><!-- Bally Suite 5 - Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally Suite 5*</masterLabel>
+            <translation><!-- Bally Suite 5* --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT 1.3</masterLabel>
+            <translation><!-- IGT 1.3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT 1.4</masterLabel>
+            <translation><!-- IGT 1.4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spielo SPI_69.5.23.0</masterLabel>
+            <translation><!-- Spielo SPI_69.5.23.0 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Spielo SPI_IL_69.6.20.2, SPI_IL_69.6.22.1</masterLabel>
+            <translation><!-- Spielo SPI_IL_69.6.20.2, SPI_IL_69.6.22.1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 1</masterLabel>
+            <translation><!-- WMS Game Set 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 2</masterLabel>
+            <translation><!-- WMS Game Set 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 3</masterLabel>
+            <translation><!-- WMS Game Set 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 4</masterLabel>
+            <translation><!-- WMS Game Set 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 5</masterLabel>
+            <translation><!-- WMS Game Set 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 6 - Non-Premium</masterLabel>
+            <translation><!-- WMS Game Set 6 - Non-Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Game Set 6 - Premium</masterLabel>
+            <translation><!-- WMS Game Set 6 - Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS Penn Premium</masterLabel>
+            <translation><!-- WMS Penn Premium --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>a</masterLabel>
+            <translation><!-- a --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- WF Update --></label>
+        <name>WF_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Warranty End Date --></label>
+        <name>Warranty_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Warranty Timeframe (years) --></label>
+        <name>Warranty_Timeframe__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- $.01 Fill Level --></label>
+        <name>X01_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $.05 Fill Level --></label>
+        <name>X05_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- 12-Week HPD --></label>
+        <name>X12_Week_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- $1 Fill Level --></label>
+        <name>X1_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $20 Fill Level --></label>
+        <name>X20_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $.25 Fill Level --></label>
+        <name>X25_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- $5 Fill Level --></label>
+        <name>X5_Fill_Level__c</name>
+    </fields>
+    <fields>
+        <label><!-- forceupdate --></label>
+        <name>forceupdate__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- ATM --></label>
+        <name>ATM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Amusement --></label>
+        <name>Amusement</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Cash Amusement Device(Nebraska) --></description>
+        <label><!-- CAD --></label>
+        <name>CAD</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Coin Operated Amusement Machine --></description>
+        <label><!-- COAM --></label>
+        <name>COAM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Parts --></label>
+        <name>Parts</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Redemption --></label>
+        <name>Redemption</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Redemption(COAM) --></label>
+        <name>Redemption_COAM</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Software --></label>
+        <name>Software</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- VGT --></label>
+        <name>VGT</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Asset Name may not be modified. --></errorMessage>
+        <name>Asset_Name_Software_No_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Serial Number may not be modified. --></errorMessage>
+        <name>Asset_SerialNumber_Software_No_Edit</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- &apos;Bally Button Panel Type Cannot Be Changed for Non Bally Asset --></errorMessage>
+        <name>Cannot_Change_Bally_Picklist</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- SAS Positions are limited to &quot;1, 2, 3, 4, 5, 6, 7, 8, 9, 10, RT1, RT2&quot;. --></errorMessage>
+        <name>SAS_Position</name>
+    </validationRules>
+</CustomObjectTranslation>

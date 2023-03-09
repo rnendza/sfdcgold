@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps 라이브 휴일 관계</value>
+    </caseValues>
+    <fields>
+        <help>이 휴일에 연결된 운전자</help>
+        <label><!-- Live Driver --></label>
+        <name>maps__LiveDriver__c</name>
+        <relationshipLabel><!-- Live Holiday Relationships --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>휴일 시간 레코드</help>
+        <label><!-- Live Holiday Time --></label>
+        <name>maps__LiveHolidayTime__c</name>
+        <relationshipLabel><!-- Live Holiday Relationships --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Maps 실시간 휴일 관계 이름</nameFieldLabel>
+</CustomObjectTranslation>

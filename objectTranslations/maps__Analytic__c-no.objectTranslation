@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps-analysen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps-analyse</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps-analyse</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps-analysene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps-analyser</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps-analyser</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date/Time --></label>
+        <name>maps__DateTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Location --></label>
+        <name>maps__FavoriteLocation__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Layer Name --></label>
+        <name>maps__LayerName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Maps Layer --></label>
+        <name>maps__MapsLayer__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Saved Query --></label>
+        <name>maps__SavedQuery__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Maps Shape Layer --></label>
+        <name>maps__ShapeLayer__c</name>
+        <relationshipLabel><!-- Analytics --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Sub Type --></label>
+        <name>maps__SubType__c</name>
+        <picklistValues>
+            <masterLabel>ArcGIS Online</masterLabel>
+            <translation>ArcGIS Online</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Data Layer</masterLabel>
+            <translation>Dataoverlegg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Favorite Location</masterLabel>
+            <translation>Favorittsted</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marker Layer</masterLabel>
+            <translation>Markøroverlegg</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shape Layer</masterLabel>
+            <translation>Formoverlegg</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Plot Layer</masterLabel>
+            <translation>Plott overlegg</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Analytics --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Maps-analyse</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification for executive approval to review an opp for approval</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Oppty Approval Needed</name>
+    <style>none</style>
+    <subject>Approval Requested for &quot;{!Opportunity.Name}&quot;</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

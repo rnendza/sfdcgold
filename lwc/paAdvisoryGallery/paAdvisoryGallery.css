@@ -1,0 +1,51 @@
+.lgc-highlight {
+    background-color: rgb(255,255,0);
+}
+.zoom {
+    transition: transform .2s; /* Animation */
+}
+
+.zoom:hover {
+    transform: scale(1.2); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+    position:absolute;
+    right:0;
+}
+.scrollContainer {
+    /*max-height: 500px;*/
+    overflow: auto;
+    position: relative;
+}
+.scrollArea {
+    position: relative;
+}
+.accel-blue-icon{
+    --lwc-colorTextIconDefault: rgb(42,115,158);
+}
+.accel-pic-container {
+    background-color: rgb(243,243,243);
+    min-height: 120px;
+    min-width: 120px;
+}
+.accel-rte-pic-small {
+    min-height: 120px;
+    min-width: 120px;
+}
+.accel-rte-pic-medium {
+    min-height: 240px;
+    min-width: 200px;
+}
+.accel-rte-pic-large {
+    min-height: 300px;
+    min-width: 240px;
+}
+.accel-silver-background { background-color: #FAFAF9}
+
+/*.scrollContainer {*/
+/*    overflow-y: scroll;*/
+/*    scrollbar-width: none; !* Firefox *!*/
+/*    -ms-overflow-style: none;  !* Internet Explorer 10+ *!*/
+/*}*/
+/*.scrollContainer::-webkit-scrollbar { !* WebKit *!*/
+/*    width: 0;*/
+/*    height: 0;*/
+/*}*/

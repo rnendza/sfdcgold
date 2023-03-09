@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Department</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Departments</value>
+    </caseValues>
+    <fields>
+        <label><!-- Designation --></label>
+        <name>Designation__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SG&amp;A</masterLabel>
+            <translation><!-- SG&amp;A --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

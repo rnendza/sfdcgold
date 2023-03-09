@@ -1,0 +1,285 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+
+    .THIS {
+        /* background: rgb(255,255,255);
+        /* background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+        /* background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+        background-color: white;
+        max-width: 500px;
+        width: 500px;
+        float: right;
+        min-height: calc(100vh - 52px);
+        height: auto !important;
+        margin:0;
+        padding: 0px 150px 0px 50px;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    }
+
+
+    .THIS .login-title {
+        width: 330px;
+        font-size: 2rem;
+        font-family: "Segoe UI Light" , "Segoe" , "SegoeUI-Light-final", Tahoma, Helvetica, Arial, sans-serif;
+        padding-top: 90px;
+        margin-bottom: 60px;
+        min-height: 100px;
+    }
+
+    .THIS .workArea{
+        width: 350px;
+    }
+    .THIS .loginMessage{
+        margin-bottom:30px;
+        font-weight: 400;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+        color: black;
+        font-size: 1rem;
+    }
+
+    .THIS #sfdc_lock {
+        float: left;
+        width: 23px;
+        height: 25px;
+        padding-top: 1px;
+        padding-left: 2px;
+        margin: 0px;
+    }
+
+    .THIS #error {
+        color: #FF0000;
+        margin-bottom: 8px;
+    }
+
+    .THIS .login-icon {
+        color: #ccc;
+        font-size: 22px;
+        margin-top: 7px;
+    }
+
+
+    .THIS button.submission-button {
+        box-sizing: content-box;
+        background-color: rgb(38, 114, 236) !important;
+        min-width: 80px;
+        width: auto;
+        height: 30px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        border-radius: 0;
+        border:none;
+        text-shadow: none;
+        box-shadow: none;
+        padding: 0;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    }
+    .THIS button.submission-button span{
+        color: white;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+
+    .THIS button:hover {
+        background: rgb(212, 227, 251) !important;
+        cursor: pointer;
+    }
+    .THIS button:focus{
+        border:none;
+        color: white;
+        background:none;
+        outline-color: -webkit-focus-ring-color;
+        outline-style: auto;
+        outline-width: 5px;
+        transform: none;
+    }
+
+    .THIS input {
+        font-family: inherit;
+        margin-bottom: 8px;
+        background-color: white;
+        width: 100%;
+        -webkit-appearance: textfield;
+        height: 28px;
+        line-height: 38px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .THIS input.text{
+        height: 28px;
+        padding: 0px 3px 0px 3px;
+        border: solid 1px #BABABA;
+    }
+
+    .THIS .submissionArea{
+        margin-top: 38px;
+    }
+
+
+
+    .THIS a {
+        text-decoration: none;
+    }
+
+    .THIS a:hover {
+        text-decoration: underline;
+    }
+
+    .THIS label.uiLabel-hidden {
+        display: none;
+    }
+
+    .THIS .accel-forgot {
+        /*
+        text-align: right;
+        color: #1f24cc;
+        padding-right: 20px;
+        padding-bottom: 10px;
+         */
+    }
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px) {
+
+    .THIS {
+        /* background: rgb(255,255,255);
+        /* background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(229,229,229,1) 100%); /* FF3.6-15 */
+        /* background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* Chrome10-25,Safari5.1-6 */
+        /* background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(229,229,229,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+        /* filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#e5e5e5',GradientType=0 ); /* IE6-9 */
+        background-color: white;
+        width: 100%;
+        min-height: calc(100vh - 52px);
+        height: auto !important;
+        padding: 0px 150px 0px 50px;
+        padding-left: 25px;
+        padding-right: 10px;
+        margin: 0;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    }
+
+
+    .THIS .login-title {
+        margin: auto;
+        width: 325px;
+        font-size: 2rem;
+        font-family: "Segoe UI Light" , "Segoe" , "SegoeUI-Light-final", Tahoma, Helvetica, Arial, sans-serif;
+        padding-top: 90px;
+        margin-bottom: 60px;
+        min-height: 100px;
+    }
+
+    .THIS .workArea{
+        width: 325px;
+        margin-left :auto;
+        margin-right: auto;
+    }
+    .THIS .loginMessage{
+        margin-bottom:30px;
+        font-weight: 400;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+        color: black;
+        font-size: 1rem;
+    }
+
+    .THIS #sfdc_lock {
+        float: left;
+        width: 23px;
+        height: 25px;
+        padding-top: 1px;
+        padding-left: 2px;
+        margin: 0px;
+    }
+
+    .THIS #error {
+        color: #FF0000;
+        margin-bottom: 8px;
+    }
+
+    .THIS .login-icon {
+        color: #ccc;
+        font-size: 22px;
+        margin-top: 7px;
+    }
+
+
+    .THIS button.submission-button {
+        box-sizing: content-box;
+        background-color: rgb(38, 114, 236) !important;
+        min-width: 80px;
+        width: auto;
+        height: 30px;
+        cursor: pointer;
+        margin-bottom: 8px;
+        border-radius: 0;
+        border:none;
+        text-shadow: none;
+        box-shadow: none;
+        padding: 0;
+        font-family: "Segoe UI" , "Segoe" , "SegoeUI-Regular-final", Tahoma, Helvetica, Arial, sans-serif;
+    }
+    .THIS button.submission-button span{
+        color: white;
+        font-weight: 400;
+        font-size: .9rem;
+    }
+
+    .THIS button:hover {
+        background: rgb(212, 227, 251) !important;
+        cursor: pointer;
+    }
+    .THIS button:focus{
+        border:none;
+        color: white;
+        background:none;
+        outline-color: -webkit-focus-ring-color;
+        outline-style: auto;
+        outline-width: 5px;
+        transform: none;
+    }
+
+    .THIS input {
+        font-family: inherit;
+        margin-bottom: 8px;
+        background-color: white;
+        width: 100%;
+        -webkit-appearance: textfield;
+        height: 28px;
+        line-height: 38px;
+        padding-top: 0;
+        padding-bottom: 0;
+        margin-top: 0;
+    }
+    .THIS input.text{
+        height: 28px;
+        padding: 0px 3px 0px 3px;
+        border: solid 1px #BABABA;
+    }
+
+    .THIS .submissionArea{
+        margin-top: 38px;
+    }
+
+    .THIS a {
+        text-decoration: none;
+    }
+
+    .THIS a:hover {
+        text-decoration: underline;
+    }
+
+    .THIS label.uiLabel-hidden {
+        display: none;
+    }
+
+    .THIS .accel-forgot {
+        /*
+        text-align: right;
+        color: #1f24cc;
+        padding-right: 20px;
+        padding-bottom: 10px;
+         */
+    }
+}

@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Czynność niestandardowa</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Czynności niestandardowe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Czynność niestandardową</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Czynności niestandardowe</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Czynności niestandardowej</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Czynności niestandardowych</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Czynności niestandardowej</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Czynnościom niestandardowym</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Czynnością niestandardową</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Czynnościami niestandardowymi</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Czynności niestandardowej</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Czynnościach niestandardowych</value>
+    </caseValues>
+    <fields>
+        <label><!-- Action Value --></label>
+        <name>maps__ActionValue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Action --></label>
+        <name>maps__Action__c</name>
+        <picklistValues>
+            <masterLabel>Iframe</masterLabel>
+            <translation>Iframe</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Javascript</masterLabel>
+            <translation>Javascript</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BaseObjects --></label>
+        <name>maps__BaseObjects__c</name>
+        <picklistValues>
+            <masterLabel>-- None --</masterLabel>
+            <translation>-- Brak --</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Layouts --></label>
+        <name>maps__Layouts__c</name>
+        <picklistValues>
+            <masterLabel>Mass Action</masterLabel>
+            <translation>Czynność masowa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tooltip</masterLabel>
+            <translation>Etykieta narzędzia</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Modes --></label>
+        <name>maps__Modes__c</name>
+        <picklistValues>
+            <masterLabel>BaseObject</masterLabel>
+            <translation>BaseObject</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Desktop</masterLabel>
+            <translation>Pulpit</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mobile</masterLabel>
+            <translation>Mobilne</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Options --></label>
+        <name>maps__Options__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requirements --></label>
+        <name>maps__Requirements__c</name>
+        <picklistValues>
+            <masterLabel>Activity Support</masterLabel>
+            <translation>Podsumowanie czynności</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Contact Or Lead</masterLabel>
+            <translation>Kontakt lub potencjalny klient</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Verified Location Support</masterLabel>
+            <translation>Pomoc techniczna dla zweryfikowanej lokalizacji</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Blank</masterLabel>
+            <translation>Puste</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Custom Action</masterLabel>
+            <translation>Czynność niestandardowa</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Section</masterLabel>
+            <translation>Sekcja</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard Action</masterLabel>
+            <translation>Czynność standardowa</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Etykieta</nameFieldLabel>
+</CustomObjectTranslation>

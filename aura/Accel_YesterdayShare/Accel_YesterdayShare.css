@@ -1,0 +1,586 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+    .THIS .accel-mobile-flex{
+        flex-wrap: nowrap;
+    }
+    .THIS .accel-mobile-yesterday-chart{
+        display:flex;
+    }
+    .THIS .accel-mobile-1-of-1{
+        padding-top: 5px;
+    }
+    .THIS .desk-left{
+        text-align:left !important;
+    }
+    .THIS .msgbox {
+        height: 120px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+    }
+
+    .THIS .msgbox-large {
+        height: 210px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+    }
+
+    .THIS .msgbox-medium {
+        height: 110px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+    }
+
+    .THIS .accel-mtd-box-top {
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 26px;
+    }
+
+    .THIS .mtd-value {
+        height: 140px;
+        line-height: 70px;
+        font-weight: bold;
+        font-size: 1.75rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #6fb696;
+    }
+
+    .THIS .mtd-value-large {
+        height: 184px;
+        line-height: 184px;
+        font-weight: bold;
+        font-size: 2.15rem !important;
+        text-align: center;
+        vertical-align: middle;
+        color: #6fb696;
+    }
+
+    .THIS .msgbox-percent {
+        height: 92px;
+        text-align: left;
+        line-height: 92px;
+        font-weight: bold;
+        font-size: 1.5rem;
+    }
+
+    .THIS .month {
+        font-style: italic;
+        color: blue;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.4rem !important;
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .THIS .accel-metric{
+        font-size: 1.4rem !important;
+        color: black;
+    }
+    .THIS .accel-chart-shadow-drag {
+        /* override sfdc shadowDrag */
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 4px;
+        width: calc(50% - 25px);
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .THIS .accel-greeting-box-top {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 18px;
+    }
+
+    .THIS .accel-greeting-total {
+        height: 58px;
+        line-height: 58px;
+        font-weight: bold;
+        font-size: 2rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .THIS .accel-greeting-box-bottom {
+        height: 24px;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 24px;
+    }
+
+    .THIS .accel-ui-scroller-wrapper {
+        height: 250px;
+        width: 600px;
+    }
+
+    .THIS .accel-shown {
+        display: block;
+    }
+
+    .THIS .accel-hidden {
+        display: none;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-missing-data {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #FF0000;
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .dayofweek {
+        font-style: italic;
+        color: blue;
+        font-size: 1rem;
+    }
+
+    .THIS .rankofweek {
+        font-style: italic;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-decoration: underline;
+    }
+
+    .THIS .accel-weekrank-middle {
+        height: 29px;
+        line-height: 29px;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .THIS .accel-weekrank-box-top {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 18px;
+    }
+
+    .THIS .funds-in-text {
+        color: deepskyblue;
+    }
+    .THIS .slds-tabs_scoped__link {
+        font-weight: bold !important;
+    }
+    .THIS .slds-tabs_scoped__item{
+    }
+    .THIS .accel-fiscal-period {
+        display: inline-block;
+        vertical-align: top;
+        font-weight: bold;
+        font-size: 1.2rem;
+        margin-right: 45px;
+        color: #105ede;
+    }
+    .THIS .accel-curr-week-total{
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #6fb696;
+    }
+    .THIS .accel-curr-week-total-funds{
+        display: block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: deepskyblue;
+    }
+    .THIS .accel-fiscal-heading{
+        display: block;
+        vertical-align:top;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+    .THIS .tab-week-div{
+        height: 360px;
+        width: 100%;
+    }
+    .THIS .accel-mobile-centered{
+    }
+    .THIS .week-info-box{
+    }
+    .THIS .week-heading-container{
+        display: inline-block;
+        margin-right: 30px;
+        text-align: center;
+    }
+    .THIS .week-grouped-container{
+        display:inline-block;
+    }
+    .THIS .chart-270{
+        height: 270px;
+    }
+    .THIS .chart-200{
+        height: 200px;
+    }
+    .THIS .chart-230{
+        height: 230px;
+    }
+    .THIS .chart-160{
+        height: 160px;
+    }
+    .THIS .yesterday-chart-padding{
+        padding-top: 20px;
+    }
+    .THIS .slds-tabs_scoped__content{
+        padding-top: 12px;
+    }
+    .THIS .special-left-margin{
+        margin-left: 0 !important
+    }
+    .THIS .special-right-margin{
+        margin-right: 0 !important
+    }
+    .THIS .special-margin-both{
+        margin-right: 0 !important;
+        margin-left: 0 !important;
+    }
+}
+
+/* styles for mobile */
+@media only screen and (max-width: 767px){
+    .THIS .accel-mobile-flex{
+        flex-wrap: wrap;
+        margin-left: -1.25rem;
+        margin-right: -1.25rem;
+        padding-bottom:0;
+    }
+    .THIS .accel-mobile-yesterday-chart{
+        display: block;
+        margin-left: -.85rem;
+        margin-right: -.85rem;
+    }
+    .THIS .msgbox {
+        height: 120px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+        margin-bottom: 25px;
+        width: 46% !important;
+        padding-left: .5rem;
+        padding-right: .5rem;
+
+    }
+    .THIS .accel-mobile-1-of-1{
+        width: 100%;
+        padding-top: 15px;
+    }
+    .THIS .msgbox-large {
+        height: 150px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding: 10px;
+        padding-top: 5px;
+        width: 100%;
+    }
+
+    .THIS .msgbox-medium {
+        height: 110px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 6px;
+        padding-top: 5px;
+        width: 100%;
+    }
+
+    .THIS .accel-mtd-box-top {
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 26px;
+        height: 26px;
+    }
+
+    .THIS .mtd-value {
+        height: 140px;
+        line-height: 70px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: right;
+        vertical-align: middle;
+        color: #6fb696;
+    }
+
+    .THIS .mtd-value-large {
+        height: 120px;
+        line-height: 120px;
+        font-weight: bold;
+        font-size: 1.5rem !important;
+        text-align: right;
+        vertical-align: middle;
+        color: #6fb696;
+    }
+
+    .THIS .msgbox-percent {
+        height: 60px;
+        line-height: 60px;
+        font-weight: bold;
+        font-size: 1.1rem;
+        text-align: right;
+    }
+
+    .THIS .month {
+        font-style: italic;
+        color: blue;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.1rem !important;
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .accel-chart-shadow-drag {
+        /* override sfdc shadowDrag */
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 4px;
+        margin-bottom: 25px;
+        width: 100%;
+    }
+    .THIS .accel-metric{
+        font-size: 1rem !important;
+        color: black;
+    }
+    .THIS .accel-greeting-box-top {
+        font-weight: bold;
+        font-size: .85rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 18px;
+    }
+
+    .THIS .accel-greeting-total {
+        height: 58px;
+        line-height: 58px;
+        font-weight: bold;
+        font-size: 1.5rem;
+        text-align: center;
+        vertical-align: middle;
+    }
+
+    .THIS .accel-greeting-box-bottom {
+        height: 24px;
+        font-weight: bold;
+        font-size: .85rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 24px;
+    }
+
+    .THIS .accel-ui-scroller-wrapper {
+        height: 250px;
+        width: 600px;
+    }
+
+    .THIS .accel-shown {
+        display: block;
+    }
+
+    .THIS .accel-hidden {
+        display: none;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-missing-data {
+        font-style: italic;
+        font-weight: bold;
+        font-size: 1rem;
+        text-align: center;
+        vertical-align: middle;
+        color: #FF0000;
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .dayofweek {
+        font-style: italic;
+        color: blue;
+        font-size: .85rem;
+    }
+
+    .THIS .rankofweek {
+        font-style: italic;
+        color: goldenrod;
+        font-weight: bold;
+        font-size: 1.25rem;
+        text-decoration: underline;
+    }
+
+    .THIS .accel-weekrank-middle {
+        height: 29px;
+        line-height: 29px;
+        font-size: .85rem;
+        text-align: center;
+        vertical-align: middle;
+        font-weight: bold;
+    }
+
+    .THIS .accel-weekrank-box-top {
+        font-weight: bold;
+        font-size: .85rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 18px;
+    }
+
+    .THIS .funds-in-text {
+        color: deepskyblue;
+    }
+
+    .THIS .accel-fiscal-period {
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-right: 30px;
+        color: #105ede;
+    }
+    .THIS .accel-curr-week-total{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: #6fb696;
+        margin-right: 20px;
+    }
+    .THIS .accel-curr-week-total-funds{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1.1rem;
+        color: deepskyblue;
+        margin-right: 20px;
+    }
+    .THIS .accel-fiscal-heading{
+        display: inline-block;
+        font-weight: bold;
+        font-size: 1rem;
+        margin-right: 10px;
+    }
+    .THIS .tab-week-div{
+        height: 360px;
+        width: 100%;
+    }
+    .THIS .slds-tabs_scoped__link {
+        font-size: 14px;
+        font-weight: bold !important;
+    }
+    .THIS .slds-tabs_scoped__item{
+        width: 50%;
+    }
+    .THIS .slds-tabs_scoped__content{
+        padding:0;
+    }
+    .THIS .accel-mobile-centered{
+        text-align: center;
+    }
+    .THIS .week-info-box{
+        padding: 1rem;
+    }
+    .THIS .week-heading-container{
+        display: inline-block;
+    }
+    .THIS .week-grouped-container{
+    }
+    .THIS .chart-270{
+         height: 270px;
+     }
+    .THIS .chart-200{
+        height: 200px;
+    }
+    .THIS .chart-230{
+        height: 230px;
+    }
+    .THIS .chart-160{
+        height: 160px;
+    }
+    .THIS .yesterday-chart-padding{
+        padding-top: 10px;
+    }
+    .THIS .special-right-margin{
+    }
+    .THIS .special-right-margin {
+    }
+}

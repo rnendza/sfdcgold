@@ -1,0 +1,112 @@
+<aura:component description="Accel Community Home"
+                controller="Accel_CommunityHome"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+
+    <ltng:require
+            scripts="{!$Resource.echart4}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="showDailySpinner" type="boolean"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="singleAccountHpdLength" type="Integer" default="0"/>
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="avgAccountList" type="List"/>
+    <aura:attribute name="avgAccountIdList" type="List"/>
+    <aura:attribute name="allLocationsHpd" type="List"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <aura:attribute name="endDate" type="String" default="2019-01-22"/>
+    <aura:attribute name="startDate" type="String" default="2019-01-01"/>
+    <aura:attribute name="holdPerDayWrappers" type="List" access="private"/>
+    <aura:attribute name="avgHoldPerDayWrappers" type="List" access="private"/>
+    <aura:attribute name="selectedAccountType" type="String" />
+    <aura:attribute name="selectedAccount" type="Object"/>
+    <aura:attribute name="selectedGraphBtn" type="String" default="Daily"/>
+    <aura:attribute name="graphTitle" type="String" default="My Daily Location Share Trend"/>
+
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/319255455 -->
+    <aura:attribute name="AllAccountsYoyData"       type="Object" access="private"/>
+    <aura:attribute name="SingleAccountYoyData"     type="Object" access="private"/>
+    <aura:attribute name="HpdData"                  type="Object" access="private"/>
+    <!-- ======================================================================== -->
+    <aura:attribute name="communityUserSettings" type="Object"
+                    description="Contains Community User Settings"/>
+    <aura:attribute name="communityUserSettingsNotFound" type="boolean" default="true"/>
+    <aura:attribute name="renderTrendChart" type="boolean" default="false"/>
+
+    <!-- https://accel-entertainment.monday.com/boards/286658657/pulses/293964783 -->
+    <aura:attribute name="debugConsole" type="Boolean" default="true"
+                    description="Allows the turning on and off of console logging as opposed to commenting out / removing" />
+    <!-- https://accel-entertainment.monday.com/boards/286658657/ -->
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_Promises context="{!this}"/>
+    <!-- https://accel-entertainment.monday.com/boards/286658657/ -->
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+
+    <div>
+        <div >
+            <div style="padding-bottom: 5px">
+                <c:Accel_YesterdayShare/>
+            </div>
+            <!-- Show Trend Chart if Display flag set to TRUE or we simply could not find a Community_User_Setting__c for this user -->
+
+            <aura:if
+                    isTrue="{!or(v.communityUserSettings.Display_Trend_Chart__c,v.communityUserSettingsNotFound)}">
+                <lightning:spinner variant="brand" size="large" aura:id="homeLocationPerfSpinner"
+                                   class="{!((v.showSpinner)? '': 'slds-hide')}"
+                                   alternativeText="{!v.spinnerAltText}"/>
+                <div class="slds-grid slds-grid_align-space slds-p-top_large accel-mobile-full-chart">
+                <div class="slds-col slds-size_12-of-12 accel-daily-chart-wrapper">
+                    <div class="slds-grid accel-mobile-chart-select">
+                        <div class="slds-col slds-size_2-of-6 slds-p-horizontal_medium accel-mobile-full-width mobile-title titleDiv">
+                            <span class="graphTitle">{!v.graphTitle}</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-6 slds-p-horizontal_medium accel-mobile-full-width">
+                            <lightning:combobox name="accountSelect"
+                                                placeholder="Select a Location"
+                                                options="{! v.userAccountOptions }"
+                                                value="{!v.selectedAccountId}"
+                                                onchange="{! c.onChangeAccount }"/>
+                        </div>
+                        <div class="slds-col slds-size_2-of-6 slds-p-horizontal_medium accel-mobile-full-width desktop-title titleDiv">
+                            <span class="graphTitle">{!v.graphTitle}</span>
+                        </div>
+                        <div class="slds-col slds-size_2-of-6 slds-p-horizontal_medium accel-mobile-full-width graphBtnGroup">
+                            <lightning:buttonGroup>
+                                <lightning:button label="Daily"
+                                                  class="accel-btn-is-selected"
+                                                  name="Daily"
+                                                  aura:id="Daily"
+                                                  onclick="{!c.handleGraphBtn}"/>
+                                <lightning:button label="Monthly"
+                                                  name="Monthly"
+                                                  aura:id="Monthly"
+                                                  onclick="{!c.handleGraphBtn}"/>
+                                <lightning:button label="YoY"
+                                                  name="YoY"
+                                                  aura:id="YoY"
+                                                  onclick="{!c.handleGraphBtn}"/>
+                            </lightning:buttonGroup>
+                        </div>
+                    </div>
+                    <div class="chart-canvas">
+                        <lightning:spinner variant="brand" size="large" aura:id="locDailySpinner"
+                        class="{!((v.showDailySpinner)? '': 'slds-hide')}"
+                        alternativeText="Loading"/>
+                        <div style="width: 100%; height: 320px; position: relative" aura:id="dailychart">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </aura:if>
+        </div>
+    </div>
+
+</aura:component>

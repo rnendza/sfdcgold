@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request_Products__c$Account_Marketing__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request_Products__c$Name</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request_Products__c$Marketing_Request__c.Promo_End_Date__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Marketing_Request_Products__c$Marketing_Request__c.Promotion_will_run_on_Sweepstakes_Tablet__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Yes</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Marketing_Request_Products__c$Marketing_Request__c.Promo_End_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterThan</operator>
+            <value>1/1/2020</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Promotions Running on Tablet Post 1/1/19</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Marketing_Request_Products_with_Marketing_Requests__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request_Products__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenster</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenstern</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Maps Advanced-Routen-Besuchszeitfenstern</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alternate Visit Windows Map --></label>
+        <name>maps__AlternateVisitWindowsMap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Day(s) of Week --></label>
+        <name>maps__DaysOfWeek__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default --></label>
+        <name>maps__Default__c</name>
+    </fields>
+    <fields>
+        <help>(optional) Wenn das Startdatum ausgefüllt wird, ist das Enddatum erforderlich.</help>
+        <label><!-- End Date --></label>
+        <name>maps__EndDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday End 1 --></label>
+        <name>maps__FridayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday End 2 --></label>
+        <name>maps__FridayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Start 1 --></label>
+        <name>maps__FridayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Start 2 --></label>
+        <name>maps__FridayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Temporary --></label>
+        <name>maps__IsTemporary__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday End 1 --></label>
+        <name>maps__MondayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday End 2 --></label>
+        <name>maps__MondayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Start 1 --></label>
+        <name>maps__MondayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Start 2 --></label>
+        <name>maps__MondayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Repeats As --></label>
+        <name>maps__RepeatsAs__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation>Täglich</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Single Day</masterLabel>
+            <translation>Einzeltag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Times Through Month</masterLabel>
+            <translation>Zeiten im Monat</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Saturday End 1 --></label>
+        <name>maps__SaturdayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday End 2 --></label>
+        <name>maps__SaturdayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Start 1 --></label>
+        <name>maps__SaturdayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Start 2 --></label>
+        <name>maps__SaturdayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shared --></label>
+        <name>maps__Shared__c</name>
+    </fields>
+    <fields>
+        <help>(optional)</help>
+        <label><!-- Start Date --></label>
+        <name>maps__StartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday End 1 --></label>
+        <name>maps__SundayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday End 2 --></label>
+        <name>maps__SundayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Start 1 --></label>
+        <name>maps__SundayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Start 2 --></label>
+        <name>maps__SundayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday End 1 --></label>
+        <name>maps__ThursdayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday End 2 --></label>
+        <name>maps__ThursdayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Start 1 --></label>
+        <name>maps__ThursdayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Start 2 --></label>
+        <name>maps__ThursdayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Window End 1 --></label>
+        <name>maps__TimeWindowEnd1__c</name>
+    </fields>
+    <fields>
+        <help>(optional) &quot;Zeitfenster 2&quot; und &quot;Zeitfenster 1&quot; dürfen sich nicht überschneiden.</help>
+        <label><!-- Time Window End 2 --></label>
+        <name>maps__TimeWindowEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Window Start 1 --></label>
+        <name>maps__TimeWindowStart1__c</name>
+    </fields>
+    <fields>
+        <help>(optional) &quot;Zeitfenster 2&quot; und &quot;Zeitfenster 1&quot; dürfen sich nicht überschneiden.</help>
+        <label><!-- Time Window Start 2 --></label>
+        <name>maps__TimeWindowStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Times Through Month --></label>
+        <name>maps__TimesThroughMonth__c</name>
+        <picklistValues>
+            <masterLabel>1st Time Through</masterLabel>
+            <translation>1. Durchgang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2nd Time Through</masterLabel>
+            <translation>2. Durchgang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3rd Time Through</masterLabel>
+            <translation>3. Durchgang</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4th Time Through</masterLabel>
+            <translation>4. Durchgang</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Tuesday End 1 --></label>
+        <name>maps__TuesdayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday End 2 --></label>
+        <name>maps__TuesdayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Start 1 --></label>
+        <name>maps__TuesdayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Start 2 --></label>
+        <name>maps__TuesdayStart2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Exception</masterLabel>
+            <translation>Ausnahme</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Non-Working Day</masterLabel>
+            <translation>Arbeitsfreier Tag</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard</masterLabel>
+            <translation>Standard</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Account --></label>
+        <name>maps__VW_Account__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Case --></label>
+        <name>maps__VW_Case__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>maps__VW_Contact__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Lead --></label>
+        <name>maps__VW_Lead__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>maps__VW_Opportunity__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Visit Type --></label>
+        <name>maps__VisitType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit Window Strictness --></label>
+        <name>maps__VisitWindowStrictness__c</name>
+        <picklistValues>
+            <masterLabel>Fluid</masterLabel>
+            <translation>Fließend</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Strict</masterLabel>
+            <translation>Streng</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Visit Window --></label>
+        <name>maps__VisitWindow__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Visit Windows --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Wednesday End 1 --></label>
+        <name>maps__WednesdayEnd1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday End 2 --></label>
+        <name>maps__WednesdayEnd2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Start 1 --></label>
+        <name>maps__WednesdayStart1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Start 2 --></label>
+        <name>maps__WednesdayStart2__c</name>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Maps Advanced-Routen-Besuchszeitfenster-</nameFieldLabel>
+</CustomObjectTranslation>

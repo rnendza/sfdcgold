@@ -1,0 +1,104 @@
+<!-- Cl Route Optimize Assistance -->
+<template>
+    <div class="slds-theme--shade accel-square-box__info">
+        <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+            <div class="slds-media__figure">
+                <lightning-icon icon-name="utility:info"
+                                size="small"
+                                alternative-text="Optimizer Assistance">
+                </lightning-icon>
+            </div>
+            <div class="slds-media__body">
+                <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                    <b>Optimizer Assistance</b>
+                </div>
+                <div class="accel-detailed-body-text">
+                    <div class="accel-hard-wrap-text">
+                        <ul class="slds-list_dotted">
+<!--                            <li if:true={showTerritorySelected}-->
+<!--                                class="c3llc-li-container">-->
+<!--                                Territory <span class="slds-text-color_success"><b>{selectedTerritoryPlOption.label}</b></span> selected.-->
+<!--                            </li>-->
+<!--                            <li if:false={showTerritorySelected}-->
+<!--                                class="c3llc-li-container">-->
+<!--                                Please select a <span class="slds-text-color_error">territory!</span>-->
+<!--                            </li>-->
+                            <li if:true={showCollectionRegionSelected}
+                                class="c3llc-li-container">
+                                Collection Region <span class="slds-text-color_success"><b>{selectedCollectionRegionPlOption.label}</b></span> selected.
+                            </li>
+                            <li if:false={showCollectionRegionSelected}
+                                class="c3llc-li-container">
+                                Please select a <span class="slds-text-color_error">collection region!</span>
+                            </li>
+                            <template if:true={showCollectionRegionSelected}>
+                                <li if:true={showSelectedLocStartType}
+                                    class="c3llc-li-container">
+                                    Start location type <span class="slds-text-color_success"><b>{selectedLocStartType}</b></span> selected.
+                                </li>
+                                <li if:false={showSelectedLocStartType}
+                                    class="c3llc-li-container">
+                                    Please select a  <span class="slds-text-color_error">start location type!</span>
+                                </li>
+                            </template>
+                            <template if:true={showStartAccountInfo}>
+                            <li if:true={showSelectedStartAccount}
+                                class="c3llc-li-container">
+                                Start location  <span class="slds-text-color_success"><b>{selectedStartAccount.primaryDisplayValue}</b></span> selected.
+                            </li>
+                            <li if:false={showSelectedStartAccount}
+                                class="c3llc-li-container">
+                                Please select a  <span class="slds-text-color_error">start location!</span>
+                            </li>
+                            </template>
+                            <template if:true={showTotalStopsInfo}>
+                                <li if:true={showTotalNumStopsSelected}
+                                    class="c3llc-li-container">
+                                    You have selected <span class="slds-text-color_success"><b>{totalNumStopsSelected}</b></span> stops.
+                                </li>
+                                <li if:false={showTotalNumStopsSelected}
+                                    class="c3llc-li-container">
+                                    Please select <span class="slds-text-color_error"># of stops!</span>. You may select from 1 - {maxWayPoints} stops (arbitrary limit).
+                                </li>
+                            </template>
+                            <template if:true={showWayPointInfo}>
+                                <template if:true={showMoreStopsNeeded}>
+                                    <li if:false={showWayPointRows}
+                                        class="c3llc-li-container">
+                                        <span class="slds-text-color_error"> Please select {numberOfMoreLocsNeeded}</span> more locations.
+                                    </li>
+                                </template>
+
+
+                            </template>
+
+                            <template if:true={showRunItInfo}>
+                                <li if:true={showAdvancedOptions} class="c3llc-li-container">
+                                    <a href="javascript:void(0);"
+                                       onclick={handleHideAdvancedOptions}
+                                       title="Hide Advanced Options">
+                                        <i class="fa fa-eye-slash slds-p-right--x-small" aria-hidden="true"></i>&nbsp;
+                                        Hide advanced form options.
+                                    </a>
+                                </li>
+                                <li if:false={showAdvancedOptions} class="c3llc-li-container">
+                                    <a href="javascript:void(0);"
+                                       onclick={handleShowAdvancedOptions}
+                                       title="Show Advanced Options">
+                                        <i class="fa fa-eye slds-p-right--x-small"
+                                           aria-hidden="true"></i>
+                                        Show advanced form options.
+                                    </a>
+                                </li>
+                                <li class="c3llc-li-container">
+                                    Please click the <span class="slds-text-color_success">"<b>Optimize It!"</b></span> button to run your query!.
+                                </li>
+                            </template>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

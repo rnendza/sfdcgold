@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Servicedoelstelling</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Servicedoelstellingen</value>
+    </caseValues>
+    <fields>
+        <label><!-- Custom Logic Data --></label>
+        <name>FSL__Custom_Logic_Data__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Objective Type --></label>
+        <name>FSL__Custom_Type__c</name>
+        <picklistValues>
+            <masterLabel>ASAP</masterLabel>
+            <translation>ASAP</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Engineer Idle Time</masterLabel>
+            <translation>Stilstand voor ingenieur minimaliseren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Overtime</masterLabel>
+            <translation>Overuren beperken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Travel</masterLabel>
+            <translation>Reizen beperken</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Minimize Use Of Elasticity</masterLabel>
+            <translation>Gebruik van elasticiteit minimaliseren</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Preferred Resource</masterLabel>
+            <translation>Voorkeursresource</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Priority By Distance To Engineer</masterLabel>
+            <translation>Prioriteit op Afstand tot ingenieur</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Priority</masterLabel>
+            <translation>Prioriteit resource</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Skill Level</masterLabel>
+            <translation>Vaardigheidsniveau</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Task Priority</masterLabel>
+            <translation>Prioriteit taak</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Travel From Home Base</masterLabel>
+            <translation>Reizen van thuisbasis</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>Stelt de planning in op het opnemen in of uitsluiten van overwegingen voor minimale reistijd van de eerste en laatste reisdag, naar en vanaf de thuisbasis van de serviceresource</help>
+        <label><!-- Exclude Home Base Travel --></label>
+        <name>FSL__Ignore_Home_Base_Coordinates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Object_Group_Field --></label>
+        <name>FSL__Object_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prioritize Resource --></label>
+        <name>FSL__Prioritize_Resource__c</name>
+        <picklistValues>
+            <masterLabel>Least Qualified</masterLabel>
+            <translation>Minst gekwalificeerd</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Most Qualified</masterLabel>
+            <translation>Meest gekwalificeerd</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resource_Group_Field --></label>
+        <name>FSL__Resource_Group_Field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Priority Field --></label>
+        <name>FSL__Resource_Priority_Field__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Naam servicedoelstelling</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Schedule as soon as possible --></description>
+        <label><!-- ASAP --></label>
+        <name>FSL__Objective_Asap</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Custom Objective --></description>
+        <label><!-- Custom Objective --></label>
+        <name>FSL__Objective_Custom_Logic</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize the use of overtime --></description>
+        <label><!-- Minimize Overtime --></label>
+        <name>FSL__Objective_Minimize_Overtime</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Minimize travel time --></description>
+        <label><!-- Minimize Travel --></label>
+        <name>FSL__Objective_Minimize_Travel</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prioritize scheduling according to preferred resource --></description>
+        <label><!-- Preferred Resource --></label>
+        <name>FSL__Objective_PreferredEngineer</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer a resource based on a field value on the resource --></description>
+        <label><!-- Resource Priority --></label>
+        <name>FSL__Objective_Resource_Priority</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- Prefer the least/most qualified candidate --></description>
+        <label><!-- Skill Level --></label>
+        <name>FSL__Objective_Skill_Level</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Resource Priority Field should not be empty --></errorMessage>
+        <name>FSL__Resource_Priority_Not_Null</name>
+    </validationRules>
+</CustomObjectTranslation>

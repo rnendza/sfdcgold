@@ -1,0 +1,70 @@
+<!--
+========================================================================================================================
+This Component is used for Svc WatchDog Timers. Most of the processing is in lwc component svcWatchdogTimer.
+This is merely wrapping that as a child component for UI specific features that need the lighting:utilityBarAPI
+and lightning:workspaceApi. Major events handled are opening the utility popup.. handling the click of a case and opening
+a console primary tab, highlighting the utility bar item, and changing the label of the utility bar.
+
+@see svcWatchdogTimer
+note. user needs access to Service_Watchdog_Component_Access  permission set for this component.
+========================================================================================================================
+-->
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes"
+                controller="SvcWatchdogTimerContainerController"
+                description="SvcWatchdogTimerContainer - Note User needs access to Service_Watchdog_Component_Access
+                            permission set .. Aura is used FOR backward compatibility as lwc does not support certain apis yet">
+
+    <lightning:utilityBarAPI    aura:id="utilitybar"/>
+    <lightning:workspaceAPI     aura:id="workspace"/>
+
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="svcUtilityBarConfigSettings" type="Service_Utility_Bar_Config__c" />
+    <aura:attribute name="hasPermissionSet" type="boolean" default="false" />
+    <aura:attribute name="hasUtilityBar" type="boolean" default="false" />
+    <aura:attribute name="forceCloseFilterMenu" type="boolean" default="false"
+                    description="forces child filter menu to close if open / focused"/>
+    <aura:attribute name="isWatchdogUtilityOpen" type="boolean" default="false" />
+
+    <aura:attribute name="allowCustomNotifications" type="boolean" default="true"
+                    description="Determines, at a high level, if we want to allow ANY Custom Notifications at all (ie kill switch)"/>
+
+    <aura:attribute name="serviceAppointmentAlertsFlowName" type="String" default="flow_ServiceAppointment_Alerts"/>
+    <aura:attribute name="serviceAppointmentCustomNotificationApiName" type="String" default="TEST_SERVICE_WATCHDOG_NOTIFICATION"/>
+    <aura:attribute name="alertType" type="String" default="NOT_DISPATCHED"/>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <!--- only if use as watchdog permission -->
+    <aura:if isTrue="{!v.hasPermissionSet}">
+        <div class="slds-hide">
+            <!-- hidden flow -->
+            <lightning:flow aura:id="serviceAppointmentsFlowData" onstatuschange="{!c.statusChange}" />
+        </div>
+        <!--
+        Includes LWC Component as the main workhorse. to poll / listen for pushes from the server on record changes.
+        -->
+        <c:svcWatchdogTimer
+                aura:id="svcWatchDogTimer"
+                forceCloseFilterMenu="{!v.forceCloseFilterMenu}"
+                allowCustomNotifications="{!v.allowCustomNotifications}"
+                onopenutility="{!c.handleOpenUtility}"
+                onsendserviceappointmentnotification="{!c.handleSendServiceAppointmentNotification}"
+                onrecordclicked="{!c.handleRecordClicked}" onhighlightutility="{!c.handleHighlightUtility}"
+                onsetnbrofalerts="{!c.handleSetNbrOfAlerts}"/>
+
+        <aura:set attribute="else">
+            <div class="slds-box">
+                <div class="slds-inline_icon_text slds-grid slds-inline_icon_text--warning">
+                    <lightning:icon iconName="utility:warning" variant="warning" size="small">
+                    </lightning:icon>
+                    <div class="slds-col slds-align-middle slds-p-left--medium">
+                        <p>This is a secured functionality and your user record has not been granted access. Please contact an administrator.</p>
+                    </div>
+                </div>
+            </div>
+        </aura:set>
+    </aura:if>
+</aura:component>

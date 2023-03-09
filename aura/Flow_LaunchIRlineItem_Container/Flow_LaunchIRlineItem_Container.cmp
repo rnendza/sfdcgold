@@ -1,0 +1,172 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global"
+                controller="InventoryRequestController"
+                description="Flow_LaunchIRlineItem_Container">
+
+    <aura:attribute name="flowName" type="String" default="InventoryRequestLineItem_Processor"/>
+    <aura:attribute name="customPermissionCreateAssetsApiName" type="String" default="Inventory_Request_Create_Assets"/>
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="Object" />
+
+    <aura:attribute name="selectedRecordId" type="String"/>
+    <aura:attribute name="fireFlow" type="Boolean" default="false"/>
+    <aura:attribute name="showFireButton" type="Boolean" default="true"/>
+    <aura:attribute name="showBackButton" type="Boolean" default="true" />
+    <aura:attribute name="isRunningFlow" type="Boolean" default="false"/>
+    <aura:attribute name="initCompleted" type="Boolean" default="false"/>
+    <aura:attribute name="alreadyCreated" type="Boolean" default="false"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="qtyToCreate" type="Integer"/>
+
+    <aura:attribute name="createError" type="Boolean" default="false"/>
+    <aura:attribute name="inventoryRequestLineItem" type="Inventory_Request_Line_Item__c"/>
+    <aura:attribute name="spinnerAltText" type="string" default="creating assets"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name="numberOfAssetsCreated" type="Integer" default="0"/>
+    <aura:attribute name="createErrorMsg" type="String"/>
+    <aura:attribute name="doesUserHaveCreateAssetPermission" type="Boolean" default="false"/>
+
+    <aura:attribute name="moreInfoNeededToCreateAssetsMsg" type="String"
+                    default="More information is needed to create assets:"/>
+    <aura:attribute name="contentDocumentRecordId" type="String" default="0697A000000I78H"
+                    description="@TODO retrieve this dynamically based on file name!"/>
+
+    <lightning:navigation aura:id="navService"/>
+
+    <aura:html tag="style">
+        <!-- The SFDC Gods would strike you down with fire and fury if they saw this but sometimes we can't wait 10 years!   -->
+        .toastMessage.forceActionsText {
+            white-space : pre-line !important;  /* -- Force toast to break on linebreak of \n  -- */
+        }
+    </aura:html>
+    <aura:attribute name="headerTitle" type="Aura.Component[]">
+        <span class="slds-card__header-title slds-truncate slds-m-right--xx-small"><b>Asset Creation</b></span>
+    </aura:attribute>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="c:appEvent" action="{!c.handleApplicationEvent}"/>
+    <aura:handler event="lightning:openFiles" action="{! c.handleOpenFiles }" />
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <force:recordData aura:id="irLineRecord"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord ="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{! c.handleRecordChanged }"
+                      fields="Id,Name,Received_Date__c,Manufacturer__c,Received_Quantity__c,Inventory_Request__r.PO_Number__c"/>
+
+    <div class="accel-test-borders">
+        <aura:if isTrue="{!v.selectedRecordId != null}">
+            <div class="slds-hide">
+                <lightning:flow aura:id="flowData" onstatuschange="{!c.statusChange}"/>
+            </div>
+            <lightning:card title="{!v.headerTitle}" iconName="standard:text_template" >
+                <aura:set attribute="actions">
+                    <div class="slds-grid slds-gutters_x-small">
+                        <div class="slds-col slds-size--5-of-6">
+                            <aura:if isTrue="{!and(!v.isRunningFlow,v.showFireButton)}">
+                                <lightning:button
+                                        class="slds-button--small"
+                                        onclick="{!c.handleCreateAssets}"
+                                        variant="success" label="Create Assets"/>
+                                <aura:set attribute="else">
+                                    <lightning:button
+                                            class="slds-button--small"
+                                            disabled="true" label="Create Assets"/>
+                                </aura:set>
+                            </aura:if>
+                        </div>
+                        <div class="slds-col slds-size--5-of-6">
+
+                            <div style="display:inline-block;" onclick="{!c.handleViewCreateAssetsHelp}">
+                                <lightning:icon iconName="utility:help" size="x-small" class="accel-comp-header-icon"/>
+                            </div>
+                        </div>
+                    </div>
+                </aura:set>
+
+                <div class="slds-p-horizontal_medium accel-create-assets-container">
+                    <aura:if isTrue="{!and(!v.isRunningFlow,v.doesUserHaveCreateAssetPermission)}">
+                        <aura:if isTrue="{!and(v.initCompleted,v.inventoryRequestLineItem.Eligible_to_Create_Assets__c)}">
+                            <div style="font-size:.85em;" class="slds-p-top--large">
+                                    <c:Accel_InventoryRequestCreateAssetsHelp
+                                            messageTitle="You may now create assets for this item!"
+                                            showCreateMsg="true"
+                                            inventoryRequestLineItem="{!v.inventoryRequestLineItem}" />
+                            </div>
+                        </aura:if>
+                        <aura:if isTrue="{!and(v.initCompleted,!v.inventoryRequestLineItem.Eligible_to_Create_Assets__c)}">
+                            <div class="accel-test-borders slds-p-bottom_large slds-p-top--medium">
+                                <aura:if isTrue="{!v.inventoryRequestLineItem.All_Line_Assets_Created__c}">
+                                    <div style="font-size:.85em;">
+                                        <c:Accel_InventoryRequestCreateAssetsHelp
+                                                messageTitle="Congratulations! Assets created successfully."
+                                                showAllCreatedMsg="true"
+                                                boxClass="accel-square-box__success"
+                                                boxIconName="utility:success"
+                                                allCreatedMsg="All assets have been created for this line item!"
+                                                inventoryRequestLineItem="{!v.inventoryRequestLineItem}"/>
+                                    </div>
+                                </aura:if>
+                                <aura:if isTrue="{!!v.inventoryRequestLineItem.All_Line_Assets_Created__c}">
+                                    <div style="font-size:.85em;">
+                                        <c:Accel_InventoryRequestLineEligibility
+                                                messageTitle="{!v.moreInfoNeededToCreateAssetsMsg}"
+                                                boxClass="accel-square-box__warning"
+                                                boxIconName="utility:warning"
+                                                showCreateMsg="true"
+                                                inventoryRequestLineItem="{!v.inventoryRequestLineItem}" />
+                                    </div>
+                                </aura:if>
+                            </div>
+                        </aura:if>
+
+                    </aura:if>
+                    <aura:if isTrue="{!and(!v.isRunningFlow,!v.doesUserHaveCreateAssetPermission)}">
+                        <aura:if isTrue="{!v.initCompleted}">
+                            You do not have the correct custom permission to create assets from an Inventory Request.  Please contact
+                            your administrator ( [CP=Inventory_Request_Create_Assets] )
+                        </aura:if>
+                    </aura:if>
+                    <aura:if isTrue="{!v.isRunningFlow}">
+                        <div>
+                            <lightning:spinner variant="brand" size="large" aura:id="spinner"
+                                               class="{!((v.showSpinner)? '': 'slds-hide')}"
+                                               alternativeText="{!v.spinnerAltText}"/>
+
+                            <div style="font-size:1.3em;font-weight: bold;padding-top:100px;padding-bottom:100px">
+                                Creating {!v.inventoryRequestLineItem.Qty_of_assets_to_create__c}
+                                <aura:if isTrue="{!v.inventoryRequestLineItem.Qty_of_assets_to_create__c > 1}">
+                                    assets
+                                    <aura:set attribute="else">
+                                        asset
+                                    </aura:set>
+                                </aura:if>
+                                for {!v.inventoryRequestLineItem.Product__r.Name}.......
+                            </div>
+                        </div>
+                    </aura:if>
+                </div>
+                <aura:if isTrue="{!v.showBackButton}" >
+                    <div class="accel-test-borders slds-grid slds-p-left--medium">
+                        <div class="slds-col slds-size--1-of-1">
+                            <div>
+                                <lightning:button label="View Inventory Request"
+                                                  onclick="{!c.handleBackToRequest}"
+                                                  iconName="utility:back" iconPosition="left" />
+                            </div>
+                        </div>
+                    </div>
+                </aura:if>
+            </lightning:card>
+        </aura:if>
+    </div>
+</aura:component>

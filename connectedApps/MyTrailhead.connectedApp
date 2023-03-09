@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>kurtg@accelentertainment.com</contactEmail>
+    <label>MyTrailhead</label>
+    <oauthConfig>
+        <callbackUrl>https://accelentertainment.my.trailhead.com/auth/mytrailhead/callback</callbackUrl>
+        <consumerKey>3MVG9g9rbsTkKnAX5pifHYOMgaF6V_bsRqtODF_NNqqod9An71r.0Zjk1V9Mc35jjp5QwqxMTfpN6IHKlgrLI</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>RefreshToken</scopes>
+        <scopes>OpenID</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

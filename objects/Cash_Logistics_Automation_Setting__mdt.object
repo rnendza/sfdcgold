@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All configurable settings for Cash Logistics - Automation</description>
+    <fields>
+        <fullName>Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>If unchecked, the automation will be bypassed.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If unchecked, the automation will be bypassed.</inlineHelpText>
+        <label>Active</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Template_Dev_Name__c</fullName>
+        <description>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</inlineHelpText>
+        <label>Email Template Dev Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>External_Email_Addresses__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>External Email Addresses</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fire_Platform_Event__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Fire any and all platform events that are published from the automation.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Fire any and all platform events that are published from the automation.</inlineHelpText>
+        <label>Fire Platform Event</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Prevent_Record_Delete__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, trigger on associated sObject will throw an addError thus preventing record delete.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, this will prevent delete of a record regardless of profile / security.</inlineHelpText>
+        <label>Prevent Record Delete</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Public_Group_Dev_Names__c</fullName>
+        <description>A Comma Delimited List of Public Group Developer Names to send the email to (used for whoIds)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>A Comma Delimited List of Public Group Developer Names to send the email to (used for whoIds)</inlineHelpText>
+        <label>Public Group Dev Names</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Save_As_Activity__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked will save the email as an activity as well. @see https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_email_outbound_base.htm.  Note this must be false of the email is being sent to users!</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked will save the email as an activity as well. @see https://developer.salesforce.com/docs/atlas.en-us.apexref.meta/apexref/apex_classes_email_outbound_base.htm .Note this must be false if the email is being sent to users!</inlineHelpText>
+        <label>Save As Activity</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked and the applicable automation process sends email, emails will be sent. If not, emails will not be sent. ie. the automation still runs but no emails are sent.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked and the applicable automation process sends email, emails will be sent. If not, emails will not be sent. ie the automation still runs but no emails are sent.</inlineHelpText>
+        <label>Send Email</label>
+        <type>Checkbox</type>
+    </fields>
+    <label>Cash Logistics Automation Setting</label>
+    <listViews>
+        <fullName>All_Cl</fullName>
+        <columns>MasterLabel</columns>
+        <columns>DeveloperName</columns>
+        <columns>Email_Template_Dev_Name__c</columns>
+        <columns>Public_Group_Dev_Names__c</columns>
+        <columns>Send_Email__c</columns>
+        <columns>Active__c</columns>
+        <columns>Save_As_Activity__c</columns>
+        <columns>Prevent_Record_Delete__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>All Cl</label>
+    </listViews>
+    <pluralLabel>Cash Logistics Automation Setting</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

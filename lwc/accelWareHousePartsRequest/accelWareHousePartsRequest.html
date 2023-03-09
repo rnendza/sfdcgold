@@ -1,0 +1,164 @@
+<!--
+ - Created by CedricN on 1/30/2023.
+ -->
+
+<!-- Accel Ware House Parts Request -->
+<template>
+    <!-- Spinner for when record edit form is loading, still wonky as account takes a while to load -->
+    <template if:true={loaded}>
+        <lightning-spinner></lightning-spinner>
+    </template>
+    
+    <lightning-card>
+        <div slot="actions">
+            <template if:true={showEditForm}>
+                <lightning-button-menu
+                    class=".slds-form-element__icon slds-p-left_x-small slds-p-right_xx-small"
+                    menu-alignment="right"
+                    onselect={handleCloseClick}>
+                    <lightning-menu-item label="Cancel"></lightning-menu-item>
+                </lightning-button-menu>
+            </template>
+        </div>
+        <h3 slot="title" style="padding-top:.55rem; padding-left:.40rem">
+            <lightning-icon
+                    icon-name={cardIconName}
+                    size="small"
+                    class="slds-m-right_x-small">
+            </lightning-icon>
+            {cardTitle}
+        </h3>
+        <div class="slds-box slds-p-around_none slds-m-top_x-small slds-m-bottom_small slds-m-horizontal_none">
+            <lightning-layout multiple-rows>
+            
+                <template if:false={showEditForm}>
+                        <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="6">
+                        <div class="slds-p-around_medium slds-text-align_left">
+                            <label class="slds-form-element__label">
+                                Warehouse
+                                <lightning-helptext
+                                    class="slds-p-around_small"
+                                    content={warehouseHelpText}>    
+                                </lightning-helptext>
+                            </label>
+                            <select class="slds-select"
+                                    name="progress"
+                                    onchange={handleChange}>
+                                <template for:each={warehouseOptions} for:item="v">
+                                    <option value={v.value} key={v.value}>{v.label}</option>
+                                </template>
+                            </select>
+                        </div>
+
+                        <template if:true={showAssetSearch}>
+                            <div class="slds-p-around_medium slds-text-align_left">
+                                <c-reusable-lookup label={searchLabel} selected-icon-name={searchIconName} object-label={searchObjectLabel} object-api-name={searchObjectApiName} asset-id={assetId}
+                                    field-api-name={searchFieldApiName} other-field-api-name={searchOtherFieldApiName} help-text={searchHelpText} onvalueselected={handleValueSelectedOnAccount}
+                                    parent-field-api-name={searchParentFieldApiName} parent-record-id={value} onvaluedeselected={handleValueDeSelectedOnAccount} record-types={searchRecordTypeFilter}>
+                                </c-reusable-lookup>
+                                <template if:true={assetSelectedRecord}>
+                                    <div class="slds-p-around_medium slds-text-align_center">
+                                        <lightning-button
+                                            variant="brand"
+                                            label={submitButtonLabel}
+                                            onclick={handleClick}>
+                                        
+                                        </lightning-button>
+                                    </div>
+                                </template>
+                            </div>
+                        </template>
+                    </lightning-layout-item>
+                </template>
+
+                <!-- Record edit form for creating a product request -->
+                <template if:true={showEditForm}>
+                    <lightning-layout-item padding="around-small" size="12" small-device-size="6" medium-device-size="4" large-device-size="6">
+                        
+                        <div class="slds-p-around_medium">
+                            <lightning-record-edit-form
+                                object-api-name="ProductRequest"
+                                onsuccess={handleFormSuccess}
+                                onerror={HandleFormError}
+                                onsubmit={handleFormSubmit}
+                                onload={handleLoad}
+                                record-type-id={productRT}>
+                                
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                        field-name="AccountId"
+                                        value={value}
+                                        disabled="true">
+                                    </lightning-input-field>
+                                </div>
+
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                        field-name="Asset__c"
+                                        value={selectedRecordId}
+                                        disabled="true">
+                                    </lightning-input-field>
+                                </div>
+
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                        field-name="Product_Warehouse_App__c"
+
+                                        required="true">
+                                    </lightning-input-field>
+                                </div>
+
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                        field-name="Quantity_Requested__c"
+                                        required="true">
+                                    </lightning-input-field>
+                                </div>
+
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                            field-name="DestinationLocationId"
+                                            >
+                                    </lightning-input-field>
+                                </div>
+
+                                <!--<div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                            field-name="SourceLocationId"
+                                            >
+                                    </lightning-input-field>
+                                </div>-->
+
+                                <div class="slds-p-vertical_x-small">
+                                    <lightning-input-field
+                                            field-name="Type__c"
+                                            value={type}
+                                            disabled="true"
+                                            required="true">
+                                    </lightning-input-field>
+                                </div>
+
+                                <div class="slds-m-top_medium slds-p-around_x-small">
+                                    <lightning-button
+                                        icon-name="utility:record_create"
+                                        type="submit"
+                                        title="Save"
+                                        label={submitButtonLabel}
+                                        variant="brand"
+                                        style="display: grid; width: 100%">
+                                    </lightning-button>
+                                </div>
+                            </lightning-record-edit-form>
+                        </div>
+                    </lightning-layout-item>
+                </template>
+            </lightning-layout>
+        </div>
+    </lightning-card>
+
+    <!-- Disables pull to refresh on mobile -->
+    <template if:true={disablePullToRefresh}>
+        <c-ui-disable-pull-to-refresh></c-ui-disable-pull-to-refresh>
+    </template>
+
+</template>

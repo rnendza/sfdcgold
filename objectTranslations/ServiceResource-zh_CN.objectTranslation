@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Crew Managment Resource Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Emergency Fields --></label>
+        <name>FSL__Emergency_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Get Candidates Resource Details --></label>
+        <name>FSL__Get_Candidates_Resource_Details</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Gantt Filter --></label>
+        <name>FSL__Resource_Gantt_Filter</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Lightbox --></label>
+        <name>FSL__Resource_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Accel User --></label>
+        <name>Accel_User__c</name>
+        <relationshipLabel><!-- Service Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- ActivityStatus --></label>
+        <name>ActivityStatus__c</name>
+    </fields>
+    <fields>
+        <help><!-- DLRS field is used to count the number of service appointments a Service Resource has on its schedule for the rest of the day. --></help>
+        <label><!-- Appointments in Queue --></label>
+        <name>Appointments_in_Queue__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Efficiency --></label>
+        <name>FSL__Efficiency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Label --></label>
+        <name>FSL__GanttLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Online Offset --></label>
+        <name>FSL__Online_Offset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picture Link --></label>
+        <name>FSL__Picture_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>FSL__Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Travel Speed --></label>
+        <name>FSL__Travel_Speed__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeotabId --></label>
+        <name>GeotabId__c</name>
+    </fields>
+    <fields>
+        <label><!-- GeotabSerial --></label>
+        <name>GeotabSerial__c</name>
+    </fields>
+    <fields>
+        <label><!-- Get Last Known Location Message --></label>
+        <name>Get_Last_Resource_Absence_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Get Service Resource Last RA --></label>
+        <name>Get_Service_Resource_Last_RA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Home Location --></label>
+        <name>Home_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this Service Resource is part of a Service Territory which is live with the scheduling enhancements built out by West Monroe in 2022. --></help>
+        <label><!-- Live with WM Scheduling Enhancements --></label>
+        <name>Live_with_WM_Scheduling_Enhancements__c</name>
+    </fields>
+    <fields>
+        <help><!-- Lookup to Service Territory for filtering the schedule List View for Shifts. --></help>
+        <label><!-- Primary Service Territory --></label>
+        <name>Primary_Service_Territory__c</name>
+        <relationshipLabel><!-- Service Resources --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Technician Type --></label>
+        <name>Technician_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amusement</masterLabel>
+            <translation><!-- Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Both Vgt &amp; Amusement</masterLabel>
+            <translation><!-- Both Vgt &amp; Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vgt</masterLabel>
+            <translation><!-- Vgt --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- User ID --></label>
+        <name>User_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- VIN --></label>
+        <name>VIN__c</name>
+    </fields>
+    <fields>
+        <label><!-- 18 digit Id --></label>
+        <name>X18_digit_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- secureGPS --></label>
+        <name>secureGPS__c</name>
+    </fields>
+    <fields>
+        <label><!-- trackerid --></label>
+        <name>trackerid__c</name>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Capacity Resource Can&apos;t Be of Type Crew --></errorMessage>
+        <name>FSL__Capacity_Resource_of_Type_Crew</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Resource travel speed must be greater than 0. --></errorMessage>
+        <name>FSL__Resource_travel</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,130 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+    .THIS .accel-daily-chart-wrapper {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        height: 400px;
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .THIS .slds-form-element__label {
+        color: black;
+        font-weight: 600;
+    }
+
+    .THIS .graphTitle {
+        font-weight: bold;
+        font-size: 20px;
+        color: black;
+    }
+
+    .THIS .titleDiv {
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    .THIS .graphBtnGroup {
+        padding-top: 20px;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-mobile-full-chart {
+        margin-bottom: 10px;
+    }
+    .THIS .accel-mobile-chart-select{
+    }
+    .THIS .accel-mobile-full-width{}
+    .THIS .desktop-title{
+    }
+    .THIS .mobile-title{
+        display:none;
+    }
+    .THIS .chart-canvas{
+        position: relative;
+    }
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px){
+    .THIS .accel-daily-chart-wrapper {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 4px;
+    }
+
+    .THIS .slds-form-element__label {
+        color: black;
+        font-weight: 600;
+        display:none;
+    }
+
+    .THIS .graphTitle {
+        font-weight: bold;
+        font-size: .95rem;
+        color: black;
+    }
+
+    .THIS .titleDiv {
+        padding-top: 18px;
+        text-align: center;
+    }
+
+    .THIS .graphBtnGroup {
+        padding-top: 20px;
+    }
+
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-mobile-full-chart {
+        padding-top: 0;
+        margin-left: -.85rem;
+        margin-right: -.85rem;
+        margin-bottom: 0px;
+    }
+    .THIS .accel-mobile-chart-select{
+        display: block;
+    }
+    .THIS .accel-mobile-full-width{
+        width:85%;
+        margin:auto;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+    .THIS .desktop-title{
+        display:none;
+    }
+    .THIS .mobile-title{
+    }
+    .THIS input{
+        line-height: 1rem !important;
+    }
+    .THIS .slds-button{
+        line-height: 2rem !important;
+    }
+    .THIS .chart-canvas{
+        position: relative;
+        padding-top: 20px;
+    }
+}

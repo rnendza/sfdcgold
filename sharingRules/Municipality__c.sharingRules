@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>State_Accounts_Sharing_Rule</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Gives users read/write to municipality records that represent states.</description>
+        <label>State Accounts Sharing Rule</label>
+        <sharedTo>
+            <group>State_Accounts_Municipalities</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>State_Record__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingCriteriaRules>
+        <fullName>State_Records_Only</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>State Records Only</label>
+        <sharedTo>
+            <group>Temp_Kevin_Jaglowski</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>State_Record__c</field>
+            <operation>equals</operation>
+            <value>True</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Municipality_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Municipality Read/Write</label>
+        <sharedTo>
+            <group>Municipalities_R_W</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

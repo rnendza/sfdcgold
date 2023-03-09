@@ -1,0 +1,13 @@
+Your approval is requested for {!Opportunity.Name}. 
+
+Owner: {!Opportunity.OwnerFullName}
+
+Gaming Experience: {!Opportunity.Gaming_Experience__c}
+
+Liquor License Status: {!Opportunity.State_Liquor_License_Type__c}
+
+Estimated HPD: {!Opportunity.Estimated_HPD__c}
+
+Please click the link below to review: 
+
+Reference: {!Opportunity.Link}

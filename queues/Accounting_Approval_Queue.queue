@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Queue xmlns="http://soap.sforce.com/2006/04/metadata">
+    <doesSendEmailToMembers>true</doesSendEmailToMembers>
+    <name>Accounting Approval Queue</name>
+    <queueMembers>
+        <users>
+            <user>briseydag@accelentertainment.com</user>
+            <user>chelsean@accelentertainment.com</user>
+            <user>janinek@accelentertainment.com</user>
+            <user>jordanh@accelentertainment.com</user>
+            <user>kevin.yanes@accelentertainment.com</user>
+            <user>matthewa@accelentertainment.com</user>
+            <user>ryan.burns@accelentertainment.com</user>
+            <user>stephanied@accelentertainment.com</user>
+            <user>vickyv@accelentertainment.com</user>
+        </users>
+    </queueMembers>
+    <queueSobject>
+        <sobjectType>Reimbursement__c</sobjectType>
+    </queueSobject>
+</Queue>

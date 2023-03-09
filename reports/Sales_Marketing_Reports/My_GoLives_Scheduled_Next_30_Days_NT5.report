@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Opportunity$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Projects__r$Name</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Projects__r$Go_Live_Scheduled_Date__c</field>
+    </columns>
+    <columns>
+        <field>Opportunity.Projects__r$Assigned_RM__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Opportunity.Projects__r$Project_Time_to_Live__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Opportunity.Projects__r$Go_Live_Scheduled_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>NEXT_N_DAYS:30</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>My Go-Lives Scheduled Next 30 Days</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Opportunitie_with_Projects__c</reportType>
+    <scope>user</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Opportunity.Projects__r$Go_Live_Scheduled_Date__c</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Opportunity$Addendum_Request_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

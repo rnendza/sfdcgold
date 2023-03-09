@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Accel_Entertainment</letterhead>
+    <name>Send to Sales Op abt Application</name>
+    <style>freeForm</style>
+    <subject>Opportunity is ready to be Closed Won</subject>
+    <textOnly>Sales op,
+
+
+
+{!LicenseApplication__c.Opportunity__c} is ready to be closed as won!</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

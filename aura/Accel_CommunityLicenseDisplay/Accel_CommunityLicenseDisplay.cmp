@@ -1,0 +1,92 @@
+<!--
+@TODO query custom meta data type for flags on how to validate dates / warn dates.
+use moment.js... pop toast / show icon.  use actual field labels if possible?
+-->
+<aura:component description="Accel License Display">
+
+    <aura:attribute name="dojLicense" type="Object" access="public"/>
+    <aura:attribute name="igbGamingLicense" type="Object" access="public"/>
+    <aura:attribute name="ibaLicense" type="Object" access="public"/>
+    <aura:attribute name="localGamingLicense" type="Object" access="public"/>
+    <aura:attribute name="localLiquorLicense" type="Object" access="public"/>
+    <aura:attribute name="stateLiquorLicense" type="Object" access="public"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <div class="">
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-max-medium-table_stacked ">
+            <thead>
+            <tr class="slds-line-height_reset">
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="DOJ Exp Date">DOJ Exp Date
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="IGB Gaming License Exp Date">IGB Exp Date
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="Iba license experiation date">IBA Exp Date
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="local gaming licnese">Local Gaming License Exp Date
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="local liquor license">Local Liquor License Exp Date
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="slds-hint-parent">
+                <td data-label="DOJ Exp Date">
+                    <div class=""
+                         title="{!v.dojLicense.Expiration_Date__c}">
+                        <aura:if isTrue="{!v.dojLicense.bExpired}">
+                            <lightning:icon iconName="utility:error" alternativeText="Error!" variant="error"
+                                            size="x-small"/>
+                        </aura:if>
+                        <lightning:formattedDateTime value="{!v.dojLicense.Expiration_Date__c}"/>
+                        <!--
+                        <aura:if isTrue="{!v.dojLicense.bExpired}">
+                            {!v.dojLicense.bExpired}
+                        </aura:if>
+                        -->
+                    </div>
+                </td>
+                <td data-label="IGB Gaming License Exp Date">
+                    <div class=""
+                         title="{!v.igbGamingLicense.Expiration_Date__c}">
+                        <lightning:formattedDateTime value="{!v.igbGamingLicense.Expiration_Date__c}"/>
+                    </div>
+                </td>
+                <td data-label="IBA License Exp Date">
+                    <div class=""
+                         title="{!v.ibaLicense.Expiration_Date__c}">
+                        <lightning:formattedDateTime value="{!v.ibaLicense.Expiration_Date__c}"/>
+                    </div>
+                </td>
+                <td data-label="Local Gaming License">
+                    <div class=""
+                         title="{!v.localGamingLicense.Expiration_Date__c}">
+                        <lightning:formattedDateTime value="{!v.localGamingLicense.Expiration_Date__c}"/>
+                    </div>
+                </td>
+                <td data-label="Local Liquor License">
+                    <div class=""
+                         title="{!v.localLiquorLicense.Expiration_Date__c}">
+                        <lightning:formattedDateTime value="{!v.localLiquorLicense.Expiration_Date__c}"/>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</aura:component>

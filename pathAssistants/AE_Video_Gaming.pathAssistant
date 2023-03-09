@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Opportunity</entityName>
+    <fieldName>StageName</fieldName>
+    <masterLabel>AE Video Gaming</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Opportunity_Status__c</fieldNames>
+        <fieldNames>Opportunity_Status_Reason__c</fieldNames>
+        <picklistValueName>Closed Lost</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Meeting_with_Decision_Maker_Scheduled__c</fieldNames>
+        <fieldNames>Meeting_with_Decision_Maker_Completed__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;It&amp;#39;s time to make the pitch! The Opportunity will remain in this stage until you are able to present to the Decision Maker and have an understanding of what the customer is looking for in a business partnership.  &lt;/p&gt;</info>
+        <picklistValueName>Customer Meeting/Proposal</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Opportunity_Status__c</fieldNames>
+        <fieldNames>Opportunity_Status_Reason__c</fieldNames>
+        <fieldNames>Eligibility_Notes__c</fieldNames>
+        <info>&lt;p&gt;The Opportunity will stay in the Eligibility Stage until the appropriate conditions are satisfied. Continue to update the Activity &amp;amp; Key Fields and Submit for Approval once eligible for Internal Review.&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://accelentertainment.my.salesforce.com/sfc/p/1I000001dLpo/a/1I000000Q9sH/a83hbvQfx1ict4Vd1ZSgSU2rhtoXviXFzPXTDZMxRbo&quot; target=&quot;_blank&quot;&gt;When is my Opportunity Eligible for Internal Review?&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Eligibility</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Committed_Terminals__c</fieldNames>
+        <fieldNames>Commissioned_As__c</fieldNames>
+        <fieldNames>Commissioned_As_Date__c</fieldNames>
+        <fieldNames>Executive_Approval_Notes__c</fieldNames>
+        <info>&lt;p&gt;During the Internal Review the following items will occur:&lt;/p&gt;&lt;ol&gt;&lt;li&gt;Sales Ops will prepare the Opportunity for Leadership Review&lt;/li&gt;&lt;li&gt;Data Analysis Team will propose Products for the Opportunity (if applicable)&lt;/li&gt;&lt;li&gt;Application Processor will be assigned (if applicable)&lt;/li&gt;&lt;/ol&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://accelentertainment.my.salesforce.com/sfc/p/1I000001dLpo/a/1I000000Q9sM/FvyvliRoqu24d.24_vTlrlymY6jhUO7CO.Ljmq7UNfg&quot; target=&quot;_blank&quot;&gt;What Happens When I Submit for Approval?&lt;/a&gt;&lt;/p&gt;</info>
+        <picklistValueName>Internal Review</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_Agreement_Signed__c</fieldNames>
+        <fieldNames>Opportunity_Split_1__c</fieldNames>
+        <fieldNames>Opportunity_Split_2__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;Let&amp;#39;s talk business! The sale is heating up and the probability of closing this deal is likely increasing. &lt;/p&gt;&lt;p&gt;Are you looking for customized sales presentation? Use these links to submit your request:&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forms.monday.com/forms/401d5d7223b7416c757d41083778a21a&quot; target=&quot;_blank&quot; style=&quot;font-size: 13px;&quot;&gt;A&lt;/a&gt;&lt;a href=&quot;https://forms.monday.com/forms/401d5d7223b7416c757d41083778a21a&quot; target=&quot;_blank&quot;&gt;ddendum&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forms.monday.com/forms/ddf40e60a7d9e9c9598a8298c39f6ca9&quot; target=&quot;_blank&quot;&gt;Sketch Up Animation&lt;/a&gt;&lt;/p&gt;&lt;p&gt;&lt;a href=&quot;https://forms.monday.com/forms/27b886a689bbc29637f641b5e294b5b6&quot; target=&quot;_blank&quot;&gt;Gaming- Machine Analysis&lt;/a&gt;&lt;/p&gt;</info>
+        <picklistValueName>Negotiation/Handling Objections</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Vetting_Notes__c</fieldNames>
+        <fieldNames>NextStep</fieldNames>
+        <info>&lt;p&gt;Now that you are ready to start selling, take time to prepare your sales strategy. Be sure to visit the &lt;a href=&quot;https://www.accelentertainment.com/sales/corporate-sales-page&quot; target=&quot;_blank&quot;&gt;Resource Page&lt;/a&gt;&lt;span style=&quot;font-size: 11pt; font-family: Calibri;&quot;&gt;  for all the latest sales materials. &lt;/span&gt;&lt;/p&gt;&lt;p&gt;&lt;br&gt;&lt;/p&gt;</info>
+        <picklistValueName>Prepare Sales Strategy</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>AE_Video_Gaming</recordTypeName>
+</PathAssistant>

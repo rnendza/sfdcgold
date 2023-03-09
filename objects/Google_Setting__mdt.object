@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Settings that contain data about google endpoints</description>
+    <fields>
+        <fullName>API_Key__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>API Key</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commit_Updates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test)</inlineHelpText>
+        <label>Commit Updates</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Template_Dev_Name__c</fullName>
+        <description>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</inlineHelpText>
+        <label>Email Template Dev Name</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Endpoint__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Endpoint</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Fire_Callout_on_Insert__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If semi-real time, use this as a toggle to indicate to fire the queueable class upon insert of a record (ie trigger or flow)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If semi-real time, use this as a toggle to indicate to fire the queueable class upon insert of a record (ie trigger or flow)</inlineHelpText>
+        <label>Fire Callout on Insert</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fire_Callout_on_Update__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If semi-real time, use this as a toggle to indicate to fire the queueable class upon update of a record (ie trigger or flow)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If semi-real time, use this as a toggle to indicate to fire the queueable class upon update of a record (ie trigger or flow)</inlineHelpText>
+        <label>Fire Callout on Update</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Http_Method__c</fullName>
+        <defaultValue>&quot;GET&quot;</defaultValue>
+        <description>ie. POST,PUT,GET etc</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>ie. POST,PUT,GET etc</inlineHelpText>
+        <label>Http Method</label>
+        <length>16</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Log_Failure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Create a record in Accel Application Logs (Accel_Application_Error__c) for every failed call. (Including inability to find data)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Create a record in Accel Application Logs (Accel_Application_Error__c) for every failed call. (Including inability to find data)</inlineHelpText>
+        <label>Log Failure</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Log_Success__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Create a record in Accel Application Logs (Accel_Application_Error__c) for every successful call.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Create a record in Accel Application Logs (Accel_Application_Error__c) for every successful call.</inlineHelpText>
+        <label>Log Success</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Email_On_Failure__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, the usersnames to email and the email template fields must be populated as well.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, the usersnames to email and the email template fields must be populated as well.</inlineHelpText>
+        <label>Send Email On Failure</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Timeout__c</fullName>
+        <defaultValue>10000</defaultValue>
+        <description>The timeout value on the http callout. (in milliseconds). The minimum is 1 millisecond and the maximum is 120 seconds. The SFDC Default (if not specified) is 10 seconds or 10000 milliseconds.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The timeout value on the http callout. (in milliseconds). The minimum is 1 millisecond and the maximum is 120 seconds. The SFDC Default (if not specified) is 10 seconds or 10000 milliseconds.</inlineHelpText>
+        <label>Timeout</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Users__c</fullName>
+        <description>The SFDC Username(s), comma delimited, to send an email to.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The SFDC Username(s), comma delimited, to send an email to.</inlineHelpText>
+        <label>Usersnames to email</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Google Setting</label>
+    <pluralLabel>Google Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

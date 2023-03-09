@@ -1,0 +1,225 @@
+<apex:page controller="GenDataTables"  renderAs="pdf" applyBodyTag="false" applyHtmlTag="false" showHeader="false">
+<head>
+    <style>@page
+        {
+            size: landscape;
+        }
+    </style>
+    <style type="text/css">
+       .summaryTable{
+           margin: auto;
+           border-collapse: collapse;
+           font-size: 14px;
+       }
+       .summaryTable th {
+           border: 1px solid black;
+           text-align: center;
+           width: 170px;
+       }
+       .summaryTable th#total {
+           background-color: red;
+           padding: 10px;
+       }
+       .summaryTable th#tech {
+           background-color: #32CD32;
+           padding: 10px;
+       }
+       .summaryTable th#call {
+           background-color: #32CD32;
+           padding: 10px;
+       }
+       .summaryTable th#incomplete {
+           background-color: yellow;
+           padding: 10px;
+       }
+       .techBreak {
+           display: inline-block; 
+           width: 200px; 
+           margin: 40px 15px 40px 15px;
+           vertical-align: top;
+           float: left;
+       }
+       .breakWidth {
+           width: 100%;
+       }
+       .breakWidth th {
+           text-align: center;
+       }
+       .logDiv {
+           width: 952px;
+           margin-top: 30px;
+           float: left;
+       }
+       .logTable {
+           width: 952px;
+           font-size: 10px;
+           float: left;
+       }
+       .column-small {
+           
+           width: 60px;
+           border: 1px solid #808080;
+           border-collapse: collapse;
+           text-align: center;
+       }
+        .column-medium {
+           
+           width: 110px;
+           border: 1px solid #808080;
+           border-collapse: collapse;
+           text-align: center;
+       }
+        .column-large {
+          
+           width: 180px;
+           border: 1px solid #A8A8A8;
+           border-collapse: collapse;
+           text-align: left;
+          
+    
+       }
+       .heading {
+           text-align: center;
+       }
+  </style>
+</head>
+    <apex:variable var="yesterdayDate" value="{!reportDate}" />
+    <apex:variable var="totalcalls" value="{!totalcalls}" />
+    <apex:variable var="techcomplete" value="{!techcomplete}" />
+    <apex:variable var="callcentercomplete" value="{!callcentercomplete}" />
+    <apex:variable var="incompletecalls" value="{!incompletecalls}" />
+    <center><h1>Daily Service Log</h1></center>
+    <center><h4>{!yesterdayDate}</h4></center>
+    <body style="font-size: 12px;">
+       <table class="summaryTable">
+            <tbody>
+            <tr>
+                <th id="total">Total Calls</th>
+                <th id="tech">Completed by Technicians</th>
+                <th id="call">Call Center Completed</th>
+                <th id="incomplete">Incomplete Calls</th>
+            </tr>
+            <tr>
+                <th style="border: 1px solid black; text-align: center;">{!totalcalls}</th>
+                <th style="border: 1px solid black; text-align: center;">{!techcomplete}</th>
+                <th style="border: 1px solid black; text-align: center;">{!callcentercomplete}</th>
+                <th style="border: 1px solid black; text-align: center">{!incompletecalls}</th>
+            </tr>
+            </tbody>
+        </table>
+            <div class="techBreak">
+                <apex:dataTable value="{!regionBreakDownListAgg}" var="rbl" styleclass="breakWidth" >
+                    <apex:column >
+                        <apex:facet name="header">Region Break Down</apex:facet> 
+                        <apex:outputText >{!rbl['Service_Region__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header"></apex:facet> 
+                        <apex:outputText >{!rbl['expr0']}</apex:outputText>
+                    </apex:column>
+                 </apex:dataTable>
+            </div>
+            <div class="techBreak">
+                 <apex:dataTable value="{!technicianBreakDownListAgg}" var="tbl" styleclass="breakWidth" >
+                    <apex:column >
+                        <apex:facet name="header">Technician Break Down</apex:facet> 
+                        <apex:outputText >{!tbl['Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header"></apex:facet> 
+                        <apex:outputText >{!tbl['expr0']}</apex:outputText>
+                    </apex:column>
+                 </apex:dataTable>
+            </div>
+            <div class="techBreak">
+                 <apex:dataTable value="{!callCenterBreakDownListAgg}" var="cbl" styleclass="breakWidth" >
+                    <apex:column >
+                        <apex:facet name="header">Call Center Break Down</apex:facet> 
+                        <apex:outputText >{!cbl['Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header"></apex:facet> 
+                        <apex:outputText >{!cbl['expr0']}</apex:outputText>
+                    </apex:column>
+                 </apex:dataTable>
+            </div>
+            <div class="techBreak">
+                 <apex:dataTable value="{!manufacturerBreakDownListAgg}" var="mbl" styleclass="breakWidth" >
+                    <apex:column >
+                        <apex:facet name="header">Manufacturer Break Down</apex:facet> 
+                        <apex:outputText >{!mbl['GP_Manufacturer__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column >
+                        <apex:facet name="header"></apex:facet> 
+                        <apex:outputText >{!mbl['expr0']}</apex:outputText>
+                    </apex:column>
+                 </apex:dataTable>
+            </div>
+           <div class="logDiv">
+               <apex:pageBlock >
+                <apex:pageBlockTable value="{!dailyLogAgg}" var="logtable"  styleClass="logTable" headerClass="heading">
+                    <apex:column styleClass="column-small">
+                        <apex:facet name="header">License #</apex:facet> 
+                        <apex:outputText >{!logtable['IGB_Number__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Location</apex:facet> 
+                        <apex:outputText >{!logtable['Account.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-small">
+                        <apex:facet name="header">City</apex:facet> 
+                        <apex:outputText >{!logtable['City__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Region</apex:facet> 
+                        <apex:outputText >{!logtable['Service_Region__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Technician</apex:facet> 
+                        <apex:outputText >{!logtable['Assigned_Resource__r.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Date Received</apex:facet> 
+                        <apex:outputText value="{0,date,MM/dd/yy hh:mm:ss a}"> <apex:param value="{!logtable['CreatedDate']-(6/24)}" /></apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Date Cleared</apex:facet> 
+                        <apex:outputText value="{0,date,MM/dd/yy hh:mm:ss a}"><apex:param value="{!logtable['ClosedDate']-(6/24)}" /></apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-small">
+                        <apex:facet name="header">Machine</apex:facet> 
+                        <apex:outputText >{!logtable['Model__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-small">
+                        <apex:facet name="header">Serial #</apex:facet> 
+                        <apex:outputText >{!logtable['Serial__c']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Work Type</apex:facet> 
+                        <apex:outputText >{!logtable['Work_Type__r.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-large">
+                        <apex:facet name="header">Description</apex:facet> 
+                        <apex:outputText >{!logtable['Description']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Solution</apex:facet> 
+<!--
+ RJN  12/2/2020
+
+ Fixed to reference new field that was most likely changed in the controller from Solution__c (PL value)
+ to Accel_Solution__C (Lookup value) in the controller at some piont.
+
+<apex:outputText >{!logtable['Solution__c']}</apex:outputText>
+-->
+                        <apex:outputText >{!logtable['Accel_Solution__r.Name']}</apex:outputText>
+                    </apex:column>
+                    <apex:column styleClass="column-medium">
+                        <apex:facet name="header">Rep</apex:facet> 
+                        <apex:outputText >{!logtable['CreatedBy.Name']}</apex:outputText>
+                    </apex:column>  
+                 </apex:pageBlockTable>
+                </apex:pageBlock>
+            </div>
+    </body>
+</apex:page>

@@ -1,0 +1,109 @@
+<!-- Cl Route Processing Process Actual Drop -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+    <div>
+        <div class="slds-p-around_xxx-small">
+            <lightning-card>
+                <lightning-button-menu
+                        if:true={options}
+                        slot="actions" icon-name="utility:down" icon-size="small"
+                        onselect={handleMenuSelect}
+                        menu-alignment="right" variant="border-filled">
+                    <template for:each={options} for:item="option">
+                        <lightning-menu-item key={option.id} value={option.id}
+                                             label={option.label}></lightning-menu-item>
+                    </template>
+                </lightning-button-menu>
+                <h1 slot="title" class="no-wrap">
+                    <div class="slds-grid slds-wrap">
+                        <c-ui-card-title
+                                if:true={rpsWrapper}
+                                card-title={rpsWrapper.accountName}
+                                card-subtitle={rpsWrapper.rpsName}
+                                card-second-subtitle={collectionDateFormatted}
+                                card-third-subtitle={cardThirdSubTitle}
+                                card-fourth-subtitle={cardFourthSubTitle}
+                                onbackclicked={handleBackClicked}
+                                back-button-label="Back"
+                                show-back-button={showBackButton}
+                                icon-name="standard:account"
+                                icon-size="medium">
+                        </c-ui-card-title>
+                    </div>
+                </h1>
+                <!-- ===   TOP CONTROLS   === -->
+                <div
+                        if:true={rpsWrapper}
+                        class="slds-grid slds-wrap slds-p-left_small slds-p-top_x-small accel-card-subheader-row
+                                slds-p-bottom_x-small slds-m-horizontal_small">
+                    <div class="slds-col  slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-2 slds-align-middle">
+                        <div class="slds-grid">
+                            <div class="slds-col slds-grow-none">
+                                <div if:true={rpsWrapper}>
+                                    <c-cl-machine-type-buttons
+                                            rps-record={rpsWrapper.rps}
+                                            onmachinetypeselected={handleMachineTypeSelected}>
+                                    </c-cl-machine-type-buttons>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-2">
+                        <div class="slds-text-align_right slds-p-right_small">
+                            <lightning-formatted-address
+                                    if:true={rpsWrapper}
+                                    street={rpsWrapper.rps.Account__r.ShippingStreet}
+                                    city={rpsWrapper.rps.Account__r.ShippingCity}
+                                    province={rpsWrapper.rps.Account__r.ShippingState}
+                                    postal-code={rpsWrapper.rps.Account__r.ShippingPostalCode}
+                                    disabled={disableAddressClick}
+                                    class="accel-cardtitle_address">
+                            </lightning-formatted-address>
+                        </div>
+                    </div>
+                </div>
+                <!-- ===   END TOP CONTROLS   === -->
+
+                <div    if:true={rpsWrapper}
+                        class="slds-p-top_medium slds-m-horizontal_small" style="min-height:400px">
+                    <div if:true={showRts} class="accel-test-borders">
+                        <div style="min-height: 100px;">
+                            <c-cl-rps-process-actual-drop-view
+                                    class="accel-test-borders"
+                                    if:true={rpsId}
+                                    rps-id={rpsId}
+                                    replenishment-type={rpsWrapper.replenishmentType}
+                                    process-status={rpsWrapper.rps.Processing_Process_Status__c}
+                                    process-completed-msg={completedMsg}
+                                    form-title="Actual Drop"> 
+                            </c-cl-rps-process-actual-drop-view>
+                        </div>
+                        <div class="slds-m-top_medium slds-p-bottom_medium">
+                            <div if:true={_isRunningUpdate}>
+                                <c-ui-custom-stencil
+                                        iterations="1"
+                                        type="list" columns="1">
+                                </c-ui-custom-stencil>
+                            </div>
+                        </div>
+                    </div>
+                    <div if:true={showVgts}>
+                        <c-cl-rps-actual-drop-vgt
+                                rps-id={rpsId}>
+                        </c-cl-rps-actual-drop-vgt>
+                    </div>
+                </div>
+                <!-- ==========   NO DATA FOUND  ============ -->
+                <div if:true={showNoData}>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_large"
+                            header-text="No data found"
+                            body-text={emptyBodyText}>
+                    </c-ui-empty-state>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

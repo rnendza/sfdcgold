@@ -1,0 +1,102 @@
+<!-- Accel Audit Trails Filters -->
+<template>
+
+    <div if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="3"
+                child-class="slds-var-m-around_xxx-small"
+                type="list" columns="1">
+        </c-ui-custom-stencil>
+    </div>
+
+    <template if:false={isLoading}>
+        <div class="slds-p-vertical_x-small">
+            <div class="slds-form-element__control">
+                <label class="slds-form-element__label" for="search_usertype"><b>Select User Type</b></label>
+                <div class="slds-select_container">
+                    <select class="slds-select" id="search_usertype"
+                            name="search_userType"
+                            onchange={handleUserTypeSelect}>
+                        <template for:each={userTypeOptions} for:item="option">
+                            <option key={option.label} class="uiInputSelectOption"
+                                    selected={option.selected}
+                                    value={option.value}>{option.label}
+                            </option>
+                        </template>
+                    </select>
+                </div>
+            </div>
+        </div>
+        <template if:true={isUserTypeSelected}>
+            <div class="slds-p-vertical_x-small">
+                <template if:true={isAdminsUserTypeSelected}>
+                    <c-ui-multiselect
+                            if:true={users}
+                            options={userOptions}
+                            pill-icon={userPillIcon}
+                            name="userSelect"
+                            custom-select-class="blah"
+                            data-id="userSelect"
+                            onselect={handleSelect}
+                            onremove={handleOptionsRemoved}
+                            entity-label="Admin Users"
+                            selected-values={defaultUserSelections}
+                            no-selection-means-all="true"
+                            multi-select="true"
+                            label="Select Admin User">
+                    </c-ui-multiselect>
+                </template>
+                <template if:true={isWmpUserTypeSelected}>
+                    <c-ui-multiselect
+                            if:true={wmpUsers}
+                            options={wmpUserOptions}
+                            pill-icon={userPillIcon}
+                            name="wmpUserSelect"
+                            custom-select-class="blah"
+                            data-id="wmpUserSelect"
+                            onselect={handleSelect}
+                            onremove={handleOptionsRemoved}
+                            entity-label="West Monroe Users"
+                            selected-values={defaultWmpUserSelections}
+                            no-selection-means-all="true"
+                            multi-select="true"
+                            label="Select West Monroe User">
+                    </c-ui-multiselect>
+                </template>
+            </div>
+        </template>
+        <div class="slds-p-vertical_x-small">
+            <c-ui-multiselect
+                    if:true={actionOptions}
+                    options={actionOptions}
+                    pill-icon={actionPillIcon}
+                    name="actionSelect"
+                    data-id="actionSelect"
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Actions"
+                    no-selection-means-all="true"
+                    selected-values={defaultActionSelections}
+                    multi-select="true"
+                    label="Select Action">
+            </c-ui-multiselect>
+        </div>
+        <div>
+            <div class="slds-p-vertical_xx-small">
+                <lightning-input type="datetime" name="startDate" label="Select Start Date"
+                                 data-id="startdate"
+                                 value={selectedStartDateTimeValue}
+                                 onchange={handleDateChange}>
+                </lightning-input>
+            </div>
+            <div class="slds-p-vertical_xx-small">
+                <lightning-input type="datetime"
+                                 data-id="enddate"
+                                 value={selectedEndDateTimeValue}
+                                 onchange={handleDateChange}
+                                 name="endDate" label="Select End Date">
+                </lightning-input>
+            </div>
+        </div>
+    </template>
+</template>

@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Custom_Notifications_Sent__c.DBA_Name__c</field>
+    </columns>
+    <columns>
+        <field>Custom_Notifications_Sent__c.DBA_State__c</field>
+    </columns>
+    <columns>
+        <field>Custom_Notifications_Sent__c.User__c</field>
+    </columns>
+    <columns>
+        <field>Custom_Notifications_Sent__c.IGB__c</field>
+    </columns>
+    <columns>
+        <field>Custom_Notifications_Sent__c.Accel_VGT_Live_Date__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Custom_Notifications_Sent__c.HPD__c</field>
+    </columns>
+    <columns>
+        <field>CUST_CREATED_DATE</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <description>This report is for the RM notifications for when an account has not had a visit in the last 30 days.</description>
+    <filter>
+        <criteriaItems>
+            <column>Custom_Notifications_Sent__c.Alert_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>No Visit in 30 Days</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>30 Days No Visit Notifications</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Custom_Notifications_Sent__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_CREATED_DATE</sortColumn>
+    <sortOrder>Desc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_LAST7</interval>
+    </timeFrameFilter>
+</Report>

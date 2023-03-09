@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Notification sent to the PM to complete the buildout information on the project.</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Project Buildout Notification  to PM</name>
+    <style>none</style>
+    <subject>Complete Buildout Information for Project: {!Project__c.Name}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

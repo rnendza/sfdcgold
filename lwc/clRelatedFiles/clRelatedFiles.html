@@ -1,0 +1,129 @@
+<!-- Cl Related Files -->
+<template>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+    <div if:true={showUploaderAssistance} class="slds-p-bottom_small">
+        <c-cl-related-files-assistant
+                display-help-video-link={displayHelpVideoLink}
+                title="Route Import Assistant"
+                assistance-type="uploader"
+                help-file-title={helpFileTitle}
+                bullet-points={uploaderAssistanceBulletPoints}>
+        </c-cl-related-files-assistant>
+    </div>
+    <lightning-card class="accel-files-card">
+        <div if:true={_isProcessing} style={progressStyle} class="slds-p-bottom_small">
+            <div class="progress-center">
+                <div if:true={progressLabel} style="font-size:.70rem">
+                    {progressLabel}
+                </div>
+                <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+            </div>
+        </div>
+        <div if:true={showStencil}>
+            <c-ui-custom-stencil
+                    iterations="4"
+                    child-class="slds-var-m-around_xxx-small"
+                    type="list" columns="2">
+            </c-ui-custom-stencil>
+        </div>
+        <div if:true={showUploadOrFilters}
+             class="slds-p-horizontal_x-small slds-p-bottom_small">
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-size_4-of-12 slds-var-p-right_small">
+                    <lightning-file-upload if:true={showFileUpload}
+                                           label="Upload Route CSV"
+                                           name="fileUploader"
+                                           class="accel-file-uploader"
+                                           accept={accept}
+                                           record-id={recordId}
+                                           onuploadfinished={handleUploadFinished}
+                                           file-field-name="Cash_Logistics_Upload_Type_fileupload__c"
+                                           file-field-value="Route Import"
+                                           multiple>
+                    </lightning-file-upload>
+                </div>
+                <div class="slds-col slds-size_3-of-12 slds-var-p-right_x-small">
+                    <div if:true={showDtFilters}>
+                        <lightning-input
+                                type="search" variant="standard" name="search_title"
+                                label="Title" onchange={handleSearch}>
+                        </lightning-input>
+                    </div>
+                </div>
+                <div
+                        class="slds-col slds-size_3-of-12 slds-var-p-right_x-small">
+                    <div class="slds-form-element__control" if:true={showDtFilters}>
+                        <label class="slds-form-element__label" for="search_createdby">Created By</label>
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="search_createdby"
+                                    name="search_createdby"
+                                    onchange={handleSearch}>
+                                <template for:each={filesCreatedByPlOptions} for:item="option">
+                                    <option key={option.label} class="uiInputSelectOption"
+                                            selected={option.selected}
+                                            value={option.value}>{option.label}
+                                    </option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+                <div
+                        class="slds-col slds-size_2-of-12">
+                    <div class="slds-form-element__control" if:true={showDtFilters}>
+                        <label class="slds-form-element__label" for="search_uploadstatus">Status</label>
+                        <div class="slds-select_container">
+                            <select class="slds-select" id="search_uploadstatus"
+                                    name="search_uploadstatus"
+                                    onchange={handleSearch}>
+                                <template for:each={filesUploadStatusPlOptions} for:item="option">
+                                    <option key={option.label} class="uiInputSelectOption"
+                                            selected={option.selected}
+                                            value={option.value}>{option.label}
+                                    </option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div if:true={showFilesDatatable}>
+            <lightning-datatable
+                    key-field="contentVersionId"
+                    data={filteredFilesData}
+                    hide-checkbox-column
+                    columns={filesColumns}
+                    onrowaction={handleRowAction}>
+            </lightning-datatable>
+        </div>
+    </lightning-card>
+
+    <c-ui-confirmation-dialog title={confirmTitle}
+                              message={confirmDisplayMessage}
+                              cancel-label='Cancel'
+                              confirm-label={confirmLabel}
+                              visible={isActionDialogVisible}
+                              original-message={dialogPayload}
+                              name="confirmModal"
+                              header-icon={confirmIcon}
+                              header-icon-size={confirmIconSize}
+                              onmodalaction={handleModalConfirmClick}>
+    </c-ui-confirmation-dialog>
+
+    <c-cl-related-files-publisher
+            if:true={isPublisherDialogVisible}
+            title={confirmTitle}
+            message={confirmDisplayMessage}
+            cancel-label='Cancel'
+            confirm-label={confirmLabel}
+            related-record-id={recordId}
+            visible={isPublisherDialogVisible}
+            original-message={dialogPayload}
+            assistance-header="Route Publisher Assistant"
+            name="confirmModal"
+            header-icon={confirmIcon}
+            onmodalaction={handleModalPublisherConfirmClick}>
+    </c-cl-related-files-publisher>
+
+</template>

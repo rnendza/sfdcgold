@@ -1,0 +1,134 @@
+<aura:component description="Accel_CommunityAccountMonthTotals"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityAcctMonthTotalsController"
+                access="public">
+
+    <aura:attribute name="accountIds" type="List" access="public"/>
+    <aura:attribute name="debugAccountIds" type="String" access="public"/>
+
+    <aura:attribute name="locationData" type="Object" access="public"/>
+    <aura:attribute name="locationRawData" type="Object" access="private"/>
+    <aura:attribute name="locationColumns" type="List"/>
+
+    <aura:attribute name="locationMonthlyData" type="Object" access="public"/>
+    <aura:attribute name="locationMonthlyRawData" type="Object" access="public"/>
+    <aura:attribute name="locationMonthlyDataDebug" type="String"/>
+    <aura:attribute name="locationMonthlyColumns" type="List"/>
+
+    <aura:attribute name="locDebug" type="String"/>
+    <aura:attribute name="showAllLocData" type="Boolean" default="false"/>
+    <aura:attribute name="showMonthlyLocData" type="Boolean" default="false"/>
+    <aura:attribute name="sortedBy" type="String"/>
+    <aura:attribute name="sortedDirection" type="String" default="asc"/>
+
+    <aura:attribute name="maxAccounts" type="Integer"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="dateSelected" type="Date"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="locationDataDescription" type="String"/>
+    <aura:attribute name="spinnerAltText" type="string" default="processing"/>
+
+    <aura:attribute name="currentPageNumber" type="Integer" default="1"/>
+    <aura:attribute name="pageSize" type="Integer" default="8"/>
+    <aura:attribute name="totalPages" type="Integer" default="1"/>
+    <aura:attribute name="pageList" type="List"/>
+
+    <aura:registerEvent name="appEventChartLocShareMthDataRefreshed" type="c:Accel_ChartLocShareMthDataRefreshed"/>
+
+    <aura:handler event="c:Accel_ChartLocShareTotalMonthSelected" action="{!c.handleMonthSelectedEvent}"/>
+    <aura:handler event="c:Accel_ChartLocShareTotalsLoaded" action="{!c.handleLocShareTotalsLoadedEvent}"/>
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div style="position:relative">
+        <lightning:spinner variant="brand" size="large" aura:id="accountMonthlyLocationPerfSpinner"
+                           class="{!((v.showSpinner)? '': 'slds-hide')}"
+                           alternativeText="{!v.spinnerAltText}"/>
+
+        <aura:if isTrue="{!and(!empty(v.dateSelected),v.showMonthlyLocData)}">
+            <div>
+                <lightning:datatable data="{! v.locationMonthlyData }"
+                                     columns="{! v.locationMonthlyColumns }"
+                                     class="slds-max-medium-table_stacked accel-prevent-datatable-wrap-icon accel-location-monthly-details-datatable"
+                                     keyField="accountId"
+                                     sortedBy="{!v.sortedBy}"
+                                     sortedDirection="{!v.sortedDirection}"
+                                     onsort="{!c.updateLocationBreakdownColumnSorting}"
+                                     showRowNumberColumn="false"
+                                     hideCheckboxColumn="true"/>
+                <aura:if isTrue="{!v.totalPages > 1}">
+                    <lightning:layout horizontalAlign="center" verticalAlign="end">
+                        <lightning:layoutItem padding="around-small" flexibility="auto" alignmentBump="right" class="pin-bottom pin-left">
+                                <span style="font-size:.88em">
+                                    Page <b>{!v.currentPageNumber}</b> of {!v.totalPages}
+                                </span>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" flexibility="auto" class="pin-bottom pin-right">
+                            <lightning:button label="First" iconName="utility:left" iconPosition="left"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onFirstBtnMonthlyData"
+                                              onclick="{!c.onFirst}" disabled="{! v.currentPageNumber == 1}"/>
+                            <lightning:button iconName="utility:chevronleft" iconPosition="left"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onPrevBtnMonthlyData"
+                                              onclick="{!c.onPrev}" disabled="{! v.currentPageNumber == 1}"/>
+                            <lightning:button iconName="utility:chevronright" iconPosition="right"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onNextBtnMonthlyData"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onNext}"/>
+                            <lightning:button label="Last" iconName="utility:right" iconPosition="right"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onLastBtnMonthlyData"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onLast}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:if>
+            </div>
+        </aura:if>
+
+        <aura:if isTrue="{!and(!empty(v.locationData),v.showAllLocData)}">
+            <div>
+                <lightning:datatable data="{! v.locationData }"
+                                     columns="{! v.locationColumns }"
+                                     class="slds-max-medium-table_stacked accel-prevent-datatable-wrap-icon accel-location-monthly-details-datatable"
+                                     keyField="hpdDate"
+                                     sortedBy="{!v.sortedBy}"
+                                     sortedDirection="{!v.sortedDirection}"
+                                     onsort="{!c.updateLocationMonthTotalsColumnSorting}"
+                                     showRowNumberColumn="false"
+                                     hideCheckboxColumn="true"/>
+                <aura:if isTrue="{!v.totalPages > 1}">
+                    <lightning:layout horizontalAlign="center" verticalAlign="end">
+                        <lightning:layoutItem padding="around-small" flexibility="auto" alignmentBump="right" class="pin-bottom pin-left">
+                                <span style="font-size:.88em">
+                                    Page <b>{!v.currentPageNumber}</b> of {!v.totalPages}
+                                </span>
+                        </lightning:layoutItem>
+                        <lightning:layoutItem padding="around-small" flexibility="auto" class="pin-bottom pin-right">
+                            <lightning:button label="First" iconName="utility:left" iconPosition="left"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onFirstBtnLocationData"
+                                              onclick="{!c.onFirst}" disabled="{! v.currentPageNumber == 1}"/>
+                            <lightning:button iconName="utility:chevronleft" iconPosition="left"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onPrevBtnLocationData"
+                                              onclick="{!c.onPrev}" disabled="{! v.currentPageNumber == 1}"/>
+                            <lightning:button iconName="utility:chevronright" iconPosition="right"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onNextBtnLocationData"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onNext}"/>
+                            <lightning:button label="Last" iconName="utility:right" iconPosition="right"
+                                              class="accel-pagination-btn-small"
+                                              aura:id="onLastBtnLocationData"
+                                              disabled="{! v.currentPageNumber == v.totalPages}" onclick="{!c.onLast}"/>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </aura:if>
+            </div>
+        </aura:if>
+    </div>
+</aura:component>

@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <description>Email template for cost approval on a Marketing request</description>
+    <encodingKey>ISO-8859-1</encodingKey>
+    <name>Cost Approval Request</name>
+    <style>none</style>
+    <subject>Cost Approval Requested for {!Marketing_Request__c.Link}</subject>
+    <type>text</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Name</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders$Asset</field>
+    </columns>
+    <columns>
+        <field>Account.Cases$VGT_Asset__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$WorkType</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Status</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Time_Accepted__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Time_Start_En_Route__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Time_In_Progress__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Time_Complete__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Solution_Notes__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Rejected_Time__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Status_Field_Set_Display__c</field>
+    </columns>
+    <columns>
+        <field>Account.Cases.WorkOrders.ServiceAppointments$Substatus__c</field>
+    </columns>
+    <columns>
+        <field>Account$IGB_License__c</field>
+    </columns>
+    <description>Use this to find any locations that parts were sent to.</description>
+    <filter>
+        <booleanFilter>1 OR 2</booleanFilter>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Agent Appointment</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account.Cases.WorkOrders.ServiceAppointments$Substatus__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Logic Box Access</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>rule 350 Repair orders</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Appointments_with_Work_Orders_and_Cases__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account.Cases.WorkOrders.ServiceAppointments$Time_Complete__c</dateColumn>
+        <endDate>2022-09-30</endDate>
+        <interval>INTERVAL_CUSTOM</interval>
+        <startDate>2022-07-01</startDate>
+    </timeFrameFilter>
+</Report>

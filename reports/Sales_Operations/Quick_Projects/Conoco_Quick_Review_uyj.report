@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>Account$Hold_Per_Day_Total__c.Twelve_Week_HPD__c</field>
+    </columns>
+    <columns>
+        <field>Account$Accel_VGT_Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Agreement_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Total_Length_of_Agreement__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Account$Name</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Conoco Mt Sterling,White hall conoco,phillip 66 kincaid,auburn quick &amp; ez</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Conoco - Quick Review</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Account_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

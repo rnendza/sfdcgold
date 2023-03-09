@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Marketing_Request__c</entityName>
+    <fieldName>Project_Stage__c</fieldName>
+    <masterLabel>Standard Custom Size Path</masterLabel>
+    <pathAssistantSteps>
+        <fieldNames>Date_Cost_Approval_Received__c</fieldNames>
+        <fieldNames>Date_of_Location_Approval__c</fieldNames>
+        <fieldNames>Date_Compliance_Approval_Rcvd__c</fieldNames>
+        <picklistValueName>Approval</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_Ordered_From_Vendor__c</fieldNames>
+        <info>&lt;p&gt;&lt;b&gt; &lt;/b&gt;&lt;/p&gt;</info>
+        <picklistValueName>Order</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <fieldNames>Date_of_RM_BDM_Completion__c</fieldNames>
+        <picklistValueName>Project Completion</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Non_Standard</recordTypeName>
+</PathAssistant>

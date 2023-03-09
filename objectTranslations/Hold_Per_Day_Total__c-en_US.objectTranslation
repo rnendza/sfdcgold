@@ -1,0 +1,524 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Hold Per Day Total</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Hold Per Day Totals</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Hold Per Day Totals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- For future use for Machines. --></help>
+        <label><!-- Asset --></label>
+        <name>Asset__c</name>
+        <relationshipLabel><!-- Hold Per Day Totals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 2 Months.. (Revenue Total /  # of Vgts) / 2. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 8 Week HPD Avg --></label>
+        <name>Eight_Week_HPD_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 2 Months.. (Revenue Total /  # of Vgts) / 2. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 8 Week HPD --></label>
+        <name>Eight_Week_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Annual Revenue --></label>
+        <name>Estimated_Annual_Revenue__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 1 Month.. (Revenue Total /  # of Vgts) / 1. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 4 Week HPD Avg --></label>
+        <name>Four_Week_HPD_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 1 Month.. (Revenue Total /  # of Vgts) / 1. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 4 Week HPD --></label>
+        <name>Four_Week_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Frequency --></label>
+        <name>Frequency__c</name>
+        <picklistValues>
+            <masterLabel>Daily</masterLabel>
+            <translation><!-- Daily --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Monthly</masterLabel>
+            <translation><!-- Monthly --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total (12 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total (4 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Aggregates HPD data for the last 8 weeks.&lt;br/&gt;
+For Machines....(Revenue Total / 56)&lt;br/&gt;
+For Locations.....(Revenue Total /  # of Vgts) / 56&lt;br/&gt;
+If not enough data to calculate.. the value will be empty. --></help>
+        <label><!-- HPD Accel Revenue Total (8 Weeks) --></label>
+        <name>HPD_Accel_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Revenue Total --></label>
+        <name>HPD_Accel_Revenue_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Accel Total VGT Count --></label>
+        <name>HPD_Accel_Total_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount Played (12 Weeks) --></label>
+        <name>HPD_Amount_Played_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount Played (4 Weeks) --></label>
+        <name>HPD_Amount_Played_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount Played (8 Weeks) --></label>
+        <name>HPD_Amount_Played_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount  Won (12 Weeks) --></label>
+        <name>HPD_Amount_Won_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount Won (4 Weeks) --></label>
+        <name>HPD_Amount_Won_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Amount  Won (8 Weeks) --></label>
+        <name>HPD_Amount_Won_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Sum of Hold Per Day Funds In for 12 Weeks --></help>
+        <label><!-- HPD Funds In Total (12 Weeks) --></label>
+        <name>HPD_Funds_In_Total_12_weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds In Total (4 Weeks) --></label>
+        <name>HPD_Funds_In_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SUM of HPD net funds for LAST N Months (2 months + 1) --></help>
+        <label><!-- HPD Funds In Total (8 Weeks) --></label>
+        <name>HPD_Funds_In_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- 3 months --></help>
+        <label><!-- HPD Funds In Total --></label>
+        <name>HPD_Funds_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (12 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (4 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Funds Out Total (8 Weeks) --></label>
+        <name>HPD_Funds_Out_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Last 3 months funds in total for the account. --></help>
+        <label><!-- HPD Funds in Avg --></label>
+        <name>HPD_Funds_in_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Location Share (12 Weeks) --></label>
+        <name>HPD_Location_Share_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Location Share (4 Weeks) --></label>
+        <name>HPD_Location_Share_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Location Share (8 Weeks) --></label>
+        <name>HPD_Location_Share_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Muni Accel Revenue Total (12 Weeks) --></label>
+        <name>HPD_Muni_Accel_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Accel Avg --></label>
+        <name>HPD_Municipality_Accel_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Hold per day revenue aggregated up to Municipality for 12 weeks. --></help>
+        <label><!-- HPD Municipality Accel Rev Tot(12 Wks) --></label>
+        <name>HPD_Municipality_Accel_Revenue_Total_12__c</name>
+    </fields>
+    <fields>
+        <help><!-- 3 months --></help>
+        <label><!-- HPD Municipality Accel Revenue Total --></label>
+        <name>HPD_Municipality_Accel_Revenue_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Accel Total VGT Count --></label>
+        <name>HPD_Municipality_Accel_Total_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Played (12 Week) --></label>
+        <name>HPD_Municipality_Amount_Played_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Played (4 Weeks) --></label>
+        <name>HPD_Municipality_Amount_Played_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Played (8 Weeks) --></label>
+        <name>HPD_Municipality_Amount_Played_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Won (12 Weeks) --></label>
+        <name>HPD_Municipality_Amount_Won_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Won (4 Weeks) --></label>
+        <name>HPD_Municipality_Amount_Won_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Amount Won (8 Weeks) --></label>
+        <name>HPD_Municipality_Amount_Won_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- (12 Week Funds in Total / Total Vgts) / 90 --></help>
+        <label><!-- HPD Municipality Funds In Avg --></label>
+        <name>HPD_Municipality_Funds_In_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds In Total (12 Wks) --></label>
+        <name>HPD_Municipality_Funds_In_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds In Total (4 Wks) --></label>
+        <name>HPD_Municipality_Funds_In_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds In Total (8 Wks) --></label>
+        <name>HPD_Municipality_Funds_In_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds In Total --></label>
+        <name>HPD_Municipality_Funds_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds Out Total (12Wks) --></label>
+        <name>HPD_Municipality_Funds_Out_Total_12weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds Out Total (4 Wks) --></label>
+        <name>HPD_Municipality_Funds_Out_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Funds Out Total (8 Wks) --></label>
+        <name>HPD_Municipality_Funds_Out_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Location Share (12 Wks) --></label>
+        <name>HPD_Municipality_Location_Share_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Location Share (4 Wks) --></label>
+        <name>HPD_Municipality_Location_Share_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Location Share (8 Wks) --></label>
+        <name>HPD_Municipality_Location_Share_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality NTI Total 12 Weeks --></label>
+        <name>HPD_Municipality_NTI_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality NTI Total (4 Weeks) --></label>
+        <name>HPD_Municipality_NTI_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality NTI Total (8 Weeks) --></label>
+        <name>HPD_Municipality_NTI_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Revenue Avg --></label>
+        <name>HPD_Municipality_Revenue_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Revenue Total(12 Weeks) --></label>
+        <name>HPD_Municipality_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Revenue Total(4 Weeks) --></label>
+        <name>HPD_Municipality_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality Revenue Total(8 Weeks) --></label>
+        <name>HPD_Municipality_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM Amount Played --></label>
+        <name>HPD_Municipality_TTM_Amount_Played__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM Amount Won --></label>
+        <name>HPD_Municipality_TTM_Amount_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM Funds In Total --></label>
+        <name>HPD_Municipality_TTM_Funds_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM Funds Out Total --></label>
+        <name>HPD_Municipality_TTM_Funds_Out_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM Location Share --></label>
+        <name>HPD_Municipality_TTM_Location_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality TTM NTI --></label>
+        <name>HPD_Municipality_TTM_NTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Municipality VGT Total --></label>
+        <name>HPD_Municipality_VGT_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD NTI (12 Weeks) --></label>
+        <name>HPD_NTI_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD NTI (4 Weeks) --></label>
+        <name>HPD_NTI_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD NTI (8 Weeks) --></label>
+        <name>HPD_NTI_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Nbr of Records 12 Weeks --></label>
+        <name>HPD_Nbr_of_Records_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Nbr of Records 4 Weeks --></label>
+        <name>HPD_Nbr_of_Records_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Nbr of Records 8 Weeks --></label>
+        <name>HPD_Nbr_of_Records_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SUM of HPD net funds for LAST N Months (3 months + 1) --></help>
+        <label><!-- HPD Revenue Total (12 Weeks) --></label>
+        <name>HPD_Revenue_Total_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Revenue Total (4 Weeks) --></label>
+        <name>HPD_Revenue_Total_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <help><!-- The SUM of HPD net funds for LAST N Months (2 months + 1) --></help>
+        <label><!-- HPD Revenue Total (8 Weeks) --></label>
+        <name>HPD_Revenue_Total_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Revenue Total --></label>
+        <name>HPD_Revenue_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM Amount Played --></label>
+        <name>HPD_TSM_Amount_Played__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM Amount Won --></label>
+        <name>HPD_TSM_Amount_Won__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TSM Avg --></label>
+        <name>HPD_TSM_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM Daily Total --></label>
+        <name>HPD_TSM_Daily_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM Funds In Total --></label>
+        <name>HPD_TSM_Funds_In_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM Funds Out Total --></label>
+        <name>HPD_TSM_Funds_Out_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TSM Location Share --></label>
+        <name>HPD_TSM_Location_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TSM NTI --></label>
+        <name>HPD_TSM_NTI__c</name>
+    </fields>
+    <fields>
+        <help><!-- Trailing 6 Month. --></help>
+        <label><!-- HPD TSM # of Records Found --></label>
+        <name>HPD_TSM_Nbr_of_Records_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TSM Revenue Total --></label>
+        <name>HPD_TSM_Revenue_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount played the last 12 months --></help>
+        <label><!-- HPD TTM Amount Played --></label>
+        <name>HPD_TTM_Amount_Played__c</name>
+    </fields>
+    <fields>
+        <help><!-- Amount won the last 12 months. --></help>
+        <label><!-- HPD TTM Amount Won --></label>
+        <name>HPD_TTM_Amount_Won__c</name>
+    </fields>
+    <fields>
+        <help><!-- @TODO --></help>
+        <label><!-- HPD TTM Avg --></label>
+        <name>HPD_TTM_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM Daily Total --></label>
+        <name>HPD_TTM_Daily_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM Funds In Total --></label>
+        <name>HPD_TTM_Funds_In_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM Funds Out Total --></label>
+        <name>HPD_TTM_Funds_Out_Total__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM Location Share --></label>
+        <name>HPD_TTM_Location_Share__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM NTI --></label>
+        <name>HPD_TTM_NTI__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM # of Records Found --></label>
+        <name>HPD_TTM_Nbr_of_Records_Found__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM Revenue Total --></label>
+        <name>HPD_TTM_Revenue_Total__c</name>
+    </fields>
+    <fields>
+        <help><!-- Uses Avg VGT Count from the HPD for the location for the last 12 months --></help>
+        <label><!-- HPD Total VGT Count --></label>
+        <name>HPD_Total_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Type --></label>
+        <name>Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent HPD Date --></label>
+        <name>Most_Recent_HPD_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent HPD --></label>
+        <name>Most_Recent_HPD__c</name>
+        <relationshipLabel><!-- Hold Per Day Totals --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+        <relationshipLabel><!-- Hold Per Day Totals --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Field Exists merely for tech reasons so that we can dynamically create an sObject in code and store the name field. --></help>
+        <label><!-- Name Field Store --></label>
+        <name>Name_Field_Store__c</name>
+    </fields>
+    <fields>
+        <help><!-- A demo account. --></help>
+        <label><!-- Portal Dummy Account --></label>
+        <name>Portal_Dummy_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Position --></label>
+        <name>Position__c</name>
+    </fields>
+    <fields>
+        <label><!-- TSM Avg --></label>
+        <name>TSM_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- TSM Total # of Days in Months --></label>
+        <name>TSM_Total_Nbr_of_Days_in_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- TTM Avg --></label>
+        <name>TTM_Avg__c</name>
+    </fields>
+    <fields>
+        <label><!-- TTM Total # of Days in Months --></label>
+        <name>TTM_Total_Nbr_of_Days_in_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # of Days in Months (12 Weeks) --></label>
+        <name>Total_Nbr_of_Days_in_Months_12_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # of Days in Months (4 Weeks) --></label>
+        <name>Total_Nbr_of_Days_in_Months_4_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # of Days in Months (8 Weeks) --></label>
+        <name>Total_Nbr_of_Days_in_Months_8_Weeks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total # of HPD Records --></label>
+        <name>Total_Nbr_of_HPD_Records__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 3 Months.. (Revenue Total /  # of Vgts) / 3. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 12 Week HPD Avg --></label>
+        <name>Twelve_Week_HPD_Avg__c</name>
+    </fields>
+    <fields>
+        <help><!-- Based on Monthly HPD Records. Aggregates HPD data for 3 Months.. (Revenue Total /  # of Vgts) / 3. If Not enough data available, will display a blank value. --></help>
+        <label><!-- 12 Week HPD --></label>
+        <name>Twelve_Week_HPD__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Location --></label>
+        <name>Location</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Machine --></label>
+        <name>Machine</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Municipality --></label>
+        <name>Municipality</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,151 @@
+<!-- Geo Tab Admin Security -->
+<template>
+    <div class="slds-box_small slds-box_border accel-card-container">
+        <div>
+            <lightning-card>
+                <!--- ===== Progress Bar ===== -->
+                <template if:true={showProgressBar}>
+                    <div class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+                        <c-ui-indeterminate-progress-bar>
+                        </c-ui-indeterminate-progress-bar>
+                    </div>
+                </template>
+                <!--- ===== Card Header ===== -->
+                <h1 slot="title" class="no-wrap accel-card-header">
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-p-right_x-small slds-p-top_xxx-small">
+                            <c-ui-card-title
+                                    card-title="Security"
+                                    card-subtitle="GeoTab Authentication"
+                                    sub-title-text-style="font-size:.80rem"
+                                    icon-name="custom:custom77"
+                                    icon-size="medium">
+                            </c-ui-card-title>
+                        </div>
+                    </div>
+                </h1>
+                <div slot="actions">
+                    <lightning-button-icon
+                            icon-name="utility:refresh"
+                            onclick={handleRefresh}
+                            tooltip="Force a refresh of all security data."
+                            size="small"
+                    ></lightning-button-icon>
+                </div>
+                <!--- ===== Card Body ===== -->
+                <div class="slds-p-horizontal_small" style="min-height: 375px">
+                    <!--- ===== Assistant / Help ===== -->
+                    <template if:true={showAssistance}>
+                        <div class="slds-p-bottom_x-small">
+                            <c-geo-tab-admin-security-assistant
+                                    title={assistanceTitle}
+                                    bullet-points={secBulletPoints}>
+                            </c-geo-tab-admin-security-assistant>
+                        </div>
+                    </template>
+                    <template if:true={showData}>
+                        <div>
+                            <div class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text slds-p-right_small">
+                                Last Refreshed:&nbsp;
+                                <lightning-formatted-date-time
+                                        value={_dataRefreshTime}
+                                        hour="2-digit"
+                                        minute="2-digit" hour12="true"
+                                        second="2-digit">
+                                </lightning-formatted-date-time>
+                            </div>
+                        </div>
+                        <div class="slds-grid slds-wrap accel-test-border slds-p-top_small">
+                        <div class="slds-col slds-size_1-of-2 slds-col_padded">
+                            <template if:true={showAuthMdtData}>
+                                <div class="slds-p-around_x-small lgc-bg">
+                                    <lightning-tile label="Custom Metadata"
+                                                    href={mdtSetupUrl}
+                                                    type="media">
+                                        <lightning-icon slot="media" icon-name="standard:entity"
+                                                        size="small"></lightning-icon>
+                                        <div class="slds-truncate slds-p-top_small">
+                                            <div>
+                                                Database: {mdtAuth.Database__c}
+                                            </div>
+                                            <div>
+                                                Username: {mdtAuth.Username__c}
+                                            </div>
+                                            <div>
+                                                Password: {mdtAuth.Password__c}
+                                            </div>
+                                            <div>
+                                                Endpoint: {mdtAuth.Endpoint__c}
+                                            </div>
+                                        </div>
+                                        <div class="slds-p-top_small">
+                                            <div class="slds-text-align_left">
+                                                <lightning-button variant="neutral"
+                                                                  if:true={showMetadataEditButton}
+                                                                  data-id="btnEditCustomMetaData"
+                                                                  name="btnEditCustomMetaData"
+                                                                  label="Edit Custom Metadata"
+                                                                  title="Click here to redirect to the custom metadata record"
+                                                                  icon-name="utility:edit"
+                                                                  onclick={handleBtnClick}>
+                                                </lightning-button>
+                                            </div>
+                                        </div>
+                                    </lightning-tile>
+                                </div>
+                            </template>
+                        </div>
+                        <div class="slds-col slds-size_1-of-2 slds-col_padded">
+                            <template if:true={showCachedCredsData}>
+                                <div class="slds-p-around_x-small lgc-bg">
+                                    <lightning-tile label="Platform Cache Credentials" type="media">
+                                        <lightning-icon slot="media" icon-name="standard:default"
+                                                        size="small"></lightning-icon>
+                                        <div class="slds-truncate slds-p-top_small">
+                                            <div>
+                                                Database: {cachedCreds.databaseName}
+                                            </div>
+                                            <div>
+                                                Username: {cachedCreds.userName}
+                                            </div>
+                                            <div>
+                                                Session Id: {cachedCreds.sessionId}
+                                            </div>
+                                            <div>
+                                                Path: {cachedCreds.path}
+                                            </div>
+                                        </div>
+                                        <div class="slds-p-top_small">
+                                            <div class="slds-text-align_left">
+                                                <lightning-button variant="neutral"
+                                                                  if:true={showMetadataEditButton}
+                                                                  data-id="btnEditPlatformCache"
+                                                                  name="btnEditPlatformCache"
+                                                                  label="Edit Platform Cache"
+                                                                  title="Click here to redirect to setup / platform cache"
+                                                                  icon-name="utility:edit"
+                                                                  onclick={handleBtnClick}>
+                                                </lightning-button>
+                                            </div>
+                                        </div>
+                                    </lightning-tile>
+                                </div>
+                            </template>
+                        </div>
+
+                    </div>
+                    </template>
+                    <!--- ===== Stencil ===== -->
+                    <template if:true={showStencil}>
+                        <c-ui-custom-stencil
+                                iterations="2"
+                                child-class="slds-var-m-around-small"
+                                type="list" columns="3">
+                        </c-ui-custom-stencil>
+                    </template>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+
+</template>

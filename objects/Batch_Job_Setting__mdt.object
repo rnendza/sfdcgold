@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <fullName>Batch_Size__c</fullName>
+        <defaultValue>50</defaultValue>
+        <description>The Batch Size for Database.execute</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Batch Size for Database.execute</inlineHelpText>
+        <label>Batch Size</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Commit_Updates__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test)</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If TRUE, run as normal, if False, perform a rollback on any DML Database Updates. (Run in test)</inlineHelpText>
+        <label>Commit Updates</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Email_Template_Dev_Name__c</fullName>
+        <description>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Development Name (found in EmailTemplate sObject) associated with the template if email is to be sent. This is required if you turn emails on.</inlineHelpText>
+        <label>Email Template Dev Name</label>
+        <length>64</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>End_Date_To_Query__c</fullName>
+        <description>General Date field to be used as a end date in a filter.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>General Date field to be used as a end date in a filter.</inlineHelpText>
+        <label>End Date To Query</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Log_Execute_Method__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If true. it will write logs of the execute method to Accel_Application_Error__c.Execution_Details__c otherwise it will only write job completion logs. Be careful here as if the batch size is small or there are a large number of records the field length may be exceeded.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If true. it will write logs of the execute method to Accel_Application_Error__c.Execution_Details__c otherwise it will only write job completion logs.Be careful here as if the batch size is small or there are a large number of records the field length may</inlineHelpText>
+        <label>Log Execute Method</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Log_Failed_Record_Ids__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>List all records in the log that field on a DML Update. If you plan on thousands of records failing you should turn this off but then you have other problems!</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>List all records in the log that field on a DML Update. If you plan on thousands of records failing you should turn this off but then you have other problems!</inlineHelpText>
+        <label>Log Failed Record Ids</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Log_Successful_Record_Ids__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Log the record Ids of all successful updates. If you are updating 10s of thousands of records, you should probably turn this off.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Log the record Ids of all successful updates. If you are updating 10s of thousands of records, you should probably turn this off.</inlineHelpText>
+        <label>Log Successful Record Ids</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Product_Names_To_Query__c</fullName>
+        <description>Comma delimited string of record type developer names to use in the start method query.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Comma delimited string of record type developer names to use in the start method query.</inlineHelpText>
+        <label>Product Names To Query</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Record_Types_to_Query__c</fullName>
+        <description>Comma delimited string of record type developer names to use in the start method query.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Comma delimited string of record type developer names to use in the start method query.</inlineHelpText>
+        <label>Record Types to Query</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Send_Email_On_Job_Completion__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Always send an email when the job completes regardless of the status.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Always send an email when the job completes regardless of the status.</inlineHelpText>
+        <label>Send Email On Job Completion</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Send_Email_on_Status_Failed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check to send an email (in addition to logging) on Status = failed. You must populate usernames to email if you check this</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Check to send an email (in addition to logging) on Status = failed. You must populate usernames to email if you check this</inlineHelpText>
+        <label>Send Email on Status Failed</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Start_Date_To_Query__c</fullName>
+        <description>General Date field to be used as a start date in a filter.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>General Date field to be used as a start date in a filter.</inlineHelpText>
+        <label>Start Date To Query</label>
+        <required>false</required>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Usernames_to_email__c</fullName>
+        <description>If any send email value is checked, this must be populated with a comma delim string of sfdc usernames.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If any send email value is checked, this must be populated with a comma delim string of sfdc usernames.</inlineHelpText>
+        <label>Usernames to email</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Batch Job Setting</label>
+    <pluralLabel>Batch Job Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

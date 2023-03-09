@@ -1,0 +1,48 @@
+<!-- Ac Start End Date -->
+<template>
+    <fieldset class="slds-form--compound">
+        <legend class="slds-form-element__label accel-form-element__label slds-text-title--caps" style="font-weight:bold">Comparison Dates</legend>
+        <div class="slds-form-element__group">
+            <div class="slds-form-element__row">
+                <div class="slds-form-element slds-size--1-of-2">
+                    <div class={startDateErrorClass}>
+                        <label for="startDate" class="slds-form-element__label accel-form-element__label slds-no-flex">From
+                            Date</label>
+                        <select class="slds-select accel-select" name="startDate"
+                                data-id="select-start-date-data-id" onchange={handleStartDateChange}>
+                            <template for:each={startDateOptions} for:item="item">
+                                <option key={item.value} value={item.value}>
+                                    {item.label}
+                                </option>
+                            </template>
+                        </select>
+                        <template if:true={displayStartDateError}>
+                            <div class="slds-form-element__help" id="from-date-error-order">
+                                <lightning-formatted-rich-text value={startDateErrorMessage}></lightning-formatted-rich-text>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+                <div class="slds-form-element slds-size--1-of-2">
+                    <div class={endDateErrorClass}>
+                        <label for="endDate" class="slds-form-element__label accel-form-element__label slds-no-flex">To
+                            Date</label>
+                        <select class="slds-select accel-select" name="endDate"
+                                data-id="select-end-date-data-id" onchange={handleEndDateChange}>
+                            <template for:each={endDateOptions} for:item="item">
+                                <option key={item.value} value={item.value}>
+                                    {item.label}
+                                </option>
+                            </template>
+                        </select>
+                        <template if:true={displayEndDateError}>
+                            <div class="slds-form-element__help" id="to-date-error-order">
+                                <lightning-formatted-rich-text value={endDateErrorMessage}></lightning-formatted-rich-text>
+                            </div>
+                        </template>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </fieldset>
+</template>

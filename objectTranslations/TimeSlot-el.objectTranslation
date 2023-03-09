@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Designated Work Boolean Fields --></label>
+        <name>FSL__Designated_Work_Boolean_Fields__c</name>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Καμία επιλογή</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Slot Color --></label>
+        <name>FSL__Slot_Color__c</name>
+        <picklistValues>
+            <masterLabel>Amber</masterLabel>
+            <translation>Κεχριμπάρι</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Asphalt</masterLabel>
+            <translation>Γκρι της ασφάλτου</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black</masterLabel>
+            <translation>Μαύρο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Blue</masterLabel>
+            <translation>Μπλε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Brown</masterLabel>
+            <translation>Καφέ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cyan</masterLabel>
+            <translation>Κυανό</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Green</masterLabel>
+            <translation>Πράσινο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Grey</masterLabel>
+            <translation>Γκρι</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Indigo</masterLabel>
+            <translation>Σκούρο μπλε</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lime</masterLabel>
+            <translation>Λαχανί</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Orange</masterLabel>
+            <translation>Πορτοκαλί</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pink</masterLabel>
+            <translation>Ροζ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Purple</masterLabel>
+            <translation>Μοβ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Red</masterLabel>
+            <translation>Κόκκινο</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Teal</masterLabel>
+            <translation>Πετρόλ</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yellow</masterLabel>
+            <translation>Κίτρινο</translation>
+        </picklistValues>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- You cannot add Time Slots to the &quot;None&quot; Operating Hours record. --></errorMessage>
+        <name>No_Time_Slots_on_None_Operating_Hours</name>
+    </validationRules>
+</CustomObjectTranslation>

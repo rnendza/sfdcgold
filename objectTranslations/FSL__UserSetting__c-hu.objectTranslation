@@ -1,0 +1,836 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítás</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítások</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításom</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaim</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállítása</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításai</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítást</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokat</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomat</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimat</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállítását</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításait</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításnak</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításoknak</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomnak</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimnak</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításának</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításainak</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításban</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokban</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomban</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimban</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításában</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Inessive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiban</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításból</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokból</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomból</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimból</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításából</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Elative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiból</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításba</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokba</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomba</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimba</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításába</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Illative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiba</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítástól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításoktól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomtól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimtól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításától</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Ablative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaitól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításhoz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokhoz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomhoz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimhoz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításához</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Allative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaihoz</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítássá</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokká</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításommá</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimmá</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításává</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Translative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaivá</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítással</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokkal</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításommal</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimmal</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításával</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaival</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításra</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokra</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomra</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimra</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállítására</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Sublative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaira</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításon</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokon</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomon</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimon</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításán</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Superessive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításain</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításról</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokról</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomról</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimról</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításáról</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Delative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításairól</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításáért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Causalfinal</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiért</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Essiveformal</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításokig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításomig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításáig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Termanative</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiig</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállításonként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>None</possessive>
+        <value>Felhasználói beállítások</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállításaimként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>First</possessive>
+        <value>Felhasználói beállítások</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>false</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállításaiként</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Distributive</caseType>
+        <plural>true</plural>
+        <possessive>Second</possessive>
+        <value>Felhasználói beállítások</value>
+    </caseValues>
+    <fields>
+        <label><!-- Date Horizon Properties --></label>
+        <name>FSL__Date_Horizon_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days In Utilization View --></label>
+        <name>FSL__DaysInUtilizationView__c</name>
+    </fields>
+    <fields>
+        <label><!-- Default Left Panel --></label>
+        <name>FSL__DefaultLeftPanel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Duration --></label>
+        <name>FSL__Drag_Na_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Label --></label>
+        <name>FSL__Drag_Na_Label__c</name>
+    </fields>
+    <fields>
+        <label><!-- Drag Na Type --></label>
+        <name>FSL__Drag_Na_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Favorite Territories --></label>
+        <name>FSL__FavoriteTerritories__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Candidates --></label>
+        <name>FSL__Filter_Candidates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filters --></label>
+        <name>FSL__Filters__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Palette --></label>
+        <name>FSL__Gantt_Palette__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gantt Chart Policy --></label>
+        <name>FSL__Gantt_Policy__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Gantt View Finish Hour --></label>
+        <name>FSL__Gantt_View_Finish_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt View Start Hour --></label>
+        <name>FSL__Gantt_View_Start_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Highlight Weekeneds --></label>
+        <name>FSL__Highlight_Weekeneds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Weekends --></label>
+        <name>FSL__Include_Weekends__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hidden Polygons --></label>
+        <name>FSL__Invisible_Polygons__c</name>
+    </fields>
+    <fields>
+        <label><!-- Left Panel Width Percentage --></label>
+        <name>FSL__Left_Panel_Width_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Load On Today --></label>
+        <name>FSL__Load_On_Today__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lock Gantt --></label>
+        <name>FSL__Lock_Gantt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longterm Minimum Absence Duration --></label>
+        <name>FSL__Longterm_Min_Absence_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Longterm Minimum Service Duration --></label>
+        <name>FSL__Longterm_Min_Service_Duration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Months on view --></label>
+        <name>FSL__Longterm_Num_Of_Months__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marker Clustering --></label>
+        <name>FSL__Map_Markers_Cluster__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Object Markers --></label>
+        <name>FSL__Map_Object_Markers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Map Reports --></label>
+        <name>FSL__Map_Reports__c</name>
+    </fields>
+    <fields>
+        <label><!-- Match Gantt Dates --></label>
+        <name>FSL__Match_Gantt_Dates__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Filter --></label>
+        <name>FSL__Resource_Filter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Resource Row Height --></label>
+        <name>FSL__Resource_Row_Height__c</name>
+        <picklistValues>
+            <masterLabel>large</masterLabel>
+            <translation>nagy</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>medium</masterLabel>
+            <translation>közepes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>small</masterLabel>
+            <translation>kicsi</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>xsmall</masterLabel>
+            <translation>nagyon kicsi</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Scheduling horizon limit --></label>
+        <name>FSL__Scheduling_horizon_limit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Selected List View --></label>
+        <name>FSL__Selected_List_View__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service List Coloring --></label>
+        <name>FSL__ServiceListColoring__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services_List_Height Percentage --></label>
+        <name>FSL__Services_List_Height_Percentage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Services Per Page --></label>
+        <name>FSL__Services_Per_Page__c</name>
+        <picklistValues>
+            <masterLabel>100</masterLabel>
+            <translation>100</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>125</masterLabel>
+            <translation>125</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>150</masterLabel>
+            <translation>150</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>50</masterLabel>
+            <translation>50</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>75</masterLabel>
+            <translation>75</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Show Favorite Territories Tab --></label>
+        <name>FSL__ShowFavoriteTerritoriesTab__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show only MDT in Longterm --></label>
+        <name>FSL__Show_Only_MDT_In_Longterm__c</name>
+    </fields>
+    <fields>
+        <label><!-- Show Orphan Services --></label>
+        <name>FSL__Show_Orphan_Services__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Filter Logic Operator --></label>
+        <name>FSL__Skills_Logic_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- Toggled Territories --></label>
+        <name>FSL__Toggled_Territories__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>FSL__User__c</name>
+        <relationshipLabel><!-- User Settings --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Utilization Properties --></label>
+        <name>FSL__Utilization_Properties__c</name>
+    </fields>
+    <fields>
+        <label><!-- View Capacity Type --></label>
+        <name>FSL__View_Capacity_Type__c</name>
+        <picklistValues>
+            <masterLabel>Day</masterLabel>
+            <translation>Nap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Month</masterLabel>
+            <translation>Hónap</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Nincs</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Week</masterLabel>
+            <translation>Hét</translation>
+        </picklistValues>
+    </fields>
+    <nameFieldLabel>Felhasználói beállítás neve</nameFieldLabel>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

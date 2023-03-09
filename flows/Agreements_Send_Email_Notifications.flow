@@ -1,0 +1,1173 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>In_Draft_Notification_Email</name>
+        <label>In Draft Notification Email</label>
+        <locationX>3746</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>text_Term_Amend_Draft</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>pamelal@accelentertainment.com,jordant@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An Accel Termination Amendment has been uploaded and is ready for review</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>Kiosk_In_Approval_notification</name>
+        <label>Kiosk In Approval notification</label>
+        <locationX>2162</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Kiosk_StandaloneATM_In_Approval</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>crystalh@accelentertainment.com,jordant@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An agreement of type {!AgreementRecordType} was moved to In Approval</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Addendum_Created_Notification_to_Compliance</name>
+        <label>Send Addendum Created Notification to Compliance</label>
+        <locationX>4274</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>AddendumNotification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>AlyssaM@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An Addendum agreement has been uploaded and ready for vetting</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Addendum_in_In_Approval_Notification</name>
+        <label>Send Addendum in &quot;In Approval&quot; Notification</label>
+        <locationX>4538</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Addendum_In_Approval_Notification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>pennys@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Addendum Agreement in &quot;In Approval&quot;</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>Send_Amusement_in_Draft_Notification_Email</name>
+        <label>Send Amusement in Draft Notification Email</label>
+        <locationX>2954</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Agreement_in_IL</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Amusement_in_Draft_Status</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>margaretg@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An Amusement Agreement is in &quot;Draft&quot; status</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis</description>
+        <name>Send_Extension_In_Approval_Notification_Email_0</name>
+        <label>Send Extension In Approval Notification Email</label>
+        <locationX>842</locationX>
+        <locationY>695</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Status_Updated_to_In_Approval</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>pamelal@accelentertainment.com,jordant@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An Extension Agreement was moved to &quot;In Approval&quot;</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>Send_Extension_Was_Agreement_Created_Notification</name>
+        <label>Send Extension Was Agreement Created Notification</label>
+        <locationX>50</locationX>
+        <locationY>815</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>ExtensionAgreementCreatedEmailAlert</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>PamelaL@accelentertainment.com,alyssam@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>A new Extension Agreement has been created</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_In_Approval_Notification_Email</name>
+        <label>Send In Approval Notification Email</label>
+        <locationX>3482</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>text_term_amend_In_Approval</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alyssam@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An Accel Termination Amendment has been moved to In Approval and is ready for final review</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_Kiosk_in_Draft_Notification</name>
+        <label>Send Kiosk in &quot;Draft&quot; Notification</label>
+        <locationX>1898</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Kiosk_In_Draft_Status</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alyssam@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>A {!AgreementRecordType} Agreement Was Created</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>Send_TUA_Agreement_Created_Notification_0</name>
+        <label>Send TUA Agreement Created Notification</label>
+        <locationX>314</locationX>
+        <locationY>815</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TUAAgreementCreatedNotification</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alyssam@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>A new TUA Agreement has been created</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>send notification for a TUA record type with TUA Type = TUA and Status = In Approva</description>
+        <name>Send_TUA_Type_TUA_Notification</name>
+        <label>Send TUA Type = TUA Notification</label>
+        <locationX>1106</locationX>
+        <locationY>695</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>TUA_In_Approval</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>pennys@accelentertainment.com </stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>A TUA agreements has been moved to &quot;In Approval&quot;</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify Donna Gillund, Pam Landis, Alyssa McJunkin</description>
+        <name>Standalone_ATM_In_Approval_notification</name>
+        <label>Standalone ATM In Approval notification</label>
+        <locationX>2690</locationX>
+        <locationY>455</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Kiosk_StandaloneATM_In_Approval</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alyssam@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>An agreement of type {!AgreementRecordType} was moved to In Approval</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Agreement_in_IL</name>
+        <label>Agreement in IL</label>
+        <locationX>3086</locationX>
+        <locationY>791</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Agreement_IL</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.BillingState</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Account.ShippingState</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Location_Revenue_Share_Percentage_50</targetReference>
+            </connector>
+            <label>Agreement in IL</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Check_Status</name>
+        <label>Check Status</label>
+        <locationX>974</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default</defaultConnectorLabel>
+        <rules>
+            <name>Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Region_Fields_0_0_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Draft</label>
+        </rules>
+        <rules>
+            <name>Status_changed_to_In_Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_TUA_Type_0</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Status moved to &quot;In Approval&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Addendum_Status</name>
+        <label>Evaluate Addendum Status</label>
+        <locationX>4538</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Addendum_in_Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Addendum_Created_Notification_to_Compliance</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Addendum in &quot;Draft&quot;</label>
+        </rules>
+        <rules>
+            <name>Addendum_in_In_Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Addendum_in_In_Approval_Notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Addendum in &quot;In Approval&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Kiosk_Status</name>
+        <label>Evaluate Kiosk Status</label>
+        <locationX>2162</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kiosk_in_Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record__Prior.Id</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Kiosk_in_Draft_Notification</targetReference>
+            </connector>
+            <label>Kiosk in &quot;Draft&quot;</label>
+        </rules>
+        <rules>
+            <name>Kiosk_in_In_Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Kiosk_In_Approval_notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Kiosk in &quot;In Approval&quot;</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Record_Type</name>
+        <label>Evaluate Record Type</label>
+        <locationX>3020</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>TUA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TUA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Check_Status</targetReference>
+            </connector>
+            <label>TUA</label>
+        </rules>
+        <rules>
+            <name>Kiosk</name>
+            <conditionLogic>1 AND (2 or 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Kiosk_Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_Kiosk_Status</targetReference>
+            </connector>
+            <label>Kiosk</label>
+        </rules>
+        <rules>
+            <name>Standalone_ATM</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Standalone_ATM_Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Standalone_ATM_In_Approval_notification</targetReference>
+            </connector>
+            <label>Standalone ATM</label>
+        </rules>
+        <rules>
+            <name>Amusement</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Amusement_Agreement</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_Draft</targetReference>
+            </connector>
+            <label>Amusement</label>
+        </rules>
+        <rules>
+            <name>Accel_Termination_Amendment</name>
+            <conditionLogic>1 AND (2 or 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Accel_Termination_Amendment</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Status_Draft_or_In_Approval_0</targetReference>
+            </connector>
+            <label>Accel Termination Amendment</label>
+        </rules>
+        <rules>
+            <name>Addendum</name>
+            <conditionLogic>1 AND (2 or 3)</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.RecordType.DeveloperName</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Addendum</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Evaluate_Addendum_Status</targetReference>
+            </connector>
+            <label>Addendum</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_TUA_Type</name>
+        <label>Evaluate &quot;TUA Type&quot;</label>
+        <locationX>314</locationX>
+        <locationY>695</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Extension_TUA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TUA_Type__c</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>Extension</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Extension_Was_Agreement_Created_Notification</targetReference>
+            </connector>
+            <label>Extension TUA</label>
+        </rules>
+        <rules>
+            <name>TUA_Type_TUA</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TUA_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TUA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_TUA_Agreement_Created_Notification_0</targetReference>
+            </connector>
+            <label>TUA Type = TUA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_TUA_Type_0</name>
+        <label>Evaluate &quot;TUA Type&quot;</label>
+        <locationX>1106</locationX>
+        <locationY>575</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Extension_TUA_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TUA_Type__c</leftValueReference>
+                <operator>StartsWith</operator>
+                <rightValue>
+                    <stringValue>Extension</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Extension_In_Approval_Notification_Email_0</targetReference>
+            </connector>
+            <label>Extension TUA</label>
+        </rules>
+        <rules>
+            <name>TUA_Type_TUA_0</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.TUA_Type__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>TUA</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_TUA_Type_TUA_Notification</targetReference>
+            </connector>
+            <label>TUA Type = TUA</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Draft</name>
+        <label>Status = Draft?</label>
+        <locationX>3086</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Agreement_in_IL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amusement_in_Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Amusement_in_Draft_Notification_Email</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Amusement in Draft</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Status_Draft_or_In_Approval_0</name>
+        <label>Status = Draft or In Approval?</label>
+        <locationX>3746</locationX>
+        <locationY>455</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>In_Approval</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>In Approval</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_In_Approval_Notification_Email</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>In Approval</label>
+        </rules>
+        <rules>
+            <name>In_Draft</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Status</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Draft</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>In_Draft_Notification_Email</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>In Draft</label>
+        </rules>
+    </decisions>
+    <description>Send email notifications for different types of agreements, based on their Status
+2/13/23: Removed Amusement email notification when Amusement is moved to &apos;In Approval&apos; stage</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AgreementRecordType</name>
+        <dataType>String</dataType>
+        <expression>IF({!$Record.RecordTypeId}=&apos;0121I000000W9xEQAS&apos;,&quot;Kiosk Agreement&quot;, &quot;Standalone ATM Agreement&quot;)</expression>
+    </formulas>
+    <formulas>
+        <name>varAccountAddress</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.Account.ShippingStreet} + &quot;, &quot; + {!$Record.Account.BillingCity} + &quot;, &quot; + {!$Record.Account.BillingState} + &quot; &quot; +{!$Record.Account.BillingPostalCode}</expression>
+    </formulas>
+    <interviewLabel>Agreements: Send Email Notifications {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Agreements: Send Email Notifications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Location_Revenue_Share_Percentage_50</name>
+        <label>Location Revenue Share Percentage = 50%</label>
+        <locationX>2954</locationX>
+        <locationY>911</locationY>
+        <inputAssignments>
+            <field>Location_Revenue_Share_Percentage__c</field>
+            <value>
+                <numberValue>50.0</numberValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>RM Director Region = RM Director Region from account
+Relationship Manager Region = Relationship Manager Region from account</description>
+        <name>Update_Region_Fields_0_0_0</name>
+        <label>Update Region Fields</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Evaluate_TUA_Type</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>RM_Director_Region__c</field>
+            <value>
+                <elementReference>$Record.Account.RM_Director_Region__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Relationship_Manager_Region__c</field>
+            <value>
+                <elementReference>$Record.Account.RM_Region__c</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>2894</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Evaluate_Record_Type</targetReference>
+        </connector>
+        <filterLogic>((1 or 2 or 3 or 5 or 11 or 12) AND 4) or (6 or 7 or 8 or 9 or 10)</filterLogic>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Extension Notice</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Extension Addendum</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Extension</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9l1QAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Extension Master TUA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xEQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xGQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xBQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9x9QAC</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0121I000000W9xAQAS</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Master TUA</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>TUA_Type__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>TUA</stringValue>
+            </value>
+        </filters>
+        <object>Contract</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Draft</status>
+    <textTemplates>
+        <name>Addendum_In_Approval_Notification</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Addendum agreement has been  moved to &quot;In Approval&quot;.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Agreement Number: {!$Record.ContractNumber}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>AddendumNotification</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Agreement has been uploaded and ready for vetting.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Agreement Number:  {!$Record.ContractNumber}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Amusement_Agreement_In_Approval</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Amusement Agreement was moved to In Approval status.
+
+Account DBA Name: {!$Record.Account.Name} 
+Legal Name: {!$Record.Account.Legal_Name__c}
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+Physical Address: {!varAccountAddress}
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Amusement_in_Draft_Status</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Amusement Agreement is in Draft status. Please, complete initial vetting.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+﻿Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>goes out when the agreement is created, i.e. in Draft status</description>
+        <name>ExtensionAgreementCreatedEmailAlert</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Extension Agreement has been uploaded and ready for vetting.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Agreement Link: {!$Record.Record_Link__c}
+
+﻿Account Link: {!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Kiosk_In_Draft_Status</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A kiosk agreement has been created. Please, see information below.
+
+Account DBA Name:  {!$Record.Account.Name}
+
+Legal Name:  {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date:  {!$Record.Account.Accel_VGT_Live_Date__c}
+
+IGB License Number:  {!$Record.Account.IGB_License__c}
+
+Physical Address:  {!$Record.Account.ShippingStreet}, {!$Record.Account.Physical_City__c}, {!$Record.Account.ShippingState}, {!$Record.Account.ShippingPostalCode}
+
+Agreement Link:  {!$Record.Record_Link__c}
+
+Account Link:  {!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Kiosk_StandaloneATM_In_Approval</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A {!AgreementRecordType} has been moved to In Approval and is ready for final review.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+﻿Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Status_Updated_to_In_Approval</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Extension for has been moved to In Approval and is ready for final review.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Agreement Link: {!$Record.Record_Link__c}
+
+﻿Account Link: {!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>text_Term_Amend_Draft</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Accel Termination Amendment has been uploaded and is ready for review.
+
+Account DBA Name: {!$Record.Account.Name}
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.Account.Accel_VGT_Live_Date__c}
+
+Physical Address: {!$Record.Account.ShippingAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Link to account
+{!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>text_term_amend_In_Approval</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Accel Termination Amendment has been moved to In Approval and is ready for final review.
+
+Account DBA Name: {!$Record.Account.Name}
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.Account.Accel_VGT_Live_Date__c}
+
+Physical Address: {!$Record.Account.ShippingAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Link to account
+{!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TUA_In_Approval</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>A TUA for has been moved to &quot;In Approval&quot; and is ready for final review.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Accel VGT Live Date: {!$Record.accel_vgt_live_date_formula__c}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Agreement Link: {!$Record.Record_Link__c}
+
+﻿Account Link: {!$Record.Account.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>TUAAgreementCreatedNotification</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>An Agreement has been uploaded and ready for vetting.
+
+Account DBA Name: {!$Record.Account.Name} 
+
+Legal Name: {!$Record.Account.Legal_Name__c}
+
+Agreement Number:  {!$Record.ContractNumber}
+
+Physical Address: {!varAccountAddress}
+
+IGB License Number: {!$Record.Account.IGB_License__c}
+
+Account Link: {!$Record.Account.Record_Link__c}
+
+Agreement Link: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+</Flow>

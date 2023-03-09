@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingCriteriaRules>
+        <fullName>Admin_Owned_Opptys</fullName>
+        <accessLevel>Edit</accessLevel>
+        <description>Share opportunities owned by admin with users in the &quot;Admin Owned Opttys&quot; public group</description>
+        <label>Admin Owned Opptys</label>
+        <sharedTo>
+            <group>Admin_Owned_Opptys</group>
+        </sharedTo>
+        <criteriaItems>
+            <field>OwnerId</field>
+            <operation>equals</operation>
+            <value>0051I000002nzbZ</value>
+        </criteriaItems>
+        <includeRecordsOwnedByAll>false</includeRecordsOwnedByAll>
+    </sharingCriteriaRules>
+    <sharingOwnerRules>
+        <fullName>Opportunity_Read_All</fullName>
+        <accessLevel>Read</accessLevel>
+        <label>Opportunity Read All</label>
+        <sharedTo>
+            <group>Amusements_IL</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Opportunity_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Opportunity Read/Write</label>
+        <sharedTo>
+            <group>Opportunities_R_W</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

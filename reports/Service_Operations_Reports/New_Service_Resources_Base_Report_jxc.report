@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ServiceResource$RelatedRecord</field>
+    </columns>
+    <columns>
+        <field>ServiceResource$Technician_Type__c</field>
+    </columns>
+    <columns>
+        <field>ServiceResource$Name</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>ServiceResource$IsActive</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>1</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceResource$Technician_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>,Amusement</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>ServiceResource$RelatedRecord.Profile</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>preventative,Accel Super User,Relationship,Parts,system</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>ServiceResource$RelatedRecord.Profile</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Service Resources</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Service_Resources_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>ServiceResource$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

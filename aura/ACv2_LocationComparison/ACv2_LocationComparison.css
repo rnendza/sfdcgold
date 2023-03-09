@@ -1,0 +1,394 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+    .THIS #map {
+        height: 600px;
+    }
+    .THIS .accel-mobile-full-width{
+    }
+    .THIS .accel-mobile-half-width{
+    }
+    .THIS .accel-mobile-wrap{
+    }
+    .THIS .mobile-city-search{
+    }
+    .THIS .accel-mobile-map{
+
+    }
+    .THIS .accel-mobile-block{
+    }
+    .THIS .leaflet-control-attribution{
+    }
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-select label {
+        font-weight: bold;
+    }
+
+    .THIS .accel-datatable-scrollersize {
+        height: 540px;
+    }
+
+    .THIS .accel-grid-styled thead tr th span {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled lightning-button-menu {
+        display: none !important;
+    }
+
+    .THIS .accel-grid-styled svg {
+        fill: white !important;
+    }
+    .THIS .accel-location-ranking{
+        height:600px;
+    }
+    .THIS #rankHeader {
+        line-height: 30px;
+        font-size: 26px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .THIS #rankSubHeader {
+        line-height: 30px;
+        font-size: 16px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .THIS .accel-stats-area{
+        background-color: #f4f6f9;
+    }
+    .THIS .citytitle {
+        height: 250px;
+        padding-left: 8px;
+        padding-top: 8px;
+        background-color: white;
+    }
+
+    .THIS .citystats {
+        padding-top: 40px;
+        height: 250px;
+        background-color: white;
+    }
+
+    .THIS .citytext {
+        font-size: 28px;
+        font-weight: bold;
+    }
+
+    .THIS .cityTextMedium {
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: underline;
+        line-height: 40px;
+    }
+
+    .THIS .cityTypeSelectedLabel {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 210px;
+        display: inline-block;
+    }
+
+    .THIS .cityTypeSelectedValue {
+        font-weight: bold;
+        font-size: 1.15rem;
+        line-height: 30px;
+    }
+
+    .THIS .dataGreen {
+        color: #6fb696;
+    }
+
+    .THIS .top20 {
+        background-color: #72b026;
+        font-weight: bold;
+    }
+
+    .THIS .normalColor {
+        background-color: #38aadd;
+        font-weight: bold;
+    }
+
+    .THIS .bottom20 {
+        background-color: #d63e2a;
+        font-weight: bold;
+    }
+
+    .THIS .city-pie {
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.4rem !important;
+    }
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px){
+    .THIS {
+        margin-left: -.7rem;
+        margin-right: -.7rem;
+        flex-wrap: wrap;
+    }
+    .THIS .accel-mobile-wrap{
+        flex-wrap: wrap;
+    }
+    .THIS .mobile-city-search{
+        width: 85%;
+        margin:auto;
+    }
+    .THIS .accel-mobile-full-width{
+        width: 100% !important;
+    }
+    .THIS .accel-mobile-half-width{
+        width: 40% !important;
+        padding-left: .7rem;
+        padding-right: .7rem;
+    }
+    .THIS .accel-mobile-map{
+        margin-top: 12px;
+        margin-bottom: 12px;
+        height: 425px;
+    }
+    .THIS .accel-mobile-block{
+        display: block !important;
+    }
+    .THIS #map {
+        height: 425px;
+    }
+    .THIS .leaflet-control-attribution{
+        font-size: 8px !important;
+    }
+    .THIS .accel-btn-is-selected {
+        background-color: #DCE2EB;
+        font-weight: 700;
+    }
+
+    .THIS .slds-button:focus {
+        box-shadow: none !important;
+    }
+
+    .THIS .slds-button:focus:active {
+        box-shadow: none !important;
+    }
+
+    .THIS .accel-select label {
+        font-weight: bold;
+    }
+
+    .THIS .accel-datatable-scrollersize {
+        height: 290px;
+    }
+
+    .THIS .accel-grid-styled thead tr th span {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled lightning-button-menu {
+        display: none !important;
+    }
+
+    .THIS .accel-grid-styled svg {
+        fill: white !important;
+    }
+    .THIS .accel-location-ranking{
+        height:350px;
+    }
+    .THIS #rankHeader {
+        line-height: 30px;
+        font-size: 20px;
+        font-weight: bold;
+        text-align: center;
+    }
+
+    .THIS #rankSubHeader {
+        line-height: 30px;
+        font-size: 14px;
+        font-weight: bold;
+        text-align: center;
+    }
+    .THIS .accel-stats-area{
+        background-color: white;
+    }
+    .THIS .citytitle {
+        height: 250px;
+        padding-left: 8px;
+        padding-top: 25px;
+        background-color: white;
+    }
+
+    .THIS .citystats {
+        padding:10px;
+        background-color: white;
+        margin-bottom: 40px;
+    }
+
+    .THIS .citytext {
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    .THIS .cityTextMedium {
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: underline;
+        line-height: 40px;
+    }
+
+    .THIS .cityTypeSelectedLabel {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 210px;
+        display: inline-block;
+    }
+
+    .THIS .cityTypeSelectedValue {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+    }
+
+    .THIS .dataGreen {
+        color: #6fb696;
+    }
+
+    .THIS .top20 {
+        background-color: #72b026;
+        font-weight: bold;
+    }
+
+    .THIS .normalColor {
+        background-color: #38aadd;
+        font-weight: bold;
+    }
+
+    .THIS .bottom20 {
+        background-color: #d63e2a;
+        font-weight: bold;
+    }
+
+    .THIS .city-pie {
+    }
+
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.4rem !important;
+    }
+}

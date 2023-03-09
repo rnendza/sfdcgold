@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hide Emergency Map --></label>
+        <name>FSL__Hide_Emergency_Map__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal SLR HomeAddress Geolocation --></label>
+        <name>FSL__Internal_SLR_Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Services To Drip Feed --></label>
+        <name>FSL__NumberOfServicesToDripFeed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Use enhanced scheduling and optimization --></label>
+        <name>FSL__O2_Enabled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Cluster Min Size (Closed Pilot) --></label>
+        <name>FSL__Service_Cluster_Min_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Cluster Proximity (Closed Pilot) --></label>
+        <name>FSL__Service_Cluster_Proximity__c</name>
+    </fields>
+    <fields>
+        <label><!-- System Jobs --></label>
+        <name>FSL__System_Jobs__c</name>
+        <picklistValues>
+            <masterLabel>BATCH_ServicesDispatched</masterLabel>
+            <translation>BATCH_LayananYangDiberikan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>BATCH_ServicesInJeopardy</masterLabel>
+            <translation>BATCH_LayananDalamBahaya</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ChatterNotification</masterLabel>
+            <translation>NotifikasiChatter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Territory Level --></label>
+        <name>FSL__TerritoryLevel__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether this Service Territory is live with the scheduling enhancements built out by West Monroe in 2022. --></help>
+        <label><!-- Live with WM Scheduling Enhancements --></label>
+        <name>Live_with_WM_Scheduling_Enhancements__c</name>
+    </fields>
+    <fields>
+        <help><!-- The warehouse which gets restocked if a tech uses a part from their van for a job in this Service Territory. --></help>
+        <label><!-- Restock Warehouse --></label>
+        <lookupFilter>
+            <errorMessage><!-- Please select a Warehouse record with a Type of &quot;Warehouse.&quot; --></errorMessage>
+        </lookupFilter>
+        <name>Restock_Warehouse__c</name>
+        <relationshipLabel><!-- Service Territories --></relationshipLabel>
+    </fields>
+    <validationRules>
+        <errorMessage><!-- Because this Service Territory has the &quot;Live with WM Scheduling Enhancements&quot; checkbox checked, you must populate the &quot;Restock Warehouse&quot; field. --></errorMessage>
+        <name>Require_Restock_WH_if_Live_with_WM</name>
+    </validationRules>
+</CustomObjectTranslation>

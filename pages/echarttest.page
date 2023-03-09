@@ -1,0 +1,51 @@
+<apex:page sidebar="false" showheader="false">
+  <head>
+    <meta charset="utf-8"></meta>
+    <title>ECharts</title>
+    <!-- including ECharts file -->
+    <apex:includeScript value="{!$Resource.echarts}"/>
+
+</head>
+<body>
+    <!-- prepare a DOM container with width and height -->
+    <div id="main" style="width: 600px;height:400px;"></div>
+    <script type="text/javascript">
+        // based on prepared DOM, initialize echarts instance
+        var myChart = echarts.init(document.getElementById('main'));
+
+        // specify chart configuration item and data
+        var option = {
+            xAxis: {
+                type: 'category',
+                boundaryGap: false,
+                data: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun']
+            },
+            yAxis: {
+                type: 'value'
+            },
+            series: [{
+                data: [820, 932, 901, 934, 1290, 1330, 1320],
+                type: 'line',
+                areaStyle: {
+                    color: {
+                                    type: 'linear',
+                                    x: 0,
+                                    y: 0,
+                                    x2: 0,
+                                    y2: 1,
+                                    colorStops: [{
+                                        offset: 0,
+                                        color: 'rgb(255, 158, 68)'
+                                    },{
+                                        offset:1,
+                                        color: 'rgb(255, 70, 131)'
+                                    }],
+                                    global: false
+                                },
+                }
+        }]};
+        // use configuration item and data specified to show chart
+        myChart.setOption(option);
+    </script>
+</body>
+</apex:page>

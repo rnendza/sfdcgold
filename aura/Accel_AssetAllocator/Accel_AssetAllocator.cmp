@@ -1,0 +1,89 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global"
+                controller="InventoryRequestController"
+                description="Asset_Allocator">
+
+    <aura:attribute name="recordId" type="String" />
+    <aura:attribute name="record" type="Object" />
+    <aura:attribute name="simpleRecord" type="Object" />
+    <aura:attribute name="recordError" type="Object" />
+    <aura:attribute name="statusMetadata" type="Object"  />
+    <aura:attribute name="selectedRecordId" type="String"/>
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="initCompleted" type="Boolean" default="false" />
+
+
+    <aura:attribute name="contentDocumentRecordId" type="String" default="069110000012nQB"
+                    description="@TODO retrieve this dynamically based on file name!"/>
+
+
+    <aura:attribute name="headerTitle" type="Aura.Component[]">
+        <span class="slds-card__header-title slds-truncate slds-m-right--xx-small"><b>Asset Allocation Status</b></span>
+    </aura:attribute>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:handler event="lightning:openFiles" action="{! c.handleOpenFiles }" />
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <force:recordData aura:id="assetRecord"
+                      recordId="{!v.recordId}"
+                      targetError="{!v.recordError}"
+                      targetRecord ="{!v.record}"
+                      targetFields="{!v.simpleRecord}"
+                      recordUpdated="{! c.handleRecordChanged }"
+                      fields="Id,Name,Status,Account.Name,Parent.Name"/>
+
+    <div class="accel-test-borders">
+        <aura:if isTrue="{!v.selectedRecordId != null}">
+            <div class="slds-hide">
+
+            </div>
+            <lightning:card title="{!v.headerTitle}" iconName="standard:text_template" >
+                <aura:set attribute="actions">
+                    <div class="slds-grid slds-gutters_x-small accel-test-borders">
+                        <div style="display:inline-block;" onclick="{!c.handleViewHelp}">
+                            <lightning:icon iconName="utility:help" size="x-small" class="accel-comp-header-icon"/>
+                        </div>
+                    </div>
+                </aura:set>
+
+                <div class="slds-p-horizontal_medium accel-assets-container">
+
+                    <div class="slds-grid  slds-gutters_large slds-wrap">
+                        <div class="slds-col slds-size--3-of-12">
+                            Account:
+                        </div>
+                        <div class="slds-col slds-size--9-of-12 slds-has-flexi-truncate">
+                               <div class="slds-truncate">
+                                <lightning:icon iconName="standard:account" size="small" title="Allocated Account" />
+                                   &nbsp;{!v.simpleRecord.Account.Name}
+                                </div>
+                        </div>
+                        <div class="slds-col slds-size--3-of-12 slds-m-top_medium">
+                            Parent Asset:
+                        </div>
+                        <div class="slds-col slds-size--9-of-12 slds-m-top_medium slds-has-flexi-truncate">
+                            <div class="slds-truncate">
+                                <lightning:icon iconName="standard:screen" size="small" title="Allocated Asset" />
+                                &nbsp;{!v.simpleRecord.Parent.Name}
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size--3-of-12 slds-m-top_medium">
+                            Status:
+                        </div>
+                        <div class="slds-col slds-size--9-of-12 slds-m-top_medium slds-has-flexi-truncate">
+                            <div class="{!'slds-truncate' + v.statusMetadata.cssClass}">
+                                <lightning:icon iconName="standard:sales_path" size="small" title="Asset Status" />
+                                &nbsp;{!v.simpleRecord.Status}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning:card>
+        </aura:if>
+    </div>
+</aura:component>

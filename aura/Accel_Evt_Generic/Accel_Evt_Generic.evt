@@ -1,0 +1,4 @@
+<aura:event type="APPLICATION" description="Accel_Evt_Generic" access="global">
+    <!-- stuff any js object desired in the below. there really is no reason to have a ton of events -->
+    <aura:attribute name="param" type="Object" access="global"/>
+</aura:event>

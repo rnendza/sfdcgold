@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Custom Search</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Custom Searches</value>
+    </caseValues>
+    <fields>
+        <label><!-- Message When Value Missing --></label>
+        <name>Message_When_Value_Missing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Max Search Results --></label>
+        <name>Number_of_Max_Search_Results__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Results per Page --></label>
+        <name>Number_of_Results_per_Page__c</name>
+    </fields>
+    <fields>
+        <label><!-- Results Found Message --></label>
+        <name>Results_Found_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Results Not Found Message --></label>
+        <name>Results_Not_Found_Message__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Input Placeholder --></label>
+        <name>Search_Input_Placeholder__c</name>
+    </fields>
+    <fields>
+        <label><!-- Search Title --></label>
+        <name>Search_Title__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

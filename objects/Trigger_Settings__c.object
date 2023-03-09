@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>Hierarchy</customSettingsType>
+    <description>Toggles logic on and off in triggers</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Portal_Send_User_Created_RM_Email__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked on.. upon Insert of a portal user, will send the RM an email information the user was created (via User Trigger / User Trigger Handler / UserSvc)</description>
+        <externalId>false</externalId>
+        <inlineHelpText>If checked on.. upon Insert of a portal user, will send the RM an email information the user was created (via User Trigger / User Trigger Handler / UserSvc)</inlineHelpText>
+        <label>Portal Send User Created RM Email</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Portal_User_SetPassword_Active__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Allows the user trigger. upon create of a customer portal user. to call System.Setpassword() if toggled on, otherwise skips the code.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Allows the user trigger. upon create of a customer portal user. to call System.Setpassword() if toggled on, otherwise skips the code.</inlineHelpText>
+        <label>Portal User SetPassword Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>Trigger Settings</label>
+    <visibility>Public</visibility>
+</CustomObject>

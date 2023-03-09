@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>地图实时资产</value>
+    </caseValues>
+    <fields>
+        <help>目前，资产是否是活动库存/车队项目？</help>
+        <label><!-- Active --></label>
+        <name>maps__Active__c</name>
+    </fields>
+    <fields>
+        <help>识别公司内资产的专属 ID</help>
+        <label><!-- Asset Id --></label>
+        <name>maps__AssetId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Live IoT Device --></label>
+        <name>maps__LiveIoTDevice__c</name>
+        <relationshipLabel><!-- Maps Live Assets --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>车辆或非车辆的制造商</help>
+        <label><!-- Make --></label>
+        <name>maps__Make__c</name>
+    </fields>
+    <fields>
+        <help>车辆或非车辆的型号</help>
+        <label><!-- Model --></label>
+        <name>maps__Model__c</name>
+    </fields>
+    <fields>
+        <help>最后可用的里程表读数，以公里为单位</help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help>最后可用的里程表读数，以英里为单位</help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <help>非机动和越野资产的唯一标识符</help>
+        <label><!-- Serial Number --></label>
+        <name>maps__SerialNumber__c</name>
+    </fields>
+    <fields>
+        <help>其他设备</help>
+        <label><!-- Type --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Other Equipment</masterLabel>
+            <translation>其他设备</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation>车辆</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help>车辆类型资产的车辆识别号码</help>
+        <label><!-- VIN --></label>
+        <name>maps__VIN__c</name>
+    </fields>
+    <fields>
+        <help>资产制造商/型号的年份。</help>
+        <label><!-- Year --></label>
+        <name>maps__Year__c</name>
+    </fields>
+    <nameFieldLabel>地图实时资产名称</nameFieldLabel>
+</CustomObjectTranslation>

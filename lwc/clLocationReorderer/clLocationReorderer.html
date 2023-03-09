@@ -1,0 +1,122 @@
+<!-- Cl Location Reorderer -->
+<template>
+    <div style="min-height: 275px">
+        <lightning-card>
+            <h1 slot="title" class="no-wrap">
+                <c-ui-card-title
+                        card-title={cardTitle}
+                        icon-name="standard:sort_policy"
+                        icon-size="small">
+                </c-ui-card-title>
+            </h1>
+            <div slot="actions">
+                <lightning-button-icon
+                        icon-name="utility:refresh"
+                        onclick={handleRefresh}
+                        tooltip="Force a refresh of all location data"
+                        size="small"
+                ></lightning-button-icon>
+            </div>
+            <div>
+                <template if:true={showRecords}>
+                    <template if:true={_isAllZeros}>
+                        <div class="slds-p-horizontal_small slds-p-bottom_x-small">
+                            <c-ui-scoped-notification
+                                    icon-name="utility:warning"
+                                    icon-variant="inverse"
+                                    custom-class="accel-notification-warning_theme slds-theme_alert-texture"
+                                    custom-icon-size="x-small"
+                                    theme="warning"
+                                    message={allStopsAreZerosMsgText}>
+                            </c-ui-scoped-notification>
+                        </div>
+                    </template>
+                    <template if:true={showCardAssistance}>
+                        <div class="slds-p-horizontal_small slds-p-bottom_small">
+                            <c-ui-scoped-notification
+                                    message={cardAssistanceHelpText}
+                                    dismissible=true;
+                                    custom-icon-size="xx-small"
+                                    icon-name="utility:info"
+                                    custom-class="accel-notification-info_theme accel-notification_small"
+                                    theme="info">
+                            </c-ui-scoped-notification>
+                        </div>
+                    </template>
+                    <div if:true={_dndOnEndMsg} class="slds-p-bottom_x-small slds-p-horizontal_small">
+                        <c-ui-scoped-notification
+                                message={_dndOnEndMsg}
+                                custom-icon-size="xx-small"
+                                icon-name="utility:success"
+                                icon-variant="inverse"
+                                custom-class="accel-notification_small"
+                                theme="success">
+                        </c-ui-scoped-notification>
+                    </div>
+                    <ul
+                            name="listOuterTag"
+                            data-id="tilesouterid"
+                            class=" slds-has-dividers_bottom-space slds-m-around_x-small
+                                    slds-m-top_none accel-tile-container ">
+                        <template for:each={locRecords} for:item="record" for:index="idx">
+                            <li name="listItemContainer"
+                                class="slds-item lgc-bg accel-glassmorphism_tile slds-m-bottom_small "
+                                key={record.recordId}
+                                data-viewidx={idx}
+                                data-role="drop-target"
+                                data-stopnumber={record.stopNumber}
+                                data-recordid={record.recordId}>
+                                <div class="slds-float_right slds-align-top" style="vertical-align: top;">
+                                    <lightning-icon
+                                            size="small"
+                                            class="accel-drag-icon"
+                                            icon-name="utility:drag">
+                                    </lightning-icon>
+                                </div>
+                                <lightning-tile
+                                        class="accel-tile_title-override"
+                                        type="media">
+                                    <span   style="color:rgb(102,114,194)">
+                                          <b>{record.formattedLocName}</b>
+                                    </span>
+                                    <dl class="slds-dl_horizontal ">
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                            <p class="slds-truncate" title="Location Address">
+                                                Access: {record.locAccessTime}
+                                            </p>
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail slds-align-bottom">
+                                            <p class="slds-truncate slds-align-bottom" title={record.formattedAddress}>
+                                                {record.formattedAddress}
+                                            </p>
+                                        </dd>
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                            <p class="slds-truncate" title={record.collectionType}>
+                                                {record.collectionType}&nbsp;-&nbsp;{record.replenishmentType}
+                                            </p>
+                                        </dd>
+                                    </dl>
+                                </lightning-tile>
+                            </li>
+                        </template>
+                    </ul>
+                    <div class="slds-p-top_small slds-p-horizontal_small">
+                        <div class="slds-text-align_right slds-text-color_weak slds-text-body_small accel-date-text">
+                            Last Refreshed:&nbsp;
+                            <lightning-formatted-date-time
+                                    value={_dataRefreshTime} year="numeric"
+                                    month="numeric" day="numeric"
+                                    hour="2-digit"
+                                    minute="2-digit" hour12="true"
+                                    second="2-digit">
+                            </lightning-formatted-date-time>
+                        </div>
+                    </div>
+                </template>
+            </div>
+        </lightning-card>
+    </div>
+</template>

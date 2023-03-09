@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Cash Logistics Security Audit Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Cash Logistics Security Audit Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- The prefix of the file name to export. It will be named [thisfield]_[datettimevalue].csv --></help>
+        <label><!-- Csv Export File Name Prefix --></label>
+        <name>Csv_Export_File_Name_Prefix__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show debug entries in the browser console. --></help>
+        <label><!-- Debug Console --></label>
+        <name>Debug_Console__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Field Audit components. Limit the Field History Object Filter to these specific history objects. --></help>
+        <label><!-- Field History Objects --></label>
+        <name>Field_History_Objects__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will limit the display of datatable rows. The User will still be able to export the full superset of data. --></help>
+        <label><!-- Max Datatable Rows --></label>
+        <name>Max_Datatable_Rows__c</name>
+    </fields>
+    <fields>
+        <help><!-- The label to show when no permissions are found. ie &quot;None&quot;. --></help>
+        <label><!-- No Permissions Label --></label>
+        <name>No_Permissions_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- A comma delimited string of PermissionSet Developer Names. --></help>
+        <label><!-- Permission Set Names --></label>
+        <name>Permission_Set_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- A Comma Delimited String of Profile Names. --></help>
+        <label><!-- Profile Names --></label>
+        <name>Profile_Names__c</name>
+    </fields>
+    <fields>
+        <help><!-- This will allow further filtering of the datatable. This is client side only and different from the filters which fire a server side query. --></help>
+        <label><!-- Show Datatable Search --></label>
+        <name>Show_Datatable_Search__c</name>
+    </fields>
+    <fields>
+        <help><!-- Show Field Description (Where applicable). This is pulled from the FieldDefinition Object. --></help>
+        <label><!-- Show Field Description --></label>
+        <name>Show_Field_Description__c</name>
+    </fields>
+    <fields>
+        <help><!-- Beta - Allow the user to select filters for the datatable. ie pick profiles, permsets etc. Uses other metadata as default selections. --></help>
+        <label><!-- Show Filters --></label>
+        <name>Show_Filters__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Info Assistant page help box at the top. Check this to show it. --></help>
+        <label><!-- Show Info Assistant --></label>
+        <name>Show_Info_Assistant__c</name>
+    </fields>
+    <fields>
+        <help><!-- @see the Special_Fields__c field desc --></help>
+        <label><!-- Special Fields Label --></label>
+        <name>Special_Fields_Label__c</name>
+    </fields>
+    <fields>
+        <help><!-- List of comma delimited, lower case field api names to be listed as Secure:Read in the UI as they do not have records in FieldPermissions @see https://developer.salesforce.com/docs/atlas.en-us.object_reference.meta/object_reference/sforce_api_objects_fieldpermissions.htm --></help>
+        <label><!-- Special Fields --></label>
+        <name>Special_Fields__c</name>
+    </fields>
+    <fields>
+        <help><!-- A Comma Delimited String of sObject Api Names. --></help>
+        <label><!-- sObject Api Names --></label>
+        <name>sObject_Api_Names__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

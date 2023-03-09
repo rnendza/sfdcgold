@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Marketing_Request__c$Name</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Product_Requests__r.ProductRequestLineItems$Product2</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c.Product_Requests__r.ProductRequestLineItems$Name_of_Person_Requesting__c</field>
+    </columns>
+    <columns>
+        <field>Marketing_Request__c$Account__c.Service_Territory__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Marketing_Request__c.Product_Requests__r.ProductRequestLineItems$Product2</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>Folds</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Marketing_Request__c$Account__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Folds of Honor Requests</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Mktg_Req_with_Prod_Req_and_Prod_Line_Items__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Marketing_Request__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

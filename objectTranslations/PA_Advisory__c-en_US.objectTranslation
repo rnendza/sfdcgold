@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>PA Advisory</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>PA Advisories</value>
+    </caseValues>
+    <fields>
+        <label><!-- Address 1 --></label>
+        <name>Address_1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 2 --></label>
+        <name>Address_2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address 3 --></label>
+        <name>Address_3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisory Date --></label>
+        <name>Advisory_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisory Expiration --></label>
+        <name>Advisory_Expiration__c</name>
+    </fields>
+    <fields>
+        <help><!-- Unique Key for External Id --></help>
+        <label><!-- Advisory Number And Type --></label>
+        <name>Advisory_Number_And_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisory Number --></label>
+        <name>Advisory_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advisory Status --></label>
+        <name>Advisory_Status__c</name>
+        <picklistValues>
+            <masterLabel>Active</masterLabel>
+            <translation><!-- Active --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Inactive</masterLabel>
+            <translation><!-- Inactive --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Advisory Type --></label>
+        <name>Advisory_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Birth Date --></label>
+        <name>Birth_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cell Phone --></label>
+        <name>Cell_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Distinguishing Marks --></label>
+        <name>Distinguishing_Marks__c</name>
+    </fields>
+    <fields>
+        <label><!-- Docket Number --></label>
+        <name>Docket_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusion Period Code (Obsolete?) --></label>
+        <name>Exclusion_Period_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusion Period Years ( (Obsolete?) --></label>
+        <name>Exclusion_Period_Years__c</name>
+    </fields>
+    <fields>
+        <label><!-- Exclusion Period --></label>
+        <name>Exclusion_Period__c</name>
+    </fields>
+    <fields>
+        <help><!-- Casino, Casino Exclusion Fantasy Contest, Fantasy Exclusion, iGaming, iGaming Exclusion, VGT and VGT Exclusion --></help>
+        <label><!-- Exclusion Type --></label>
+        <name>Exclusion_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eye Color --></label>
+        <name>Eye_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Full_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- GUID --></label>
+        <name>GUID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gender --></label>
+        <name>Gender__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hair Color --></label>
+        <name>Hair_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Has Image --></label>
+        <name>Has_Image__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height Ft --></label>
+        <name>Height_Ft__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height In --></label>
+        <name>Height_In__c</name>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Base 64 String --></label>
+        <name>Image_Base_64_String__c</name>
+    </fields>
+    <fields>
+        <label><!-- Image Size --></label>
+        <name>Image_Size__c</name>
+    </fields>
+    <fields>
+        <help><!-- I Indicates the data point is associated with a new Self-Exclusion enrollee. R indicates the data point is associated with an individual who has been removed from the self-exclusion or exclusion list (Different form Intake Or Removal Code) --></help>
+        <label><!-- Intake Or Removal --></label>
+        <name>Intake_Or_Removal__c</name>
+        <picklistValues>
+            <masterLabel>I</masterLabel>
+            <translation><!-- I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Indicates whether the excluding individual is being removed or being added to the list. Values include I (Intake) or R (Removal) - Different From Intake Or Removal --></help>
+        <label><!-- Intake Removal Code --></label>
+        <name>Intake_Removal_Code__c</name>
+        <picklistValues>
+            <masterLabel>I</masterLabel>
+            <translation><!-- I --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>R</masterLabel>
+            <translation><!-- R --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- Described by the provider as the primary phone. --></help>
+        <label><!-- Phone --></label>
+        <name>Phone__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Image to display (embeds an &lt;img/&gt; tag using the base64 string. --></help>
+        <label><!-- Photo --></label>
+        <name>Photo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Postal Code --></label>
+        <name>Postal_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- SSN --></label>
+        <name>SSN__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Code --></label>
+        <name>State_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Violations --></label>
+        <name>Violations__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visible --></label>
+        <name>Visible__c</name>
+    </fields>
+    <fields>
+        <help><!-- Weight (in lbs) --></help>
+        <label><!-- Weight --></label>
+        <name>Weight__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Asset$Name</field>
+    </columns>
+    <columns>
+        <field>Asset$Common_Name__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Status</field>
+    </columns>
+    <columns>
+        <field>Asset$GP_Manufacturer__c</field>
+    </columns>
+    <columns>
+        <field>Asset$Model__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Asset$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Asset.VGT</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$VGT_Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Asset$Common_Name__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>V22 Suite 5,V32 Suite 6,IGT GameSet BLB,IGT Premium B Max Bet,Crystal GameSet 108.1 C Max Bet,Crystal GameSet 108.1 D Max Bet,SPI Premium C2 Max Bet,NOV GameSet 2,J43 Game Set 1.1 Max Bet,Twinstar GameSet 1.1 Max Bet,BB2 GameSet 5 Max Bet,Blade GameSet 7 Max Bet</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>SW Common Name - Need SW Upgrade</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Assets_Custom__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Asset$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

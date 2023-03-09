@@ -1,0 +1,80 @@
+<!-- Accel Field History Filters -->
+<template>
+
+    <div class="slds-p-vertical_xx-small" if:false={filteredHistoryObjects}>
+        <div class="slds-select_container">
+            <label for='objecttype' class="slds-form-element__label"><b>Select Type of Object:</b></label>
+            <select class="slds-select" id="objecttype"
+                    name="objecttype"
+                    data-selectid="objecttype"
+                    onchange={handleSingleSelect}>
+                <template for:each={objectTypePlOptions} for:item="option">
+                    <option key={option.label} class="uiInputSelectOption"
+                            disabled={option.disabled}
+                            selected={option.selected}
+                            value={option.value}>{option.label}
+                    </option>
+                </template>
+            </select>
+        </div>
+    </div>
+
+    <div class="slds-p-vertical_xx-small" if:true={histObjsPlOptions}>
+        <div class="slds-form-element">
+            <label for='histobj' class="slds-form-element__label"><b>Select History Object:</b></label>
+            <div class="slds-select_container">
+                <select class="slds-select" id="histobj"
+                        name="histobj"
+                        data-selectid="histobj"
+                        onchange={handleSingleSelect}>
+                    <template for:each={histObjsPlOptions} for:item="option">
+                        <option key={option.label} class="uiInputSelectOption"
+                                disabled={option.disabled}
+                                selected={option.selected}
+                                value={option.value}>{option.label}
+                        </option>
+                    </template>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <div class="slds-p-vertical_xx-small">
+        <c-ui-multiselect
+                if:true={histFieldsPlOptions}
+                options={histFieldsPlOptions}
+                name="histFieldSelect"
+                data-id="histFieldSelectSelect"
+                pill-icon="standard:sobject_collection"
+                onselect={handleSelect}
+                onremove={handleOptionsRemoved}
+                entity-label="Field(s)"
+                multi-select="true"
+                label="Select Fields:">
+        </c-ui-multiselect>
+    </div>
+    <template if:true={histFieldSelectedValues}>
+        <div class="slds-p-vertical_xx-small">
+            <lightning-input type="datetime" name="input1" label="Select Change Start Date:"
+                             value={selectedStartDateTimeValue}
+                              onchange={handleStartDateChange}>
+            </lightning-input>
+        </div>
+        <div class="slds-p-vertical_xx-small">
+            <lightning-input type="datetime"
+                             value={selectedEndDateTimeValue}
+                             onchange={handleEndDateChange}
+                             name="input2" label="Select Change End Date:">
+            </lightning-input>
+        </div>
+    </template>
+    <div if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="1"
+                child-class="slds-var-m-around_xxx-small"
+                type="list" columns="1">
+        </c-ui-custom-stencil>
+    </div>
+
+
+</template>

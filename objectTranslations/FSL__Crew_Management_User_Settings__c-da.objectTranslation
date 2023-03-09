@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Brugerindstillingerne for bemandingsstyring</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Brugerindstillinger for bemandingsstyring</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Brugerindstillinger for bemandingsstyring</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Brugerindstillingerne for bemandingsstyring</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Brugerindstillinger for bemandingsstyring</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Brugerindstillinger for bemandingsstyring</value>
+    </caseValues>
+    <fields>
+        <label><!-- Days on gantt --></label>
+        <name>FSL__GanttHorizon__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__SchedulingPolicy__c</name>
+    </fields>
+    <fields>
+        <label><!-- Skills Logic Operator --></label>
+        <name>FSL__SkillsLogicOperator__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Navn på indstillinger for bemandingsstyr</nameFieldLabel>
+</CustomObjectTranslation>

@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps-markørlaget</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps-markørlag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps-markørlag</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps-markørlagene</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps-markørlag</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps-markørlag</value>
+    </caseValues>
+    <fields>
+        <label><!-- Activity Filter --></label>
+        <name>maps__ActivityFilter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Advanced Options --></label>
+        <name>maps__AdvancedOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Object --></label>
+        <name>maps__BaseObject__c</name>
+        <relationshipLabel><!-- Maps Marker Layers --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Color Assignment Type --></label>
+        <name>maps__ColorAssignmentType__c</name>
+        <picklistValues>
+            <masterLabel>Dynamic, Field</masterLabel>
+            <translation>Dynamisk, felt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Static</masterLabel>
+            <translation>Statisk</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Color Assignment --></label>
+        <name>maps__ColorAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Colors Assigned Dynamically --></label>
+        <name>maps__ColorsAssignedDynamically__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Query --></label>
+        <name>maps__CustomQuery__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filter Logic --></label>
+        <name>maps__FilterLogic__c</name>
+    </fields>
+    <fields>
+        <label><!-- Folder --></label>
+        <name>maps__Folder__c</name>
+        <relationshipLabel><!-- Maps Saved Queries --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Icon Color --></label>
+        <name>maps__IconColor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Query Size External Objs --></label>
+        <name>maps__MaxQuerySizeExternal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Max Query Size --></label>
+        <name>maps__MaxQuerySize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <label><!-- Organization Wide --></label>
+        <name>maps__OrgWide__c</name>
+    </fields>
+    <fields>
+        <label><!-- OwnerFilterId --></label>
+        <name>maps__OwnerFilterId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Picklist Field --></label>
+        <name>maps__PicklistField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proximity Options --></label>
+        <name>maps__ProximityOptions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Components --></label>
+        <name>maps__QueryComponents__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Key --></label>
+        <name>maps__QueryKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query --></label>
+        <name>maps__Query__c</name>
+    </fields>
+    <fields>
+        <label><!-- Refresh Interval --></label>
+        <name>maps__RefreshInterval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Related List Count --></label>
+        <name>maps__RelatedListCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- RoleId --></label>
+        <name>maps__RoleId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Limit --></label>
+        <name>maps__RowLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Order Direction --></label>
+        <name>maps__RowOrderDirection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Row Order --></label>
+        <name>maps__RowOrder__c</name>
+    </fields>
+    <fields>
+        <label><!-- ShapeAssignment --></label>
+        <name>maps__ShapeAssignment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shape Field --></label>
+        <name>maps__ShapeField__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Ten --></label>
+        <name>maps__Tooltip10__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Eleven --></label>
+        <name>maps__Tooltip11__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Twelve --></label>
+        <name>maps__Tooltip12__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Thirteen --></label>
+        <name>maps__Tooltip13__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Fourteen --></label>
+        <name>maps__Tooltip14__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Fifteen --></label>
+        <name>maps__Tooltip15__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip One --></label>
+        <name>maps__Tooltip1__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Two --></label>
+        <name>maps__Tooltip2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Three --></label>
+        <name>maps__Tooltip3__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Four --></label>
+        <name>maps__Tooltip4__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Five --></label>
+        <name>maps__Tooltip5__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Six --></label>
+        <name>maps__Tooltip6__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Seven --></label>
+        <name>maps__Tooltip7__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Eight --></label>
+        <name>maps__Tooltip8__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tooltip Nine --></label>
+        <name>maps__Tooltip9__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Marker Layers --></relationshipLabel>
+    </fields>
+    <gender>Neuter</gender>
+    <nameFieldLabel>Maps-markørlagsnavn</nameFieldLabel>
+</CustomObjectTranslation>

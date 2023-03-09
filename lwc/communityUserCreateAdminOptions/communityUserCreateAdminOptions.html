@@ -1,0 +1,60 @@
+<template>
+    <div class=" slds-p-left--large slds-p-bottom--large">
+        <div class="slds-box" style="width:75%;background-color: #FAFAF9">
+             <span class="slds-text-color_destructive" style="font-size: .875em">
+                Super Admin only stuff (@todo secure with custom permissions)
+             </span>
+            <div class="slds-form">
+                <div class="slds-form-element slds-form-element_stacked">
+                    <template if:true={allowUserTriggerToSetPw}>
+                        <div class="slds-form-element__control">
+                            <lightning-combobox
+                                    name="pwGenType"
+                                    data-id="pwGenType"
+                                    label="Password Generation Type"
+                                    value={pwGenTypeValue}
+                                    placeholder="Select Password Generation Type"
+                                    options={pwGenTypeOptions}
+                                    onchange={handlePwGenTypeOptions}>
+                            </lightning-combobox>
+                        </div>
+                    </template>
+                    <template if:true={displayTriggerSettings}>
+                        <div class="slds-form-element__control">
+                            <label class="slds-form-element__label slds-p-top--small">
+                                Set Password and Send Email Upon Create.
+                            </label>
+                            <lightning-input type="toggle"
+                                             label=""
+                                             variant="label-hidden"
+                                             checked={allowUserTriggerToSetPw}
+                                             data-id="allowUserTriggerToSetPw"
+                                             onchange={handleAllowUserTriggerToSetPw}
+                                             name="allowUserTriggerToSetPw">
+                            </lightning-input>
+                        </div>
+                    </template>
+                    <template if:true={displayBatchSettings}>
+                    <div class="slds-form-element__control slds-p-top--small">
+                        <lightning-input type="date"
+                                         label="Most Recent Hpd Date"
+                                         value={batchSettings.Most_Recent_Hpd_Date__c}
+                                         data-id="mostRecentHpdDate"
+                                         onchange={handleChangeMostRecentHpdDate}
+                                         name="mostRecentHpdDate">
+                        </lightning-input>
+                        <span class="slds-text-color--weak slds-p-left--medium" style="font-size: .825em">
+                        Last Updated:&nbsp;
+                            <lightning-formatted-date-time
+                                    value={batchSettings.LastModifiedDate}
+                                    year="numeric" month="numeric" day="numeric" hour="2-digit"
+                                    minute="2-digit" time-zone-name="short" hour12="true">
+                            </lightning-formatted-date-time>
+                        </span>
+                    </div>
+                    </template>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

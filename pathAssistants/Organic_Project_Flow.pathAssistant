@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PathAssistant xmlns="http://soap.sforce.com/2006/04/metadata">
+    <active>true</active>
+    <entityName>Project__c</entityName>
+    <fieldName>Project_Status__c</fieldName>
+    <masterLabel>Organic Project Flow</masterLabel>
+    <pathAssistantSteps>
+        <picklistValueName>Application Process</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Closure</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Licensed</picklistValueName>
+    </pathAssistantSteps>
+    <pathAssistantSteps>
+        <picklistValueName>Pending Licensing</picklistValueName>
+    </pathAssistantSteps>
+    <recordTypeName>Organic</recordTypeName>
+</PathAssistant>

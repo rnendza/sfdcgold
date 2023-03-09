@@ -1,0 +1,92 @@
+<!-- Cl Admin Route Cycle Number Update -->
+<template>
+
+    <div lwc:dom="manual" class="fake-sfdc-admin-card-overrides-class"></div>
+
+    <div class="accel-admin-only-card">
+        <lightning-card>
+            <h1 slot="title" class="no-wrap accel-card-header">
+                <div class="slds-grid slds-wrap">
+                    <c-ui-card-title 
+                            card-title='Fill Cycle # Update'
+                            card-title-style={cardTitleStyle}
+                            icon-name="standard:event"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </h1>
+            <div class="accel-test-borders slds-m-horizontal_small">
+                <div
+                        class="slds-p-bottom_small xxxslds-border_bottom xxxslds-color__border_gray-4">
+                    <div class="slds-m-bottom_medium">
+                        <lightning-icon icon-name="utility:info_alt" size="x-small"
+                                        class="accel-text-info-icon slds-p-right_xxx-small"></lightning-icon>
+                        Use this to update the custom metadata value containing the next fill cycle #. This will
+                        execute an async meta data deployment job.
+                        Fill Cycle # is used by the scheduler and manual scheduler function to determine which
+                        routes to select for route schedule generation.
+                    </div>
+                    <div if:true={_isBatchJobRunning} style="max-height: 75px">
+                        <c-ui-custom-stencil
+                                iterations="1"
+                                child-class="slds-var-m-around_xxx-small"
+                                type="list" columns="1">
+                        </c-ui-custom-stencil>
+                    </div>
+                    <div if:true={showCycleNumberForm}
+                         class="slds-grid slds-gutters slds-wrap">
+                        <div class="slds-col slds-size_1-of-1">
+                            <lightning-input type="number" name="input1"
+                                             value={scheduleNextCycle}
+                                             onchange={handleScheduleNumberChange}
+                                             label={cycleNumberFieldLabel}>
+                            </lightning-input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div slot="footer" >
+                <div if:true={showScopedMsg} class="slds-p-bottom_small">
+                    <c-ui-scoped-notification
+                            icon-name={scopedMsg.iconName}
+                            icon-variant={scopedMsg.iconVariant}
+                            custom-class={scopedMsg.customClass}
+                            custom-icon-size={scopedMsg.iconCustomSize}
+                            theme={scopedMsg.theme}
+                            dismissible={scopedMsg.dismissible}
+                            message={scopedMsg.message}
+                            onalertcontainerdismissed={handleAlertContainerDismissed}>
+                    </c-ui-scoped-notification>
+                </div>
+                <div>
+                    <button
+                            if:true={showCycleUpdateButton}
+                            name="submitCycleUpdate"
+                            onclick={handleScheduleMdtUpdateClick}
+                            data-id="submitCycleUpdateButton"
+                            title="Click to Update to cycle number!"
+                            style="padding:.15em"
+                            class="slds-button slds-button_brand accel-admin-button slds-button_stretch">
+                        <span style="font-size: 1.05em">Update Cycle #</span>
+                        <span class="slds-p-left_xx-small">
+                                            <lightning-icon
+                                                    icon-name="utility:record_update"
+                                                    alternative-text=""
+                                                    variant="inverse"
+                                                    size="x-small"
+                                                    title="">
+                                            </lightning-icon>
+                                        </span>
+                    </button>
+                </div>
+            </div>
+        </lightning-card>
+    </div>
+
+    <c-cl-event-subscriber
+            if:true={scheduleMdt}
+            record-id={scheduleMdt.Id}
+            onjobcomplete={handleBatchJobCompleted}>
+    </c-cl-event-subscriber>
+
+</template>

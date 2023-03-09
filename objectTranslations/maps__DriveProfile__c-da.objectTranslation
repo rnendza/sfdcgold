@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Kørselsprofilen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Kørselsprofil</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Kørselsprofil</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Kørselsprofilerne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Kørselsprofiler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Kørselsprofiler</value>
+    </caseValues>
+    <fields>
+        <label><!-- Hazardous Materials --></label>
+        <name>maps__Hazardous_Materials__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation>Nej</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation>Ja</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Height Units --></label>
+        <name>maps__HeightUnits__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Fod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>meter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Height --></label>
+        <name>maps__Height__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length Units --></label>
+        <name>maps__LengthUnits__c</name>
+        <picklistValues>
+            <masterLabel>Feet</masterLabel>
+            <translation>Fod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>meter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Length --></label>
+        <name>maps__Length__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Axles --></label>
+        <name>maps__NumberOfAxles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Trailers --></label>
+        <name>maps__NumberOfTrailers__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Type --></label>
+        <name>maps__ProfileType__c</name>
+        <picklistValues>
+            <masterLabel>Car</masterLabel>
+            <translation>Bil</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Truck</masterLabel>
+            <translation>Lastvogn</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weight Per Axle --></label>
+        <name>maps__WeightPerAxle__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weight Units --></label>
+        <name>maps__WeightUnits__c</name>
+        <picklistValues>
+            <masterLabel>kilos</masterLabel>
+            <translation>kilo</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>pounds</masterLabel>
+            <translation>pund</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>tons</masterLabel>
+            <translation>ton</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Weight --></label>
+        <name>maps__Weight__c</name>
+    </fields>
+    <fields>
+        <label><!-- Width Units --></label>
+        <name>maps__WidthUnits__c</name>
+        <picklistValues>
+            <masterLabel>ft</masterLabel>
+            <translation>fod</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>meters</masterLabel>
+            <translation>meter</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Width --></label>
+        <name>maps__Width__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Kørselsprofilnavn</nameFieldLabel>
+</CustomObjectTranslation>

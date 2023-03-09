@@ -1,0 +1,26 @@
+<apex:page docType="html-5.0" standardController="Marketing_Request__c">
+    
+
+    <style>
+        .mypage  {
+            margin: 12px 0;
+            font-family: tahoma
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            }
+    </style>
+    
+    <div class="mypage">
+     <h style="text-align: center;font-family: tahoma;color:black;font-size: 16px;font-weight: bold; ">
+                    INSTRUCTIONS 
+</h>
+        <p style="font-family: tahoma;">
+        Upon saving request, select item from the related Marketing Products list on the right of the screen.  
+        </p>
+        Please choose only 1 item per request.
+        
+        When you are done, simply click save, and the request will be forwarded to Marketing.
+    </div>
+    
+</apex:page>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <available>true</available>
+    <encodingKey>UTF-8</encodingKey>
+    <letterhead>Accel_Entertainment</letterhead>
+    <name>Complete Finger Printing</name>
+    <style>freeForm</style>
+    <subject>Please Complete Application FingerPrinting</subject>
+    <textOnly>Hi {!LicenseApplication__c.Application_Submitted_By__c},
+
+The Application for {!LicenseApplication__c.Location_DBA__c}} has been completed but the fingerprints have not been updated in Salesforce. Please follow up with the location and confirm this has been completed.
+Thank you,
+
+Link to Record:
+
+{!LicenseApplication__c.Link}</textOnly>
+    <type>html</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

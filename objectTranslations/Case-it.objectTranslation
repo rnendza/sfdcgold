@@ -1,0 +1,1802 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <label><!-- Accel Amusements --></label>
+        <name>Accel_Amusements__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Portion Dark Time Revenue Loss --></label>
+        <name>Accel_Portion_Of_Dark_Time_Rev_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Accel_Solution__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Converts the Account Priority Letter Value (AAA through D) into a number that contributes to the overall Service Appointment Priority Values used in Field Service. --></help>
+        <label><!-- Account Priority Value --></label>
+        <name>Account_Priority_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account State --></label>
+        <name>Account_State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location to Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Cases (Location to Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Total Add-Ons --></label>
+        <name>Add_on_Approvals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Addition Approved --></label>
+        <name>Addition_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Address --></label>
+        <name>Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Case (Minutes) --></label>
+        <name>Age_of_Case_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Case (Days) --></label>
+        <name>Age_of_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amount of Claim --></label>
+        <name>Amount_of_Claim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+        <relationshipLabel><!-- Cases (Amusement Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amusement Region --></label>
+        <name>Amusement_Region__c</name>
+        <picklistValues>
+            <masterLabel>Need Values</masterLabel>
+            <translation><!-- Need Values --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Approved Date --></label>
+        <name>Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved/Denied --></label>
+        <name>Approved_Denied_AddSwap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Approved/Denied --></label>
+        <name>Approved_Denied__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Model --></label>
+        <name>Asset_Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned RM --></label>
+        <name>Assigned_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Rank --></label>
+        <name>Assigned_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resource Profile --></label>
+        <name>Assigned_Resource_Profile__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resource --></label>
+        <name>Assigned_Resource__c</name>
+        <relationshipLabel><!-- Cases (Assigned Resource) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Attempted Remote Resolve --></label>
+        <name>Attempted_Remote_Resolve__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attempted to Call Partner Operator --></label>
+        <name>Attempted_to_Call_Partner_Operator__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Incident Type --></label>
+        <name>CRM_Incident_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- CRM Solution --></label>
+        <name>CRM_Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Called Originated By Email --></label>
+        <name>Called_Originated_By_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller Information --></label>
+        <name>Caller_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller Phone --></label>
+        <name>Caller_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountID --></label>
+        <name>CaseAccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Closed Month --></label>
+        <name>Case_Closed_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Closed Quarter --></label>
+        <name>Case_Closed_Quarter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Count --></label>
+        <name>Case_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Create BH Closed Time --></label>
+        <name>Case_Create_BH_Closed_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Create BH Open Time --></label>
+        <name>Case_Create_BH_Open_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Create Day of Week --></label>
+        <name>Case_Create_Day_of_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Owner --></label>
+        <name>Case_Owner__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Resolved BH Open Time --></label>
+        <name>Case_Resolved_BH_Open_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Resolved Day of Week --></label>
+        <name>Case_Resolved_Day_of_Week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+        <picklistValues>
+            <masterLabel>$1 cassette is low /Empty</masterLabel>
+            <translation><!-- $1 cassette is low /Empty --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ATM feature is not working</masterLabel>
+            <translation><!-- ATM feature is not working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>All games are down</masterLabel>
+            <translation><!-- All games are down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amusement Service</masterLabel>
+            <translation><!-- Amusement Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attendant pay / hand pay required</masterLabel>
+            <translation><!-- Attendant pay / hand pay required --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Battery low / error</masterLabel>
+            <translation><!-- Battery low / error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bezel disconnect</masterLabel>
+            <translation><!-- Bezel disconnect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Jam</masterLabel>
+            <translation><!-- Bill Jam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Jam / Not Accepting Money</masterLabel>
+            <translation><!-- Bill Jam / Not Accepting Money --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bill Validator Error / Communication timeout / Reject Limit Exceeded</masterLabel>
+            <translation><!-- Bill Validator Error / Communication timeout / Reject Limit Exceeded --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Black / Distorted / Discolored Screen</masterLabel>
+            <translation><!-- Black / Distorted / Discolored Screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Broken / Damaged Part</masterLabel>
+            <translation><!-- Broken / Damaged Part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Button Panel Error / Not Working / Sticking</masterLabel>
+            <translation><!-- Button Panel Error / Not Working / Sticking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call Attendant / 30 Second Message</masterLabel>
+            <translation><!-- Call Attendant / 30 Second Message --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Card reader not working</masterLabel>
+            <translation><!-- Card reader not working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash drawer balance is low</masterLabel>
+            <translation><!-- Cash drawer balance is low --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cassette won&apos;t configure</masterLabel>
+            <translation><!-- Cassette won&apos;t configure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Change drawer will not open</masterLabel>
+            <translation><!-- Change drawer will not open --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coin hopper error / Missing</masterLabel>
+            <translation><!-- Coin hopper error / Missing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Coin jam</masterLabel>
+            <translation><!-- Coin jam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disabled / Disconnected / Wake Up Bit Timeout</masterLabel>
+            <translation><!-- Disabled / Disconnected / Wake Up Bit Timeout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Disc boot failure</masterLabel>
+            <translation><!-- Disc boot failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fatal fault</masterLabel>
+            <translation><!-- Fatal fault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Frozen / lagging</masterLabel>
+            <translation><!-- Frozen / lagging --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insert spielo usb key to continue</masterLabel>
+            <translation><!-- Insert spielo usb key to continue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location / customer looking for information / calling to complain</masterLabel>
+            <translation><!-- Location / customer looking for information / calling to complain --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location has a large ticket</masterLabel>
+            <translation><!-- Location has a large ticket --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location needs to have their games locally  reenabled</masterLabel>
+            <translation><!-- Location needs to have their games locally  reenabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location needs to have their games locally disabled</masterLabel>
+            <translation><!-- Location needs to have their games locally disabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location was broken into</masterLabel>
+            <translation><!-- Location was broken into --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Locked voucher</masterLabel>
+            <translation><!-- Locked voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Login help</masterLabel>
+            <translation><!-- Login help --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machine keeps rebooting</masterLabel>
+            <translation><!-- Machine keeps rebooting --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No host connection</masterLabel>
+            <translation><!-- No host connection --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not allowing to change game</masterLabel>
+            <translation><!-- Not allowing to change game --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not betting / paying out correctly</masterLabel>
+            <translation><!-- Not betting / paying out correctly --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not scanning vouchers</masterLabel>
+            <translation><!-- Not scanning vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open door error</masterLabel>
+            <translation><!-- Open door error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of Service</masterLabel>
+            <translation><!-- Out of Service --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Peripheral tilt</masterLabel>
+            <translation><!-- Peripheral tilt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer Jam / Remove Item from Printer / Cash Out Slip is Printing</masterLabel>
+            <translation><!-- Printer Jam / Remove Item from Printer / Cash Out Slip is Printing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printer Tilt / Flag Timeout / Torn Ticket Stack</masterLabel>
+            <translation><!-- Printer Tilt / Flag Timeout / Torn Ticket Stack --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printing Incomplete Vouchers</masterLabel>
+            <translation><!-- Printing Incomplete Vouchers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Printing tickets not found in the system</masterLabel>
+            <translation><!-- Printing tickets not found in the system --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Question</masterLabel>
+            <translation><!-- Question --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SOP inactivity detected</masterLabel>
+            <translation><!-- SOP inactivity detected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Serial number status check failure</masterLabel>
+            <translation><!-- Serial number status check failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Site is not reporting back to sgi</masterLabel>
+            <translation><!-- Site is not reporting back to sgi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Soft keys not working / epp failure</masterLabel>
+            <translation><!-- Soft keys not working / epp failure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>System error</masterLabel>
+            <translation><!-- System error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ticket cannot be redeemed</masterLabel>
+            <translation><!-- Ticket cannot be redeemed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Touch screen not working</masterLabel>
+            <translation><!-- Touch screen not working --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unit offline / cannot enter sop mode</masterLabel>
+            <translation><!-- Unit offline / cannot enter sop mode --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Volume needs to be adjusted</masterLabel>
+            <translation><!-- Volume needs to be adjusted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher jammed in the bill acceptor</masterLabel>
+            <translation><!-- Voucher jammed in the bill acceptor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Will Not Power On</masterLabel>
+            <translation><!-- Will Not Power On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Windows failed to start</masterLabel>
+            <translation><!-- Windows failed to start --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>board monitor tilt</masterLabel>
+            <translation><!-- board monitor tilt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>cash dispenser not ready</masterLabel>
+            <translation><!-- cash dispenser not ready --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ip address conflict</masterLabel>
+            <translation><!-- ip address conflict --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>low on funds</masterLabel>
+            <translation><!-- low on funds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>making a strange noise</masterLabel>
+            <translation><!-- making a strange noise --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>not redeeming any tickets</masterLabel>
+            <translation><!-- not redeeming any tickets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>out / low on paper / tickets</masterLabel>
+            <translation><!-- out / low on paper / tickets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>service light is on</masterLabel>
+            <translation><!-- service light is on --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Formula field to determine the Case Priority. This field is populated onto the Service Appointment and used to Priority it in the Optimizer. --></help>
+        <label><!-- Case --></label>
+        <name>Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Check # --></label>
+        <name>Check__c</name>
+    </fields>
+    <fields>
+        <label><!-- City --></label>
+        <name>City__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Checkbox --></label>
+        <name>Closed_Checkbox__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed Date --></label>
+        <name>Closed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed --></label>
+        <name>Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Closed in Last 7 Days? --></label>
+        <name>Closed_in_Last_7_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Region --></label>
+        <name>Collection_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concierge Service --></label>
+        <name>Concierge_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contact --></label>
+        <name>Contact__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Created Date (Trimmed) --></label>
+        <name>Created_Date_Trimmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Date --></label>
+        <name>Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created Day Hours Open --></label>
+        <name>Created_Day_Hours_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created via WM Flow --></label>
+        <name>Created_via_WM_Flow__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current VGT Count --></label>
+        <name>Current_VGT_Count__c</name>
+        <relationshipLabel><!-- Cases (Current VGT Count) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Dark Asset HPD --></label>
+        <name>Dark_Asset_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dark Asset Total Site HPD --></label>
+        <name>Dark_Asset_Total_Site_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Dark Time Revenue Loss --></label>
+        <name>Dark_Time_Revenue_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Received --></label>
+        <name>Date_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Resolved --></label>
+        <name>Date_Resolved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Case Closed Hour --></label>
+        <name>Date_Time_Closed_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date/Time Case Opened Hour --></label>
+        <name>Date_Time_Opened_Hour__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Claim --></label>
+        <name>Date_of_Claim__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Issue: --></label>
+        <name>Date_of_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Request --></label>
+        <name>Date_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Shipment --></label>
+        <name>Date_of_Shipment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Live --></label>
+        <name>Days_Live__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Opened --></label>
+        <name>Days_Since_Opened__c</name>
+    </fields>
+    <fields>
+        <label><!-- Detail Link --></label>
+        <name>Detail_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Due Date --></label>
+        <name>Due_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Email Address --></label>
+        <name>Email_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated RTT Date --></label>
+        <name>Estimated_RTT_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- First Name --></label>
+        <name>First_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- G2S Updated --></label>
+        <name>G2S_Updated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical Case Number --></label>
+        <name>Historical_Case_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Inspection Date --></label>
+        <name>IGB_Inspection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Meeting Status --></label>
+        <name>IGB_Meeting_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Scheduled</masterLabel>
+            <translation><!-- IGB Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission</masterLabel>
+            <translation><!-- Pending Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to IGB</masterLabel>
+            <translation><!-- Submitted to IGB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IGB Number --></label>
+        <name>IGB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Status Denied Reason --></label>
+        <name>If_Denied_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- If Other (Reason) --></label>
+        <name>If_Other_Reason__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Work Type --></label>
+        <name>Inactive_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Number --></label>
+        <name>Incident_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Investigated By --></label>
+        <name>Investigated_By__c</name>
+        <relationshipLabel><!-- Cases (Investigated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Is Game Down? --></label>
+        <name>Is_Game_Down__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Is a Return Required --></label>
+        <name>Is_a_Return_Required__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Last Modified Date --></label>
+        <name>Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Name --></label>
+        <name>Last_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Agreement --></label>
+        <name>Length_of_Agreement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Length of Contract --></label>
+        <name>Length_of_Contract__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the time when the location closes for business --></help>
+        <label><!-- Location Close Time --></label>
+        <name>Location_Close_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Closed --></label>
+        <name>Location_Closed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location DBA --></label>
+        <name>Location_DBA__c</name>
+        <relationshipLabel><!-- Cases (Location DBA) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location From Name --></label>
+        <name>Location_From_Name__c</name>
+        <relationshipLabel><!-- Cases (Location From Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location Legal Name --></label>
+        <name>Location_Legal_Name_Case__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Legal Name --></label>
+        <name>Location_Legal_Name__c</name>
+        <relationshipLabel><!-- Cases (Location Legal Name) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- This is the time when the location opens for business --></help>
+        <label><!-- Location Open Time --></label>
+        <name>Location_Open_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Cases (Location) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Machine Down When Collector Arrived? --></label>
+        <name>Machine_Down_When_Collector_Arrived__c</name>
+    </fields>
+    <fields>
+        <label><!-- Model --></label>
+        <name>Model__c</name>
+    </fields>
+    <fields>
+        <label><!-- Most Recent Service Appt --></label>
+        <name>Most_Recent_Service_Appt__c</name>
+        <relationshipLabel><!-- Cases (Most Recent Service Appt) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Name --></label>
+        <name>Name__c</name>
+    </fields>
+    <fields>
+        <help><!-- This field is used a reminder for when the case needs to be dispatched --></help>
+        <label><!-- Next Dispatch --></label>
+        <name>Next_Dispatch__c</name>
+    </fields>
+    <fields>
+        <label><!-- No Pay Reason --></label>
+        <name>No_Pay_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Expired Voucher</masterLabel>
+            <translation><!-- Expired Voucher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gameplay Malfunction, Voids All Pay and Play</masterLabel>
+            <translation><!-- Gameplay Malfunction, Voids All Pay and Play --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Insufficient Information</masterLabel>
+            <translation><!-- Insufficient Information --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Corresponding Variance Found Upon Audit</masterLabel>
+            <translation><!-- No Corresponding Variance Found Upon Audit --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Error Found</masterLabel>
+            <translation><!-- No Error Found --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Player Error</masterLabel>
+            <translation><!-- Player Error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Voucher Redeemed for Completed Payment</masterLabel>
+            <translation><!-- Voucher Redeemed for Completed Payment --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Originally Called In By Collectors? --></label>
+        <name>Originally_Called_In_By_Collectors__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts On Order Chatter Sent --></label>
+        <name>Parts_On_Order_Chatter_Sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Parts Status --></label>
+        <name>Parts_Status__c</name>
+        <picklistValues>
+            <masterLabel>Back Ordered</masterLabel>
+            <translation><!-- Back Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fulfilled</masterLabel>
+            <translation><!-- Fulfilled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ordered</masterLabel>
+            <translation><!-- Ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for pickup</masterLabel>
+            <translation><!-- Ready for pickup --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Payable to Location --></label>
+        <name>Payable_to_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Phone --></label>
+        <name>PhoneFacility__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Picklist__c</name>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Process</masterLabel>
+            <translation><!-- In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Paid</masterLabel>
+            <translation><!-- Paid --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Pickup Location --></label>
+        <name>Pickup_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>PriorityLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Status --></label>
+        <name>Processing_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Part Requested --></label>
+        <name>Product__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Quantity Needed --></label>
+        <name>Quantity_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA Return Required --></label>
+        <name>RMA_Return_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- RMA # --></label>
+        <name>RMA__c</name>
+    </fields>
+    <fields>
+        <label><!-- RM Requesting Project --></label>
+        <name>RM_Requesting_Project__c</name>
+        <relationshipLabel><!-- Cases (RM Requesting Project) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RT Status --></label>
+        <name>RT_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- RT# --></label>
+        <name>RT__c</name>
+    </fields>
+    <fields>
+        <help><!-- Indicates why the case was assigned to a Solution Manager --></help>
+        <label><!-- Reason for Solution Manager --></label>
+        <name>Reason_for_Solution_Manager__c</name>
+        <picklistValues>
+            <masterLabel>Cannot resolve</masterLabel>
+            <translation><!-- Cannot resolve --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Case created in error</masterLabel>
+            <translation><!-- Case created in error --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Duplicate</masterLabel>
+            <translation><!-- Duplicate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Closed</masterLabel>
+            <translation><!-- Location Closed --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Redemption Meter --></label>
+        <name>Redemption_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Remotely Resolved Issue --></label>
+        <name>Remotely_Resolved_Issue__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Reason --></label>
+        <name>Request_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Contract extension</masterLabel>
+            <translation><!-- Contract extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gameset update</masterLabel>
+            <translation><!-- Gameset update --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Revenue Optimization</masterLabel>
+            <translation><!-- Revenue Optimization --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Additions</masterLabel>
+            <translation><!-- Additions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Removal</masterLabel>
+            <translation><!-- Complete Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocation</masterLabel>
+            <translation><!-- Relocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removals</masterLabel>
+            <translation><!-- Removals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SW Upgrade</masterLabel>
+            <translation><!-- SW Upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Upgrades</masterLabel>
+            <translation><!-- Software Upgrades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaps</masterLabel>
+            <translation><!-- Swaps --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Resolve Day Hours Open --></label>
+        <name>Resolve_Day_Hours_Open__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>Result__c</name>
+        <picklistValues>
+            <masterLabel>Customer Pay</masterLabel>
+            <translation><!-- Customer Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Pay</masterLabel>
+            <translation><!-- Location Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Pay</masterLabel>
+            <translation><!-- No Pay --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>One Time Pay</masterLabel>
+            <translation><!-- One Time Pay --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SGI Status --></label>
+        <name>SGI_Status_AddSwap__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission</masterLabel>
+            <translation><!-- Pending Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI Approved</masterLabel>
+            <translation><!-- SGI Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to SGI</masterLabel>
+            <translation><!-- Submitted to SGI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SGI Status --></label>
+        <name>SGI_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial --></label>
+        <name>Serial__c</name>
+    </fields>
+    <fields>
+        <help><!-- Populates on Service Appointment to determine Priority. --></help>
+        <label><!-- Service Appointment Priority --></label>
+        <name>Service_Appointment_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment --></label>
+        <name>Service_Appointment__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Converts the Service Category into a numbered priority that contributes to the overall Service Appointment Priority Values used in Field Service. --></help>
+        <label><!-- Service Category Priority Value --></label>
+        <name>Service_Category_Priority_Value__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Category --></label>
+        <name>Service_Category__c</name>
+        <picklistValues>
+            <masterLabel>All Games Down</masterLabel>
+            <translation><!-- All Games Down --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amusement</masterLabel>
+            <translation><!-- Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>COAM</masterLabel>
+            <translation><!-- COAM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Customer Complaint / Ticket Issue</masterLabel>
+            <translation><!-- Customer Complaint / Ticket Issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Jukebox</masterLabel>
+            <translation><!-- Jukebox --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Marketing</masterLabel>
+            <translation><!-- Marketing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Multiple VGTs</masterLabel>
+            <translation><!-- Multiple VGTs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RT (Backup RT Available)</masterLabel>
+            <translation><!-- RT (Backup RT Available) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RT (No Backup RT)</masterLabel>
+            <translation><!-- RT (No Backup RT) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone ATM</masterLabel>
+            <translation><!-- Standalone ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT</masterLabel>
+            <translation><!-- VGT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wellness</masterLabel>
+            <translation><!-- Wellness --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Service Partner Operator is who is handling the Case --></help>
+        <label><!-- Service Partner Operator --></label>
+        <name>Service_Partner_Operator__c</name>
+        <relationshipLabel><!-- Cases (Service Partner Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Zone --></label>
+        <name>Service_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>Service_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service --></label>
+        <name>Service__c</name>
+        <picklistValues>
+            <masterLabel>Which Service Category</masterLabel>
+            <translation><!-- Which Service Category --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Set Status Pending --></label>
+        <name>Set_Status_Pending__c</name>
+    </fields>
+    <fields>
+        <label><!-- Shipping Method --></label>
+        <name>Shipping_Method__c</name>
+        <picklistValues>
+            <masterLabel>Fedex Express</masterLabel>
+            <translation><!-- Fedex Express --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fedex Ground</masterLabel>
+            <translation><!-- Fedex Ground --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Local Pickup</masterLabel>
+            <translation><!-- Local Pickup --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shuttle</masterLabel>
+            <translation><!-- Shuttle --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Show Record --></label>
+        <name>Show_Record__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Upgrade Approved --></label>
+        <name>Software_Upgrade_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+        <picklistValues>
+            <masterLabel>ATM feature not enabled</masterLabel>
+            <translation><!-- ATM feature not enabled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjusted part</masterLabel>
+            <translation><!-- Adjusted part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Adjusted volume</masterLabel>
+            <translation><!-- Adjusted volume --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assessed the damages and reported information to superiors</masterLabel>
+            <translation><!-- Assessed the damages and reported information to superiors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cash drawer refill process</masterLabel>
+            <translation><!-- Cash drawer refill process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed cash can / reject bin</masterLabel>
+            <translation><!-- Changed cash can / reject bin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changed comm port</masterLabel>
+            <translation><!-- Changed comm port --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleaned part</masterLabel>
+            <translation><!-- Cleaned part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared cmos</masterLabel>
+            <translation><!-- Cleared cmos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared jam</masterLabel>
+            <translation><!-- Cleared jam --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cleared pending transaction</masterLabel>
+            <translation><!-- Cleared pending transaction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered amusement equipment</masterLabel>
+            <translation><!-- Delivered amusement equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered hand pay bag</masterLabel>
+            <translation><!-- Delivered hand pay bag --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enabled payout parameter</masterLabel>
+            <translation><!-- Enabled payout parameter --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Enabled validation code manually</masterLabel>
+            <translation><!-- Enabled validation code manually --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Exited game</masterLabel>
+            <translation><!-- Exited game --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Flashed bill acceptor</masterLabel>
+            <translation><!-- Flashed bill acceptor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Informed location rm of issue</masterLabel>
+            <translation><!-- Informed location rm of issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Installed nrt patch</masterLabel>
+            <translation><!-- Installed nrt patch --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issue resolved itself</masterLabel>
+            <translation><!-- Issue resolved itself --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Issued facility pay form</masterLabel>
+            <translation><!-- Issued facility pay form --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Liquor license not in effect</masterLabel>
+            <translation><!-- Liquor license not in effect --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Machine pending agent appt</masterLabel>
+            <translation><!-- Machine pending agent appt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Mass outage</masterLabel>
+            <translation><!-- Mass outage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Move amusement equipment</masterLabel>
+            <translation><!-- Move amusement equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No issue</masterLabel>
+            <translation><!-- No issue --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open &amp; closed all doors</masterLabel>
+            <translation><!-- Open &amp; closed all doors --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Powered machine up</masterLabel>
+            <translation><!-- Powered machine up --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided login info to location</masterLabel>
+            <translation><!-- Provided login info to location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Provided rm info to location</masterLabel>
+            <translation><!-- Provided rm info to location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ram clear</masterLabel>
+            <translation><!-- Ram clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ram clear and upgrade</masterLabel>
+            <translation><!-- Ram clear and upgrade --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ran bill test</masterLabel>
+            <translation><!-- Ran bill test --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Re-Enrolled Certificate</masterLabel>
+            <translation><!-- Re-Enrolled Certificate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rebooted machine</masterLabel>
+            <translation><!-- Rebooted machine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rebooted modem</masterLabel>
+            <translation><!-- Rebooted modem --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rebooted sgi equipment</masterLabel>
+            <translation><!-- Rebooted sgi equipment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Recalibrated touch screen</masterLabel>
+            <translation><!-- Recalibrated touch screen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigured the cassettes</masterLabel>
+            <translation><!-- Reconfigured the cassettes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reentered cassette value</masterLabel>
+            <translation><!-- Reentered cassette value --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refilled tickets / paper</masterLabel>
+            <translation><!-- Refilled tickets / paper --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Refilled vault</masterLabel>
+            <translation><!-- Refilled vault --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinitialized via sgi</masterLabel>
+            <translation><!-- Reinitialized via sgi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinserted ticket stack into printer</masterLabel>
+            <translation><!-- Reinserted ticket stack into printer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removed jam from dispenser</masterLabel>
+            <translation><!-- Removed jam from dispenser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace computer and ram clear</masterLabel>
+            <translation><!-- Replace computer and ram clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replace computer, replace back-plane board, and ram clear</masterLabel>
+            <translation><!-- Replace computer, replace back-plane board, and ram clear --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced battery</masterLabel>
+            <translation><!-- Replaced battery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Replaced part</masterLabel>
+            <translation><!-- Replaced part --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reracked cash dispenser</masterLabel>
+            <translation><!-- Reracked cash dispenser --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reseated connections</masterLabel>
+            <translation><!-- Reseated connections --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reset device (M3T)</masterLabel>
+            <translation><!-- Reset device (M3T) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI tech needed onsite</masterLabel>
+            <translation><!-- SGI tech needed onsite --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Secured button panel</masterLabel>
+            <translation><!-- Secured button panel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Securely closed door</masterLabel>
+            <translation><!-- Securely closed door --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>See Notes</masterLabel>
+            <translation><!-- See Notes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech locally disabled all games</masterLabel>
+            <translation><!-- Tech locally disabled all games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tech locally reenaled all games</masterLabel>
+            <translation><!-- Tech locally reenaled all games --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turned attendant key</masterLabel>
+            <translation><!-- Turned attendant key --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Turned printer on</masterLabel>
+            <translation><!-- Turned printer on --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPshow Changed TV Input/Turned TV On</masterLabel>
+            <translation><!-- UPshow Changed TV Input/Turned TV On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPshow Other</masterLabel>
+            <translation><!-- UPshow Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPshow Reconnected Wifi</masterLabel>
+            <translation><!-- UPshow Reconnected Wifi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UPshow Reset Chrome Device</masterLabel>
+            <translation><!-- UPshow Reset Chrome Device --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unlocked ticket via sgi</masterLabel>
+            <translation><!-- Unlocked ticket via sgi --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>User error</masterLabel>
+            <translation><!-- User error --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+        <picklistValues>
+            <masterLabel>AK</masterLabel>
+            <translation><!-- AK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AL</masterLabel>
+            <translation><!-- AL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AR</masterLabel>
+            <translation><!-- AR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AZ</masterLabel>
+            <translation><!-- AZ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CA</masterLabel>
+            <translation><!-- CA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CO</masterLabel>
+            <translation><!-- CO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CT</masterLabel>
+            <translation><!-- CT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>DE</masterLabel>
+            <translation><!-- DE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>FL</masterLabel>
+            <translation><!-- FL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>GA</masterLabel>
+            <translation><!-- GA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>HI</masterLabel>
+            <translation><!-- HI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IA</masterLabel>
+            <translation><!-- IA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ID</masterLabel>
+            <translation><!-- ID --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IL</masterLabel>
+            <translation><!-- IL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IN</masterLabel>
+            <translation><!-- IN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KS</masterLabel>
+            <translation><!-- KS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>KY</masterLabel>
+            <translation><!-- KY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LA</masterLabel>
+            <translation><!-- LA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MA</masterLabel>
+            <translation><!-- MA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MD</masterLabel>
+            <translation><!-- MD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ME</masterLabel>
+            <translation><!-- ME --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MI</masterLabel>
+            <translation><!-- MI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MN</masterLabel>
+            <translation><!-- MN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MO</masterLabel>
+            <translation><!-- MO --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MS</masterLabel>
+            <translation><!-- MS --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MT</masterLabel>
+            <translation><!-- MT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NC</masterLabel>
+            <translation><!-- NC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>ND</masterLabel>
+            <translation><!-- ND --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NE</masterLabel>
+            <translation><!-- NE --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NH</masterLabel>
+            <translation><!-- NH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NJ</masterLabel>
+            <translation><!-- NJ --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NM</masterLabel>
+            <translation><!-- NM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NV</masterLabel>
+            <translation><!-- NV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>NY</masterLabel>
+            <translation><!-- NY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OH</masterLabel>
+            <translation><!-- OH --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OK</masterLabel>
+            <translation><!-- OK --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>OR</masterLabel>
+            <translation><!-- OR --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PA</masterLabel>
+            <translation><!-- PA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RI</masterLabel>
+            <translation><!-- RI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SC</masterLabel>
+            <translation><!-- SC --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SD</masterLabel>
+            <translation><!-- SD --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TN</masterLabel>
+            <translation><!-- TN --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TX</masterLabel>
+            <translation><!-- TX --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UT</masterLabel>
+            <translation><!-- UT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VA</masterLabel>
+            <translation><!-- VA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VT</masterLabel>
+            <translation><!-- VT --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WA</masterLabel>
+            <translation><!-- WA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WI</masterLabel>
+            <translation><!-- WI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WV</masterLabel>
+            <translation><!-- WV --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WY</masterLabel>
+            <translation><!-- WY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Request Status --></label>
+        <name>Status_AddSwapRequest__c</name>
+        <picklistValues>
+            <masterLabel>Approved</masterLabel>
+            <translation><!-- Approved --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied</masterLabel>
+            <translation><!-- Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Compliance Approval</masterLabel>
+            <translation><!-- Pending Compliance Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Regional Approval</masterLabel>
+            <translation><!-- Pending Regional Approval --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Parts Request Status --></label>
+        <name>Status_PartsRequest__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending: Back-ordered</masterLabel>
+            <translation><!-- Pending: Back-ordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending: Order Submitted</masterLabel>
+            <translation><!-- Pending: Order Submitted --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ready for pick-up</masterLabel>
+            <translation><!-- Ready for pick-up --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Swap Approved --></label>
+        <name>Swap_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tech Notes --></label>
+        <name>Tech_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test --></label>
+        <name>Test__c</name>
+    </fields>
+    <fields>
+        <label><!-- Three Month Average HPD --></label>
+        <name>Three_Month_Average_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Dark Time (in Days) --></label>
+        <name>Total_Dark_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Removals --></label>
+        <name>Total_Removals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Down --></label>
+        <name>Total_Time_Down__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracking # (if applicable) --></label>
+        <name>Tracking_if_applicable_text__c</name>
+    </fields>
+    <fields>
+        <help><!-- Check this box after checking knowledge and completing troubleshooting steps --></help>
+        <label><!-- Troubleshooting Completed --></label>
+        <name>Troubleshooting_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Request --></label>
+        <name>Type_of_Request__c</name>
+        <picklistValues>
+            <masterLabel>Additions</masterLabel>
+            <translation><!-- Additions --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete Removal</masterLabel>
+            <translation><!-- Complete Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Area Asset</masterLabel>
+            <translation><!-- Gaming Area Asset --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New Location</masterLabel>
+            <translation><!-- New Location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocation</masterLabel>
+            <translation><!-- Relocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removals</masterLabel>
+            <translation><!-- Removals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Software Upgrades</masterLabel>
+            <translation><!-- Software Upgrades --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swaps</masterLabel>
+            <translation><!-- Swaps --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Investigated By --></label>
+        <name>User_Case__c</name>
+        <relationshipLabel><!-- Cases (Investigated By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Cases (User) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- SAS Position --></label>
+        <name>VGT_Asset__c</name>
+    </fields>
+    <fields>
+        <label><!-- Voucher Number --></label>
+        <name>Voucher_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order --></label>
+        <name>Work_Order__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Work Type --></label>
+        <lookupFilter>
+            <errorMessage><!-- WorkType filter exception --></errorMessage>
+        </lookupFilter>
+        <name>Work_Type__c</name>
+        <relationshipLabel><!-- Cases --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Zip --></label>
+        <name>Zip__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Call Center --></label>
+        <name>Call_Center</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Facility Pay --></label>
+        <name>Facility_Pay</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- A &quot;Reason for Solution Manager&quot; must be selected. --></errorMessage>
+        <name>Reason_for_Solution_Manager_required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- All Payee Information Is Required --></errorMessage>
+        <name>Required_Contact_Information</name>
+    </validationRules>
+    <webLinks>
+        <label><!-- FT_Generate_Documents_Lightning --></label>
+        <name>Form_Builder__FT_Generate_Documents_Lightning</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_Multiple_PDF --></label>
+        <name>Form_Builder__FT_Generate_Multiple_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- FT_Generate_PDF --></label>
+        <name>Form_Builder__FT_Generate_PDF</name>
+    </webLinks>
+    <webLinks>
+        <label><!-- Send_with_DocuSign --></label>
+        <name>dsfs__Send_with_DocuSign</name>
+    </webLinks>
+    <workflowTasks>
+        <name>Update_Asset_for_Swap</name>
+        <subject><!-- Update Asset for Swap --></subject>
+    </workflowTasks>
+</CustomObjectTranslation>

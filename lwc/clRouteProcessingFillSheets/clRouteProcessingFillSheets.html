@@ -1,0 +1,105 @@
+<!-- Cl Route Processing Fill Sheets -->
+<template>
+    <div class="slds-m-bottom_x-large">
+        <div class="slds-p-around_xxx-small">
+            <lightning-card actions={rpsActions}
+                            onactiontriggered={handleAction}>
+                <h1 slot="title" class="no-wrap">
+                    <c-ui-card-title
+                            if:true={routeScheduleData}
+                            card-title="Filling"
+                            card-subtitle={cardSubtitle}
+                            card-second-subtitle={routeScheduleData.Name}
+                            show-back-button={showBackButton}
+                            back-button-label="Back"
+                            onbackclicked={handleBackClicked}
+                            icon-name="standard:partner_fund_allocation"
+                            icon-size="medium">
+                    </c-ui-card-title>
+                </h1>
+                <!-- ==========   RPS DATA ============ -->
+                <div     if:true={showRpsData}
+                        class="slds-p-bottom_large accel-card-height-min accel-test-borders">
+                    <ul
+                    name="listOuterTag"
+                    class="slds-has-dividers_bottom-space lgc-bg slds-m-around_small slds-m-top_none">
+
+
+                    <template for:each={rpsData} for:item="rps">
+
+                        <li name="listItemContainer"
+                            class="slds-item lgc-bg accel-glassmorphism_tile slds-m-bottom_small"
+                            style={rps.rpsRowStyle}
+                            key={rps.rpsId}
+                            data-rpsid={rps.rpsId}
+                            data-accountid={rps.rps.Account__c}
+                            onclick={handleItemSelected}
+                            onmouseover={handleListMouseover}>
+
+                            <lightning-tile type="media"
+                                            actions={rpsActions}
+                                            onactiontriggered={handleAction}
+                                            label={rps.locName}>
+                                <lightning-icon
+                                        size="small"
+                                        slot="media" icon-name="standard:account"></lightning-icon>
+                                <div class="slds-truncate" title={rps.rpsName}>
+                                    <dl class="slds-dl_horizontal ">
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                            <p class="slds-truncate" title={rps.rpsName}><b>{rps.rpsName}</b></p>
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                            <p class="slds-truncate" title={rps.rpsProcessingStatus}><b>{rps.rpsProcessingStatus}</b>
+                                            </p>
+                                        </dd>
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                            {rps.redemptionType}
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+                                            <p class="slds-truncate" title="Location Address">
+                                                {rps.formattedAddressText}
+                                            </p>
+                                        </dd>
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                            <p class="slds-truncate" title={rps.rpsReplenishmentType}>{rps.rpsReplenishmentType}</p>
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+
+                                        </dd>
+                                        <!--  https://accel-entertainment.monday.com/boards/1300348967/pulses/2759849607 -->
+                                        <dt class="slds-dl_horizontal__label accel-dl_horizontal__label">
+                                            <p class="slds-truncate" title={rps.rpsCollectionType}>{rps.rpsCollectionType}</p>
+                                        </dt>
+                                        <dd class="slds-dl_horizontal__detail slds-tile__meta accel-dl_horizontal__detail">
+
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </lightning-tile>
+                        </li>
+                    </template>
+                </ul>
+                </div>
+
+                <!-- ==========   NO DATA FOUND  ============ -->
+                <div if:true={showNoData}>
+                    <div if:true={_invalidParameters} class="slds-p-around_medium">
+                        <c-ui-scoped-notification
+                                message="No route schedule selected for this page"
+                                icon-variant="inverse"
+                                custom-icon-size="xx-small"
+                                icon-name="utility:error"
+                                custom-class="accel-notification-error_theme slds-theme_alert-texture"
+                                theme="error">
+                        </c-ui-scoped-notification>
+                    </div>
+                    <c-ui-empty-state
+                            container-class="slds-illustration slds-illustration_large"
+                            header-text="No data found"
+                            body-text={emptyBodyText}>
+                    </c-ui-empty-state>
+                </div>
+            </lightning-card>
+        </div>
+    </div>
+</template>

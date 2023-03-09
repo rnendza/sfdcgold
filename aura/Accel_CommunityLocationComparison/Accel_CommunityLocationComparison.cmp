@@ -1,0 +1,103 @@
+<aura:component description="Accel_CommunityLocationComparison"
+                controller="Accel_CommunityLocComparisonController">
+    <ltng:require
+            scripts="{!$Resource.accelcommunity_alpha_echarts + '/echarts.min.js'}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="mapMarkers" type="Object"/>
+    <aura:attribute name="center" type="Object"/>
+    <aura:attribute name="zoomLevel" type="Integer"/>
+    <aura:attribute name="markersTitle" type="String"/>
+    <aura:attribute name="showFooter" type="Boolean"/>
+
+
+    <aura:attribute name="visibleAccountIds" type="List" access="global"/>
+    <aura:attribute name="showComparisonSpinner" type="Boolean"/>
+    <aura:attribute name="accountHpdMap" type="Map"/>
+    <aura:attribute name="pickListSelectOneText" type="string" default="-- Please Select a Location --"/>
+    <aura:attribute name="locTypes" type="List"/>
+    <aura:attribute name="distances" type="List"/>
+    <aura:attribute name="userAccounts" type="List" />
+
+    <aura:attribute name="resultColumns" type="List" />
+    <aura:attribute name="resultData" type="Object" access="public"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <lightning:spinner variant="brand" size="large" aura:id="locComparisonSpinner"
+                       class="{!((v.showComparisonSpinner)? '': 'slds-hide')}"
+                       alternativeText="Loading"/>
+
+    <div class="accel-wip-2" style="background-color: #f3f2f2;">
+        <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters accel-top-search-input-container"
+         style="padding-left: 10px;padding-right:10px">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 accel-wip-0">
+                <c:Accel_LocationPicklist userAccounts="{!v.userAccounts}" displaySelectOne="false" />
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 accel-wip-0">
+                <lightning:select name="locTypePlSelect" label="Location Type"
+                                  onchange="{!c.onChangeLocType}"
+                                  aura:id="locTypePlSelect">
+                    <aura:iteration items="{!v.locTypes}" var="locType">
+                        <option text="{!locType.label}" value="{!locType.value}"></option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 accel-wip-0">
+                <lightning:select name="distancePlSelect" label="Distance"
+                                  onchange="{!c.onChangeDistance}"
+                                  aura:id="distancePlSelect">
+                    <aura:iteration items="{!v.distances}" var="distance">
+                        <option text="{!distance.label}" value="{!distance.value}"></option>
+                    </aura:iteration>
+                </lightning:select>
+            </div>
+        </div>
+        <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters" >
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_8-of-12 slds-large-size_8-of-12 accel-wip-0">
+                <lightning:map
+                        class="accel-google-map"
+                        mapMarkers="{! v.mapMarkers }"
+                        zoomLevel="{! v.zoomLevel }"
+                        center="{! v.center }"
+                        markersTitle="{! v.markersTitle }"
+                        showFooter="{ !v.showFooter }">
+                </lightning:map>
+            </div>
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12 accel-wip-0">
+                <div style="min-height: 400px">
+                    <ui:scrollerWrapper class="accel-datatable-scrollersize">
+                    <lightning:datatable data="{! v.resultData }"
+                                         columns="{! v.resultColumns }"
+                                         class="slds-max-medium-table_stacked accel-prevent-datatable-wrap-icon
+                                         accel-location-comparison-datatable accel-location-monthly-details-datatable"
+                                         keyField="location"
+                                         showRowNumberColumn="false"
+                                         hideCheckboxColumn="true"/>
+                    </ui:scrollerWrapper>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="accel-wip-2" style="margin-top:20px;background-color: #f3f2f2;">
+        <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters">
+            <div class="slds-col slds-size_1-of-1 slds-medium-size_12-of-12 slds-large-size_12-of-12 accel-wip-0">
+                <div class="accel-chart-shadow-drag accel-chart-container">
+                    <div class="accel-echarts-location-comparison-container">
+                        <div class="accel-echarts-location-comparison-chart"
+                             style="height:400px;width:100%"
+                             aura:id="echartsLocationComparison">
+                            <!-- injected via Echarts -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</aura:component>

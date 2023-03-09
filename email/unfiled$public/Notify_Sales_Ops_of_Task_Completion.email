@@ -1,0 +1,10 @@
+Greetings,
+
+This is an automated message to inform you that a {!Task.Type} task created by {!Task.CreatedBy} (who is an inactive user) was completed by  {!Task.LastModifiedBy}. 
+
+Please, review the task and notify the correct party for next steps
+
+Related Record: {!Task.Related_to_Record_Name__c}
+
+Click the link below to review the task details
+{!Task.Link}

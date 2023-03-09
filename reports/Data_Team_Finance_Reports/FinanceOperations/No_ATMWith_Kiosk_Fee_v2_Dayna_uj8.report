@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Account$IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Account$Name</field>
+    </columns>
+    <columns>
+        <field>Account$Legal_Name__c</field>
+    </columns>
+    <columns>
+        <field>Account$Active_Kiosk_Agreement__c.Kiosk_ATM_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Account$Active_Kiosk_Agreement__c.Kiosk_Fee__c</field>
+    </columns>
+    <columns>
+        <field>Account$Accel_VGT_Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Account$Redemption__c</field>
+    </columns>
+    <columns>
+        <field>Account$Redemption__c.VGT_Live_Date__c</field>
+    </columns>
+    <description>Excludes locations where redemption unit is Safe Cash.</description>
+    <filter>
+        <booleanFilter>1 AND (2 AND 3) AND 4 AND 5</booleanFilter>
+        <criteriaItems>
+            <column>Account$Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Accel Account,Temp Closure</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Active_Kiosk_Agreement__c.Kiosk_Fee__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>0</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Active_Kiosk_Agreement__c.Kiosk_Fee__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Redemption__c.GP_Manufacturer__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notContain</operator>
+            <value>Safe Cash</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Account$Active_Kiosk_Agreement__c.Status</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Active</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>No ATM-With Kiosk Fee - v2 Dayna</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Accounts_Agreement__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>Account$Name</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>Account$Accel_VGT_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

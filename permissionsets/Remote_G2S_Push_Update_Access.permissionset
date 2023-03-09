@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>To give users access to Remote G2S Update fields on Asset. Per ticket https://accel-entertainment.monday.com/boards/942883797/pulses/1930271964</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.G2S_Live_Date__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Asset.Remote_G2S_Updated__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Remote G2S Push Updates Access</label>
+</PermissionSet>

@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CL_Delete_Route_Import_Files</name>
+    </customPermissions>
+    <customPermissions>
+        <enabled>true</enabled>
+        <name>CL_Publish_Route_Import_Files</name>
+    </customPermissions>
+    <description>Allows admins to delete / publish etc route import files (uses custom permissions)</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>CL - Route Import Administration</label>
+</PermissionSet>

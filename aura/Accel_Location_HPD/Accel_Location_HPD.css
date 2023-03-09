@@ -1,0 +1,81 @@
+.THIS .slds-button_icon-bare{ display: none;}
+.THIS .accel-desktop-table {font-size:.875rem;}
+.THIS .slds-accordion__summary {
+    display: flex;
+    align-items: center;
+    background: rgb(243, 242, 242);
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    color: currentColor;
+    padding:.30rem; /*TODO this is probably wrong! */
+    font-weight: bold;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+}
+@media (max-width: 48em) {
+    .THIS .slds-max-medium-table_stacked-horizontal tr, .THIS .slds-max-medium-table--stacked-horizontal tr {
+        display: block;
+        border-top: 1px solid rgb(221, 219, 218);
+    }
+    .THIS .slds-max-medium-table_stacked-horizontal th, .THIS .slds-max-medium-table_stacked-horizontal td,
+    .THIS .slds-max-medium-table--stacked-horizontal th, .THIS .slds-max-medium-table--stacked-horizontal td {
+            padding: 0.50rem;
+    }
+    .THIS .mobile-margin-left {
+        margin-left:10px;
+    }
+}
+@media only screen and (max-device-width: 480px) {
+    .THIS .slds-accordion__section {
+        background: white;
+    }
+    .THIS .slds-accordion__summary-heading {
+        border-top: 1px solid rgb(221, 219, 218);
+        border-bottom: 1px solid rgb(221, 219, 218);
+        padding-left:10px;
+    }
+    .THIS .slds-accordion__summary {
+        background: white;
+        color: currentColor;
+        padding: 0;
+        align-items: center;
+        text-align: left;
+    }
+    .THIS .slds-p-horizontal_large{
+        padding-right:0;
+    }
+    .THIS .slds-table_header-fixed_container, .THIS .slds-table--header-fixed_container {
+        position: relative;
+        padding-top: 1rem;
+        background-color: white;
+        overflow: hidden;
+    }
+    .THIS .slds-table_header-fixed tbody tr:first-child td, .THIS .slds-table_header-fixed tbody tr:first-child th,
+    .THIS .slds-table--header-fixed tbody tr:first-child td, .THIS .slds-table--header-fixed tbody tr:first-child th {
+        border: inherit;
+    }
+    .THIS .slds-max-medium-table_stacked-horizontal tr>td:first-child, .THIS .slds-max-medium-table_stacked-horizontal tr>td:last-child,
+    .THIS .slds-max-medium-table--stacked-horizontal tr>td:first-child, .THIS .slds-max-medium-table--stacked-horizontal tr>td:last-child {
+        padding:.50rem;
+    }
+    .THIS .slds-table_header-fixed tbody tr th {
+        font-weight:bold;
+    }
+    .THIS .accel-grid-background-override {
+        background-color: rgba(201, 199, 197, 0.15);
+        padding-bottom:10px;
+    }
+    .THIS .accel-no-top-padding {
+        padding-top:0px;
+    }
+    .THIS .slds-is-mobile .slds-form-element__static {
+        /* @TODO REMOVE IMPORTANT */
+        font-size: 1.10rem!important;
+        font-weight: bold!important;
+    }
+}
+.THIS .slds-accordion__section {padding: 0;}
+.THIS .slds-form-element__icon {padding-top:0;}
+.THIS .accel-grid-background-override {padding-bottom:10px;}
+.THIS .accel-hpd-summary-values .slds-form-element__static {font-size:.95em}

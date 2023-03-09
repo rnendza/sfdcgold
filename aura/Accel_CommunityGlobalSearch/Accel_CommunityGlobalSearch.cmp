@@ -1,0 +1,19 @@
+<!--
+Use this to roll our own search if desired..
+-->
+<aura:component implements="forceCommunity:searchInterface" access="global">
+    <div class="big-search-container selfServiceSearchWrapper forceCommunityOmniBox" data-aura-class="selfServiceSearchWrapper forceCommunityOmniBox">
+        <div class="image-wrapper">
+            <div class="no-assigned-image">
+                <div style="text-align: center">
+                    <span style="font-size:.8em;color:white">
+                        <!--
+                        <br/>
+                    @TODO Global Search or no search? What are the requirements?
+                    -->
+                    </span>
+                </div>
+            </div>
+        </div>
+    </div>
+</aura:component>

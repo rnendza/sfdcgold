@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Post_to_RM_0</name>
+        <label>Post to RM</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Common_Name_Changed_Chatter</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Account.Relationship_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Post_to_RM_0_0</name>
+        <label>Post to RM</label>
+        <locationX>314</locationX>
+        <locationY>575</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <elementReference>Common_Name_Not_Changed_Chatter</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Account.Relationship_Manager__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <decisions>
+        <name>Did_Common_Name_change</name>
+        <label>Did Common Name change?</label>
+        <locationX>182</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Post_to_RM_0_0</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Common_Name__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Post_to_RM_0</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Does_Account_Have_an_Assigned_RM</name>
+        <label>Does Account Have an Assigned RM?</label>
+        <locationX>380</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Account Has No RM</defaultConnectorLabel>
+        <rules>
+            <name>Account_Has_RM</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Account.Relationship_Manager__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Did_Common_Name_change</targetReference>
+            </connector>
+            <label>Account Has RM</label>
+        </rules>
+    </decisions>
+    <description>When software update is done, chatter RM with changes.</description>
+    <interviewLabel>Asset: Notify RM of software upgrade {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Asset: Chatter RM of software upgrade</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <start>
+        <locationX>254</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Does_Account_Have_an_Assigned_RM</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>G2S_Live_Date__c</field>
+            <operator>IsChanged</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <object>Asset</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Common_Name_Changed_Chatter</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is an automated message to advise you that SAS# {!$Record.SAS__c} {!$Record.GP_Manufacturer__c} on Account {!$Record.Account.Name} has been successfully G2S remotely upgraded as of {!$Record.G2S_Live_Date__c}. S
+AS# {!$Record.SAS__c} {!$Record.GP_Manufacturer__c} went from {!varPriorCommonName} to {!$Record.Common_Name__c}. 
+If you have questions about this or any other upgrade, please check with Compliance. 
+Click here to see the Asset: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Common_Name_Not_Changed_Chatter</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is an automated message to advise you that SAS# {!$Record.SAS__c} {!$Record.GP_Manufacturer__c} on Account {!$Record.Account.Name} has been successfully G2S remotely upgraded as of {!$Record.G2S_Live_Date__c}. 
+SAS# {!$Record.SAS__c} {!$Record.GP_Manufacturer__c} remained as {!$Record.Common_Name__c}. 
+If you have questions about this or any other upgrade, please check with Compliance. 
+Click here to see the Asset: {!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <variables>
+        <name>varPriorCommonName</name>
+        <dataType>String</dataType>
+        <isCollection>false</isCollection>
+        <isInput>true</isInput>
+        <isOutput>true</isOutput>
+        <value>
+            <elementReference>$Record__Prior.Common_Name__c</elementReference>
+        </value>
+    </variables>
+</Flow>

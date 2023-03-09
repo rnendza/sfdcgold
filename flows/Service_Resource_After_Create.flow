@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>56.0</apiVersion>
+    <description>Triggered after a Service Resource record is created. Creates a Location (van) record and populates locationId lookup on the Service Resource.</description>
+    <environments>Default</environments>
+    <formulas>
+        <description>Name for the Service Resource&apos;s Vehicle/Van</description>
+        <name>VarVanName</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.RelatedRecord.FirstName} +&quot; &quot;+{!$Record.RelatedRecord.LastName}+&quot;&apos;s&quot; +&quot; &quot;+&quot;Vehicle&quot;</expression>
+    </formulas>
+    <interviewLabel>Service Resource - After Create {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Service Resource - After Create</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordCreates>
+        <description>Create a Location (van) record for the newly created Service Resource.</description>
+        <name>Create_Location</name>
+        <label>Create Location Record</label>
+        <locationX>176</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Update_Service_Resource</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>IsInventoryLocation</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>IsMobile</field>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>LocationType</field>
+            <value>
+                <stringValue>Van</stringValue>
+            </value>
+        </inputAssignments>
+        <inputAssignments>
+            <field>Name</field>
+            <value>
+                <elementReference>VarVanName</elementReference>
+            </value>
+        </inputAssignments>
+        <object>Location</object>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </recordCreates>
+    <recordUpdates>
+        <description>Update the Service Resource record lookup for LocationId for the newly created Van.</description>
+        <name>Update_Service_Resource</name>
+        <label>Update Service Resource</label>
+        <locationX>176</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>LocationId</field>
+            <value>
+                <elementReference>Create_Location</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>50</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Create_Location</targetReference>
+        </connector>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>ResourceType</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>T</stringValue>
+            </value>
+        </filters>
+        <object>ServiceResource</object>
+        <recordTriggerType>Create</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+</Flow>

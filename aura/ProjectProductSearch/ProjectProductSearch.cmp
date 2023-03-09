@@ -1,0 +1,83 @@
+<aura:component controller="ProductSearchController" implements="flexipage:availableForAllPageTypes,force:lightningQuickActionWithoutHeader,force:hasRecordId" access="global">
+    <aura:html tag="style">
+        .slds-modal__container {
+            max-width: 100rem !important;
+            width:90% !important;
+        }
+
+        .slds-p-around_medium, .slds-p-around--medium {
+            padding: 0px !important;   
+        }
+
+        .forceChatterBasePublisher :not(.PHONE) .cuf-content  {
+            padding: 0px;
+        }
+    </aura:html>
+
+    <!-- attributes -->
+    <aura:attribute name="step" type="Integer" default="0" access="private" />
+
+    <!-- STEP 1 PRIVATE ATTRIBUTES -->
+    <aura:attribute name="data" type="List" default="[]"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="searchString" type="String" default=""/>
+    <aura:attribute name="queryOffset" type="Integer" default="0"/>
+    <aura:attribute name="loadMoreOffset" type="Integer" default="20"/>
+    <aura:attribute name="selectedRows" type="List" default="[]"/>
+    <aura:attribute name="selectedProducts" type="Map" default="{}"/>
+    <aura:attribute name="selectedProductsList" type="List" default="[]"/>
+    <aura:attribute name="enableInfiniteLoading" type="Boolean" default="true" />
+
+    <!-- STEP 2 PRIVATE ATTRIBUTES -->
+    <aura:attribute name="projectLines" type="List" default="[]" />
+
+    <!-- handlers-->
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <aura:if isTrue="{!v.step == 0}">
+        <header class="slds-modal__header">
+            <h2 id="modal-heading-01" class="slds-text-heading_medium slds-hyphenate">Add Products</h2>
+            <div class="slds-text-body_regular">Price Book: Standard Price Book</div>
+        </header>
+        <div class="slds-modal__menu slds-p-around_small" style="border-bottom: 2px solid rgb(221, 219, 218);">
+            <span onkeypress="{!c.search}">
+                <lightning:input aura:id="lookup" variant="label-hidden" placeholder="Search Products..." value="{!v.searchString}" type="search" />
+            </span>
+            <div class="slds-p-top_small">
+                <lightning:pillContainer items="{!v.selectedProductsList}" onitemremove="{!c.handleProductRemove}" />
+            </div>
+        </div>
+        <div class="slds-modal__content" id="modal-content-id-1" style="height: 482px">
+            <lightning:datatable
+                    aura:id="productTable"
+                    columns="{! v.columns }"
+                    data="{! v.data }"
+                    keyField="Id"
+                    showRowNumberColumn="false"
+                    onrowselection="{! c.updateSelectedRows }"
+                    enableInfiniteLoading="{!v.enableInfiniteLoading}"
+                    loadMoreOffset="{! v.loadMoreOffset }"
+                    selectedRows="{!v.selectedRows}"
+                    onloadmore="{! c.loadMoreData }"
+                    />
+        </div>
+    </aura:if>
+    <aura:if isTrue="{!v.step == 1}">
+        <c:ProjectProductEdit aura:id="productEditCmp" recordId="{!v.recordId}" projectLines="{!v.projectLines}" />
+    </aura:if>
+    <footer class="slds-modal__footer">
+        <aura:if isTrue="{!v.step == 1}">
+            <div class="slds-float_left">
+                <button class="slds-button slds-button_neutral" onclick="{!c.searchProducts}">Back</button>
+            </div>
+        </aura:if>
+        <button class="slds-button slds-button_neutral" onclick="{!c.closeModal}">Cancel</button>
+        <aura:if isTrue="{!v.step == 0}">
+            <button class="slds-button slds-button_brand" onclick="{!c.editProducts}">Next</button>
+            <aura:set attribute="else">
+                <button class="slds-button slds-button_brand" onclick="{!c.callSaveProjectLines}">Save</button>
+            </aura:set>
+        </aura:if>
+        
+    </footer>
+</aura:component>

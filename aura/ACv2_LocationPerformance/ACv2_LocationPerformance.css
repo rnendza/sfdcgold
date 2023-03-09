@@ -1,0 +1,402 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+
+    .THIS .accel-cmp-wrap {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 4px;
+        padding: 20px;
+    }
+
+    .THIS .accel-value-container {
+        justify-content: center;
+        border-radius: 4px;
+    }
+
+    .THIS .accel-value-grid {
+        background-color: white;
+        border-radius: 4px;
+    }
+    .THIS .accel-mobile-block{
+        justify-content:center;
+    }
+    .THIS .accel-ytd-container{
+        padding-top: 85px;
+    }
+    .THIS .accel-mobile-full-width{
+
+    }
+    .THIS .accel-select-small label {
+        display: none !important;
+    }
+
+    .THIS .accel-select-small .slds-form-element__control {
+        padding-top: 10px !important;
+    }
+
+    .THIS .accel-select-small select {
+        font-weight: 500;
+    }
+
+    .THIS .noLabel label {
+        display: none !important;
+    }
+
+    .THIS .noLabel {
+        padding-top: 10px;
+    }
+    .THIS .accel-mobile-date-select{
+    }
+    .THIS .accel-desktop-date-select{
+
+    }
+
+    .THIS .locationSelected {
+        font-size: 20px;
+        font-weight: 700;
+        text-decoration: underline;
+        line-height: 60px;
+    }
+
+    .THIS .locationSelectedTitle {
+        text-align: left;
+        padding-top: 68px;
+        padding-left: 30px;
+    }
+
+    .THIS .locationSelectedLabel {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 150px;
+        display: inline-block;
+    }
+
+    .THIS .locationSelectedValue {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+
+    }
+    .THIS .accel-mtd-box-top {
+        padding-bottom: 10px;
+        font-weight: bold;
+        font-size: 1.3rem;
+        text-align: center;
+        vertical-align: bottom;
+        line-height: 1.4rem;
+    }
+    .THIS .msgbox-medium {
+        padding-bottom: 13px;
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: 	#F8F8F8;
+        border-radius: 6px;
+        padding-top: 10px;
+        text-align: center;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-bottom: 55px;
+    }
+    .THIS .mtd-value {
+        font-weight: bold;
+        font-size: 1.4rem;
+        text-align: center;
+        color: #6fb696;
+        line-height: 1.5rem;
+    }
+    .THIS .pos-profit {
+        color: #6fb696 !important;
+    }
+    .THIS .pos-profit-funds {
+        color: deepskyblue !important;
+    }
+
+    .THIS .neg-profit {
+        color: #FF0000 !important;
+    }
+    .THIS .accel-metric{
+        font-size: 1.2rem !important;
+        color: black;
+    }
+
+    .THIS .month {
+        font-style: italic;
+        color: blue;
+    }
+
+    .THIS .percentDiff {
+        font-size: 1.2rem !important;
+    }
+    .THIS .dataGreen {
+        color: #6fb696;
+    }
+
+    .THIS .dataBlue {
+        color: #00bfff;
+    }
+
+    .THIS .dataOrange {
+        color: orange;
+    }
+    .THIS .iconGreen svg {
+        fill: #6fb696 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .THIS .iconBlue svg {
+        fill: #00BFFF !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+
+    .THIS .iconRed svg {
+        fill: #FF0000 !important;
+        margin-top: -5px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    .THIS .accel-mobile-nav-link{
+    }
+
+    .THIS .accel-value-grid lightning-button-menu {
+        display: none !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled svg {
+        fill: white !important;
+    }
+
+    .THIS .downloadDiv {
+        text-align: right;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+
+    /* https://accel-entertainment.monday.com/boards/286658657/pulses/293968275 */
+    .THIS .accel-navpage-link {
+        font-size: .90em
+    }
+
+    .THIS .accel-navpage-icon svg {
+        fill: rgb(51, 149, 220);
+    }
+    .THIS .downloadBtn {
+    }
+
+    /* in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+    .THIS .accel-grid-styled.slds-table_striped tbody tr:nth-of-type(2n) > th {
+        in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+        background-color: green;
+    }
+    .THIS .accel-grid-styled.slds-table_striped tbody tr:nth-of-type(2n) > td {
+         in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+        background-color: green;
+    }
+    */
+}
+/* styles for mobile */
+@media only screen and (max-width: 767px){
+    .THIS {
+        margin-left: -.7rem;
+        margin-right: -.7rem;
+    }
+    .THIS .accel-cmp-wrap {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        background-color: white;
+        border-radius: 4px;
+        padding: 10px;
+    }
+
+    .THIS .accel-value-container {
+        border-radius: 4px;
+    }
+    .THIS .accel-mobile-block{
+        display: block !important;
+    }
+    .THIS .accel-mobile-full-width{
+        width: 100% !important;
+    }
+    .THIS .accel-value-grid {
+        background-color: white;
+        border-radius: 4px;
+        display:none;
+    }
+
+    .THIS .accel-select-small label {
+        display: none !important;
+    }
+
+    .THIS .accel-select-small .slds-form-element__control {
+        padding-top: 10px !important;
+    }
+
+    .THIS .accel-select-small select {
+        font-weight: 500;
+    }
+
+    .THIS .noLabel label {
+    }
+
+    .THIS .noLabel {
+        padding-top: 10px;
+    }
+    .THIS .accel-mobile-date-select{
+        width: 85%;
+        display:block !important;
+    }
+    .THIS .accel-desktop-date-select{
+
+    }
+
+    .THIS .locationSelected {
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: underline;
+        line-height: 60px;
+    }
+
+    .THIS .locationSelectedTitle {
+        text-align: left;
+    }
+
+    .THIS .locationSelectedLabel {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+        width: 150px;
+        display: inline-block;
+    }
+
+    .THIS .locationSelectedValue {
+        font-weight: bold;
+        font-size: 1rem;
+        line-height: 30px;
+
+    }
+
+    .THIS .dataGreen {
+        color: #6fb696;
+    }
+
+    .THIS .dataBlue {
+        color: #00bfff;
+    }
+
+    .THIS .dataOrange {
+        color: orange;
+    }
+    .THIS .accel-mobile-nav-link{
+        margin-top: -20px;
+        padding-bottom: 10px;
+    }
+    .THIS .accel-value-grid lightning-button-menu {
+        display: none !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a:focus {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled thead tr th span a.slds-th__action:hover {
+        background-color: #16325c !important;
+        color: white !important;
+    }
+
+    .THIS .accel-grid-styled svg {
+        fill: white !important;
+    }
+
+    .THIS .downloadDiv {
+        text-align: right;
+        padding-bottom: 5px;
+        padding-top: 5px;
+        padding-right: 20px;
+    }
+
+    /* https://accel-entertainment.monday.com/boards/286658657/pulses/293968275 */
+    .THIS .accel-navpage-link {
+        font-size: .90em
+    }
+
+    .THIS .accel-navpage-icon svg {
+        fill: rgb(51, 149, 220);
+    }
+
+    .THIS .downloadBtn {
+        display:none;
+    }
+    /* in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+    .THIS .accel-grid-styled.slds-table_striped tbody tr:nth-of-type(2n) > th {
+        in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+        background-color: green;
+    }
+    .THIS .accel-grid-styled.slds-table_striped tbody tr:nth-of-type(2n) > td {
+         in the future if need to hack lightning datatable colors, this is the alternating row spot to change
+        background-color: green;
+    }
+    */
+}

@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <description>Cl Location Reorderer. Supports Route and Route Schedule record pages</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Cl Location Reorderer</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>Route__c</object>
+                <object>Route_Schedule__c</object>
+            </objects>
+            <property   name="cardTitle" type="String"
+                        label="Card Title"
+                        default="Reorder Stops"
+                        description="This will be used to change the stop order."
+                        placeholder="Please enter card title."/>
+            <property   name="showCardAssistance" type="boolean"
+                        label="Show Card Assistance"
+                        default="true"
+                        description="This will show an info blurb at the top informing the user what to do."/>
+            <property   name="cardAssistanceText" type="String"
+                        label="Card Assistance Text"
+                        default="Reorder Stops"
+                        description="Move your stops into the desired order via long pressing any card and moving up or down."
+                        placeholder="Please enter card assistance text"/>
+            <property   name="showAllStopsAreZeroPrompt" type="boolean"
+                        label="Show All Zero Stops Prompt"
+                        default="false"
+                        description="If all stops are currently zero A toast will be shown to the user (see below for text)."/>
+            <property   name="allStopsAreZerosText" type="String"
+                        label="All Stops Are Zero Warning Text"
+                        default="All your stops currently have no stop number. Drag any stop to initiate an auto sort by alpha. Then drag it again to your desired stop number."
+                        description="If all stops are currently zero. A warning will be toasted to the user with this text."
+                        placeholder="Please enter card all stops zero warning text."/>
+            <property   name="showMoveStatusUpdates" type="boolean"
+                        label="Show Card Move Status Updates"
+                        default="true"
+                        description="This will show a green box indicating success of a move. ie. moved loc ABC from stop 1 to stop 2"/>
+            <property   name="debugConsole" type="boolean"
+                        label="Debug Console"
+                        default="true"
+                        description="Show debug logs in the browser console."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

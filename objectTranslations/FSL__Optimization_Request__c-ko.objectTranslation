@@ -1,0 +1,312 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>최적화 요청</value>
+    </caseValues>
+    <fields>
+        <label><!-- All Services Mode --></label>
+        <name>FSL__All_Tasks_Mode__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time After --></label>
+        <name>FSL__AvgTravelTimeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time before --></label>
+        <name>FSL__AvgTravelTimeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time Without Home After --></label>
+        <name>FSL__AvgTravelTimeWithoutHomeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Time Without Home Before --></label>
+        <name>FSL__AvgTravelTimeWithoutHomeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel After Rso In Minutes --></label>
+        <name>FSL__Avg_Travel_After_Rso__c</name>
+    </fields>
+    <fields>
+        <label><!-- Avg Travel Before Rso In Minutes --></label>
+        <name>FSL__Avg_Travel_Before_Rso__c</name>
+    </fields>
+    <fields>
+        <label><!-- CandidatesIds Json --></label>
+        <name>FSL__CandidatesIds_Json__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed With Errors --></label>
+        <name>FSL__Completed_With_Errors__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Identifier --></label>
+        <name>FSL__External_Identifier__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Details --></label>
+        <name>FSL__Failure_Details__c</name>
+    </fields>
+    <fields>
+        <label><!-- Failure Reason --></label>
+        <name>FSL__Failure_Reason__c</name>
+        <picklistValues>
+            <masterLabel>Already Running</masterLabel>
+            <translation>이미 실행 중</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Click Authorize</masterLabel>
+            <translation>권한 부여 클릭</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corrupted data</masterLabel>
+            <translation>손상된 데이터</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No Availability Rule</masterLabel>
+            <translation>가용성 규칙 없음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation>알 수 없음</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Filter By Boolean --></label>
+        <name>FSL__Filter_By_Boolean__c</name>
+    </fields>
+    <fields>
+        <label><!-- Finish --></label>
+        <name>FSL__Finish__c</name>
+    </fields>
+    <fields>
+        <label><!-- Include Services With Empty Location --></label>
+        <name>FSL__Include_Services_With_Empty_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- IsHealthCheckFailed --></label>
+        <name>FSL__IsHealthCheckFailed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objects Scheduled --></label>
+        <name>FSL__Objects_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Objects To Schedule --></label>
+        <name>FSL__Objects_To_Schedule__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimization Data --></label>
+        <name>FSL__Optimization_Data__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Optimization Request Queue --></label>
+        <name>FSL__Optimization_Request_Queue__c</name>
+        <relationshipLabel><!-- Optimization Request Queue --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originating Resource Absence --></label>
+        <name>FSL__Originating_Resource_Absence__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Originating Service Appointment --></label>
+        <name>FSL__Originating_Service_Appointment__c</name>
+        <relationshipLabel><!-- Optimization Requests (Originating_Service Appointment) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Progress Start --></label>
+        <name>FSL__Request_Progress_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result Json --></label>
+        <name>FSL__Result_Json__c</name>
+    </fields>
+    <fields>
+        <label><!-- Result --></label>
+        <name>FSL__Result__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy --></label>
+        <name>FSL__Scheduling_Policy__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Recipe --></label>
+        <name>FSL__Scheduling_Recipe__c</name>
+        <relationshipLabel><!-- Scheduling Recipe --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Appointment --></label>
+        <name>FSL__Service_Appointment__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Resource --></label>
+        <name>FSL__Service_Resource__c</name>
+        <relationshipLabel><!-- Optimization Requests --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Start --></label>
+        <name>FSL__Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>FSL__Status__c</name>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>완료</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed First Optimization Day</masterLabel>
+            <translation>완료된 첫 최적화 날짜</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>실패</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In Progress</masterLabel>
+            <translation>진행 중</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Open</masterLabel>
+            <translation>열기</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>대기</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Text Status --></label>
+        <name>FSL__Text_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time Per Service --></label>
+        <name>FSL__Time_Per_Service__c</name>
+        <picklistValues>
+            <masterLabel>High</masterLabel>
+            <translation>높음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Low</masterLabel>
+            <translation>낮음</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Medium</masterLabel>
+            <translation>중간</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number Of Capacity Based Resources --></label>
+        <name>FSL__TotalNumberOfCapacityBasedResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Crews --></label>
+        <name>FSL__TotalNumberOfCrews__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Optimizable Services --></label>
+        <name>FSL__TotalNumberOfOptimizableServices__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Resources --></label>
+        <name>FSL__TotalNumberOfResources__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Scheduled Services After --></label>
+        <name>FSL__TotalNumberOfScheduledServicesAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number Of Scheduled Services Before --></label>
+        <name>FSL__TotalNumberOfScheduledServicesBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time After --></label>
+        <name>FSL__TotalTravelTimeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Before --></label>
+        <name>FSL__TotalTravelTimeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Without Home After --></label>
+        <name>FSL__TotalTravelTimeWithoutHomeAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Travel Time Without Home Before --></label>
+        <name>FSL__TotalTravelTimeWithoutHomeBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Capacity --></label>
+        <name>FSL__TotalWorkCapacity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Duration Scheduled After --></label>
+        <name>FSL__TotalWorkDurationScheduledAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Work Duration Scheduled Before --></label>
+        <name>FSL__TotalWorkDurationScheduledBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Optimization Time --></label>
+        <name>FSL__Total_Optimization_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>FSL__Type__c</name>
+        <picklistValues>
+            <masterLabel>Fill-In Schedule</masterLabel>
+            <translation>일정 채우기</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fix Overlaps</masterLabel>
+            <translation>오버랩 수정</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Global Optimization</masterLabel>
+            <translation>글로벌 최적화</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Group Nearby SAs</masterLabel>
+            <translation>SA 주변 그룹</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Resource Schedule Optimization</masterLabel>
+            <translation>리소스 일정 최적화</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SA Reshuffle</masterLabel>
+            <translation>SA 순서 다시 섞기</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Utilization Total After --></label>
+        <name>FSL__UtilizationTotalAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Total Before --></label>
+        <name>FSL__UtilizationTotalBefore__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Wrench After --></label>
+        <name>FSL__UtilizationWrenchAfter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Utilization Wrench Before --></label>
+        <name>FSL__UtilizationWrenchBefore__c</name>
+    </fields>
+    <nameFieldLabel>최적화 요청 번호</nameFieldLabel>
+    <sharingReasons>
+        <label><!-- Related Service Territory --></label>
+        <name>FSL__Related_Service_Territory</name>
+    </sharingReasons>
+    <sharingReasons>
+        <label><!-- Related Service Territory Member --></label>
+        <name>FSL__Related_Service_Territory_Member</name>
+    </sharingReasons>
+</CustomObjectTranslation>

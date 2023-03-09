@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Enregistrement d&apos;historique d&apos;alignement</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Enregistrements d&apos;historique d&apos;alignement</value>
+    </caseValues>
+    <fields>
+        <label><!-- Alignment --></label>
+        <name>maps__Alignment__c</name>
+        <relationshipLabel><!-- History Records --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>maps__Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Off-Platform Snapshot Id --></label>
+        <name>maps__SnapshotId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of History Record --></label>
+        <name>maps__Type__c</name>
+        <picklistValues>
+            <masterLabel>Optimization</masterLabel>
+            <translation>Optimisation</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Snapshot</masterLabel>
+            <translation>Cliché instantané</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Territory Modification</masterLabel>
+            <translation>Modification du territoire</translation>
+        </picklistValues>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>Nom</nameFieldLabel>
+    <startsWith>Vowel</startsWith>
+</CustomObjectTranslation>

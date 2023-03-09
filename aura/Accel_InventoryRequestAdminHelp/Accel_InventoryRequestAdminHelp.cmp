@@ -1,0 +1,29 @@
+<aura:component description="Accel_InventoryRequestAdminHelp">
+        <div class="accel-admin-help-outer-container">
+            <div class="accel-square-box__info slds-theme--shade">
+                <div class="slds-scoped-notification slds-media slds-media_top" role="status">
+                    <div class="slds-media__figure">
+                        <lightning:icon iconName="utility:info"
+                                        size="small"
+                                        class="accel-warn-icon"
+                                        alternativeText="Admin Help"/>
+
+                    </div>
+                    <div class="slds-media__body">
+                        <div class="accel-scoped-notification__warning accel-hard-wrap-text">
+                            IR Line Item Admin Help
+                        </div>
+                        <div class="accel-detailed-body-text">
+                            <div class="slds-p-left_xx-small accel-hard-wrap-text">
+                                <ui:scrollerWrapper class="scrollerSize">
+                                    This component should only be visible to System Admins.The intention is for testing from
+                                    a UI Standpoint and debugging if necessary. You may need to <i>refresh</i> this component after
+                                    inline editing.
+                                </ui:scrollerWrapper>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+</aura:component>

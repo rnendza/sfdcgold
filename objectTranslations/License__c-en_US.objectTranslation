@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>License</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Licenses</value>
+    </caseValues>
+    <fields>
+        <label><!-- AccountId --></label>
+        <name>AccountId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Type --></label>
+        <name>Account_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Active License --></label>
+        <name>Active_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Appeal Submitted --></label>
+        <name>Appeal_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- License Expiration Date --></label>
+        <name>Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- External ID --></label>
+        <name>External_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Establishment Type --></label>
+        <name>IGB_Establishment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Number --></label>
+        <name>IGB_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Renewal Flag --></label>
+        <name>IGB_Renewal_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- LicenseAppID --></label>
+        <name>LicenseAppID__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Appeal Date --></label>
+        <name>License_Appeal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Copy Received Date --></label>
+        <name>License_Copy_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Denied Date --></label>
+        <name>License_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Denied Renewal Date --></label>
+        <name>License_Denied_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Expiration Month --></label>
+        <name>License_Expiration_Month__c</name>
+        <picklistValues>
+            <masterLabel>April</masterLabel>
+            <translation><!-- April --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>August</masterLabel>
+            <translation><!-- August --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>December</masterLabel>
+            <translation><!-- December --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>February</masterLabel>
+            <translation><!-- February --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>January</masterLabel>
+            <translation><!-- January --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>July</masterLabel>
+            <translation><!-- July --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>June</masterLabel>
+            <translation><!-- June --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>March</masterLabel>
+            <translation><!-- March --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>May</masterLabel>
+            <translation><!-- May --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>November</masterLabel>
+            <translation><!-- November --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>October</masterLabel>
+            <translation><!-- October --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>September</masterLabel>
+            <translation><!-- September --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- License Issue Date --></label>
+        <name>License_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Issuing Authority --></label>
+        <name>License_Issuing_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Notes --></label>
+        <name>License_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Original Issue Date --></label>
+        <name>License_Original_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Renewal Date --></label>
+        <name>License_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- License Revoked Date --></label>
+        <name>License_Revoked_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location DBA Name --></label>
+        <name>Location__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity_RelatedList__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Project --></label>
+        <name>Project__c</name>
+        <relationshipLabel><!-- Licenses --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- RecTypeIDLookup --></label>
+        <name>RecTypeIDLookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Sent Date --></label>
+        <name>Request_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor Copy Rcvd Flag --></label>
+        <name>State_Liquor_Copy_Rcvd_Flag__c</name>
+    </fields>
+    <fields>
+        <label><!-- Test Flag Formula --></label>
+        <name>Test_Flag_Formula__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- DOJ --></label>
+        <name>DOJ</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- IGB Gaming License --></label>
+        <name>IGB_Gaming_License</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Illinois Business Authorization --></label>
+        <name>Illinois_Business_Authorization</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Gaming License --></label>
+        <name>Local_Gaming_License</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Local Liquor License --></label>
+        <name>Local_Liquor_License</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- State Liquor License --></label>
+        <name>State_Liquor_License</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- We show that a DOJ License for this Account already exists, therefore this License cannot be created. Please contact your admin if you believe this to be in error. --></errorMessage>
+        <name>DOJ_License_Already_Exists_for_Account</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You don&apos;t have the appropriate rights to modify this License Type. Contact your administrative team. --></errorMessage>
+        <name>License_Type</name>
+    </validationRules>
+</CustomObjectTranslation>

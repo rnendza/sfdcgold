@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Gameset</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Gamesets</value>
+    </caseValues>
+    <fields>
+        <help><!-- Is the gameset/software in use? --></help>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Common Name --></label>
+        <name>Common_Name__c</name>
+        <relationshipLabel><!-- Gamesets --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer (Software) --></label>
+        <name>Manufacturer_Software__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Software Name Check --></label>
+        <name>Unique_Software_Name_Check__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

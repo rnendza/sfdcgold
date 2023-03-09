@@ -1,0 +1,39 @@
+<aura:component description="Accel_Community_TermsOfUse"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityInfoController">
+
+    <aura:attribute name="termsOfUseText" type="String"/>
+    <aura:attribute name="currentUserId" type="String" default="{!$SObjectType.CurrentUser.Id}" />
+    <aura:attribute name="debugConsole" type="Boolean" default="true"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+
+    <lightning:overlayLibrary aura:id="bottomNavOverlayLib"/>
+
+    <div class="slds-is-relative" style="min-height: 20vh;">
+        <div class="c-container">
+            <div>
+                    <div>
+                         <lightning:formattedRichText value="{!v.termsOfUseText}"/>
+                    </div>
+            </div>
+            <div class="slds-m-top_large" style="text-align:center">
+
+                            <lightning:layout horizontalAlign="center" class="acceptButtonLayout" >
+                                <lightning:layoutItem flexibility="grow">
+                                    <lightning:button variant="brand" onclick="{!c.handleAccept}"
+                                                      class="acceptButton"
+                                                      iconName="utility:approval" iconPosition="right"
+                                                      type="submit" name="accept" label="&nbsp;Accept&nbsp;"/>
+                                </lightning:layoutItem>
+                            </lightning:layout>
+
+            </div>
+        </div>
+    </div>
+</aura:component>

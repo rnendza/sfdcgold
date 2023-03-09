@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Case$CaseNumber</field>
+    </columns>
+    <columns>
+        <field>Case$Account.IGB_License__c</field>
+    </columns>
+    <columns>
+        <field>Case$Account</field>
+    </columns>
+    <columns>
+        <field>Case$CreatedDate</field>
+    </columns>
+    <columns>
+        <field>Case$Assigned_Resource__c</field>
+    </columns>
+    <columns>
+        <field>Case$Assigned_Resource__c.Profile</field>
+    </columns>
+    <columns>
+        <field>Case$Assigned_Resource__c.Email</field>
+    </columns>
+    <columns>
+        <field>Case$Account.Finance_Region_Formula__c</field>
+    </columns>
+    <columns>
+        <field>Case$Collection_Region__c</field>
+    </columns>
+    <columns>
+        <field>Case$Service_Territory__c</field>
+    </columns>
+    <columns>
+        <field>Case$Service_Region__c</field>
+    </columns>
+    <filter>
+        <booleanFilter>1 AND (2 OR 3)</booleanFilter>
+        <criteriaItems>
+            <column>Case$CreatedDate</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>1/15/2021 12:00 AM</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Work_Type__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>e fill</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Case$Solution__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>contains</operator>
+            <value>e fill</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>FP&amp;A -  E Fill Report</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CaseBase__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Case$Approved_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

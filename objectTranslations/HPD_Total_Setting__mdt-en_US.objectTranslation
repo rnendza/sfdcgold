@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>HPD Total Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>HPD Total Settings</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account Batch Size --></label>
+        <name>Account_Batch_Size__c</name>
+    </fields>
+    <fields>
+        <label><!-- Display HPD Total Avg on Account --></label>
+        <name>Display_HPD_Total_Avg_on_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD Account Types --></label>
+        <name>HPD_Account_Types__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Daily HPD Upload Date --></label>
+        <name>Last_Daily_HPD_Upload_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Email addresses for Scheduled Batch Jobs to notify of the results. --></help>
+        <label><!-- Notification Email Addresses --></label>
+        <name>Notification_Email_Addresses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Record Type Dev Name To Process --></label>
+        <name>Record_Type_Dev_Name_To_Process__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

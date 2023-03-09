@@ -1,0 +1,8 @@
+<design:component label="Custom Navigation Footer for Flows">
+    <design:attribute name="nextLabel"
+                      label="If we do override the next label, what should it be." />
+    <design:attribute name="overrideNextLabel"
+                      label="Should we override the next button label?" />
+    <design:attribute name="showCancelButton"
+                      label="Should we show a Cancel Button? Note. This will be overriden to FALSE in non console apps as there is no way to close a tab in non-console apps that I know of!" />
+</design:component>

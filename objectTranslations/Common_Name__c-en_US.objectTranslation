@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Common Name</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Common Names</value>
+    </caseValues>
+    <fields>
+        <label><!-- Active --></label>
+        <name>Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer (Software) --></label>
+        <name>Manufacturer_Software__c</name>
+    </fields>
+    <fields>
+        <label><!-- Unique Common Name Check --></label>
+        <name>Unique_Common_Name_Check__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

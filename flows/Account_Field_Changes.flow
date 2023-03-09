@@ -1,0 +1,475 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Account_Discontinued_Email</name>
+        <label>Account Discontinued Email</label>
+        <locationX>578</locationX>
+        <locationY>1271</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>textAccountDiscontinued</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddressesArray</name>
+            <value>
+                <elementReference>varEmailCollection</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Account has been discontinued</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_weeklypays_accelentertainment_com</name>
+        <label>Notify weeklypays@accelentertainment.com</label>
+        <locationX>314</locationX>
+        <locationY>455</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>SciGameNameChangeNotificationBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>weeklypays@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Sci Game Name for {!$Record.Name} Was Updated</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <description>Notify documents@accelentertainment.com and Pam Landis</description>
+        <name>Send_Notification_to_see_description</name>
+        <label>Send Notification to (see description)</label>
+        <locationX>776</locationX>
+        <locationY>695</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Is_Account_in_IL</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Discontinued_Account_Email_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>documents@accelentertainment.com,pamelal@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>{!$Record.Name} Signed w/ another TO - TUA terminated</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>54.0</apiVersion>
+    <assignments>
+        <name>Assign_Email_Variable</name>
+        <label>Assign Email Variable</label>
+        <locationX>908</locationX>
+        <locationY>455</locationY>
+        <assignmentItems>
+            <assignToReference>varEmailCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>paule@accelentertainment.com</stringValue>
+            </value>
+        </assignmentItems>
+        <assignmentItems>
+            <assignToReference>varEmailCollection</assignToReference>
+            <operator>Add</operator>
+            <value>
+                <stringValue>anthonyc@accelentertainment.com</stringValue>
+            </value>
+        </assignmentItems>
+        <connector>
+            <targetReference>What_is_the_Discontinued_Reason</targetReference>
+        </connector>
+    </assignments>
+    <decisions>
+        <name>Evaluate_Entry_Criteria</name>
+        <label>Evaluate Entry Criteria</label>
+        <locationX>842</locationX>
+        <locationY>335</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Account_Owner_is_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.OwnerId</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Most_Recent_Account_Owner_Change_field_0</targetReference>
+            </connector>
+            <label>Account Owner is Changed</label>
+        </rules>
+        <rules>
+            <name>Sci_Game_Name_is_Changed</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sci_Game_Name__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_weeklypays_accelentertainment_com</targetReference>
+            </connector>
+            <label>Sci Game Name is Changed</label>
+        </rules>
+        <rules>
+            <name>Discontinued_Date_is_filled_in</name>
+            <conditionLogic>or</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Agreement_Voided_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Agreement_Voided_Reason__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Assign_Email_Variable</targetReference>
+            </connector>
+            <label>Discontinued Date is filled in</label>
+        </rules>
+        <rules>
+            <name>Non_IL_Account_with_Live_Date</name>
+            <conditionLogic>(1 OR 2 OR 3 OR 4 ) and 5</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amusements_Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Accel_VGT_Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Standalone_ATM_Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Kiosk_Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.ShippingState</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Accel_Account</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Non-IL Account with Live Date</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_Account_in_IL</name>
+        <label>Is Discontinued Date entered?</label>
+        <locationX>908</locationX>
+        <locationY>911</locationY>
+        <defaultConnectorLabel>No</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Agreement_Voided_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Account_Type</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Is_this_an_IL_Live_Account</name>
+        <label>Is this an IL Live Account?</label>
+        <locationX>710</locationX>
+        <locationY>1151</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>IL_Live_Account</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.ShippingState</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>IL</stringValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Accel_VGT_Live_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Account_Discontinued_Email</targetReference>
+            </connector>
+            <label>IL Live Account</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_is_the_Discontinued_Reason</name>
+        <label>What is the Discontinued Reason?</label>
+        <locationX>908</locationX>
+        <locationY>575</locationY>
+        <defaultConnector>
+            <targetReference>Is_Account_in_IL</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>All Other Reasons</defaultConnectorLabel>
+        <rules>
+            <name>Discontinued_Reason_Location_Signed_w_Another_TO_TUA_Terminated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Agreement_Voided_Reason__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Location_Signed w/ another TO - TUA terminated</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_Notification_to_see_description</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Discontinued Reason = &quot;Location Signed w/Another TO - TUA Terminated</label>
+        </rules>
+    </decisions>
+    <description>Updated 3rd condition/branch by moving &quot;Accel Live Date&quot; when evaluating account state (last decision point), based on ticket https://accel-entertainment.monday.com/boards/942883797/pulses/3489816482?term=account</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>AccountOwnerChangeDate</name>
+        <dataType>Date</dataType>
+        <expression>DATEVALUE({!$Record.LastModifiedDate})</expression>
+    </formulas>
+    <formulas>
+        <name>AccountOwnerChanges</name>
+        <dataType>String</dataType>
+        <expression>{!$Record.LastModifiedBy.FirstName} + &quot; &quot; + {!$Record.LastModifiedBy.LastName}+ &quot; changed the account owner from &quot; + {!$Record__Prior.Owner.FirstName}+ &quot; &quot; + {!$Record__Prior.Owner.LastName} +&quot; to &quot; + {!$Record.Owner.FirstName}+ &quot; &quot;+{!$Record.Owner.LastName}+&quot; on &quot; + LEFT(TEXT({!$Record.LastModifiedDate}),10)</expression>
+    </formulas>
+    <interviewLabel>Account: Field Changes {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Account: Field Changes</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Accel_Account</name>
+        <label>Accel Account</label>
+        <locationX>1370</locationX>
+        <locationY>455</locationY>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Accel Account</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_Owner_Change_Date_0</name>
+        <label>Update Account Owner Change Date</label>
+        <locationX>50</locationX>
+        <locationY>575</locationY>
+        <connector>
+            <targetReference>Update_VG_Sales_Status_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Most_Recent_Account_Owner_Change_Date__c</field>
+            <value>
+                <elementReference>AccountOwnerChangeDate</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Account_Type</name>
+        <label>Update Account Type</label>
+        <locationX>710</locationX>
+        <locationY>1031</locationY>
+        <connector>
+            <targetReference>Is_this_an_IL_Live_Account</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Type</field>
+            <value>
+                <stringValue>Discontinued Account</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <name>Update_Most_Recent_Account_Owner_Change_field_0</name>
+        <label>Update Most Recent Account Owner Change field</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>Update_Account_Owner_Change_Date_0</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Most_Recent_Account_Owner_Change__c</field>
+            <value>
+                <elementReference>AccountOwnerChanges</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>If the current VGT Sales Status is Unassigned and the account owner changes, the new status should equal assigned.</description>
+        <name>Update_VG_Sales_Status_0</name>
+        <label>Update VG Sales Status</label>
+        <locationX>50</locationX>
+        <locationY>695</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Video_Gaming_Sales_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Unassigned</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Video_Gaming_Sales_Status__c</field>
+            <value>
+                <stringValue>Assigned</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>716</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Evaluate_Entry_Criteria</targetReference>
+        </connector>
+        <object>Account</object>
+        <recordTriggerType>Update</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Discontinued_Account_Email_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Account has been discontinued for the following reason, Location Signed w/ another TO - TUA terminated. A new competitor account will need to be created. 
+
+Account DBA Name:   {!$Record.Name}
+
+Legal Name:   {!$Record.Legal_Name__c}
+
+Accel VGT Live Date:   {!$Record.Accel_VGT_Live_Date__c}
+
+Physical Address:   {!$Record.ShippingStreet}
+                                  {!$Record.ShippingCity}, {!$Record.ShippingState}, {!$Record.ShippingPostalCode}
+
+IGB License Number: {!$Record.IGB_License__c}
+
+You may click the link below to access the account record.
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>SciGameNameChangeNotificationBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is an automated notification that the Sci Game Name for account {!$Record.Name} was updated.
+Old Value: {!$Record__Prior.Sci_Game_Name__c}
+New Value:  {!$Record.Sci_Game_Name__c}
+
+You may click the link below to access the account record. 
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>textAccountDiscontinued</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Account has been discontinued.
+
+Account Link: 
+{!$Record.Record_Link__c}
+
+Account DBA Name: {!$Record.Name}
+
+Account DBA Address:
+{!$Record.ShippingStreet}
+{!$Record.Physical_City__c}
+{!$Record.ShippingState}
+{!$Record.ShippingPostalCode}
+
+
+IGB License #: {!$Record.IGB_License__c}</text>
+    </textTemplates>
+    <variables>
+        <name>varEmailCollection</name>
+        <dataType>String</dataType>
+        <isCollection>true</isCollection>
+        <isInput>true</isInput>
+        <isOutput>false</isOutput>
+    </variables>
+</Flow>

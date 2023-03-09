@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Maps Advanced Route 템플릿 사용자</value>
+    </caseValues>
+    <fields>
+        <label><!-- Maps Advanced Route Template --></label>
+        <name>maps__AdvRouteTemplate__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Template Users --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Async Apex Job Id --></label>
+        <name>maps__AsyncApexJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Automatic Op Starts On --></label>
+        <name>maps__AutomaticOpStartsOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Base Url --></label>
+        <name>maps__BaseUrl__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Job Attempts --></label>
+        <name>maps__CurrentJobAttempts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Processing Status Bulk --></label>
+        <name>maps__CurrentProcessingStatusBulk__c</name>
+        <picklistValues>
+            <masterLabel>Available For Submission</masterLabel>
+            <translation>제출에 사용 가능</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Route Request</masterLabel>
+            <translation>경로 구축 요청</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Building Route Request Needs Processing</masterLabel>
+            <translation>경로 구축 요청 처리 필요</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Not Submitted</masterLabel>
+            <translation>다음 근무일 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Submitted</masterLabel>
+            <translation>다음 근무일 제출됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Submitted</masterLabel>
+            <translation>라우팅 설문 제출됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Processing Status --></label>
+        <name>maps__CurrentProcessingStatus__c</name>
+        <picklistValues>
+            <masterLabel>Available For Submission</masterLabel>
+            <translation>제출에 사용 가능</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geocoding Not Submitted</masterLabel>
+            <translation>지역 코드 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Geocoding Submitted</masterLabel>
+            <translation>지역 코드 제출됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Not Submitted</masterLabel>
+            <translation>다음 근무일 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Next Working Day Submitted</masterLabel>
+            <translation>다음 근무일 제출됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Priorities Not Submitted</masterLabel>
+            <translation>개체 우선 순위 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Object Priorities Submitted</masterLabel>
+            <translation>개체 우선 순위 제출됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Not Submitted</masterLabel>
+            <translation>라우팅 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Not Submitted</masterLabel>
+            <translation>라우팅 설문 제출 안 됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Poll Submitted</masterLabel>
+            <translation>라우팅 설문 제출됨</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Routing Submitted</masterLabel>
+            <translation>라우팅 제출됨</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Current Template Range Start Date --></label>
+        <name>maps__CurrentTemplateRangeStartDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Processing --></label>
+        <name>maps__DateProcessing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Delete Previous Route Data --></label>
+        <name>maps__DeletePreviousRouteData__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Submitted At --></label>
+        <name>maps__JobSubmittedAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Kill Route Generation --></label>
+        <name>maps__KillRouteGeneration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Auto Optimization Run At --></label>
+        <name>maps__LastAutoOptimizationRunAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Failed Job Error --></label>
+        <name>maps__LastFailedJobError__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Job Stopped Status --></label>
+        <name>maps__LastJobStoppedStatus__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Location --></label>
+        <name>maps__LastLocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Optimization Run At --></label>
+        <name>maps__LastOptimizationRunAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Optimization Succeeded At --></label>
+        <name>maps__LastOptimizationSucceededAt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Needs Deleting --></label>
+        <name>maps__NeedsDeleting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Email Id --></label>
+        <name>maps__NextEmailId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Optimize From Current Time --></label>
+        <name>maps__OptimizeFromCurrentTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Process Routing Needed --></label>
+        <name>maps__ProcessRoutingNeeded__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Id --></label>
+        <name>maps__ProfileId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ready for Use --></label>
+        <name>maps__ReadyForUse__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Job Id --></label>
+        <name>maps__RoutingJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Routing Started On --></label>
+        <name>maps__RoutingStartedOn__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Completion Email --></label>
+        <name>maps__SendCompletionEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Send Next Email --></label>
+        <name>maps__SendNextEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Routing on Date --></label>
+        <name>maps__StopRoutingOnDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Email --></label>
+        <name>maps__UserEmail__c</name>
+    </fields>
+    <fields>
+        <label><!-- User First Name --></label>
+        <name>maps__UserFirstName__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Last Name --></label>
+        <name>maps__UserLastName__c</name>
+    </fields>
+    <fields>
+        <label><!-- User Time Zone Key --></label>
+        <name>maps__UserTimeZoneKey__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Maps Advanced Route Template Users --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>Maps Advanced Route 템플릿 사용자 이름</nameFieldLabel>
+</CustomObjectTranslation>

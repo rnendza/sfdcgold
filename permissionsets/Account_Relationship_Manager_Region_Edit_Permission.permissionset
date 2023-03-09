@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>allow the assignee to edit the Account: Relationship Manager Region
+Created based on request 
+https://accel-entertainment.monday.com/boards/942883797/pulses/3968487673/posts/1975100001</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Account.RM_Region__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Account: Relationship Manager Region - Edit Permission</label>
+</PermissionSet>

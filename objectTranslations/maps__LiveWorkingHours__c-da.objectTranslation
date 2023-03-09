@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps Live-arbejdstiden</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps Live-arbejdstid</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps Live-arbejdstid</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps Live-arbejdstiderne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps Live-arbejdstider</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps Live-arbejdstider</value>
+    </caseValues>
+    <fields>
+        <label><!-- Friday End Time --></label>
+        <name>maps__FridayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Friday Start Time --></label>
+        <name>maps__FridayStartTime__c</name>
+    </fields>
+    <fields>
+        <help>Dette felt skal være markeret som Aktiv for at tildele live-arbejdstid</help>
+        <label><!-- Is Active --></label>
+        <name>maps__IsActive__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday End Time --></label>
+        <name>maps__MondayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Monday Start Time --></label>
+        <name>maps__MondayStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday End Time --></label>
+        <name>maps__SaturdayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Saturday Start Time --></label>
+        <name>maps__SaturdayStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday End Time --></label>
+        <name>maps__SundayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sunday Start Time --></label>
+        <name>maps__SundayStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday End Time --></label>
+        <name>maps__ThursdayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Thursday Start Time --></label>
+        <name>maps__ThursdayStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday End Time --></label>
+        <name>maps__TuesdayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tuesday Start Time --></label>
+        <name>maps__TuesdayStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday End Time --></label>
+        <name>maps__WednesdayEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Wednesday Start Time --></label>
+        <name>maps__WednesdayStartTime__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Maps Live-arbejdstidsnavn</nameFieldLabel>
+</CustomObjectTranslation>

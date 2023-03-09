@@ -1,0 +1,220 @@
+<aura:component description="Accel Community Location Comparison"
+                controller="Accel_CommunityLocationComparison"
+                implements="forceCommunity:availableForAllPageTypes"
+                access="public">
+
+    <ltng:require styles="{!join(',', $Resource.leaflet + '/leaflet.css', $Resource.leafletmarkers + '/leaflet.awesome-markers.css')}" />
+    <ltng:require scripts="{!join(',', $Resource.leaflet + '/leaflet.js', $Resource.leafletmarkers + '/leaflet.awesome-markers.js', $Resource.echart4)}"
+                  afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="mapSpinner" type="boolean"/>
+    <aura:attribute name="map" type="Object"/>
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="selectedLat" type="Double"/>
+    <aura:attribute name="selectedLong" type="Double"/>
+    <aura:attribute name="radiusHpds" type="List" />
+    <aura:attribute name="rankings" type="List" />
+    <aura:attribute name="distance" type="Double" />
+    <aura:attribute name="accountType" type="String" default="All" />
+
+    <!-- @todo fully deprecate the oldestDate -->
+    <aura:attribute name="oldestDate" type="Date" default="2019-05-01" />
+
+    <aura:attribute name="filter" type="String" default="MyLocations" />
+    <aura:attribute name="locTypes" type="List"/>
+    <aura:attribute name="columns" type="List"/>
+    <aura:attribute name="cityname" type="String"/>
+    <aura:attribute name="cityType" type="String" default="All Location Types"/>
+    <aura:attribute name="cityNumberLocations" type="String"/>
+    <aura:attribute name="cityHpds" type="List"/>
+    <aura:attribute name="cityYoYHpds" type="List"/>
+    <aura:attribute name="cityAvgHpd" type="String"/>
+    <aura:attribute name="cityAvgFundsIn" type="String"/>
+    <aura:attribute name="cityPieData" type="List" />
+    <aura:attribute name="yoyHpdGrowth" type="String"/>
+    <aura:attribute name="yoyHpdValue" type="String" default="0"/>
+    <aura:attribute name="cityCenter" type="List"/>
+
+    <aura:attribute name="communityUserSettings" type="Object"
+                    description="Contains Community User Settings"/>
+    <aura:attribute name="communityUserSettingsNotFound"    type="boolean" default="false"/>
+    <aura:attribute name="allHidden"                        type="boolean" default="true"/>
+    <aura:attribute name="displayMap"                       type="boolean" default="false"/>
+    <aura:attribute name="displayAreaChart"                 type="boolean" default="false"/>
+
+    <!-- https://accel-entertainment.monday.com/boards/286658657/ -->
+    <aura:attribute name="debugConsole" type="Boolean" default="true"
+                    description="Allows turning on and off of logging logic either here or via design attribute"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="slds-grid slds-grid_vertical accel-mobile-full-width" style="background-color: white; border-radius: 4px;">
+        <!-- can't really hide search filter for map and they pertain to other areas as well. only hide if everything was hidden ! -->
+         <!--<aura:if isTrue="{!!v.allHidden}">-->
+            <div class="slds-col slds-size_1-of-1">
+            <div class="slds-grid accel-mobile-full-width accel-mobile-wrap">
+                <div class="slds-col slds-size_1-of-4 slds-p-around--medium accel-mobile-full-width">
+                    <lightning:buttonGroup>
+                        <lightning:button label="My Locations"
+                                          class="accel-btn-is-selected"
+                                          name="MyLocations"
+                                          aura:id="MyLocations"
+                                          onclick="{!c.changeFilters}"/>
+                        <lightning:button label="Search"
+                                          name="Search"
+                                          aura:id="Search"
+                                          onclick="{!c.changeFilters}"/>
+                        <!-- <lightning:button label="All Locations"
+                                          name="AllLocations"
+                                          aura:id="AllLocations"
+                                          onclick="{!c.changeFilters}"/>
+                        -->
+                    </lightning:buttonGroup>
+                </div>
+                <aura:if isTrue="{!v.filter == 'MyLocations'}">
+                    <div class="slds-col slds-size_1-of-4 slds-p-horizontal--small accel-mobile-full-width">
+                        <lightning:combobox name="accountSelect"
+                                            label="Area Centerpoint"
+                                            class="accel-select"
+                                            placeholder="Select a Location"
+                                            options="{! v.userAccountOptions }"
+                                            value="{!v.selectedAccountId}"
+                                            onchange="{! c.onChangeAccount }"/>
+                    </div>
+                    <div class="slds-col slds-size_2-of-12 accel-mobile-half-width" >
+                        <lightning:select name="locTypeSelect"
+                                          label="Location Type"
+                                          class="accel-select"
+                                          onchange="{!c.onChangeLocType}"
+                                          aura:id="locTypeSelect">
+                            <option text="All Types" value="All"></option>
+                            <aura:iteration items="{!v.locTypes}" var="locType">
+                                <option text="{!locType}" value="{!locType}"></option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                    <div class="slds-col slds-size_1-of-10 slds-p-horizontal--small accel-mobile-half-width">
+                        <lightning:select name="radius"
+                                          label="Radius (miles)"
+                                          class="accel-select"
+                                          onchange="{!c.onChangeRadius}"
+                                          aura:id="radius">
+                            <option text="1" value="1"></option>
+                            <option text="2" value="2"></option>
+                            <option text="5" value="5"></option>
+                            <option text="10" value="10"></option>
+                            <option text="25" value="25"></option>
+                            <option text="50" value="50"></option>
+                        </lightning:select>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!v.filter =='Search'}">
+                    <div class="slds-col slds-size_1-of-3 mobile-city-search">
+                        <div onkeypress="{!c.handleSearch}">
+                            <lightning:input
+                                    type="search"
+                                    name="Search"
+                                    class='accel-select'
+                                    label="Area Search"
+                                    placeholder="Search city name"
+                                    aura:id="map-search"
+                            />
+                        </div>
+                    </div>
+                </aura:if>
+                <aura:if isTrue="{!v.filter == 'AllLocations'}">
+                    <div class="slds-col slds-size_2-of-12">
+                        <lightning:select name="locTypeSelect"
+                                          label="Location Type"
+                                          class="accel-select"
+                                          onchange="{!c.onChangeLocType}"
+                                          aura:id="locTypeSelect">
+                            <option text="All Types" value="All"></option>
+                            <aura:iteration items="{!v.locTypes}" var="locType">
+                                <option text="{!locType}" value="{!locType}"></option>
+                            </aura:iteration>
+                        </lightning:select>
+                    </div>
+                </aura:if>
+            </div>
+        </div>
+       <!-- </aura:if>-->
+        <div class="slds-col slds-size_1-of-1 accel-mobile-full-width">
+            <div class="slds-grid accel-mobile-block">
+                <aura:if isTrue="{!or(v.displayMap,v.communityUserSettingsNotFound)}">
+                    <div class="slds-col slds-size_2-of-3 accel-mobile-map accel-mobile-full-width" id="map" aura:id="map" style="position: relative">
+                        <lightning:spinner variant="brand" size="large" aura:id="mapSpinner"
+                                           class="{!((v.mapSpinner)? '': 'slds-hide')}"
+                                           alternativeText="Loading"/>
+                    </div>
+                </aura:if>
+                <aura:if
+                        isTrue="{!or(v.communityUserSettings.Display_Ranking_Table__c,v.communityUserSettingsNotFound)}">
+                    <div class="slds-col slds-size_1-of-3 slds-p-around-xx-large accel-location-ranking accel-mobile-full-width">
+                    <div id="rankHeader" style="height:30px;">Location Ranking
+                    </div>
+                    <div id="rankSubHeader" style="height:30px;">by 3 Month Average HPD
+                    </div>
+                    <div style="padding-left: 7px;">
+                    <ui:scrollerWrapper class="accel-datatable-scrollersize">
+                    <lightning:datatable data="{!v.rankings}"
+                                         columns="{! v.columns }"
+                                         class="accel-grid-styled  slds-table_bordered slds-no-row-hover"
+                                         showRowNumberColumn="false"
+                                         keyField="rank"
+                                         resizeColumnDisabled="true"
+                                         hideCheckboxColumn="true"/>
+                    </ui:scrollerWrapper>
+                    </div>
+                </div>
+                </aura:if>
+            </div>
+        </div>
+
+            <div class="slds-col slds-size_1-of-1 accel-mobile-full-width">
+                <div class="slds-grid accel-stats-area">
+                <div class="slds-col slds-size_2-of-3  accel-mobile-full-width">
+                    <div class="slds-grid accel-mobile-wrap accel-mobile-full-width">
+                        <aura:if isTrue="{!or(v.displayAreaChart,v.communityUserSettingsNotFound)}">
+                            <div class="citytitle slds-col slds-size_1-of-2 accel-mobile-full-width">
+                                <p><ui:outputText value="{!v.cityname}" class="citytext"/></p>
+                                <div class="city-pie" aura:id="city-piechart" style="width: 100%; height: 200px;">
+                                </div>
+                            </div>
+                        </aura:if>
+                        <aura:if
+                                isTrue="{!or(v.communityUserSettings.Display_Area_Metrics__c,v.communityUserSettingsNotFound)}">
+                            <div class="citystats slds-col slds-size_1-of-2 accel-mobile-full-width">
+                                <p style="text-overflow: ellipsis; overflow: hidden; white-space: nowrap"><ui:outputText value="{!v.cityType}" class="cityTextMedium"/></p>
+                                <p><label class="cityTypeSelectedLabel" for="numLocs"># of Gaming Locations: &nbsp; &nbsp;</label> <ui:outputText aura:id="numLocs" value="{!v.cityNumberLocations}" class="cityTypeSelectedValue dataGreen"/></p>
+                                <p><label class="cityTypeSelectedLabel" for="avgHpd">Avg Location HPD: &nbsp; &nbsp;</label> <ui:outputText aura:id="avgHpd" value="{!v.cityAvgHpd}" class="cityTypeSelectedValue dataGreen"/></p>
+                                <p><label class="cityTypeSelectedLabel" for="avgFundsIn">Avg Location Funds In: &nbsp; &nbsp;</label> <ui:outputText aura:id="avgFundsIn" value="{!v.cityAvgFundsIn}" class="cityTypeSelectedValue dataGreen"/></p>
+                                <p><label class="cityTypeSelectedLabel" for="avgFundsIn">YoY Avg HPD Growth: &nbsp; &nbsp;</label>
+                                    <aura:renderIf isTrue="{!v.yoyHpdValue >= 0}">
+                                        <lightning:icon class="iconGreen" iconName="utility:arrowup" size="x-small" style="margin-left: -12px;"/>
+                                        <aura:set attribute="else">
+                                            <lightning:icon class="iconRed" iconName="utility:arrowdown" size="x-small" style="margin-left: -12px;"/>
+                                        </aura:set>
+                                    </aura:renderIf><ui:outputText aura:id="yoyHpdGrowth" value="{!v.yoyHpdGrowth}" class="{!v.yoyHpdValue > 0 ? 'pos-profit cityTypeSelectedValue' :'neg-profit cityTypeSelectedValue'}"/>
+                                </p>
+                            </div>
+                        </aura:if>
+
+                    </div>
+                </div>
+            </div>
+            </div>
+
+    </div>
+
+
+</aura:component>

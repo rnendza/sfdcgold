@@ -1,0 +1,1794 @@
+<!--
+ - Created by CedricN on 6/7/2019.
+ -->
+
+<aura:component description="PM_Work_Order_Line_Item" controller="AccountFields" implements="force:appHostable,lightning:availableForFlowScreens,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,lightning:isURLaddressable,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,lightning:actionOverride" access="global">
+     <!--<ltng:require styles="/resource/SLDS0110/assets/styles/salesforce-lightning-design-system-ltng.css" />-->
+    <aura:attribute name="Disable1" type="Boolean" default="false"/>
+    <aura:attribute name="Disable2" type="Boolean" default="false"/>
+    <aura:attribute name="Disable3" type="Boolean" default="false"/>
+    <aura:attribute name="Disable4" type="Boolean" default="false"/>
+    <aura:attribute name="Disable5" type="Boolean" default="false"/>
+   <aura:attribute name="Disable6" type="Boolean" default="false"/>  
+       <aura:attribute name="Disable7" type="Boolean" default="false"/>  
+     <aura:attribute name="Disable8" type="Boolean" default="false"/>  
+    <aura:attribute name="ENR" type="DateTime" />
+      <aura:attribute name="ARR" type="DateTime" />
+      <aura:attribute name="DEP" type="DateTime" />
+     <aura:attribute name="SUB" type="DateTime" />
+	                <aura:attribute name="Disable" type="Boolean" default="false"/>
+    <aura:attribute name="SaveDisable" type="Boolean" default ="false"/>
+    <aura:attribute name="CheckDisable" type="Boolean" default ="false"/>
+    <aura:attribute name="WorkOrderItem" type="WorkOrderLineItem"
+                    default = "{ 'sobjectType': 'WorkOrderLineItem'}"/>
+    <aura:attribute name="WorkOrderId" type="String"/>
+    <aura:attribute name="AccountAsset" type="Account"
+                    default = "{ 'sobjectType': 'Account'}"/>
+    <aura:attribute name="Details" type="sObject"/>
+    <aura:attribute name="recordId" type="String"/>
+    <aura:attribute name="oAsset" type="Asset"/>
+    <aura:attribute name="GetId" type="String"/>
+    <aura:attribute name="pageReference" type="Object"/>
+   <!--<aura:registerEvent name="OselectedAccountEvent" type="c:selectedAccountEvent"/>-->
+    <aura:attribute name="accountName" type="String"/>
+    <aura:attribute name="String" type="String"/>
+     <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}"/>
+    <aura:attribute name="VGTL" type="List"/>
+    <aura:attribute name="val" type="String"/>
+    <aura:attribute name="WellnessVisit" type="boolean"/>
+    <aura:attribute name="SubmittedId" type="Id"/>
+        <aura:attribute name="SubmittedId2" type="Id"/>
+
+    <aura:attribute name="Position1" type="Asset"
+                    default = "{ 'sobjectType': 'Asset'}"/>
+   <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+    <aura:registerEvent name="navEvt" type="force:navigateToSObject"/>
+    <aura:registerEvent name="Wellness" type="c:Wellness"/>
+  <!-- <aura:handler event="force:refreshView" action="{!c.Cancel}" />-->
+
+  <aura:handler name="GetAccount" event="c:LookupValue" action="{!c.GetAccount}"/>
+    <aura:handler  event="c:WellnessValue" action="{!c.SetWellNessAccount}"/>
+
+   <!-- <aura:handler event="force:navigateToSObject" action="{!c.navigate}"/>-->
+    <aura:attribute name="Sites" type="String"/>
+        <aura:registerEvent name="CheckBox" type="c:CheckBox"/>
+<aura:attribute name="userInfo" type="user"/>
+  	<!--<Lightning:flow aura:id="FlowDate" onstatuschange="{!c.handleStatusChange}"/>-->
+ 
+
+    
+
+   <!--  <aura:attribute name="picvalue5" type="List"/> -->
+<!--    <aura:dependency resource="markup://force:navigateToSObject" type="EVENT"/>-->
+     <lightning:navigation aura:id="navService"/>
+   
+        
+   
+    
+    <!--OLD ACCEL SERVICE APP CODE DO NOT USE/DEACTIVATED-->
+            <aura:if isTrue="{! and(or(v.userInfo.ProfileId == '00e1I000000ZxflQAC', v.userInfo.ProfileId == '00e1I000000mcVaQAI') , v.userInfo.Title != 'Preventative Maintenance Supervisor' )  }"> <!--00e1I000000Zxfl-->
+                
+                   <div aura:id="mainContainer1" class="mainContainer">
+    <div class="childContainer">
+ <div class="slds-medium-size_1-of-3">        
+        <div class="page" style="background-color:#FFFFF0; border:5px solid #F5DEB3; border-radius:0.2%;  box-shadow: 2px 10px #FFF8DC;">  
+  
+    <form class ="slds-form--stacked">
+    <div class="slds-hide" disabled="{!v.Disable}"></div>
+          <div class="addpadd" style="margin-bottom:0px;">
+              
+               
+
+                  <div class="Header" style="color:#D5A301; text-shadow: 1px 0 0 black; font-family: Helvetica; font-size:30px; text-align:center;">Accel Service APP</div>
+            <p/>
+            
+              <div style="font-size:1.5rem; padding-bottom:1rem; padding-top:1.5rem;">
+              <lightning:layout horizontalAlign="center">
+                  <lightning:layoutitem>
+                <ui:inputSelect  aura:id="SelectApp" class="single"  required="True" change="{!c.AppType}" disabled="{!v.Disable8}">
+                          <ui:inputSelectOption text="Select Choice"/>
+
+                          <ui:inputSelectOption  text="Wellness Visit"/>
+                          <ui:inputSelectOption text="Inventory Check"/>
+                          <ui:inputSelectOption text="Software Updates"/>
+                          <ui:inputSelectOption text="Project" />
+                    <ui:inputSelectOption text="Vehicle Maintenance" />
+                    <ui:inputSelectOption text="Colleague Assistance" />
+
+					
+                      </ui:inputSelect>
+              </lightning:layoutitem>
+		</lightning:layout>
+              </div>
+              
+              
+              <!--WELLNESS VISIT DO NOT USE SERVICE APP DEACTIVATED-->
+              
+            <!--  <div aura:id="Wellness1" class="WellnessStuff222">-->
+        <lightning:layout horizontalAlign="center">
+          
+            <!--012010000008VX2AAM--> <!---0121I000000BZFdQAO-->
+            <lightning:recordEditForm recordId="{!v.SubmittedId}" aura:id="WellnessWO" objectApiName="WorkOrder" recordTypeId="0121I000000BZFdQAO" class="WellnessStuff" onsuccess="{!c.handleSuccess2}" > <!-- onsuccess="{!c.onRecordSubmit}"-->
+                																				  			  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> 
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+				<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                
+                
+                <lightning:inputField aura:id="time" fieldName="Maintenance_Start_Time__c" class="slds-hide"/>
+              		 <lightning:inputField aura:id="Site_Grade" label="Asset" name="Asset 1" fieldName="Site_Grade__c" value="" class="slds-hide"/>
+                      <lightning:inputField aura:id="Site_Notes" label="Asset" name="Asset 1" fieldName="Site_Notes__c" value="" class="slds-hide"/>
+                <lightning:inputField aura:id="WorkStatus" label="Work Order Status" fieldName="Status" class="slds-hide"/>
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+                  <lightning:inputField aura:id="realsp" fieldName="Special_Project__c" class="slds-hide"/>
+                <lightning:inputField aura:id="Real-pic" fieldName="Special_Project_Type__c" class="slds-hide"/>
+             <lightning:inputField aura:id="CallSign" fieldName="Call_Sign_Placed__c" class="slds-hide" />
+                <lightning:inputField aura:id="AmusementPic" fieldName="Amusement_Project__c" class="slds-hide" /> 
+                     <lightning:inputField aura:id='HideEquipment' fieldName="Equipment_Assets__c" class="slds-hide" />
+
+                               
+                  <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRoute" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="Arrival" type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="Departure" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Cancel" type="submit"  variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   <lightning:inputField aura:id="EnRoute" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+			
+
+                
+           <!-- <lightning:inputField aura:id="EnRoute" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />-->
+			
+                <div aura:id="Well" class="WellnessFields" style="padding-top:30px;">
+                    
+
+                    
+                <lightning:layout horizontalAlign="Center">
+                
+                <lightning:layoutItem>
+                    <lightning:inputField aura:id="Equipment_Working" fieldName="All_Accel_Equipment_Working__c"/>
+                </lightning:layoutItem>
+                    
+                    
+                       <lightning:layoutItem>
+                    <lightning:inputField aura:id="BV_Lights" fieldName="BV_Lights__c"/>
+                </lightning:layoutItem>
+                    
+                    
+                    
+                </lightning:layout>
+                
+                <lightning:layout horizontalAlign="Center">
+                
+                 <lightning:layoutItem>
+                    <lightning:inputField aura:id="Buttons_Working" fieldName="All_Buttons_working__c"/>
+                </lightning:layoutItem>
+                    
+                    <lightning:layoutItem>
+                    <lightning:inputField aura:id="Touch_Screen" fieldName="Is_the_touch_screen_calibrated__c"/>
+                </lightning:layoutItem>
+                    
+                    
+                    
+                    </lightning:layout>
+                
+                <lightning:layout horizontalAlign="Center">
+                
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="Bill_VGT" fieldName="Did_you_bill_test_the_VGT__c"/>
+                </lightning:layoutItem>
+                    </lightning:layout>
+                    
+               <!--     <lightning:layout horizontalAlign="Center">
+                    <lightning:layoutItem>
+                       
+                    <lightning:inputField aura:id="Visit_documented" fieldName="wellnessvisit_documented__c" />
+                </lightning:layoutItem>
+                        
+                        <lightning:layoutItem >
+                            
+				<div style="position:relative; top:4px; left:8px;">Call Accel security at 630-633-2899 <br></br>if opening an RT between 12AM-5AM</div>
+                        </lightning:layoutItem>
+                                  
+                    </lightning:layout>-->
+             
+                
+                 <lightning:layout horizontalAlign="Center">
+                
+                          
+                 <lightning:layoutItem>
+                    <lightning:inputField aura:id="Spoke_Mgr" fieldName="Spoke_to_Mgr_Owner_employee__c"/>
+                </lightning:layoutItem>
+                    
+                    <lightning:layoutItem>
+                    <lightning:inputField aura:id="Location_Contact" fieldName="Location_Contact__c"/>
+                </lightning:layoutItem>
+                                  
+                    </lightning:layout>
+             
+                    
+                    <lightning:layout horizontalAlign="Center">
+                    <lightning:layoutItem>
+                        <lightning:inputField aura:id="Notes" fieldName="Site_Notes__c"/>
+                        
+                        
+                        </lightning:layoutItem>
+                    
+                    
+                    </lightning:layout>
+                    
+                    
+                    
+                </div>
+                
+                
+                
+                    
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateWellness" variant="brand" type="submit" name="Save" label="Save Wellness Visit" onclick="{!c.SubmitWellness}" disabled="{!v.Disable5}" class="slds-hide"/>
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+                </lightning:recordEditForm>
+                
+                
+              </lightning:layout>
+                <!--  </div>-->
+              
+              <!---Inventory-->
+              
+               <lightning:recordEditForm  recordId="{!v.SubmittedId}" onsuccess="{!c.handleSuccess3}"  class="Inventory" aura:id="InventoryWO" objectApiName="WorkOrder" recordTypeId="0121I000000BZtTQAW"  > <!-- onsuccess="{!c.onRecordSubmit}"-->
+                <lightning:layout horizontalAlign="Center">																			  			  
+   <!--  <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> </lightning:layout>	
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> -->
+			<!--	<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount2" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress2" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>-->
+                   </lightning:layout>
+                   <div style="padding-bottom:.5rem; padding-top:1rem;"/>
+                   
+                    <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRouteI" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute2}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="ArrivalI"  type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival2}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="DepartureI" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure2}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="CancelI" type="submit" variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel2}" />
+                    </lightning:layoutItem>
+                        --
+                         <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   
+                   <lightning:inputField aura:id="EnRoute2" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival2" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure2" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission2" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing2" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+                   
+                   
+                   
+                   
+                                     <div aura:id="Invent" class="InventFields" style="padding-top:30px;">
+
+                <lightning:layout horizontalAlign="Center">
+                
+                <lightning:layoutItem>
+                    <lightning:inputField aura:id="InventorySite" fieldName="Inventory_Site__c"/>
+                </lightning:layoutItem>
+                    
+                    
+                       <lightning:layoutItem>
+                    <lightning:inputField aura:id="Notes1" fieldName="Notes__c"/>
+                </lightning:layoutItem>
+                    
+                     
+                    
+                </lightning:layout>
+                   
+                <!--   <lightning:layout horizontalAlign="Center">
+                      <lightning:layoutItem>
+                    <lightning:inputField aura:id="Assigned" fieldName="Assigned_Resource__c"/>
+                </lightning:layoutItem>
+                   </lightning:layout>-->
+                   
+                   
+                   </div>
+                   
+                   
+                        
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateInventory" variant="brand" type="submit" name="Save" label="Save Inventory Check" onclick="{!c.SubmitInventory}" disabled="{!v.Disable7}" class="slds-hide" />
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+              </lightning:recordEditForm>
+              
+              
+              
+              
+ <!---Software Updates-->
+              
+               <lightning:recordEditForm recordId="{!v.SubmittedId}" class="SoftwareUpdates" aura:id="SoftwareWO" objectApiName="WorkOrder" recordTypeId="0121I000000BZtVQAW" onsuccess="{!c.handleSuccess4}"> <!-- onsuccess="{!c.onRecordSubmit}"-->
+                <lightning:layout horizontalAlign="Center">																			  			  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> </lightning:layout>	
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+			<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount2" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress2" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                  
+                   <div style="padding-bottom:.5rem; padding-top:1rem;"/>
+                   
+                    <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRouteQ" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute3}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="ArrivalQ" type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival3}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="DepartureQ" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure3}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="CancelQ" type="submit" variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel3}" />
+                    </lightning:layoutItem>
+                        --
+                         <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   
+                   <lightning:inputField aura:id="EnRoute3" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival3" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure3" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission3" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing3" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+                   
+                   
+                   
+                   
+                                     <div aura:id="Soft" class="SoftwareFields" style="padding-top:30px;">
+                                         
+                                         <lightning:layout horizontalAlign="Center">
+                    
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="SAS" fieldName="SAS__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+
+                <lightning:layout horizontalAlign="Center">
+                
+                <lightning:layoutItem>
+               <lightning:inputField aura:id="AssetId" fieldName="AssetId" style="width:200px;"/>    
+                </lightning:layoutItem>
+                                         </lightning:layout>
+                                          <lightning:layout horizontalAlign="Center">
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="SiteNotes" fieldName="Site_Notes__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+                                         
+                                          
+                                         
+                                       <!--  <lightning:layout horizontalAlign="Center">
+                      
+                                         </lightning:layout>-->
+                                         
+                                           <lightning:layout horizontalAlign="Center">
+                        <lightning:layoutItem>
+                    <lightning:inputField aura:id="TypeOfSoftware" fieldName="Type_of_Software_Needed_For_Appointment__c"/>
+                </lightning:layoutItem>
+                                                                                   </lightning:layout>
+ 
+                                               
+                                               
+                    
+                   
+                <!--   <lightning:layout horizontalAlign="Center">
+                      <lightning:layoutItem>
+                    <lightning:inputField aura:id="Assigned" fieldName="Assigned_Resource__c"/>
+                </lightning:layoutItem>
+                   </lightning:layout>-->
+                   
+                   
+                   </div>
+                   
+                   
+                        
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateSoftware" variant="brand" type="submit" name="Save" label="Save Inventory Check" onclick="{!c.SubmitSoftware}" disabled="{!v.Disable7}" class="slds-hide" />
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+              </lightning:recordEditForm>
+              
+              
+               <!---Project-->
+              
+               <lightning:recordEditForm recordId="{!v.SubmittedId}" class="Project" aura:id="ProjectWO" objectApiName="WorkOrder" recordTypeId="0121I000000BZtUQAW" onsuccess="{!c.handleSuccess5}" > <!-- onsuccess="{!c.onRecordSubmit}"-->
+                <lightning:layout horizontalAlign="Center">																			  			  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> </lightning:layout>	
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+			<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount3" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress3" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                  
+                   <div style="padding-bottom:.5rem; padding-top:1rem;"/>
+                   
+                    <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRouteL" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute4}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="ArrivalL" type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival4}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="DepartureL" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure4}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="CancelL" type="submit" variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel4}" />
+                    </lightning:layoutItem>
+                        --
+                         <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   
+                   <lightning:inputField aura:id="EnRoute4" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival4" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure4" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission4" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing4" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+                   
+                   
+                   
+                   
+                                     <div aura:id="Proj" class="ProjectFields" style="padding-top:30px;">
+                                         
+                                         <lightning:layout horizontalAlign="Center">
+                    
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="ProjectType" fieldName="Project_Type__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+
+                <lightning:layout horizontalAlign="Center">
+                
+              <!--  <lightning:layoutItem>
+               <lightning:inputField aura:id="AssetId" fieldName="AssetId" style="width:200px;"/>    
+                </lightning:layoutItem>-->
+                                         </lightning:layout>
+                                          <lightning:layout horizontalAlign="Center">
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="SiteNotes" fieldName="Site_Notes__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+                                         
+                                          
+                                         
+                                       <!--  <lightning:layout horizontalAlign="Center">
+                      
+                                         </lightning:layout>-->
+        
+                   
+                <!--   <lightning:layout horizontalAlign="Center">
+                      <lightning:layoutItem>
+                    <lightning:inputField aura:id="Assigned" fieldName="Assigned_Resource__c"/>
+                </lightning:layoutItem>
+                   </lightning:layout>-->
+                   
+                   
+                   </div>
+                   
+                   
+                        
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateSoftware" variant="brand" type="submit" name="Save" label="Save Inventory Check" onclick="{!c.SubmitSoftware}" disabled="{!v.Disable7}" class="slds-hide" />
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+              </lightning:recordEditForm>
+              
+              
+              <!---Project-->
+              
+               <lightning:recordEditForm recordId="{!v.SubmittedId}" onsuccess="{!c.handleSuccess6}" class="Vehicle" aura:id="VehicleWO" objectApiName="WorkOrder" recordTypeId="0121I000000BZtWQAW"> <!-- onsuccess="{!c.onRecordSubmit}"-->
+                <lightning:layout horizontalAlign="Center">																			  			  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> </lightning:layout>	
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+			<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount4" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress4" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                  
+                   <div style="padding-bottom:.5rem; padding-top:1rem;"/>
+                   
+                    <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRouteS" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute5}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="ArrivalS" type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival5}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="DepartureS" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure5}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="CancelS" type="submit" variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel5}" />
+                    </lightning:layoutItem>
+                        --
+                         <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   
+                   <lightning:inputField aura:id="EnRoute4" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival4" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure4" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission4" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing5" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+                   
+                   
+                   
+                   
+                                     <div aura:id="VHM" class="VehicleFields" style="padding-top:30px;">
+                                         
+                                   
+                                          <lightning:layout horizontalAlign="Center">
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="SiteNotes" fieldName="Site_Notes__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+                                         
+                                          
+                                         
+                                       <!--  <lightning:layout horizontalAlign="Center">
+                      
+                                         </lightning:layout>-->
+        
+                   
+                <!--   <lightning:layout horizontalAlign="Center">
+                      <lightning:layoutItem>
+                    <lightning:inputField aura:id="Assigned" fieldName="Assigned_Resource__c"/>
+                </lightning:layoutItem>
+                   </lightning:layout>-->
+                   
+                   
+                   </div>
+                   
+                   
+                        
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateSoftware" variant="brand" type="submit" name="Save" label="Save Inventory Check" onclick="{!c.SubmitVehicle}" disabled="{!v.Disable7}" class="slds-hide" />
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+              </lightning:recordEditForm>
+              
+                            <!---Colleague Assistance-->
+              
+               <lightning:recordEditForm recordId="{!v.SubmittedId}" onsuccess="{!c.handleSuccess7}" class="ColleagueA" aura:id="ColleagueWO" objectApiName="WorkOrder" recordTypeId="0126s0000008aGVAAY"> <!-- onsuccess="{!c.onRecordSubmit}"-->
+                <lightning:layout horizontalAlign="Center">																			  			  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> </lightning:layout>	
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+			<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="WAccount4" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="WAddress4" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                  
+                   <div style="padding-bottom:.5rem; padding-top:1rem;"/>
+                   
+                    <lightning:layout horizontalAlign="Center">
+                <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="EnRouteC" type="submit" variant="brand" label="EnRoute" onclick="{!c.EnRoute6}" disabled="{!v.Disable1}" />
+                    </lightning:layoutItem>
+                    --
+                     <lightning:layoutItem>
+                    
+                    <lightning:button aura:id="ArrivalC" type="submit" variant="brand"  label="Arrived" disabled="{!v.Disable2}" onclick="{!c.Arrival6}" />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                         
+                    
+                    <lightning:button aura:id="DepartureC" variant="brand"  label="Departure" disabled="{!v.Disable3}" onclick="{!c.Departure5}" class="slds-hide"  />
+                    </lightning:layoutItem>
+                      --
+                      <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="CancelC" type="submit" variant="brand"  label="Done/Cancel" disabled="{!v.Disable4}" onclick="{!c.Cancel6}" />
+                    </lightning:layoutItem>
+                        --
+                         <lightning:layoutItem>
+                    
+                          <lightning:button aura:id="Refresh" variant="brand"  label="⟳"  onclick="{!c.Refresh}" />
+                    </lightning:layoutItem>
+                 
+                </lightning:layout>
+                   
+                   <lightning:inputField aura:id="EnRoute4" label="EnRoute" name="EnRoute" fieldName="EnRoute__c" value="{!v.ENR}" class="slds-hide"/>
+				 <lightning:inputField aura:id="Arrival4" label="Arrival" name="Arrival" fieldName="Arrival__c" value="{!v.ARR}" class="slds-hide"/>
+                 <lightning:inputField aura:id="Departure4" label="Departure" name="Departure" fieldName="Departure__c" value="{!v.DEP}" class="slds-hide" />
+                <lightning:inputField aura:id="Submission4" label="Departure" name="Departure" fieldName="Submission_Time__c" value="{!v.SUB}" class="slds-hide" />
+                  <lightning:input aura:id="Testing6" name="Test1" label="Maintenance Date" type="text" disabled="true" class="slds-hide" style="width: 200px;" />
+                   
+                   
+                   
+                   
+                                     <div aura:id="CAssis" class="ColleagueFields" style="padding-top:30px;">
+                                         
+                                   
+                                          <lightning:layout horizontalAlign="Center">
+                     <lightning:layoutItem>
+                    <lightning:inputField aura:id="SiteNotes" fieldName="Site_Notes__c"/>
+                </lightning:layoutItem>
+                                         </lightning:layout>
+                                         
+                                          
+                                         
+                                       <!--  <lightning:layout horizontalAlign="Center">
+                      
+                                         </lightning:layout>-->
+        
+                   
+                <!--   <lightning:layout horizontalAlign="Center">
+                      <lightning:layoutItem>
+                    <lightning:inputField aura:id="Assigned" fieldName="Assigned_Resource__c"/>
+                </lightning:layoutItem>
+                   </lightning:layout>-->
+                   
+                   
+                   </div>
+                   
+                   
+                        
+                <lightning:layout horizontalAlign="Center">
+			
+                <lightning:layoutItem padding="around-small">  <lightning:button aura:id="CreateSoftware" variant="brand" type="submit" name="Save" label="Save Inventory Check" onclick="{!c.SubmitColleague}" disabled="{!v.Disable7}" class="slds-hide" />
+                    </lightning:layoutItem> 
+                    </lightning:layout>
+              </lightning:recordEditForm>
+              
+        </div>
+            </form>
+     </div>
+        </div>
+                       </div>
+                </div>
+                
+           <!-- END OF SERVICE APP, OLD VERSION DO NOT USE-->     
+                
+                <!--PM APP-->
+                <aura:set attribute='else'>
+    
+        
+    
+   
+ <div aura:id="mainContainer" class="mainContainer">
+    <div class="childContainer">
+ <div class="slds-medium-size_1-of-3">        
+        <div class="page" style="background-color:#FFFFF0; border:5px solid #F5DEB3; border-radius:0.2%;  box-shadow: 2px 10px #FFF8DC;">  
+  
+    <form class ="slds-form--stacked">
+    <div class="slds-hide" disabled="{!v.Disable}"></div>
+          <div class="addpadd" style="margin-bottom:0px;">
+              
+               
+
+              
+              
+              <!-- Account Selection & PM APP/ Special Project Checkbox Selection -->
+              
+        <lightning:layout horizontalAlign="center">
+              
+                         
+            
+            
+            <lightning:recordEditForm aura:id="WorkOrder" objectApiName="WorkOrder" recordtypeId='0121I000000WOJgQAO'   onsuccess="{!c.handleSuccess}"> <!-- onsuccess="{!c.onRecordSubmit}"-->
+                																											  
+     <div aura:id="hideLookup">   <div style="zoom:125%">   <c:CustomLookup objectAPIName="Account" IconName="standard:account" selectedRecord="{!v.selectedLookUpRecord}" label="Account Name" aura:id="CustomLookup" Disabled="{!v.Disable}"/>  </div> </div> 
+				      <div class="move" style="position:relative; top:30px; left:65px;">      </div> 
+				<aura:if isTrue="{! empty( v.value) }">
+                    <lightning:layout horizontalAlign="center">
+                <lightning:inputField aura:id="Account" fieldName="AccountId" class="slds-hide"/> 
+                        <lightning:input aura:id="Address" label="Address" Name="Address" disabled="true"/> </lightning:layout>
+               </aura:if>
+                
+                
+                <lightning:inputField aura:id="time" fieldName="Maintenance_Start_Time__c" class="slds-hide"/>
+              		 <lightning:inputField aura:id="Site_Grade" label="Asset" name="Asset 1" fieldName="Site_Grade__c" value="" class="slds-hide"/>
+                      <lightning:inputField aura:id="Site_Notes" label="Asset" name="Asset 1" fieldName="Site_Notes__c" value="" class="slds-hide"/>
+                <lightning:inputField aura:id="WorkStatus" label="Work Order Status" fieldName="Status" class="slds-hide"/>
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+                  <lightning:inputField aura:id="realsp" fieldName="Special_Project__c" class="slds-hide"/>
+                <lightning:inputField aura:id="Real-pic" fieldName="Special_Project_Type__c" class="slds-hide"/>
+             <lightning:inputField aura:id="CallSign" fieldName="Call_Sign_Placed__c" class="slds-hide" />
+                <lightning:inputField aura:id="AmusementPic" fieldName="Amusement_Project__c" class="slds-hide" /> 
+                     <lightning:inputField aura:id='HideEquipment' fieldName="Equipment_Assets__c" class="slds-hide" />
+
+                
+                </lightning:recordEditForm>
+           
+          <div class="slds-hide">
+              <!--  <lightning:recordEditForm aura:id="HideAccount" objectApiName="Account" recordId="{v.selectedLookUpRecord}">
+                    <lightning:inputField aura:id="PmDate" label="Pm Date" name="PM Date" fieldName="PM_Date__c"/>
+                 <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+                
+                </lightning:recordEditForm>-->
+            </div> 
+                
+        <!--   <lightning:textarea aura:id="PMForm1"  name="test" label="Test" value="{!v.recordId}" maxlength="300"/>-->
+        </lightning:layout>
+             </div>
+        
+            <aura:if isTrue="{!or(v.userInfo.ProfileId != '00e1I000000a3dYQAQ', v.userInfo.Name=='Scott Johnson' ||  v.userInfo.Id =='0051I000007jeNMQAY' || v.userInfo.Id=='0051I000002FZCIQA4')}">
+
+        
+                        <div aura:id="PMCheck">         <lightning:layout horizontalAlign="center">    <div style="position:relative; top:-5px;">      <H2 style="color:#000000; font-size:12px; zoom:140%;"> <b><div class="move" style="position:relative; bottom:3px; right:2px; display:inline-block"><label for="checkbox">PM Appointment?</label></div><ui:inputCheckbox aura:id="PmApp" labelClass="uiLabel-top" change="{!c.PMapp}"  /> </b> </H2> </div></lightning:layout></div>
+
+        
+        
+        <aura:set attribute='else'>
+            <lightning:layout horizontalAlign="center">
+            <div style='font-size:22px; color:red;'>  Amusement PM </div>
+                </lightning:layout>
+                </aura:set>
+                
+        </aura:if>
+      <div aura:id="HideClosed">  <lightning:layout horizontalAlign="center">
+            <H2 style="color:#D5A210; font-size:12px; zoom:140%;"> <b><div class="move" style="position:relative; bottom:8px; right:2px; display:inline-block"><label for="checkbox">Location Closed?</label></div><div style="position:relative; bottom:8px;"><ui:inputCheckbox aura:id="checkbox" labelClass="uiLabel-top" disabled="{!v.CheckDisable}" change="{!c.Hide}" /> </div></b> </H2></lightning:layout> </div>
+        <div aura:id="Hidecheck">         <lightning:layout horizontalAlign="center">    <div style="position:relative; top:20px;">      <H2 style="color:#A12345; font-size:12px; zoom:140%;"> <b><div class="move" style="position:relative; bottom:3px; right:2px; display:inline-block"><label for="checkbox">Special Project</label></div><ui:inputCheckbox aura:id="specialproject" labelClass="uiLabel-top" disabled="{!v.SaveDisable}"  change="{!c.Project}"  /> </b> </H2> </div></lightning:layout></div>
+  <div aura:id="HidePicklist"><div style="position:relative; top:17px;">  <lightning:layout horizontalAlign="center">    <b> <div class="position:relative; bottom:11px;"><label for="Special-P">Project Type</label> </div>   
+      
+      
+      
+      
+  <!--  <aura:if isTrue="{!or(v.userInfo.ProfileId != '00e1I000000a3dYQAQ', v.userInfo.Name=='Scott Johnson' || v.userInfo.Id=='0051I000002FZCIQA4'|| v.userInfo.ID=='0051I000007jeNMQAY')}"> -->
+            <aura:if isTrue="{!or(v.userInfo.ProfileId != '00e1I000000a3dYQAQ',v.userInfo.ProfileId == '00e8W0000026skr', v.userInfo.Name=='Scott Johnson' ||  v.userInfo.Id =='0051I000007jeNMQAY' || v.userInfo.Id=='0051I000002FZCIQA4')}">
+
+                      
+                      <ui:inputSelect  aura:id="Special-P" class="single"  required="True" change="{!c.Special}">
+                          <ui:inputSelectOption text="Select Choice"/>
+
+                          <ui:inputSelectOption text="Cradle Point Installs"/>
+                          <ui:inputSelectOption text="Repairs"/>
+                          <ui:inputSelectOption text="TC Install"/>
+                          <ui:inputSelectOption text="CPU Blowout" />
+                          <ui:inputSelectOption text="NRT Security Plate"/>
+                          <ui:inputSelectOption text="VSR Lock Swap"/>
+                          <ui:inputSelectOption text="Signage Checks"/>
+                          <ui:inputSelectOption text="USB Install"/>
+                          <ui:inputSelectOption text="Other"/>
+
+                      </ui:inputSelect>
+
+					
+                  
+
+                <!-- <aura:if isTrue="{!and(v.userInfo.ProfileId == '00e1I000000a3dYQAQ') }">-->
+                  <aura:set attribute="else">   <ui:inputSelect  aura:id="Amusement" class="single"  required="True" change="{!c.Amusement}" >
+						<ui:inputSelectOption text="Select Choice" value="True"/>
+                          <ui:inputSelectOption text="Amusement PM"/>
+                        <!--<ui:inputSelectOption text="Other"/>-->
+                      </ui:inputSelect>
+                      
+                   <!--   </ui:inputSelect>-->
+                  </aura:set> </aura:if> </b> </lightning:layout> </div> </div> 
+        
+        <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/> <H1 style="color:#D5A301; text-shadow: 1px 0 0 black; text-align:center; position:relative; bottom:5px; font-size:20px; font-style:oblique; font-family:Arial;"> Work Order Line Items</H1>
+      
+        <div aura:id="HideAll">
+        
+        <div aura:id="Hide1">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+         <!-- SAS Position 1-->
+         
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="one" recordTypeId="0121I000000WOJh"> 
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:1</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                  <div aura:id="HideSticker">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker1" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker1" fieldName="County_City_Sticker__c" class="slds-hide" />
+                     <lightning:input aura:id="SAS1" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide" />
+                  <!--<aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                      <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+              
+                 <!--  </aura:if>-->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                          
+                 <lightning:inputField aura:id="Asset1" label="Asset" name="Asset 1" fieldName="AssetId" value="" disabled="true" class="slds-hide"/>
+                   <lightning:input aura:id="IGB1" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                   <lightning:inputField aura:id="Date1" name="CreatedDate" fieldName="Date__c" class="slds-hidden"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model1" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status" label="PM Status" fieldName="PM_Status__c" labelClass ="Mandatory" id="Status" name="Status" class="slds-hide" />
+             <div style="position:relative; top:6px;">	  <ui:inputSelect  aura:id="Astatus" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+             </ui:inputSelect>  </div>      
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes1" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+        
+        
+    <div aura:id="Hide2">  <HR style="border: 2px Solid #F0CC73  ;"/>
+            <div class="bottompad" style="margin-bottom:15px;">
+     		
+                         <!-- SAS Position 2-->
+
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="two" recordTypeId="0121I000000WOJhQAO">
+                <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:2</b></H2></div>   
+               <lightning:layout horizontalAlign="center">
+                  <div aura:id="HideSticker2">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker2" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker2" fieldName="County_City_Sticker__c" class="slds-hide" />
+               <!--    <label For="WorkOrder6" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                                 <lightning:input aura:id="IGB2" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                   <lightning:input aura:id="SAS2" label="Position" name="Model 2" type="text" max="1000" disabled="true" class="slds-hide"/>
+      <lightning:inputField aura:id="Date1" name="CreatedDate" fieldName="Date__c" class="slds-hidden"/>
+                     <lightning:input aura:id="WorkOrder2" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+                               class="slds-hide"       
+                         />
+                 <!--  <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                   <lightning:inputField aura:id="ParentWork2" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden" />
+                       
+               <!--    </aura:if>-->
+               </lightning:layout>
+               
+                 <lightning:layout horizontalAlign="center">
+                   
+                     <lightning:inputField aura:id="Asset2" label="Asset2" name="Asset 2" fieldName="AssetId" class="slds-hide"/>
+                   
+					<lightning:input aura:id="Model2" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true"/>
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="Status2" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             <div style="position:relative; top:6px;">	  <ui:inputSelect  aura:id="Astatus2" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                 </ui:inputSelect></div>
+			
+                     
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 2" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+              <lightning:layout horizontalAlign="center">
+            
+          
+        <!--   <lightning:textarea aura:id="PMForm1"  name="test" label="Test" value="{!v.recordId}" maxlength="300"/>-->
+        </lightning:layout>
+        </div>
+        </div>  
+        
+    <div aura:id="Hide3">    <HR style="border: 2px Solid #F0CC73  ;"/>
+   <div class="bottompad" style="margin-bottom:15px;">
+     		
+                <!-- SAS Position 3-->
+
+       
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="three" recordTypeId="0121I000000WOJhQAO" >
+                <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:3</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker3">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker3" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker3" fieldName="County_City_Sticker__c" class="slds-hide" />
+                     <lightning:input aura:id="IGB3" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                   <lightning:input label="test" type="datetime" disabled="true" class="slds-hidden" />
+                   <lightning:input aura:id="SAS3" label="Position" name="Model 3" type="text" max="1000" disabled="true" class="slds-hidden"/>
+                   <!--<label For="WorkOrder3" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                   
+                     <lightning:input aura:id="WorkOrder3" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+                               class="slds-hide"       
+                         />
+                 <!--  <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                  <lightning:inputField aura:id="ParentWork3" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+                <!--   </aura:if>-->
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+               
+                     <lightning:inputField aura:id="Asset3" label="Asset6" name="Asset 6" fieldName="AssetId" class="slds-hide"/>
+      
+					<lightning:input aura:id="Model3" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true"/>
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="Status3" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus3" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 3" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+              <lightning:layout horizontalAlign="center">
+      
+          
+        <!--   <lightning:textarea aura:id="PMForm1"  name="test" label="Test" value="{!v.recordId}" maxlength="300"/>-->
+        </lightning:layout>
+        </div>
+        </div>
+  <div aura:id="Hide4">   <HR style="border: 2px Solid #F0CC73  ;"/>
+      <div class="bottompad" style="margin-bottom:15px;">
+     	
+                   <!-- SAS Position 4-->
+
+          
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="four" recordTypeId="0121I000000WOJhQAO">
+                <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:4</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker4">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker4" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker4" fieldName="County_City_Sticker__c" class="slds-hide" />
+                    <lightning:input aura:id="IGB4" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                    <lightning:input aura:id="I3" label="IGB #" name="IGB #" disabled="true" class="slds-hidden"/>
+                  <lightning:input aura:id="SAS4" label="Position" name="Model 4" type="text"  disabled="true" class="slds-hide"/>  
+                  <!-- <label For="WorkOrder4" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                     <lightning:input aura:id="WorkOrder6" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+                                class="slds-hidden"      
+                         />
+                  <!-- <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                   <lightning:inputField aura:id="ParentWork4" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden"/>
+                   <!--</aura:if>-->
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                   
+                     <lightning:inputField aura:id="Asset4" label="Asset4" name="Asset 4" fieldName="AssetId" class="slds-hide"/>
+          
+					<lightning:input aura:id="Model4" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true"/>			
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="Status4" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus4" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 4" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           
+              <lightning:layout horizontalAlign="center">
+          
+          
+        <!--   <lightning:textarea aura:id="PMForm1"  name="test" label="Test" value="{!v.recordId}" maxlength="300"/>-->
+        </lightning:layout>
+        </div>
+      </div>   
+   <div aura:id="Hide5">   <Hr style="border: 2px Solid #F0CC73  ;"/>
+        
+       <div class="bottompad" style="margin-bottom:15px;">
+     			
+           
+                    <!-- SAS Position 5-->
+
+              
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="five" recordTypeId="0121I000000WOJhQAO" >
+                <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:5</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker5">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker5" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker5" fieldName="County_City_Sticker__c" class="slds-hide" />
+                    <lightning:input aura:id="IGB5" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                    <lightning:input aura:id="I3" label="IGB #" name="IGB #" disabled="true" class="slds-hidden"/>
+                    <lightning:input aura:id="I3" label="IGB #" name="IGB #" disabled="true" class="slds-hidden"/>
+                   <lightning:input aura:id="SAS5" label="Position" name="Model 4" type="text" max="1000" disabled="true" class="slds-hide"/>  
+                  <!-- <label For="WorkOrder6" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                     <lightning:input aura:id="WorkOrder6" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+                                      class="slds-hide"
+                         />
+               <!--    <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                   <lightning:inputField aura:id="ParentWork5" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden"/>
+                 <!--  </aura:if>-->
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+               
+                     <lightning:inputField aura:id="Asset5" label="Asset5" name="Asset 5" fieldName="AssetId" class="slds-hide"/>
+           
+					<lightning:input aura:id="Model5" label="Asset Model;" name="Model 5" type="text" max="1000" disabled="true"/>				
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="Status5" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             <div style="position:relative; top:6px;">	  <ui:inputSelect  aura:id="Astatus5" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                 </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 5" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+     
+              <lightning:layout horizontalAlign="center">
+         
+          
+        <!--   <lightning:textarea aura:id="PMForm1"  name="test" label="Test" value="{!v.recordId}" maxlength="300"/>-->
+        </lightning:layout>
+        </div>
+       </div>
+        <div aura:id="Hide6">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+                  <!-- SAS Position 6-->
+
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="six" recordTypeId="0121I000000WOJhQAO">
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:6</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                  <div aura:id="HideSticker6">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker6" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker6" fieldName="County_City_Sticker__c" class="slds-hide" />
+                     <lightning:input aura:id="SAS6" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide" />
+                 <!-- <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                      <lightning:inputField aura:id="ParentWork6" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+              
+                  <!-- </aura:if> -->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                     <lightning:input aura:id="IGB6" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>      
+                 <lightning:inputField aura:id="Asset6" label="Asset" name="Asset 6" fieldName="AssetId" value="" disabled="true" class="slds-hidden"/>
+                   <lightning:inputField aura:id="Date6" name="CreatedDate" fieldName="Date__c" class="slds-hide"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model6" label="Asset Model" name="Model 6" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status6" label="PM Status" fieldName="PM_Status__c" class="slds-hide" />
+             <div style="position:relative; top:6px;">	  <ui:inputSelect  aura:id="Astatus6" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                 </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 6" label="Additional Notes" fieldName="Notes__c" variant="label-hidden"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+            
+        <div aura:id="Hide7">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+                  <!-- SAS Position 7-->
+
+         
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="seven" recordTypeId="0121I000000WOJhQAO">
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:7</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker7">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker7" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker7" fieldName="County_City_Sticker__c" class="slds-hide" />
+                  <lightning:input aura:id="IGB7" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                     <lightning:input aura:id="SAS7" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide" />
+               <!--   <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                      <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+              
+                 <!--  </aura:if>-->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                          
+                 <lightning:inputField aura:id="Asset7" label="Asset" name="Asset 1" fieldName="AssetId" value="" disabled="true" class="slds-hide"/>
+                   <lightning:inputField aura:id="Date7" name="CreatedDate" fieldName="Date__c" class="slds-hidden"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model7" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status7" label="PM Status" fieldName="PM_Status__c" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus7" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 7" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+        
+        <div aura:id="Hide8">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+         
+                  <!-- SAS Position 8-->
+
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="eight" recordTypeId="0121I000000WOJhQAO">
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:8</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker8">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker8" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker8" fieldName="County_City_Sticker__c" class="slds-hide" />
+                  <lightning:input aura:id="IGB8" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                     <lightning:input aura:id="SAS8" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide"/>
+                <!--  <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+
+              <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden"/>
+                 <!--  </aura:if>-->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                          
+                 <lightning:inputField aura:id="Asset8" label="Asset" name="Asset 1" fieldName="AssetId" value="" disabled="true" class="slds-hidden"/>
+                   <lightning:inputField aura:id="Date8" name="CreatedDate" fieldName="Date__c" class="slds-hide"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model8" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status8" label="PM Status" fieldName="PM_Status__c" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus8" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 8" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+        <div aura:id="Hide9">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+                  <!-- SAS Position 9-->
+
+         
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="nine" recordTypeId="0121I000000WOJhQAO">
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:9</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                  <div aura:id="HideSticker9">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker9" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker9" fieldName="County_City_Sticker__c" class="slds-hide" />
+                    <lightning:input aura:id="IGB9" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                     <lightning:input aura:id="SAS9" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide"/>
+                <!--  <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                      <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden"/>
+              
+                 <!--  </aura:if>-->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                          
+                 <lightning:inputField aura:id="Asset9" label="Asset" name="Asset 1" fieldName="AssetId" value="" disabled="true" class="slds-hidden"/>
+                   <lightning:inputField aura:id="Date9" name="CreatedDate" fieldName="Date__c" class="slds-hide"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model9" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status9" label="PM Status" fieldName="PM_Status__c" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus9" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 9" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+        
+        
+        
+        
+        
+           
+        <div aura:id="Hide10">  <HR style="border: 2px Solid #F0CC73 ; border-radius:2.5%;"/>
+        
+     <div class="bottompad" style="margin-bottom:15px;">
+       
+                  <!-- SAS Position 10-->
+
+         
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="ten" recordTypeId="0121I000000WOJhQAO">
+                 <div class="move" style="position:relative; left:5px; bottom:15px; color:#D5A301;"><H2><b>Position:10</b></H2></div> 
+               <lightning:layout horizontalAlign="center">
+                  <div aura:id="HideStickerten">     <div style="position:relative; left:300px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Stickerten" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CityStickerten" fieldName="County_City_Sticker__c" class="slds-hide" />
+                    <lightning:input aura:id="IGB10" label="IGB #" name="IGB #" disabled="true" class="slds-hide"/>
+                     <lightning:input aura:id="SAS10" label="Position" name="Model 1" type="text" max="1000" disabled="true" class="slds-hide"/>
+                <!--  <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                      <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hidden"/>
+              
+                 <!--  </aura:if>-->
+                     <!--<lightning:input aura:id="PMForm" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+						class="slds-hide"
+                         />-->
+                          
+                 <lightning:inputField aura:id="Asset10" label="Asset" name="Asset 1" fieldName="AssetId" value="" disabled="true" class="slds-hidden"/>
+                   <lightning:inputField aura:id="Date10" name="CreatedDate" fieldName="Date__c" class="slds-hide"/>
+              
+                    
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+                 
+                     
+                     
+			
+                 
+                     <lightning:input aura:id="Model10" label="Asset Model" name="Model 1" type="text" max="1000" disabled="true" width="200px"/>
+           		
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+                     <lightning:input label="test" type="datetime" disabled="true"  width="500px" class="slds-hide"/>
+                      <!--  <ui:inputSelect  aura:id="PMSTAT1" class="single" label="Status" required="True" class="slds-hide">
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="PM Not Completed"/>
+            <ui:inputSelectOption text="PM Completed"/>
+            <ui:inputSelectOption text="PM Partially Completed"/>
+            <ui:inputSelectOption text="Location Closed"/>
+      
+          
+             
+             </ui:inputSelect>-->
+ 			<lightning:inputField aura:id="Status10" label="PM Status" fieldName="PM_Status__c" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatusten" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       			
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes ten" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+           </div>
+
+       </div>
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        
+   <div aura:id="HideRed">    <HR style="border: 2px Solid #F0CC73  ;"/>
+        
+         
+     <div class="bottompad" style="margin-bottom:15px;">
+     		
+         
+                  <!-- SAS Position Redemption 1-->
+
+         
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="red" recordTypeId="0121I000000WOJhQAO">
+                <div class="styleRed" style="font-style:oblique; font-family:Arial; color:#DAA100; position:relative; bottom:15px;"><b>REDEMPTION TERMINAL</b></div> 
+               <lightning:layout horizontalAlign="center">
+                    <div aura:id="HideSticker10">     <div style="position:relative; left:100px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker10" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker10" fieldName="County_City_Sticker__c" class="slds-hide" />
+                   <!--<label For="WorkOrder6" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                     <lightning:input aura:id="WorkOrder6" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+							class="slds-hide"                                      
+                         />
+                   <!-- <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                 <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+                <!--   </aura:if>-->
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+          
+                     <lightning:inputField aura:id="Redemption" label="Asset6" name="Asset 6" fieldName="AssetId" class="slds-hide"/>
+     
+					<lightning:input aura:id="RedModel" label="Redemption Model" name="Model 1" type="text" max="1000" disabled="true"/>	
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="RedStatus" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus10" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 10" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+         </div> 
+       </div>
+        
+           <div aura:id="HideRed2">    <HR style="border: 2px Solid #F0CC73  ;"/>
+        
+         
+     <div class="bottompad" style="margin-bottom:15px;">
+     		
+         
+                  <!-- SAS Position Redemption 2-->
+
+            <lightning:recordEditForm objectApiName="WorkOrderLineItem" aura:id="red2" recordTypeId="0121I000000WOJhQAO">
+                <div class="styleRed" style="font-style:oblique; font-family:Arial; color:#DAA100; position:relative; bottom:15px;"><b>REDEMPTION TERMINAL 2 </b></div> 
+               
+                <lightning:layout horizontalAlign="center">
+                   <div aura:id="HideSticker11">     <div style="position:relative; left:100px;">   <div style="display: inline;"> <label for="checkbox">Cook County Sticker?</label></div> <ui:inputCheckbox aura:id="Sticker11" labelClass="uiLabel-top"/> </div> </div> 
+                       <lightning:inputField aura:id="CitySticker11" fieldName="County_City_Sticker__c" class="slds-hide" /> 
+                   <!--<label For="WorkOrder6" style="position:relative; bottom:17px; left:40px;" > WorkOrder#</label>-->
+                     <lightning:input aura:id="WorkOrder6" label="Work Order #"
+                         name="Work Order #"
+                         disabled="true"
+                         fieldName="LineItemNumber"
+                         variant = "label-hidden"
+                                      style="position:relative; top:20px;"
+							class="slds-hide"                                      
+                         />
+                  <!-- <aura:if isTrue="{! not( empty( v.recordId ) ) }">  -->
+                 <lightning:inputField aura:id="ParentWork1" name = "Parent" fieldName="WorkOrderId" value="{!v.recordId}" disabled="true" class="slds-hide"/>
+                  <!-- </aura:if>-->
+               </lightning:layout>
+                 <lightning:layout horizontalAlign="center">
+          
+                     <lightning:inputField aura:id="Redemption2" label="Asset6" name="Asset 6" fieldName="AssetId" class="slds-hide"/>
+     
+					<lightning:input aura:id="RedModel2" label="Redemption Model" name="Model 1" type="text" max="1000" disabled="true"/>	
+           
+     	
+       
+    	  	<!--<div class = "move-right" style="position:relative; bottom:100px; left:210px;">-->
+         	   <lightning:input label="test" type="datetime" disabled="true" class="slds-hide" width="500px"/>
+ 			<lightning:inputField aura:id="RedStatus2" label="PM Status" fieldName="PM_Status__c" required="true" class="slds-hide" />
+             	<div style="position:relative; top:6px;">  <ui:inputSelect  aura:id="Astatus11" class="single" label="PM Status" required="True"> 
+                 <ui:inputSelectOption text=""/>
+              <ui:inputSelectOption text="PM_Completed" label="PM Completed"/>
+            <ui:inputSelectOption text="NotComplete" label="PM Not Completed"/>
+            <ui:inputSelectOption text="Incomplete" label="PM Partially Completed"/>
+                    </ui:inputSelect> </div>
+			
+            <!--</div>-->
+           </lightning:layout>
+       		
+             <!--<div class = "move-right" style="position:relative; top:25px; right:105px;">-->
+                <label for="Notes 1">Additional Notes</label>
+        <lightning:inputField aura:id="Notes 11" label="Additional Notes" variant="label-hidden" fieldName="Notes__c"/>
+       <!-- </div> -->
+                <lightning:button aura:id="click1" variant="brand" type="submit" name="Save" label="Create Line Item" class="slds-hidden"/>
+         </lightning:recordEditForm>
+         </div> 
+       </div>
+        
+              </div>
+        
+        
+            <HR style="border: 2px Solid #F0CC73  ;"/>
+        
+                 <!-- Submit FORM-->
+
+          <lightning:recordEditForm aura:id="Acc" objectApiName="WorkOrder" recordtypeId='0121I000000WOJgQAO'>
+              
+         <lightning:layout horizontalAlign="center">
+         <!--   <div style="position:relative; bottom:6px;"><div style="font-size:.875em;" > <b>   <lightning:input aura:id="Date/Time" name="Maintenance Date" label="Maintenance Date" type="text" disabled="true" maxlength="2000" class='slds-size1-of-1' /> </b> </div>  </div>-->
+             <lightning:layoutitem padding="around-small">
+             
+             
+           <b>   <lightning:input aura:id="Date/Time" name="Maintenance Date" label="Maintenance Date" type="text" disabled="true" maxlength="1000" /> </b>
+
+             
+             
+             </lightning:layoutitem>
+             <lightning:layoutitem padding="around-small">
+        <!-- <lightning:input name="Maintenance Date" label="Maintenance Date" type="text" disabled="true" class="slds-hidden" style="width: 50px;" /> -->
+  <!-- <div style="position:relative; left:60px "> --> <b>       <ui:inputSelect  aura:id="Grade" class="single" label="Site Grade" required="True" labelClass="uiLabel-top" disabled="{!v.CheckDisable}"> 
+                 <ui:inputSelectOption text="Select Choice"/>
+              <ui:inputSelectOption text="A"/>
+            <ui:inputSelectOption text="B"/>
+            <ui:inputSelectOption text="C"/>
+            <ui:inputSelectOption text="D"/>
+        	<ui:inputSelectOption text="F"/>
+                 <ui:inputSelectOption text="N/A( Location Closed)"/>
+             
+             </ui:inputSelect> </b><!--</div>-->
+                 </lightning:layoutitem>
+              </lightning:layout>
+              <lightning:layout horizontalAlign="center">
+                  <lightning:layoutItem>
+
+
+                 <div aura:id="EquipmentClass">  <div style="position:relative; right:35px;"> <ui:inputSelect aura:id="AssetEquipment" class="multiple" multiple="true" change="{!c.SetValues}">
+            <ui:inputSelectOption text="Juke"/>
+            <ui:inputSelectOption text="Pool Table"/>
+            <ui:inputSelectOption text="Dartboards"/>
+        	<ui:inputSelectOption text="Driver"/>
+            <ui:inputSelectOption text="Cranes"/>
+            <ui:inputSelectOption text="Pinballs"/>
+            <ui:inputSelectOption text="Tabletop"/>
+             <ui:inputSelectOption text="Shuffleboard"/>
+            <ui:inputSelectOption text="Golden Tee"/>
+            <ui:inputSelectOption text="Changer"/>
+            <ui:inputSelectOption text="Other"/>
+                     </ui:inputSelect>  </div> </div>
+
+                  </lightning:layoutItem>
+                  
+                  <lightning:layoutItem>
+                      
+                      <div aura:id="WorkDuration" style="position:relative; right:20px">
+                     <lightning:inputField aura:id="Duration" label="Total PM Time(Hours.Minutes)" name="Total PM Time(Hours:Minutes)" fieldName="Total_Hours_of_PM_Appointment__c" />
+
+                      
+                      </div>
+                  
+                  </lightning:layoutItem>
+                  <lightning:layoutItem>
+                            <div aura:id="Equipment">
+                      <!--   <div style="position:relative; top:70px; right:90px;">   <div style="display: inline-block; font-size:13px; white-space:nowrap; position:relative; top:8px;">--> <label for="checkbox"><b>Call Sign Placed?</b></label><!--</div> <div style="zoom:130%; display:inline; padding-left:10px; position:relative; bottom:25px; left:85px;">--><div style="zoom:130%; display:inline; padding-left:2px;"><ui:inputCheckbox aura:id="CheckCallSign" labelClass="uiLabel-top"/></div><!--</div></div>--></div>
+
+                  </lightning:layoutItem>
+
+
+            <!--  <div style="position:relative; top:70px; right:90px;">   <div style="display: inline-block; font-size:13px; white-space:nowrap; position:relative; top:8px;">--> <!--<label for="checkbox"><b>Call Sign Placed?</b></label></div> <div style="zoom:130%; display:inline; padding-left:10px; position:relative; bottom:25px; left:85px;">--><!--<div style="zoom:130%; display:inline; padding-left:2px;"><ui:inputCheckbox aura:id="CheckCallSign" labelClass="uiLabel-top"/></div></div></div>-->
+               <!--  </div>-->
+                  </lightning:layout>
+                    
+            <div style="position:relative; bottom:6px;">  <lightning:inputField aura:id="LocationContact" fieldName="Location_Contact__c"/></div> 
+              <b>  <lightning:textarea aura:id="SiteNote" label="Site Notes" name="Site Notes"/> </b>
+           
+         
+         </lightning:recordEditForm>
+       
+              <lightning:layout horizontalAlign="center">
+               
+                  
+               <lightning:button label="Create Work Order" title="Save" onclick="{!c.update}" disabled="{!v.Disable}"  class='slds-hide' />
+                 <div style="zoom:150%;"> <lightning:button label="Save" title="Save" onclick="{!c.Submit}" disabled="{!v.SaveDisable}"  /></div>
+              
+
+        </lightning:layout>
+              
+              
+  
+    </form>
+              
+            
+        </div>
+        </div>
+            
+</div>
+     
+  </div>    
+                </aura:set>
+    </aura:if>
+</aura:component>

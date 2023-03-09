@@ -1,0 +1,328 @@
+<aura:component implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,force:lightningQuickActionWithoutHeader"
+                access="global"
+                controller="InventoryRequestController"
+                description="Inventory Request Administration (For System Admins Only)">
+
+    <aura:attribute name="flowName" type="String" default="InventoryRequestLineItem_Processor"/>
+    <aura:attribute name="customPermissionCreateAssetsApiName" type="String" default="Inventory_Request_Create_Assets"/>
+
+    <aura:attribute name="selectedRecordId" type="String"/>
+    <aura:attribute name="doneWithInit" type="Boolean" default="false" />
+    <aura:attribute name="fireFlow" type="Boolean" default="false"/>
+    <aura:attribute name="showFireButton" type="Boolean" default="true"/>
+    <aura:attribute name="isRunningFlow" type="Boolean" default="false"/>
+
+    <aura:attribute name="runningUserProfile" type="Profile" access="private"/>
+    <aura:attribute name="validUserProfileName" type="String" access="private" default="System Administrator"/>
+    <aura:attribute name="alreadyCreated" type="Boolean" default="false"/>
+    <aura:attribute name="doesIrLineItemHaveAssets" type="Boolean" default="false" />
+    <aura:attribute name="debugConsole" type="Boolean" default="false"/>
+    <aura:attribute name="qtyToCreate" type="Integer"/>
+    <aura:attribute name="createError" type="Boolean" default="false"/>
+    <aura:attribute name="inventoryRequestLineItem" type="Inventory_Request_Line_Item__c"/>
+    <aura:attribute name="spinnerAltText" type="string" default="creating assets"/>
+    <aura:attribute name="showSpinner" type="Boolean" default="true"/>
+    <aura:attribute name="numberOfAssetsCreated" type="Integer" default="0"/>
+    <aura:attribute name="createErrorMsg" type="String"/>
+    <aura:attribute name="doesUserHaveCreateAssetPermission" type="Boolean" default="false"/>
+    <aura:attribute name="cmpCollapsed" type="Boolean" default="true" />
+
+    <aura:attribute name="headerTitle" type="Aura.Component[]">
+        <span class="slds-card__header-title slds-truncate slds-m-right--xx-small"><b>Inventory Request Line #{!v.inventoryRequestLineItem.Item_Number__c} Administration</b></span>
+    </aura:attribute>
+
+    <aura:handler name="init" value="{!this}" action="{!c.doInit}"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+
+    <div class="accel-admin-component">
+            <aura:if isTrue="{!v.selectedRecordId != null}">
+            <div class="slds-hide">
+                <lightning:flow aura:id="flowData" onstatuschange="{!c.statusChange}"/>
+            </div>
+            <lightning:card title="{!v.headerTitle}" class="accel-admin-card-header" iconName="standard:skill" >
+                <aura:set attribute="actions">
+                    <div class="slds-grid slds-gutters_x-small">
+                        <div class="slds-col slds-size--1-of-2">
+                            <div style="display:inline-block;" onclick="{!c.handleRefreshComponent}">
+                                <lightning:icon iconName="utility:refresh" size="x-small"
+                                                class="accel-comp-header-icon"/>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-size--1-of-2">
+                            <aura:if isTrue="{!!v.cmpCollapsed}">
+                                <div style="display:inline-block;" onclick="{!c.handleCollapseComponent}">
+                                    <lightning:icon iconName="utility:collapse_all" size="x-small" class="accel-comp-header-icon"/>
+                                </div>
+                            </aura:if>
+                            <aura:if isTrue="{!v.cmpCollapsed}">
+                                <div style="display:inline-block;" onclick="{!c.handleExpandComponent}">
+                                    <lightning:icon iconName="utility:expand_alt" size="x-small" class="accel-comp-header-icon "/>
+                                </div>
+                            </aura:if>
+                        </div>
+                    </div>
+                </aura:set>
+                <div class="{!v.cmpCollapsed ? 'slds-hide' : 'accel-admin-component slds-p-horizontal--small'}">
+                    <lightning:spinner variant="brand" size="large" aura:id="spinner"
+                                       class="{!((v.showSpinner)? '': 'slds-hide')}"
+                                       alternativeText="{!v.spinnerAltText}"/>
+                    <aura:if isTrue="{!and(v.validUserProfileName != v.runningUserProfile.Name,v.doneWithInit)}">
+                        <div class="slds-p-top--large">
+                            You need to be a member of System Administrator to use this component!
+                        </div>
+                    </aura:if>
+                    <aura:if isTrue="{!v.validUserProfileName == v.runningUserProfile.Name}">
+                        <div class="slds-p-top--small">
+                            <div class="slds-p-bottom--small">
+                                <c:Accel_InventoryRequestAdminHelp/>
+                            </div>
+                            <div class="slds-p-bottom--small">
+                                <lightning:input type="toggle" name="toggleEligible" aura:id="tglEligibleBtn"
+                                                 label="Eligibility to create assets:"
+                                                 checked="{!v.inventoryRequestLineItem.Eligible_to_Create_Assets__c}"
+                                                 messageToggleActive="Eligible"
+                                                 messageToggleInactive="Not Eligible"
+                                                 onchange="{!c.handleEligibleToggle}"/>
+                                <aura:if isTrue="{!!v.inventoryRequestLineItem.Eligible_to_Create_Assets__c}">
+                                    <span style="font-size:.70rem">
+                                        (Will populate all required data automatically if toggled on)
+                                    </span>
+                                </aura:if>
+                                <aura:if isTrue="{!v.inventoryRequestLineItem.Eligible_to_Create_Assets__c}">
+                                     <span style="font-size:.70rem">
+                                            (Will set the line item received date null if toggled off)
+                                     </span>
+                                </aura:if>
+                            </div>
+                            <div class="slds-p-bottom--large" style="font-size:.75rem">
+                                <table class="slds-table slds-table_cell-buffer slds-table_header-hidden slds-table_bordered">
+                                    <thead class="slds-assistive-text">
+                                    </thead>
+                                    <tbody>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="IR Parent Final Approved" scope="row">
+                                            <div class="slds-truncate" title="IR Parent Final Approved">
+                                                IR Parent Final Approved test {!v.inventoryRequestLineItem.Inventory_Request__r.Final_Approved_Indicator__c}
+                                            </div>
+                                        </th>
+                                        <td data-label="IR Parent Final Approved">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.Final_Approved_Indicator__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.Final_Approved_Indicator__c}">
+                                                     TRUE
+                                                </aura:if>
+                                                <aura:if isTrue="{!!v.inventoryRequestLineItem.Inventory_Request__r.Final_Approved_Indicator__c}">
+                                                     <span class="accel-danger-text">
+                                                         FALSE
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Parent PO Submitted Date" scope="row">
+                                            <div class="slds-truncate" title="IR Parent PO Submitted Date">
+                                                IR Parent PO Submitted Date
+                                            </div>
+                                        </th>
+                                        <td data-label="IR Parent PO Submitted Date">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Submitted_Date__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Submitted_Date__c != null}">
+                                                    {!v.inventoryRequestLineItem.Inventory_Request__r.PO_Submitted_Date__c}
+                                                </aura:if>
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Submitted_Date__c == null}">
+                                                     <span class="accel-danger-text">
+                                                        No Value
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="IR Parent Approved Date" scope="row">
+                                            <div class="slds-truncate" title="IR Parent Approved Date">
+                                                IR Parent Approved Date
+                                            </div>
+                                        </th>
+                                        <td data-label="IR Parent Approved Date">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.IR_Approved_Date__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.IR_Approved_Date__c != null}">
+                                                    {!v.inventoryRequestLineItem.Inventory_Request__r.IR_Approved_Date__c}
+                                                </aura:if>
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.IR_Approved_Date__c == null}">
+                                                     <span class="accel-danger-text">
+                                                        No Value
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Parent PO Number" scope="row">
+                                            <div class="slds-truncate" title="IR Parent PO Number">
+                                                IR Parent PO Number
+                                            </div>
+                                        </th>
+                                        <td data-label="IR Parent PO Number">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Number__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Number__c != null}">
+                                                    {!v.inventoryRequestLineItem.Inventory_Request__r.PO_Number__c}
+                                                </aura:if>
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.PO_Number__c == null}">
+                                                     <span class="accel-danger-text">
+                                                        No Value
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Parent Request Status" scope="row">
+                                            <div class="slds-truncate" title="Parent Request Status">
+                                                IR Parent Status
+                                            </div>
+                                        </th>
+                                        <td data-label="Parent Request Status">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.Status__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Inventory_Request__r.Status__c != null}">
+                                                    {!v.inventoryRequestLineItem.Inventory_Request__r.Status__c}
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Bypass Parent Request Val Rules" scope="row">
+                                            <div class="slds-truncate" title="Bypass Parent Request Val Rules">
+                                                Bypass IR Parent Val Rules
+                                            </div>
+                                        </th>
+                                        <td data-label="Bypass Parent Request Val Rules">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Inventory_Request__r.Bypass_Validation_Rules__c}">
+                                                    {!v.inventoryRequestLineItem.Inventory_Request__r.Bypass_Validation_Rules__c}
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="All line assets created" scope="row">
+                                            <div class="slds-truncate" title="All line assets created">
+                                                All Line Item {!v.inventoryRequestLineItem.Item_Number__c} Assets Created
+                                            </div>
+                                        </th>
+                                        <td data-label="All line assets created">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.All_Line_Assets_Created__c}">
+                                                <span class="{!v.inventoryRequestLineItem.All_Line_Assets_Created__c
+                                                             ? 'accel-danger-text' : ''}">
+                                                    {!v.inventoryRequestLineItem.All_Line_Assets_Created__c}
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Qty of Assets to Create" scope="row">
+                                            <div class="slds-truncate" title="Qty of Assets to Create">
+                                                Qty of Assets to Create
+                                            </div>
+                                        </th>
+                                        <td data-label="Qty of assets to create">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Qty_of_assets_to_create__c}">
+                                                <span>
+                                                    {!v.inventoryRequestLineItem.Qty_of_assets_to_create__c}
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Number of assets created for line" scope="row">
+                                            <div class="slds-truncate" title="Number of assets created for line">
+                                                # of assets created for line #{!v.inventoryRequestLineItem.Item_Number__c}
+                                            </div>
+                                        </th>
+                                        <td data-label="Number of assets created for line. ">
+                                            <div class="slds-truncate" title="{!v.inventoryRequestLineItem.Number_of_Assets_Created__c}">
+                                                <span>
+                                                    {!v.inventoryRequestLineItem.Number_of_Assets_Created__c}
+                                                </span>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Line Item received date" scope="row">
+                                            <div class="slds-truncate" title="Line item received date">
+                                                Line Item Received Date
+                                            </div>
+                                        </th>
+                                        <td data-label="Line item received date">
+                                            <div class="slds-truncate"  title="{!v.inventoryRequestLineItem.Received_Date__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Received_Date__c != null}">
+                                                    {!v.inventoryRequestLineItem.Received_Date__c}
+                                                </aura:if>
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Received_Date__c == null}">
+                                                     <span class="accel-danger-text">
+                                                        No Value
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr class="slds-hint-parent">
+                                        <th data-label="Line Item Quantity to Create" scope="row">
+                                            <div class="slds-truncate" title="Line item Quanity to Create">
+                                                Line Item Qty to create
+                                            </div>
+                                        </th>
+                                        <td data-label="Line item qty to create">
+                                            <div class="slds-truncate"  title="{!v.inventoryRequestLineItem.Received_Quantity__c}">
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Received_Quantity__c != null}">
+                                                    {!v.inventoryRequestLineItem.Received_Quantity__c}
+                                                </aura:if>
+                                                <aura:if isTrue="{!v.inventoryRequestLineItem.Received_Quantity__c == null}">
+                                                     <span class="accel-danger-text">
+                                                        No Value
+                                                    </span>
+                                                </aura:if>
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <aura:if isTrue="{!!v.isRunningFlow}">
+                                <div class="slds-grid slds-grid_align-end slds-text-align_right" style="width:75%">
+                                    <div class="slds-col slds-size--1-of-2 slds-text-align_right">
+                                        <lightning:button
+                                                onclick="{!c.handleCreateAssets}"
+                                                variant="success" label="Create Assets"/>
+                                    </div>
+                                    <div class="slds-col slds-size--1-of-2 slds-text-align_right">
+                                        <lightning:button
+                                                onclick="{!c.handleDeleteAssets}"
+                                                variant="destructive" label="Delete Assets"/>
+                                    </div>
+                                </div>
+                            </aura:if>
+                        </div>
+                        <p class="slds-p-horizontal_small">
+                            <aura:if isTrue="{!v.isRunningFlow}">
+                                <div>
+                                    <div style="font-size:1.3em;font-weight: bold;padding-top:100px;padding-bottom:100px">
+                                        Creating {!v.inventoryRequestLineItem.Qty_of_assets_to_create__c}
+                                        <aura:if isTrue="{!v.inventoryRequestLineItem.Qty_of_assets_to_create__c > 1}">
+                                            assets
+                                            <aura:set attribute="else">
+                                                asset
+                                            </aura:set>
+                                        </aura:if>
+                                        for {!v.inventoryRequestLineItem.Product__r.Name}.......
+                                    </div>
+                                </div>
+                            </aura:if>
+                        </p>
+                    </aura:if>
+                </div>
+            </lightning:card>
+        </aura:if>
+    </div>
+</aura:component>

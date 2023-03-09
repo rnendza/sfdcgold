@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Routes</value>
+    </caseValues>
+    <fields>
+        <label><!-- Collection Cycle Number --></label>
+        <name>Collection_Cycle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Date ( Obsolete? ) --></label>
+        <name>Collection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fill Cycle Number --></label>
+        <name>Cycle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Geolocation --></label>
+        <name>Geolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Collection Date --></label>
+        <name>Next_Collection_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Fill Date --></label>
+        <name>Next_Fill_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Normal Fill Cycle Number --></label>
+        <name>Normal_Fill_Cycle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Origination Date --></label>
+        <name>Origination_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Location --></label>
+        <name>Processing_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Accounts --></label>
+        <name>Total_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Tracker ID --></label>
+        <name>Tracker_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle --></label>
+        <name>Vehicle__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

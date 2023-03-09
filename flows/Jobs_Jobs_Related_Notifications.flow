@@ -1,0 +1,236 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Job_w_Sales_Incentive_Plan_is_Filled</name>
+        <label>Job w/ Sales Incentive Plan is Filled</label>
+        <locationX>50</locationX>
+        <locationY>1127</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>SalesIncentivePlanEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>alyssam@accelentertainment.com,katier@accelentertainment.com,donnad@accelentertainment.com,jennifers@accelentertainment.com,matthewa@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <stringValue>Job w/ Sales Incentive Plan is Filled</stringValue>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Send_email_notification</name>
+        <label>Send email notification</label>
+        <locationX>50</locationX>
+        <locationY>791</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Does_the_job_have_an_Incentive_Plan</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>JobFilledEmailBody</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>kurtg@accelentertainment.com,roys@accelentertainment.com,maxs@accelentertainment.com,openreqs@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>JobFilledEmailSubject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>55.0</apiVersion>
+    <decisions>
+        <name>Does_the_job_have_an_Incentive_Plan</name>
+        <label>Does the job have an Incentive Plan?</label>
+        <locationX>182</locationX>
+        <locationY>1007</locationY>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Job_Has_Incentive_Plan</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Incentive_Plan__c</leftValueReference>
+                <operator>IsChanged</operator>
+                <rightValue>
+                    <booleanValue>true</booleanValue>
+                </rightValue>
+            </conditions>
+            <conditions>
+                <leftValueReference>$Record.Sales_Incentive_Plan__c</leftValueReference>
+                <operator>NotEqualTo</operator>
+                <rightValue>
+                    <stringValue>N/A</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Job_w_Sales_Incentive_Plan_is_Filled</targetReference>
+            </connector>
+            <label>Job Has Incentive Plan</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Job_Status_Posted</name>
+        <label>Job Status = Posted?</label>
+        <locationX>182</locationX>
+        <locationY>335</locationY>
+        <defaultConnector>
+            <targetReference>What_Status_Changed_to_Filled</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Yes</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Job_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Posted</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Update_Date_Job_Was_Posted_field</targetReference>
+            </connector>
+            <label>Yes</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>What_Status_Changed_to_Filled</name>
+        <label>What Status Changed to &quot;Filled&quot;</label>
+        <locationX>182</locationX>
+        <locationY>671</locationY>
+        <defaultConnector>
+            <targetReference>Does_the_job_have_an_Incentive_Plan</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Status_Was_Changed_to_Filled</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Job_Status__c</leftValueReference>
+                <operator>EqualTo</operator>
+                <rightValue>
+                    <stringValue>Filled</stringValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Send_email_notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Status Was Changed to &quot;Filled&quot;</label>
+        </rules>
+    </decisions>
+    <description>send notification when jobs are filled
+send notification when status is changed and is equal to Filled AND when Sales Incentive Plan field is not equal to N/A, notify the pertinent individuals that job has been filled and that the Sales Incentive Plan is (whatever value of Sales Incentive Plan field is).</description>
+    <environments>Default</environments>
+    <formulas>
+        <name>TODAY</name>
+        <dataType>Date</dataType>
+        <expression>TODAY()</expression>
+    </formulas>
+    <interviewLabel>Jobs: Jobs-Related Notifications {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Jobs: Jobs-Related Notifications</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <name>Update_Date_Job_Was_Posted_field</name>
+        <label>Update &quot;Date Job Was Posted&quot; field</label>
+        <locationX>50</locationX>
+        <locationY>455</locationY>
+        <connector>
+            <targetReference>What_Status_Changed_to_Filled</targetReference>
+        </connector>
+        <inputAssignments>
+            <field>Date_Job_Was_Posted__c</field>
+            <value>
+                <elementReference>TODAY</elementReference>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>56</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Job_Status_Posted</targetReference>
+        </connector>
+        <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+        <filterLogic>or</filterLogic>
+        <filters>
+            <field>Job_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Filled</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>Job_Status__c</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Posted</stringValue>
+            </value>
+        </filters>
+        <object>Jobs__c</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>JobFilledEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>The job requisition for {!$Record.Job_Title__r.Name} has been filled. The candidate is {!$Record.Candidate_Name__c}, and the start date is {!$Record.Start_Date_Accepted_Offer__c}.
+Please, click the link below for full details.
+
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+    <textTemplates>
+        <name>JobFilledEmailSubject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Job Requisition filled for {!$Record.Job_Title__r.Name}</text>
+    </textTemplates>
+    <textTemplates>
+        <description>sent when the job is approved and has a sales incentive plan</description>
+        <name>SalesIncentivePlanEmailBody</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Job {!$Record.Name} has been Filled.
+The Sales Incentive Plan(s) is(are) {!$Record.Sales_Incentive_Plan__c}
+Please, click the link below for the full job details.
+
+{!$Record.Record_Link__c}</text>
+    </textTemplates>
+</Flow>

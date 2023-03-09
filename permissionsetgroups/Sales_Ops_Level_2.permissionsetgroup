@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSetGroup xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>User assignment is determined by Sales Ops leadership based on user position within Sales Ops team</description>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Sales Ops - Level 2</label>
+    <mutingPermissionSets>Agreement_Version_and_Agreement_Type_Mute_Edit_Create_Delete_permission</mutingPermissionSets>
+    <permissionSets>Account_Edit_Estimated_HPD</permissionSets>
+    <permissionSets>Activity_Lead_Gen_Appointment_Type_editing_permission</permissionSets>
+    <permissionSets>Agreement_Version_Agreement_Type_full_access</permissionSets>
+    <permissionSets>Agreements_Expiration_Start_Termination_Date</permissionSets>
+    <permissionSets>Agreements_Permission_to_edit_Days_Live_Agreement_Version</permissionSets>
+    <permissionSets>Competitor_TUA_Exp_Date_Validated</permissionSets>
+    <permissionSets>Edit_Opportunity_Probability_Percent</permissionSets>
+    <permissionSets>Lead_Conversion_Permissions</permissionSets>
+    <permissionSets>New_Salesforce_Mobile_App</permissionSets>
+    <permissionSets>Opportunity_Modify_All</permissionSets>
+    <permissionSets>Opportunity_Sales_Status_Sales_Priority</permissionSets>
+    <permissionSets>Partner_Op_field</permissionSets>
+    <permissionSets>View_All_Custom_Settings_And_CRM_Specific_Metadata</permissionSets>
+    <status>Updated</status>
+</PermissionSetGroup>

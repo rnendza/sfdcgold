@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <available>true</available>
+    <description>notify the opp owner when an amusement opp is closed won - include list of products</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Amusements Won List of Products</name>
+    <style>none</style>
+    <subject>Closed Won Opportunity</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

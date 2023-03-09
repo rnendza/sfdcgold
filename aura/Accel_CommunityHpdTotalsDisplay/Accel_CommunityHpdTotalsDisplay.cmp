@@ -1,0 +1,122 @@
+<aura:component description="Accel_CommunityHpdTotalsDisplay">
+    <aura:attribute name="location" type="Object" access="public"/>
+    <aura:attribute name="hpdDetail" type="Object" access="private"/>
+    <aura:attribute name="timePeriod" type="Integer" access="public"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <div class="">
+        <table class="slds-table slds-table_cell-buffer slds-no-row-hover slds-max-medium-table_stacked ">
+            <thead>
+            <tr class="slds-line-height_reset">
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="Funds In">Funds In
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate"
+                         title="Funds Out">Funds Out
+                    </div>
+                </th>
+                <!--
+                <th class="" scope="col">
+                    <div class="slds-truncate"
+                         title="Amount Played">Amt Played
+                    </div>
+                </th>
+                <th class="" scope="col">
+                    <div class="slds-truncate"
+                         title="Amount Won">Amt Won
+                    </div>
+                </th>
+                -->
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Revenue">
+                        Revenue
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Location Share">
+                        Location Share
+                    </div>
+                </th>
+                <th class="slds-text-title_caps" scope="col">
+                    <div class="slds-truncate" title="Hold Per Day Average">
+                        Hold Per Day Avg
+                    </div>
+                </th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr class="slds-hint-parent">
+                <td data-label="Funds In Total">
+                    <div class=""
+                         title="{!v.hpdDetail.fundsIn}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.fundsIn}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+                <td data-label="Funds Out Total">
+                    <div class=""
+                         title="{!v.hpdDetail.fundsOut}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.fundsOut}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+                <!--
+                <td data-label="Amount Played">
+                    <div class=""
+                         title="{!v.hpdDetail.amtPlayed}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.amtPlayed}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+                <td data-label="Amount Won">
+                    <div class=""
+                         title="{!v.hpdDetail.amtWon}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.amtWon}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+                                -->
+                <td data-label="Revenue">
+                    <div class=""
+                         title="{!v.hpdDetail.revenue}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.revenue}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+
+                <td data-label="Location Share">
+                    <div class=""
+                         title="{!v.hpdDetail.locShare}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.locShare}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+                <td data-label="Hold Per Day Avg">
+                    <div class="" title="{!v.hpdDetail.hpdAvg}">
+                        <lightning:formattedNumber
+                                value="{!v.hpdDetail.hpdAvg}"
+                                style="currency"
+                                currencyCode="USD"/>
+                    </div>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</aura:component>

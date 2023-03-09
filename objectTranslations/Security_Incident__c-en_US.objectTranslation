@@ -1,0 +1,324 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Security Incident</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Security Incidents</value>
+    </caseValues>
+    <fields>
+        <label><!-- Account --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Security Incidents --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Alarm Keypad Location --></label>
+        <name>Alarm_Keypad_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alarm Yes/No --></label>
+        <name>Alarm_Yes_No__c</name>
+    </fields>
+    <fields>
+        <help><!-- Fill in the amount of cameras used in the install --></help>
+        <label><!-- Camera Count --></label>
+        <name>Camera_Count__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Damaged Machines --></label>
+        <name>Damaged_Machines__c</name>
+        <picklistValues>
+            <masterLabel>Amusement</masterLabel>
+            <translation><!-- Amusement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption</masterLabel>
+            <translation><!-- Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 1</masterLabel>
+            <translation><!-- SAS 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 10</masterLabel>
+            <translation><!-- SAS 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 2</masterLabel>
+            <translation><!-- SAS 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 3</masterLabel>
+            <translation><!-- SAS 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 4</masterLabel>
+            <translation><!-- SAS 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 5</masterLabel>
+            <translation><!-- SAS 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 6</masterLabel>
+            <translation><!-- SAS 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 7</masterLabel>
+            <translation><!-- SAS 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 8</masterLabel>
+            <translation><!-- SAS 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 9</masterLabel>
+            <translation><!-- SAS 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Date of Incident --></label>
+        <name>Date_of_Incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Funds Stolen --></label>
+        <name>Funds_Stolen__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Notes --></label>
+        <name>Incident_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Incident Type --></label>
+        <name>Incident_Type__c</name>
+        <picklistValues>
+            <masterLabel>Assist to Police Agency</masterLabel>
+            <translation><!-- Assist to Police Agency --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attempted Burglary</masterLabel>
+            <translation><!-- Attempted Burglary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Attempted Theft</masterLabel>
+            <translation><!-- Attempted Theft --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Burglary</masterLabel>
+            <translation><!-- Burglary --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Criminal Damage</masterLabel>
+            <translation><!-- Criminal Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Damage</masterLabel>
+            <translation><!-- Damage --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Fire</masterLabel>
+            <translation><!-- Location Fire --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Video Recording Request</masterLabel>
+            <translation><!-- Video Recording Request --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Location of NVR --></label>
+        <name>Location_of_NVR__c</name>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Redemption Terminal</masterLabel>
+            <translation><!-- Redemption Terminal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 1</masterLabel>
+            <translation><!-- SAS 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 10</masterLabel>
+            <translation><!-- SAS 10 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 2</masterLabel>
+            <translation><!-- SAS 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 3</masterLabel>
+            <translation><!-- SAS 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 4</masterLabel>
+            <translation><!-- SAS 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 5</masterLabel>
+            <translation><!-- SAS 5 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 6</masterLabel>
+            <translation><!-- SAS 6 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 7</masterLabel>
+            <translation><!-- SAS 7 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 8</masterLabel>
+            <translation><!-- SAS 8 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SAS 9</masterLabel>
+            <translation><!-- SAS 9 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Model of Camera --></label>
+        <name>Models_of_Cameras__c</name>
+        <picklistValues>
+            <masterLabel>ADI</masterLabel>
+            <translation><!-- ADI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dahua</masterLabel>
+            <translation><!-- Dahua --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hanwha</masterLabel>
+            <translation><!-- Hanwha --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Lorex</masterLabel>
+            <translation><!-- Lorex --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Owner Notified by RM --></label>
+        <name>Owner_Notified_by_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Police Notified? --></label>
+        <name>Police_Notified__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Post Alarm Installation --></label>
+        <name>Post_Alarm_Installation__c</name>
+        <picklistValues>
+            <masterLabel>N/A</masterLabel>
+            <translation><!-- N/A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Unknown</masterLabel>
+            <translation><!-- Unknown --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Restitution Payment Amount --></label>
+        <name>Restitution_Payment_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Restitution for Equipment Damages --></label>
+        <name>Restitution_for_Equipment_Damages__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Security Cameras --></label>
+        <name>Security_Cameras__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Region --></label>
+        <name>Service_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Time of Incident --></label>
+        <name>Time_of_Incident__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Damages --></label>
+        <name>Total_Damages__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Loss --></label>
+        <name>Total_Loss__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Alert --></label>
+        <name>Type_of_Alert__c</name>
+        <picklistValues>
+            <masterLabel>Back Office</masterLabel>
+            <translation><!-- Back Office --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Call In</masterLabel>
+            <translation><!-- Call In --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <description><!-- Location Survey for IGB Camera Project --></description>
+        <label><!-- IGB Camera Survey --></label>
+        <name>IGB_Camera_Survey</name>
+    </recordTypes>
+    <recordTypes>
+        <description><!-- A security incident that occurred at a location --></description>
+        <label><!-- Security Incident --></label>
+        <name>Security_Incident</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

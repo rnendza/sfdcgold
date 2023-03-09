@@ -1,0 +1,591 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <content>Accel_CreateInventoryRequest_ScreenFlow</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>LightningComponent</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Inventory_Request_Record_Page_All</content>
+        <formFactor>Large</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <comment>Action override created by Lightning App Builder during activation.</comment>
+        <content>Inventory_Request_Record_Page_All</content>
+        <formFactor>Small</formFactor>
+        <skipRecordTypeSelect>false</skipRecordTypeSelect>
+        <type>Flexipage</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>true</allowInChatterGroups>
+    <compactLayoutAssignment>IR_Software_Compact_Layout</compactLayoutAssignment>
+    <compactLayouts>
+        <fullName>IR_Software_Compact_Layout</fullName>
+        <fields>Name</fields>
+        <fields>RecordTypeId</fields>
+        <fields>Status__c</fields>
+        <fields>IR_Approved_Date__c</fields>
+        <fields>PO_Number__c</fields>
+        <fields>PO_Submitted_Date__c</fields>
+        <label>IR - Software Compact Layout</label>
+    </compactLayouts>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <description>Parent object to capture the request to order new inventory items.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>true</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>Account__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The location associated with the inventory request.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The location associated with the inventory request</inlineHelpText>
+        <label>Account</label>
+        <referenceTo>Account</referenceTo>
+        <relationshipLabel>Inventory Requests</relationshipLabel>
+        <relationshipName>Inventory_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Bypass_Validation_Rules__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Generally this shouldn&apos;t be used but if there is a mass import / upsert. It might come in handy.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Generally this shouldn&apos;t be used but if there is a mass import / upsert. It might come in handy.</inlineHelpText>
+        <label>Bypass Validation Rules</label>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Final_Approved_Indicator__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <label>Final Approved Indicator</label>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>IR_Approved_Date__c</fullName>
+        <description>Date Compliance has approved the IR. Only required before Assets can be generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Compliance has approved the IR. Only required before Assets can be generated.</inlineHelpText>
+        <label>IR Approved Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Number_of_Items__c</fullName>
+        <description>This is more of a helper field so we can generate line item numbers of the child records</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The total number of Child Line Items</inlineHelpText>
+        <label>Total # of Line Items</label>
+        <summaryForeignKey>Inventory_Request_Line_Item__c.Inventory_Request__c</summaryForeignKey>
+        <summaryOperation>count</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>PO_Approved_Date__c</fullName>
+        <description>Date Finance has approved the PO. Only required before Assets can be generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date Finance has approved the PO. Only required before Assets can be generated.</inlineHelpText>
+        <label>PO Approved Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>PO_Number__c</fullName>
+        <description>The Great Plains purchase order number.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Great Plains purchase order number.</inlineHelpText>
+        <label>PO Number</label>
+        <length>64</length>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>PO_Submitted_Date__c</fullName>
+        <description>Date the PO has been submitted to Finance. Only required before Assets can be generated.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the PO has been submitted to Finance. Only required before Assets can be generated.</inlineHelpText>
+        <label>PO Submitted Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Parent_Asset__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <description>The asset the software will be assigned to.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The asset the software will be assigned to.</inlineHelpText>
+        <label>Parent Asset</label>
+        <referenceTo>Asset</referenceTo>
+        <relationshipLabel>Inventory Requests</relationshipLabel>
+        <relationshipName>Inventory_Requests</relationshipName>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>Status__c</fullName>
+        <description>The status of the Inventory Request. This status will change based on various fields populated as well as state of approval.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The status of the Inventory Request. This status will change based on various fields populated as well as state of approval.</inlineHelpText>
+        <label>Request Status</label>
+        <required>false</required>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Open</fullName>
+                    <default>true</default>
+                    <label>Open</label>
+                </value>
+                <value>
+                    <fullName>IR Request Pending Approval</fullName>
+                    <default>false</default>
+                    <label>Pending Approval</label>
+                </value>
+                <value>
+                    <fullName>Approved for PO</fullName>
+                    <default>false</default>
+                    <label>Approved for PO</label>
+                </value>
+                <value>
+                    <fullName>PO Submitted</fullName>
+                    <default>false</default>
+                    <label>PO Submitted</label>
+                </value>
+                <value>
+                    <fullName>PO Partially Fulfilled</fullName>
+                    <default>false</default>
+                    <label>PO Partially Fulfilled</label>
+                </value>
+                <value>
+                    <fullName>PO Fulfilled</fullName>
+                    <default>false</default>
+                    <label>PO Fulfilled</label>
+                </value>
+                <value>
+                    <fullName>IR Request Submitted</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>IR Request Submitted</label>
+                </value>
+                <value>
+                    <fullName>PO Delivery Date Scheduled</fullName>
+                    <default>false</default>
+                    <isActive>false</isActive>
+                    <label>PO Delivery Date Scheduled</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>Submitted_Date__c</fullName>
+        <description>Date the request was submitted for approval.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Date the request was submitted for approval.</inlineHelpText>
+        <label>IR Submitted Date</label>
+        <required>false</required>
+        <trackHistory>true</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>Total_Nbr_of_Assets_Created__c</fullName>
+        <description>The Total # of Assets Created for ALL Line Items.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The Total # of Assets Created for ALL Line Items.</inlineHelpText>
+        <label>Total # of Assets Created</label>
+        <summarizedField>Inventory_Request_Line_Item__c.Number_of_Assets_Created__c</summarizedField>
+        <summaryForeignKey>Inventory_Request_Line_Item__c.Inventory_Request__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <fields>
+        <fullName>Total_Qty_Requested__c</fullName>
+        <description>Sum of quantity requested on all line items.</description>
+        <externalId>false</externalId>
+        <inlineHelpText>The summation of quantity requested from all the line items.</inlineHelpText>
+        <label>Total Qty Requested</label>
+        <summarizedField>Inventory_Request_Line_Item__c.Quantity__c</summarizedField>
+        <summaryForeignKey>Inventory_Request_Line_Item__c.Inventory_Request__c</summaryForeignKey>
+        <summaryOperation>sum</summaryOperation>
+        <trackHistory>false</trackHistory>
+        <trackTrending>false</trackTrending>
+        <type>Summary</type>
+    </fields>
+    <label>Inventory Request</label>
+    <listViews>
+        <fullName>All</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Submitted_Date__c</columns>
+        <columns>IR_Approved_Date__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>PO_Submitted_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <columns>Total_Qty_Requested__c</columns>
+        <columns>LAST_UPDATE</columns>
+        <filterScope>Everything</filterScope>
+        <label>All</label>
+    </listViews>
+    <listViews>
+        <fullName>All_Gaming_Software_IRs</fullName>
+        <columns>NAME</columns>
+        <columns>RECORDTYPE</columns>
+        <columns>Status__c</columns>
+        <columns>Account__c</columns>
+        <columns>Submitted_Date__c</columns>
+        <columns>IR_Approved_Date__c</columns>
+        <columns>PO_Number__c</columns>
+        <columns>PO_Submitted_Date__c</columns>
+        <columns>CREATED_DATE</columns>
+        <columns>CREATEDBY_USER.ALIAS</columns>
+        <filterScope>Everything</filterScope>
+        <filters>
+            <field>RECORDTYPE</field>
+            <operation>equals</operation>
+            <value>Inventory_Request__c.Gaming_Software</value>
+        </filters>
+        <label>All Gaming Software IRs</label>
+    </listViews>
+    <nameField>
+        <label>Request Name</label>
+        <trackHistory>false</trackHistory>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Inventory Requests</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
+    <recordTypes>
+        <fullName>Everything_Else</fullName>
+        <active>false</active>
+        <compactLayoutAssignment>IR_Software_Compact_Layout</compactLayoutAssignment>
+        <description>OBSOLETE probably have to remove from profiles!</description>
+        <label>Everything Else</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved for PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR Request Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Fulfilled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Gaming_Software</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>IR_Software_Compact_Layout</compactLayoutAssignment>
+        <description>Please select this record type for Inventory Requests related to Gaming Software.</description>
+        <label>Gaming Software</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved for PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR Request Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Fulfilled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PO Partially Fulfilled</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>PO Submitted</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Machine_Parts</fullName>
+        <active>true</active>
+        <compactLayoutAssignment>IR_Software_Compact_Layout</compactLayoutAssignment>
+        <description>Please select this record type for Inventory Requests related to Machines or Parts.</description>
+        <label>Machines / Parts</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved for PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR Request Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Fulfilled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <recordTypes>
+        <fullName>Software</fullName>
+        <active>false</active>
+        <compactLayoutAssignment>IR_Software_Compact_Layout</compactLayoutAssignment>
+        <description>OBSOLETE probably have to remove from profiles!</description>
+        <label>Software</label>
+        <picklistValues>
+            <picklist>Status__c</picklist>
+            <values>
+                <fullName>Approved for PO</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>IR Request Pending Approval</fullName>
+                <default>false</default>
+            </values>
+            <values>
+                <fullName>Open</fullName>
+                <default>true</default>
+            </values>
+            <values>
+                <fullName>PO Fulfilled</fullName>
+                <default>false</default>
+            </values>
+        </picklistValues>
+    </recordTypes>
+    <searchLayouts>
+        <searchResultsAdditionalFields>RECORDTYPE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Qty_Requested__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PO_Submitted_Date__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>PO_Number__c</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>UPDATEDBY_USER</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>LAST_UPDATE</searchResultsAdditionalFields>
+        <searchResultsAdditionalFields>Total_Nbr_of_Assets_Created__c</searchResultsAdditionalFields>
+    </searchLayouts>
+    <sharingModel>Read</sharingModel>
+    <startsWith>Vowel</startsWith>
+    <validationRules>
+        <fullName>Ensure_Approved_Before_Entering_PO_Date</fullName>
+        <active>true</active>
+        <description>Ensures the Inventory Request was approved before the user enters the PO  Submitted Date</description>
+        <errorConditionFormula>/*===============================================================================
+ * Ensures the following:
+ *
+ * If the Inventory Request contains a Po Submitted Date...
+ *
+ *  1. the Inventory_Request_Status__c value != &apos;Open&apos; AND != &apos;Pending Approval&apos; 
+ *  2. AND the record type is Gaming_Software.
+ *  3. AND Bypass_Validation_Rules__c is not = TRUE
+ *
+ *================================================================================
+ * 
+ */
+ IF( !ISBLANK( PO_Submitted_Date__c ),
+AND(  OR(TEXT(Status__c) = &apos;Open&apos;,TEXT(Status__c) = &apos;Pending Approval&apos;) , RecordType.DeveloperName = &apos;Gaming_Software&apos;,Bypass_Validation_Rules__c = FALSE),FALSE)</errorConditionFormula>
+        <errorDisplayField>PO_Submitted_Date__c</errorDisplayField>
+        <errorMessage>The Inventory Request Must be Approved before entering the PO Submitted date.</errorMessage>
+    </validationRules>
+    <validationRules>
+        <fullName>Ensure_Approved_Before_Entering_PO_Nbr</fullName>
+        <active>true</active>
+        <description>Ensures the Inventory Request was approved before the user enters the PO Number</description>
+        <errorConditionFormula>/*===============================================================================
+ * Ensures the following:
+ * 
+ *
+ * If the Inventory Request contains a Po Number...
+ *
+ *  1. the Inventory_Request_Status__c value != &apos;Open&apos; AND != &apos;Pending Approval&apos; (it&apos;s an Order of Operations thing with process builder)
+ *  2. AND the record type is Gaming_Software.
+ *  3. AND Bypass_Validation_Rules__c is not = TRUE
+ *
+ *================================================================================
+ * 
+ */
+ IF( !ISBLANK( PO_Number__c ),  
+AND(  OR(TEXT(Status__c) = &apos;Open&apos;,TEXT(Status__c) = &apos;Pending Approval&apos;) , RecordType.DeveloperName = &apos;Gaming_Software&apos;,Bypass_Validation_Rules__c = FALSE),FALSE)</errorConditionFormula>
+        <errorDisplayField>PO_Number__c</errorDisplayField>
+        <errorMessage>The Inventory Request Must be Approved before entering the PO Number</errorMessage>
+    </validationRules>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,77 @@
+<!-- Cl Cash Can Totals -->
+<template>
+    <div class="accel-test-borders" style="min-height: 325px">
+
+        <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+
+        <div if:true={showForm} class="">
+            <div class="accel-form_container">
+                <lightning-record-edit-form record-id={rpsId}
+                                            object-api-name={objectApiName}
+                                            onload={handleLoad}
+                                            onsubmit={handleSubmit}
+                                            onerror={handleError}
+                                            onsuccess={handleSuccess}
+                                            density={formDensity}
+                                            form-class={formClass}>
+
+                    <lightning-messages></lightning-messages>
+
+                    <div class="accel-form-theme_shade slds-p-bottom_small">
+                        <div if:true={showStencil}>
+                            <div class="slds-p-around_small">
+                                <c-ui-custom-stencil
+                                        iterations="4"
+                                        type="list" columns="2">
+                                </c-ui-custom-stencil>
+                            </div>
+                        </div>
+                        <div if:true={showFormContents}>
+                            <div class="slds-p-horizontal_medium slds-p-top_medium slds-p-bottom_x-small">
+                                <div class="slds-p-bottom_small">
+                                    <c-ui-form-title
+                                            form-title={formTitle}
+                                            icon-size="small"
+                                            icon-name="custom:custom17">
+                                    </c-ui-form-title>
+                                </div>
+                                <div class={inputsClass}>
+                                    <lightning-input-field
+                                            data-field={_1GrandTotalField.fieldApiName}
+                                            field-name={_1GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            data-field={_5GrandTotalField.fieldApiName}
+                                            field-name={_5GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            data-field={_10GrandTotalField.fieldApiName}
+                                            field-name={_10GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            data-field={_20GrandTotalField.fieldApiName}
+                                            field-name={_20GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            data-field={_50GrandTotalField.fieldApiName}
+                                            field-name={_50GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                    <lightning-input-field
+                                            data-field={_100GrandTotalField.fieldApiName}
+                                            field-name={_100GrandTotalField}
+                                            onchange={handleGtInputChange}>
+                                    </lightning-input-field>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-record-edit-form>
+            </div>
+        </div>
+    </div>
+</template>

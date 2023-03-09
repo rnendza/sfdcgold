@@ -1,0 +1,29 @@
+<!-- Ui List Limit Filter -->
+<template>
+    <div class="slds-form-element__control">
+
+        <template if:true={showSelectLabel}>
+            <label class="slds-form-element__label" for="rowlimit_pl">
+                <b>{selectLabel}</b>
+            </label>
+        </template>
+
+        <div>
+            <template if:true={rowLimitOptions}>
+                <select class="slds-select" id="rowlimit_pl" name="rowlimit_pl"
+                        style={selectStyle}
+                        onchange={handlePlChange}>
+                    <template for:each={rowLimitOptions} for:item="option">
+                        <option key={option.label}
+                                class="uiInputSelectOption"
+                                selected={option.selected}
+                                value={option.value}>
+                            {option.label}
+                        </option>
+                    </template>
+                </select>
+            </template>
+        </div>
+    </div>
+
+</template>

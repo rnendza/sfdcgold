@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>false</plural>
+        <value>Operacja FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Nominative</caseType>
+        <plural>true</plural>
+        <value>Operacje FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>false</plural>
+        <value>Operację FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Accusative</caseType>
+        <plural>true</plural>
+        <value>Operacje FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>false</plural>
+        <value>Operacji FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Genitive</caseType>
+        <plural>true</plural>
+        <value>Operacji FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>false</plural>
+        <value>Operacji FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Dative</caseType>
+        <plural>true</plural>
+        <value>Operacjom FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>false</plural>
+        <value>Operacją FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Instrumental</caseType>
+        <plural>true</plural>
+        <value>Operacjami FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>false</plural>
+        <value>Operacji FSL</value>
+    </caseValues>
+    <caseValues>
+        <caseType>Locative</caseType>
+        <plural>true</plural>
+        <value>Operacjach FSL</value>
+    </caseValues>
+    <fields>
+        <label><!-- Finished --></label>
+        <name>FSL__Finished__c</name>
+    </fields>
+    <fields>
+        <label><!-- Future Method Id --></label>
+        <name>FSL__Future_Method_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initiator --></label>
+        <name>FSL__Initiator__c</name>
+        <relationshipLabel><!-- FSL Operations --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Request Type --></label>
+        <name>FSL__Request_Type__c</name>
+        <picklistValues>
+            <masterLabel>Appointment Booking</masterLabel>
+            <translation>Rezerwacja spotkania</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Get Candidates</masterLabel>
+            <translation>Pobierz kandydatów</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Schedule</masterLabel>
+            <translation>Harmonogram</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>UnSchedule</masterLabel>
+            <translation>Usuń z harmonogramu</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- ResultText --></label>
+        <name>FSL__ResultText__c</name>
+    </fields>
+    <fields>
+        <label><!-- Feature Metric --></label>
+        <name>FSL__featureMetric__c</name>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Nazwa operacji FSL</nameFieldLabel>
+</CustomObjectTranslation>

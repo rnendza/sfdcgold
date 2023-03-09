@@ -1,0 +1,15 @@
+<aura:component implements="forceCommunity:layout"
+                extends="c:Accel_CommunitySectionLayout"
+                access="global">
+
+    <aura:attribute name="section_1_content_1" type="Aura.Component[]" required="false"></aura:attribute>
+
+    <div class="container">
+        <div class="section">
+            <div class="whole">
+                {!v.section_1_content_1}
+            </div>
+        </div>
+    </div>
+
+</aura:component>

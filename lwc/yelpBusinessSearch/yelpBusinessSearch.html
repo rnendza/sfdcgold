@@ -1,0 +1,43 @@
+<template>
+    <div class="slds-box_xx-small slds-theme--shade">
+        <div class="slds-grid">
+            <div class="slds-size--5-of-12">
+                <c-geo-search
+                        default-term="Chicago"
+                        attempt-default-user-current-position=true
+                        default-placeholder="Near ..."
+                        ongeoaddressselected={handleGeoAddressSelected}>
+                </c-geo-search>
+            </div>
+            <div class="slds-size--3-of-12">
+                <div class="slds-form-element">
+                    <div class="slds-form-element__control">
+                        <div class="slds-select_container">
+                            <select class="slds-select"
+                                    onchange={selectionChangeHandler}>
+                                <template for:each={options} for:item="option">
+                                    <option key={option.label} class="uiInputSelectOption"
+                                            selected={option.selected}
+                                            value={option.value}>{option.label}
+                                    </option>
+                                </template>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="slds-size--3-of-12">
+                <lightning-input label="" variant="label-hidden" value={term}
+                                 type="search" onchange={handleTermChange}
+                                 class="accel-search-input">
+                </lightning-input>
+            </div>
+            <div class="slds-size--1-of-12">
+                <button onclick={handleSearch} style="border-radius: 0"
+                        class="slds-button slds-button_brand slds-button_stretch">
+                    <span style="color:white;font-weight: bold">Go</span>
+                </button>
+            </div>
+        </div>
+    </div>
+</template>

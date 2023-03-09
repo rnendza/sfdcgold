@@ -1,0 +1,9 @@
+{!WorkOrder.LastModifiedBy} has indicated that software is needed for this appointment. 
+
+Account: {!WorkOrder.Account}
+Asset: {!WorkOrder.Asset}
+Manufacturer: {!WorkOrder.Manufacturer__c}
+Case Created Date: {!WorkOrder.Case_Create_Date_Time__c}
+Click link below for more information:
+
+{!WorkOrder.Link}

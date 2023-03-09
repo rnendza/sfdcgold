@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Absence Resource Calendar Tooltip --></label>
+        <name>FSL__Absence_Resource_Calendar_Tooltip</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Absence Lightbox --></label>
+        <name>FSL__Resource_Absence_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Resource Absence Resource Calendar --></label>
+        <name>FSL__Resource_Absence_Resource_Calendar</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Approved --></label>
+        <name>FSL__Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Duration In Minutes --></label>
+        <name>FSL__Duration_In_Minutes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time From --></label>
+        <name>FSL__EstTravelTimeFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time --></label>
+        <name>FSL__EstTravelTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Distance From --></label>
+        <name>FSL__EstimatedTravelDistanceFrom__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Distance To --></label>
+        <name>FSL__EstimatedTravelDistanceTo__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time From Source --></label>
+        <name>FSL__Estimated_Travel_Time_From_Source__c</name>
+        <picklistValues>
+            <masterLabel>Aerial</masterLabel>
+            <translation>Havadan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Hiçbiri</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predictive</masterLabel>
+            <translation>Öngörücü</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLR</masterLabel>
+            <translation>SLR</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Estimated Travel Time To Source --></label>
+        <name>FSL__Estimated_Travel_Time_To_Source__c</name>
+        <picklistValues>
+            <masterLabel>Aerial</masterLabel>
+            <translation>Havadan</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>None</masterLabel>
+            <translation>Hiçbiri</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Predictive</masterLabel>
+            <translation>Öngörücü</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SLR</masterLabel>
+            <translation>SLR</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gantt Label --></label>
+        <name>FSL__GanttLabel__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gantt Color --></label>
+        <name>FSL__Gantt_Color__c</name>
+    </fields>
+    <fields>
+        <label><!-- Internal SLR Geolocation --></label>
+        <name>FSL__InternalSLRGeolocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Updated Epoch --></label>
+        <name>FSL__Last_Updated_Epoch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy Used --></label>
+        <name>FSL__Scheduling_Policy_Used__c</name>
+        <relationshipLabel><!-- Resource Absences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Last Known Location --></label>
+        <name>Last_Known_Location__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Break --></label>
+        <name>FSL__Break</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non Availability --></label>
+        <name>FSL__Non_Availability</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- Gantt color must be in hexadecimal format: (for example: #ffffff) --></errorMessage>
+        <name>FSL__Absence_Color_HEX_Format</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- The Start Time must be earlier than the End Time. --></errorMessage>
+        <name>FSL__startShouldPrecedeEnd</name>
+    </validationRules>
+</CustomObjectTranslation>

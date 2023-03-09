@@ -1,0 +1,252 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Route Schedule</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Route Schedules</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assigned Driver --></label>
+        <name>Assigned_Driver__c</name>
+        <relationshipLabel><!-- Route Schedules (Assigned Driver) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The User that last modified the collection status. --></help>
+        <label><!-- Collection Status Last Modified By --></label>
+        <name>Collection_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Schedules (Collection Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the collection status was last modified. --></help>
+        <label><!-- Collection Status Last Modified Date --></label>
+        <name>Collection_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Status --></label>
+        <name>Collection_Status__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED COLLECTION</masterLabel>
+            <translation><!-- COMPLETED COLLECTION --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Collection Incomplete</masterLabel>
+            <translation><!-- Collection Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Collector #1 --></label>
+        <name>Collector_1__c</name>
+        <relationshipLabel><!-- Route Schedules (Collector #1) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Admin only usage --></help>
+        <label><!-- Collector #3 --></label>
+        <name>Collector_3__c</name>
+        <relationshipLabel><!-- Route Schedules (Collector #3) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- (Obsolete) Count Room --></label>
+        <name>CountRoom__c</name>
+        <relationshipLabel><!-- Route Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Current Geolocation --></label>
+        <name>Current_Geolocation__c</name>
+    </fields>
+    <fields>
+        <help><!-- # of minutes to arrive back to base --></help>
+        <label><!-- ETA --></label>
+        <name>ETA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ending Vehicle Milage --></label>
+        <name>Ending_Vehicle_Milage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used as a helper for things like lightning email templates. --></help>
+        <label><!-- External Record Link --></label>
+        <name>External_Record_Link__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user that last modified the fill status. --></help>
+        <label><!-- Fill Status Last Modified By --></label>
+        <name>Fill_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Schedules (Fill Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the fill status was last modified. --></help>
+        <label><!-- Fill Status Last Modified Date --></label>
+        <name>Fill_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Yes  (in an error badge) if missing any vehicle info, otherwise No (in a success badge). --></help>
+        <label><!-- Missing Vehicle Start Info Display --></label>
+        <name>Missing_Vehicle_Start_Info_Display__c</name>
+    </fields>
+    <fields>
+        <help><!-- Is any Vehicle information populated? --></help>
+        <label><!-- Missing Vehicle / Start Info --></label>
+        <name>Missing_Vehicle_Start_Info__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Location --></label>
+        <name>Processing_Location__c</name>
+    </fields>
+    <fields>
+        <help><!-- The user that last modified the processing status. --></help>
+        <label><!-- Processing Status Last Modified By --></label>
+        <name>Processing_Status_Last_Modified_By__c</name>
+        <relationshipLabel><!-- Route Schedules (Processing Status Last Modified By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the processing status was last modified. --></help>
+        <label><!-- Processing Status Last Modified Date --></label>
+        <name>Processing_Status_Last_Modified_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Status --></label>
+        <name>Processing_Status__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED PROCESSING</masterLabel>
+            <translation><!-- COMPLETED PROCESSING --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing Incomplete</masterLabel>
+            <translation><!-- Processing Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Route Collection Date --></label>
+        <name>Route_Collection_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Cycle Number of the associated route. --></help>
+        <label><!-- (Rick obsolete??)Route Cycle Number --></label>
+        <name>Route_Cycle_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route End Email Sent By --></label>
+        <name>Route_End_Email_Sent_By__c</name>
+        <relationshipLabel><!-- Route Schedules (Route End Email Sent By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Route End Email Sent Date --></label>
+        <name>Route_End_Email_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the collector clicked the end route button, When this is set an email will be sent. --></help>
+        <label><!-- Route End Timestamp --></label>
+        <name>Route_End_Timestamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Note sure how this is used yet? --></help>
+        <label><!-- Route Fill Date --></label>
+        <name>Route_Fill_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Date/Time the collector clicked the start route button --></help>
+        <label><!-- Route Start Timestamp --></label>
+        <name>Route_Start_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- Route --></label>
+        <name>Route__c</name>
+        <relationshipLabel><!-- Route Schedules --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Fill Status --></label>
+        <name>Schedule_Status__c</name>
+        <picklistValues>
+            <masterLabel>COMPLETED FILL</masterLabel>
+            <translation><!-- COMPLETED FILL --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Fill Incomplete</masterLabel>
+            <translation><!-- Fill Incomplete --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Starting Vehicle Milage --></label>
+        <name>Starting_Vehicle_Milage__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Accounts Associated with this Route_Schedule_c record. (RS) --></help>
+        <label><!-- Total Accounts --></label>
+        <name>Total_Accounts__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Completed Collections --></label>
+        <name>Total_Completed_Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Completed Fill Processing Sheets --></label>
+        <name>Total_Completed_Fill_Processing_Sheets__c</name>
+    </fields>
+    <fields>
+        <help><!-- The total # of meter readings for all route processing sheets associated with this route schedule. --></help>
+        <label><!-- Total Meter Readings --></label>
+        <name>Total_Meter_Readings__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Miles Driven --></label>
+        <name>Total_Miles_Driven__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Not Yet Filled Processing Sheets --></label>
+        <name>Total_Not_Yet_Filled_Processing_Sheets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Processing Incomplete RPS --></label>
+        <name>Total_Processing_Incomplete_RPS__c</name>
+    </fields>
+    <fields>
+        <help><!-- Total Processing Sheets generated by this schedule record. (RS) --></help>
+        <label><!-- Total Processing Sheets --></label>
+        <name>Total_Processing_Sheets__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Route Time(USE FOR REPORT ONLY) --></label>
+        <name>Total_Route_Time_USE_FOR_REPORT_ONLY__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Route Time --></label>
+        <name>Total_Route_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Skipped Collections --></label>
+        <name>Total_Skipped_Collections__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collector #2 --></label>
+        <name>User__c</name>
+        <relationshipLabel><!-- Route Schedules (Collector #2) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Vehicle License --></label>
+        <name>Vehicle_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Vehicle Make --></label>
+        <name>Vehicle__c</name>
+        <picklistValues>
+            <masterLabel>Chevy</masterLabel>
+            <translation><!-- Chevy --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Ford</masterLabel>
+            <translation><!-- Ford --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hyundai</masterLabel>
+            <translation><!-- Hyundai --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Nissan</masterLabel>
+            <translation><!-- Nissan --></translation>
+        </picklistValues>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

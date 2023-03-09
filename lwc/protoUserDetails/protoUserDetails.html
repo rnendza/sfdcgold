@@ -1,0 +1,224 @@
+<template>
+    <template if:true={visible}>
+        <div class="slds-container_small">
+            <section role="dialog" tabindex="-1" aria-labelledby="modal-heading-01"
+                     aria-modal="true" aria-describedby="modal-content-id-1"
+                     class="slds-modal slds-fade-in-open slds-modal_large">
+                <div class="slds-modal__container">
+                    <button
+                            name="cancel"
+                            class="slds-button slds-button_icon slds-modal__close slds-button_icon-inverse"
+                            title="Close" onclick={hideModalBox}>
+                        <lightning-icon icon-name="utility:close"
+                                        alternative-text="close"
+                                        variant="inverse"
+                                        size="small"></lightning-icon>
+                        <span class="slds-assistive-text">Close</span>
+                    </button>
+                    <header class="slds-modal__header accel-modal_header">
+                        <template if:true={headerIcon}>
+                            <lightning-icon
+                                    class="slds-float_left"
+                                    icon-name={headerIcon}
+                                    size="small">
+                            </lightning-icon>
+                        </template>
+                        <h2 data-id="title">
+                            <div class="slds-text-heading_small slds-hyphenate slds-text-title_bold">
+                                {title}
+                            </div>
+                        </h2>
+                    </header>
+                    <div class="slds-modal__content slds-p-around_small" id="modal-content-id-1"
+                         style="min-height: 350px;">
+                        <div if:true={showProgressBar}
+                             class="progress-center slds-p-bottom_small">
+                            <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+                        </div>
+                        <div data-id="uploadDetails">
+                            <template if:true={userDetails}>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-large-size_2-of-12 slds-medium-size_4-of-12 slds-small-size_1-of-1 accel-user-image-container">
+                                        <template if:true={userDetails.hasImage}>
+                                            <div class="slds-text-title_bold slds-p-bottom_xx-small">
+                                                {userName}
+                                            </div>
+                                            <img alt="test" src={userImageSrc}>
+                                            <div class="slds-p-top_small">
+                                                <div class="slds-text-heading_label slds-p-bottom_xx-small">
+                                                    <b>Physical Description</b>
+                                                </div>
+                                                <div class="slds-text-body_small">
+                                                    <div>DOB: {userDetails.dBirthDate}</div>
+                                                    <div>SSN: {userDetails.ssn}</div>
+                                                    <div>Hair Color: {userDetails.userPhysicalDesc.hairColor}</div>
+                                                    <div>Eye Color: {userDetails.userPhysicalDesc.eyeColor}</div>
+                                                    <div>Gender: {userDetails.userPhysicalDesc.gender}</div>
+                                                    <div>Height: {userDetails.userPhysicalDesc.heightDisplay}</div>
+                                                    <div>Weight: {userDetails.userPhysicalDesc.weight}</div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                        <template if:false={userDetails.hasImage}>
+                                            <div>
+                                                {userName}
+                                            </div>
+                                            <div style="color:red">
+                                                NO IMAGE
+                                            </div>
+                                            <div class="slds-p-top_small">
+                                                <div class="slds-text-heading_label slds-p-bottom_xx-small">
+                                                    <b>Physical Description</b>
+                                                </div>
+                                                <div class="slds-text-body_small">
+                                                    <div>DOB: {userDetails.dBirthDate}</div>
+                                                    <div>SSN: {userDetails.ssn}</div>
+                                                    <div>Hair Color: {userDetails.userPhysicalDesc.hairColor}</div>
+                                                    <div>Eye Color: {userDetails.userPhysicalDesc.eyeColor}</div>
+                                                    <div>Gender: {userDetails.userPhysicalDesc.gender}</div>
+                                                    <div>Height: {userDetails.userPhysicalDesc.heightDisplay}</div>
+                                                    <div>Weight: {userDetails.userPhysicalDesc.weight}</div>
+                                                </div>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="slds-col slds-large-size_10-of-12 slds-medium-size_8-of-12 slds-small-size_1-of-1 accel-user-data-container">
+                                        <div class="slds-grid slds-wrap">
+
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Docket #</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.docketNumber}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Advisory Date</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.dAdvisoryDate}</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Advisory #</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.advisoryNumber}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Request Date</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.dRequestDate}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Exclusion Period</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.sExclusionPeriod}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_x-small">
+                                                <div class="">
+                                                    <span class="slds-text-heading_label"><b>Removal Code</b></span>
+                                                </div>
+                                                <div>
+                                                    <span> {userDetails.intakeRemovalCode}</span>
+                                                </div>
+                                            </div>
+                                            <div class="slds-border_top slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_small">
+                                                <div class="slds-text-heading_label">
+                                                    <b>Address</b>
+                                                </div>
+                                                <lightning-formatted-address
+                                                        title="Address"
+                                                        street={userDetails.userAddress.address1}
+                                                        city={userDetails.userAddress.city}
+                                                        province={userDetails.userAddress.stateCode}
+                                                        postal-code={userDetails.userAddress.postalCode}>
+                                                </lightning-formatted-address>
+                                            </div>
+                                            <div class="slds-border_top slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2 slds-small-size_1-of-1 slds-p-top_small">
+                                                <div class="slds-text-heading_label">
+                                                    <b>Mobile Phone</b>
+                                                </div>
+                                                <lightning-formatted-phone
+                                                        title="Mobile Number"
+                                                        value={userDetails.cellPhoneNumber}>
+                                                </lightning-formatted-phone>
+                                                <template if:true={userDetails.telephoneNumber}>
+                                                    <div class="slds-text-heading_label slds-p-top_xx-small">
+                                                        <b>Phone</b>
+                                                    </div>
+                                                    <lightning-formatted-phone
+                                                            title="Phone Number"
+                                                            value={userDetails.telephoneNumber}>
+                                                    </lightning-formatted-phone>
+                                                </template>
+                                            </div>
+                                            <template if:true={userDetails.comments}>
+                                                <div class="slds-col slds-size_1-of-1 slds-p-top_medium slds-border_top">
+                                                    <div class="slds-text-heading_label">
+                                                        <b>Comments</b>
+                                                    </div>
+                                                    <div>
+                                                        <lightning-formatted-rich-text
+                                                                value={userDetails.comments}>
+                                                        </lightning-formatted-rich-text>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                            <template if:true={userDetails.violations}>
+                                                <div class="slds-col slds-size_1-of-1 slds-p-top_small">
+                                                    <div class="slds-text-heading_label">
+                                                        <b>Violations</b>
+                                                    </div>
+                                                    <div>
+                                                        <lightning-formatted-rich-text
+                                                                value={userDetails.violations}>
+                                                        </lightning-formatted-rich-text>
+                                                    </div>
+                                                </div>
+                                            </template>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                        <p if:true={showStencil}>
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    child-class="slds-var-m-around_xxx-small"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </p>
+                    </div>
+                    <footer class="slds-modal__footer accel-modal_footer">
+                        <div class="slds-text-align_right" if:false={_isProcessing}>
+                            <lightning-button
+                                    if:true={cancelLabel}
+                                    variant={cancelVariant}
+                                    class="slds-m-right_medium"
+                                    name="cancel"
+                                    icon-name={cancelIconName}
+                                    data-id="cancel"
+                                    label={cancelLabel}
+                                    title={cancelLabel}
+                                    onclick={handleClick}>
+                            </lightning-button>
+                        </div>
+                    </footer>
+                </div>
+            </section>
+            <div class="slds-backdrop slds-backdrop_open"></div>
+        </div>
+    </template>
+</template>

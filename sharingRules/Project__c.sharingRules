@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SharingRules xmlns="http://soap.sforce.com/2006/04/metadata">
+    <sharingOwnerRules>
+        <fullName>Amusements_IL_Project_RW</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Amusements IL Project RW</label>
+        <sharedTo>
+            <group>Amusements_IL</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Key_Account_Manager</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Key Account Manager</label>
+        <sharedTo>
+            <group>Key_Account_Managers</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Projects_Read_Write</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Projects Read/Write</label>
+        <sharedTo>
+            <group>Projects_R_W</group>
+        </sharedTo>
+        <sharedFrom>
+            <allInternalUsers></allInternalUsers>
+        </sharedFrom>
+    </sharingOwnerRules>
+    <sharingOwnerRules>
+        <fullName>Teresa_R_Corp_Sharing</fullName>
+        <accessLevel>Edit</accessLevel>
+        <label>Teresa R Corp Sharing</label>
+        <sharedTo>
+            <group>Temp_Teresa_Radtke_Corporate</group>
+        </sharedTo>
+        <sharedFrom>
+            <group>Temp_Teresa_Radtke_Corporate</group>
+        </sharedFrom>
+    </sharingOwnerRules>
+</SharingRules>

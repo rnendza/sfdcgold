@@ -1,0 +1,27 @@
+<apex:page docType="html-5.0" standardController="Marketing_Request__c">
+    
+
+    <style>
+        .mypage  {
+            margin: 12px 0;
+            font-size: 12px;
+            text-align: center;
+            color: black;
+            }
+    </style>
+    
+    <div class="mypage">
+     <h style="text-align: center;font-family: tahoma;color:black;font-size: 16px;font-weight: bold; ">
+                    INSTRUCTIONS 
+</h>
+        <p>
+        <ul style="list-style-type: square;font-family: tahoma;">Upon saving record, choose your Sweepstakes item from the related Marketing Request Products list. Then, click Submit for Approval. If you do not click Submit for Approval, your sweepstakes request may be delayed. Please choose only 1 item per request.</ul>
+          
+       </p>
+       
+     
+       
+       
+    </div>
+    
+</apex:page>

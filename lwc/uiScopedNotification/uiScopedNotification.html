@@ -1,0 +1,40 @@
+<!-- Ui Scoped Notification -->
+<template>
+    <div    if:false={isClosed}
+            class={scopedNotificationClass}
+            onclick={handleContainerClick}
+            data-id="alertcontainer"
+            role="status">
+        <div class="slds-media__figure">
+            <lightning-icon
+                    icon-name={iconName}
+                    size={customIconSize}
+                    alternative-text="Information"
+                    variant={_iconVariant}>
+            </lightning-icon>
+        </div> 
+        <div class="slds-media__body">
+            <p if:false={showAsLink} class="slds-text-align_left">
+                <lightning-formatted-rich-text value={message}>
+                </lightning-formatted-rich-text>
+                <template if:true={dismissible}>
+                    <span style="vertical-align: top">
+                    <lightning-icon
+                            icon-name="utility:close"
+                            size={customIconSize}
+                            alternative-text="Close"
+                            variant={closeIconVariant}
+                            class="slds-float_right slds-p-right_xxx-small"
+                            onclick={handleClose}>
+                    </lightning-icon>
+                    </span>
+                </template>
+            </p>
+            <a if:true={showAsLink}
+               onclick={handleLinkClick}
+               href="">
+                {message}
+            </a>
+        </div>
+    </div>
+</template>

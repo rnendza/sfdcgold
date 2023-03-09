@@ -1,0 +1,30 @@
+<aura:component implements="forceCommunity:profileMenuInterface" access="global">
+    <!--<aura:attribute name="desktop_options" type="String[]" default="Logout"/>-->
+    <aura:attribute name="desktop_options" type="List" default="Logout"/>
+    <lightning:navigation aura:id="navService"/>
+
+    <aura:attribute name="user" type="User" />
+    <force:recordData aura:id="recordLoader"
+                      recordId="{!$SObjectType.CurrentUser.Id}"
+                      targetFields="{!v.user}"
+                      fields="Id,Username,Profile.Name,UserType,Name" />
+    <aura:handler event="c:Accel_CustomLogoutEvent" action="{!c.handleCustomLogout}"/>
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <div class="accel-desktop-menu">
+        <ui:menu>
+            <ui:menuTriggerLink aura:id="trigger" label="{!v.user.Name}">
+                <img class=" profileIcon" src="/profilephoto/005/T" title="{!v.user.Name}"></img>
+                <!-- <span class=" profileName">{!v.user.Profile.Name}</span> -->
+                <span class=" profileName userNameContainer">{!v.user.Name}</span>
+                <span class="triggerDownArrow down-arrow"></span>
+            </ui:menuTriggerLink>
+            <ui:menuList class="actionMenu" aura:id="actionMenu">
+                <aura:iteration items="{!v.desktop_options}" var="itemLabel">
+                    <ui:actionMenuItem label="{!itemLabel}" click="{!c.handleClick}"/>
+                </aura:iteration>
+            </ui:menuList>
+        </ui:menu>
+    </div>
+
+</aura:component>

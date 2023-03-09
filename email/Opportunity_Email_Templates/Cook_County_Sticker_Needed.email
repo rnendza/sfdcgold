@@ -1,0 +1,6 @@
+Product: {!Product2.Name}
+Manufacturer: {!Product2.Manufacturer__c}
+Account: {!Opportunity.Account}
+Go Live Date: {!OpportunityLineItem.GoLiveDate__c}
+
+Reference: {!Opportunity.Account}

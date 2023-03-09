@@ -1,0 +1,151 @@
+.THIS .leftPaddingClass {
+    padding-left: 2rem;
+}
+ 
+.THIS .pillSize{
+ width:100%;
+}
+.THIS.mainContainer1 {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px; /* compensation for the navigation bar */
+    border: 3px solid #C99A02; /* used to highlight border */
+}
+.THIS .childContainer1 {
+    background-color: #D5A301;
+    position: absolute;
+    top: 50px; /* compensation for the navigation bar */
+    left: 2px;
+    right: 2px;
+    bottom: 8px;
+    overflow-y: auto;
+    border: 3px solid #D6A301; /* used to highlight border */
+}
+
+.THIS.mainContainer {
+    background-color: transparent;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 60px; /* compensation for the navigation bar */
+    border: 3px solid #C99A02; /* used to highlight border */
+}
+.THIS .childContainer {
+    background-color: #D5A301;
+    position: absolute;
+    top: 50px; /* compensation for the navigation bar */
+    left: 2px;
+    right: 2px;
+    bottom: 8px;
+    overflow-y: auto;
+    border: 3px solid #D6A301; /* used to highlight border */
+}
+
+.THIS .toggle {
+    display: none; 
+}
+.THIS .toggle2 {
+    display: none; 
+}
+.THIS .toggle3 {
+    display: none; 
+}
+.THIS .toggle4 {
+    display: none; 
+}
+.THIS .toggle5 {
+    display: none; 
+}
+.THIS .toggle6 {
+    display: none; 
+}
+.THIS .toggle7 {
+    display: none; 
+}
+.THIS .toggle8 {
+    display: none; 
+}
+.THIS .toggle9 {
+    display: none; 
+}
+
+.THIS .toggle10 {
+    display: none;
+}
+
+.THIS .Grade {
+    width: 100px;
+}
+
+
+.THIS .toggle11{
+    display: none;
+}
+
+.THIS .toggle12{
+    display:none;
+}
+.THIS .toggle13{
+    display:none;
+}
+.THIS .toggle14{
+    display:none;
+}
+.THIS .toggle15{
+    display:none;
+}
+.THIS .toggle16{
+    display:none;
+}
+
+.THIS .toggle17{
+    display:none;
+}
+
+.THIS .WellnessFields{
+   display:none
+}
+
+.THIS .WellnessStuff{
+    display:none;
+}
+.THIS .SoftwareUpdates{
+    display:none;
+}
+.THIS .SoftwareFields{
+    display:none;
+}
+.THIS .ProjectFields{
+    display:none;
+}
+.THIS .Project{
+    display:none;
+}
+.THIS .Inventory{
+    display:none;
+}
+
+.THIS .InventFields{
+    display:none;
+}
+
+.THIS .VehicleFields{
+    display:none;
+}
+
+
+.THIS .Vehicle{
+    display:none;
+}
+
+.THIS .ColleagueA{
+    display:none;
+}
+
+.THIS .ColleagueFields{
+    display:none;
+}

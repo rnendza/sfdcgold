@@ -1,0 +1,13 @@
+<template>
+    <span class="rating" role="optgroup">
+        <template for:each={ratingStars} for:item='star' for:index="index" >
+            <i      key={star.idx}
+                    class={star.ratingClass}
+                    data-rating-idx={star.idx}
+                    tabindex={index}
+                    aria-label="Rating"
+                    role="radio"
+            ></i>
+        </template>
+    </span>
+</template>

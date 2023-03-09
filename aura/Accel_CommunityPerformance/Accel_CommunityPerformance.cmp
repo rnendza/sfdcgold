@@ -1,0 +1,150 @@
+<aura:component description="CommunityPerformance"
+                implements="forceCommunity:availableForAllPageTypes"
+                controller="Accel_CommunityPerformanceController">
+
+    <ltng:require
+            scripts="{!$Resource.accelcommunity_alpha_echarts + '/echarts.min.js'}"
+            afterScriptsLoaded="{!c.scriptsLoaded}"/>
+
+    <aura:attribute name="userAccounts" type="List"/>
+    <aura:attribute name="userAccountOptions" type="List" default="[]"/>
+    <!-- needed for combo box (ie picklist) location select. -->
+
+    <aura:attribute name="selectedAccounts" type="String[]"/>
+    <aura:attribute name="showSpinner" type="boolean"/>
+    <aura:attribute name="showGridSpinner" type="boolean"/>
+    <aura:attribute name="endDate" type="String" default="2019-01-22"/>
+    <aura:attribute name="startDate" type="String" default="2019-01-01"/>
+    <aura:attribute name="selectedAccountId" type="Id"/>
+    <aura:attribute name="selectedAccountName" type="String"/>
+    <aura:attribute name="selectedAccount" type="Object"/>
+    <aura:attribute name="pickListSelectOneText" type="string" default="-- Please Select a Location --"/>
+    <aura:attribute name="holdPerDayWrappers" type="List"/>
+    <aura:attribute name="hpdDateLocShareMap" type="Map"/>
+    <aura:attribute name="locationEarliestDate" type="Date"/>
+    <aura:attribute name="locationLatestDate" type="Date"/>
+    <aura:attribute name="dailyDatatableColumns" type="List"/>
+    <aura:attribute name="monthlyDatatableColumns" type="List"/>
+    <aura:attribute name="hpdDebug" type="String"/>
+    <aura:attribute name="debugDataType" type="String" default="A"/>
+    <aura:attribute name="spinnerAltText" type="String" default="processing..."/>
+    <aura:attribute name="scriptsWereLoaded" type="Boolean" default="false"/>
+    <aura:attribute name="displayMachineComparison" type="Boolean" default="false"/>
+
+    <aura:attribute name="gridMachineColumns" type="List"/>
+    <aura:attribute name="gridMachineData" type="Object"/>
+    <aura:attribute name="gridMachineExpandedRows" type="List"/>
+    <aura:attribute name="pieChartLocShareTotal" type="Integer" default="0"/>
+    <aura:attribute name="machineDataExportFieldNames" type="List"/>
+    <aura:attribute name="setAllMachineNames" type="Set"/>
+
+    <aura:attribute name="hpdTotals" type="Object"/>
+    <aura:attribute name="hpdTotalsDebug" type="String"/>
+    <aura:attribute name="debugConsole" type="Boolean"/>
+
+    <!-- ============== Chart Option Builder ==================== -->
+    <c:Accel_ChartMachineTotalsDisplay aura:id="chartMachineTotalsDisplay"/>
+    <c:Accel_ChartDailyLocShareDisplay aura:id="chartDailyLocShareDisplay"/>
+
+    <c:Accel_Promises context="{!this}"/>
+    <c:Accel_FormatUtils aura:id="formatUtils"/>
+    <c:Accel_UiMessagingUtils aura:id="uiMessagingUtils"/>
+    <c:Accel_CollectionUtils aura:id="collectionUtils"/>
+    <c:Accel_LoggingUtils aura:id="loggingUtils"/>
+    <c:Accel_SimpleCsvExporter aura:id="csvExporter"/>
+
+    <aura:registerEvent name="appEventMachineClicked" type="c:Accel_Evt_MachineClicked"/>
+
+    <lightning:spinner variant="brand" size="large" aura:id="machinePerfSpinner"
+                       class="{!((v.showSpinner)? '': 'slds-hide')}"
+                       alternativeText="{!v.spinnerAltText}"/>
+
+    <aura:handler name="init" value="{! this }" action="{! c.doInit }"/>
+
+    <div>
+        <div style="position:relative">
+            <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters accel-top-search-input-container">
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                    <lightning:combobox name="accountSelect" label="Location"
+                                        placeholder="Select a Location"
+                                        options="{! v.userAccountOptions }"
+                                        value="{!v.selectedAccountId}"
+                                        onchange="{! c.onChangeAccount }"/>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                    <lightning:input type="date" name="startDate" aura:id="{!v.startDate}" value="{!v.startDate}"
+                                     onchange="{!c.onDateUpdated}"
+                                     label="Start date"/>
+                </div>
+                <div class="slds-col slds-size_1-of-1 slds-medium-size_4-of-12 slds-large-size_4-of-12">
+                    <lightning:input type="date" name="endDate" value="{!v.endDate}" onchange="{!c.onDateUpdated}"
+                                     label="End date"/>
+                </div>
+            </div>
+            <div aura:id="bothPerfCharts" class="">
+                <div class="slds-grid  slds-grid_vertical-align-start slds-wrap slds-gutters">
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_7-of-12">
+                        <div>
+                            <div>
+                                <div class="accel-chart-shadow-drag accel-chart-container">
+                                    <div style="width:100%;min-height:425px" aura:id="echartsbarchart"></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="slds-col slds-size_1-of-1 slds-medium-size_6-of-12 slds-large-size_5-of-12">
+                        <div>
+                            <div aura:id="apexchartsLocationDailyMachine" class="apexcharts-location-daily-machine"
+                                 width="100%">
+                                <div class="accel-chart-shadow-drag accel-chart-container">
+                                    <div>
+                                        <div style="width:100%;min-height:425px"
+                                             aura:id="echartsmachinedailylocshare"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div style="border:0px dotted red;margin-top:20px;">
+        <aura:if isTrue="{!!empty(v.gridMachineData)}">
+            <aura:if isTrue="{!v.displayMachineComparison}">
+                <c:Accel_CommunityMachineComparison
+                        selectedAccount="{!v.selectedAccount}"/>
+            </aura:if>
+            <div>
+                <div style="padding-bottom:0px;">
+                    <lightning:layout horizontalAlign="spread" multipleRows="true">
+                        <lightning:layoutItem>
+                            <div style="padding:0.5rem;">
+                                <lightning:buttonIcon iconName="utility:download"
+                                                      aura:id="btnCsvDownload"
+                                                      onclick="{!c.handleDatatableToolbarButtonClick}"
+                                                      class="accel-csv-download-icon"
+                                                      alternativeText="Download to csv"/>
+                            </div>
+                        </lightning:layoutItem>
+                    </lightning:layout>
+                </div>
+                <div>
+                    <div>
+                        <lightning:spinner variant="brand" size="medium" aura:id="gridSpinner"
+                                           class="{!((v.showGridSpinner)? 'accel-grid-spinner': 'slds-hide')}"
+                                           alternativeText="{!v.spinnerAltText}"/>
+                    </div>
+                    <lightning:treeGrid data="{! v.gridMachineData }"
+                                        columns="{! v.gridMachineColumns}"
+                                        ontoggle="{! c.handleGridToggle }"
+                                        class="slds-max-medium-table_stacked accel-treegrid-machine-data"
+                                        aura:id="gridMachineData"
+                                        expandedRows="{!v.gridMachineExpandedRows}"
+                                        hideCheckboxColumn="true"
+                                        keyField="hpdDate"/>
+                </div>
+            </div>
+        </aura:if>
+    </div>
+</aura:component>

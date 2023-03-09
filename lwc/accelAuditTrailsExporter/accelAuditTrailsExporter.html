@@ -1,0 +1,24 @@
+<!-- Accel Audit Trails Exporter -->
+<template>
+    <template if:true={exportData}>
+        <lightning-icon
+                icon-name={btnIconName}
+                onclick={handleButtonClick}
+                class="slds-m-left_x-small"
+                data-id="export"
+                variant={btnVariant}
+                size={btnIconSize}
+        ></lightning-icon>
+<!--        <lightning-button-icon-->
+<!--                name="export"-->
+<!--                icon-name={btnIconName}-->
+<!--                onclick={handleButtonClick}-->
+<!--                class="slds-m-left_x-small"-->
+<!--                data-id="export"-->
+<!--                disabled={_isExporting}-->
+<!--                variant={btnVariant}-->
+<!--                size={btnIconSize}-->
+<!--                tooltip={btnTitle}-->
+<!--        ></lightning-button-icon>-->
+    </template>
+</template>

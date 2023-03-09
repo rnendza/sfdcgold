@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>รายการของกฎการทำงาน</value>
+    </caseValues>
+    <fields>
+        <help>ระยะเวลาเป็นนาทีของการหยุดพัก</help>
+        <label><!-- Break Duration (minutes) --></label>
+        <name>FSL__Break_Duration__c</name>
+    </fields>
+    <fields>
+        <help>จำนวนนาทีจากการเริ่มต้นของความพร้อมใช้งานของทรัพยากรบริการในเวลาเริ่มต้นหยุดพักแรกที่อนุญาต ตัวอย่างเช่น ใส่ 120 เพื่อกำหนดเวลาการหยุดพักอย่างน้อยสองชั่วโมงหลังจากเริ่มต้นวัน</help>
+        <label><!-- Earliest Break Start (minutes) --></label>
+        <name>FSL__Earliest_Break_Start__c</name>
+    </fields>
+    <fields>
+        <help>จำนวนนาทีจากการเริ่มต้นของความพร้อมใช้งานของทรัพยากรบริการในเวลาเริ่มต้นหยุดพักล่าสุดที่อนุญาต ตัวอย่างเช่น ใส่ 300 เพื่อกำหนดเวลาสิ้นสุดให้กับการหยุดพักทานอาหารกลางวันไม่เกินห้าชั่วโมงหลังจากเริ่มต้นวัน</help>
+        <label><!-- Latest Break End (minutes) --></label>
+        <name>FSL__Latest_Break_End__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Rule --></label>
+        <name>FSL__Work_Rule__c</name>
+        <relationshipLabel><!-- Work Rule Entries --></relationshipLabel>
+    </fields>
+    <nameFieldLabel>ชื่อรายการของกฎการทำงาน</nameFieldLabel>
+    <recordTypes>
+        <description><!-- Limits service resources based on a number of items such as service appointments, appointment durations, or custom field values --></description>
+        <label><!-- Field Service - Service Resource Availability --></label>
+        <name>FSL__Gap_Rule_Service</name>
+    </recordTypes>
+</CustomObjectTranslation>

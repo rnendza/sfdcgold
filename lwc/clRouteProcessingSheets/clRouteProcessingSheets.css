@@ -1,0 +1,125 @@
+.lgc-bg {
+    background-color: rgb(242, 242, 242);
+}
+
+.lgc-bg-inverse {
+    background-color: rgb(22, 50, 92);
+}
+.lgc-mouseover-border {
+    border: 2px solid #1589ee;
+}
+li {
+    border: 2px solid transparent;
+}
+
+.accel-dl_horizontal__label {
+    width:50%;
+}
+.accel-dl_horizontal__detail {
+    width:50%;
+}
+.accel-test-borders {
+  /*  border:1px dotted red;*/
+}
+.accel-form-theme_shade {
+    /*background-color: rgb(244,246,249);*/
+    /*background-color: red;*/
+}
+.accel-card_subtitle {
+    font-size: .75rem;
+}
+.accel-rps-outer-container {
+    min-height:35em;
+}
+.accel-rps-card {
+    min-height:35em;
+    background: rgba( 246, 246, 246, 0.40 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 11.5px );
+    -webkit-backdrop-filter: blur( 11.5px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+.accel-glassmorphism_tile {
+    box-shadow: 0 1px 2px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 7.5px );
+    -webkit-backdrop-filter: blur( 7.5px );
+}
+.accel-helptext {
+    padding-top:0!important;
+}
+.accel-new-window-icon {
+    --sds-c-icon-color-foreground-default:rgb(0,95,178);
+}
+.accel-drag-icon {
+    --sds-c-icon-color-foreground-default:rgb(0,95,178);
+}
+.accel-test-borders {
+    border:0px dotted red;
+}
+
+.accel-draggable-tile {
+    /*background-color: white;*/
+    /*border: 2px solid black;
+    border-style: solid;
+    border-radius:5px;
+    */
+    cursor: move;
+    /*box-shadow: rgba(45, 116, 255, 0.63) 0px 0px 1px 1px;*/
+    border:3px dashed silver;
+}
+.accel-drag {
+    border-style:dashed;
+    opacity:0.25;
+}
+.accel-drag-over {
+    border-style: solid dotted;
+    border-color: green;
+}
+
+li {
+    user-select: none;
+}
+.slip-reordering {
+    box-shadow: 0 2px 10px rgba(0,0,0,0.45);
+}
+
+.slip-swiping-container {
+    overflow-x: hidden;
+}
+
+.slippylist li {
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    /*cursor: default;*/
+}
+.blue-background {
+ background-color: #00BFFF;
+}
+.accel-dnd-ghost {
+    opacity: 0.6; border:2px dotted deepskyblue!important;
+}
+.accel-dnd-chosen {
+    background-color: green!important;
+    color:black!important;
+    font-weight: bold!important;
+    /*width: max-content;*/
+    /*background: linear-gradient(90deg, purple 100%, transparent 0%), linear-gradient(90deg, purple 100%, transparent 0%), linear-gradient(0deg, purple 50%, transparent 0%), linear-gradient(0deg, purple 100%, transparent 0%);*/
+    /*background-repeat: repeat-x, repeat-x, repeat-y, repeat-y;*/
+    /*background-size: 15px 4px, 15px 4px, 4px 15px, 4px 15px;*/
+    /*padding: 10px;*/
+    /*animation: accel-border-dance 4s infinite linear;*/
+}
+.accel-recorder-button {
+    --lwc-colorTextIconDefault: rgb(53,128,180);
+}
+
+@keyframes accel-border-dance {
+    0% {
+        background-position: 0 0, 100% 100%, 0 100%, 100% 0;
+    }
+    100% {
+        background-position: 100% 0, 0 100%, 0 0, 100% 100%;
+    }
+}

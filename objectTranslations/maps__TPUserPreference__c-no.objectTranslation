@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Brukerpreferansen for områdeplanlegging</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Brukerpreferanse for områdeplanlegging</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Brukerpreferanse for områdeplanlegging</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Brukerpreferansene for områdeplanlegging</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Brukerpreferanser for områdeplanlegging</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Brukerpreferanser for områdeplanlegging</value>
+    </caseValues>
+    <fields>
+        <label><!-- Access --></label>
+        <name>maps__Access__c</name>
+        <picklistValues>
+            <masterLabel>Commenter</masterLabel>
+            <translation>Kommentator</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Editor</masterLabel>
+            <translation>Redigerer</translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Alignment --></label>
+        <name>maps__Alignment__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Area --></label>
+        <name>maps__Area__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Data Set --></label>
+        <name>maps__DataSet__c</name>
+        <relationshipLabel><!-- User Preferences --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Preferences --></label>
+        <name>maps__Preferences__c</name>
+    </fields>
+    <fields>
+        <label><!-- User --></label>
+        <name>maps__User__c</name>
+        <relationshipLabel><!-- Preferences --></relationshipLabel>
+    </fields>
+    <gender>Masculine</gender>
+    <nameFieldLabel>AutoId</nameFieldLabel>
+</CustomObjectTranslation>

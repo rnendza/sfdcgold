@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Municipality__c.Allows_Gaming__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.VGT_Additional_Requirements__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.VGT_Permit_Fee_Per_Machine__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.VGT_Licensing_Requirement__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.VGT_Expiration_of_Permit__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.Confirmed_With__c</field>
+    </columns>
+    <columns>
+        <field>Municipality__c.Contact_Number__c</field>
+    </columns>
+    <format>Tabular</format>
+    <name>Municipality Requirements</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Municipality__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>CUST_NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>CUST_CREATED_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

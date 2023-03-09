@@ -1,0 +1,19 @@
+<!--
+ - Created by CedricN on 8/4/2022.
+ -->
+
+<aura:component implements="flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId" >
+    <aura:attribute name="PicklistField" type="object"/>
+
+    <!--force:recordData to update picklist value-->
+    <force:recordData aura:id="record"
+                      layoutType="FULL"
+                      recordId="{!v.recordId}"
+                      targetFields="{!v.PicklistField}"
+                      mode="EDIT"/>
+    <lightning:picklistPath aura:id="picklistPath" recordId="{!v.recordId}"
+                            variant="linear"
+                            picklistFieldApiName="Gaming_Area_Assets__c"
+                            onselect="{!c.handleSelect}">
+    </lightning:picklistPath>
+</aura:component>

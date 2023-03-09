@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <help><!-- Denotes if this event was included in a previous email alert --></help>
+        <label><!-- Alert Sent --></label>
+        <name>maps__AlertSent__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average speed over the course of the event, in kilometers per hour --></help>
+        <label><!-- Average Speed (kph) --></label>
+        <name>maps__AverageSpeed_kph__c</name>
+    </fields>
+    <fields>
+        <help><!-- Average speed over the course of the event, in miles per hour --></help>
+        <label><!-- Average Speed (mph) --></label>
+        <name>maps__AverageSpeed_mph__c</name>
+    </fields>
+    <fields>
+        <help><!-- City of event location (when available) --></help>
+        <label><!-- City --></label>
+        <name>maps__City__c</name>
+    </fields>
+    <fields>
+        <help><!-- Country of event location (when available) --></help>
+        <label><!-- Country --></label>
+        <name>maps__Country__c</name>
+    </fields>
+    <fields>
+        <label><!-- End Unix Time Stamp --></label>
+        <name>maps__EndUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- Timestamp of event end --></help>
+        <label><!-- Event Ended --></label>
+        <name>maps__EventEnded__c</name>
+    </fields>
+    <fields>
+        <help><!-- AM/PM is determined based on the Timezone of the device. --></help>
+        <label><!-- Event Occurred in AM or PM --></label>
+        <name>maps__EventOccuredAMorPM__c</name>
+        <picklistValues>
+            <masterLabel>AM</masterLabel>
+            <translation><!-- AM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>AM/PM</masterLabel>
+            <translation><!-- AM/PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>PM</masterLabel>
+            <translation><!-- PM --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Timestamp of event start --></help>
+        <label><!-- Event Started --></label>
+        <name>maps__EventStarted__c</name>
+    </fields>
+    <fields>
+        <help><!-- Type of summary event represented by this record --></help>
+        <label><!-- Event Type --></label>
+        <name>maps__EventType__c</name>
+        <picklistValues>
+            <masterLabel>Device Battery On</masterLabel>
+            <translation><!-- Device Battery On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Message of Day</masterLabel>
+            <translation><!-- First Message of Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>First Motion</masterLabel>
+            <translation><!-- First Motion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard Acceleration</masterLabel>
+            <translation><!-- Hard Acceleration --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Hard Braking</masterLabel>
+            <translation><!-- Hard Braking --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Message of Day</masterLabel>
+            <translation><!-- Last Message of Day --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Last Motion</masterLabel>
+            <translation><!-- Last Motion --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live App Toggle Off</masterLabel>
+            <translation><!-- Live App Toggle Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live App Toggle On</masterLabel>
+            <translation><!-- Live App Toggle On --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speed Threshold</masterLabel>
+            <translation><!-- Speed Threshold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Speeding</masterLabel>
+            <translation><!-- Speeding --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stop</masterLabel>
+            <translation><!-- Stop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- This is the full address of where the event occurred --></help>
+        <label><!-- Full Address --></label>
+        <name>maps__Full_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Live Asset Daily Summary record to which this event relates --></help>
+        <label><!-- Live Asset Daily Summary --></label>
+        <name>maps__LiveAssetDailySummary__c</name>
+        <relationshipLabel><!-- Live Asset Daily Summary Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Live Daily Drive Trip --></label>
+        <name>maps__LiveDailyDriveTrip__c</name>
+        <relationshipLabel><!-- Live Asset Daily Summary Events --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Number of Associations --></label>
+        <name>maps__Number_of_Associations__c</name>
+    </fields>
+    <fields>
+        <help><!-- Odometer value (km) captured at the time of event --></help>
+        <label><!-- Odometer (km) --></label>
+        <name>maps__OdometerKm__c</name>
+    </fields>
+    <fields>
+        <help><!-- Odometer value (mi) captured at the time of event --></help>
+        <label><!-- Odometer (mi) --></label>
+        <name>maps__OdometerMiles__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stop Order --></label>
+        <name>maps__Order__c</name>
+    </fields>
+    <fields>
+        <help><!-- Asset location at start of event --></help>
+        <label><!-- Position --></label>
+        <name>maps__Position__c</name>
+    </fields>
+    <fields>
+        <help><!-- Postal Code of event location (when available) --></help>
+        <label><!-- Postal Code --></label>
+        <name>maps__PostalCode__c</name>
+    </fields>
+    <fields>
+        <help><!-- Posted speed limit where event occurs, when available, in kilometers per hour --></help>
+        <label><!-- Posted Speed Limit (kph) --></label>
+        <name>maps__PostedSpeedLimit_KPH__c</name>
+    </fields>
+    <fields>
+        <help><!-- Posted speed limit where event occurs, when available, in miles per hour --></help>
+        <label><!-- Posted Speed Limit (mph) --></label>
+        <name>maps__PostedSpeedLimit_MPH__c</name>
+    </fields>
+    <fields>
+        <label><!-- Start Unix Time Stamp --></label>
+        <name>maps__StartUnixTimeStamp__c</name>
+    </fields>
+    <fields>
+        <help><!-- State of event location (when available) --></help>
+        <label><!-- State --></label>
+        <name>maps__State__c</name>
+    </fields>
+    <fields>
+        <help><!-- Street address of event location (when available) --></help>
+        <label><!-- Street Address --></label>
+        <name>maps__Street_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Duration of a stop event in hours. (only available for Stop events) --></help>
+        <label><!-- Event Duration (Hours) --></label>
+        <name>maps__TotalEventTimeHours__c</name>
+    </fields>
+    <fields>
+        <help><!-- Duration of a stop event in minutes. (only available for Stop events) --></help>
+        <label><!-- Event Duration (Minutes) --></label>
+        <name>maps__TotalEventTimeMinutes__c</name>
+    </fields>
+</CustomObjectTranslation>

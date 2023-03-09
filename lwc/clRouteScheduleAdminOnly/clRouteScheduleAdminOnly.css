@@ -1,0 +1,34 @@
+.accel-test-borders{border:0px dotted red}
+.accel-record-create-icon {
+    color: black;
+    --sds-c-icon-color-foreground-default: black;
+}
+.accel-record-create-icon-white {
+    color: white;
+    --sds-c-icon-color-foreground-default: white;
+}
+.accel-text-info-icon {
+    color:#dad3d3;
+    --sds-c-icon-color-foreground-default: #dad3d3;
+}
+
+.accel-tab-set {
+    /*--sds-c-tabs-list-color-border: black;*/
+    /*--sds-c-tabs-item-color-border-active: red;*/
+    /*--sds-c-tabs-item-color-border-hover: green;*/
+    /*--sds-c-tabs-item-text-color: black;*/
+    /*--sds-c-tabs-item-text-color-active: green;*/
+}
+.accel-scoped-tab-set {
+    --sds-c-tabs-scoped-list-sizing-height: 2.0rem;
+    --sds-c-tabs-scoped-item-line-height: 2.0rem;
+}
+.accel-scoped-tab-red-icon {
+    --sds-c-tabs-scoped-icon-color-foreground-default: red;
+
+    /*--sds-c-tabs-list-color-border: black;*/
+    /*--sds-c-tabs-item-color-border-active: red;*/
+    /*--sds-c-tabs-item-color-border-hover: green;*/
+    /*--sds-c-tabs-item-text-color: black;*/
+    /*--sds-c-tabs-item-text-color-active: green;*/
+}

@@ -1,0 +1,196 @@
+<!-- Cl Rps Process Actual Drop View -->
+<template>
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+
+    <div if:true={showForm}
+         class="accel-test-borders">
+
+        <div class="accel-form_container slds-p-bottom_large">
+            <div class={_editFormStyle}>
+                <lightning-record-edit-form
+                                        record-id={rpsId}
+                                        optional-fields={optionalFields}
+                                        object-api-name={objectApiName}
+                                        onsubmit={handleSubmit}
+                                        onload={handleLoad}
+                                        onerror={handleError}
+                                        onsuccess={handleSuccess}
+                                        density={formDensity}
+                                        form-class={formClass}>
+
+                <lightning-messages></lightning-messages>
+                <div class="accel-form-theme_shade">
+                    <div class="slds-p-horizontal_medium slds-p-top_medium slds-p-bottom_x-small">
+                        <c-ui-form-title
+                                form-title={formTitle}
+                                icon-size="small"
+                                icon-name="custom:custom41">
+                        </c-ui-form-title>
+                    </div>
+
+                    <div if:true={showStencil}>
+                        <div class="slds-p-around_small">
+                            <c-ui-custom-stencil
+                                    iterations="4"
+                                    type="list" columns="2">
+                            </c-ui-custom-stencil>
+                        </div>
+                    </div>
+                    <div class="slds-p-horizontal_medium slds-p-bottom_medium">
+                        <div class={inputsClass}>
+                            <div onblur={handleInputBlur}>
+                                <lightning-input-field
+                                        tabindex=0
+                                        field-name="Cassette_1_Note_Count_Drop__c"
+                                        onblur={handleInputBlur}
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+                            </div>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Cassette_5_Note_Count_Drop__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Cassette_20_Note_Count_Drop__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Cassette_50_Note_Count_Drop__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Cassette_100_Note_Count_Drop__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Reject_Drop_Total__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <lightning-input-field
+                                    if:true={showBvValue}
+                                    tabindex=0
+                                    field-name="BV_Drop_Total__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+                            <template if:true={showOverflowFields}>
+                                <lightning-input-field
+                                        tabindex=0
+                                        field-name="Cash_Return_Unused_Drop__c"
+                                        class="xslds-form-element_1-col">
+                                </lightning-input-field>
+                            </template>
+                            <lightning-input-field
+                                    tabindex=0
+                                    field-name="Enter_Total_Drop__c"
+                                    class="xslds-form-element_1-col">
+                            </lightning-input-field>
+
+                            <input type="submit" class="accel-form-submit-hide" />
+                            <div class="slds-m-top_medium">
+                                <button
+                                        name="submitForm"
+                                        type="button"
+                                        onclick={manualFormSubmit}
+                                        data-id="submitButton"
+                                        title={formButtonLabel}
+                                        style="padding:.30em"
+                                        class="slds-button slds-button_brand slds-button_stretch ">
+                                                <span class="slds-p-right_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:save"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                                    <span style="font-size: 1.25em">{formButtonLabel}</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </lightning-record-edit-form>
+            </div>
+
+            <div  class={_viewFormStyle}>
+                <lightning-record-view-form record-id={rpsId}
+                                            object-api-name={objectApiName}
+                                            optional-fields={optionalFields}
+                                            onload={handleLoad}
+                                            density={formDensity}
+                                            form-class={formClass}>
+
+                    <lightning-messages></lightning-messages>
+                    <div class="accel-form-theme_shade slds-p-bottom_small">
+                        <div if:true={showStencil}>
+                            <div class="slds-p-around_small">
+                                <c-ui-custom-stencil
+                                        iterations="4"
+                                        type="list" columns="2">
+                                </c-ui-custom-stencil>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="slds-p-horizontal_medium slds-p-top_medium slds-p-bottom_x-small">
+                                <c-ui-form-title
+                                        form-title={formTitle}
+                                        icon-size="small"
+                                        icon-name="custom:custom41">
+                                </c-ui-form-title>
+                            </div>
+                            <div class="slds-p-horizontal_medium ">
+                                <lightning-output-field
+                                        field-name="Cassette_1_Note_Count_Drop__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        field-name="Cassette_5_Note_Count_Drop__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        field-name="Cassette_20_Note_Count_Drop__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        field-name="Cassette_50_Note_Count_Drop__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        field-name="Cassette_100_Note_Count_Drop__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        field-name="Reject_Drop_Total__c">
+                                </lightning-output-field>
+                                <lightning-output-field
+                                        if:true={showBvValue}
+                                        field-name="BV_Drop_Total__c">
+                                </lightning-output-field>
+                                <template if:true={showOverflowFields}>
+                                    <lightning-output-field
+                                            field-name="Cash_Return_Unused_Drop__c">
+                                    </lightning-output-field>
+                                </template>
+                                <div class="slds-border_top"></div>
+                                <lightning-output-field
+                                        field-name="Total_Drop__c">
+                                </lightning-output-field>
+
+                                <div class="slds-p-top_medium slds-p-bottom_medium">
+                                    <c-ui-scoped-notification
+                                            icon-name="utility:success"
+                                            icon-variant="inverse"
+                                            theme="success"
+                                            message={_processCompletedMsg}>
+                                    </c-ui-scoped-notification>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </lightning-record-view-form>
+            </div>
+        </div>
+    </div>
+
+</template>

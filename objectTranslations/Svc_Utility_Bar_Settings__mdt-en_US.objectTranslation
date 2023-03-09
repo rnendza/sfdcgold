@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Svc Utility Bar Setting</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Svc Utility Bar Settings</value>
+    </caseValues>
+    <fields>
+        <help><!-- Allow all custom notifications --></help>
+        <label><!-- Allow Custom Notifications --></label>
+        <name>Allow_Custom_Notifications__c</name>
+    </fields>
+    <fields>
+        <help><!-- Max age of case till it gets sorted to the bottom --></help>
+        <label><!-- Case Age Bottom Sort  (Minutes) --></label>
+        <name>Case_Age_Bottom_Sort__c</name>
+    </fields>
+    <fields>
+        <help><!-- In addition to profile this will look for a name in the createdby of the case  ie OR CreatedBy.Name like &apos;%Nendza% --></help>
+        <label><!-- Case Created Override --></label>
+        <name>Case_Created_Override__c</name>
+    </fields>
+    <fields>
+        <help><!-- The amount of seconds to rerun client side eval of data to determine if we hit limits / data changed. --></help>
+        <label><!-- Client Side Eval Increment Seconds --></label>
+        <name>Client_Side_Eval_Increment_Seconds__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Accepted But Not En-Route PE --></label>
+        <name>Disable_Accepted_But_Not_En_Route_PE__c</name>
+    </fields>
+    <fields>
+        <help><!-- If checked. disable the firing of the no assigned resources platform event in the cases trigger. --></help>
+        <label><!-- Disable No Assigned Resource PE --></label>
+        <name>Disable_No_Assigned_Resource_PE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Rejected PE --></label>
+        <name>Disable_Rejected_PE__c</name>
+    </fields>
+    <fields>
+        <label><!-- Disable Utility Bar Auto Open --></label>
+        <name>Disable_Utility_Bar_Auto_Open__c</name>
+    </fields>
+    <fields>
+        <help><!-- Max Age of Cases in Minutes --></help>
+        <label><!-- Max Age of Cases --></label>
+        <name>Max_Age_of_Cases__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Platform Event Endpoint for No Assigned Resources --></help>
+        <label><!-- No Assigned Resource PE Endpoint --></label>
+        <name>No_Assigned_Resource_PE_Endpoint__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Body in the notification sent to a mobile device or SFDC Desktop bell notification. --></help>
+        <label><!-- Notification Msg Body --></label>
+        <name>Notification_Msg_Body__c</name>
+    </fields>
+    <fields>
+        <help><!-- The criteria of the Amt of minutes a notification should be sent in. --></help>
+        <label><!-- Notification Msg Send Age (Mins) --></label>
+        <name>Notification_Msg_Send_Age_Mins__c</name>
+    </fields>
+    <fields>
+        <help><!-- The Title in the notification sent to a mobile device or SFDC Desktop bell notification. --></help>
+        <label><!-- Notification Msg Title --></label>
+        <name>Notification_Msg_Title__c</name>
+    </fields>
+    <fields>
+        <label><!-- Profile Names to Watch --></label>
+        <name>Profile_Names_to_Watch__c</name>
+    </fields>
+    <fields>
+        <label><!-- Rejected Created Date Nbr of Days --></label>
+        <name>Rejected_Created_Date_Nbr_of_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status To Watch --></label>
+        <name>Status_To_Watch__c</name>
+    </fields>
+    <startsWith>Consonant</startsWith>
+</CustomObjectTranslation>

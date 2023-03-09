@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Used for any config parms for communities that cannot be stored natively in the community itself.</description>
+    <fields>
+        <fullName>Account_Types__c</fullName>
+        <defaultValue>&quot;Accel Account,Other&quot;</defaultValue>
+        <description>Comma Delim</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Comma Delim</inlineHelpText>
+        <label>Account Types</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Allow_Impersonation_Toast__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>When a CRM User logs in via the contact record. If this box it checked it will allow a toast.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>When a CRM User logs in via the contact record. If this box it checked it will allow a toast.</inlineHelpText>
+        <label>Allow Impersonation Toast</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Debug_Console__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Debug Console</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_License_Expiration_Messaging__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Disables the license expiration popup</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Disables the license expiration popup</inlineHelpText>
+        <label>Disable License Expiration Messaging</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Disable_Terms_of_Service_Autodisplay__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Disable Terms of Service Autodisplay</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Bottom_Nav_Options__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Check this do display the bottom navigation (whats new link etc)</inlineHelpText>
+        <label>Display Bottom Nav Options</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Privacy_Link__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Display the privacy link in the bottom nav bar. Prereq is display bottom nav bar is checked.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display the privacy link in the bottom nav bar. Prereq is display bottom nav bar is checked.</inlineHelpText>
+        <label>Display Privacy Link</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Export_Field_Names__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Export Field Names</label>
+        <length>32768</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Max_Account_Results__c</fullName>
+        <defaultValue>15</defaultValue>
+        <description>Max number of accounts to return. (used primarily for us logging in as system admins!)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Max number of accounts to return. (used primarily for us logging in as system admins!)</inlineHelpText>
+        <label>Max Account Results</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Number_of_Days_to_Warn_To_Expiration__c</fullName>
+        <defaultValue>30</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The Number of days.. to consider a license expiration warning</inlineHelpText>
+        <label>Number of Days to Warn To Expiration</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Privacy_Text__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Privacy Text</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>Terms_of_Service_Text__c</fullName>
+        <defaultValue>&quot;blah blah&quot;</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Terms of Service Text</label>
+        <length>131072</length>
+        <type>LongTextArea</type>
+        <visibleLines>5</visibleLines>
+    </fields>
+    <label>Community Setting</label>
+    <pluralLabel>Community Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

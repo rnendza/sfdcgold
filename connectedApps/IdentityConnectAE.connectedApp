@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>kurtg@accelentertainment.com</contactEmail>
+    <contactPhone>630-201-0950</contactPhone>
+    <label>IdentityConnectAE</label>
+    <oauthConfig>
+        <callbackUrl>https://identityconnect.accelentertainment.com:8443/admin/index.html#salesforceCallback</callbackUrl>
+        <consumerKey>3MVG9g9rbsTkKnAX5pifHYOMgaPWbpi4GKDj0vjWnIVrjA5T1lp4xT1NYcTvUt.SCn9Ixu9BDfo7Ws5Af8m8E</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>false</isSecretRequiredForRefreshToken>
+        <scopes>Basic</scopes>
+        <scopes>Api</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>

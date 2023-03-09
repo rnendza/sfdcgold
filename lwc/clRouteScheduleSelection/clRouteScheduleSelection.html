@@ -1,0 +1,234 @@
+<!-- Cl Route Schedule Selection -->
+<template>
+    <lightning-card>
+
+        <lightning-button-menu
+                icon-name="utility:collapse_all"
+                icon-size="medium" if:true={showCardActions} menu-alignment="right"
+                class="accel-icon-blue"
+                onselect={handleCardMenuSelect}
+                slot="actions" variant="border-filled">
+            <template for:each={cardActions} for:item="option">
+                <lightning-menu-item
+                        prefix-icon-name={option.prefixIconName}
+                        key={option.id}
+                        label={option.label}
+                        value={option.id}>
+                </lightning-menu-item>
+            </template>
+        </lightning-button-menu>
+
+        <h1 slot="title" class="no-wrap">
+            <div class="slds-grid slds-wrap accel-test-borders">
+                <c-ui-card-title
+                        card-title="Route Schedule Selection"
+                        card-subtitle={cardSubTitle}
+                        icon-name="standard:picklist_choice"
+                        icon-size="medium">
+                </c-ui-card-title>
+            </div>
+        </h1>
+        <div
+                if:true={testMessage}
+                class="slds-p-horizontal_large"
+                style="border:1px dotted red">
+            DEBUG SERVER SIDE MESSAGING<br/>
+            {testMessage}
+        </div>
+        <div style="min-height: 400px">
+            <div if:true={showStencil}>
+                <c-ui-custom-stencil
+                        iterations="4"
+                        child-class="slds-var-m-around_xxx-small"
+                        type="feed" columns="1">
+                </c-ui-custom-stencil>
+            </div>
+            <template if:true={displayRegionSelector}>
+                <div class="slds-m-horizontal_x-small slds-p-bottom_small accel-region-selector slds-m-bottom_medium">
+                    <div class="slds-p-around_xx-small">
+                        <c-cl-region-selector
+                                onregionoptionselected={handleRegionSelected}
+                                suppressed-region-values={_suppressedRegionValues}
+                                debug-console={debugConsole}
+                                select-label={regionSelectLabel}
+                                all-regions-label={allRegionLabel}
+                                all-regions-value={allRegionsValue}>
+                        </c-cl-region-selector>
+                    </div>
+                </div>
+            </template>
+            <div if:true={showRouteScheduleData} class="accel-test-border">
+                <c-ui-confirmation-dialog title='Assignment Requested'
+                                          message={confirmDisplayMessage}
+                                          confirm-label='Assign me!'
+                                          cancel-label='Cancel'
+                                          visible={isDialogVisible}
+                                          original-message={dialogPayload}
+                                          name="confirmModal"
+                                          header-icon="standard:question_feed"
+                                          onmodalaction={handleAssignConfirmClick}>
+                </c-ui-confirmation-dialog>
+
+                <div if:true={showPageHelp} class="slds-p-horizontal_x-small">
+                    <c-ui-scoped-notification
+                            icon-name="utility:info"
+                            icon-variant=""
+                            custom-class="accel-notification-info_theme"
+                            custom-icon-size="x-small"
+                            theme="info"
+                            dismissible="true"
+                            message={helpMsg}>
+                    </c-ui-scoped-notification>
+                </div>
+
+
+                <ul class="slds-has-dividers_bottom-space slds-m-around_x-small slds-p-top_none accel-accordion-wrapper">
+
+
+
+                    <template for:each={routeSchedules} for:item="routeSchedule" for:index="index">
+                        <li name="listItemContainer"
+                            key={routeSchedule.rsId}
+                            class="slds-item lgc-bg slds-p-around_small
+                            slds-bottom-small slds-m-bottom_x-large slds-p-bottom_medium accel-glassmorphism_tile">
+                            <div onclick={handleSectionClick}
+                                 data-index={index}
+                                 data-sectiontitleid={routeSchedule.rsId}
+                                 class="slds-float_right" data-sectionarrowid={routeSchedule.rsId}>
+                                <div class="summary-chevron-right section-arrow">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                         viewBox="0 0 24 24" fill="none" stroke="rgb(0,95,178)"
+                                         stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                         class="feather feather-chevron-right">
+                                        <polyline points="9 18 15 12 9 6"></polyline>
+                                    </svg>
+                                </div>
+                            </div>
+                            <div>
+                                <div onclick={handleSectionClick}
+                                     data-index={index}
+                                     data-sectiontitleid={routeSchedule.rsId}
+                                     class="slds-grid accel-accordion-trigger accel-accordion-active
+                                        slds-wrap slds-grid_vertical-stretch accel-test-borders slds-gutters_direct-xx-small">
+                                    <div class="accel-test-borders slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xx-small">
+                                        <div>
+                                        <lightning-icon icon-name="custom:custom25" alternative-text=""
+                                                        class="accel-route-schedule-icon"
+                                                        title="" size="small"></lightning-icon>
+                                        <b>{routeSchedule.rsName}</b>
+                                        </div>
+                                        <div class="slds-p-left_x-large">
+                                            <span class="slds-icon-text-light slds-text-color_weak" style="font-size:.75rem">
+                                            <span style={routeSchedule.rsLocStyle}>{routeSchedule.rsTotalLocs}</span> locations
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xx-small">
+                                        <template if:true={routeSchedule.dynaA}>
+                                            <div><b>{routeSchedule.dynaA.label}</b></div>
+                                            <div class="slds-p-top_xx-small">
+                                                <lightning-icon if:true={routeSchedule.dynaA.showIcon}
+                                                                class="slds-m-right_xxx-small"
+                                                                size="xx-small"
+                                                                icon-name="standard:user">
+                                                </lightning-icon>
+                                                <span style={routeSchedule.dynaA.style}>
+                                                    {routeSchedule.dynaA.value}
+                                                </span>
+                                            </div>
+                                        </template>
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_4-of-12 slds-medium-size_4-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xx-small">
+                                        <template if:true={routeSchedule.dynaB}>
+                                            <div><b>{routeSchedule.dynaB.label}</b></div>
+                                            <div class="slds-p-top_xx-small">
+                                                <lightning-icon if:true={routeSchedule.dynaB.showIcon}
+                                                                class="slds-m-right_xxx-small"
+                                                                size="xx-small"
+                                                                icon-name="standard:user">
+                                                </lightning-icon>
+                                                <span style={routeSchedule.dynaB.style}>
+                                                    {routeSchedule.dynaB.value}
+                                                </span>
+                                            </div>
+
+                                        </template>
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_3-of-12 slds-medium-size_3-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xxx-small slds-p-top_small">
+
+                                        <button
+                                                name="saveAllVgts"
+                                                type="button"
+                                                disabled={routeSchedule.rsDisableButton}
+                                                onclick={handleAssignToMe}
+                                                data-routescheduleid={routeSchedule.rsId}
+                                                data-routeschedulename={routeSchedule.rsName}
+                                                title="Save all data."
+                                                class="slds-button slds-button_brand slds-button_stretch ">
+                                            <span>Assign to me</span>
+                                            <span class="slds-p-left_xx-small">
+                                                <lightning-icon
+                                                        icon-name="utility:reassign"
+                                                        variant="inverse"
+                                                        alternative-text=""
+                                                        size="x-small"
+                                                        title="">
+                                                </lightning-icon>
+                                                </span>
+                                        </button>
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_1-of-12 slds-medium-size_1-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xxx-small ">
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_8-of-12 slds-medium-size_8-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_xxx-small slds-p-top_small ">
+                                        <template if:true={routeSchedule.rsFullyAssigned}>
+                                            <div class="">
+                                                <c-ui-scoped-notification
+                                                        icon-name="utility:warning"
+                                                        icon-variant="inverse"
+                                                        custom-class="accel-notification_small accel-notification-warning_theme slds-theme_alert-texture"
+                                                        custom-icon-size="x-small"
+                                                        theme="warning"
+                                                        message={routeSchedule.rsFullyAssignedMsg}>
+                                                </c-ui-scoped-notification>
+                                            </div>
+                                        </template>
+                                    </div>
+                                </div>
+                                <div class="accel-accordion-content accel-accordion-active slds-hide accel-test-borders"
+                                     data-sectioncontentid={routeSchedule.rsId}
+                                     style="border:0px dotted purple">
+                                    <div class="slds-grid slds-gutters_x-small slds-wrap slds-grid_vertical-stretch accel-test-borders slds-p-top_small">
+                                        <div class="accel-test-borders slds-col slds-large-size_12-of-12 slds-medium-size_12-of-12
+                                                    slds-small-size_12-of-12 slds-p-bottom_small slds-p-top_medium slds-p-horizontal_medium">
+                                            <c-cl-route-schedule-selection-rps-records
+                                                    route-schedule-id={routeSchedule.rsId}
+                                                    total-num-accounts={routeSchedule.rsTotalLocs}>
+                                            </c-cl-route-schedule-selection-rps-records>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+            <div if:true={showNoDataMsg}>
+                <c-ui-empty-state
+                        container-class="slds-illustration slds-illustration_large"
+                        header-text={noDataMsg.header}
+                        body-text={noDataMsg.bodyText}>
+                </c-ui-empty-state>
+            </div>
+        </div>
+        <c-cl-exp-cloud-event-subscriber
+                channel={platformEventChannel}
+                onmessagereceived={handlePlatformEvent} >
+        </c-cl-exp-cloud-event-subscriber>
+    </lightning-card>
+</template>

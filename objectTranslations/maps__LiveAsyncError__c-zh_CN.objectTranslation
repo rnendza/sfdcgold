@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>地图实时异步错误</value>
+    </caseValues>
+    <fields>
+        <help>导致错误的类的名称和方法（可选）。</help>
+        <label><!-- Class Name --></label>
+        <name>maps__ClassName__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed --></label>
+        <name>maps__Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Device Id --></label>
+        <name>maps__DeviceId__c</name>
+    </fields>
+    <fields>
+        <help>收到的错误类型。</help>
+        <label><!-- Error Type --></label>
+        <name>maps__ErrorType__c</name>
+    </fields>
+    <fields>
+        <label><!-- Line Number --></label>
+        <name>maps__LineNumber__c</name>
+    </fields>
+    <fields>
+        <help>参考出错的摘要</help>
+        <label><!-- Live Daily Summary Config --></label>
+        <name>maps__LiveDailySummaryConfig__c</name>
+        <relationshipLabel><!-- Live Async Errors --></relationshipLabel>
+    </fields>
+    <fields>
+        <help>收到的消息的值。</help>
+        <label><!-- Message --></label>
+        <name>maps__Message__c</name>
+    </fields>
+    <fields>
+        <help>完整 sObject 的格式为 JSON（如果可用）。</help>
+        <label><!-- Object Field Values --></label>
+        <name>maps__ObjectFieldValues__c</name>
+    </fields>
+    <fields>
+        <help>完整 sObject 的格式为 JSON（如果可用）。</help>
+        <label><!-- Object Id --></label>
+        <name>maps__ObjectId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Report Date --></label>
+        <name>maps__ReportDate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sobject Type --></label>
+        <name>maps__SobjectType__c</name>
+    </fields>
+    <fields>
+        <help>收到的堆栈跟踪的值。</help>
+        <label><!-- Stack Trace --></label>
+        <name>maps__StackTrace__c</name>
+    </fields>
+    <fields>
+        <label><!-- Subject --></label>
+        <name>maps__Subject__c</name>
+    </fields>
+    <nameFieldLabel>地图实时异步错误名称</nameFieldLabel>
+</CustomObjectTranslation>

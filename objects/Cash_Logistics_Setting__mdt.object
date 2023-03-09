@@ -1,0 +1,356 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>All Configurable Settings for the Cash Logistics Experience Cloud</description>
+    <fields>
+        <fullName>Allow_Address_Click_to_Google_Maps__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Allow Address Click to Google Maps</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Collector_Route_Selection__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, if the are no routes assigned to the collector for the current day, the home page will redirect to a route selection view.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>If checked, if the are no routes assigned to the collector for the current day, the home page will redirect to a route selection view.</inlineHelpText>
+        <label>Allow Collector Route Selection</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_Long_polling__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Allow the page to use long polling ie. CometD. ie the Bayeux protocol. This Will allow Server Side push and the page to react immediate to data changes.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Allow the page to use long polling ie. CometD. ie the Bayeux protocol. This Will allow Server Side push and the page to react immediate to data changes.</inlineHelpText>
+        <label>Allow Long polling</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_RPS_Drag_And_Drop__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>If checked, this will allow a collector to drag and drop RPS Sheets on the home page to set the RPS.Stop_Number__c field (BETA)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>If checked, this will allow a collector to drag and drop RPS Sheets on the home page to set the RPS.Stop_Number__c field (BETA)</inlineHelpText>
+        <label>Allow RPS Drag And Drop</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Allow_RPS_Reorder__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Will show reorder (up / down arrows) on the Route Processing Sheet. This will allow the user to change the stop number value on the route processing sheet and thus reorder location stops.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Will show reorder (up / down arrows) on the Route Processing Sheet. This will allow the user to change the stop number value on the route processing sheet and thus reorder location stops.</inlineHelpText>
+        <label>Allow RPS Reorder</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Image_Metadata__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Check this to show image metadata next to the picture.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Check this to show image metadata next to the picture.</inlineHelpText>
+        <label>Display Image Metadata</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Display_Location_Distance__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Display Distance (Miles) Between locations on rps sheets.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Display Distance (Miles) Between locations on rps sheets.</inlineHelpText>
+        <label>Display Location Distance</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Fill_Date_Increment__c</fullName>
+        <defaultValue>0</defaultValue>
+        <description>Determines what Route_Schedule__c.Fill_Date__c is populated with. 0 = current date the job is run.. +1 = the next date after the job is run.. -1 = the previous date..etc.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Determines what Route_Schedule__c.Fill_Date__c is populated with. 0 = current date the job is run.. +1 = the next date after the job is run.. -1 = the previous date..etc.</inlineHelpText>
+        <label>Fill Date Increment</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Image_Compression_Ratio__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Image Compression Ratio</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>4</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Footer_Msg__c</fullName>
+        <description>The maintenance message for the the footer (static)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The maintenance message for the the footer (static)</inlineHelpText>
+        <label>Maintenance Footer Msg</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Maintenance_Toast_Msg__c</fullName>
+        <description>Show a maintenance message via toast upon login. (1 time )</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show a maintenance message via toast upon login. (1 time )</inlineHelpText>
+        <label>Maintenance Toast Msg</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Next_Cycle__c</fullName>
+        <defaultValue>0</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Next Cycle</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Profiles_For_User_Settings__c</fullName>
+        <defaultValue>&quot;CL - Route Collector,CL - Route Processor&quot;</defaultValue>
+        <description>Comma delimited list of profiles names to insert CL_User_Setting__c records for upon creation of a user.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Comma delimited list of profiles names to insert CL_User_Setting__c records for upon creation of a user.</inlineHelpText>
+        <label>Profiles For User Settings</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Require_Meter_Image__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Require Meter image (snapshot) associated with the meter reading for its status to be marked as completed.</description>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <inlineHelpText>Require Meter image (snapshot) associated with the meter reading for its status to be marked as completed.</inlineHelpText>
+        <label>Require Meter Image</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_BV_Types__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show BV Type Counts of the Assets if they are not 0</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show BV Type Counts of the Assets if they are not 0</inlineHelpText>
+        <label>Show BV Types</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Back_Button__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Show Back Button</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Collection_Notes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show Route_Processing_Sheet__c.Account__r.Collection_Notes__c on collector RPS View.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show Route_Processing_Sheet__c.Account__r.Collection_Notes__c on collector RPS View.</inlineHelpText>
+        <label>Show Collection Notes</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_CrashBag_Checkbox_on_RT__c</fullName>
+        <defaultValue>true</defaultValue>
+        <description>Show Crashbag checkboxes for the collector on the RT View for an NRT.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show Crashbag checkboxes for the collector on the RT View for an NRT.</inlineHelpText>
+        <label>Show CrashBag Checkbox on RT</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Invalid_Routes__c</fullName>
+        <defaultValue>false</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>SubscriberControlled</fieldManageability>
+        <label>Show Invalid Routes</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Maintenance_Footer_Msg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show a static maintenance Msg in the footer (every page)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show a static maintenance Msg in the footer (every page)</inlineHelpText>
+        <label>Show Maintenance Footer Msg</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Maintenance_Toast_Msg__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show a maintenance message via toast upon login (1 time)</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show a maintenance message via toast upon login (1 time)</inlineHelpText>
+        <label>Show Maintenance Toast Msg</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Phone_As_Helptext__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>IF checked show the phone number if for any entity (if displayed) as lightning-help-text. ie an info icon that will display phone when hovered over / touched. otherwise displays as text immediately</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>IF checked show the phone number if for any entity (if displayed) as lightning-help-text. ie an info icon that will display phone when hovered over / touched. otherwise displays as text immediately</inlineHelpText>
+        <label>Show Phone As Helptext</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_RPS_Location_Timestamp__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show start / end timestamps for RPS RT and VGT</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show start / end timestamps for RPS RT and VGT</inlineHelpText>
+        <label>Show RPS Location Timestamp</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_RT_Coin_Images__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Show the new and current rt coin image picture selector / coin icons.</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Show the new and current rt coin image picture selector / coin icons.</inlineHelpText>
+        <label>Show RT Coin Images</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Show_Send_Route_End_Email_Menu_Item__c</fullName>
+        <defaultValue>true</defaultValue>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Show Send Route End Email Menu Item</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Status_Complete_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Complete Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Completed_Fill_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Completed Fill Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Completed_Processing_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Completed Processing Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Fill_Incomplete_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Fill Incomplete Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_In_Progress_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status In Progress Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Not_Started_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Not Started Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Status_Processing_Incomplete_Style__c</fullName>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <label>Status Processing Incomplete Style</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Use_Processor_Grouping__c</fullName>
+        <defaultValue>false</defaultValue>
+        <description>Not really a definitive name placed on req for this but activates the following https://accel-entertainment.monday.com/boards/1300348967/pulses/2140464230</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>Not really a definitive name placed on req for this but activates the following https://accel-entertainment.monday.com/boards/1300348967/pulses/2140464230</inlineHelpText>
+        <label>Use Processor Grouping</label>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Version__c</fullName>
+        <defaultValue>&quot;v 0.0.0&quot;</defaultValue>
+        <description>The version of the app</description>
+        <externalId>false</externalId>
+        <fieldManageability>DeveloperControlled</fieldManageability>
+        <inlineHelpText>The version of the app</inlineHelpText>
+        <label>Version</label>
+        <length>255</length>
+        <required>false</required>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Cash Logistics Experience Cloud Setting</label>
+    <pluralLabel>Cash Logistics Experience Cloud Settings</pluralLabel>
+    <visibility>Public</visibility>
+</CustomObject>

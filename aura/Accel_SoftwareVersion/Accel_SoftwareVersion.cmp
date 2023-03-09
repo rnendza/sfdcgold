@@ -1,0 +1,18 @@
+<aura:component description="Accel_SoftwareVersion">
+    <aura:attribute name="message" type="string" default=""/>
+    <!--
+    - @TODO I'm not really sure what the design is for a footer in the 'new / mobile' theme.
+    - this is best wrapped as a component / put in the footer. also this needs to retrieve
+    - from a custom meta data type of something that can be changed declaratively! this will do for now.
+    -->
+    <div>
+    <div class="accel-sw-version-container">
+        <aura:if isTrue="{!v.message != ''}">
+            {#v.message}
+            <aura:set attribute="else">
+                {!$Label.c.Community_Software_Version}
+            </aura:set>
+        </aura:if>
+    </div>
+    </div>
+</aura:component>

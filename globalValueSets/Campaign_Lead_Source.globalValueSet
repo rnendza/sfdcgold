@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GlobalValueSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customValue>
+        <fullName>Competitor Direct Mailer</fullName>
+        <default>false</default>
+        <label>Competitor Direct Mailer</label>
+    </customValue>
+    <customValue>
+        <fullName>External Newsletter</fullName>
+        <default>false</default>
+        <label>External Newsletter</label>
+    </customValue>
+    <customValue>
+        <fullName>Main Sales Line</fullName>
+        <default>false</default>
+        <label>Main Sales Line</label>
+    </customValue>
+    <customValue>
+        <fullName>Organic</fullName>
+        <default>false</default>
+        <label>Organic Search</label>
+    </customValue>
+    <customValue>
+        <fullName>Paid Search</fullName>
+        <default>false</default>
+        <label>Paid Search</label>
+    </customValue>
+    <customValue>
+        <fullName>Social</fullName>
+        <default>false</default>
+        <label>Social</label>
+    </customValue>
+    <customValue>
+        <fullName>Email</fullName>
+        <default>false</default>
+        <label>Email</label>
+    </customValue>
+    <customValue>
+        <fullName>Website</fullName>
+        <default>false</default>
+        <label>Website</label>
+    </customValue>
+    <customValue>
+        <fullName>Other</fullName>
+        <default>false</default>
+        <label>Other</label>
+    </customValue>
+    <customValue>
+        <fullName>Outbound Call</fullName>
+        <default>false</default>
+        <label>Outbound Call</label>
+    </customValue>
+    <masterLabel>Campaign (Lead Source)</masterLabel>
+    <sorted>false</sorted>
+</GlobalValueSet>

@@ -1,0 +1,142 @@
+/*styles for desktop */
+@media only screen and (min-width:768px) {
+    .THIS .accel-size {
+        
+    }
+    .THIS .accel-account-selector {
+        margin: 20px;
+        padding: 5px;
+        border: 2px dotted green;
+        background-color: white;
+    }
+
+    .THIS .accel-revenue-file-selector {
+        z-index: 1;
+        overflow-y: auto;
+        /*border-left: 60px solid #505050;*/
+        background-color: whitesmoke;
+        height: 700px;
+    }
+
+    .THIS .revBody {
+    }
+
+    .THIS .miscBody {
+    }
+
+    .THIS .filewrapper {
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        padding: 0;
+    }
+
+    .THIS .forceContentFileCard {
+        display: inline-block;
+        margin: auto;
+        padding-top: 10px;
+        padding-bottom: 10px;
+        padding-left: 25px;
+        padding-right: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .THIS .revtitle {
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        height: 50px;
+        padding: 0;
+        margin: 0;
+        line-height: 50px;
+        background-color: white;
+        border-bottom: 2px solid silver;
+    }
+
+    .THIS .slds-input.slds-combobox__input {
+        cursor: default;
+    }
+
+    .THIS .accselect {
+        padding-bottom: 20px;
+    }
+
+    .THIS .slds-tabs_scoped__link {
+        font-weight: bold !important;
+    }
+
+    .THIS .slds-form-element__label {
+        font-weight: bold !important;
+    }
+}
+/*styles for mobile */
+@media only screen and (max-width: 767px) {
+    .THIS .accel-size{
+        width: 50% !important;
+    }
+
+    .THIS .accel-account-selector{
+        margin: 20px;
+        padding: 5px;
+        border: 2px dotted green;
+        background-color: white;
+    }
+
+    .THIS .accel-revenue-file-selector{
+        z-index: 1;
+        overflow-y: auto;
+        /*border-left: 60px solid #505050;*/
+        background-color: whitesmoke;
+        height: 700px;
+    }
+
+    .THIS .revBody{
+    }
+
+    .THIS .miscBody{
+    }
+    .THIS .filewrapper{
+        box-shadow: 0 2px 4px 0 rgba(7, 7, 7, 0.65);
+        padding:0;
+    }
+
+    .THIS .forceContentFileCard{
+        display: inline-block;
+        margin:auto;
+        padding-top: 10px;
+        padding-bottom:10px;
+        padding-left:25px;
+        padding-right: 25px;
+        margin-bottom: 15px;
+        margin-top: 15px;
+    }
+
+    .THIS .revtitle{
+        text-align: center;
+        font-weight: bold;
+        font-size: 18px;
+        color: black;
+        height: 50px;
+        padding: 0;
+        margin:0;
+        line-height: 50px;
+        background-color: white;
+        border-bottom: 2px solid silver;
+    }
+
+    .THIS .slds-input.slds-combobox__input {
+        cursor: default;
+    }
+
+    .THIS .accselect{
+        padding-bottom: 20px;
+    }
+
+    .THIS .slds-tabs_scoped__link{
+        font-weight: bold!important;
+    }
+
+    .THIS .slds-form-element__label{
+        font-weight: bold!important;
+    }
+}

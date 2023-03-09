@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <description>Custom Settings includes the data which Batches have been 
+Executed?</description>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>SA_Audit__Batch_Apex_Id__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field will contain the Apex Job Id for a Particular Running Apex Batch.</description>
+        <externalId>false</externalId>
+        <label>Batch Apex Id</label>
+        <length>20</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>SA_Audit__Is_Batch_Apex_Executed__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This Check box tell whether Batch is Executed or Not.</description>
+        <externalId>false</externalId>
+        <label>Is Batch Apex Executed</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <label>BatchApexStatus</label>
+    <listViews>
+        <fullName>SA_Audit__Records_with_Batch_Apex_Status</fullName>
+        <columns>NAME</columns>
+        <columns>SA_Audit__Is_Batch_Apex_Executed__c</columns>
+        <columns>SA_Audit__Batch_Apex_Id__c</columns>
+        <filterScope>Everything</filterScope>
+        <label>Records with Batch Apex Status</label>
+    </listViews>
+    <visibility>Public</visibility>
+</CustomObject>

@@ -1,0 +1,815 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Flow xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionCalls>
+        <name>Chatter_Marketing_Coordinator</name>
+        <label>Chatter Marketing Coordinator</label>
+        <locationX>182</locationX>
+        <locationY>5279</locationY>
+        <actionName>chatterPost</actionName>
+        <actionType>chatterPost</actionType>
+        <connector>
+            <targetReference>Uncheck_Active_box</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>text</name>
+            <value>
+                <stringValue>{!$Record.Name} team members have been notified via email of the Kickoff Date.</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>subjectNameOrId</name>
+            <value>
+                <elementReference>$Record.Assigned_Marketing_Coordinator__r.Id</elementReference>
+            </value>
+        </inputParameters>
+        <storeOutputAutomatically>true</storeOutputAutomatically>
+    </actionCalls>
+    <actionCalls>
+        <name>Direct_Shipment_Notification</name>
+        <label>Direct Shipment Notification</label>
+        <locationX>204</locationX>
+        <locationY>911</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Kickoff_Meeting_Date_field</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Direct_Shipment_Notification_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>kylek@accelentertainment.com,tradeshows@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notification_of_Pickup</name>
+        <label>Notification of Pickup</label>
+        <locationX>204</locationX>
+        <locationY>575</locationY>
+        <actionName>emailSimple</actionName>
+        <actionType>emailSimple</actionType>
+        <connector>
+            <targetReference>Evaluate_Direct_Shipment_Pickup_Date_Time</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>emailBody</name>
+            <value>
+                <elementReference>Schedule_Pickup_Notification_Body</elementReference>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailAddresses</name>
+            <value>
+                <stringValue>kylek@accelentertainment.com,tradeshows@accelentertainment.com</stringValue>
+            </value>
+        </inputParameters>
+        <inputParameters>
+            <name>emailSubject</name>
+            <value>
+                <elementReference>Subject</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Amusements_Lead</name>
+        <label>Notify Amusements Lead</label>
+        <locationX>50</locationX>
+        <locationY>4727</locationY>
+        <actionName>Campaign.Campaign_Notification_Amusements_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Amusements_Support</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Amusements_Support</name>
+        <label>Notify Amusements Support</label>
+        <locationX>50</locationX>
+        <locationY>5063</locationY>
+        <actionName>Campaign.Campaign_Notification_Amusements_Support</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Chatter_Marketing_Coordinator</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Machine_Lead</name>
+        <label>Notify Machine Lead</label>
+        <locationX>50</locationX>
+        <locationY>3719</locationY>
+        <actionName>Campaign.Campaign_Notification_Machine_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Technician_Lead</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Marketing_Lead</name>
+        <label>Notify Marketing Lead</label>
+        <locationX>50</locationX>
+        <locationY>3047</locationY>
+        <actionName>Campaign.Campaign_Notification_Marketing_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Marketing_Support</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Marketing_Support</name>
+        <label>Notify Marketing Support</label>
+        <locationX>50</locationX>
+        <locationY>3383</locationY>
+        <actionName>Campaign.Campaign_Notification_Marketing_Support</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Machine_Lead</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Sales_Lead</name>
+        <label>Notify Sales Lead</label>
+        <locationX>50</locationX>
+        <locationY>1367</locationY>
+        <actionName>Campaign.Campaign_Notification_Sales_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Sales_Support_1</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Sales_Support_1</name>
+        <label>Notify Sales Support #1</label>
+        <locationX>50</locationX>
+        <locationY>1703</locationY>
+        <actionName>Campaign.Campaign_Notification_Sales_Support1</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Sales_Support_2</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Sales_Support_2</name>
+        <label>Notify Sales Support #2</label>
+        <locationX>50</locationX>
+        <locationY>2039</locationY>
+        <actionName>Campaign.Campaign_Notification_Sales_Support2</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Sales_Support_3_not_null</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Sales_Support_3</name>
+        <label>Notify Sales Support #3</label>
+        <locationX>50</locationX>
+        <locationY>2375</locationY>
+        <actionName>Campaign.Campaign_Notification_Sales_Support3</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Sales_Support_4_not_null</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Sales_Support_4</name>
+        <label>Notify Sales Support #4</label>
+        <locationX>50</locationX>
+        <locationY>2711</locationY>
+        <actionName>Campaign.Campaign_Notification_Sales_Support4</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Marketing_Lead</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Technician_Lead</name>
+        <label>Notify Technician Lead</label>
+        <locationX>50</locationX>
+        <locationY>4055</locationY>
+        <actionName>Campaign.Campaign_Notification_Technician_Lead</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Technician_Support</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <actionCalls>
+        <name>Notify_Technician_Support</name>
+        <label>Notify Technician Support</label>
+        <locationX>50</locationX>
+        <locationY>4391</locationY>
+        <actionName>Campaign.Campaign_Notification_Technician_Support</actionName>
+        <actionType>emailAlert</actionType>
+        <connector>
+            <targetReference>Amusements_Lead</targetReference>
+        </connector>
+        <flowTransactionModel>CurrentTransaction</flowTransactionModel>
+        <inputParameters>
+            <name>SObjectRowId</name>
+            <value>
+                <elementReference>$Record.Id</elementReference>
+            </value>
+        </inputParameters>
+    </actionCalls>
+    <apiVersion>56.0</apiVersion>
+    <decisions>
+        <name>Amusements_Lead</name>
+        <label>Amusements Lead</label>
+        <locationX>182</locationX>
+        <locationY>4607</locationY>
+        <defaultConnector>
+            <targetReference>Amusements_Support</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amusements_Lead_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amusements_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Amusements_Lead</targetReference>
+            </connector>
+            <label>Amusements Lead not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Amusements_Support</name>
+        <label>Amusements Support</label>
+        <locationX>182</locationX>
+        <locationY>4943</locationY>
+        <defaultConnector>
+            <targetReference>Chatter_Marketing_Coordinator</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Amusements_Support_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Amusements_Support__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Amusements_Support</targetReference>
+            </connector>
+            <label>Amusements Support not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Direct_Shipment_Pickup_Date_Time</name>
+        <label>Evaluate Direct Shipment Pickup Date &amp; Time</label>
+        <locationX>336</locationX>
+        <locationY>791</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Kickoff_Meeting_Date_field</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Direct_Shipment_Pickup_Date_Time_is_populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Scheduled_Direct_Shipment_Pickup_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Direct_Shipment_Notification</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Direct Shipment Pickup Date &amp; Time is populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Kickoff_Meeting_Date_field</name>
+        <label>Evaluate &quot;Kickoff Meeting Date&quot; field</label>
+        <locationX>336</locationX>
+        <locationY>1127</locationY>
+        <defaultConnector>
+            <targetReference>Uncheck_Active_box</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Kickoff_Meeting_Date_is_populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Kickoff_Meeting_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Sales_Lead</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>&quot;Kickoff Meeting Date&quot; is populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Evaluate_Scheduled_Pickup_Date_Time</name>
+        <label>Evaluate Scheduled Pickup Date &amp; Time</label>
+        <locationX>336</locationX>
+        <locationY>455</locationY>
+        <defaultConnector>
+            <targetReference>Evaluate_Direct_Shipment_Pickup_Date_Time</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Scheduled_Pickup_Date_Time_is_populated</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Scheduled_Pickup_Date__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notification_of_Pickup</targetReference>
+            </connector>
+            <doesRequireRecordChangedToMeetCriteria>true</doesRequireRecordChangedToMeetCriteria>
+            <label>Scheduled Pickup Date &amp; Time is populated</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Machine_Lead</name>
+        <label>Machine Lead</label>
+        <locationX>182</locationX>
+        <locationY>3599</locationY>
+        <defaultConnector>
+            <targetReference>Technician_Lead</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Machine_Lead_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Machine_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Machine_Lead</targetReference>
+            </connector>
+            <label>Machine Lead not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Marketing_Lead</name>
+        <label>Marketing Lead</label>
+        <locationX>182</locationX>
+        <locationY>2927</locationY>
+        <defaultConnector>
+            <targetReference>Marketing_Support</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Marketing_Lead_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Marketing_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Marketing_Lead</targetReference>
+            </connector>
+            <label>Marketing Lead not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Marketing_Support</name>
+        <label>Marketing Support</label>
+        <locationX>182</locationX>
+        <locationY>3263</locationY>
+        <defaultConnector>
+            <targetReference>Machine_Lead</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Marketing_Support_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Marketing_Support__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Marketing_Support</targetReference>
+            </connector>
+            <label>Marketing Support not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Lead</name>
+        <label>Sales Lead</label>
+        <locationX>182</locationX>
+        <locationY>1247</locationY>
+        <defaultConnector>
+            <targetReference>Sales_Support_1</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Lead_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Sales_Lead</targetReference>
+            </connector>
+            <label>Sales Lead not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Support_1</name>
+        <label>Sales Support #1</label>
+        <locationX>182</locationX>
+        <locationY>1583</locationY>
+        <defaultConnector>
+            <targetReference>Sales_Support_2</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Support_1_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Support_1__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Sales_Support_1</targetReference>
+            </connector>
+            <label>Sales Support #1 not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Support_2</name>
+        <label>Sales Support #2</label>
+        <locationX>182</locationX>
+        <locationY>1919</locationY>
+        <defaultConnector>
+            <targetReference>Sales_Support_3_not_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Support_2_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Support_2__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Sales_Support_2</targetReference>
+            </connector>
+            <label>Sales Support #2 not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Support_3_not_null</name>
+        <label>Sales Support #3 not null</label>
+        <locationX>182</locationX>
+        <locationY>2255</locationY>
+        <defaultConnector>
+            <targetReference>Sales_Support_4_not_null</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Support_3not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Support_3__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Sales_Support_3</targetReference>
+            </connector>
+            <label>Sales Support #3 not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Sales_Support_4_not_null</name>
+        <label>Sales Support #4 not null</label>
+        <locationX>182</locationX>
+        <locationY>2591</locationY>
+        <defaultConnector>
+            <targetReference>Marketing_Lead</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Sales_Support_4not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Sales_Support_4__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Sales_Support_4</targetReference>
+            </connector>
+            <label>Sales Support #4 not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Technician_Lead</name>
+        <label>Technician Lead</label>
+        <locationX>182</locationX>
+        <locationY>3935</locationY>
+        <defaultConnector>
+            <targetReference>Technician_Support</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Technician_Lead_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Technician_Lead__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Technician_Lead</targetReference>
+            </connector>
+            <label>Technician Lead not null</label>
+        </rules>
+    </decisions>
+    <decisions>
+        <name>Technician_Support</name>
+        <label>Technician Support</label>
+        <locationX>182</locationX>
+        <locationY>4271</locationY>
+        <defaultConnector>
+            <targetReference>Amusements_Lead</targetReference>
+        </defaultConnector>
+        <defaultConnectorLabel>Default Outcome</defaultConnectorLabel>
+        <rules>
+            <name>Technician_Support_not_null</name>
+            <conditionLogic>and</conditionLogic>
+            <conditions>
+                <leftValueReference>$Record.Technician_Support__c</leftValueReference>
+                <operator>IsNull</operator>
+                <rightValue>
+                    <booleanValue>false</booleanValue>
+                </rightValue>
+            </conditions>
+            <connector>
+                <targetReference>Notify_Technician_Support</targetReference>
+            </connector>
+            <label>Technician Support not null</label>
+        </rules>
+    </decisions>
+    <environments>Default</environments>
+    <interviewLabel>Campaign Automations {!$Flow.CurrentDateTime}</interviewLabel>
+    <label>Campaign Automations</label>
+    <processMetadataValues>
+        <name>BuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>CanvasMode</name>
+        <value>
+            <stringValue>AUTO_LAYOUT_CANVAS</stringValue>
+        </value>
+    </processMetadataValues>
+    <processMetadataValues>
+        <name>OriginBuilderType</name>
+        <value>
+            <stringValue>LightningFlowBuilder</stringValue>
+        </value>
+    </processMetadataValues>
+    <processType>AutoLaunchedFlow</processType>
+    <recordUpdates>
+        <description>when Status = Completed</description>
+        <name>Uncheck_Active_box</name>
+        <label>Uncheck &quot;Active&quot; box</label>
+        <locationX>336</locationX>
+        <locationY>5495</locationY>
+        <filterLogic>and</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>Completed</stringValue>
+            </value>
+        </filters>
+        <filters>
+            <field>IsActive</field>
+            <operator>EqualTo</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>IsActive</field>
+            <value>
+                <booleanValue>false</booleanValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <recordUpdates>
+        <description>For Trade Shows with a blank Status value, update Status to Acknowledge.</description>
+        <name>Update_Status_Acknowledge</name>
+        <label>Update Status = Acknowledge</label>
+        <locationX>336</locationX>
+        <locationY>335</locationY>
+        <connector>
+            <targetReference>Evaluate_Scheduled_Pickup_Date_Time</targetReference>
+        </connector>
+        <filterLogic>1 AND 2</filterLogic>
+        <filters>
+            <field>Status</field>
+            <operator>IsNull</operator>
+            <value>
+                <booleanValue>true</booleanValue>
+            </value>
+        </filters>
+        <filters>
+            <field>RecordTypeId</field>
+            <operator>EqualTo</operator>
+            <value>
+                <stringValue>0128W000001QBcvQAG</stringValue>
+            </value>
+        </filters>
+        <inputAssignments>
+            <field>Status</field>
+            <value>
+                <stringValue>Acknowledge</stringValue>
+            </value>
+        </inputAssignments>
+        <inputReference>$Record</inputReference>
+    </recordUpdates>
+    <start>
+        <locationX>210</locationX>
+        <locationY>0</locationY>
+        <connector>
+            <targetReference>Update_Status_Acknowledge</targetReference>
+        </connector>
+        <object>Campaign</object>
+        <recordTriggerType>CreateAndUpdate</recordTriggerType>
+        <triggerType>RecordAfterSave</triggerType>
+    </start>
+    <status>Active</status>
+    <textTemplates>
+        <name>Direct_Shipment_Notification_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is an automated message to notify you that a Tradeshow Booth Pallet has been scheduled and is ready for pick-up in the warehouse. See below for details.
+
+Shipping Vendor Name:  {!$Record.Show_Direct_Shipping_Name__c}
+
+Delivery Address:  {!$Record.Show_Delivery_Street__c}, {!$Record.Show_Delivery_City__c}, {!$Record.Show_Delivery_State__c}, {!$Record.Show_Delivery_Zip_Code__c}
+
+Direct Warehouse pickup Date and Time:  {!$Record.Scheduled_Direct_Shipment_Pickup_Date__c}
+
+Name of Campaign:  {!$Record.Name}
+
+Please, reach out to the Trade Show team if you have any conflicts with the pickup schedule.
+We appreciate your help with this shipment.</text>
+    </textTemplates>
+    <textTemplates>
+        <description>for “Schedule Pickup Date and Time”</description>
+        <name>Schedule_Pickup_Notification_Body</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>This is an automated message to notify you that a Tradeshow Booth Pallet has been scheduled and is ready for pick-up in the warehouse. See below for details.
+
+Shipping Vendor Name:  {!$Record.Shipping_Vendor_Name__c}
+
+Delivery Address:  {!$Record.Delivery_Street__c}, {!$Record.Delivery_City__c}, {!$Record.Delivery_State__c}, {!$Record.Delivery_Zip_Code__c}
+
+Advanced Warehouse pickup Date and Time:  {!$Record.Scheduled_Pickup_Date__c}
+
+Name of Campaign:  {!$Record.Name}
+
+Please, reach out to the Trade Show team if you have any conflicts with the pickup schedule.
+We appreciate your help with this shipment.</text>
+    </textTemplates>
+    <textTemplates>
+        <name>Subject</name>
+        <isViewedAsPlainText>true</isViewedAsPlainText>
+        <text>Tradeshow Booth Pickup Notification: {!$Record.Name}</text>
+    </textTemplates>
+</Flow>

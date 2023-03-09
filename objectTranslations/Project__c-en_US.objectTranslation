@@ -1,0 +1,1933 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <plural>false</plural>
+        <value>Project</value>
+    </caseValues>
+    <caseValues>
+        <plural>true</plural>
+        <value>Projects</value>
+    </caseValues>
+    <fields>
+        <label><!-- ACH Checked Timestamp --></label>
+        <name>ACH_Checked_Timestamp__c</name>
+    </fields>
+    <fields>
+        <label><!-- ACH Deposit --></label>
+        <name>ACH_Deposit__c</name>
+    </fields>
+    <fields>
+        <label><!-- ALERT: STATUS CHANGED --></label>
+        <name>ALERT_STATUS_CHANGED__c</name>
+    </fields>
+    <fields>
+        <label><!-- ASR Approval Entry --></label>
+        <name>ASR_Approval_Entry__c</name>
+    </fields>
+    <fields>
+        <label><!-- ATM Function --></label>
+        <name>ATM_Function__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Accel Employee Ownership --></label>
+        <name>Accel_Employee_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Establishment Type --></label>
+        <name>Accel_Establishment_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Go-Live Date --></label>
+        <name>Accel_Go_Live_Date2__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Go Live Date --></label>
+        <name>Accel_Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tom&apos;s Intralot Submission --></help>
+        <label><!-- Accel SGI Submission --></label>
+        <name>Accel_SGI_Submission__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accel Submitted to SGI Date --></label>
+        <name>Accel_Submitted_to_SGI_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Accepted As --></label>
+        <name>Accepted_As__c</name>
+    </fields>
+    <fields>
+        <label><!-- AccountID --></label>
+        <name>AccountID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Service Territory --></label>
+        <name>Account_Service_Territory__c</name>
+    </fields>
+    <fields>
+        <label><!-- Account Name --></label>
+        <name>Account__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Add: Go Live Completed Date --></label>
+        <name>Add_Go_Live_Completed_Date_field__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add: Scheduled Go Live Date --></label>
+        <name>Add_Scheduled_Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add: Scheduled Install Date --></label>
+        <name>Add_Scheduled_Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add/Swap/Reconfigure Status --></label>
+        <name>Add_Swap_Reconfigure_Status__c</name>
+        <picklistValues>
+            <masterLabel>Approval Rejected - Regional Manager</masterLabel>
+            <translation><!-- Approval Rejected - Regional Manager --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation><!-- Completed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Assessment In Process</masterLabel>
+            <translation><!-- Field Assessment In Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Asset Allocation</masterLabel>
+            <translation><!-- Pending Asset Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Executive Approval</masterLabel>
+            <translation><!-- Pending Executive Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Field Assessment</masterLabel>
+            <translation><!-- Pending Field Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Go-Live</masterLabel>
+            <translation><!-- Pending Go-Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Machine Assignment</masterLabel>
+            <translation><!-- Pending Machine Assignment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Regional Manager Approval</masterLabel>
+            <translation><!-- Pending Regional Manager Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending SGI Approval</masterLabel>
+            <translation><!-- Pending SGI Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending SGI Schedule Date</masterLabel>
+            <translation><!-- Pending SGI Schedule Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Scheduled On-Site Date</masterLabel>
+            <translation><!-- Pending Scheduled On-Site Date --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission to SGI</masterLabel>
+            <translation><!-- Pending Submission to SGI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Cancelled</masterLabel>
+            <translation><!-- Project Cancelled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Additional Electrical Work Needed --></label>
+        <name>Additional_Electrical_Work_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Additional VGTs Calc --></label>
+        <name>Additional_VGTs_Calc__c</name>
+    </fields>
+    <fields>
+        <label><!-- Age of Request --></label>
+        <name>Age_of_Request__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agreement Expiration Date --></label>
+        <name>Agreement_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Alert: Project Status Changed --></label>
+        <name>Alert_Project_Status_Changed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator --></label>
+        <name>Amusement_Operator__c</name>
+        <relationshipLabel><!-- Projects as Amusement Operator --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amusement Operator (account) --></label>
+        <name>Amusement_Operator_account__c</name>
+        <relationshipLabel><!-- Amusement Operators --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Amusement Region --></label>
+        <name>Amusement_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- App Submitted Entry Date --></label>
+        <name>App_Submitted_Entry_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Fee Paid --></label>
+        <name>Application_Fee_Paid__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Notes --></label>
+        <name>Application_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Password --></label>
+        <name>Application_Password__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Processed By --></label>
+        <name>Application_Processed_By2__c</name>
+        <relationshipLabel><!-- Projects (Application Processed By) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Processed by (Text) --></label>
+        <name>Application_Processed_by__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted Date --></label>
+        <name>Application_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted --></label>
+        <name>Application_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Submitted by --></label>
+        <name>Application_Submitted_by__c</name>
+        <relationshipLabel><!-- Projects (Application Submitted by) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Application Web ID --></label>
+        <name>Application_Web_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application Withdrawn Date --></label>
+        <name>Application_Withdrawn_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Application --></label>
+        <name>Application__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Approval Rejected --></label>
+        <name>Approval_Rejected__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assets Allocated --></label>
+        <name>Assets_Allocated__c</name>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager --></label>
+        <name>Assigned_RM__c</name>
+    </fields>
+    <fields>
+        <label><!-- Attendant Key --></label>
+        <name>Attendant_Key__c</name>
+    </fields>
+    <fields>
+        <label><!-- Available Acreage --></label>
+        <name>Available_Acreage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Average Monthly Gallons --></label>
+        <name>Average_Monthly_Gallons__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please list the changes you would like to the existing proposed equipment. --></help>
+        <label><!-- Changes Requested --></label>
+        <name>Changes_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Close Date --></label>
+        <name>Close_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Region --></label>
+        <name>Collection_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Committed Additional Terminals --></label>
+        <name>Committed_Additional_Terminals__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Contract Expiration Date --></label>
+        <name>Competitor_Contract_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor SGI Removal Confirmed --></label>
+        <name>Competitor_SGI_Removal_Confirmed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor TO --></label>
+        <name>Competitor_TO__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Termination Received --></label>
+        <name>Competitor_Termination_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Competitor Transition Story --></label>
+        <name>Competitor_Transition_Story__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Approval --></label>
+        <name>Compliance_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Go Live Approved --></label>
+        <name>Compliance_Go_Live__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Compliance Notes --></label>
+        <name>Compliance_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concierge Service Required --></label>
+        <name>Concierge_Service_Required__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concierge Service --></label>
+        <name>Concierge_Service__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed TO Pull --></label>
+        <name>Confirmed_TO_Pull__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract Expiration Date --></label>
+        <name>Contract_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contract --></label>
+        <name>Contract__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Contractor Name --></label>
+        <name>Contractor_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Contractor Phone --></label>
+        <name>Contractor_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Corporate Detail Report is Active --></label>
+        <name>Corporate_Detail_Report_is_Active__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count of Field Assessments --></label>
+        <name>Count_of_Field_Assessements__c</name>
+    </fields>
+    <fields>
+        <label><!-- County --></label>
+        <name>County__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Acreage --></label>
+        <name>Current_Acreage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Competitor --></label>
+        <name>Current_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current VGT Count --></label>
+        <name>Current_VGT_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Custom Spacers --></label>
+        <name>Custom_Spacers__c</name>
+        <picklistValues>
+            <masterLabel>Custom Gaming Spacer</masterLabel>
+            <translation><!-- Custom Gaming Spacer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLP Steel</masterLabel>
+            <translation><!-- MLP Steel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- DOJ Expiration Date --></label>
+        <name>DOJ_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOJ File Number --></label>
+        <name>DOJ_File_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- DOJ Request Sent Date --></label>
+        <name>DOJ_Request_Sent_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date 2nd Letter Sent to Competitor --></label>
+        <name>Date_2nd_Letter_Sent_to_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Asset Allocation --></label>
+        <name>Date_of_Asset_Allocation__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last A/S/R Status Change --></label>
+        <name>Date_of_Last_A_W_R_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Project Status Change --></label>
+        <name>Date_of_Last_Project_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date of Last Status Change --></label>
+        <name>Date_of_Last_Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Since Last Activity --></label>
+        <name>Days_Since_Last_Activity__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Current A/S/R Status --></label>
+        <name>Days_in_Current_A_S_R_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Current Project Status --></label>
+        <name>Days_in_Current_Project_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days in Current Status --></label>
+        <name>Days_in_Current_Status__c</name>
+    </fields>
+    <fields>
+        <help><!-- Countdown from Today to expected Go Live Date --></help>
+        <label><!-- Days to Go Live --></label>
+        <name>Days_to_Go_Live__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days until TUA Expiration --></label>
+        <name>Days_until_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- Department --></label>
+        <name>Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Deposit Frequency --></label>
+        <name>Deposit_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Description --></label>
+        <name>Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Driver&apos;s License --></label>
+        <name>Driver_s_License__c</name>
+    </fields>
+    <fields>
+        <help><!-- Driver&apos;s License signature matches TUA signature --></help>
+        <label><!-- Driver&apos;s License signature matches TUA --></label>
+        <name>Driver_s_License_signature_matches_TUA__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical/Layout Inspection Complete --></label>
+        <name>Electrical_Layout_Inspection_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Scheduled Date --></label>
+        <name>Electrical_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Electrical Work Status --></label>
+        <name>Electrical_Work_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Eligibility Notes --></label>
+        <name>Eligibility_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment Assigned --></label>
+        <name>Equipment_Assigned__c</name>
+    </fields>
+    <fields>
+        <label><!-- Est. Liquor License Availability --></label>
+        <name>Est_Liquor_License_Availability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Buildout Completion Date --></label>
+        <name>Estimated_Builout_Completion_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated End Date --></label>
+        <name>Estimated_End_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated Start Date --></label>
+        <name>Estimated_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Estimated State Liquor License Issued --></label>
+        <name>Estimated_State_Liquor_License_Issued__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Sales Operations Process Approval --></help>
+        <label><!-- Evaluation Approval --></label>
+        <name>Evaluation_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- FEIN Number --></label>
+        <name>FEIN_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Completed --></label>
+        <name>FieldAssessmentCompleted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Assigned Date --></label>
+        <name>Field_Assessment_Assigned_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Requested --></label>
+        <name>Field_Assessment_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Scheduled Date --></label>
+        <name>Field_Assessment_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Scheduled --></label>
+        <name>Field_Assessment_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment Status --></label>
+        <name>Field_Assessment_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Field Assessment --></label>
+        <name>Field_Assessment__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Final Approved Materials Movement --></label>
+        <name>Final_Approved_Materials_Movement__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fingerprinting Complete Date --></label>
+        <name>Fingerprinting_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Fingerprinting Complete --></label>
+        <name>Fingerprinting_Complete__c</name>
+    </fields>
+    <fields>
+        <label><!-- Force Update --></label>
+        <name>Force_Update__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming Area Assets --></label>
+        <name>Gaming_Area_Assets__c</name>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts Fulfillment</masterLabel>
+            <translation><!-- Parts Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Location Delivery</masterLabel>
+            <translation><!-- Pending Location Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Approval</masterLabel>
+            <translation><!-- Regional Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Copy Received Date --></label>
+        <name>Gaming_License_Copy_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Denied Date --></label>
+        <name>Gaming_License_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Denied Renewal Date --></label>
+        <name>Gaming_License_Denied_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Exp Date --></label>
+        <name>Gaming_License_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Expiration Month --></label>
+        <name>Gaming_License_Expiration_Month__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Original Issue Date --></label>
+        <name>Gaming_License_Original_Issue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Renewal Date --></label>
+        <name>Gaming_License_Renewal_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Gaming License Revoked Date --></label>
+        <name>Gaming_License_Revoked_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Go-Live Binder Created --></label>
+        <name>Go_Live_Binder_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Go Live Probability --></label>
+        <name>Go_Live_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Go-Live Date --></label>
+        <name>Go_Live_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- HPD TTM --></label>
+        <name>HPD_TTM__c</name>
+    </fields>
+    <fields>
+        <label><!-- High End Product Rollup --></label>
+        <name>High_End_Product_Rollup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Historical IGB License Number --></label>
+        <name>Historical_IGB_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Hours --></label>
+        <name>Hours__c</name>
+        <relationshipLabel><!-- Projects (Hours) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- IGB Approved Date --></label>
+        <name>IGB_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Inspection Date --></label>
+        <name>IGB_Inspection__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License Denied Date --></label>
+        <name>IGB_License_Denied_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB License # --></label>
+        <name>IGB_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Establishment Type --></label>
+        <name>IGB_Location_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Meeting Status --></label>
+        <name>IGB_Meeting_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Scheduled</masterLabel>
+            <translation><!-- IGB Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission</masterLabel>
+            <translation><!-- Pending Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to IGB</masterLabel>
+            <translation><!-- Submitted to IGB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IGB Office --></label>
+        <name>IGB_Office__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB Status --></label>
+        <name>IGB_Status__c</name>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Scheduled</masterLabel>
+            <translation><!-- IGB Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission</masterLabel>
+            <translation><!-- Pending Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to IGB</masterLabel>
+            <translation><!-- Submitted to IGB --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- IL Business Registration Code Expiration --></label>
+        <name>IL_Business_Registration_Code_Expiration__c</name>
+    </fields>
+    <fields>
+        <label><!-- IL Business Registration Code --></label>
+        <name>IL_Business_Registration_Code__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Communication With Competitor --></label>
+        <name>Initial_Communication_With_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Initial Product Request --></label>
+        <name>Initial_Request_For_Machines__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Install Approved --></label>
+        <name>Install_Approved__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Instructions for Approval --></label>
+        <name>Instructions_for_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Introduction Meeting --></label>
+        <name>Introduction_Meeting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Justification for Add --></label>
+        <name>Justification_for_Add__c</name>
+    </fields>
+    <fields>
+        <label><!-- Justification for Pull --></label>
+        <name>Justification_for_Pull__c</name>
+        <picklistValues>
+            <masterLabel>Accel Rejected for Performance</masterLabel>
+            <translation><!-- Accel Rejected for Performance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming License Revoked</masterLabel>
+            <translation><!-- Gaming License Revoked --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Terminated Agreement</masterLabel>
+            <translation><!-- Location Terminated Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of business</masterLabel>
+            <translation><!-- Out of business --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Justification for Swap --></label>
+        <name>Justification_for_Swap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Date --></label>
+        <name>Last_Event_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Description --></label>
+        <name>Last_Event_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Subject --></label>
+        <name>Last_Event_Subject__c</name>
+    </fields>
+    <fields>
+        <label><!-- Last Event Type --></label>
+        <name>Last_Event_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest date to send second term notice --></label>
+        <name>Latest_date_to_send_second_term_notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Latest date to send term notice --></label>
+        <name>Latest_date_to_send_term_notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout Submitted Date --></label>
+        <name>Layout_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Lead Source --></label>
+        <name>Lead_Source__c</name>
+        <picklistValues>
+            <masterLabel>BDM</masterLabel>
+            <translation><!-- BDM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Employee</masterLabel>
+            <translation><!-- Employee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Partner Operator</masterLabel>
+            <translation><!-- Partner Operator --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>RM</masterLabel>
+            <translation><!-- RM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Sales Agent</masterLabel>
+            <translation><!-- Sales Agent --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Legal Name --></label>
+        <name>Legal_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Letter Submitted to City Clerk --></label>
+        <name>Letter_Submitted_to_City_Clerk__c</name>
+    </fields>
+    <fields>
+        <label><!-- Date Letter Sent to Competitor --></label>
+        <name>Lettere_Sent_to_Competitor__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Notes --></label>
+        <name>Liquor_License_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Liquor License Number --></label>
+        <name>Liquor_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Status --></label>
+        <name>Liquor_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Gaming License Expiration Date --></label>
+        <name>Local_Gaming_License_Expiration_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Gaming License Number --></label>
+        <name>Local_Gaming_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Gaming License --></label>
+        <name>Local_Gaming_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Achieved --></label>
+        <name>Local_Liquor_License_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Application Started --></label>
+        <name>Local_Liquor_License_Application_Started__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Application Submitt --></label>
+        <name>Local_Liquor_License_Application_Submitt__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Copy Received Date --></label>
+        <name>Local_Liquor_License_Copy_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Copy Received --></label>
+        <name>Local_Liquor_License_Copy_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Exp Date --></label>
+        <name>Local_Liquor_License_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Hearing --></label>
+        <name>Local_Liquor_License_Hearing__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Issuing Authority --></label>
+        <name>Local_Liquor_License_Issuing_Authority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Progress --></label>
+        <name>Local_Liquor_License_Progress__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Projects --></label>
+        <name>Local_Liquor_License_Projects__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License Status --></label>
+        <name>Local_Liquor_License_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Local Liquor License # --></label>
+        <name>Local_Liquor_License__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Address --></label>
+        <name>Location_Address__c</name>
+    </fields>
+    <fields>
+        <help><!-- Date is entered by each Service Region once location receives the gaming assets. --></help>
+        <label><!-- Location Delivery Date --></label>
+        <name>Location_Delivery_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Position --></label>
+        <name>Location_Position__c</name>
+        <picklistValues>
+            <masterLabel>Accel</masterLabel>
+            <translation><!-- Accel --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Neutral</masterLabel>
+            <translation><!-- Neutral --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Opposing TO</masterLabel>
+            <translation><!-- Opposing TO --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Majority Shareholder --></label>
+        <name>Majority_Shareholder__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Marketing Ordered --></label>
+        <name>Marketing_Ordered__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing --></label>
+        <name>Marketing__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Mirror Previous Layout(Owner/TO Change) --></label>
+        <name>Mirror_TO_Layout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Add : Movement Completed Date --></label>
+        <name>Movement_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality Allows 6th VGT --></label>
+        <name>Municipality_Allows_6th_VGT__c</name>
+    </fields>
+    <fields>
+        <label><!-- Municipality --></label>
+        <name>Municipality_formula__c</name>
+    </fields>
+    <fields>
+        <help><!-- Rollup count of child project lines with the criteria that historical created was tagged on the child --></help>
+        <label><!-- # of Project Lines Historically Created --></label>
+        <name>Nbrof_Project_Lines_Historically_Created__c</name>
+    </fields>
+    <fields>
+        <label><!-- Not Gaming Area Assets --></label>
+        <name>Not_Gaming_Area_Assets__c</name>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closure</masterLabel>
+            <translation><!-- Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Assessment</masterLabel>
+            <translation><!-- Field Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Approval</masterLabel>
+            <translation><!-- IGB Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install Scheduled</masterLabel>
+            <translation><!-- Install Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI Project Scheduled</masterLabel>
+            <translation><!-- SGI Project Scheduled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Number of Chairs Requested --></label>
+        <name>Number_of_Chairs_Requested__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Parking Spaces --></label>
+        <name>Number_of_Parking_Spaces__c</name>
+    </fields>
+    <fields>
+        <label><!-- Number of Stanchions --></label>
+        <name>Number_of_Stanchions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Opportunity Related --></label>
+        <name>OpportunityRelatedList__c</name>
+        <relationshipLabel><!-- Projects (Opportunity) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Opportunity --></label>
+        <name>Opportunity__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Original Competitor Termination --></label>
+        <name>Original_Competitor_Termination__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original Go Live Date --></label>
+        <name>Original_Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Original TUA Received --></label>
+        <name>Original_TUA_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Ownership Structure --></label>
+        <name>Ownership_Structure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator --></label>
+        <name>Partner_Operator__c</name>
+        <relationshipLabel><!-- Projects as Partner Operator --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Partner Operator (account_ --></label>
+        <name>Partner_Operator_account__c</name>
+        <relationshipLabel><!-- Projects (Partner Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <help><!-- Date is entered by the Burr Ridge Parts Department once order is fulfilled or ships to the appropriate Satellite warehouse. --></help>
+        <label><!-- Parts Fulfillment Date --></label>
+        <name>Parts_Fulfillment_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Used for Sales Operations Process Approval --></help>
+        <label><!-- Pending Licensing Approval --></label>
+        <name>Pending_Licensing_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Petition Submitted --></label>
+        <name>Petition_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Address --></label>
+        <name>Physical_Address__c</name>
+    </fields>
+    <fields>
+        <label><!-- Potential Acreage --></label>
+        <name>Potential_Acreage__c</name>
+    </fields>
+    <fields>
+        <label><!-- Preliminary Approval --></label>
+        <name>Preliminary_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Probability --></label>
+        <name>Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Age (Days) --></label>
+        <name>Project_Age_Days__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project CaseSafe Id --></label>
+        <name>Project_CaseSafe_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Completed Date --></label>
+        <name>Project_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Count --></label>
+        <name>Project_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Kickoff --></label>
+        <name>Project_Kickoff__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Notes --></label>
+        <name>Project_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Number --></label>
+        <name>Project_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Rank --></label>
+        <name>Project_Rank__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Record Link --></label>
+        <name>Project_Record_Link__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Stage --></label>
+        <name>Project_Stage__c</name>
+        <picklistValues>
+            <masterLabel>Analysis</masterLabel>
+            <translation><!-- Analysis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Assessment</masterLabel>
+            <translation><!-- Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cancelled</masterLabel>
+            <translation><!-- Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Equipment Allocation</masterLabel>
+            <translation><!-- Equipment Allocation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Approval</masterLabel>
+            <translation><!-- Executive Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Assessment</masterLabel>
+            <translation><!-- Field Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go-Live</masterLabel>
+            <translation><!-- Go-Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install</masterLabel>
+            <translation><!-- Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Letter Agreement</masterLabel>
+            <translation><!-- Letter Agreement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Payment Pending</masterLabel>
+            <translation><!-- Payment Pending --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pull Scheduled</masterLabel>
+            <translation><!-- Pull Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Request</masterLabel>
+            <translation><!-- Request --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse Prep</masterLabel>
+            <translation><!-- Warehouse Prep --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Status --></label>
+        <name>Project_Status__c</name>
+        <picklistValues>
+            <masterLabel>Application Process</masterLabel>
+            <translation><!-- Application Process --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Approvals</masterLabel>
+            <translation><!-- Approvals --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Canceled</masterLabel>
+            <translation><!-- Canceled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closure</masterLabel>
+            <translation><!-- Closure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Delivered</masterLabel>
+            <translation><!-- Delivered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Evaluation</masterLabel>
+            <translation><!-- Evaluation --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Execution</masterLabel>
+            <translation><!-- Execution --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Field Assessment</masterLabel>
+            <translation><!-- Field Assessment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB Approval</masterLabel>
+            <translation><!-- IGB Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>In progress</masterLabel>
+            <translation><!-- In progress --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Install Scheduled</masterLabel>
+            <translation><!-- Install Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Licensed</masterLabel>
+            <translation><!-- Licensed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Live</masterLabel>
+            <translation><!-- Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>New</masterLabel>
+            <translation><!-- New --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On Hold</masterLabel>
+            <translation><!-- On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts Fulfillment</masterLabel>
+            <translation><!-- Parts Fulfillment --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Licensing</masterLabel>
+            <translation><!-- Pending Licensing --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Location Delivery</masterLabel>
+            <translation><!-- Pending Location Delivery --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Planning</masterLabel>
+            <translation><!-- Planning --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Regional Approval</masterLabel>
+            <translation><!-- Regional Approval --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Rejected</masterLabel>
+            <translation><!-- Rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI Project Scheduled</masterLabel>
+            <translation><!-- SGI Project Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Stalled</masterLabel>
+            <translation><!-- Stalled --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Project Submitted Date --></label>
+        <name>Project_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Time to Live --></label>
+        <name>Project_Time_to_Live__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>-None-</masterLabel>
+            <translation><!-- -None- --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Addition</masterLabel>
+            <translation><!-- Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Amusements</masterLabel>
+            <translation><!-- Amusements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Competitor</masterLabel>
+            <translation><!-- Competitor --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Emergency Movement</masterLabel>
+            <translation><!-- Emergency Movement --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Full Site Removal</masterLabel>
+            <translation><!-- Full Site Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Area Assets</masterLabel>
+            <translation><!-- Gaming Area Assets --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Gaming Machines</masterLabel>
+            <translation><!-- Gaming Machines --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Merger &amp; Acquisition</masterLabel>
+            <translation><!-- Merger &amp; Acquisition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Organic</masterLabel>
+            <translation><!-- Organic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure</masterLabel>
+            <translation><!-- Reconfigure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure &amp; Addition</masterLabel>
+            <translation><!-- Reconfigure &amp; Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure &amp; Removal</masterLabel>
+            <translation><!-- Reconfigure &amp; Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure &amp; Swap</masterLabel>
+            <translation><!-- Reconfigure &amp; Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinstall</masterLabel>
+            <translation><!-- Reinstall --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reinstall in New Area</masterLabel>
+            <translation><!-- Reinstall in New Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Service Swap</masterLabel>
+            <translation><!-- Service Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standalone ATM</masterLabel>
+            <translation><!-- Standalone ATM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap &amp; Addition</masterLabel>
+            <translation><!-- Swap &amp; Addition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap &amp; Removal</masterLabel>
+            <translation><!-- Swap &amp; Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Wall System</masterLabel>
+            <translation><!-- Wall System --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Proposed Add --></label>
+        <name>Proposed_Add__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Reconfig --></label>
+        <name>Proposed_Reconfig__c</name>
+    </fields>
+    <fields>
+        <label><!-- Proposed Swap --></label>
+        <name>Proposed_Swap__c</name>
+    </fields>
+    <fields>
+        <help><!-- For Organic accounts, this date is initially equal to the date the IGB application is submitted.
+For Competitor accounts, this date is initially equal to the date the project was created. --></help>
+        <label><!-- Qualified Revenue Date --></label>
+        <name>Qualified_Revenue_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTT Approved Date --></label>
+        <name>RTT_Approved_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTT Scheduled/Approved --></label>
+        <name>RTT_Scheduled_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- RTT Submitted Date --></label>
+        <name>RTT_Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- to be selected if the swap related project includes an RT Swap --></help>
+        <label><!-- RT Add/Swap --></label>
+        <name>RT_Swap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reason for Reconfigure --></label>
+        <name>Reason_for_Reconfigure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reconfigure: Go Live Completed --></label>
+        <name>Reconfigure_Go_Live_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Reconfigure: Movement Completed Date --></label>
+        <name>Reconfigure_Movement_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Regional Manager --></label>
+        <name>Regional_Manager__c</name>
+        <relationshipLabel><!-- Projects (Regional Manager) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Reimbursements --></label>
+        <name>Reimbursements__c</name>
+        <picklistValues>
+            <masterLabel>Buildout</masterLabel>
+            <translation><!-- Buildout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Electrical</masterLabel>
+            <translation><!-- Electrical --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Relationship Manager Region --></label>
+        <name>Relationship_Manager_Region__c</name>
+    </fields>
+    <fields>
+        <help><!-- to be selected if the project includes removing more equipment than we are installing --></help>
+        <label><!-- Removal Approval --></label>
+        <name>Removal_Approval__c</name>
+    </fields>
+    <fields>
+        <label><!-- Request Date --></label>
+        <name>Request_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Change Request --></label>
+        <name>Request_Machine_Change__c</name>
+    </fields>
+    <fields>
+        <help><!-- Please enter a number between 0 and 5. --></help>
+        <label><!-- Requested # of Addt&apos;l VGTs --></label>
+        <name>Request_of_VGTs__c</name>
+    </fields>
+    <fields>
+        <label><!-- Response From Opposing TO --></label>
+        <name>Response_From_Opposing_TO__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGI Paperwork Submitted --></label>
+        <name>SGI_Paperwork_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGI Scheduled Date --></label>
+        <name>SGI_Scheduled_Date__c</name>
+    </fields>
+    <fields>
+        <help><!-- Tom&apos;s Intralot Status --></help>
+        <label><!-- SGI Status --></label>
+        <name>SGI_Status__c</name>
+        <picklistValues>
+            <masterLabel>Assets on Site</masterLabel>
+            <translation><!-- Assets on Site --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Closed</masterLabel>
+            <translation><!-- Closed --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending Submission</masterLabel>
+            <translation><!-- Pending Submission --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI Scheduled</masterLabel>
+            <translation><!-- SGI Scheduled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Submitted to SGI</masterLabel>
+            <translation><!-- Submitted to SGI --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- SGI Transition Email sent --></label>
+        <name>SGI_Transition_Email_sent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Membership Rcvs Gaming Rev? --></label>
+        <name>Sales_Agent_Membership_Rcvs_Gaming_Rev__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Agent Ownership? --></label>
+        <name>Sales_Agent_Ownership__c</name>
+    </fields>
+    <fields>
+        <label><!-- Sales Region --></label>
+        <name>Sales_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Install Date --></label>
+        <name>Scheduled_Install_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Pull Date --></label>
+        <name>Scheduled_Pull_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Reconfig Bill Test Date --></label>
+        <name>Scheduled_Reconfig_Bill_Test_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Reconfig Date --></label>
+        <name>Scheduled_Reconfig_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Swap Date --></label>
+        <name>Scheduled_Swap_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduled Swap Go-Live Date --></label>
+        <name>Scheduled_Swap_Go_Live_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Seasonal --></label>
+        <name>Seasonal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Region --></label>
+        <name>Service_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Service Territory --></label>
+        <name>Service_Territory__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Signed RTT Received Date --></label>
+        <name>Signed_RTT_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Source Name --></label>
+        <name>Source_Name__c</name>
+        <relationshipLabel><!-- Projects Sourced --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Name del --></label>
+        <name>Source_Name_del__c</name>
+        <relationshipLabel><!-- Projects --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Source Name (user) --></label>
+        <name>Source_Name_user__c</name>
+        <relationshipLabel><!-- Projects (Source Name (user)) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Special Relationships --></label>
+        <name>Special_Relationships__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Indicator Notes --></label>
+        <name>Stage_Indicator_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Indicator --></label>
+        <name>Stage_Indicator__c</name>
+        <picklistValues>
+            <masterLabel>Accel Rejected the location</masterLabel>
+            <translation><!-- Accel Rejected the location --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Analysis Team rejected</masterLabel>
+            <translation><!-- Analysis Team rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Buildout (Ground Up)</masterLabel>
+            <translation><!-- Buildout (Ground Up) --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Convert to Competitor - First in Time TUA</masterLabel>
+            <translation><!-- Convert to Competitor - First in Time TUA --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Corporate Does Not Allow Gaming</masterLabel>
+            <translation><!-- Corporate Does Not Allow Gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Could not obtain Liquor License</masterLabel>
+            <translation><!-- Could not obtain Liquor License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Counsel Review – On Hold</masterLabel>
+            <translation><!-- Counsel Review – On Hold --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Gaming License</masterLabel>
+            <translation><!-- Denied Gaming License --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Denied Gaming License Renewal</masterLabel>
+            <translation><!-- Denied Gaming License Renewal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not meet land requirements</masterLabel>
+            <translation><!-- Does not meet land requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Does not meet municipal requirements</masterLabel>
+            <translation><!-- Does not meet municipal requirements --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Executive Team rejected</masterLabel>
+            <translation><!-- Executive Team rejected --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGB distance restriction</masterLabel>
+            <translation><!-- IGB distance restriction --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Incomplete Gaming Area</masterLabel>
+            <translation><!-- Incomplete Gaming Area --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location Signed Extension - Lost</masterLabel>
+            <translation><!-- Location Signed Extension - Lost --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Location signed an extension</masterLabel>
+            <translation><!-- Location signed an extension --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>M &amp; A</masterLabel>
+            <translation><!-- M &amp; A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Municipality is Opt-Out</masterLabel>
+            <translation><!-- Municipality is Opt-Out --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Not interested in gaming</masterLabel>
+            <translation><!-- Not interested in gaming --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Out of business</masterLabel>
+            <translation><!-- Out of business --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Owner has a criminal background</masterLabel>
+            <translation><!-- Owner has a criminal background --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Petition</masterLabel>
+            <translation><!-- Petition --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Cancelled</masterLabel>
+            <translation><!-- Project Cancelled --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Project Denied</masterLabel>
+            <translation><!-- Project Denied --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Security Risk</masterLabel>
+            <translation><!-- Security Risk --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TUA not properly terminated</masterLabel>
+            <translation><!-- TUA not properly terminated --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tax Issues</masterLabel>
+            <translation><!-- Tax Issues --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Undiscovered Competitor TUA</masterLabel>
+            <translation><!-- Undiscovered Competitor TUA --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Achieved --></label>
+        <name>State_Liquor_License_Achieved__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Copy Received Date --></label>
+        <name>State_Liquor_License_Copy_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Exp Date --></label>
+        <name>State_Liquor_License_Exp_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Number --></label>
+        <name>State_Liquor_License_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- State Liquor License Probability --></label>
+        <name>State_Liquor_License_Probability__c</name>
+    </fields>
+    <fields>
+        <label><!-- State --></label>
+        <name>State__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Number --></label>
+        <name>Store_Number2__c</name>
+    </fields>
+    <fields>
+        <label><!-- ZZZDoNotUseStoreNumber --></label>
+        <name>Store_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Store Style --></label>
+        <name>Store_Style__c</name>
+    </fields>
+    <fields>
+        <label><!-- Strengths --></label>
+        <name>Strengths__c</name>
+    </fields>
+    <fields>
+        <label><!-- Layout Submitted Date --></label>
+        <name>Submitted_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Support Pictures --></label>
+        <name>Support_Pictures__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swap: Go Live Completed Date --></label>
+        <name>Swap_Go_Live_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swap: Movement Completed Date --></label>
+        <name>Swap_Movement_Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- TUA Signed --></label>
+        <name>TUA_Signed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Target Date --></label>
+        <name>Target_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Temperature of Location --></label>
+        <name>Temperature_of_Location__c</name>
+        <picklistValues>
+            <masterLabel>1</masterLabel>
+            <translation><!-- 1 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>2</masterLabel>
+            <translation><!-- 2 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>3</masterLabel>
+            <translation><!-- 3 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>4</masterLabel>
+            <translation><!-- 4 --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>5</masterLabel>
+            <translation><!-- 5 --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Terminal Operator --></label>
+        <name>Terminal_Operator__c</name>
+        <relationshipLabel><!-- Projects (Terminal Operator) --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Termination Receipt Received --></label>
+        <name>Termination_Receipt_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Business Hours Open (per week) --></label>
+        <name>Total_Business_Hours_Open_per_week__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total HPD --></label>
+        <name>Total_HPD__c</name>
+    </fields>
+    <fields>
+        <label><!-- Transition Notes --></label>
+        <name>Transition_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Buildout --></label>
+        <name>Type_of_Buildout__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type of Chairs --></label>
+        <name>Type_of_Chairs__c</name>
+        <picklistValues>
+            <masterLabel>MLP Patched Chair</masterLabel>
+            <translation><!-- MLP Patched Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MLP Premium Chair</masterLabel>
+            <translation><!-- MLP Premium Chair --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Majestic AE Gaming Stool</masterLabel>
+            <translation><!-- Majestic AE Gaming Stool --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Standard AE Gaming Stool</masterLabel>
+            <translation><!-- Standard AE Gaming Stool --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Undated Termination Notice --></label>
+        <name>Undated_Termination_Notice__c</name>
+    </fields>
+    <fields>
+        <label><!-- VGT Information Needed --></label>
+        <name>VGT_Information_Needed__c</name>
+    </fields>
+    <fields>
+        <help><!-- to be selected if the swap related project includes an VGT Swap. --></help>
+        <label><!-- VGT Add/Swap --></label>
+        <name>VGT_Swap__c</name>
+    </fields>
+    <fields>
+        <label><!-- Weaknesses --></label>
+        <name>Weaknesses__c</name>
+    </fields>
+    <fields>
+        <label><!-- Website --></label>
+        <name>Website__c</name>
+    </fields>
+    <fields>
+        <label><!-- 6th VGT Project --></label>
+        <name>X6th_VGT_Project__c</name>
+    </fields>
+    <recordTypes>
+        <label><!-- Add/Swap/Reconfigure --></label>
+        <name>Add_Swap_Reconfigure</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Change Request --></label>
+        <name>Change_Request</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Competitor --></label>
+        <name>Competitor</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Non-Video Gaming Onboarding --></label>
+        <name>Non_Video_Gaming_Onboarding</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Organic --></label>
+        <name>Organic</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Pull/Termination --></label>
+        <name>Pull_Termination</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Video Gaming Onboarding --></label>
+        <name>Video_Gaming_Onboarding</name>
+    </recordTypes>
+    <startsWith>Consonant</startsWith>
+    <validationRules>
+        <errorMessage><!-- This field  CAN ONLY BE MODIFIED BY: Gabriel Garcia, Mark Stevens, John Jesernik, &amp; Derek Harmer --></errorMessage>
+        <name>CAN_ONLY_BE_MODIFIED_BY</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have access to choose this Project Type. Please contact Gaming Operations. --></errorMessage>
+        <name>Emergency_Movement_cannot_modify</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- IGB Inspection Date is required for a project to be in the Pending Licensing stage. --></errorMessage>
+        <name>IGB_Inspection_Required</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Only Change Requests Projects can be created. --></errorMessage>
+        <name>Only_Change_Request_Record_Type_Allowed</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please enter the Requested # of Additional VGTs in order to submit this project for approval. --></errorMessage>
+        <name>Requested_Num_of_VGTs_must_be_filled_out</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please choose a requested number of VGTs between 0 and 5. --></errorMessage>
+        <name>Requested_Number_of_Additional_VGTs</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You do not have access to choose this Project Type. Please contact Gaming Operations. --></errorMessage>
+        <name>Service_swap_cannot_modify</name>
+    </validationRules>
+</CustomObjectTranslation>

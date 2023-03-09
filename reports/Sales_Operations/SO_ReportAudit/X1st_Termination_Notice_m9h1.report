@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c$Name</field>
+    </columns>
+    <columns>
+        <field>Project__c$Account__c.Competitor_TO__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Competitor_Contract_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Latest_date_to_send_second_term_notice__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Date_2nd_Letter_Sent_to_Competitor__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Termination_Receipt_Received__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Stage_Indicator__c</field>
+    </columns>
+    <columns>
+        <field>Project__c$Account__c.Type</field>
+    </columns>
+    <description>Latest date to send 2nd term notice: &gt;= 2 weeks ago and &lt;= 2 weeks later</description>
+    <filter>
+        <booleanFilter>1 AND 2 AND 3 AND 4</booleanFilter>
+        <criteriaItems>
+            <column>Project__c$RecordType</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project__c.Competitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Latest_date_to_send_second_term_notice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>greaterOrEqual</operator>
+            <value>N_WEEKS_AGO:2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Latest_date_to_send_second_term_notice__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>NEXT_N_WEEKS:2</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c$Account__c.Type</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>Discontinued Account</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>2nd Termination Notice</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Project_Base__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c$Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

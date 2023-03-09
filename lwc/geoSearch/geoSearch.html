@@ -1,0 +1,53 @@
+<template>
+    <div class="slds-combobox_container">
+
+        <div class={geoComboboxCssClass}
+             aria-expanded="true" aria-haspopup="listbox" role="combobox">
+
+            <lightning-input label="" variant="label-hidden"
+                             value={term} data-id="geoinput"
+                             onfocus={handleGeoInputFocus}
+                             type="search" onchange={handleGeoInputChange}
+                             class="slds-input slds-combobox__input slds-has-focusxxxxx accel-search-input"
+                             html-autocomplete="nope"
+                             aria-activedescendant="option1"
+                             aria-controls="listbox-id-3" autocomplete="off" role="textbox"
+                             placeholder={placeholder} >
+            </lightning-input>
+
+            <div class="slds-dropdown slds-dropdown_length-with-icon-7 slds-dropdown_fluid c3llc-dropdown-container"
+                 onblur={handleGeoMenuBlur}
+                 tabindex="0"
+                 role="listbox">
+                <ul class="slds-listbox slds-listbox_vertical" role="presentation">
+
+                    <template for:each={geoAddresses} for:item="geoAddress">
+                        <li key={geoAddress.placed_id} role="presentation" class="slds-listbox__item c3llc-geosearch-item">
+                            <div aria-selected="false"
+                                 id={geoAddress.place_id}
+                                 data-id={geoAddress.place_id}
+                                 onclick={handleGeoAddressClicked}
+                                 class="slds-media slds-listbox__option slds-listbox__option_entity
+                                    slds-listbox__option_has-meta" role="option" tabindex="0">
+                                 <span class="slds-media__figure slds-listbox__option-icon">
+                                     <lightning-icon icon-name="utility:travel_and_places" size="x-small"></lightning-icon>
+                                </span>
+                                <span class="slds-media__body c3llc-address-data">
+                                    <span class="slds-listbox__option-text slds-listbox__option-text_entity">
+                                        {geoAddress.name}
+                                    </span>
+                                    <span class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                                        {geoAddress.display_name}
+                                    </span>
+                                </span>
+
+                            </div>
+                        </li>
+                    </template>
+
+                </ul>
+            </div>
+        </div>
+
+    </div>
+</template>

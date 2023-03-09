@@ -1,0 +1,29 @@
+<!--
+Please note.. while not preferred css styles are inline in order to provide the greatest support 
+for all email clients.. ie gmail can be a pita with classes in HTML Emails and since we have no control
+over what markup messaging:emailTemplate is generating.. we can't be sure the below is the only html head.
+
+Vf component cAccelAccountsWithMuniChangeHistory is used to display 1-M accounts and 0-M History records.
+-->
+<messaging:emailTemplate subject="A change has been made to {!relatedTo.Name}."
+                         replyTo="{!$User.Email}"
+                         recipientType="User"
+                         relatedToType="Municipality__c">
+    <messaging:htmlEmailBody >
+    <html>
+    <head></head>
+    <body>
+        <div style="margin-bottom:10px">
+             Please log in and view the municipality, as this may impact your accounts.
+             <a href="{!relatedTo.Org_URL__c}/{!relatedTo.Id}">{!relatedTo.Name}</a>
+        </div>
+        <!--- passes 
+           relatedTo ie Municipality__c
+           recipient.Id ie. the applicable userId (RM Id)
+           historySeconds ie. the number of seconds to go back in the history object.
+        -->   
+        <c:cAccelAccountsWithMuniChangeHistory pMuni="{!relatedTo}" pUserId="{!recipient.Id}" pHistorySecondsToGoBack="10"/>        
+    </body>
+    </html>
+    </messaging:htmlEmailBody>
+</messaging:emailTemplate>

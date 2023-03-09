@@ -1,0 +1,19 @@
+<!--
+========================================================================================================================
+Utility for perform formatting.
+========================================================================================================================
+-->
+<aura:component description="Accel_FormatUtils" access="global">
+    <!--
+    Inbound params:
+      1. Object infoToFormat {prefix: '$', value:234.3242,  fixed: 2 }
+      2. Function callback function to return results.
+    Returns:
+       Object formatDto: {value: [string return value] ,message:[string message if applicable]}
+    -->
+    <aura:method name="formatNumericValue" action="{!c.formatNumericValue}" access="global">
+        <aura:attribute name="infoToFormat" type="Object" required="true"/>
+        <aura:attribute name="callback" type="function" required="true"/>
+    </aura:method>
+
+</aura:component>

@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Project__c.Competitor_Contract_Expiration_Date__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Project_Status__c</field>
+    </columns>
+    <columns>
+        <aggregateTypes>Sum</aggregateTypes>
+        <field>Project__c.Days_until_Expiration__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Competitor_TO__c</field>
+    </columns>
+    <columns>
+        <field>Project__c.Stage_Indicator__c</field>
+    </columns>
+    <columns>
+        <field>CUST_NAME</field>
+    </columns>
+    <columns>
+        <field>CUST_LAST_ACTIVITY</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_DUE_DATE</field>
+    </columns>
+    <columns>
+        <field>Project__c.Stage_Indicator_Notes__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Partner_Operator__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Relationship_Manager__c</field>
+    </columns>
+    <columns>
+        <field>CUST_OWNER_NAME</field>
+    </columns>
+    <columns>
+        <field>Project__c.Petition_Submitted__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.MunicipalityLookup__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Agreement_Original_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_$Account.Agreement_Current_Signed_Date__c</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_STREET</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_CITY</field>
+    </columns>
+    <columns>
+        <field>FK_ACC_ADDR2_ZIP</field>
+    </columns>
+    <customDetailFormulas>
+        <calculatedFormula>text(year(Project__c.Competitor_Contract_Expiration_Date__c))+&quot;/&quot;+
+case(month(Project__c.Competitor_Contract_Expiration_Date__c),
+1,&quot;01&quot;,
+2,&quot;02&quot;,
+3,&quot;03&quot;,
+4,&quot;04&quot;,
+5,&quot;05&quot;,
+6,&quot;06&quot;,
+7,&quot;07&quot;,
+8,&quot;08&quot;,
+9,&quot;09&quot;,
+10,&quot;10&quot;,
+11,&quot;11&quot;,
+12,&quot;12&quot;,
+&quot;NA&quot;
+)</calculatedFormula>
+        <dataType>Text</dataType>
+        <developerName>CDF1</developerName>
+        <label>Expiration Month</label>
+        <scale>2</scale>
+    </customDetailFormulas>
+    <filter>
+        <criteriaItems>
+            <column>CUST_RECORDTYPE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Project__c.Competitor</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Petition_Submitted__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Competitor_Contract_Expiration_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>lessOrEqual</operator>
+            <value>NEXT_90_DAYS</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_$Account.Accel_VGT_Live_Date__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value></value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Project__c.Stage_Indicator__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>,Counsel Review – On Hold,Project Cancelled</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>FK_ACC_ADDR2_STATE</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>notEqual</operator>
+            <value>GA</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>FK_ACC_ADDR2_STATE</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>CDF1</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>SO_Open_Competitor Projects (QL)</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>CustomEntity$Project__c@Project__c.Account__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>false</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Project__c.Accel_Go_Live_Date__c</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

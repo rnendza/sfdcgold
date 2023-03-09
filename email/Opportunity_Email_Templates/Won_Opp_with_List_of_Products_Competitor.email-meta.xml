@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EmailTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>53.0</apiVersion>
+    <available>true</available>
+    <description>this template is for IL opportunities with days to expiration less than 90</description>
+    <encodingKey>UTF-8</encodingKey>
+    <name>Won Opp w/List of Products-Competitor (IL) &lt;90</name>
+    <style>none</style>
+    <subject>Competitor Opportunity Closed Won for Account</subject>
+    <type>visualforce</type>
+    <uiType>Aloha</uiType>
+</EmailTemplate>

@@ -1,0 +1,73 @@
+{
+  "appPageId" : "adbc25fd-6d34-45c3-977e-fbcf7aa0e58d",
+  "componentName" : "community_layout:sldsFlexibleLayout",
+  "dataProviders" : [ ],
+  "id" : "d36ffe9d-00a4-454a-bb83-a05001717dc8",
+  "label" : "Home",
+  "regions" : [ {
+    "components" : [ {
+      "componentAttributes" : {
+        "backgroundImageConfig" : "",
+        "backgroundImageOverlay" : "rgba(0,0,0,0)",
+        "sectionConfig" : "{\"UUID\":\"ca070491-761a-4431-8709-d43775c1c53c\",\"columns\":[{\"UUID\":\"faa9972c-3c4a-44e8-8fa7-f1966a1d0781\",\"columnName\":\"Column 1\",\"columnKey\":\"col1\",\"columnWidth\":\"12\",\"seedComponents\":null}]}"
+      },
+      "componentName" : "community_layout:section",
+      "id" : "ca070491-761a-4431-8709-d43775c1c53c",
+      "regions" : [ {
+        "components" : [ {
+          "componentAttributes" : {
+            "allowFilters" : false,
+            "allowListVsImageToggle" : true,
+            "allowMouseOverHighlight" : true,
+            "cardIcon" : "custom:custom86",
+            "cardTitle" : "PA Exclusions",
+            "debugConsole" : true,
+            "dtContainerStyle" : "height: 50rem;",
+            "infiniteScrollMaxImageItems" : 30,
+            "infiniteScrollMaxTableItems" : 200,
+            "scrollContainerStyle" : "max-height:700px",
+            "showTableRowNumColumn" : true,
+            "useInfiniteScroll" : true
+          },
+          "componentName" : "c:paAdvisoryGallery",
+          "id" : "e75ead5e-c946-422a-a3d3-7ae724c0ba7c",
+          "renderPriority" : "NEUTRAL",
+          "renditionMap" : { },
+          "type" : "component"
+        } ],
+        "id" : "faa9972c-3c4a-44e8-8fa7-f1966a1d0781",
+        "regionLabel" : "Column 1",
+        "regionName" : "col1",
+        "renditionMap" : { },
+        "type" : "region"
+      } ],
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "scopedBrandingSetId" : null,
+      "type" : "component"
+    } ],
+    "id" : "316e8583-d96a-485f-b9ff-5cd4d1417982",
+    "regionName" : "content",
+    "type" : "region"
+  }, {
+    "components" : [ {
+      "componentAttributes" : {
+        "customHeadTags" : "",
+        "description" : "",
+        "pageTitle" : "Home",
+        "recordId" : "{!recordId}"
+      },
+      "componentName" : "community_builder:seoAssistant",
+      "id" : "c997c0d7-ed3f-4b58-9425-d81513baaad5",
+      "renderPriority" : "NEUTRAL",
+      "renditionMap" : { },
+      "type" : "component"
+    } ],
+    "id" : "3a51fe41-c424-454c-b21d-14f67b59bf8d",
+    "regionName" : "sfdcHiddenRegion",
+    "type" : "region"
+  } ],
+  "themeLayoutType" : "Inner",
+  "type" : "view",
+  "viewType" : "home"
+}

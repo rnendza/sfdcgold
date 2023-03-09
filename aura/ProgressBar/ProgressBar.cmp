@@ -1,0 +1,28 @@
+<aura:component description="ProgressBar">
+
+    <aura:attribute name="valueNow" type="Integer" required="true" default="0"
+                    description="Current Progress Value" />
+
+    <aura:attribute name="additionalPbClass" type="String" default="slds-progress-bar__value_success"
+                   description="Additional class to add to the progress bar.. ie to change colors and the such"/>
+
+    <aura:attribute name="valueMin" type="Integer" default="0"/>
+    <aura:attribute name="valueMax" type="Integer" default="100"/>
+
+    <div>
+        <div class="slds-grid slds-grid_align-spread slds-p-bottom_x-small" id="progress-bar-label-id">
+            <span><!--instein Setup Assistant--></span>
+            <span aria-hidden="true">
+                <strong>{!v.valueNow}% Complete</strong>
+            </span>
+        </div>
+        <div class="slds-progress-bar slds-progress-bar__circular slds-progress-bar_large"
+             aria-valuemin="{!v.valueMin}" aria-valuemax="{!v.valueMax}"
+             aria-valuenow="{!v.valueNow}" aria-labelledby="progress-bar-label-id" role="progressbar">
+            <span class="{!'slds-progress-bar__value ' + v.additionalPbClass }" style="{!'width:'+ v.valueNow +'%'}">
+                <span class="slds-assistive-text">Progress: {!v.valueNow}%</span>
+            </span>
+        </div>
+    </div>
+
+</aura:component>

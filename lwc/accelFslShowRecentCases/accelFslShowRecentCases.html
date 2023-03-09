@@ -1,0 +1,109 @@
+<!-- Accel Fsl Show Recent Cases -->
+<template>
+    <div lwc:dom="manual" class={_sldsDomOverrideClass}></div>
+
+    <lightning-card class="accel-defects_card" if:true={showCard}>
+        <!--- ===== Progress Bar ===== -->
+        <template if:true={showProgressBar}>
+            <div class="progress-center slds-p-bottom_small slds-p-horizontal_small slds-p-top_small">
+                <c-ui-indeterminate-progress-bar>
+                </c-ui-indeterminate-progress-bar>
+            </div>
+        </template>
+        <!--- ===== Card Header ===== -->
+        <div slot="title" class="no-wrap accel-card-header">
+            <div class="slds-grid slds-wrap">
+                <div>
+                    <c-ui-card-title
+                            card-title={cardTitle}
+                            icon-name={cardHeaderIcon}
+                            icon-class="bogus"
+                            icon-size="small">
+                    </c-ui-card-title>
+                </div>
+            </div>
+        </div>
+        <!--- ===== Card Actions / Toolbar ===== -->
+        <template if:true={showCardActions}>
+            <div slot="actions">
+                <div slot="actions">
+                </div>
+            </div>
+        </template>
+        <!--- ===== Card Body ===== -->
+        <div class="slds-p-horizontal_xxx-small slds-p-top_x-small" style={dtContainerStyle}>
+            <!--- ===== Stencil ===== -->
+            <template if:true={showStencil}>
+                <c-ui-custom-stencil
+                        iterations="3"
+                        child-class="slds-var-m-around-small"
+                        type="list" columns="3">
+                </c-ui-custom-stencil>
+            </template>
+            <template if:true={showTableConfigOptions}>
+                <!--- ===== Refresh Icon and Client Side Filters Totals (Filters for FUTURE USE) ==== -->
+                <div class="slds-box slds-box_border slds-m-bottom_xxx-small">
+                    <div class={filtersTheme}>
+                        <div class="slds-p-around_xx-small">
+                            <div class="slds-grid slds-wrap accel-test-borders">
+                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2
+                                        slds-small-size_5-of-12 slds-align-bottom accel-test-borders">
+                                    <template if:true={showTableTotalRows}>
+                                        <div class="slds-text-body_small slds-text-color_weak">
+                                            <b>{numberOfResults}</b> {cardTitleLabel}
+                                        </div>
+                                    </template>
+                                </div>
+                                <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-2
+                                                            slds-small-size_7-of-12 accel-test-borders">
+                                    <div onclick={handleRefresh}
+                                         title="Click here to refresh your data"
+                                         class="slds-text-align_right slds-text-color_weak slds-text-body_small
+                                     accel-date-text refresh-container">
+                                        <lightning-icon
+                                                icon-name="utility:refresh"
+                                                size="xx-small"
+                                                class="slds-m-right_xx-small accel-green-icon">
+                                        </lightning-icon>
+                                        Refreshed:&nbsp;
+                                        <lightning-formatted-date-time
+                                                if:true={_dataRefreshTime}
+                                                value={_dataRefreshTime}
+                                                hour="2-digit"
+                                                minute="2-digit" hour12="true"
+                                                second="2-digit">
+                                        </lightning-formatted-date-time>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </template>
+            <template if:true={showDataTable}>
+                <div class="slds-p-bottom_medium">
+                    <!--- ===== Datatable  ====-->
+                    <div class="accel-datatable-vertical_borders">
+                        <lightning-datatable
+                                key-field={dtKeyField}
+                                data={dtRecords}
+                                sorted-by={sortBy}
+                                sorted-direction={sortDirection}
+                                default-sort-direction="desc"
+                                hide-checkbox-column="true"
+                                onsort={handleSort}
+                                onrowaction={handleRowAction}
+                                columns={dtColumns}
+                                class={dtClasses}>
+                        </lightning-datatable>
+                    </div>
+                </div>
+            </template>
+            <template if:true={showNoData}>
+                <div class="slds-p-horizontal_medium slds-p-bottom_x-small">
+                    <b>{noDataMessage}</b>
+                </div>
+            </template>
+        </div>
+    </lightning-card>
+</template>

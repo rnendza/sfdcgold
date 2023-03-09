@@ -1,0 +1,11 @@
+/**
+ * Created by rnend on 5/25/2021.
+ */
+.accel-test-borders {
+    border:1px dotted black
+}
+.accel-machine-img {
+    width: 100%;
+    height: auto;
+    aspect-ratio: attr(width) / attr(height);
+}

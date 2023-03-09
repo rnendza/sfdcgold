@@ -1,0 +1,28 @@
+<!-- Ui Button -->
+<template>
+    <template if:true={showButton}>
+        <button
+                name={buttonName}
+                data-buttonid={buttonName}
+                onclick={handleClick}
+                disabled={buttonDisabled}
+                title={buttonTitle}
+                style={buttonStyle}
+                class={buttonClasses}>
+
+            <span style={buttonLabelStyle}>{buttonLabel}</span>
+
+            <template if:true={buttonIconName}>
+                <span class="slds-p-left_xx-small">
+                    <lightning-icon
+                            icon-name={buttonIconName}
+                            alternative-text={buttonIconAltText}
+                            variant={buttonIconVariant}
+                            size={buttonIconSize}
+                            title={buttonIconTitle}>
+                    </lightning-icon>
+                </span>
+            </template>
+        </button>
+    </template>
+</template>

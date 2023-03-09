@@ -1,0 +1,83 @@
+<!-- CL Linked RPS Filters -->
+<template>
+    <div class="slds-p-bottom_small slds-box_small slds-box_border">
+        <div class={filterContainerClass}>
+            <div class="slds-grid slds-wrap">
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1 slds-p-bottom_xxx-small accel-filter-title">
+                    <!--- HEADER  --->
+                    <div class="slds-p-vertical_xxx-small slds-p-horizontal_x-small slds-border_bottom">
+                        <div class="accel-inline-div">
+                            <lightning-icon
+                                    icon-name="standard:search"
+                                    class="slds-m-right_x-small"
+                                    size="x-small">
+                            </lightning-icon>
+                        </div>
+                        <div class="slds-text-color_weak slds-text-body_small accel-inline-div">
+                                <div class="accel-inline-div accel-filters-text">
+                                    {filtersLabel}
+                                </div>
+                        </div>
+                        <div class="slds-float_right">
+                            <lightning-icon
+                                    title="Close Filters"
+                                    icon-name="utility:close"
+                                    onclick={handleCloseClicked}
+                                    size="xx-small">
+                            </lightning-icon>
+                        </div>
+                    </div>
+                </div>
+                <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1
+                 slds-p-horizontal_small slds-p-bottom_x-small accel-silver-background">
+                    <!--- FILTERS ROW 1  --->
+                    <div class="slds-grid slds-wrap">
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                            <div class="slds-form-element__control">
+                                <div>
+                                    <template if:true={showVarianceCBoxValues}>
+                                        <lightning-checkbox-group name="varianceOptions"
+                                                                  class="slds-text-body_small"
+                                                                  label={cBoxGroupLabel}
+                                                                  options={varianceCboxOptions}
+                                                                  value={_selectedVarianceOptions}
+                                                                  onchange={handleVarianceChkBoxChange}>
+                                        </lightning-checkbox-group>
+                                    </template>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="slds-col slds-large-size_1-of-2 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                            <template if:true={allowCollectionDateFilters}>
+                                <div class="slds-grid slds-wrap">
+                                    <div class="slds-col slds-large-size_1-of-1 slds-medium-size_1-of-1 slds-small-size_1-of-1">
+                                        <div class="slds-form-element__control">
+                                            <label class="slds-form-element__label" for="collectionDate_pl">
+                                                <b>{collectionDateSelectLabel}</b>
+                                            </label>
+                                            <div>
+                                                <template if:true={showCollectionDateOptions}>
+                                                    <select class="slds-select" id="collectionDate_pl" name="collectionDate_pl"
+                                                            onchange={handlePlChange}>
+                                                        <template for:each={collectionDateOptions} for:item="option">
+                                                            <option key={option.label}
+                                                                    class="uiInputSelectOption"
+                                                                    selected={option.selected}
+                                                                    value={option.value}>
+                                                                {option.label}
+                                                            </option>
+                                                        </template>
+                                                    </select>
+                                                </template>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </template>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</template>

@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <caseValues>
+        <article>Definite</article>
+        <plural>false</plural>
+        <value>Maps-tildelingsplankørslen</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>false</plural>
+        <value>Maps-tildelingsplankørsel</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>false</plural>
+        <value>Maps-tildelingsplankørsel</value>
+    </caseValues>
+    <caseValues>
+        <article>Definite</article>
+        <plural>true</plural>
+        <value>Maps-tildelingsplankørslerne</value>
+    </caseValues>
+    <caseValues>
+        <article>Indefinite</article>
+        <plural>true</plural>
+        <value>Maps-tildelingsplankørsler</value>
+    </caseValues>
+    <caseValues>
+        <article>None</article>
+        <plural>true</plural>
+        <value>Maps-tildelingsplankørsler</value>
+    </caseValues>
+    <fields>
+        <label><!-- Assignment Plan --></label>
+        <name>maps__AssignmentPlan__c</name>
+        <relationshipLabel><!-- Maps Assignment Plan --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Batch Iteration Count --></label>
+        <name>maps__BatchIterationCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Job Id --></label>
+        <name>maps__BatchJobId__c</name>
+    </fields>
+    <fields>
+        <label><!-- Batch Size --></label>
+        <name>maps__BatchSize__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache End Time --></label>
+        <name>maps__CacheEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cache Start Time --></label>
+        <name>maps__CacheStartTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Error --></label>
+        <name>maps__Error__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing End Time --></label>
+        <name>maps__ProcessingEndTime__c</name>
+    </fields>
+    <fields>
+        <label><!-- Processing Start Time --></label>
+        <name>maps__ProcessingStartTime__c</name>
+    </fields>
+    <fields>
+        <help>Forespørgselsgrænse nået</help>
+        <label><!-- Query Limit Hit --></label>
+        <name>maps__QueryLimitHit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Query Limit --></label>
+        <name>maps__QueryLimit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Assigned Count --></label>
+        <name>maps__RecordsAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Error Count --></label>
+        <name>maps__RecordsErrorCount__c</name>
+    </fields>
+    <fields>
+        <help>Antal registreringer ikke tildelt</help>
+        <label><!-- Records Not Assigned Count --></label>
+        <name>maps__RecordsNotAssignedCount__c</name>
+    </fields>
+    <fields>
+        <label><!-- Records Total --></label>
+        <name>maps__RecordsTotal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status --></label>
+        <name>maps__Status__c</name>
+        <picklistValues>
+            <masterLabel>Aborted</masterLabel>
+            <translation>Afbrudt</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Caching</masterLabel>
+            <translation>Cachelagring</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Completed</masterLabel>
+            <translation>Udført</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Failed</masterLabel>
+            <translation>Mislykkedes</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Processing</masterLabel>
+            <translation>Behandler</translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Queued</masterLabel>
+            <translation>I kø</translation>
+        </picklistValues>
+    </fields>
+    <gender>Feminine</gender>
+    <nameFieldLabel>Navn på Maps-tildelingsplankørsel</nameFieldLabel>
+</CustomObjectTranslation>

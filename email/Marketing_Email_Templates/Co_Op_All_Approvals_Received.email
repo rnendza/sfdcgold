@@ -1,0 +1,11 @@
+Your Co-Op Reimbursement request {!Marketing_Request__c.Name} for {!Marketing_Request__c.Account__c} has been approved to move forward for the run dates of:
+
+{!Marketing_Request__c.Expected_Run_Start_Date__c}
+through
+{!Marketing_Request__c.Expected_Run_End_Date__c}
+
+in the amount of: {!Marketing_Request__c.Requested_Reimbursement_Amount__c}
+
+Please let your location know. Upon your receipt of the invoice, please go to the marketing request {!Marketing_Request__c.Name} and upload the paid invoice to Files, then click the button called SUBMIT INVOICE. This will initiate Accounting to write a check to the location. 
+
+Click this link if you would like to view your request: {!Marketing_Request__c.Link}

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>Allows editing rights to Stage Indicator and Stage Indicator Notes. Requested by Penny for HF Barnes</description>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Stage_Indicator_Notes__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <fieldPermissions>
+        <editable>true</editable>
+        <field>Project__c.Stage_Indicator__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Project: Stage Indicator &amp; Stage Indicator Notes Access</label>
+</PermissionSet>

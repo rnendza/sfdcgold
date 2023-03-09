@@ -1,0 +1,95 @@
+<template>
+    <template if:true={isProcessing}>
+        <!--        <div class="slds-is-relative">-->
+        <lightning-spinner
+                size="large"
+                variant="brand"
+                alternative-text="processing"></lightning-spinner>
+        <!--        </div>-->
+    </template>
+
+    Monthly Data for All Visible Accounts ( {rowCount} records )
+    <table class="slds-table slds-table_cell-buffer slds-table_bordered slds-table_col-bordered accel-datatable-styled accel-datatable-compact">
+        <thead>
+        <tr class="slds-line-height_reset">
+            <th class="" scope="col">
+                <div class="slds-truncate" title="Date">Date</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate" title="Account Name">Account</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate slds-text-align--right" title="Net Revenue">Net Rev</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate slds-text-align--right" title="Location Share">Loc Share</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate slds-text-align--right" title="Funds In">Funds In</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate slds-text-align--right" title="Funds Out">Funds Out</div>
+            </th>
+            <th class="" scope="col">
+                <div class="slds-truncate slds-text-align--right" title="VGT Count">VGT Count</div>
+            </th>
+        </tr>
+        </thead>
+        <tbody>
+        <template for:each={holdPerDays} for:item="hpd">
+            <tr class="slds-hint-parent" key={hpd.hpdId}>
+                <th data-label={hpd.hpdDate} scope="row">
+                    <div class="slds-truncate" title={hpd.hpdDate}>
+                        <lightning-formatted-date-time value={hpd.hpdDate}></lightning-formatted-date-time>
+                    </div>
+                </th>
+                <td data-label={hpd.accountName}>
+                    <div class="slds-truncate" title={hpd.accountName}>{hpd.accountName}</div>
+                </td>
+                <td data-label={hpd.newRevenue}>
+                    <div class="slds-truncate slds-text-align--right" title={hpd.netRevenue}>
+                        <lightning-formatted-number
+                                format-style="currency"
+                                currency-code="USD"
+                                value={hpd.netRevenue} >
+                        </lightning-formatted-number>
+                    </div>
+                </td>
+                <td data-label={hpd.locShare}>
+                    <div class="slds-truncate slds-text-align--right" title={hpd.locShare}>
+                        <lightning-formatted-number
+                                format-style="currency"
+                                currency-code="USD"
+                                value={hpd.locShare} >
+                        </lightning-formatted-number>
+                    </div>
+                </td>
+                <td data-label={hpd.fundsIn}>
+                    <div class="slds-truncate slds-text-align--right" title={hpd.fundsIn}>
+                        <lightning-formatted-number
+                                format-style="currency"
+                                currency-code="USD"
+                                value={hpd.fundsIn} >
+                        </lightning-formatted-number>
+                    </div>
+                </td>
+                <td data-label={hpd.fundsOut}>
+                    <div class="slds-truncate slds-text-align--right" title={hpd.fundsOut}>
+                        <lightning-formatted-number
+                                format-style="currency"
+                                currency-code="USD"
+                                value={hpd.fundsOut} >
+                        </lightning-formatted-number>
+                    </div>
+                </td>
+                <td data-label={hpd.vgtCount}>
+                    <div class="slds-truncate slds-text-align--right" title={hpd.vgtCount}>
+                        {hpd.vgtCount}
+                    </div>
+                </td>
+            </tr>
+        </template>
+        </tbody>
+    </table>
+
+</template>

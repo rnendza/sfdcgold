@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>Key__c$Name</field>
+    </columns>
+    <columns>
+        <field>Key__c$Key_Status__c</field>
+    </columns>
+    <columns>
+        <field>Key__c$Key_Region__c</field>
+    </columns>
+    <columns>
+        <field>Key__c$Id</field>
+    </columns>
+    <columns>
+        <field>Key__c$Safe_Name__c</field>
+    </columns>
+    <columns>
+        <field>Key__c$Date_Returned__c</field>
+    </columns>
+    <filter>
+        <criteriaItems>
+            <column>Key__c$Key_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Needs Return</value>
+        </criteriaItems>
+        <criteriaItems>
+            <column>Key__c$Key_Code__c.Key_Code_Status__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>Lost</value>
+        </criteriaItems>
+    </filter>
+    <format>Summary</format>
+    <groupingsDown>
+        <dateGranularity>Day</dateGranularity>
+        <field>Key__c$Key_Set__c.Resource__c</field>
+        <sortOrder>Asc</sortOrder>
+    </groupingsDown>
+    <name>Keys Needing Return</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>Keys_Custom_Report_Type__c</reportType>
+    <scope>organization</scope>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <timeFrameFilter>
+        <dateColumn>Key__c$CreatedDate</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

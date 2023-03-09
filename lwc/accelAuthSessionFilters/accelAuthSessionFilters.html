@@ -1,0 +1,57 @@
+<!-- Accel Auth Session Filters -->
+<template>
+    <div if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="3"
+                child-class="slds-var-m-around_xxx-small"
+                type="list" columns="1">
+        </c-ui-custom-stencil>
+    </div>
+    <template if:false={isLoading}>
+        <div class="slds-p-vertical_xx-small">
+            <c-ui-multiselect
+                    if:true={users}
+                    options={userOptions}
+                    pill-icon={userPillIcon}
+                    name="userSelect"
+                    data-id="userSelect"
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Users"
+                    selected-values={defaultUserSelections}
+                    multi-select="true"
+                    label="Select User">
+            </c-ui-multiselect>
+        </div>
+        <div class="slds-p-vertical_xx-small">
+            <c-ui-multiselect
+                    if:true={loginTypeOptions}
+                    options={loginTypeOptions}
+                    pill-icon={loginTypePillIcon}
+                    name="loginTypeSelect"
+                    data-id="loginTypeSelect"
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Login Types"
+                    selected-values={defaultLoginTypeSelections}
+                    multi-select="true"
+                    label="Select Login Type">
+            </c-ui-multiselect>
+        </div>
+        <div class="slds-p-vertical_xx-small">
+            <c-ui-multiselect
+                    if:true={sessionTypeOptions}
+                    options={sessionTypeOptions}
+                    pill-icon={sessionTypePillIcon}
+                    name="sessionTypeSelect"
+                    data-id="sessionTypeSelect"
+                    onselect={handleSelect}
+                    onremove={handleOptionsRemoved}
+                    entity-label="Session Types"
+                    selected-values={defaultSessionTypeSelections}
+                    multi-select="true"
+                    label="Select Session Type">
+            </c-ui-multiselect>
+        </div>
+    </template>
+</template>

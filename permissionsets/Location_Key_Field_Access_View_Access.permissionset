@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<PermissionSet xmlns="http://soap.sforce.com/2006/04/metadata">
+    <description>View only access to &quot;Location Key ID&quot; field on account</description>
+    <fieldPermissions>
+        <editable>false</editable>
+        <field>Account.Location_Key_ID__c</field>
+        <readable>true</readable>
+    </fieldPermissions>
+    <hasActivationRequired>false</hasActivationRequired>
+    <label>Location Key Field Access - View Access</label>
+</PermissionSet>

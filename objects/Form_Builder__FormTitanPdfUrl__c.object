@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <customSettingsType>List</customSettingsType>
+    <enableFeeds>false</enableFeeds>
+    <fields>
+        <fullName>Form_Builder__ApiKey__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Add Api key In order to enable debug mode</description>
+        <externalId>false</externalId>
+        <inlineHelpText>Add Api key In order to enable debug mode</inlineHelpText>
+        <label>ApiKey</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>Form_Builder__Debug_Mode__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Debug Mode</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>Form_Builder__URL__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will determine the user specific formtitan url</description>
+        <externalId>false</externalId>
+        <label>URL</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Url</type>
+    </fields>
+    <label>FormTitan Pdf Url</label>
+    <visibility>Public</visibility>
+</CustomObject>

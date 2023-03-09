@@ -1,0 +1,116 @@
+<!--
+Fsl Record Lookup Search is meant to replace a lookup on FSL Mobile. Think of it as a seperate search screen.
+This is built MOBILE first however it will support desktop.
+-->
+<template>
+    <div lwc:dom="manual" class="fake-input-overrides-class"></div>
+
+    <template if:true={showSearchInput}>
+        <!--- ===== Search Input Top Header Area ===== -->
+        <div class="slds-vertical_xx-small slds-p-bottom_x-small slds-p-left_xx-small
+                    slds-p-top_x-small accel-search-container
+                    slds-border_bottom slds-border_top slds-border_right slds-border_left">
+            <div class="slds-grid">
+                <div class="slds-col slds-grow-none">
+                    <lightning-icon
+                            data-id={customId}
+                            size="x-small"
+                            class="slds-m-right_x-small"
+                            onclick={handleBackClick}
+                            icon-name="action:back">
+                    </lightning-icon>
+                </div>
+                <div class="slds-col slds-p-right_small">
+                    <!--- ===== Search Input Field ===== -->
+                    <lightning-input
+                            type="search"
+                            data-id={customId}
+                            value={term}
+                            onchange={handleSearchInputChange}
+                            onclick={handleSearchInputClick}
+                            placeholder={searchPlaceHolder}
+                            label=""
+                            variant="label-hidden">
+                    </lightning-input>
+                </div>
+            </div>
+        </div>
+        <!--- ===== Num Results ===== -->
+        <div style="background-color: white"
+             class="slds-border_left slds-border_right">
+            <div class={numResultsContainerClass}>
+                    <span class="slds-text-body_small accel-result_msg slds-p-left_xx-small">
+                     {numResultsMsg}
+                    </span>
+            </div>
+        </div>
+        <!--- ===== Progress Bar ===== -->
+        <template if:true={showProgressBar}>
+            <div style="background-color: white" class="slds-border_left slds-border_right">
+                <div class="slds-p-horizontal_xx-small">
+                    <c-ui-indeterminate-progress-bar>
+                    </c-ui-indeterminate-progress-bar>
+                </div>
+            </div>
+        </template>
+
+        <!--- ===== Search Results Area ===== -->
+        <div style="background-color: white" class="slds-border_left slds-border_right slds-m-bottom_medium">
+            <ul class="slds-listbox slds-listbox_vertical" role="listbox">
+                <template for:each={sObjectResults} for:item="result">
+                    <li key={result.id}
+                        data-id={result.id}
+                        role="presentation" class="slds-listbox__item c3llc-search-item">
+                        <div class={result.cssClass}>
+                            <div aria-selected={result.selected}
+                             data-id={result.id}
+                             onkeydown={handleRecordKeyDown}
+                             onclick={handleRecordClicked}
+                             class="slds-media slds-listbox__option accel-listbox__option_entity
+                                    slds-listbox__option_has-meta slds-m-left_xx-small" role="option" tabindex="0">
+                            <div class="slds-icon_container  slds-align_absolute-center">
+                                    <span class="slds-media__figure slds-listbox__option-icon">
+                                        <template if:true={result.selected}>
+                                            <lightning-icon icon-name="utility:check" size="small"></lightning-icon>
+                                        </template>
+                                        <template if:false={result.selected}>
+                                            <lightning-icon icon-name={optionIconName} size="small"></lightning-icon>
+                                        </template>
+                                    </span>
+                            </div>
+                            <span class="slds-media__body c3llc-record-data">
+                                    <span class="slds-listbox__option-text slds-listbox__option-text_entity accel-listbox-entry">
+                                        {result.primaryDisplayValue}
+                                    </span>
+                                    <span if:true={displaySecondaryField}
+                                          class="slds-listbox__option-meta slds-listbox__option-meta_entity">
+                                        {result.secondaryDisplayValue}
+                                    </span>
+                                </span>
+                        </div>
+                        </div>
+                    </li>
+                </template>
+            </ul>
+        </div>
+    </template>
+
+    <!--- ===== Read only lookup ===== -->
+    <template if:false={showSearchInput}>
+        <div class="slds-form-element_stacked">
+            <lightning-input
+                type="search"
+                data-id={customId}
+                placeholder={readOnlyPlaceHolder}
+                field-level-help={fieldLevelHelp}
+                label={searchLabel}
+                value={term}
+                tabindex="-1"
+                required={valueRequired}
+                oncommit={handleReadOnlyClear}
+                onclick={handleReadOnlyClick}>
+            </lightning-input>
+        </div>
+    </template>
+
+</template>

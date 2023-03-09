@@ -1,0 +1,60 @@
+<!-- Pa Advisory Pdf Export -->
+<template>
+    <!--- ===== Loading stencil ===== -->
+    <!--- ===== Progress Bar ===== -->
+    <div if:true={showProgressBar}
+         class="progress-center slds-p-bottom_small slds-p-horizontal_small">
+        <template if:true={_isRetrievingPdfData}>
+            <div>
+                {_progressBarLabel}
+            </div>
+        </template>
+        <c-ui-indeterminate-progress-bar></c-ui-indeterminate-progress-bar>
+    </div>
+    <template if:true={showStencil}>
+        <c-ui-custom-stencil
+                iterations="12"
+                child-class="slds-var-m-around-small"
+                type="list" columns="3">
+        </c-ui-custom-stencil>
+    </template>
+
+    <template if:true={showPdfForm}>
+        <template if:true={pdfData}>
+            <div class="slds-m-bottom_small slds-p-around_x-small" style="border:1px dotted red">
+                Click Generate Pdf to export for {numPdfRows} advisory records.
+            </div>
+        </template>
+
+       <div class="slds-grid slds-wrap slds-gutters_direct-small slds-p-horizontal_small">
+           <div class="slds-col slds-large-size_1-of-2">
+               <c-ui-button
+                       onbuttonclick={handleButtonClick}
+                       button-disabled={disableSubmitButton}
+                       button-name="submitCancelButton"
+                       button-label="Cancel"
+                       button-label-style="font-size:1.15em"
+                       button-title="Click to Cancel!"
+                       button-style="padding:.15em"
+                       button-classes="slds-button slds-button_neutral accel-admin-button slds-button_stretch"
+                       button-icon-name="utility:stop"
+                       button-icon-size="x-small">
+               </c-ui-button>
+           </div>    
+           <div class="slds-col slds-large-size_1-of-2">
+               <c-ui-button
+                       onbuttonclick={handleButtonClick}
+                       button-disabled={disableSubmitButton}
+                       button-name="submitPdfButton"
+                       button-label="Generate Pdf"
+                       button-label-style="font-size:1.15em"
+                       button-title="Click to Generate Pdf!"
+                       button-style="padding:.15em"
+                       button-classes="slds-button slds-button_brand accel-admin-button slds-button_stretch"
+                       button-icon-name="utility:start"
+                       button-icon-size="x-small">
+               </c-ui-button>
+           </div>
+       </div>
+    </template>
+</template>

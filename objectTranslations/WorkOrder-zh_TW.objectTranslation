@@ -1,0 +1,1057 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fieldSets>
+        <label><!-- Crew Managment Lightbox --></label>
+        <name>FSL__CrewManagment_Lightbox</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Deprecated --></label>
+        <name>FSL__Emergency_Current_WorkORder_Fields</name>
+    </fieldSets>
+    <fieldSets>
+        <label><!-- Gantt Lightbox --></label>
+        <name>FSL__Gantt_Lightbox</name>
+    </fieldSets>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Accel_Solution__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Additional Parts Needed --></label>
+        <name>Additional_Parts_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Appointment Needed --></label>
+        <name>Agent_Appointment_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Appointment Scheduled --></label>
+        <name>Agent_Appointment_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Appointment Start --></label>
+        <name>Agent_Appointment_Start__c</name>
+    </fields>
+    <fields>
+        <label><!-- Agent Assigned --></label>
+        <name>Agent_Assigned__c</name>
+        <picklistValues>
+            <masterLabel>Agent Alan Walker</masterLabel>
+            <translation><!-- Agent Alan Walker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Antony Burgos</masterLabel>
+            <translation><!-- Agent Antony Burgos --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Bernardo Guillen</masterLabel>
+            <translation><!-- Agent Bernardo Guillen --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Bo Kim</masterLabel>
+            <translation><!-- Agent Bo Kim --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Brian Obremski</masterLabel>
+            <translation><!-- Agent Brian Obremski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Byron Love</masterLabel>
+            <translation><!-- Agent Byron Love --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Carla Clark</masterLabel>
+            <translation><!-- Agent Carla Clark --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Chris Rogers</masterLabel>
+            <translation><!-- Agent Chris Rogers --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Craig Demaret</masterLabel>
+            <translation><!-- Agent Craig Demaret --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Darrin Devine</masterLabel>
+            <translation><!-- Agent Darrin Devine --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Dave McWilliams</masterLabel>
+            <translation><!-- Agent Dave McWilliams --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Dave Nelson</masterLabel>
+            <translation><!-- Agent Dave Nelson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent David Lanier</masterLabel>
+            <translation><!-- Agent David Lanier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent David Zappa</masterLabel>
+            <translation><!-- Agent David Zappa --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Dirk Butler</masterLabel>
+            <translation><!-- Agent Dirk Butler --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Doug Neverdowski</masterLabel>
+            <translation><!-- Agent Doug Neverdowski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Emmett Scott</masterLabel>
+            <translation><!-- Agent Emmett Scott --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Eric Lundt</masterLabel>
+            <translation><!-- Agent Eric Lundt --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Fidel Aguilar</masterLabel>
+            <translation><!-- Agent Fidel Aguilar --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Fred Mareno</masterLabel>
+            <translation><!-- Agent Fred Mareno --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Hector Robert</masterLabel>
+            <translation><!-- Agent Hector Robert --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Heidi Kuhls</masterLabel>
+            <translation><!-- Agent Heidi Kuhls --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Jason Ramey</masterLabel>
+            <translation><!-- Agent Jason Ramey --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Jill Nogajewski</masterLabel>
+            <translation><!-- Agent Jill Nogajewski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Jim Comingore</masterLabel>
+            <translation><!-- Agent Jim Comingore --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent John Chase</masterLabel>
+            <translation><!-- Agent John Chase --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Mark Calvin</masterLabel>
+            <translation><!-- Agent Mark Calvin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Marty Dixon</masterLabel>
+            <translation><!-- Agent Marty Dixon --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Matt Muenchow</masterLabel>
+            <translation><!-- Agent Matt Muenchow --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Mike Cockerill</masterLabel>
+            <translation><!-- Agent Mike Cockerill --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Mike Lort</masterLabel>
+            <translation><!-- Agent Mike Lort --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Mike Miroux</masterLabel>
+            <translation><!-- Agent Mike Miroux --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Mike Usher</masterLabel>
+            <translation><!-- Agent Mike Usher --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Norbert Wascinski</masterLabel>
+            <translation><!-- Agent Norbert Wascinski --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Patrick Steele</masterLabel>
+            <translation><!-- Agent Patrick Steele --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Phillip Richardson</masterLabel>
+            <translation><!-- Agent Phillip Richardson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Ray Palletier</masterLabel>
+            <translation><!-- Agent Ray Palletier --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Reynolds</masterLabel>
+            <translation><!-- Agent Reynolds --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Ron Jones</masterLabel>
+            <translation><!-- Agent Ron Jones --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Ruben Santiago</masterLabel>
+            <translation><!-- Agent Ruben Santiago --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Sean Wolters</masterLabel>
+            <translation><!-- Agent Sean Wolters --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Steve Jurevis</masterLabel>
+            <translation><!-- Agent Steve Jurevis --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Steve Morris</masterLabel>
+            <translation><!-- Agent Steve Morris --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Steve Nelson</masterLabel>
+            <translation><!-- Agent Steve Nelson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Tanessa Stinbaker</masterLabel>
+            <translation><!-- Agent Tanessa Stinbaker --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Thomas Griffin</masterLabel>
+            <translation><!-- Agent Thomas Griffin --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Thomas Hobgood</masterLabel>
+            <translation><!-- Agent Thomas Hobgood --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Thomas Plotner</masterLabel>
+            <translation><!-- Agent Thomas Plotner --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Thomilson</masterLabel>
+            <translation><!-- Agent Thomilson --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent Toby Schneider</masterLabel>
+            <translation><!-- Agent Toby Schneider --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Agent William Webster</masterLabel>
+            <translation><!-- Agent William Webster --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TBD</masterLabel>
+            <translation><!-- TBD --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- All Accel Equipment Working? --></label>
+        <name>All_Accel_Equipment_Working__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- All Buttons working? --></label>
+        <name>All_Buttons_working__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Amusement Project --></label>
+        <name>Amusement_Project__c</name>
+        <picklistValues>
+            <masterLabel>Amusement PM</masterLabel>
+            <translation><!-- Amusement PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Choice</masterLabel>
+            <translation><!-- Select Choice --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <help><!-- Picklist used to display if there are appointments in Queue for a Technician in the description of the Service Appointment / Work Order on the SFS Movile App. --></help>
+        <label><!-- Appointments in Queue --></label>
+        <name>Appointments_in_Queue__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Arrival(Date/Time) --></label>
+        <name>Arrival_Date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Arrival --></label>
+        <name>Arrival__c</name>
+    </fields>
+    <fields>
+        <help><!-- Number of recent Cases populated from the Asset related to the Case. --></help>
+        <label><!-- Asset Recent Cases --></label>
+        <name>Asset_Recent_Cases__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assigned Resource ID --></label>
+        <name>Assigned_Resource_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Assistance Type --></label>
+        <name>Assistance_Type__c</name>
+        <picklistValues>
+            <masterLabel>On site assistance</masterLabel>
+            <translation><!-- On site assistance --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Parts running</masterLabel>
+            <translation><!-- Parts running --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Training</masterLabel>
+            <translation><!-- Training --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- BV Lights --></label>
+        <name>BV_Lights__c</name>
+        <picklistValues>
+            <masterLabel>Off</masterLabel>
+            <translation><!-- Off --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>On</masterLabel>
+            <translation><!-- On --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Call Sign Placed? --></label>
+        <name>Call_Sign_Placed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller Information --></label>
+        <name>Caller_Information__c</name>
+    </fields>
+    <fields>
+        <label><!-- Caller Phone --></label>
+        <name>Caller_Phone__c</name>
+    </fields>
+    <fields>
+        <label><!-- Cancel Time --></label>
+        <name>Cancel_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Create Date/Time --></label>
+        <name>Case_Create_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case: Created Date --></label>
+        <name>Case_Created_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Status --></label>
+        <name>Case_Status__c</name>
+    </fields>
+    <fields>
+        <label><!-- Case Type --></label>
+        <name>Case_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Frequency --></label>
+        <name>Collection_Frequency__c</name>
+    </fields>
+    <fields>
+        <label><!-- Collection Renewal --></label>
+        <name>Collection_Renewal__c</name>
+    </fields>
+    <fields>
+        <label><!-- Common Name --></label>
+        <name>Common_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Appointment Approved --></label>
+        <name>Compliance_Appointment_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- Compliance Date Submitted --></label>
+        <name>Compliance_Date_Submitted__c</name>
+    </fields>
+    <fields>
+        <label><!-- Concierge Account --></label>
+        <name>Concierge_Account__c</name>
+    </fields>
+    <fields>
+        <label><!-- Confirmed PM Visit --></label>
+        <name>Confirmed_PM_Visit__c</name>
+    </fields>
+    <fields>
+        <label><!-- Created By Email --></label>
+        <name>Created_By_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Current Lifetime Meter --></label>
+        <name>Current_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Days Between Collection --></label>
+        <name>Days_Between_Collection__c</name>
+    </fields>
+    <fields>
+        <label><!-- Departure --></label>
+        <name>Departure__c</name>
+    </fields>
+    <fields>
+        <label><!-- Bill test the VGT? --></label>
+        <name>Did_you_bill_test_the_VGT__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- EnRoute (Date/Time) --></label>
+        <name>EnRoute_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- EnRoute --></label>
+        <name>EnRoute__c</name>
+    </fields>
+    <fields>
+        <label><!-- Equipment/Assets --></label>
+        <name>Equipment_Assets__c</name>
+        <picklistValues>
+            <masterLabel>Arcade game</masterLabel>
+            <translation><!-- Arcade game --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Changer</masterLabel>
+            <translation><!-- Changer --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cranes</masterLabel>
+            <translation><!-- Cranes --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Dartboards</masterLabel>
+            <translation><!-- Dartboards --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Driver</masterLabel>
+            <translation><!-- Driver --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Golden Tee</masterLabel>
+            <translation><!-- Golden Tee --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Juke</masterLabel>
+            <translation><!-- Juke --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pinballs</masterLabel>
+            <translation><!-- Pinballs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pool Table</masterLabel>
+            <translation><!-- Pool Table --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Shuffleboard</masterLabel>
+            <translation><!-- Shuffleboard --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Tabletop</masterLabel>
+            <translation><!-- Tabletop --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Expected Amount --></label>
+        <name>Expected_Amount__c</name>
+    </fields>
+    <fields>
+        <label><!-- External Id --></label>
+        <name>External_Id__c</name>
+    </fields>
+    <fields>
+        <label><!-- Is Fill In Candidate --></label>
+        <name>FSL__IsFillInCandidate__c</name>
+    </fields>
+    <fields>
+        <label><!-- Prevent Geocoding For Chatter Actions --></label>
+        <name>FSL__Prevent_Geocoding_For_Chatter_Actions__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Priority --></label>
+        <name>FSL__Scheduling_Priority__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visiting Hours --></label>
+        <name>FSL__VisitingHours__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Follow Up Needed? --></label>
+        <name>Follow_Up_Needed__c</name>
+    </fields>
+    <fields>
+        <label><!-- IGB # --></label>
+        <name>IGB__c</name>
+    </fields>
+    <fields>
+        <label><!-- Inactive Work Type --></label>
+        <name>Inactive_Work_Type__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installer Task --></label>
+        <name>Installer_Task__c</name>
+        <picklistValues>
+            <masterLabel>New Install</masterLabel>
+            <translation><!-- New Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Relocate</masterLabel>
+            <translation><!-- Relocate --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Removal</masterLabel>
+            <translation><!-- Removal --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Inventory Site --></label>
+        <name>Inventory_Site__c</name>
+        <picklistValues>
+            <masterLabel>Vehicle</masterLabel>
+            <translation><!-- Vehicle --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Warehouse</masterLabel>
+            <translation><!-- Warehouse --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Touch screen calibrated? --></label>
+        <name>Is_the_touch_screen_calibrated__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Issues to Follow Up On --></label>
+        <name>Issues_to_Follow_Up_On__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Contact --></label>
+        <name>Location_Contact__c</name>
+    </fields>
+    <fields>
+        <label><!-- Location Priority --></label>
+        <name>Location_Priority__c</name>
+        <picklistValues>
+            <masterLabel>HIGH PRIORITY</masterLabel>
+            <translation><!-- HIGH PRIORITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>LOW PRIORITY</masterLabel>
+            <translation><!-- LOW PRIORITY --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>MEDIUM PRIORITY</masterLabel>
+            <translation><!-- MEDIUM PRIORITY --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Maintenance Start Time --></label>
+        <name>Maintenance_Start_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer (Software) --></label>
+        <name>Manufacturer_Software__c</name>
+        <picklistValues>
+            <masterLabel>Aristocrat</masterLabel>
+            <translation><!-- Aristocrat --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Bally</masterLabel>
+            <translation><!-- Bally --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>IGT/Spielo</masterLabel>
+            <translation><!-- IGT/Spielo --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Novomatic</masterLabel>
+            <translation><!-- Novomatic --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>SGI</masterLabel>
+            <translation><!-- SGI --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>WMS</masterLabel>
+            <translation><!-- WMS --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Manufacturer --></label>
+        <name>Manufacturer__c</name>
+    </fields>
+    <fields>
+        <label><!-- Next Collection Start --></label>
+        <name>New_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Notes --></label>
+        <name>Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Period Meter --></label>
+        <name>Period_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Physical Count --></label>
+        <name>Physical_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Previous Lifetime Meter --></label>
+        <name>Previous_Lifetime_Meter__c</name>
+    </fields>
+    <fields>
+        <label><!-- Priority --></label>
+        <name>Priority_lookup__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Number --></label>
+        <name>Project_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Project Type --></label>
+        <name>Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add &amp; Reconfigure</masterLabel>
+            <translation><!-- Add &amp; Reconfigure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Add &amp; Swap</masterLabel>
+            <translation><!-- Add &amp; Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Go Live</masterLabel>
+            <translation><!-- Go Live --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Reconfigure</masterLabel>
+            <translation><!-- Reconfigure --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap</masterLabel>
+            <translation><!-- Swap --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Swap &amp; Reconfigure</masterLabel>
+            <translation><!-- Swap &amp; Reconfigure --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Regional Manager Appointment Approved --></label>
+        <name>Regional_Manager_Approved__c</name>
+    </fields>
+    <fields>
+        <label><!-- SAS --></label>
+        <name>SAS__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGI Repair Work Order Number --></label>
+        <name>SGI_Repair_Work_Order_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- SGI Work Order Received Date --></label>
+        <name>SGI_Work_Order_Received_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Scheduling Policy to Use --></label>
+        <name>Scheduling_Policy_to_Use__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Service Zone --></label>
+        <name>Service_Region__c</name>
+    </fields>
+    <fields>
+        <label><!-- Site Grade --></label>
+        <name>Site_Grade__c</name>
+        <picklistValues>
+            <masterLabel>A</masterLabel>
+            <translation><!-- A --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>B</masterLabel>
+            <translation><!-- B --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>C</masterLabel>
+            <translation><!-- C --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>D</masterLabel>
+            <translation><!-- D --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>F</masterLabel>
+            <translation><!-- F --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>N/A( Location Closed)</masterLabel>
+            <translation><!-- N/A( Location Closed) --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Site Notes --></label>
+        <name>Site_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Needed For Appointment --></label>
+        <name>Software_Needed_For_Appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Received --></label>
+        <name>Software_Received__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Shipped Date --></label>
+        <name>Software_Shipped_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Software Type Needed For Appointment --></label>
+        <name>Software_Type_Needed_For_Appointment__c</name>
+        <relationshipLabel><!-- Work Orders --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Solution Notes --></label>
+        <name>Solution_Notes__c</name>
+    </fields>
+    <fields>
+        <label><!-- Solution --></label>
+        <name>Solution__c</name>
+    </fields>
+    <fields>
+        <label><!-- Special Project Type --></label>
+        <name>Special_Project_Type__c</name>
+        <picklistValues>
+            <masterLabel>Amusement PM</masterLabel>
+            <translation><!-- Amusement PM --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>CPU Blowout</masterLabel>
+            <translation><!-- CPU Blowout --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Cradle Point Installs</masterLabel>
+            <translation><!-- Cradle Point Installs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Other</masterLabel>
+            <translation><!-- Other --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Repairs</masterLabel>
+            <translation><!-- Repairs --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Select Choice</masterLabel>
+            <translation><!-- Select Choice --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Signage Checks</masterLabel>
+            <translation><!-- Signage Checks --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>TC Install</masterLabel>
+            <translation><!-- TC Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>USB Install</masterLabel>
+            <translation><!-- USB Install --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VSR Lock Swap</masterLabel>
+            <translation><!-- VSR Lock Swap --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Special Project --></label>
+        <name>Special_Project__c</name>
+    </fields>
+    <fields>
+        <label><!-- Spoke to Mgr/Emp/Owner ? --></label>
+        <name>Spoke_to_Mgr_Owner_employee__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Status = In Progress --></label>
+        <name>Stage_Equals_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Stage Scheduled to Completed --></label>
+        <name>Stage_Scheduled_to_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status Change --></label>
+        <name>Status_Change__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status = Completed --></label>
+        <name>Status_Completed__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status = New --></label>
+        <name>Status_New__c</name>
+    </fields>
+    <fields>
+        <label><!-- Status New to Scheduled --></label>
+        <name>Status_New_to_Scheduled__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission/End Time --></label>
+        <name>Submission_Date_time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Submission Time --></label>
+        <name>Submission_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Swap Type --></label>
+        <name>Swap_Type__c</name>
+        <picklistValues>
+            <masterLabel>Add</masterLabel>
+            <translation><!-- Add --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Remove</masterLabel>
+            <translation><!-- Remove --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Total PM Time(Hours:Minutes) --></label>
+        <name>Total_Hours_of_PM_Appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time Spent --></label>
+        <name>Total_Time_Spent__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Time --></label>
+        <name>Total_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Type --></label>
+        <name>Type__c</name>
+        <picklistValues>
+            <masterLabel>Redemption Only</masterLabel>
+            <translation><!-- Redemption Only --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT &amp; Redemption</masterLabel>
+            <translation><!-- VGT &amp; Redemption --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>VGT Only</masterLabel>
+            <translation><!-- VGT Only --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Type of Software Needed For Appointment --></label>
+        <name>Type_of_Software_Needed_For_Appointment__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Count --></label>
+        <name>Work_Order_Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Created Date/Time --></label>
+        <name>Work_Order_Created_Date_Time__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Order Duration (Days and Hours) --></label>
+        <name>Work_Order_Duration_Days_and_Hours__c</name>
+    </fields>
+    <fields>
+        <label><!-- Work Type Name --></label>
+        <name>Work_Type_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Visit documented in the RT Meal book? --></label>
+        <name>wellnessvisit_documented__c</name>
+        <picklistValues>
+            <masterLabel>No</masterLabel>
+            <translation><!-- No --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Yes</masterLabel>
+            <translation><!-- Yes --></translation>
+        </picklistValues>
+    </fields>
+    <recordTypes>
+        <label><!-- Colleague Assistance --></label>
+        <name>Colleague_Assistance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Collections --></label>
+        <name>Collections</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Georgia Route --></label>
+        <name>Georgia_Route</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Go-Live --></label>
+        <name>Go_Live</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Installer --></label>
+        <name>Installer</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Inventory Check --></label>
+        <name>Inventory_Check</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Maintenance --></label>
+        <name>Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Preventative Maintenance --></label>
+        <name>Preventative_Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Project --></label>
+        <name>Project</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Reconfiguration --></label>
+        <name>Reconfiguration</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Service Call --></label>
+        <name>Service_Appointment</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Software Updates --></label>
+        <name>Software_Updates</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Software Upgrade --></label>
+        <name>Software_Upgrade</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Swap --></label>
+        <name>Swap</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Training --></label>
+        <name>Training</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Vehicle Maintenance --></label>
+        <name>Vehicle_Maintenance</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Warehouse --></label>
+        <name>Warehouse</name>
+    </recordTypes>
+    <recordTypes>
+        <label><!-- Wellness Visit --></label>
+        <name>Wellness_Visit</name>
+    </recordTypes>
+    <validationRules>
+        <errorMessage><!-- You Cannot Change the Value of the Arrival Field Once It Has Been Set. --></errorMessage>
+        <name>Arrival_Value_Cannot_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Arrival and EnRoute must be selected before selecting submission end/time --></errorMessage>
+        <name>Arrival_cannot_be_null</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Have Null EnRoute Time when Arrival Time Has Been Entered --></errorMessage>
+        <name>Cannot_Select_Arrival_Enroute</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Cannot Have Null EnRoute Time when Arrival Time Has Been Entered --></errorMessage>
+        <name>Cannot_Select_Arrival_b4_Enroute</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select an EnRoute time before  entering Arrival time. --></errorMessage>
+        <name>EnRoute_AND_ARRIVAL_Must_Be_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- EnRoute must be selected before Editing the record. --></errorMessage>
+        <name>EnRoute_Before_Record_Creation</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Select an EnRoute time before  entering Arrival time. --></errorMessage>
+        <name>EnRoute_Must_Be_Selected</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Cannot Change the Value of the Enroute Field Once It Has Been Set. --></errorMessage>
+        <name>EnRoute_Value_Cannot_Change</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- Please Notate What Issues To Follow Up On --></errorMessage>
+        <name>Must_Enter_Follow_Up_Reason</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- A User Can Only Change Type of Software Needed Once --></errorMessage>
+        <name>Only_Change_Type_of_Software_Needed_Once</name>
+    </validationRules>
+    <validationRules>
+        <errorMessage><!-- You Cannot Change the Value of the Submitted Field Once It Has Been Set. --></errorMessage>
+        <name>Submission_Value_Cannot_Change</name>
+    </validationRules>
+</CustomObjectTranslation>

@@ -1,0 +1,104 @@
+/* styles for desktop */
+@media only screen and (min-width:897px) {
+    .THIS.accel-desktop-menu {
+        display: block;
+    }
+
+    .THIS.accel-mobile-menu {
+        display: none;
+    }
+
+    .THIS {
+        text-align: center;
+        color: #000000;
+        margin-top: .125rem;
+    }
+
+    .THIS .profileIcon::selection, .THIS .profileName::selection {
+        color: #D8EDFF;
+    }
+
+    .THIS a:hover, .THIS .profileIcon a:focus, .THIS .profileIcon a:active, .THIS .profileName a:focus, .THIS .profileName a:active {
+        color: #2574a9;
+        outline: none;
+    }
+
+    .THIS a {
+        color: #FFFFFF;
+        outline: none;
+    }
+
+    .THIS .profileIcon {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        vertical-align: middle;
+        float: none;
+        outline: none;
+    }
+
+    .THIS .profileName {
+        display: inline-block;
+        padding: 0 2px 0 7px;
+        font-weight: 600;
+        font-size: .8125em;
+        text-transform: uppercase;
+        vertical-align: middle;
+        max-width: 50%;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-family: Montserrat;
+        line-height: 1.5;
+        outline: none;
+
+    }
+
+    .THIS .triggerDownArrow {
+        border-top: 5px solid;
+        border-left: 5px solid transparent;
+        border-right: 5px solid transparent;
+        margin-left: 4px;
+        margin-bottom: 3px;
+        vertical-align: middle;
+        display: inline-block;
+        font-size: .5em;
+        outline: none;
+    }
+
+    .THIS .actionMenu {
+        min-width: 200px;
+        max-width: 400px;
+        border: none;
+        border-radius: 0;
+        right: 0;
+        text-align: left;
+    }
+
+    .THIS .actionMenu ul {
+        white-space: nowrap;
+    }
+
+    .THIS .actionMenu ul li a {
+        padding: 1rem 1.5rem;
+    }
+
+    .THIS .actionMenu ul li:hover {
+        background-color: #D8EDFF;
+        text-decoration: none;
+        transition-delay: 0s;
+        transition: none;
+    }
+
+    .THIS .actionMenu ul li a:hover {
+        transition: none;
+        font-weight: bold;
+    }
+
+    .THIS .actionMenu ul li a:active {
+        background-color: #c2d5e5;
+    }
+    .THIS .userNameContainer {
+        max-width: 80%;
+    }
+}

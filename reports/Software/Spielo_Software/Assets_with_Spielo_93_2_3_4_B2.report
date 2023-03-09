@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Report xmlns="http://soap.sforce.com/2006/04/metadata">
+    <columns>
+        <field>ACCOUNT.NAME</field>
+    </columns>
+    <columns>
+        <field>Asset.GP_Manufacturer__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Model__c</field>
+    </columns>
+    <columns>
+        <field>SERIAL_NUMBER</field>
+    </columns>
+    <columns>
+        <field>NAME</field>
+    </columns>
+    <columns>
+        <field>Asset.Software__c</field>
+    </columns>
+    <columns>
+        <field>Asset.VGT_Live_Date__c</field>
+    </columns>
+    <columns>
+        <field>Asset.Software_Upgraded_Date__c</field>
+    </columns>
+    <columns>
+        <field>STATUS</field>
+    </columns>
+    <description>Cabinets with latest Spielo software - 30 titles (4 new)</description>
+    <filter>
+        <criteriaItems>
+            <column>Asset.Software__c</column>
+            <columnToColumn>false</columnToColumn>
+            <isUnlocked>true</isUnlocked>
+            <operator>equals</operator>
+            <value>IGT_SGF_9323_B2_G2S_LOW_25,IGT_SGF_9323_B2_G2S_HIGH_25</value>
+        </criteriaItems>
+    </filter>
+    <format>Tabular</format>
+    <name>Assets with Spielo 93.2.3.4.B2</name>
+    <params>
+        <name>co</name>
+        <value>1</value>
+    </params>
+    <reportType>AssetWithProduct</reportType>
+    <showDetails>true</showDetails>
+    <showGrandTotal>true</showGrandTotal>
+    <showSubTotals>true</showSubTotals>
+    <sortColumn>ACCOUNT.NAME</sortColumn>
+    <sortOrder>Asc</sortOrder>
+    <timeFrameFilter>
+        <dateColumn>INSTALL_DATE</dateColumn>
+        <interval>INTERVAL_CUSTOM</interval>
+    </timeFrameFilter>
+</Report>

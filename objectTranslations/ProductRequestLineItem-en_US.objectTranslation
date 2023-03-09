@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObjectTranslation xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fields>
+        <caseValues>
+            <plural>false</plural>
+            <value>Shipment Priority</value>
+        </caseValues>
+        <name>productrequestlineitem_shipmenttype</name>
+        <startsWith>Consonant</startsWith>
+    </fields>
+    <fields>
+        <label><!-- Account (Marketing) --></label>
+        <name>Account_Marketing__c</name>
+        <relationshipLabel><!-- Product Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Candidate Name --></label>
+        <name>Candidate_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Candidate Start Date --></label>
+        <name>Candidate_Start_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Comments --></label>
+        <name>Comments__c</name>
+    </fields>
+    <fields>
+        <label><!-- Completed Date --></label>
+        <name>Completed_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Count --></label>
+        <name>Count__c</name>
+    </fields>
+    <fields>
+        <label><!-- Filled In Tinley --></label>
+        <name>Filled_In_Tinley__c</name>
+    </fields>
+    <fields>
+        <label><!-- Installer Name --></label>
+        <name>Installer_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Item Age --></label>
+        <name>Item_Age__c</name>
+    </fields>
+    <fields>
+        <label><!-- Job Requisition Essentials --></label>
+        <name>Job_Requisition_Essentials__c</name>
+        <relationshipLabel><!-- Product Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Job Title/Department --></label>
+        <name>Job_Title_Department__c</name>
+    </fields>
+    <fields>
+        <label><!-- Jobs --></label>
+        <name>Jobs__c</name>
+        <relationshipLabel><!-- Product Request Line Items --></relationshipLabel>
+    </fields>
+    <fields>
+        <label><!-- Location Name --></label>
+        <name>Location_Name__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Complete Date --></label>
+        <name>Marketing_Complete_Date__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request ID --></label>
+        <name>Marketing_Request_ID__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Request Location --></label>
+        <name>Marketing_Request_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Marketing Status --></label>
+        <name>Marketing_Status__c</name>
+        <picklistValues>
+            <masterLabel>Backordered</masterLabel>
+            <translation><!-- Backordered --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Complete</masterLabel>
+            <translation><!-- Complete --></translation>
+        </picklistValues>
+        <picklistValues>
+            <masterLabel>Pending</masterLabel>
+            <translation><!-- Pending --></translation>
+        </picklistValues>
+    </fields>
+    <fields>
+        <label><!-- Name of Person Requesting --></label>
+        <name>Name_of_Person_Requesting__c</name>
+    </fields>
+    <fields>
+        <label><!-- Pickup Location --></label>
+        <name>Pickup_Location__c</name>
+    </fields>
+    <fields>
+        <label><!-- Product Description --></label>
+        <name>Product_Description__c</name>
+    </fields>
+    <fields>
+        <label><!-- Requestor Email --></label>
+        <name>Requestor_Email__c</name>
+    </fields>
+    <fields>
+        <label><!-- Serial Number --></label>
+        <name>Serial_Number__c</name>
+    </fields>
+    <fields>
+        <label><!-- Total Request Filled --></label>
+        <name>Total_Request_Filled__c</name>
+    </fields>
+</CustomObjectTranslation>

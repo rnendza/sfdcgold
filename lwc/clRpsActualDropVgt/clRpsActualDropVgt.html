@@ -1,0 +1,175 @@
+<!-- Cl Rps Actual Drop Vgt -->
+<template>
+
+    <div lwc:dom="manual" class="form-theme-overrides-class"></div>
+    <div lwc:dom="manual" class="fake-sfdc-overrides-class"></div>
+
+    <div style="min-height: 400px;" class="accel-test-borders">
+        <div class="slds-p-around_xxx-small">
+            <div class="slds-m-top_medium">
+                <div if:true={showStencil}>
+                    <c-ui-custom-stencil
+                            iterations="4"
+                            type="feed" columns="1">
+                    </c-ui-custom-stencil>
+                </div>
+                <ul if:true={showMeterReadings}
+                    class="slds-has-dividers_bottom-space slds-p-top_none accel-accordion-wrapper">
+
+                    <template for:each={meterReadings} for:item="mr">
+                        <li name="listItemContainer" style={mr.tileStyle}
+                            class=" slds-item lgc-bg slds-p-around_small slds-bottom-small slds-m-bottom_large
+                                                                    accel-glassmorphism_tile "
+                            key={mr.meterId}>
+                            <div if:false={mr.isDeleting}>
+                                <div class="slds-grid accel-meter-card-header accel-accordion-trigger accel-accordion-active
+                                                                slds-wrap slds-grid_vertical-stretch accel-test-borders slds-color__border_gray-4 slds-m-bottom_large"
+                                     data-sectiontitleid={mr.meterId}
+                                     onclick={handleSectionClick}>
+                                    <div class="accel-test-borders slds-col slds-large-size_1-of-12 slds-medium-size_3-of-12
+                                                                            slds-small-size_3-of-12 slds-p-bottom_small">
+                                        <lightning-icon icon-name="utility:screen" alternative-text="Machine"
+                                                        class="slds-p-right_xx-small"
+                                                        title="Machine" size="xx-small"></lightning-icon>
+                                        <span><b>{mr.machineName}</b></span>
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_2-of-12 slds-medium-size_4-of-12
+                                                                            slds-small-size_4-of-12 slds-p-bottom_small">
+                                        {mr.machineSerialNumber}
+                                    </div>
+                                    <div class="accel-test-borders slds-col slds-large-size_9-of-12 slds-medium-size_5-of-12
+                                                                            slds-small-size_5-of-12">
+                                        {mr.machineModel}
+                                        <div class="slds-float_right" data-assetid={mr.machineAssetId}>
+                                            <div class="summary-chevron-down section-arrow"
+                                                 title={_chevronTitle}
+                                                 data-sectionarrowid={mr.meterId}>
+                                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                                                     viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                                                     stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                                                     class="feather feather-chevron-down">
+                                                    <polyline points="6 9 12 15 18 9"></polyline>
+                                                </svg>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-sectioncontentid={mr.meterId}
+                                     class="accel-accordion-content accel-accordion-active slds-show"
+                                     style="border:0px dotted purple">
+                                    <div class="slds-grid slds-wrap slds-gutters_large slds-grid_vertical-stretch accel-test-borders">
+                                        <div class="accel-test-borders slds-col slds-large-size_6-of-12 slds-medium-size_6-of-12
+                                                                            slds-small-size_1-of-1">
+                                            <lightning-input
+                                                    type="number"
+                                                    data-assetid={mr.machineAssetId}
+                                                    data-meterid={mr.meterId}
+                                                    class="accel-input_override"
+                                                    onmouseout={handleActualDropBlur}
+                                                    onblur={handleCashInBlur}
+                                                    label={mr.actualDropFieldLabel}
+                                                    onchange={handleActualDropChange}
+                                                    onfocusout={handleActualDropFocusOut}
+                                                    placeholder={mr.placeHolder}
+                                                    value={mr.actualDrop}>
+                                            </lightning-input>
+                                        </div>
+                                        <div class="accel-test-borders slds-col slds-large-size_6-of-12
+                                                                            slds-medium-size_1-of-1  slds-small-size_12-of-12 slds-p-bottom_xxx-small">
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div if:false={showMeterReadings}>
+
+
+                            </div>
+
+
+                            <div if:true={mr.isDeleting}>
+                                <c-ui-custom-stencil
+                                        iterations="1"
+                                        type="feed" columns="1">
+                                </c-ui-custom-stencil>
+                            </div>
+                        </li>
+                    </template>
+                </ul>
+            </div>
+            <div if:true={showMeterReadings}
+                 style="border:0px dotted red" class="">
+                <div class="slds-grid slds-gutters_large">
+                    <div class="slds-col slds-size_1-of-2">
+                        <lightning-input
+                                type="number"
+                                class="accel-input_override"
+                                onmouseout={handleCashInMouseout}
+                                onblur={handleActualDropBlur}
+                                label="BV Drop Total"
+                                onchange={handleBvChange}
+                                placeholder="Enter the BV Drop Total"
+                                value={bvValue}>
+                        </lightning-input>
+                    </div>
+                    <div class="slds-col slds-size_1-of-2">
+
+                    </div>
+                </div>
+            </div>
+            
+            <div
+                    if:true={showMeterReadings}
+                    class="slds-m-top_small slds-p-top_small slds-p-bottom_xx-small">
+                <span class="slds-text-heading_medium " if:true={actualTotal}>
+                    <b>Drop Total:</b>&nbsp;<lightning-formatted-number value={actualTotal} format-style="currency"
+                                                                   currency-code="USD"></lightning-formatted-number>
+                </span>
+            </div>
+            <div
+                    if:true={showMeterReadings}
+                    style="border:0px dotted red" class="slds-p-bottom_large accel-test-borders-wip">
+                <div class="slds-p-top_small">
+                    <c-cl-cash-can-totals
+                            ongrandtotalfieldchanged={handleGrandTotalFieldChanged}
+                            rps-id={rpsId}>
+                    </c-cl-cash-can-totals>
+                </div>
+                <div
+                        if:true={showMeterReadings}
+                        class="slds-p-bottom_large slds-p-top_small">
+                <span class="slds-text-heading_medium " if:true={actualTotal}>
+                    <b>Note Count Grand Total:</b>&nbsp;<lightning-formatted-number value={_allNoteCountGrandTotal} format-style="currency"
+                                                                        currency-code="USD"></lightning-formatted-number>
+                </span>
+                </div>
+                <div class="slds-grid slds-p-bottom_large">
+                    <div class="slds-col slds-size_1-of-1">
+                        <button
+                                name="submitForm"
+                                type="button"
+                                onclick={handleUpdateAll}
+                                data-id="submitButton"
+                                title="Save"
+                                disabled={disableSaveAllButton}
+                                style="padding:.30em"
+                                class="slds-button slds-button_brand slds-button_stretch ">
+                                                                        <span class="slds-p-right_xx-small">
+                                                                        <lightning-icon
+                                                                                icon-name="utility:save"
+                                                                                variant="inverse"
+                                                                                alternative-text=""
+                                                                                size="x-small"
+                                                                                title="">
+                                                                        </lightning-icon>
+                                                                        </span>
+                            <span style="font-size: 1.25em">Save Vgts</span>
+                        </button>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+</template>

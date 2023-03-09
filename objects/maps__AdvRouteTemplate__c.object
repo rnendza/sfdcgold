@@ -1,0 +1,1504 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomObject xmlns="http://soap.sforce.com/2006/04/metadata">
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Accept</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>CancelEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Clone</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Delete</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Edit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>List</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>New</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>SaveEdit</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>Tab</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Large</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <actionOverrides>
+        <actionName>View</actionName>
+        <formFactor>Small</formFactor>
+        <type>Default</type>
+    </actionOverrides>
+    <allowInChatterGroups>false</allowInChatterGroups>
+    <compactLayoutAssignment>SYSTEM</compactLayoutAssignment>
+    <deploymentStatus>Deployed</deploymentStatus>
+    <deprecated>false</deprecated>
+    <description>This object houses specific information related to how Advanced Routes are generated over a set number of days.</description>
+    <enableActivities>true</enableActivities>
+    <enableBulkApi>true</enableBulkApi>
+    <enableFeeds>false</enableFeeds>
+    <enableHistory>false</enableHistory>
+    <enableLicensing>false</enableLicensing>
+    <enableReports>true</enableReports>
+    <enableSearch>true</enableSearch>
+    <enableSharing>true</enableSharing>
+    <enableStreamingApi>true</enableStreamingApi>
+    <externalSharingModel>Private</externalSharingModel>
+    <fields>
+        <fullName>maps__Active__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Active</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__ActivityDateFieldOnCompletedVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the date field on the visit record used to determine date of activity</description>
+        <externalId>false</externalId>
+        <label>Activity Date Field on Completed Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__ActivityDateFieldOnFutureVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the date field on the future visit record used to determine date of activity</description>
+        <externalId>false</externalId>
+        <label>Activity Date Field on Future Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__ActivityEndDateFieldOnFutureVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the end date field on the future visit record used to determine date of activity</description>
+        <externalId>false</externalId>
+        <label>Activity End Date Field on Future Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__AdvRouteRoutableObject__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This will look up to the Advanced Route routable object configuration associated with the template</description>
+        <externalId>false</externalId>
+        <label>Maps Advanced Route Routable Object</label>
+        <referenceTo>maps__AdvRouteRoutableObject__c</referenceTo>
+        <relationshipLabel>Maps Advanced Route Templates</relationshipLabel>
+        <relationshipName>AdvRouteTemplates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__AdvRouteTemplate__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This is a lookup to the main Advanced Route template when routing multiple base objects on the same template</description>
+        <externalId>false</externalId>
+        <label>Maps Advanced Route Template</label>
+        <referenceTo>maps__AdvRouteTemplate__c</referenceTo>
+        <relationshipLabel>Maps Advanced Route Templates</relationshipLabel>
+        <relationshipName>AdvRouteTemplates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__BaseFilterFilters__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Base Filter Filters</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__BaseFilterIncludesAllRecords__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox is used to determine if the template has a base filter or if it should include all records</description>
+        <externalId>false</externalId>
+        <label>Base Filter Includes All Records</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__BaseFilterLogicOrder__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Base Filter Logic Order</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__BaseFilterWhereClause__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Base Filter Where Clause</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__BaseUrl__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will determine the orgs base url to be used in email templates</description>
+        <externalId>false</externalId>
+        <formula>LEFT($Api.Partner_Server_URL_370, FIND(&apos;/services&apos;, $Api.Partner_Server_URL_370))</formula>
+        <label>Base Url</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedTabsPicklist__c</fullName>
+        <deprecated>false</deprecated>
+        <description>These are the completed tabs for the template</description>
+        <externalId>false</externalId>
+        <label>Completed Tabs Picklist</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>PlanInformation</fullName>
+                    <default>false</default>
+                    <label>PlanInformation</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedTabs__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be an array of numbers.  Each number will correspond to a tab on the template builder.  If a number is missing, it is assumed that that tab has not been completed yet for this template;
+
+Using a text field instead of a multi select picklist, in case we add more tabs later on.  I don&apos;t believe new picklist values will get pushed in a managed package.</description>
+        <externalId>false</externalId>
+        <label>Completed Tabs</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedVisitFilters__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is a JSON object containing the visit filter information</description>
+        <externalId>false</externalId>
+        <label>Completed Visit Filters</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedVisitObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the object that describes a visit</description>
+        <externalId>false</externalId>
+        <label>Completed Visit Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedVisitOrderOfOperations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This holds the order of operations for the visit logic</description>
+        <externalId>false</externalId>
+        <label>Completed Visit Order of Operations</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__CompletedVisitsQuery__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the query to determine an object has been visited</description>
+        <externalId>false</externalId>
+        <label>Completed Visits Query</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__CoreBaseObjectId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the core base object associated to the template</description>
+        <externalId>false</externalId>
+        <label>Core Base Object Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__DayToOptimizeOn__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Thiese are the days of the week optimizations can run on</description>
+        <externalId>false</externalId>
+        <label>Day(s) To Optimize On</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>maps__AdvRouteDaysOfWeek</valueSetName>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__DaysBetweenOptimizationsFactor__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Days Between Optimizations Factor</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Daily</fullName>
+                    <default>false</default>
+                    <label>Daily</label>
+                </value>
+                <value>
+                    <fullName>Weekly</fullName>
+                    <default>false</default>
+                    <label>Weekly</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__DaysBetweenOptimizations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This represents how many days will go before optimizing each user</description>
+        <externalId>false</externalId>
+        <label>Days Between Optimizations</label>
+        <precision>3</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__DaysOfWeekToRouteFor__c</fullName>
+        <deprecated>false</deprecated>
+        <description>These are the days of the week that the route can calculate for</description>
+        <externalId>false</externalId>
+        <label>Day(s) of Week to Route for</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>maps__AdvRouteDaysOfWeek</valueSetName>
+        </valueSet>
+        <visibleLines>7</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__DaysToInsertUnit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the days to insert unit</description>
+        <externalId>false</externalId>
+        <label>Days to Insert Unit</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Weeks</fullName>
+                    <default>false</default>
+                    <label>Weeks</label>
+                </value>
+                <value>
+                    <fullName>Months</fullName>
+                    <default>false</default>
+                    <label>Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__DaysToInsert__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the days to insert</description>
+        <externalId>false</externalId>
+        <label>Days to Insert</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__Description__c</fullName>
+        <deprecated>false</deprecated>
+        <description>A short description of the template</description>
+        <externalId>false</externalId>
+        <inlineHelpText>A short description of the template
+Max Length: 255</inlineHelpText>
+        <label>Description</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>TextArea</type>
+    </fields>
+    <fields>
+        <fullName>maps__EndDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date the template ends on</description>
+        <externalId>false</externalId>
+        <label>End Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__FrequencyStartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be the date that all frequency calculations should start on</description>
+        <externalId>false</externalId>
+        <label>Frequency Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__FrequencyStartsOnTemplateStart__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This determines if our frequency calculation should start when the template starts or should be a rolling frequency</description>
+        <externalId>false</externalId>
+        <inlineHelpText>uncheck this if your performance period does not line up with your template start</inlineHelpText>
+        <label>Frequency Starts on Template Start</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__FutureVisitFilters__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is a JSON object containing the visit filter information</description>
+        <externalId>false</externalId>
+        <label>Future Visit Filters</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__FutureVisitLogicOrderOfOperations__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This holds the order of operations for the future visit logic</description>
+        <externalId>false</externalId>
+        <label>Future Visit Logic Order of Operations</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__FutureVisitObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the object that describes a future visit</description>
+        <externalId>false</externalId>
+        <label>Future Visit Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__FutureVisitsQuery__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the query to determine an objects future visits</description>
+        <externalId>false</externalId>
+        <label>Future Visits Query</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__IsRepeating__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This flag tells us if a template should continue to be used even after the current end date</description>
+        <externalId>false</externalId>
+        <label>Repeating</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__MaxSegmentTravelTime__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Segment Travel Time</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__MaxTotalDistance__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Max Total Distance</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__MaxWorkingHours__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field is used to set a max number of hours a user can configure as their working hours per day</description>
+        <externalId>false</externalId>
+        <label>Max Working Hours</label>
+        <precision>4</precision>
+        <required>false</required>
+        <scale>2</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__NeedsDeleting__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This checkbox is used to flag a template for deletion</description>
+        <externalId>false</externalId>
+        <label>Needs Deleting</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__OptimizationSpeedPreference__c</fullName>
+        <deprecated>false</deprecated>
+        <description>Allows for faster optimization speeds to maintain in-field productivity.</description>
+        <externalId>false</externalId>
+        <label>Optimization Speed Preference</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>15</fullName>
+                    <default>false</default>
+                    <label>15</label>
+                </value>
+                <value>
+                    <fullName>30</fullName>
+                    <default>false</default>
+                    <label>30</label>
+                </value>
+                <value>
+                    <fullName>45</fullName>
+                    <default>false</default>
+                    <label>45</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>60</fullName>
+                    <default>true</default>
+                    <label>60</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__PreventSameShiftVisits__c</fullName>
+        <defaultValue>false</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Prevent Same Shift Visits</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__PrioritizationStrictness__c</fullName>
+        <defaultValue>&apos;4&apos;</defaultValue>
+        <deprecated>false</deprecated>
+        <description>This tells Maps Advanced Route how strict to account for the priorities during routing.  1 is least strict and 7 is most strict.</description>
+        <externalId>false</externalId>
+        <label>Prioritization Strictness</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>1</fullName>
+                    <default>false</default>
+                    <label>1</label>
+                </value>
+                <value>
+                    <fullName>2</fullName>
+                    <default>false</default>
+                    <label>2</label>
+                </value>
+                <value>
+                    <fullName>3</fullName>
+                    <default>false</default>
+                    <label>3</label>
+                </value>
+                <value>
+                    <fullName>4</fullName>
+                    <default>false</default>
+                    <label>4</label>
+                </value>
+                <value>
+                    <fullName>5</fullName>
+                    <default>false</default>
+                    <label>5</label>
+                </value>
+                <value>
+                    <fullName>6</fullName>
+                    <default>false</default>
+                    <label>6</label>
+                </value>
+                <value>
+                    <fullName>7</fullName>
+                    <default>false</default>
+                    <label>7</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__RepeatUntilDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This date is the date  a repeating template will stop being used</description>
+        <externalId>false</externalId>
+        <label>Repeat Until Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__RoutableObjectOrderNumber__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the tab number for routable objects on the template when routing multiple base objects</description>
+        <externalId>false</externalId>
+        <label>Routable Object Order Number</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__RouteDurationIntervalType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the route duration interval type</description>
+        <externalId>false</externalId>
+        <label>Route Duration Interval Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Weeks</fullName>
+                    <default>false</default>
+                    <label>Weeks</label>
+                </value>
+                <value>
+                    <fullName>Months</fullName>
+                    <default>false</default>
+                    <label>Months</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__RouteDurationInterval__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the route duration interval</description>
+        <externalId>false</externalId>
+        <label>Route Duration Interval</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__RouteDurationType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the duration type of the route</description>
+        <externalId>false</externalId>
+        <label>Route Duration Type</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetName>maps__AdvRouteDurationTypes</valueSetName>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__RouteOrderBuffer__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Route Order Buffer</label>
+        <precision>18</precision>
+        <required>false</required>
+        <scale>0</scale>
+        <trackTrending>false</trackTrending>
+        <type>Number</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__RoutesAndScheduleConfig__c</fullName>
+        <deleteConstraint>SetNull</deleteConstraint>
+        <deprecated>false</deprecated>
+        <description>This will look up to the Maps Routes and Schedule Config setting used for outputs and future visits</description>
+        <externalId>false</externalId>
+        <label>Routes and Schedule Config</label>
+        <referenceTo>maps__CalEventBaseObj__c</referenceTo>
+        <relationshipLabel>Maps Advanced Route Templates</relationshipLabel>
+        <relationshipName>AdvRouteTemplates</relationshipName>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Lookup</type>
+    </fields>
+    <fields>
+        <fullName>maps__RunAutoOptimization__c</fullName>
+        <defaultValue>true</defaultValue>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Run Auto Reoptimization</label>
+        <trackTrending>false</trackTrending>
+        <type>Checkbox</type>
+    </fields>
+    <fields>
+        <fullName>maps__SavedQueryId__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This will be the id of the related Saved Query record for Maps</description>
+        <externalId>false</externalId>
+        <label>Saved Query Id</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__SelectedOutputTypes__c</fullName>
+        <deprecated>false</deprecated>
+        <description>These are the selected output types for the template</description>
+        <externalId>false</externalId>
+        <label>Selected Output Types</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__SelectedPromoWindows__c</fullName>
+        <deprecated>false</deprecated>
+        <description>These are the selected promo windows for the template</description>
+        <externalId>false</externalId>
+        <label>Selected Promo Windows</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>MultiselectPicklist</type>
+        <valueSet>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>Event</fullName>
+                    <default>false</default>
+                    <label>Event</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+        <visibleLines>4</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__StartDate__c</fullName>
+        <deprecated>false</deprecated>
+        <description>The date the template starts on</description>
+        <externalId>false</externalId>
+        <label>Start Date</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Date</type>
+    </fields>
+    <fields>
+        <fullName>maps__TemplateObjectFieldOnCompletedVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the field on the visit record that relates the visit to the template object</description>
+        <externalId>false</externalId>
+        <label>Template Object Field on Completed Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TemplateObjectFieldOnFutureVisit__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the field on the future visit record that relates the visit to the template object</description>
+        <externalId>false</externalId>
+        <label>Template Object Field on Future Visit</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TemplateObjectLatitudeField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the field that holds the latitude on the template object</description>
+        <externalId>false</externalId>
+        <label>Template Object Latitude Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TemplateObjectLongitudeField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the longitude field on the template object</description>
+        <externalId>false</externalId>
+        <label>Template Object Longitude Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TemplateObject__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the object that the template will process</description>
+        <externalId>false</externalId>
+        <label>Template Object</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__TimeToOptimize__c</fullName>
+        <deprecated>false</deprecated>
+        <externalId>false</externalId>
+        <label>Time to Reoptimize</label>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Picklist</type>
+        <valueSet>
+            <restricted>true</restricted>
+            <valueSetDefinition>
+                <sorted>false</sorted>
+                <value>
+                    <fullName>12:00 AM</fullName>
+                    <default>false</default>
+                    <label>12:00 AM</label>
+                </value>
+                <value>
+                    <fullName>12:15 AM</fullName>
+                    <default>false</default>
+                    <label>12:15 AM</label>
+                </value>
+                <value>
+                    <fullName>12:30 AM</fullName>
+                    <default>false</default>
+                    <label>12:30 AM</label>
+                </value>
+                <value>
+                    <fullName>12:45 AM</fullName>
+                    <default>false</default>
+                    <label>12:45 AM</label>
+                </value>
+                <value>
+                    <fullName>1:00 AM</fullName>
+                    <default>false</default>
+                    <label>1:00 AM</label>
+                </value>
+                <value>
+                    <fullName>1:15 AM</fullName>
+                    <default>false</default>
+                    <label>1:15 AM</label>
+                </value>
+                <value>
+                    <fullName>1:30 AM</fullName>
+                    <default>false</default>
+                    <label>1:30 AM</label>
+                </value>
+                <value>
+                    <fullName>1:45 AM</fullName>
+                    <default>false</default>
+                    <label>1:45 AM</label>
+                </value>
+                <value>
+                    <fullName>2:00 AM</fullName>
+                    <default>false</default>
+                    <label>2:00 AM</label>
+                </value>
+                <value>
+                    <fullName>2:15 AM</fullName>
+                    <default>false</default>
+                    <label>2:15 AM</label>
+                </value>
+                <value>
+                    <fullName>2:30 AM</fullName>
+                    <default>false</default>
+                    <label>2:30 AM</label>
+                </value>
+                <value>
+                    <fullName>2:45 AM</fullName>
+                    <default>false</default>
+                    <label>2:45 AM</label>
+                </value>
+                <value>
+                    <fullName>3:00 AM</fullName>
+                    <default>false</default>
+                    <label>3:00 AM</label>
+                </value>
+                <value>
+                    <fullName>3:15 AM</fullName>
+                    <default>false</default>
+                    <label>3:15 AM</label>
+                </value>
+                <value>
+                    <fullName>3:30 AM</fullName>
+                    <default>false</default>
+                    <label>3:30 AM</label>
+                </value>
+                <value>
+                    <fullName>3:45 AM</fullName>
+                    <default>false</default>
+                    <label>3:45 AM</label>
+                </value>
+                <value>
+                    <fullName>4:00 AM</fullName>
+                    <default>false</default>
+                    <label>4:00 AM</label>
+                </value>
+                <value>
+                    <fullName>4:15 AM</fullName>
+                    <default>false</default>
+                    <label>4:15 AM</label>
+                </value>
+                <value>
+                    <fullName>4:30 AM</fullName>
+                    <default>false</default>
+                    <label>4:30 AM</label>
+                </value>
+                <value>
+                    <fullName>4:45 AM</fullName>
+                    <default>false</default>
+                    <label>4:45 AM</label>
+                </value>
+                <value>
+                    <fullName>5:00 AM</fullName>
+                    <default>false</default>
+                    <label>5:00 AM</label>
+                </value>
+                <value>
+                    <fullName>5:15 AM</fullName>
+                    <default>false</default>
+                    <label>5:15 AM</label>
+                </value>
+                <value>
+                    <fullName>5:30 AM</fullName>
+                    <default>false</default>
+                    <label>5:30 AM</label>
+                </value>
+                <value>
+                    <fullName>5:45 AM</fullName>
+                    <default>false</default>
+                    <label>5:45 AM</label>
+                </value>
+                <value>
+                    <fullName>6:00 AM</fullName>
+                    <default>false</default>
+                    <label>6:00 AM</label>
+                </value>
+                <value>
+                    <fullName>6:15 AM</fullName>
+                    <default>false</default>
+                    <label>6:15 AM</label>
+                </value>
+                <value>
+                    <fullName>6:30 AM</fullName>
+                    <default>false</default>
+                    <label>6:30 AM</label>
+                </value>
+                <value>
+                    <fullName>6:45 AM</fullName>
+                    <default>false</default>
+                    <label>6:45 AM</label>
+                </value>
+                <value>
+                    <fullName>7:00 AM</fullName>
+                    <default>false</default>
+                    <label>7:00 AM</label>
+                </value>
+                <value>
+                    <fullName>7:15 AM</fullName>
+                    <default>false</default>
+                    <label>7:15 AM</label>
+                </value>
+                <value>
+                    <fullName>7:30 AM</fullName>
+                    <default>false</default>
+                    <label>7:30 AM</label>
+                </value>
+                <value>
+                    <fullName>7:45 AM</fullName>
+                    <default>false</default>
+                    <label>7:45 AM</label>
+                </value>
+                <value>
+                    <fullName>8:00 AM</fullName>
+                    <default>false</default>
+                    <label>8:00 AM</label>
+                </value>
+                <value>
+                    <fullName>8:15 AM</fullName>
+                    <default>false</default>
+                    <label>8:15 AM</label>
+                </value>
+                <value>
+                    <fullName>8:30 AM</fullName>
+                    <default>false</default>
+                    <label>8:30 AM</label>
+                </value>
+                <value>
+                    <fullName>8:45 AM</fullName>
+                    <default>false</default>
+                    <label>8:45 AM</label>
+                </value>
+                <value>
+                    <fullName>9:00 AM</fullName>
+                    <default>false</default>
+                    <label>9:00 AM</label>
+                </value>
+                <value>
+                    <fullName>9:15 AM</fullName>
+                    <default>false</default>
+                    <label>9:15 AM</label>
+                </value>
+                <value>
+                    <fullName>9:30 AM</fullName>
+                    <default>false</default>
+                    <label>9:30 AM</label>
+                </value>
+                <value>
+                    <fullName>9:45 AM</fullName>
+                    <default>false</default>
+                    <label>9:45 AM</label>
+                </value>
+                <value>
+                    <fullName>10:00 AM</fullName>
+                    <default>false</default>
+                    <label>10:00 AM</label>
+                </value>
+                <value>
+                    <fullName>10:15 AM</fullName>
+                    <default>false</default>
+                    <label>10:15 AM</label>
+                </value>
+                <value>
+                    <fullName>10:30 AM</fullName>
+                    <default>false</default>
+                    <label>10:30 AM</label>
+                </value>
+                <value>
+                    <fullName>10:45 AM</fullName>
+                    <default>false</default>
+                    <label>10:45 AM</label>
+                </value>
+                <value>
+                    <fullName>11:00 AM</fullName>
+                    <default>false</default>
+                    <label>11:00 AM</label>
+                </value>
+                <value>
+                    <fullName>11:15 AM</fullName>
+                    <default>false</default>
+                    <label>11:15 AM</label>
+                </value>
+                <value>
+                    <fullName>11:30 AM</fullName>
+                    <default>false</default>
+                    <label>11:30 AM</label>
+                </value>
+                <value>
+                    <fullName>11:45 AM</fullName>
+                    <default>false</default>
+                    <label>11:45 AM</label>
+                </value>
+                <value>
+                    <fullName>12:00 PM</fullName>
+                    <default>false</default>
+                    <label>12:00 PM</label>
+                </value>
+                <value>
+                    <fullName>12:15 PM</fullName>
+                    <default>false</default>
+                    <label>12:15 PM</label>
+                </value>
+                <value>
+                    <fullName>12:30 PM</fullName>
+                    <default>false</default>
+                    <label>12:30 PM</label>
+                </value>
+                <value>
+                    <fullName>12:45 PM</fullName>
+                    <default>false</default>
+                    <label>12:45 PM</label>
+                </value>
+                <value>
+                    <fullName>1:00 PM</fullName>
+                    <default>false</default>
+                    <label>1:00 PM</label>
+                </value>
+                <value>
+                    <fullName>1:15 PM</fullName>
+                    <default>false</default>
+                    <label>1:15 PM</label>
+                </value>
+                <value>
+                    <fullName>1:30 PM</fullName>
+                    <default>false</default>
+                    <label>1:30 PM</label>
+                </value>
+                <value>
+                    <fullName>1:45 PM</fullName>
+                    <default>false</default>
+                    <label>1:45 PM</label>
+                </value>
+                <value>
+                    <fullName>2:00 PM</fullName>
+                    <default>false</default>
+                    <label>2:00 PM</label>
+                </value>
+                <value>
+                    <fullName>2:15 PM</fullName>
+                    <default>false</default>
+                    <label>2:15 PM</label>
+                </value>
+                <value>
+                    <fullName>2:30 PM</fullName>
+                    <default>false</default>
+                    <label>2:30 PM</label>
+                </value>
+                <value>
+                    <fullName>2:45 PM</fullName>
+                    <default>false</default>
+                    <label>2:45 PM</label>
+                </value>
+                <value>
+                    <fullName>3:00 PM</fullName>
+                    <default>false</default>
+                    <label>3:00 PM</label>
+                </value>
+                <value>
+                    <fullName>3:15 PM</fullName>
+                    <default>false</default>
+                    <label>3:15 PM</label>
+                </value>
+                <value>
+                    <fullName>3:30 PM</fullName>
+                    <default>false</default>
+                    <label>3:30 PM</label>
+                </value>
+                <value>
+                    <fullName>3:45 PM</fullName>
+                    <default>false</default>
+                    <label>3:45 PM</label>
+                </value>
+                <value>
+                    <fullName>4:00 PM</fullName>
+                    <default>false</default>
+                    <label>4:00 PM</label>
+                </value>
+                <value>
+                    <fullName>4:15 PM</fullName>
+                    <default>false</default>
+                    <label>4:15 PM</label>
+                </value>
+                <value>
+                    <fullName>4:30 PM</fullName>
+                    <default>false</default>
+                    <label>4:30 PM</label>
+                </value>
+                <value>
+                    <fullName>4:45 PM</fullName>
+                    <default>false</default>
+                    <label>4:45 PM</label>
+                </value>
+                <value>
+                    <fullName>5:00 PM</fullName>
+                    <default>false</default>
+                    <label>5:00 PM</label>
+                </value>
+                <value>
+                    <fullName>5:15 PM</fullName>
+                    <default>false</default>
+                    <label>5:15 PM</label>
+                </value>
+                <value>
+                    <fullName>5:30 PM</fullName>
+                    <default>false</default>
+                    <label>5:30 PM</label>
+                </value>
+                <value>
+                    <fullName>5:45 PM</fullName>
+                    <default>false</default>
+                    <label>5:45 PM</label>
+                </value>
+                <value>
+                    <fullName>6:00 PM</fullName>
+                    <default>false</default>
+                    <label>6:00 PM</label>
+                </value>
+                <value>
+                    <fullName>6:15 PM</fullName>
+                    <default>false</default>
+                    <label>6:15 PM</label>
+                </value>
+                <value>
+                    <fullName>6:30 PM</fullName>
+                    <default>false</default>
+                    <label>6:30 PM</label>
+                </value>
+                <value>
+                    <fullName>6:45 PM</fullName>
+                    <default>false</default>
+                    <label>6:45 PM</label>
+                </value>
+                <value>
+                    <fullName>7:00 PM</fullName>
+                    <default>false</default>
+                    <label>7:00 PM</label>
+                </value>
+                <value>
+                    <fullName>7:15 PM</fullName>
+                    <default>false</default>
+                    <label>7:15 PM</label>
+                </value>
+                <value>
+                    <fullName>7:30 PM</fullName>
+                    <default>false</default>
+                    <label>7:30 PM</label>
+                </value>
+                <value>
+                    <fullName>7:45 PM</fullName>
+                    <default>false</default>
+                    <label>7:45 PM</label>
+                </value>
+                <value>
+                    <fullName>8:00 PM</fullName>
+                    <default>false</default>
+                    <label>8:00 PM</label>
+                </value>
+                <value>
+                    <fullName>8:15 PM</fullName>
+                    <default>false</default>
+                    <label>8:15 PM</label>
+                </value>
+                <value>
+                    <fullName>8:30 PM</fullName>
+                    <default>false</default>
+                    <label>8:30 PM</label>
+                </value>
+                <value>
+                    <fullName>8:45 PM</fullName>
+                    <default>false</default>
+                    <label>8:45 PM</label>
+                </value>
+                <value>
+                    <fullName>9:00 PM</fullName>
+                    <default>false</default>
+                    <label>9:00 PM</label>
+                </value>
+                <value>
+                    <fullName>9:15 PM</fullName>
+                    <default>false</default>
+                    <label>9:15 PM</label>
+                </value>
+                <value>
+                    <fullName>9:30 PM</fullName>
+                    <default>false</default>
+                    <label>9:30 PM</label>
+                </value>
+                <value>
+                    <fullName>9:45 PM</fullName>
+                    <default>false</default>
+                    <label>9:45 PM</label>
+                </value>
+                <value>
+                    <fullName>10:00 PM</fullName>
+                    <default>false</default>
+                    <label>10:00 PM</label>
+                </value>
+                <value>
+                    <fullName>10:15 PM</fullName>
+                    <default>false</default>
+                    <label>10:15 PM</label>
+                </value>
+                <value>
+                    <fullName>10:30 PM</fullName>
+                    <default>false</default>
+                    <label>10:30 PM</label>
+                </value>
+                <value>
+                    <fullName>10:45 PM</fullName>
+                    <default>false</default>
+                    <label>10:45 PM</label>
+                </value>
+                <value>
+                    <fullName>11:00 PM</fullName>
+                    <default>false</default>
+                    <label>11:00 PM</label>
+                </value>
+                <value>
+                    <fullName>11:15 PM</fullName>
+                    <default>false</default>
+                    <label>11:15 PM</label>
+                </value>
+                <value>
+                    <fullName>11:30 PM</fullName>
+                    <default>false</default>
+                    <label>11:30 PM</label>
+                </value>
+                <value>
+                    <fullName>11:45 PM</fullName>
+                    <default>false</default>
+                    <label>11:45 PM</label>
+                </value>
+            </valueSetDefinition>
+        </valueSet>
+    </fields>
+    <fields>
+        <fullName>maps__TooltipFieldApis__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This field holds a JSON array of field apis to be used for tooltips</description>
+        <externalId>false</externalId>
+        <label>Tooltip Field Apis</label>
+        <length>32768</length>
+        <trackTrending>false</trackTrending>
+        <type>LongTextArea</type>
+        <visibleLines>3</visibleLines>
+    </fields>
+    <fields>
+        <fullName>maps__UserField__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is the field that will be compared on the object to determine if that object is owned/maintained by a route template user</description>
+        <externalId>false</externalId>
+        <label>User Field</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <fields>
+        <fullName>maps__VisitType__c</fullName>
+        <deprecated>false</deprecated>
+        <description>This is for determining which visit windows should be used based on visit type</description>
+        <externalId>false</externalId>
+        <label>Visit Type</label>
+        <length>255</length>
+        <required>false</required>
+        <trackTrending>false</trackTrending>
+        <type>Text</type>
+        <unique>false</unique>
+    </fields>
+    <label>Maps Advanced Route Template</label>
+    <nameField>
+        <label>Maps Advanced Route Template Name</label>
+        <type>Text</type>
+    </nameField>
+    <pluralLabel>Maps Advanced Route Templates</pluralLabel>
+    <searchLayouts/>
+    <sharingModel>ReadWrite</sharingModel>
+    <visibility>Public</visibility>
+</CustomObject>

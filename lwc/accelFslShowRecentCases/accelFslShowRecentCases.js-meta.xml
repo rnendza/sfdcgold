@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<LightningComponentBundle xmlns="http://soap.sforce.com/2006/04/metadata">
+    <apiVersion>55.0</apiVersion>
+    <description>Accel Fsl Show Recent Cases</description>
+    <isExposed>true</isExposed>
+    <masterLabel>Accel Fsl Show Recent Cases</masterLabel>
+    <targets>
+        <target>lightning__RecordPage</target>
+    </targets>
+    <targetConfigs>
+        <targetConfig targets="lightning__RecordPage">
+            <objects>
+                <object>ServiceAppointment</object>
+            </objects>
+            <property   name="cardTitleLabel" type="String"
+                        label="Card Title"
+                        default="Recent Cases"
+                        description="Card Title"
+                        placeholder="Enter a title for the card.."/>
+            <property   name="cardHeaderIcon" type="String"
+                        label="Card Header Icon"
+                        default="standard:case"
+                        description="Enter a LDS Icon for the card header ie. standard:case @see https://www.lightningdesignsystem.com/icons/"
+                        placeholder="Enter an LDS Icon Name for the Card Header..."/>
+            <property   name="excludedCaseStatuses" type="String"
+                        label="Case Statuses to Exclude"
+                        default="Closed"
+                        description="A comma delimited string of Case.Status to exclude"
+                        placeholder="Enter any case statuses to exclude.."/>
+            <property   name="includedDateLiteral" type="String"
+                        label="Case Created Date Literal filter"
+                        default="= LAST_N_DAYS:7"
+                        description="A soql date literal (and operator) to be used to filter Case.CreatedDate ie. [= LAST_N_DAYS:7]"
+                        placeholder="Enter created date literal.."/>
+            <property   name="tableDataFontSize" type="String"
+                        label="Table Data Font Size"
+                        default=".87em"
+                        description="The font-size to apply to the datatable: ie. .87em."
+                        placeholder="Please enter a font size for the datatable.."/>
+            <property   name="tableDataLineHeight" type="String"
+                        label="Table Row Line Height"
+                        default="1.25rem"
+                        description="The line-height override of the datatable row. ie. 1.25rem"
+                        placeholder="Please enter a line-height for a table row."/>
+            <property   name="tableLeftMargin" type="String"
+                        label="Margin Applied to the Left of the datatable"
+                        default=".075rem"
+                        description="The margin applied to the left of the datatable. ie. .075rem"
+                        placeholder="Please enter datatable left margin."/>
+            <property   name="tableRightMargin" type="String"
+                        label="Margin Applied to the Right of the datatable"
+                        default=".075rem"
+                        description="The margin applied to the right of the datatable. ie. .075rem"
+                        placeholder="Please enter datatable right margin."/>
+            <property   name="allowColumnSort" type="boolean"
+                        label="Allow table Sorting"
+                        default="true"
+                        description="Allow sorting of datatable columns."/>
+
+            <property   name="allowManualDatatableRefresh" type="boolean"
+                        label="Allow Manual Data Refresh"
+                        default="false"
+                        description="Puts a refresh icon above the datatable allowing the user to manually refresh the data."/>
+            <property   name="showTotalRowsInTableHeader" type="boolean"
+                        label="Show Total # of rows in table header."
+                        default="false"
+                        description="Shows the total number of rows in the table header. ie. 5 Recent Cases.. Maybe use this if not displaying in card header. "/>
+            <property   name="showColHeaderIcons" type="boolean"
+                        label="Show Column Header Icon"
+                        default="true"
+                        description="Show Icons (Where space allows) next to column headers."/>
+            <property   name="defaultSortBy" type="string"
+                        label="Default Sort Field"
+                        default="createdDate"
+                        placeholder="Enter the field name to sort by upon load..."
+                        description="The field that is used to sort the data upon load. (turn console logging on and evaluate the dto to see field names as a wrapper object is used."/>
+            <property   name="defaultSortDirection" type="string"
+                        label="Default Sort Direction"
+                        default="desc"
+                        placeholder="Enter the direction so sort by upon load..."
+                        description="The default sort direction upon load. ie. asc or desc."/>
+            <property   name="showTotalRowsInCardHeader" type="boolean"
+                        label="Show Total # of rows in Card Header."
+                        default="true"
+                        description="Show the total number of rows in the card header. ie. Recent Cases (10)"/>
+            <property   name="deferDisplay" type="boolean"
+                        label="Defer Display of Card till Data Loaded(Beta)."
+                        default="false"
+                        description="Do not display the card to initial load is complete. (Attempt to fight 'bounce effect' of waiting for other components placed above this one."/>
+            <property   name="iLimitRows" type="Integer"
+                        label="# of Results Limit"
+                        default="200"
+                        description="The limit on the number of results to display"/>
+            <property   name="noDataLabel" type="String"
+                        label="No Data Label"
+                        default="There are no recent cases "
+                        description="Message that displays when no recent cases exist. This is only the prefix. If Show Detailed No Data Label is Checked, the criteria will be added automatically based on the query."
+                        placeholder="Enter a message for no data found.."/>
+            <property   name="showDetailedNoDataLabel" type="boolean"
+                        label="Show Detailed No Data Label"
+                        default="true"
+                        description="If checked, will append specific query filter information to the no data label."/>
+            <property   name="debugConsole" type="boolean"
+                        label="Debug Console"
+                        default="true"
+                        description="Show debug logs in the browser console."/>
+        </targetConfig>
+    </targetConfigs>
+</LightningComponentBundle>

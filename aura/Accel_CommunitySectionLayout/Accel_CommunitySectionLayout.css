@@ -1,0 +1,120 @@
+.THIS.container {
+}
+
+/* Spacing between sections change the first value to change vertical spacing */
+.THIS .section {
+    margin: 0rem 0;
+}
+
+.THIS .section-title {
+    margin: 0 1rem;
+}
+
+/* Comment and uncomment to remove border below titles */
+/* Padding bottom should match the margins of the section-title*/
+.THIS .section-title.underline {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+}
+
+.THIS .row {
+    display:flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.THIS [class^='col'], .THIS .half,
+.THIS .third, .THIS .two-thirds,
+.THIS .quarter, .THIS .three-quarters,
+.THIS .fifth, .THIS .two-fifths,  .THIS .three-fifths,  .THIS .four-fifths,
+.THIS .sixth, .THIS .two-sixths, .THIS .three-sixths,  .THIS .four-sixths,  .THIS .five-sixths {
+    margin: 1rem;
+    display: inline-block;
+}
+
+.THIS .full-height * {
+    height: 100%;
+}
+
+/*Resize to fit images */
+.THIS .forceCommunityRichText img.sfdcCbImage {
+    height: 100% !important;
+}
+
+/*Prevent resizing community builder rich text editor */
+.THIS .full-height .ql-toolbar {
+    height: 50px !IMPORTANT;
+}
+
+/*Fix offset for next columns*/
+.THIS [class^='col'] > .row, .THIS .half > .row,
+.THIS .third > .row, .THIS .two-thirds > .row,
+.THIS .quarter > .row, .THIS .three-quarters > .row,
+.THIS .fifth > .row, .THIS .two-fifths > .row,  .THIS .three-fifths > .row,  .THIS .four-fifths > .row,
+.THIS .sixth > .row, .THIS .two-sixths > .row, .THIS .three-sixths > .row,  .THIS .four-sixths > .row,  .THIS .five-sixths > .row {
+    margin: -1rem;
+}
+
+.THIS .fill-out {
+    flex: 2 0 0;
+}
+
+.THIS .col-1-of-3, .THIS .third, .THIS .two-sixths {
+    width: calc(33.33333% - 2rem);
+}
+
+.THIS .col-2-of-3, .THIS .two-thirds {
+    width: calc(66.66666% - 2rem);
+}
+
+.THIS .col-1-of-4, .THIS .quarter {
+    width: calc(25% - 2rem);
+}
+
+.THIS .col-1-of-2, .THIS .col-2-of-4, .THIS .half, .THIS .two-quarters, .THIS .three-sixths {
+    width: calc(50% - 2rem);
+}
+
+.THIS .col-3-of-4, .THIS .three-quarters {
+    width: calc(75% - 2rem);
+}
+
+.THIS .col-1-of-5, .THIS .fifth {
+    width: calc(20% - 2rem);
+}
+.THIS .col-2-of-5, .THIS .two-fifths {
+    width: calc(40% - 2rem);
+}
+.THIS .col-3-of-5, .THIS .three-fifths {
+    width: calc(60% - 2rem);
+}
+.THIS .col-4-of-5, .THIS .four-fifths {
+    width: calc(80% - 2rem);
+}
+
+.THIS .col-1-of-6, .THIS .sixth {
+    width: calc(16.666666% - 2rem);
+}
+
+.THIS .col-5-of-6, .THIS .five-sixths {
+    width: calc(83.333333% - 2rem);
+}
+
+.THIS .col-1-of-1, .THIS .col-2-of-2, .THIS .col-3-of-3, .THIS .col-4-of-4, .THIS .col-5-of-5, .THIS .col-6-of-6, .THIS .whole {
+    /*width: 100%;*/
+    margin: 1rem;
+}
+
+@media all and (min-width : 320px) and (max-width : 1024px) {
+    .THIS [class^='col'], .THIS .half,
+    .THIS .third, .THIS .two-thirds,
+    .THIS .quarter, .THIS .three-quarters,
+    .THIS .fifth, .THIS .two-fifths,  .THIS .three-fifths,  .THIS .four-fifths,
+    .THIS .sixth, .THIS .two-sixths, .THIS .three-sixths,  .THIS .four-sixths,  .THIS .five-sixths {
+        width: 100%;
+    }
+    .THIS .full-height {
+        height: auto;
+    }
+}
